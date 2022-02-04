@@ -120,7 +120,7 @@
     width: 100%;
     height: 70vh;
     font-family: 'Montserrat', sans-serif;
-    margin-bottom: 1000px;
+    margin-bottom: 70rem;
 }
 .review-section h1{
     color: #3374ea;
@@ -175,10 +175,12 @@
 
 .star {
     text-align: center;
+    margin-bottom: 10px;
 }
 .box h3 {
     text-align: center;
     color: #3374ea;
+    margin-bottom: 7px;
 }
 .box p {
     color: #707070;
@@ -191,10 +193,38 @@
     margin-top: 20px;
     font-size: 17px;
 }
-
-.copy-traders {
-    margin-top: 70px;
+.app-features {
+    width: 80%;
+    margin: auto;
 }
+.copy-traders h1 {
+    color: #3374EA;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    text-align: center;
+}
+.copy-img-box {
+    width: 100%;
+    margin-left: 20px;
+}
+.copy-img {
+    width: 100%;
+    margin: 0 auto;
+}
+.copy-traders p {
+    color: #525B6D;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+}
+.copy-traders {
+    margin-bottom: 60px;
+}
+.other-p {
+    margin-top: 30px;
+}
+
 /* START TABLET SCREEN SIZE DESIGN */
 
 @media only screen and (min-width: 1024px) {
@@ -292,8 +322,52 @@
     }
     .review-section {
         top: 43rem;
+        margin-bottom: 30rem;
     }
 
+    .review-box {
+        /* text-align: center; */
+        display: flex;
+        flex: wrap;
+        align-items: center;
+    }
+    .box{
+        margin: 10px 10px;
+        font-family: 'Montserrat', sans-serif;
+        border-radius:  10px;
+        height: 430px;
+
+    }
+    .app-features {
+        width: 80%;
+        margin: 0 auto 10px;
+    }
+    .app-features h1 {
+        color: #3374EA;
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
+    }
+    .copy-img-box {
+        width: 100%;
+        text-align: center;
+    }
+    .copy-img {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .app-features p {
+        color: #525B6D;
+        text-align: center;
+        font-size: 17px;
+        font-weight: 400;
+        font-family: 'Montserrat', sans-serif;
+    }
+    .copy-traders {
+        margin-bottom: 60px;
+    }
+    .other-p {
+        margin-top: 30px;
+    }
 }
 
 
@@ -395,6 +469,7 @@
     }
     .review-section {
         top: 43rem;
+        margin-bottom: 54rem;
     }
     .review-section h1{
         width: 50%;
@@ -402,17 +477,13 @@
         text-align: center;
     }
     .review-box {
-        margin-top: 60px; 
-        text-align: center;
-        align-items: center;
-    }
-    .box{
-        display: inline-block;
-        width: 340px;
-        height: 400px;
-        margin: 0 10px;
+        margin-top: 60px;
+        display: flex;
+        flex: wrap;
+        justify-content: center;
 
     }
+
     .box h3 {
         text-align: center;
     }
@@ -424,7 +495,47 @@
     .reviews p {
         margin-top: 20px;
         font-size: 15px;
+        font-weight: 500;
     }
+    .copy-traders {
+        padding-top: 240px;
+    }
+    .copy-traders h1 {
+        color: #3374EA;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 800;
+        text-align: left;
+        width: 40%;
+    }
+    .copy-img-box {
+        width: 100%;
+        transition: 0.3s ease;
+    }
+    
+    .copy-img {
+        position: absolute;
+        top: 1400px;
+        width: 40%;
+        margin: 0 auto;
+    }
+    .copy-img:hover{
+        filter: saturate(140%);
+        transform: scale(0.90);
+    }
+
+    .copy-traders p {
+        color: #525B6D;
+        text-align: left;
+        width: 40%;
+        font-size: 14px;
+        font-weight: 300;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .other-p {
+        margin-top: 30px;
+    }
+    
 }
 
 /* START LARGE SCREEN DESIGN */
