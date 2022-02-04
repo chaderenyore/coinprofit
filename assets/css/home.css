@@ -2,7 +2,7 @@
 
 .container {
     width: 100%;
-    height: 120vh;
+    height: 1000px;
     position: relative;
     top: -4px;
     overflow-x: hidden;
@@ -72,7 +72,7 @@
     transition: background-color 0.6s ease;
   }
   
-  .active {
+  .dot-active {
     background-color: greenyellow;
   }
   
@@ -119,13 +119,82 @@
     position: relative;
     width: 100%;
     height: 70vh;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 1000px;
 }
 .review-section h1{
     color: #3374ea;
     text-align: center;
     font-weight: 800;
-    font-family: 'Montserrat', sans-serif;
 } 
+.review-section p {
+    text-align: center;
+    margin-top: 4px;
+    color: #525B6D;
+}
+.review-box {
+    margin-top: 40px; 
+}
+.box{
+    width: 340px;
+    height: 400px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000008;
+    display: block;
+    margin: 20px auto;
+    font-family: 'Montserrat', sans-serif;
+    border-radius:  10px;
+    margin-bottom: 60px;
+}
+.box-img {
+    position: relative;
+    top: -20px;
+	height: 200px;
+	width: 200px;
+	margin: auto;
+	border: 8px solid #F2F8FF;
+	border-radius: 50%;
+	overflow: hidden;
+    
+}
+.review-img {
+    position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	border-radius: 50%;
+	object-fit: cover;
+	transition: 0.3s ease;
+}
+
+.review-img:hover{
+	filter: saturate(140%);
+	transform: scale(0.95);
+}
+
+.star {
+    text-align: center;
+}
+.box h3 {
+    text-align: center;
+    color: #3374ea;
+}
+.box p {
+    color: #707070;
+    font-size: 14px;
+}
+.reviews {
+    padding: 10px;
+}
+.reviews p {
+    margin-top: 20px;
+    font-size: 17px;
+}
+
+.copy-traders {
+    margin-top: 100px;
+}
 /* START TABLET SCREEN SIZE DESIGN */
 
 @media only screen and (min-width: 1024px) {
@@ -197,7 +266,7 @@
         transition: background-color 0.6s ease;
     }
     
-    .active {
+    .dot-active {
         background-color: #3374ea;
     }
     .app-downloads{
@@ -224,12 +293,10 @@
     .review-section {
         top: 43rem;
     }
-    .review-section h1{
-        width: 50%;
-        margin: auto;
-        text-align: center;
-    } 
+
 }
+
+
 
 /* START COMPUTER SCREEN DESIGN */
 @media only screen and (min-width: 1200px) {
@@ -301,7 +368,7 @@
         transition: background-color 0.6s ease;
     }
     
-    .active {
+    .dot-active {
         background-color: #3374ea;
     }
     .app-downloads{
@@ -333,7 +400,31 @@
         width: 50%;
         margin: auto;
         text-align: center;
-    } 
+    }
+    .review-box {
+        margin-top: 60px; 
+        text-align: center;
+        align-items: center;
+    }
+    .box{
+        display: inline-block;
+        width: 340px;
+        height: 400px;
+        margin: 0 10px;
+
+    }
+    .box h3 {
+        text-align: center;
+    }
+    .box p {
+        color: #707070;
+        font-size: 13px;
+        font-weight: 400;
+    }
+    .reviews p {
+        margin-top: 20px;
+        font-size: 15px;
+    }
 }
 
 /* START LARGE SCREEN DESIGN */
