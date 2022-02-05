@@ -194,6 +194,44 @@
     margin-top: 20px;
     font-size: 17px;
 }
+
+.app-features {
+    height: 1000px;
+    position: relative;
+    padding-top: 25rem;
+    width: 80%;
+    margin: auto;
+}
+
+.app-features h1 {
+    color: #3374EA;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    text-align: center;
+}
+.app-features p {
+    color: #525B6D;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+}
+.other-p {
+    margin-top: 30px;
+}
+.copy-traders, .see-leaders, .get-signal {
+    margin: 30px auto 20px;
+}
+.copy-img-box {
+    width: 100%;
+    margin-left: 20px;
+}
+.copy-img {
+    width: 100%;
+    margin: 0 auto;
+}
+
+
 /* START IPAD PRO SCREEN SIZE DESIGN */
 
 @media only screen and (min-width: 1024px) {
@@ -283,10 +321,13 @@
         }
         .appui {
             width: 70%;
+    
         }
         .review-section {
             top: 0;
-            margin-bottom: 20px;
+            margin-bottom: 0;
+            height: 45vh;
+            margin-bottom: 0;
         }
     
         .review-box {
@@ -300,7 +341,42 @@
             font-family: 'Montserrat', sans-serif;
             border-radius:  10px;
             height: 430px;
-    
+        }
+        .app-features {
+            height: 1100px;
+            position: relative;
+            padding-top: 0;
+            width: 80%;
+            margin: auto;
+        }
+        
+        .app-features h1 {
+            color: #3374EA;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 800;
+            font-size: 40px;
+            text-align: center;
+        }
+        .app-features p {
+            color: #525B6D;
+            text-align: center;
+            font-size: 17px;
+            font-weight: 400;
+            font-family: 'Montserrat', sans-serif;
+        }
+        .other-p {
+            margin-top: 30px;
+        }
+        .copy-traders, .see-leaders, .get-signal {
+            margin: 30px auto 20px;
+        }
+        .copy-img-box {
+            width: 100%;
+            margin-left: 20px;
+        }
+        .copy-img {
+            width: 100%;
+            margin: 0 auto;
         }
 }
 /* START COMPUTER SCREEN DESIGN */
@@ -354,11 +430,8 @@
     .review-section {
         top: -200px;
         margin-bottom: 30px;
-    }
-    .review-section h1{
-        width: 50%;
-        margin: auto;
-        text-align: center;
+        height: 20vh;
+        margin-bottom: 20rem;
     }
     .review-box {
         margin-top: 60px;
@@ -375,5 +448,40 @@
         color: #707070;
         font-size: 13px;
         font-weight: 400;
+    }
+    .app-features {
+        height: 1100px;
+        position: relative;
+        padding-top: 0;
+        width: 80%;
+        margin: auto;
+    }
+    
+    .app-features h1 {
+        color: #3374EA;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 800;
+        font-size: 40px;
+        text-align: center;
+    }
+    .app-features p {
+        color: #525B6D;
+        text-align: center;
+        font-size: 17px;
+        font-weight: 400;
+        font-family: 'Montserrat', sans-serif;
+    }
+    .other-p {
+        margin-top: 30px;
+    }
+    .copy-traders, .see-leaders, .get-signal {
+        margin: 30px auto 20px;
+    }
+    .copy-img-box {
+        width: 100%;
+    }
+    .copy-img:nth-child(1) {
+        width: 40%;
+        margin: 0 auto;
     }
 }
