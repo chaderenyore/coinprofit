@@ -1,3 +1,4 @@
+
 .first-page {
     width: 100%;
     position: relative;
@@ -226,9 +227,9 @@
     width: 100%;
     margin-left: 20px;
 }
-.copy-img {
+.copy-img  {
     width: 100%;
-    margin: 0 auto;
+    margin-left: 10px;
 }
 
 
@@ -257,10 +258,10 @@
     .background-svg {
         display: block;
         position: absolute;
-        top: 283px;
+        top: 120px;
         left: 87px;
-        width: 695px;
-        height: 538px;
+        width: 40%;
+        opacity: 0.06;
     }
     .about {
         left: 60px;
@@ -368,16 +369,17 @@
             margin-top: 30px;
         }
         .copy-traders, .see-leaders, .get-signal {
-            margin: 30px auto 20px;
+            margin: 30px auto 60px;
         }
         .copy-img-box {
             width: 100%;
             margin-left: 20px;
         }
         .copy-img {
-            width: 100%;
+            width: 80%;
             margin: 0 auto;
         }
+
 }
 /* START COMPUTER SCREEN DESIGN */
 @media only screen and (min-width: 1200px) {
@@ -452,7 +454,7 @@
     .app-features {
         height: 1100px;
         position: relative;
-        padding-top: 0;
+        padding-top: 160px;
         width: 80%;
         margin: auto;
     }
@@ -467,21 +469,62 @@
     .app-features p {
         color: #525B6D;
         text-align: center;
-        font-size: 17px;
-        font-weight: 400;
+        font-size: 14px;
+        font-weight: 500;
         font-family: 'Montserrat', sans-serif;
     }
     .other-p {
         margin-top: 30px;
     }
-    .copy-traders, .see-leaders, .get-signal {
-        margin: 30px auto 20px;
-    }
+
     .copy-img-box {
-        width: 100%;
+        width: 80%;
     }
-    .copy-img:nth-child(1) {
-        width: 40%;
+    .copy-img{
+        width: 50%;
         margin: 0 auto;
+        transition: 0.3s ease;
+    }
+    .copy-img:hover{
+        filter: saturate(140%);
+        transform: scale(0.90);
+    }
+    .copy-traders {
+        margin-bottom: 150px;
+        padding-top: 80px;
+    }
+    .copy-traders h1 {
+        width: 600px;
+        text-align: left;
+    }
+    .copy-traders p {
+        width: 500px;
+        text-align: left;
+    }
+    .copy-traders .copy-img{
+        position: absolute;
+        top: 20px;
+        left: 600px;
+    }
+    .see-leaders {
+        position: relative;
+        margin-bottom: 900px;
+        padding-top: 170px;
+    }
+    .see-leaders h1 {
+        width: 403px;
+        float: right;
+        text-align: left;
+    }
+    .see-leaders p {
+        position: absolute;
+        top: 320px;
+        left: 680px;
+        text-align: left;
+    }
+    .see-leaders .copy-img{
+        position: absolute;
+        top: 70px;
+        left: 0;
     }
 }
