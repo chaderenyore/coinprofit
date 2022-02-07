@@ -116,6 +116,9 @@
       width: 100%;
       margin-left: 18px;
   }
+  .display-hover {
+      display: none;
+  }
   .review-section {
     position: relative;
     top: 500px;
@@ -231,7 +234,17 @@
     width: 100%;
     margin-left: 10px;
 }
+.get-signal {
+    position: relative; 
+    top: 47rem;
+}
 
+.get-signal h1 {
+    color: #3374EA;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    text-align: center;
+}
 
 /* START IPAD PRO SCREEN SIZE DESIGN */
 
@@ -426,9 +439,15 @@
         left: 46rem;
         width: 70%;
     }
+    /* .display-hover {
+        display: none;
+    }
     .appui {
         width: 70%;
     }
+    .appUI-wrapper:hover .display-hover{
+        display: block;
+    } */
     .review-section {
         top: -200px;
         margin-bottom: 30px;
@@ -526,5 +545,21 @@
         position: absolute;
         top: 70px;
         left: 0;
+    }
+    .get-signal {
+        
+    }
+    
+    .blob-signal {
+        width: 70%;
+    }
+    
+    .signal-blob {
+        /* object-fit:cover; */
+        display: block;
+        position: absolute;
+        left: 28rem;
+        height: unset ;
+        width: 80%;
     }
 }
