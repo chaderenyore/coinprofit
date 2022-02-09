@@ -284,7 +284,7 @@
     background: #FFFFFF;
     padding: 5px;
     box-shadow: 0px 20px 17px #1C19230D;
-    border-radius: 20px;
+    border-radius: 10px;
     transform: rotate(2.4deg)
 }
 .signal-packs.two {
@@ -309,7 +309,8 @@
 }
 .signal-packs p {
     text-align: center;
-    font-family: 'Poppins', sans-serif;;
+    font-family: 'Poppins', sans-serif;
+    color: #404040;
     margin-top: -15px;
     line-height: 1.2;
 }
@@ -317,7 +318,7 @@
     text-align: center;
     font-family: 'Poppins', sans-serif;
     color: #3374EA;
-    font-weight: 800;
+    font-weight: 700;
     margin-top: 2px;
 }
 .pack-img {
@@ -339,6 +340,78 @@
 
 .signal-planner{
     width: 100%;
+}
+
+
+.meet-leaders {
+    position: relative;
+    top: 45rem;
+    width: 100%;
+    height: 400px;
+    background-color: #677BFF;
+    padding-top: 100px;
+}
+
+.meet-leaders h1 {
+    width: 90%;
+    margin: 0 auto;
+    color: #F2F8FF;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.leaders-p {
+
+    width: 90%;
+    margin: 7px auto 0;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    color: #ffffff;
+}
+.custom-shape-divider-top-1644369928 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1644369928 svg {
+    position: relative;
+    display: block;
+    width: calc(109% + 1.3px);
+    height: 78px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-top-1644369928 .shape-fill {
+    fill: #F2F8FF;
+}
+
+.custom-shape-divider-bottom-1644370252 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1644370252 svg {
+    position: relative;
+    display: block;
+    width: calc(113% + 1.3px);
+    height: 95px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1644370252 .shape-fill {
+    fill: #F2F8FF;
 }
 
 /* START IPAD PRO SCREEN SIZE DESIGN */
@@ -538,7 +611,7 @@
             height: 190px;
             background: #FFFFFF;
             box-shadow: 0px 20px 17px #1C19230D;
-            border-radius: 20px;
+            border-radius: 10px;
             transform: rotate(5deg)
         }
         .signal-packs.two {
@@ -577,7 +650,7 @@
             text-align: center;
             font-family: 'Montserrat', sans-serif;
             color: #3374EA;
-            font-weight: 800;
+            font-weight: 600;
             margin-top: 2px;
             font-size: 28px;
         }
@@ -604,6 +677,27 @@
         
         .signal-planner{
             width: 60%;
+        }
+
+        .meet-leaders {
+            top: 60rem;
+            width: 100%;
+            height: 800px;
+        }
+        .meet-leaders h1 {
+            width: 90%;
+            margin: 0 auto;
+            color: #F2F8FF;
+            text-align: center;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: bold;
+            font-size: 40px;
+        }
+        
+        .leaders-p {
+            width: 60%;
+            margin: 10px auto 0;
+            font-size: 20px;
         }
 
 }
@@ -813,7 +907,7 @@
         height: 98px;
         background: #FFFFFF;
         box-shadow: 0px 20px 17px #1C19230D;
-        border-radius: 20px;
+        border-radius: 8px;
         z-index: 2;
     }
     .signal-packs.two {
@@ -852,7 +946,7 @@
         text-align: center;
         font-family: 'Montserrat', sans-serif;
         color: #3374EA;
-        font-weight: 800;
+        font-weight: 600;
         margin-top: 2px;
         font-size: 17px;
     }
@@ -876,11 +970,37 @@
     
     .signal-planner{
         width: 100%;
+        transition: 00.3s ease-out;
     }
 
     .signal-planner:hover{
         filter: saturate(140%);
         transform: scale(0.90);
+    }
+
+    .meet-leaders {
+        top: 3rem;
+        width: 100%;
+        height: 800px;
+        background-color: #3374ea;
+    }
+
+    .meet-leaders h1 {
+        width: 90%;
+        margin: 0 auto;
+        color: #F2F8FF;
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+        font-size: 40px;
+
+    }
+    
+    .leaders-p {
+        width: 50%;
+        margin: 10px auto 0;
+        font-size: 17px;
+        opacity: 0.8;
     }
 
 }
