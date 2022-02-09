@@ -20,62 +20,54 @@ function showSlides() {
 }
 // THE ABOUT SLIDE ENDS HERE 
 
-// Leaders Slider Starts here
-// vars
-'use strict'
-var testim = document.getElementById("testim"),
-    testimDots = Array.prototype.slice.call(document.getElementById("testim-dots").children),
-    testimContent = Array.prototype.slice.call(document.getElementById("testim-content").children),
-    testimleftArrow = document.getElementById("left-arrow"),
-    testimRightArrow = document.getElementById("right-arrow"),
-    testimSpeed = 2000,
-    currentSlide = 0,
-    currentActive = 0,
-    testimTimer
-    ;
-
-
-window.onload = function () {
-
-    // Testim Script
-    function playSlide(slide) {
-        for (var k = 0; k < testimDots.length; k++) {
-            testimContent[k].classList.remove("active");
-            testimContent[k].classList.remove("inactive");
-            testimDots[k].classList.remove("active");
-        }
-        if (slide < 0) {
-            slide = currentSlide = testimContent.length - 1;
-        }
-        if (slide > testimContent.length - 1) {
-            slide = currentSlide = 0;
-        }
-        if (currentActive != currentSlide) {
-            testimContent[currentActive].classList.add("inactive");
-        }
-        testimContent[slide].classList.add("active");
-        testimDots[slide].classList.add("active");
-
-        currentActive = currentSlide;
-
-        clearTimeout(testimTimer);
-        testimTimer = setTimeout(function () {
-            playSlide(currentSlide += 1);
-        }, testimSpeed)
+//   all ------------------
+function initParadoxWay() {
+    "use strict";
+   
+    if ($(".testimonials-carousel").length > 0) {
+        var j2 = new Swiper(".testimonials-carousel .swiper-container", {
+            preloadImages: false,
+            slidesPerView: 1,
+            spaceBetween: 20,
+            loop: true,
+            grabCursor: true,
+            mousewheel: false,
+            centeredSlides: true,
+            pagination: {
+                el: '.tc-pagination',
+                clickable: true,
+                dynamicBullets: true,
+            },
+            navigation: {
+                nextEl: '.listing-carousel-button-next',
+                prevEl: '.listing-carousel-button-prev',
+            },
+            breakpoints: {
+                1024: {
+                    slidesPerView: 3,
+                },
+                
+            }
+        });
     }
     
-    testimleftArrow.addEventListener("click", function () {
-        playSlide(currentSlide -= 1);
-    })
-    testimRightArrow.addEventListener("click", function () {
-        playSlide(currentSlide += 1);
-    })
-
-    for (var l = 0; l < testimDots.length; l++) {
-        testimDots[l].addEventListener("click", function () {
-            playSlide(currentSlide = testimDots.indexOf(this));
-        })
-    }
-    playSlide(currentSlide);
-
+// bubbles -----------------
+    
+    
+    setInterval(function () {
+        var size = randomValue(sArray);
+        $('.bubbles').append('<div class="individual-bubble" style="left: ' + randomValue(bArray) + 'px; width: ' + size + 'px; height:' + size + 'px;"></div>');
+        $('.individual-bubble').animate({
+            'bottom': '100%',
+            'opacity': '-=0.7'
+        }, 4000, function () {
+            $(this).remove()
+        });
+    }, 350);
+    
 }
+
+//   Init All ------------------
+$(document).ready(function () {
+    initParadoxWay();
+});
