@@ -236,7 +236,7 @@
 }
 .get-signal {
     position: relative; 
-    top: 47rem;
+    top: 38rem;
 }
 
 .get-signal h1 {
@@ -244,6 +244,101 @@
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
     text-align: center;
+}
+.signal-details {
+    width: 80%;
+    position: relative;
+    top: 40px;
+    color: #525B6D;
+    font-size: 17px;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+.blob-signal-wrapper {
+    position: absolute;
+    top: 100px;
+    z-index: -1;
+    width: 100%;
+    overflow-x: hidden;
+
+}
+
+.signal-blob {
+    position: relative;
+    top: -6rem;
+    left: -150px;
+    height: 860px;
+    width: 1000px;
+}
+
+.signal-packs{
+    position: absolute;
+    top: 200px;
+    left: 270px;
+    width: 100px;
+    height: 110px;
+    background: #FFFFFF;
+    padding: 5px;
+    box-shadow: 0px 20px 17px #1C19230D;
+    border-radius: 20px;
+    transform: rotate(2.4deg)
+}
+.signal-packs.two {
+    position: absolute;
+    top: 340px;
+    left: 265px;
+}
+
+.signal-packs.three {
+    position: absolute;
+    top: 475px; 
+    left: 262px;
+}
+.pack-img-wrapper {
+    position: relative;
+    top: -20px;
+	height: 60px;
+	width: 60px;
+	margin: auto;
+	border-radius: 50%;
+    background-color: #3374EA;
+}
+.signal-packs p {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;;
+    margin-top: -15px;
+    line-height: 1.2;
+}
+.signal-packs h5 {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    color: #3374EA;
+    font-weight: 800;
+    margin-top: 2px;
+}
+.pack-img {
+    width: 30px;
+    height: 60px;
+    margin-left: 15px;
+}
+
+.main-signal-wrapper {
+    display: none;
+}
+.signal-planner-wrapper {
+    position: relative;
+    top: 4.1rem;
+    left: -30px;
+    width: 100%;
+
+}
+
+.signal-planner{
+    width: 100%;
 }
 
 /* START IPAD PRO SCREEN SIZE DESIGN */
@@ -297,9 +392,9 @@
         }
         .slideshow-container p {
             font-weight: unset;
-            width: 45%;
+            width: 60%;
             color: #525B6D;
-            font-size: 14px;
+            font-size: 20px;
             font-family: 'Montserrat', sans-serif;
             text-align: left;
             margin: 10px;
@@ -324,7 +419,7 @@
         }
         .app-download {
             display: inline-block;
-            width: 25%;
+            width: 35%;
             margin: 10px auto;
         }
           .appUI-wrapper {
@@ -339,13 +434,14 @@
         }
         .review-section {
             top: 0;
-            margin-bottom: 0;
             height: 45vh;
             margin-bottom: 0;
         }
+        .review-section h1{
+            font-size: 30px;
+        } 
     
         .review-box {
-            /* text-align: center; */
             display: flex;
             flex: wrap;
             align-items: center;
@@ -355,6 +451,9 @@
             font-family: 'Montserrat', sans-serif;
             border-radius:  10px;
             height: 430px;
+        }
+        .box p {
+            font-size: 17px;
         }
         .app-features {
             height: 1100px;
@@ -374,12 +473,13 @@
         .app-features p {
             color: #525B6D;
             text-align: center;
-            font-size: 17px;
+            font-size: 30px;
             font-weight: 400;
             font-family: 'Montserrat', sans-serif;
+            margin-top: 50px;
         }
         .other-p {
-            margin-top: 30px;
+            margin-top: 40px;
         }
         .copy-traders, .see-leaders, .get-signal {
             margin: 30px auto 60px;
@@ -391,6 +491,119 @@
         .copy-img {
             width: 80%;
             margin: 0 auto;
+        }
+        
+        .get-signal {
+            position: relative; 
+            top: 70rem;
+        }
+        
+        .get-signal h1 {
+            color: #3374EA;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 800;
+            font-size: 40px;
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .signal-details {
+            top: -200px;
+            font-size: 30px;
+        }
+
+        
+        .blob-signal-wrapper {
+            position: absolute;
+            top: -40px;
+            z-index: -1;
+            width: 100%;
+            overflow-x: hidden;
+        
+        }
+        
+        .signal-blob {
+            position: relative;
+            top: -3rem;
+            left: 50px;
+            width: 1415px;
+            height: 1600px;
+        }
+        
+        .signal-packs {
+            position: absolute;
+            top: 200px;
+            left: 700px;
+            width: 180px;
+            height: 190px;
+            background: #FFFFFF;
+            box-shadow: 0px 20px 17px #1C19230D;
+            border-radius: 20px;
+            transform: rotate(5deg)
+        }
+        .signal-packs.two {
+            position: absolute;
+            top: 430px;
+            left: 550px;
+        }
+        
+        .signal-packs.three {
+            position: absolute;
+            top: 445px; 
+            left: 800px;
+        }
+        .pack-img-wrapper {
+            position: relative;
+            top: -20px;
+            height: 100px;
+            width: 100px;
+            margin: auto;
+            border-radius: 50%;
+            background-color: #3374EA;
+        }
+        .pack-img {
+            width: 60px;
+            height: 60px;
+            margin-top: 16px;
+            margin-left: 20px;
+        }
+        .signal-packs p {
+            text-align: center;
+            font-family: 'Montserrat', sans-serif;
+            margin-top: -15px;
+            font-size: 25px;
+        }
+        .signal-packs h5 {
+            text-align: center;
+            font-family: 'Montserrat', sans-serif;
+            color: #3374EA;
+            font-weight: 800;
+            margin-top: 2px;
+            font-size: 28px;
+        }
+        
+        .main-signal-wrapper {
+            display: block;
+            width: 30%;
+        }
+
+        .main-signal-img{            
+            position: relative;
+            top: -410px;
+            left: 600px;
+            width: 100%;
+        }
+        
+        .signal-planner-wrapper {
+            position: relative;
+            top: 1.2rem;
+            left: 30px;
+            width: 100%;
+        
+        }
+        
+        .signal-planner{
+            width: 60%;
         }
 
 }
@@ -467,7 +680,7 @@
     }
     .box p {
         color: #707070;
-        font-size: 13px;
+        font-size: 16px;
         font-weight: 400;
     }
     .app-features {
@@ -547,19 +760,127 @@
         left: 0;
     }
     .get-signal {
-        
+        position: relative; 
+        top: 17rem;
     }
     
-    .blob-signal {
-        width: 70%;
+    .get-signal h1 {
+        color: #3374EA;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 800;
+        font-size: 40px;
+        width: 30%;
+        position: absolute;
+        top: 200px;
+        left: 140px;
+        text-align: left;
+    }
+
+    .signal-details {
+        width: 30%;
+        position: absolute;
+        top: 400px;
+        left: 140px;
+        text-align: left;
+        color: #525B6D;
+        font-size: 14px;
+        font-weight: 400;
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    .blob-signal-wrapper {
+        position: absolute;
+        top: -40px;
+        z-index: -1;
+        width: 100%;
+        overflow-x: hidden;
+    
     }
     
     .signal-blob {
-        /* object-fit:cover; */
-        display: block;
-        position: absolute;
-        left: 28rem;
-        height: unset ;
-        width: 80%;
+        position: relative;
+        top: -3rem;
+        left: 500px;
+        width: 1200px;
+        height: 1000px;
     }
+    
+    .signal-packs {
+        position: absolute;
+        top: 120px;
+        left: 1100px;
+        width: 95px;
+        height: 98px;
+        background: #FFFFFF;
+        box-shadow: 0px 20px 17px #1C19230D;
+        border-radius: 20px;
+        z-index: 2;
+    }
+    .signal-packs.two {
+        position: absolute;
+        top: 220px;
+        left: 1000px;
+    }
+    
+    .signal-packs.three {
+        position: absolute;
+        top: 240px; 
+        left: 1170px;
+    }
+    .pack-img-wrapper {
+        position: relative;
+        top: -20px;
+        width: 53px;
+        height: 53px;
+        margin: auto;
+        border-radius: 50%;
+        background-color: #3374EA;
+    }
+    .pack-img {
+        width: 25px;
+        height: 23px;
+        margin-top: 16px;
+        margin-left: 13px;
+    }
+    .signal-packs p {
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+        margin-top: -15px;
+        font-size: 13px;
+    }
+    .signal-packs h5 {
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        color: #3374EA;
+        font-weight: 800;
+        margin-top: 2px;
+        font-size: 17px;
+    }
+    .main-signal-wrapper {
+        display: block;
+        position: relative;
+        top: 100px;
+        left: 390px;
+        width: 30%;
+    }
+    .main-signal-img{
+        width: 70%;
+    }
+
+    .signal-planner-wrapper {
+        position: relative;
+        top: 5rem;
+        left: 560px;
+        width: 30%;
+    }
+    
+    .signal-planner{
+        width: 100%;
+    }
+
+    .signal-planner:hover{
+        filter: saturate(140%);
+        transform: scale(0.90);
+    }
+
 }

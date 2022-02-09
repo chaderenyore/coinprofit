@@ -1,17 +1,4 @@
-// The App UI changes on mouse hover 
-// $(document).ready(function () {
-//   $('.appui')
-//       .mouseover(function () {
-//       $(this).attr("src", "../assets/images/Asset 1.svg");
-//   })
-//       .mouseout(function () {
-//       $(this).attr("src", "../assets/images/appUI.png");
-//   });
-// });
 
-// APP UI change ends here
-
-// THE ABOUT SLIDE STARTS HERE 
 var slideIndex = 0;
 showSlides();
 
