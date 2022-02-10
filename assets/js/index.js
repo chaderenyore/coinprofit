@@ -41,7 +41,7 @@ function initParadoxWay() {
               dynamicBullets: true,
           },
           autoplay: {
-              delay: 2000,
+              delay: 1000,
             },
           navigation: {
               nextEl: '.listing-carousel-button-next',

@@ -254,7 +254,7 @@
 .signal-details {
     width: 80%;
     position: relative;
-    top: 40px;
+    top: 90px;
     color: #525B6D;
     font-size: 17px;
     font-weight: 400;
@@ -284,11 +284,11 @@
 .signal-packs{
     position: absolute;
     top: 200px;
-    left: 270px;
+    left: 250px;
     width: 100px;
     height: 110px;
     background: #FFFFFF;
-    padding: 5px;
+    padding: 10px;
     box-shadow: 0px 20px 17px #1C19230D;
     border-radius: 10px;
     transform: rotate(2.4deg)
@@ -296,13 +296,13 @@
 .signal-packs.two {
     position: absolute;
     top: 340px;
-    left: 265px;
+    left: 240px;
 }
 
 .signal-packs.three {
     position: absolute;
     top: 475px; 
-    left: 262px;
+    left: 230px;
 }
 .pack-img-wrapper {
     position: relative;
@@ -316,6 +316,7 @@
 .signal-packs p {
     text-align: center;
     font-family: 'Poppins', sans-serif;
+    font-size: 12px;
     color: #404040;
     margin-top: -15px;
     line-height: 1.2;
@@ -340,7 +341,7 @@
     position: relative;
     top: 4.1rem;
     left: -30px;
-    width: 100%;
+    width: 90%;
 }
 
 .signal-planner{
@@ -397,7 +398,7 @@
     top: 45rem;
     width: 100%;
     float: left;
-    height: 1200px;
+    height: 1100px;
     /* background-color: #677BFF; */
     background: transparent linear-gradient(180deg, #22A1F5 0%, #677BFF 100%) 0% 0% no-repeat padding-box;
     padding-top: 100px;
@@ -493,7 +494,7 @@
 	border-radius: 10px;
 	transition: all .3s ease-in-out;
     height: 350px;
-    width: 95%;
+    width: 90%;
     margin: 0 auto;
 }
 
@@ -527,7 +528,7 @@
 }
 .leader-level {
     position:absolute;
-    right: -14px;
+    right: -5px;
     top: -20px;
 }
 .swiper-slide-active .testimonials-text {
@@ -540,7 +541,7 @@
 .testimonials-text .username {
     font-family: 'Montserrat', sans-serif;
     font-size: 17px;
-    margin-top: 20px ;
+    margin-top: 8px ;
     text-align: center;
     color: #F7FF00;
 }
@@ -633,6 +634,52 @@
     fill: #FFFFFF;
 }
 
+
+
+.app-features-two {
+    position: relative;
+    top: 114rem;
+    width: 100%;
+}
+
+.create-trade-plan {
+    position: relative;
+    top: -65rem;
+    font-family: 'Montserrat', sans-serif;
+    width: 90%;
+    margin: 0 auto;
+}
+.create-trade-plan h1 {
+    color: #3374EA;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    text-align: center;;
+}
+.create-trade-plan p {
+    margin-top: 30px;
+    color: #525B6D;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+}
+.create-trade-plan span {
+    margin-top: 30px;
+    color: #525B6D;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    width: 40%;
+}
+.trade-img-box {
+    width: 90%;
+}
+.trade-img  {
+    width: 100%;
+}
+
+
 /* START IPAD PRO SCREEN SIZE DESIGN */
 
 @media only screen and (min-width: 1024px) {
@@ -686,7 +733,7 @@
             font-weight: unset;
             width: 60%;
             color: #525B6D;
-            font-size: 20px;
+            font-size: 17px;
             font-family: 'Montserrat', sans-serif;
             text-align: left;
             margin: 10px;
@@ -951,6 +998,27 @@
         }
         .signal-img-wrapper img {
             width: 380px;
+        }
+        .app-features-two {
+            height: 80vh;
+            position: relative;
+            top: 125rem;
+            width: 100%;
+            margin: auto;
+        }
+        .create-trade-plan h1 {
+            color: #3374EA;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 800;
+            font-size: 40px;
+            text-align: center;
+        }
+        .create-trade-plan p {
+            color: #525B6D;
+            font-size: 30px;
+            font-weight: 400;
+            font-family: 'Montserrat', sans-serif;
+            margin-top: 50px;
         }
 
 }
@@ -1254,7 +1322,7 @@
         height: 1000px;
     }
     .swiper-container {
-        width: 80%;
+        width: 90%;
     }
     .listing-carousel-button{
         position: absolute;
@@ -1264,10 +1332,53 @@
         position: absolute;
         left: 13%;
         top: 250px;
-        margin-left: -35px;
+        margin-left: -20px;
     }
     .signal-img-wrapper img {
         width: 320px;
     }
+    .app-features-two {
+        height: 100vh;
+        position: relative;
+        top: 75rem;
+        width: 100%;
+    }
 
+    
+    .create-trade-plan h1 {
+        color: #3374EA;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 800;
+        font-size: 40px;
+        width: 40%;
+        position: absolute;
+        top:70rem;
+        right: 60px;
+        text-align: left;
+    }
+    .create-trade-plan p {
+        color: #525B6D;
+        margin-top: 20px;
+        text-align: center;
+        font-size: 14px;
+        font-weight: 500;
+        font-family: 'Montserrat', sans-serif;
+        position: absolute;
+        top: 75rem;
+        left: 680px;
+        text-align: left;
+        width: 40%;
+    }
+
+    .trade-img-box {
+        width: 70%;
+    }
+    .trade-img{
+        width: 50%;
+        transition: 0.3s ease;
+    }
+    .trade-img:hover{
+        filter: saturate(140%);
+        transform: scale(0.90);
+    }
 }
