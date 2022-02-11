@@ -1,3 +1,18 @@
+//  Back to top feature
+window.addEventListener('scroll', function() {
+    let backToUp = this.document.querySelector('.scrollTop');
+    backToUp.classList.toggle("scrollactive", window.scrollY > 200)
+})
+
+function scrollToTop(){
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    })
+}
+
+// Ends Back to top
+
 // Start navbar
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");

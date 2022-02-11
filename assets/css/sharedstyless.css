@@ -18,6 +18,17 @@
 
 body {
     background-color:var(--light-color);
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+    width: 15px;
+}
+::-webkit-scrollbar-track {
+    border: 2px solid #95c8d1;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 30px;
+    background-color: #3374EA;
 }
 
 li {
@@ -37,7 +48,30 @@ a {
     background-color: rgba(0,0,0,0.5);
     z-index: 1;
 } 
-
+.scrollTop {
+    position: fixed; 
+    bottom: 400px; 
+    right: 30px; 
+    z-index: 10; /* Make sure it does not overlap */
+    background: greenyellow url('../images/rocket.png'); 
+    width: 100px;
+    height: 100px;
+    cursor: pointer; 
+    padding: 25px; 
+    border-radius: 50%;
+    background-size: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s;
+  }
+  .scrollTop.scrollactive {
+      bottom: 40px;
+    visibility: visible;
+    opacity: 1;
+  }
+  
 .header{
     font-family: sans-serif;
 
@@ -114,9 +148,28 @@ nav ul li a:active {
     transition: all 0.3s ease-in-out;
     background-color: var(--dark-color);
 }
+.bar:nth-child(2) {
+    margin-left: 20px;
+}
 /* on ipad pro screen */
 
 @media only screen and (max-width: 1024px) {
+    .scrollTop {
+        position: fixed; 
+        bottom: 400px; 
+        right: 90px; 
+        width: 100px;
+        height: 100px;
+        cursor: pointer; 
+        padding: 25px; 
+        border-radius: 50%;
+        background-size: 40px;
+        background-repeat: no-repeat;
+        background-position: center;
+        visibility: hidden;
+        opacity: 0;
+        transition: 0.3s;
+      }
     .navbar {
         width: 100%;
         margin: auto;
@@ -127,10 +180,10 @@ nav ul li a:active {
     }
     
     #moon-icon {
-        width: 30px;
+        width: 80px;
         cursor: pointer;
         position: absolute;
-        top: 30px;
+        top: 25px;
         left: 280px;
     }
     
@@ -150,6 +203,24 @@ nav ul li a:active {
 
 /* On Mobile Screens */
 @media only screen and (max-width: 440px) {
+    .scrollTop {
+        position: fixed; 
+        bottom: 400px; 
+        right: 9px; 
+        z-index: 99; /* Make sure it does not overlap */
+        background: greenyellow url('../images/rocket.png'); 
+        width: 80px;
+        height: 80px;
+        cursor: pointer; 
+        padding: 10px; 
+        border-radius: 50%;
+        background-size: 40px;
+        background-repeat: no-repeat;
+        background-position: center;
+        visibility: hidden;
+        opacity: 0;
+        transition: 0.3s;
+      }
     .navbar {
         padding-top:1rem;
         width: 100%;
@@ -159,7 +230,7 @@ nav ul li a:active {
         border-bottom-left-radius: 15px;
         border-bottom-right-radius: 15px;
         position: fixed;
-        z-index: 2;
+        z-index: 100;
 
     }
     .logo {
@@ -175,7 +246,7 @@ nav ul li a:active {
         width: 30%;
         position: absolute;
         top: 10px;
-        left: 200px;
+        left: 180px;
     }
     nav ul {
         position: fixed;
