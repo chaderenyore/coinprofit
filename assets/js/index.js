@@ -1,5 +1,42 @@
+// PAGE SCROLL ANIMATIONS STARTS HERE
 
-var slideIndex = 0;
+const faders = document.querySelectorAll(".fadeIn-scroll");
+const slideIn = document.querySelectorAll(".slideIn");
+
+
+const appearOptions = {
+  threshold: 0,
+  rootMargin: "0px 0px -250px 0px"
+};
+
+const appearOnScroll = new IntersectionObserver(function(
+  entries,
+  appearOnScroll
+) {
+  entries.forEach(entry => {
+    if (!entry.isIntersecting) {
+      return;
+    } else {
+      entry.target.classList.add("appear");
+      appearOnScroll.unobserve(entry.target);
+    }
+  });
+},
+appearOptions);
+
+faders.forEach(fader => {
+  appearOnScroll.observe(fader);
+});
+
+slideIn.forEach(slideIn => {
+  appearOnScroll.observe(slideIn);
+});
+
+// PAGE SCROLL ANIMATIONS ENDS HERE
+
+// About slider starts here
+
+var slideIndex = 0; 
 showSlides();
 
 function showSlides() {
@@ -18,9 +55,9 @@ function showSlides() {
   dots[slideIndex-1].className += " dot-active";
   setTimeout(showSlides, 2000); // Change image every 2 seconds
 }
-// THE ABOUT SLIDE ENDS HERE 
+// About slider ends here
 
-//   all ------------------
+// leaders silder starts here
 
 function initParadoxWay() {
   "use strict";
@@ -59,14 +96,6 @@ function initParadoxWay() {
       });
   }
 
-
-
-  
-// bubbles -----------------
-  
-  
- 
-  
 }
 
 //   Init All ------------------
