@@ -726,15 +726,8 @@
     font-weight: 800;
     text-align: center;
 } 
-.trade-lessons p {
-    margin: 30px auto;
-    width: 80%;
-    color: #525B6D;
-    text-align: center;
-    font-size: 17px;
-    font-weight: 400;
-    font-family: 'Montserrat', sans-serif;
-}
+
+
 .trade-img-box {
     width: 90%;
 }
@@ -776,7 +769,7 @@
 
 .auto-track {
     padding-top: 150px;
-    padding-bottom: 300px;
+    padding-bottom: 100px;
 }
 .auto-track h1 {
     color: #FFFFFF;
@@ -789,8 +782,8 @@
     width: 80%;
     color: #ffffff;
     text-align: center;
-    font-size: 19px;
-    font-weight: 500;
+    font-size: 17px;
+    font-weight: 400;
     font-family: 'Montserrat', sans-serif;
 }
 .track-img-box {
@@ -833,12 +826,6 @@
   background-color: #fff;
   color: #3374ea;
 }
-.btn-1::after {
-    height: 0;
-    left: 0;
-    top: 0;
-    width: 100%;
-  }
 .custom-shape-divider-bottom-1644660326 {
     position: absolute;
     bottom: 0;
@@ -857,7 +844,134 @@
 }
 
 .custom-shape-divider-bottom-1644660326 .shape-fill {
-    fill: #FFFFFF;
+    fill: #F2F8FF;
+}
+
+
+.profit-loss-sec {
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+.profit-loss {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.profit-loss h1 {
+    text-align: center;
+    color: #3374EA;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 32px;
+}
+.Hprofit {
+    color: #00BE13;
+}
+.Hslash {
+    color: #BCBCBC;
+}
+.Hloss {
+    color: #FF0000;
+}
+.proft-loss-img-box {
+    width: 90%;
+    margin: 0 auto;
+}
+.proft-loss-img {
+    width: 100%;
+}
+
+
+/* share */
+
+.share-portfolio-sec {
+    background-color: #fff;
+    position: relative;
+}
+.custom-shape-divider-top-1644670257 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1644670257 svg {
+    position: relative;
+    display: block;
+    width: calc(145% + 1.3px);
+    height: 112px;
+}
+
+.custom-shape-divider-top-1644670257 .shape-fill {
+    fill: #F2F8FF;
+}
+
+.share-portfolio {
+    padding-top: 110px;
+    padding-bottom: 200px; 
+
+}
+
+.share-portfolio h1 {
+    text-align: center;
+    color: #3374EA;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+}
+/* .share-blob-wrapper {
+    position: absolute;
+    width: 100%;
+
+}
+
+.share-blob {
+    position: relative;
+    top: 5rem;
+    width: 100%;
+} */
+
+.share-portfolio-img-box {
+    width: 90%;
+    margin: 0 auto;
+    z-index: 1;
+    
+}
+.share-portfolio-img {
+    width: 100%;
+}
+
+.share-portfolio p {
+    margin: 30px auto;
+    width: 80%;
+    color: #525B6D;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.custom-shape-divider-bottom-1644669891 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1644669891 svg {
+    position: relative;
+    display: block;
+    width: calc(145% + 1.3px);
+    height: 169px;
+}
+
+.custom-shape-divider-bottom-1644669891 .shape-fill {
+    fill: #F2F8FF;
 }
 
 /* START IPAD PRO SCREEN SIZE DESIGN */
@@ -1284,6 +1398,49 @@
         }
         .auto-track-img {
             width: 100%;
+        }
+        .profit-loss h1 {
+            width: 60%;
+            margin: 0 auto;
+            text-align: center;
+            color: #3374EA;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 800;
+            font-size: 48px;
+        }
+
+        .proft-loss-img-box {
+            width: 90%;
+            margin: 0 auto;
+        }
+        .proft-loss-img {
+            width: 80%;
+            margin-left: 70px;
+        }
+        .share-portfolio h1 {
+            width: 60%;
+            margin: 0 auto;
+            text-align: center;
+            color: #3374EA;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 800;
+            font-size: 48px;
+        }
+        .share-portfolio-box {
+            width: 90%;
+            margin: 0 auto;
+        }
+        .share-portfolio-img {
+            width: 80%;
+            margin-left: 70px;
+        }
+        .share-portfolio p{
+            margin: 30px auto;
+            width: 80%;
+            color: #525B6D;
+            text-align: center;
+            font-size: 26px;
+            font-family: 'Montserrat', sans-serif;
         }
 
 }
@@ -1768,4 +1925,51 @@
         position: relative;
         text-transform: uppercase;
       }
+
+      .proft-loss-img-box {
+        width: 60%;
+        margin: 0 auto;
+    }
+    .proft-loss-img {
+        width: 50%;
+        margin-left: 150px;
+        
+    }
+    /* .. */
+    .share-portfolio {
+        height: 200vh;
+    }
+
+    .share-portfolio h1 {
+        color: #3374EA;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 800;
+        font-size: 40px;
+        width: 40%;
+        float: left;
+        margin-left: 50px;
+        text-align: left;
+
+    }
+    .share-portfolio p {
+        color: #525B6D;
+        margin-top: 20px;
+        margin-left: 50px;
+        text-align: left;
+        font-size: 14px;
+        font-weight: 500;
+        font-family: 'Montserrat', sans-serif;
+        width: 40%;
+        float: left;
+    }
+    .share-portfolio-box {
+        width: 60%;
+        position:absolute;
+        left: 300px;
+    }
+    .share-portfolio-img {
+        width: 60%;
+        margin-left: 160px;
+    }
+
 }
