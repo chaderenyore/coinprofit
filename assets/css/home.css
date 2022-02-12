@@ -132,8 +132,9 @@
   }
   .app-download {
       display: block;
-      width: 40%;
-      margin: 10px auto;
+      width: 45%;
+      margin-top: 10px;
+      margin-left: 90px;
   }
 
   .appUI-wrapper {
@@ -887,6 +888,7 @@
 .share-portfolio-sec {
     background-color: #fff;
     position: relative;
+    height: 126vh;
 }
 .custom-shape-divider-top-1644670257 {
     position: absolute;
@@ -921,30 +923,29 @@
     font-weight: bold;
     font-size: 30px;
 }
-/* .share-blob-wrapper {
+.share-blob-wrapper {
+    width: 20%;
     position: absolute;
-    width: 100%;
+    top: 300px;
 
 }
-
 .share-blob {
-    position: relative;
-    top: 5rem;
-    width: 100%;
-} */
-
+    width: 380px;
+    height: 400px;
+    opacity:0.8;
+}
 .share-portfolio-img-box {
     width: 90%;
     margin: 0 auto;
-    z-index: 1;
     
 }
 .share-portfolio-img {
     width: 100%;
+    position: absolute;
 }
 
 .share-portfolio p {
-    margin: 30px auto;
+    margin: 600px auto 0;
     width: 80%;
     color: #525B6D;
     text-align: center;
@@ -973,6 +974,67 @@
 .custom-shape-divider-bottom-1644669891 .shape-fill {
     fill: #F2F8FF;
 }
+
+.exchange-sec {
+    margin-top: 100px;
+    /* padding-top: 60px; */
+    margin-bottom: 200px;
+}
+
+.exchange-wrapper h1 {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    color: #3374EA;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 32px;
+}
+.get-details {
+    width: 80%;
+    margin: 50px auto 0;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+
+}
+.exchange-box-wrapper {
+    margin-top: 30px;
+    margin-left: 20px;
+    display: inline-block;
+}
+.exchange-box {
+    margin: 0 auto;
+    width: 150px;
+    height: 180px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000008;
+    border-radius: 20px;
+    opacity: 1;
+}
+.exchange-logo {
+    margin-top: 10px;
+    margin-left:20px;
+    width: 100px;
+    height: 120px;
+}
+.exchange-box p {
+    padding-top: 3px;
+    color: #525B6D;
+    text-align: center;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.exchange-download-wrapper{
+    margin-top: 2.5rem;
+  }
+  .exchange-download {
+      display: block;
+      width: 45%;
+      margin-top: 10px;
+      margin-left: 90px;
+  }
+
 
 /* START IPAD PRO SCREEN SIZE DESIGN */
 
@@ -1072,7 +1134,7 @@
         }
         .app-download {
             display: inline-block;
-            width: 35%;
+            width: 45%;
             margin: 10px auto;
         }
           .appUI-wrapper {
@@ -1426,23 +1488,117 @@
             font-weight: 800;
             font-size: 48px;
         }
+        .share-blob-wrapper {
+            width: 60%;
+            position: absolute;
+            top: 330px;
+            left: 90px;
+        
+        }
+        .share-blob {
+            width: 800px;
+            height: 900px;
+        }
         .share-portfolio-box {
             width: 90%;
             margin: 0 auto;
         }
         .share-portfolio-img {
-            width: 80%;
+            width: 75%;
             margin-left: 70px;
         }
         .share-portfolio p{
-            margin: 30px auto;
+            margin: 1300px auto 0;
             width: 80%;
             color: #525B6D;
             text-align: center;
             font-size: 26px;
             font-family: 'Montserrat', sans-serif;
         }
+        .exchange-sec {
+            text-align: center;
+            width: 80%;
+            margin: 100px auto 200px;
+            /* padding-top: 60px; */
 
+        }
+        .exchange-wrapper h1 {
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+            color: #3374EA;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 800;
+            font-size: 42px;
+        }
+        .exchange-box {
+            margin: 0 auto;
+            width: 200px;
+            height: 160px;
+            background: #FFFFFF 0% 0% no-repeat padding-box;
+            box-shadow: 0px 3px 6px #00000008;
+            border-radius: 20px;
+            opacity: 1;
+        }
+
+        .exchange-logo {
+            margin-top: 10px;
+            margin-left:10px;
+            width: 95px;
+            height: 95px;
+        }
+        .exchange-download-wrapper{
+            margin-top: 2.5rem;
+          }
+          .exchange-download {
+              display: inline-block;
+              width: 30%;
+              margin-top: 10px;
+          }
+        .exchange-box p {
+            padding-top: 10px;
+            color: #525B6D;
+            text-align: center;
+            font-size: 14px;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        /* .exchange-wrapper h1 {
+
+        .get-details {
+            width: 80%;
+            margin: 50px auto 0;
+            text-align: center;
+            font-family: 'Montserrat', sans-serif;
+        
+        }
+        .exchange-box-wrapper {
+            margin-top: 30px;
+            margin-left: 20px;
+            display: inline-block;
+        }
+        .exchange-box {
+            margin: 0 auto;
+            width: 150px;
+            height: 180px;
+            background: #FFFFFF 0% 0% no-repeat padding-box;
+            box-shadow: 0px 3px 6px #00000008;
+            border-radius: 20px;
+            opacity: 1;
+        }
+        .exchange-logo {
+            margin-top: 10px;
+            margin-left:20px;
+            width: 100px;
+            height: 120px;
+        }
+        .exchange-box p {
+            padding-top: 3px;
+            color: #525B6D;
+            text-align: center;
+            font-size: 14px;
+            font-family: 'Montserrat', sans-serif;
+        } */
 }
 /* START COMPUTER SCREEN DESIGN */
 @media only screen and (min-width: 1200px) {
@@ -1513,7 +1669,7 @@
       }
     .app-download {
         display: inline-block;
-        width: 25%;
+        width: 35%;
         margin: 10px auto;
     }
 
@@ -1937,30 +2093,41 @@
     }
     /* .. */
     .share-portfolio {
-        height: 1000px;
         padding-top: 300px;
     }
 
     .share-portfolio h1 {
         color: #3374EA;
         font-family: 'Montserrat', sans-serif;
-        font-weight: 800;
-        font-size: 40px;
+        font-weight:bolder;
+        font-size: 48px;
         width: 40%;
-        margin-left: 90px;
+        margin-left: 120px;
         text-align: left;
 
     }
     .share-portfolio p {
         color: #525B6D;
         margin-top: 20px;
-        margin-left: 90px;
+        margin-left: 120px;
         text-align: left;
         font-size: 14px;
         font-weight: 500;
         font-family: 'Montserrat', sans-serif;
-        width: 40%;
+        width: 35%;
         float: left;
+    }
+    .share-blob-wrapper {
+        width: 60%;
+        position: absolute;
+        top: 200px;
+        left: 500px;
+    
+    }
+    .share-blob {
+        width: 500px;
+        height: 500px;
+        margin-left: 200px;
     }
     .share-portfolio-box {
         width: 50%;
@@ -1977,6 +2144,60 @@
         filter: saturate(140%);
         transform: scale(0.90);
     }
+    .exchange-sec {
+        width: 80%;
+        margin-top: 100px;
+        /* padding-top: 60px; */
+        margin-bottom: 200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .exchange-wrapper h1 {
+        width: 80%;
+        margin: 0 auto 30px;
+        text-align: center;
+        color: #3374EA;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 800;
+        font-size: 42px;
+    }
+    .exchange-box {
+        margin: 0 auto;
+        width: 160px;
+        height: 160px;
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        box-shadow: 0px 3px 6px #00000008;
+        border-radius: 20px;
+        opacity: 1;
+    }
+
+
+    .exchange-logo {
+        margin-top: 10px;
+        width: 50px;
+        height: 95px;
+    }
+
+    .exchange-box:hover {
+        filter: saturate(140%);
+        transform: scale(0.90);
+    }
+    .exchange-download-wrapper{
+        margin-top: 2.5rem;
+      }
+      .exchange-download {
+          display: inline-block;
+          width: 20%;
+          margin-top: 10px;
+      }
+    .exchange-box p {
+        padding-top: 3px;
+        color: #525B6D;
+        text-align: center;
+        font-size: 16px;
+        font-family: 'Montserrat', sans-serif;
+    }
+
 
 
 }
