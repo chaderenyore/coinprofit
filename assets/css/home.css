@@ -728,6 +728,15 @@
     text-align: center;
 } 
 
+.trade-lessons p {
+    margin: 30px auto;
+    width: 80%;
+    color: #525B6D;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+}
 
 .trade-img-box {
     width: 90%;
@@ -978,7 +987,7 @@
 .exchange-sec {
     margin-top: 100px;
     /* padding-top: 60px; */
-    margin-bottom: 200px;
+    margin-bottom: 140px;
 }
 
 .exchange-wrapper h1 {
@@ -1033,6 +1042,18 @@
       width: 45%;
       margin-top: 10px;
       margin-left: 90px;
+  }
+
+  .user-review-box {
+      width: 80%;
+  }
+  .user-review-box h1 {
+    margin: 0 auto;
+    text-align: center;
+    color: #3374EA;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 32px;
   }
 
 
@@ -2197,7 +2218,21 @@
         font-size: 16px;
         font-family: 'Montserrat', sans-serif;
     }
-
-
-
+    .accordion{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .accordionBox {
+        display: inline-block;
+        position: relative;
+        margin: 10px 60px ;
+    }
+    .accordionBox .faq-label {
+        width: 400px;
+        position: relative;
+        padding: 20px;
+        background-color: #fff;
+        color: #22A1F5;
+        border-radius: 10px;
+    }
 }
