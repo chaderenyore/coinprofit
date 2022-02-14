@@ -253,17 +253,18 @@ nav ul li a:active {
     }
     .logo {
         height: 90px;
-        left: 20px;
+
         object-fit: cover;
         position: absolute;
         top: 0;
+        left: 20px;
         width: 150px;
     }
 
     #moon-icon {
         width: 25%;
         position: absolute;
-        top: 20px;
+        top: 13px;
         left: 180px;
     }
     nav ul {
