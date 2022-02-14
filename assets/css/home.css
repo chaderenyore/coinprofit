@@ -1004,7 +1004,6 @@
     margin: 50px auto 0;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
-
 }
 .exchange-box-wrapper {
     margin-top: 30px;
@@ -1038,6 +1037,115 @@
     margin-top: 2.5rem;
   }
 .exchange-download {
+      display: block;
+      width: 45%;
+      margin-top: 10px;
+      margin-left: 90px;
+}
+
+
+.users-review {
+    width: 100%;
+    height: 900px;
+    margin: 0 auto;
+}
+.users-review h1 {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    letter-spacing: 0px;
+    color: #3374EA;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 32px;
+    text-transform: capitalize;
+    opacity: 1;
+}
+
+.user-review-box {
+    padding:  20px 3px;
+    margin: 30px auto;
+    width: 350px;
+    height: 500px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 20px 17px #1C192305;
+    border-radius: 20px;
+    opacity: 1;
+    text-align: center;
+
+}   
+
+.user-review-box p {   
+    margin: 20px 0;
+    padding: 30px 0;
+    color: #525B6D;
+    text-align: center;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.user-review-box h3 {
+    margin: 20px 0;
+}
+.splide .splide__arrows {
+    position: absolute;
+    top: 250px;
+}
+.splide__arrows .splide__arrow--prev {
+    left: -10px;
+}
+.splide__arrows .splide__arrow--next {
+    left: 325px;
+}
+.splide .splide__pagination {
+    position: relative;
+    top: 40px;
+    text-align: center;
+}
+.splide__pagination__page {
+    background-color: blue;
+}
+
+.users-img-wrapper {
+    position: relative;
+    top: 0px;
+	height: 90px;
+	width:  90px;
+	margin: auto;
+	border: 8px solid #22A1F5;
+	border-radius: 50%;
+	overflow: hidden;
+}
+.users-img-wrapper img {
+    position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	border-radius: 50%;
+	object-fit: cover;
+	transition: 0.3s ease;
+}
+
+.get-details-review {
+    width: 80%;
+    margin: 50px auto 0;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+
+}
+.get-details-review {
+    width: 80%;
+    margin: 50px auto 0;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.review-download-wrapper{
+    margin: 2.5rem auto 0;
+  }
+.review-download {
       display: block;
       width: 45%;
       margin-top: 10px;
@@ -1641,6 +1749,72 @@
             font-size: 14px;
             font-family: 'Montserrat', sans-serif;
         }
+
+        .user-review-box {
+            padding:  40px 3px 0;
+            margin: 30px auto;
+            width: 800px;
+            height: 450px;
+            background: #FFFFFF 0% 0% no-repeat padding-box;
+            box-shadow: 0px 20px 17px #1C192305;
+            border-radius: 20px;
+            opacity: 1;
+            text-align: center;
+        
+        }   
+        
+        .user-review-box p {   
+            margin: 20px 0;
+            padding: 20px;
+            color: #525B6D;
+            text-align: center;
+            font-size: 14px;
+            font-family: 'Montserrat', sans-serif;
+        }
+        
+        .user-review-box h3 {
+            margin: 20px 0;
+        }
+        .splide .splide__arrows {
+            position: absolute;
+            top: 210px;
+        }
+        .splide__arrows .splide__arrow--prev {
+            left: -10px;
+        }
+        .splide__arrows .splide__arrow--next {
+            left: 780px;
+        }
+        .splide .splide__pagination {
+            position: relative;
+            top: 40px;
+            text-align: center;
+        }
+
+        .splide__pagination__page {
+            background-color: blue;
+        }
+        
+
+        .users-img-wrapper {
+            position: relative;
+            top: 0px;
+            height: 90px;
+            width:  90px;
+            margin: auto;
+            border: 8px solid #22A1F5;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+        .review-download-wrapper{
+            margin: 2.5rem auto 0;
+          }
+        .review-download {
+            display: inline-block;
+            width: 25%;
+            margin-top: 10px;
+            margin-left: 90px;
+      }
 
         .learn-more{
             height: 800px;
@@ -2263,6 +2437,66 @@
         font-size: 16px;
         font-family: 'Montserrat', sans-serif;
     }
+
+    .users-review h1 {
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+        letter-spacing: 0px;
+        color: #3374EA;
+        font-family: 'Montserrat', sans-serif;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 800;
+        font-size: 42px;
+        text-transform: capitalize;
+        opacity: 1;
+    }
+    .user-review-box {
+        margin: 30px auto;
+        width: 800px;
+        height: 300px;
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        box-shadow: 0px 20px 17px #1C192305;
+        border-radius: 20px;
+        opacity: 1;
+    }
+
+    .user-review-box p {   
+        margin: 20px 0;
+        padding: 20px;
+        color: #525B6D;
+        text-align: center;
+        font-size: 14px;
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    .user-review-box h3 {
+        margin: 20px 0;
+    }
+    .splide .splide__arrows {
+        position: absolute;
+        top: 190px;
+    }
+    .splide__arrows .splide__arrow--prev {
+        left: -12px;
+    }
+    .splide__arrows .splide__arrow--next {
+        left: 785px;
+    }
+    .splide .splide__pagination {
+        position: relative;
+        top: 40px;
+        text-align: center;
+    }
+.review-download-wrapper{
+    margin: 2.5rem auto 0;
+  }
+    .review-download {
+        display: inline-block;
+        width: 20%;
+        margin-top: 10px;
+    }
+
     .learn-more{
         height: 500px;
         width: 90%;

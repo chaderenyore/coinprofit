@@ -104,6 +104,14 @@ $(document).ready(function () {
 });
 
 
+new Splide( '.splide' ).mount();
+
+new Splide( '.splide', {
+  classes: {
+		pagination: 'splide__pagination your-class-pagination',
+		page      : 'splide__pagination__page your-class-page',
+  },
+} );
 
 
 // when you hover the learn more video, this happens
