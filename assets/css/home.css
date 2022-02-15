@@ -29,6 +29,7 @@
     width: 140px;
 }
 
+
 .first-page {
     width: 100%;
     position: relative;
@@ -514,7 +515,7 @@
 	height: 50px;
 	line-height: 50px;
 	margin-top: -25px;
-	z-index: 100;
+	z-index: 10;
 	cursor: pointer;
 	background: #da0c0c46;
 	box-shadow: 0 9px 26px rgba(58, 87,135,0.45);
@@ -1067,7 +1068,7 @@
     padding:  20px 3px;
     margin: 30px auto;
     width: 350px;
-    height: 500px;
+    height: 450px;
     background: #FFFFFF 0% 0% no-repeat padding-box;
     box-shadow: 0px 20px 17px #1C192305;
     border-radius: 20px;
@@ -1078,10 +1079,11 @@
 
 .user-review-box p {   
     margin: 20px 0;
-    padding: 30px 0;
+    padding: 10px 20px;
     color: #525B6D;
     text-align: center;
-    font-size: 14px;
+    font-size: 16px;
+    font-weight: 400;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -1090,7 +1092,7 @@
 }
 .splide .splide__arrows {
     position: absolute;
-    top: 250px;
+    top: 280px;
 }
 .splide__arrows .splide__arrow--prev {
     left: -10px;
@@ -1100,10 +1102,13 @@
 }
 .splide .splide__pagination {
     position: relative;
-    top: 40px;
+    top: 10px;
     text-align: center;
 }
 .splide__pagination__page {
+    background-color: #00BE13;
+}
+.splide__pagination__page.is-active {
     background-color: blue;
 }
 
@@ -1154,7 +1159,7 @@
 
 .learn-more{
     position: relative;
-    height: 800px;
+    height: 650px;
     width: 90%;
     margin: 0 auto;
 }
@@ -1168,61 +1173,201 @@
     font-size: 32px;
 }
 
-.vid-close,
+.learn-more p {
+    margin: 20px 0;
+    padding: 10px 20px;
+    color: #525B6D;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 25px;
+}
+.learn-moreBTN {
+    margin-top: 10px;
+    margin-left: 85px;
+    background-color: #fff; /* Green */
+    border: none;
+    border-radius: 50px;
+    color: #3374ea;
+    font-family: 'Montserrat', sans-serif;
+    padding: 15px 32px; /* padding on ipad needs adjustmetns*/
+    text-align: center;
+    text-decoration: none;
+    font-size: 19px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
 .vid-play {
-    display: none;
+    position:absolute;
+    left: 140px;
+    top: 200px;
+    background-color: #fff;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    z-index: 1;
+    cursor: pointer;
+    animation: pulse 2s infinite;
 
 }
-.learn-vid-wrapper {
-    margin: 30px 0;
+
+.vid-play i {
+    margin-top: 20px;
+    margin-left: 25px;
+}
+.vid-play-wrapper {
+    margin: 20px auto;
+    width: 300px;
+    height: 300px;
+    background: url('../images/video-play.jpg') no-repeat center center fixed;
+    box-shadow: 0px 30px 20px #22A1F51A;
+    border-radius: 23px;
+    opacity: 1;
+}
+
+.video-img {
+    width: 300px;
+    height: 300px;
+    position:absolute;
+    background:  linear-gradient(180deg, #75E7FF 0%, #677BFF 100%) 0% 0% no-repeat padding-box;
+    border-radius: 23px;
+    opacity: 0.9;
+    transition: 1s ease-out;
 }
 
 
-.vid-iframe-container{
-    position: relative;
+.video-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
     width: 100%;
-    padding-bottom: 56.25%; 
-    height: 0;
-  }
-.vid-iframe-container iframe{
+    background: #000;
+    z-index: 20;
+    display: grid;
+    place-items: center;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .3s ease-in;
+}
+
+.video-modal.showmodal {
+    visibility: visible;
+    opacity: 1;
+    pointer-events: all;
+}
+
+.modal-container{
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+    position: relative;
+}
+
+.vid-close {
+    width: 80px;
+    height: 80px;
+    z-index: 120;
+    cursor: pointer;
+    position: absolute;
+    top: -40px;
+    left: 270px;
+}
+.vid-close svg {
+    float: right;
+    width:20px ;
+    height: 30px;
+    fill: #fff;
+}
+
+.iframe-container {
+    position: relative;
+    width: 95%;
+    padding-top: 50%;
+}
+
+.iframe-container iframe{
     position: absolute;
     top:0;
     left: 0;
+    right: 0;
+    bottom: 0;
     width: 100%;
     height: 100%;
 }
-.vid-overlay {
-    background: transparent linear-gradient(180deg, #75E7FF 0%, #677BFF 100%) 0% 0% no-repeat padding-box;
-    box-shadow: 0px 30px 20px #22A1F51A;
-    border-radius: 23px;
-    opacity: 0.9;
+
+/* code for FAQ SECTION */
+.faq-wrapper {
+    margin-top: 90px;
+    height: 700px;
+
+}
+.faq-wrapper .title{
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #3374EA;
+    font-weight: 600;
 }
 
-.learn-moreBTN {
-    margin:  20px auto 0;
-    background: #000;
-    border: 3px solid #fff;
-    border-radius: 40px;
-    color: #fff;
-    display: block;
-    font-size: 1.6em;
-    font-weight: bold;
-    padding: 10px;
-    position: relative;
-    text-transform: uppercase;
-  }
-.learn-moreBTN::before,
-.learn-moreBTN::after {
-  background: #fff;
-  content: '';
-  position: absolute;
-  z-index: -1;
+
+.questions-container{
+    max-width: 800px;
+    margin: 0 auto;
 }
 
-.learn-moreBTN:hover {
-  background-color: #000;
-  color: #3374ea;
+.question{
+    border-bottom: 1px solid #fff;
+    margin-bottom: 20px;
 }
+.question button{
+    margin: 0 auto;
+    width: 90%;
+    background-color: #fff;
+    color: #3374EA;
+    border-radius: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 15px;
+    border:none;
+    outline: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.question p{
+    font-size: 22px;
+    max-height: 0;
+    opacity: 0;
+    line-height: 1.5;
+    overflow: hidden;
+    transition: all 0.6s ease;
+}
+.d-arrow{
+    transition: transform 0.5s ease-in ;
+    border-radius: 20px;
+    background-color: #F2F8FF;
+    padding: 4px;
+    color: #3374ea;
+}
+
+/*add this class when click*/
+.question p.show{
+    max-height: 200px; 
+    opacity: 1;
+    padding:0px 15px 30px 15px;
+}
+.question button .d-arrow.rotate{
+    transform: rotate(180deg);
+}
+/* END CODE FOR FAQ SECTIONS */
+
+
 /* START IPAD PRO SCREEN SIZE DESIGN */
 
 @media only screen and (min-width: 1024px) {
@@ -1791,9 +1936,6 @@
             text-align: center;
         }
 
-        .splide__pagination__page {
-            background-color: blue;
-        }
         
 
         .users-img-wrapper {
@@ -1807,38 +1949,108 @@
             overflow: hidden;
         }
         .review-download-wrapper{
-            margin: 2.5rem auto 0;
-          }
+            margin-left: 190px;
+        }
+    
         .review-download {
             display: inline-block;
-            width: 25%;
-            margin-top: 10px;
-            margin-left: 90px;
-      }
-
-        .learn-more{
-            height: 800px;
-            width: 80%;
-            margin: 0 auto;
+            width: 30%;
+            display: inline-block;
+            margin: 10px 15px;
+        
+        }
+        .learn-more {
+            height: 400px;
         }
         .learn-more h1 {
-            margin: 0 auto;
+            margin: 50px auto 0;
             text-align: center;
             color: #3374ea;
             font-family: 'Montserrat', sans-serif;
             font-weight: 800;
-            font-size: 34px;
-        }
-        
-        .vid-close,
-        .vid-play {
-            display: none;
-        
-        }
-        .learn-vid-wrapper {
-            margin: 30px 0;
+            font-size: 32px;
+            float: left;
+            width: 35%;
         }
 
+        .vid-play {
+            position:absolute;
+            left: 610px;
+            top: 140px;
+            background-color: #fff;
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+            z-index: 3;
+            cursor: pointer;
+        }
+
+        .vid-play i {
+            margin-top: 20px;
+            margin-left: 25px;
+        }
+        .vid-play-wrapper {
+            float: right;
+            margin: 20px auto;
+            width: 500px;
+            height: 300px;
+            background: url('../images/video-play.jpg') no-repeat center center fixed;
+            box-shadow: 0px 30px 20px #22A1F51A;
+            border-radius: 23px;
+            opacity: 1;
+        }
+        
+        .video-img {
+            width: 500px;
+            height: 300px;
+            position:absolute;
+            background:  linear-gradient(180deg, #75E7FF 0%, #677BFF 100%) 0% 0% no-repeat padding-box;
+            border-radius: 23px;
+            opacity: 0.9;
+            transition: 1s ease-out;
+        }
+        .video-img:hover {
+            opacity: 0;
+        }
+
+        .learn-more p {
+            float: left;
+            width: 40%;
+            color: #525B6D;
+            text-align: left;
+            font-size: 16px;
+            font-weight: 500;
+            font-family: 'Montserrat', sans-serif;
+            margin-top: 20px;
+            margin-left: 19px;
+        }
+        .learn-moreBTN {
+            position: relative;
+            margin-top: 10px;
+            margin-left: 20px;
+            background-color: #fff; /* Green */
+            border: none;
+            border-radius: 50px;
+            color: #3374ea;
+            font-family: 'Montserrat', sans-serif;
+            padding: 15px 20px; /* padding on ipad needs adjustmetns*/
+            text-align: center;
+            text-decoration: none;
+            font-size: 19px;
+            font-weight: 700;
+            cursor: pointer;
+        }
+        
+
+    .vid-close {
+        width: 80px;
+        height: 80px;
+        z-index: 120;
+        cursor: pointer;
+        position: absolute;
+        top: -40px;
+        left: 700px;
+    }
 }
 /* START COMPUTER SCREEN DESIGN */
 @media only screen and (min-width: 1200px) {
@@ -2437,14 +2649,17 @@
         font-size: 16px;
         font-family: 'Montserrat', sans-serif;
     }
-
+    .users-review {
+        width: 100%;
+        height: 800px;
+        margin: 0 auto;
+    }
     .users-review h1 {
         width: 80%;
         margin: 0 auto;
         text-align: center;
         letter-spacing: 0px;
         color: #3374EA;
-        font-family: 'Montserrat', sans-serif;
         font-family: 'Montserrat', sans-serif;
         font-weight: 800;
         font-size: 42px;
@@ -2453,8 +2668,9 @@
     }
     .user-review-box {
         margin: 30px auto;
+        padding: 20px 0;
         width: 800px;
-        height: 300px;
+        height: 390px;
         background: #FFFFFF 0% 0% no-repeat padding-box;
         box-shadow: 0px 20px 17px #1C192305;
         border-radius: 20px;
@@ -2462,20 +2678,22 @@
     }
 
     .user-review-box p {   
-        margin: 20px 0;
+        margin: 10px 0;
         padding: 20px;
         color: #525B6D;
         text-align: center;
-        font-size: 14px;
+        font-size: 16px;
         font-family: 'Montserrat', sans-serif;
     }
     
     .user-review-box h3 {
         margin: 20px 0;
     }
+
+    /* Start of splide js file */
     .splide .splide__arrows {
         position: absolute;
-        top: 190px;
+        top: 140px;
     }
     .splide__arrows .splide__arrow--prev {
         left: -12px;
@@ -2485,79 +2703,105 @@
     }
     .splide .splide__pagination {
         position: relative;
-        top: 40px;
+        top: 10px;
         text-align: center;
     }
-.review-download-wrapper{
-    margin: 2.5rem auto 0;
-  }
-    .review-download {
-        display: inline-block;
-        width: 20%;
-        margin-top: 10px;
+
+
+    /* End of splide js file */
+    .review-download-wrapper{
+        margin: 2.5rem 30rem 0;
     }
 
-    .learn-more{
-        height: 500px;
-        width: 90%;
-        margin: 0 auto;
-    }
-    
-    .learn-more h1 {
-        float: left;
-        width: 60%;
-        margin: 50px auto 0;
-        text-align: left;
-        color: #3374ea;
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 800;
-        font-size: 44px;
-        text-transform: capitalize;
-    }
-    .learn-more p {
+    .review-download {
+        display: inline-block;
         width: 40%;
-        position: absolute;
-        top: 130px;
-    }
+        display: inline-block;
+        margin: 10px 15px;
+  }
+  .learn-more {
+    height: 500px;
+}
+  .learn-more h1 {
+    margin: 80px auto 0;
+    margin-left: -40px;
+    text-align: center;
+    color: #3374ea;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 35px;
+    float: left;
+    width: 50%;
+}
+
+  .vid-play-wrapper {
+    float: right;
+    margin: 20px auto;
+    width: 500px;
+    height: 380px;
+    background: url('../images/video-play.jpg') no-repeat center center fixed;
+    box-shadow: 0px 30px 20px #22A1F51A;
+    border-radius: 23px;
+    opacity: 1;
+}
+
+.video-img {
+    width: 500px;
+    height: 380px;
+    position:absolute;
+    background:  linear-gradient(180deg, #75E7FF 0%, #677BFF 100%) 0% 0% no-repeat padding-box;
+    border-radius: 23px;
+    opacity: 0.9;
+    transition: 1s ease-out;
+}
     
-    .vid-close,
-    .vid-play {
-        display: none;
-    
-    }
-    .learn-vid-wrapper {
-        margin: 30px 0;
-    }
-    
-    
-    .vid-iframe-container{
-        margin-left: 600px;
-        position: relative;
-        width: 45%;
-        padding-bottom: 56.25%; 
-        height: 0;
-      }
-    .vid-iframe-container iframe{
-        position: absolute;
-        top:0;
-        left: 0;
-        width: 100%;
-        height: 50%;
+  .vid-play {
+    position:absolute;
+    left: 930px;
+    top: 140px;
+    background-color: #fff;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    z-index: 3;
+    cursor: pointer;
+}
+
+ 
+    .learn-more p {
+        float: left;
+        width: 40%;
+        color: #525B6D;
+        text-align: left;
+        font-size: 14px;
+        font-weight: 500;
+        font-family: 'Montserrat', sans-serif;
+        margin-top: 20px;
+        margin-left: 50px;
+        line-height: 25px;
     }
     .learn-moreBTN {
-        margin-left:1px;
-        background: #000;
-        border: 3px solid #fff;
-        border-radius: 40px;
-        color: #fff;
-        display: block;
-        font-size: 20px;
-        font-weight: bold;
-        padding: 10px;
         position: relative;
-        top: -480px;
-        text-transform: uppercase;
-      }
+        top: 130px;
+        right: 480px;
+        margin-top: 10px;
+        margin-left: 20px;
+        background-color: #fff; 
+        border: none;
+        border-radius: 50px;
+        color: #3374ea;
+        font-family: 'Montserrat', sans-serif;
+        padding: 15px 20px; 
+        text-align: center;
+        text-decoration: none;
+        font-size: 19px;
+        font-weight: 700;
+        cursor: pointer;
+    }
+    .learn-moreBTN:hover {
+        background-color: #3374ea;
+        color: #fff;
+    }
 
     
 /* 

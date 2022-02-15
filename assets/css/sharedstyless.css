@@ -248,7 +248,7 @@ nav ul li a:active {
         border-bottom-left-radius: 15px;
         border-bottom-right-radius: 15px;
         position: fixed;
-        z-index: 100;
+        z-index: 10;
 
     }
     .logo {

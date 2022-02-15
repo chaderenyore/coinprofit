@@ -103,16 +103,57 @@ $(document).ready(function () {
   initParadoxWay();
 });
 
+// For Users Review 
+// new Splide( '.splide' ).mount();
 
-new Splide( '.splide' ).mount();
+// new Splide( '.splide', {
+//   classes: {
+// 		pagination: 'splide__pagination your-class-pagination',
+// 		page      : 'splide__pagination__page your-class-page',
+//   },
+// } );
+document.addEventListener('DOMContentLoaded', function () {
+  var splide = new Splide('.splide', {
+    type         : 'loop',
+    perPage      : 1,
+    autoplay     : true,
+    interval     : 2000, // How long to display each slide
+    pauseOnHover : true, // m
+    pauseOnFocus : false, // must be false
+    resetProgress: false
+  }).mount();
+})
 
-new Splide( '.splide', {
-  classes: {
-		pagination: 'splide__pagination your-class-pagination',
-		page      : 'splide__pagination__page your-class-page',
-  },
-} );
+// end of splider js
 
 
-// when you hover the learn more video, this happens
+// Learn More Video codes starts here. When you click on the play icon, the video pops out of the page
 
+const playIcon = document.querySelector('.vid-play'),
+      closeIcon = document.querySelector('.vid-close');
+const playVideoModal = document.querySelector('.video-modal');
+
+playIcon.addEventListener("click", function(){
+  playVideoModal.classList.add('showmodal');
+
+});
+closeIcon.addEventListener("click", function(){
+  playVideoModal.classList.remove('showmodal');
+  
+});
+
+// Learn more video codes ends here
+
+
+// FAQ SECTION
+const faqbuttons = document.querySelectorAll('.faq-btn');
+
+faqbuttons.forEach( faqbuttons =>{
+    faqbuttons.addEventListener('click',()=>{
+        const faq = faqbuttons.nextElementSibling;
+        const icon = faqbuttons.children[1];
+
+        faq.classList.toggle('show');
+        icon.classList.toggle('rotate');
+    })
+} )
