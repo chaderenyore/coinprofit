@@ -133,12 +133,35 @@ const playIcon = document.querySelector('.vid-play'),
       closeIcon = document.querySelector('.vid-close');
 const playVideoModal = document.querySelector('.video-modal');
 
+// playIcon.addEventListener('click',()=>{
+//             Modal.classList.add('show');
+//         });
+//         Close.addEventListener('click',()=>{
+//             Modal.classList.remove('show');
+//             var iframes = Modal.getElementsByTagName('iframe');
+//             if (iframes != null) {
+//                 for (let i = 0; i < iframes.length; i++) {
+//                     const iframe = iframes[i];
+//                     iframe.src = iframe.src;
+//                 }
+//             }
+//         });
+
 playIcon.addEventListener("click", function(){
   playVideoModal.classList.add('showmodal');
 
 });
 closeIcon.addEventListener("click", function(){
   playVideoModal.classList.remove('showmodal');
+  var iframes = playVideoModal.getElementsByTagName('iframe');
+  if(iframes != null) {
+    for (let i = 0;  i < iframes.length; i++){  
+       const iframe = iframes[i];
+       iframe.src = iframe.src;
+
+      }
+  }
+  
   
 });
 
@@ -146,14 +169,31 @@ closeIcon.addEventListener("click", function(){
 
 
 // FAQ SECTION
-const faqbuttons = document.querySelectorAll('.faq-btn');
+let faqtoggles = document.getElementsByClassName('faqToggle');
+let faqcontentDiv = document.getElementsByClassName('faqContent');
+let faqicons = document.getElementsByClassName('faQicon');
 
-faqbuttons.forEach( faqbuttons =>{
-    faqbuttons.addEventListener('click',()=>{
-        const faq = faqbuttons.nextElementSibling;
-        const icon = faqbuttons.children[1];
 
-        faq.classList.toggle('show');
-        icon.classList.toggle('rotate');
-    })
-} )
+// 
+for(let i=0; i<faqtoggles.length; i++){
+  faqtoggles[i].addEventListener('click', ()=>{
+        if( parseInt(faqcontentDiv[i].style.height) != faqcontentDiv[i].scrollHeight){
+          faqcontentDiv[i].style.height = faqcontentDiv[i].scrollHeight + "px";
+            faqicons[i].classList.remove('fa-caret-down');
+            faqicons[i].classList.add('fa-caret-up');
+        }
+        else{
+          faqcontentDiv[i].style.height = "0px";
+            faqicons[i].classList.remove('fa-caret-down');
+            faqicons[i].classList.add('fa-caret-up');
+        }
+
+        for(let j=0; j<faqcontentDiv.length; j++){
+            if(j!==i){
+              faqcontentDiv[j].style.height = "0px";
+                faqicons[j].classList.remove('fa-caret-down');
+                faqicons[j].classList.add('fa-caret-up');
+            }
+        }
+    });
+}
