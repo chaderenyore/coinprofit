@@ -35,8 +35,7 @@
     position: relative;
 }
 .blob-wrapper {
-    position: relative;
-    top: 40px;
+    position: relative; /* had a top postioning that was 40px */
     overflow-x: hidden;
     z-index: -1;
     height: 710px;
@@ -62,7 +61,7 @@
 
 .about {
     position: absolute;
-    top: 170px;
+    top: 110px; /* was orginally 170px*/
 }
 .about h1 {
     font-family: 'Montserrat', sans-serif;
