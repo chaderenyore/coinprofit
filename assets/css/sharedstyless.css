@@ -54,7 +54,7 @@ a {
     bottom: 400px; 
     right: 30px; 
     z-index: 10; /* Make sure it does not overlap */
-    background: rgba(12, 14, 12, 0.164) url('../images/rocket.png'); 
+    background: #FFA94F url('../images/rocket.png'); 
     width: 40px;
     height: 40px;
     cursor: pointer; 
@@ -173,7 +173,7 @@ nav ul li a:active {
         cursor: pointer; 
         padding: 25px; 
         border-radius: 50%;
-        background-color: rgba(12, 14, 12, 0.164);
+        background-color: #FFA94F;
         background-size: 40px;
         background-repeat: no-repeat;
         background-position: center;
@@ -212,6 +212,134 @@ nav ul li a:active {
     }
 }
 
+
+/* on ipad screen */
+
+@media only screen and (max-width: 769px) {
+
+    .scrollTop {
+    position: fixed; 
+    bottom: 400px; 
+    right: 30px; 
+    z-index: 10;
+    background: #FFA94F url('../images/rocket.png'); 
+    width: 40px;
+    height: 40px;
+    cursor: pointer; 
+    padding: 25px; 
+    border-radius: 50%;
+    background-size: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s;
+    /* display: none; */
+  }
+  .backdrop.active{
+    width: 100vw;
+    height: 94vh;
+    position: fixed;
+    top: 100px;
+    left: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 1;
+} 
+    .navbar {
+        padding-top:1rem;
+        width: 100%;
+        height: 10vh;
+        padding: 10px 30px;
+        background-color: #fff;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        z-index: 10;
+        position: fixed;
+
+    }
+    .logo {
+        /* height: 90px; */
+        width: 25%;
+        object-fit: cover;
+        position: absolute;
+        top: 10px;
+        left: 50px;
+    }
+
+    #moon-icon {
+        width: 19%;
+        position: absolute;
+        top: 13px;
+        left: 500px;
+    }
+    nav ul {
+        position: fixed;
+        left: -130%;
+        top: 6rem;
+        margin-left: 100px;
+        flex-direction: column;
+        background-color: #fff !important;
+        z-index: 2;
+        width: 100%;
+        height: 100vh;
+        border-radius: 10px;
+        text-align: left;
+        transition: 0.5s;
+        box-shadow:
+            0 10px 27px rgba(0, 0, 0, 0.05);
+
+    }
+
+
+    nav ul.active {
+        left: 0;
+    }
+    
+    nav ul li a {
+        color: #525B6D;
+        font-size: 26px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 2.5rem 300px;
+       
+    }
+    nav ul li.actn {
+        margin-left: 260px !important;
+    }
+
+    nav ul li.actn a {
+        background-color: blue;
+        border-radius: 30px;
+        padding: 7px 25px;
+        color: #fff;
+        font-weight: bold;
+        padding: 10px 30px;
+    }
+    
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        background: none;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        -webkit-transform: translateY(8px) rotate(45deg);
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        -webkit-transform: translateY(-8px) rotate(-45deg);
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}
+
 /* On Mobile Screens */
 @media only screen and (max-width: 440px) {
     ::-webkit-scrollbar {
@@ -227,8 +355,8 @@ nav ul li a:active {
     position: fixed; 
     bottom: 400px; 
     right: 30px; 
-    z-index: 10; /* Make sure it does not overlap */
-    background: rgba(12, 14, 12, 0.164) url('../images/rocket.png'); 
+    z-index: 10;
+    background: #FFA94F url('../images/rocket.png'); 
     width: 40px;
     height: 40px;
     cursor: pointer; 
@@ -240,7 +368,18 @@ nav ul li a:active {
     visibility: hidden;
     opacity: 0;
     transition: 0.3s;
+    /* display: none; */
   }
+
+  .backdrop.active{
+    width: 100vw;
+    height: 94vh;
+    position: fixed;
+    top: 80px;
+    left: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 1;
+} 
     .navbar {
         padding-top:1rem;
         width: 100%;
@@ -258,7 +397,7 @@ nav ul li a:active {
         object-fit: cover;
         position: absolute;
         top: 0;
-        left: 20px;
+        left: 10px;
         width: 150px;
     }
 
@@ -294,8 +433,13 @@ nav ul li a:active {
         display: block;
         margin: 2.5rem 30px;
     }
-    .actn {
-        margin-left: 20px !important;
+
+    nav ul li a {
+        color: #525B6D;
+        font-size: 16px;
+    }
+    nav ul li.actn {
+        margin-left: 30px !important;
     }
     .actn a {
         background-color: blue;
@@ -326,6 +470,3 @@ nav ul li a:active {
         transform: translateY(-8px) rotate(-45deg);
     }
 }
-
-
-

@@ -85,6 +85,9 @@ function initParadoxWay() {
               prevEl: '.listing-carousel-button-prev',
           },
           breakpoints: {
+              768: {
+                  slidesPerView: 2,
+              },
               1024: {
                   slidesPerView: 2,
               },
