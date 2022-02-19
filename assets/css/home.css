@@ -2395,14 +2395,15 @@
   }
 
   .appUI-wrapper {
-    overflow-x: hidden;
+    overflow-x: visible;
     position: absolute;
     top: -70px;
-    left: 48rem;
-    width: 50%;
+    left: 32rem;
+    width: 100%;
   }
   .appui {
-      width: 100%;
+      width: 50%;
+      margin-left: 240px;
   }
 
   .review-section {
