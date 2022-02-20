@@ -1323,9 +1323,15 @@
     margin: 30px 0;
 }
 .faqcontainer{
-    width: 80%;
+    width: 100%;
     margin: auto;
     /* min-width: 500px; */
+}
+.faq-wrapper h1 {
+  text-align: center;
+  color: #3374ea;
+  margin-bottom: 50px;
+  font-family: "Montserrat", sans-serif;
 }
 .faqwrapper{
     background-color: #ffffff;
@@ -1338,6 +1344,9 @@
 .faqcontent{
     font-family: "Montserrat", sans-serif;
 }
+.faqwrapper h3 {
+  color: #3374ea;
+}
 .faqtoggle{
     width: 100%;
     background-color: transparent;
@@ -1345,7 +1354,7 @@
     align-items: center;
     justify-content: space-between;
     font-size: 16px;
-    color: #22a1f5;
+    color: #111130;
     font-weight: 500;
     border: none;
     outline: none;
@@ -1353,6 +1362,7 @@
     padding: 15px 0;
     text-align: left;
 }
+
 .faqcontent{
     position: relative;
     font-size: 16px;
@@ -1410,10 +1420,67 @@
 }
 
 .social-link svg {
+    margin: 4px 5px;
     width: 30px;
-    fill: #3374ea;
 }
 
+
+.FAQfooterContainer{
+  position: relative;
+  width: 100%;
+  margin: 50px 0;
+}
+.footerWrapper{
+  background-color: #ffffff;
+  margin-bottom: 20px;
+  padding: 15px 40px;
+  border-radius: 5px;
+  box-shadow: 0px 20px 17px #1C192305;
+
+}
+
+.footerWrapper h3 {
+  color: #3374ea;
+}
+.footerToggle,
+.footerContent{
+      font-family: "Montserrat", sans-serif;
+}
+.footerToggle{
+  width: 100%;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 16px;
+  color: #111130;
+  font-weight: 500;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 15px 0;
+}
+.footerContent{
+  position: relative;
+  font-size: 14px;
+  line-height: 20px;
+  height: 0;
+  overflow: hidden;
+  transition: all 1s;
+}
+.footerContent p {
+  border-bottom: 1px solid #3374ea;
+  margin-bottom: 8px;
+}
+
+
+.copyright {
+  position: relative;
+  margin-top: 60px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
 
 /* IPAD SCEREEN SIZE */
 
@@ -3294,6 +3361,14 @@
     vertical-align: middle;
 }
 
+.faq-wrapper h1 {
+  text-align: center;
+  color: #3374ea;
+  margin-bottom: 50px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 42px;
+}
 .faqtwo {
     position:absolute;
     left: 600px;
@@ -3301,8 +3376,8 @@
 .faqwrapper{
     background-color: #ffffff;
     margin-bottom: 20px;
-    padding: 15px 30px;
-    border-radius: 5px;
+    padding: 10px 30px;
+    border-radius: 20px;
     box-shadow: 0px 20px 17px #1C192305;
 }
 .faqtoggle,
@@ -3364,6 +3439,16 @@
     width: 30%;
     display: inline-block;
   }
+  .mobilefooter {
+    display: none;
+  }
+  .computer-footer {
+    position: relative;
+    background-color: white;
+    height: 300px;
+    margin-top: 100px;
+  }
+
 }
 
 /* ----------- Retina Screens ----------- */
@@ -3385,4 +3470,47 @@
     transform: translateY(27px);
     z-index: -1;
   }
+  .review-section {
+    top: -200px;
+    margin-bottom: 30px;
+    height: 40vh;
+    margin-bottom: -7rem;
+  }
+  .copy-traders {
+    margin-bottom: 300px;
+    padding-top: 20px;
+  }
+  .copy-traders .copy-img {
+    position: absolute;
+    top: -90px;
+    left: 600px;
+  }
+  .get-signal h1 {
+    color: #3374ea;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    font-size: 38px;
+    width: 40%;
+    position: absolute;
+    top: 290px;
+    left: 140px;
+    text-align: left;
+  }
+  .blob-signal-wrapper {
+    position: absolute;
+    top: 40px;
+    z-index: -1;
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  .signal-blob {
+    position: relative;
+    top: -2rem;
+    left: 700px;
+    width: 1000px;
+    height: 1000px;
+  }
+
+
 }
