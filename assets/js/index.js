@@ -101,20 +101,11 @@ function initParadoxWay() {
 
 }
 
-//   Init All ------------------
 $(document).ready(function () {
   initParadoxWay();
 });
 
-// For Users Review 
-// new Splide( '.splide' ).mount();
 
-// new Splide( '.splide', {
-//   classes: {
-// 		pagination: 'splide__pagination your-class-pagination',
-// 		page      : 'splide__pagination__page your-class-page',
-//   },
-// } );
 document.addEventListener('DOMContentLoaded', function () {
   var splide = new Splide('.splide', {
     type         : 'loop',
@@ -136,19 +127,6 @@ const playIcon = document.querySelector('.vid-play'),
       closeIcon = document.querySelector('.vid-close');
 const playVideoModal = document.querySelector('.video-modal');
 
-// playIcon.addEventListener('click',()=>{
-//             Modal.classList.add('show');
-//         });
-//         Close.addEventListener('click',()=>{
-//             Modal.classList.remove('show');
-//             var iframes = Modal.getElementsByTagName('iframe');
-//             if (iframes != null) {
-//                 for (let i = 0; i < iframes.length; i++) {
-//                     const iframe = iframes[i];
-//                     iframe.src = iframe.src;
-//                 }
-//             }
-//         });
 
 playIcon.addEventListener("click", function(){
   playVideoModal.classList.add('showmodal');
@@ -172,30 +150,28 @@ closeIcon.addEventListener("click", function(){
 
 
 // FAQ SECTION
-let faqtoggles = document.getElementsByClassName('faqToggle');
-let faqcontentDiv = document.getElementsByClassName('faqContent');
-let faqicons = document.getElementsByClassName('faQicon');
+let faqtoggles = document.getElementsByClassName('faqtoggle');
+let faqcontentDiv = document.getElementsByClassName('faqcontent');
+let faqicons = document.getElementsByClassName('faqicon');
 
-
-// 
 for(let i=0; i<faqtoggles.length; i++){
   faqtoggles[i].addEventListener('click', ()=>{
         if( parseInt(faqcontentDiv[i].style.height) != faqcontentDiv[i].scrollHeight){
           faqcontentDiv[i].style.height = faqcontentDiv[i].scrollHeight + "px";
-            faqicons[i].classList.remove('fa-caret-down');
-            faqicons[i].classList.add('fa-caret-up');
+          faqicons[i].classList.remove('fa-angle-down');
+          faqicons[i].classList.add('fa-plus');
         }
         else{
           faqcontentDiv[i].style.height = "0px";
-            faqicons[i].classList.remove('fa-caret-down');
-            faqicons[i].classList.add('fa-caret-up');
+          faqicons[i].classList.remove('fa-plus');
+          faqicons[i].classList.add('fa-mius');
         }
 
         for(let j=0; j<faqcontentDiv.length; j++){
             if(j!==i){
               faqcontentDiv[j].style.height = "0px";
-                faqicons[j].classList.remove('fa-caret-down');
-                faqicons[j].classList.add('fa-caret-up');
+              faqicons[i].classList.remove('fa-angle-plus');
+              faqicons[i].classList.add('fa-minus');
             }
         }
     });
