@@ -4,12 +4,12 @@
 //     backToUp.classList.toggle("scrollactive", window.scrollY > 200)
 // })
 
-function scrollToTop(){
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-    })
-}
+// function scrollToTop(){
+//     window.scrollTo({
+//         top: 0,
+//         behavior: 'smooth'
+//     })
+// }
 
 // Ends Back to top
 
