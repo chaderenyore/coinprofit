@@ -1,8 +1,8 @@
 //  Back to top feature
-window.addEventListener('scroll', function() {
-    let backToUp = this.document.querySelector('.scrollTop');
-    backToUp.classList.toggle("scrollactive", window.scrollY > 200)
-})
+// window.addEventListener('scroll', function() {
+//     let backToUp = this.document.querySelector('.scrollTop');
+//     backToUp.classList.toggle("scrollactive", window.scrollY > 200)
+// })
 
 function scrollToTop(){
     window.scrollTo({

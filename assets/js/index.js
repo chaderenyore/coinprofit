@@ -170,8 +170,8 @@ for(let i=0; i<faqtoggles.length; i++){
         for(let j=0; j<faqcontentDiv.length; j++){
             if(j!==i){
             faqcontentDiv[j].style.height = "0px";
-            faqicons[i].classList.remove('fa-chevron-up');
-            faqicons[i].classList.add('fa-chevron-down');
+            faqicons[j].classList.remove('fa-chevron-up');
+            faqicons[j].classList.add('fa-chevron-down');
             }
         }
     });
