@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="396.677" height="148.249" viewBox="0 0 396.677 148.249">
+  <defs>
+    <filter id="Rectangle_95" x="0" y="0" width="396.677" height="148.249" filterUnits="userSpaceOnUse">
+      <feOffset dy="20" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="8.5" result="blur"/>
+      <feFlood flood-color="#1c1923" flood-opacity="0.051"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_5451" data-name="Group 5451" transform="matrix(0.998, -0.07, 0.07, 0.998, 25.5, 29.313)">
+    <g transform="matrix(1, 0.07, -0.07, 1, -23.39, -31.02)" filter="url(#Rectangle_95)">
+      <rect id="Rectangle_95-2" data-name="Rectangle 95" width="341.373" height="73.615" rx="10" transform="matrix(1, -0.07, 0.07, 1, 25.5, 29.31)" fill="#fff"/>
+    </g>
+    <text id="My_Win" data-name="My Win" transform="translate(14.482 30.482)" fill="#3374ea" font-size="15" font-family="Poppins-SemiBold, Poppins" font-weight="600"><tspan x="0" y="0">My Win</tspan></text>
+    <text id="Fri_Sep_1_2021_11:12:13" data-name="Fri, Sep 1, 2021, 11:12:13" transform="translate(14.482 51.618)" fill="#707070" font-size="12" font-family="Poppins-Regular, Poppins"><tspan x="0" y="0">Fri, Sep 1, 2021, 11:12:13</tspan></text>
+    <g id="dots" transform="translate(292.986 33.791)">
+      <circle id="Ellipse_56" data-name="Ellipse 56" cx="3.017" cy="3.017" r="3.017" fill="#cecece"/>
+      <circle id="Ellipse_57" data-name="Ellipse 57" cx="3.017" cy="3.017" r="3.017" transform="translate(9.654)" fill="#cecece"/>
+      <circle id="Ellipse_58" data-name="Ellipse 58" cx="3.017" cy="3.017" r="3.017" transform="translate(19.309)" fill="#cecece"/>
+    </g>
+  </g>
+</svg>

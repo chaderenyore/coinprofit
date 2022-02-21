@@ -1483,6 +1483,9 @@
   font-family: "Montserrat", sans-serif;
   z-index: 2;
 }
+.computer-footer {
+  display: none;
+}
 
 /* IPAD SCEREEN SIZE */
 
