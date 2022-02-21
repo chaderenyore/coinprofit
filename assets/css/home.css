@@ -5,6 +5,32 @@
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
 }
+.littleicon1 {
+  position: absolute;
+  top:  260px;
+  left: 10px;
+  width: 110px;
+}
+
+.littleicon2 {
+  position: absolute;
+  top:  460px;
+  left: 10px;
+  width: 100px;
+}
+
+.littleicon3 {
+  position: absolute;
+  top:  350px;
+  left: 270px;
+  width: 100px;
+}
+.littleicon4 {
+  position: absolute;
+  top:  1050px;
+  /* left: 270px; */
+  width: 100px;
+}
 
 .first-page {
   width: 100%;
@@ -222,29 +248,7 @@
 .fadeIn-scroll.appear {
   opacity: 1;
 }
-/* 
-.left {
-    -webkit-transform: translateX(-20%);
-    transform: translateX(-20%);
-}
-.right {
-    -webkit-transform: translateX(10%);
-    transform: translateX(10%);
-}
-.left,
-.right {
-  transition: opacity 250ms ease-in, -webkit-transform 400ms ease-in;
-  transition: opacity 250ms ease-in, transform 400ms ease-in;
-  transition: opacity 250ms ease-in, transform 400ms ease-in,
-    -webkit-transform 400ms ease-in;
-  opacity: 0;
-}
-.left.appear,
-.from.appear {
-  -webkit-transform: translateX(0);
-  transform: translateX(0);
-  opacity: 1;
-} */
+
 /* fade in codes ends here */
 .app-features {
   height: 1000px;
@@ -2606,18 +2610,18 @@
 /* START COMPUTER SCREEN DESIGN */
 @media only screen and (min-width: 1200px) {
   .blob-wrapper {
-    height: 1000px;
+    height: 1100px;
     position: relative;
-    top: -100px;
+    top: -120px;
     overflow-x: hidden;
   }
 
   .blob1-d {
     display: block;
     object-fit: cover;
-    top: -11.6rem;
+    top: -11.5rem;
     left: 653px;
-    height: 1100.33px;
+    height: 1200.33px;
     width: 1000.04px;
     transform: translateY(27px);
     z-index: -1;
@@ -2656,15 +2660,16 @@
   }
 
   .appUI-wrapper {
-    overflow-x: visible;
     position: absolute;
-    top: -70px;
-    left: 32rem;
-    width: 100%;
+    top: -100px;
+    left: 35rem;
+    width: 600px;
   }
   .appui {
-      width: 50%;
-      margin-left: 240px;
+    width: 65%;
+      /* width: 507px;
+      height: 838px; */
+      margin-left: 200px;
   }
 
   .review-section {
