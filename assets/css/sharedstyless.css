@@ -13,7 +13,13 @@
 
 :root {
     --light-color: #F2F8FF;
-    --dark-color: #101010;
+    --dark-color: #13141C;
+    
+}
+
+.dark-theme {
+    --light-color: #13141C;
+    --dark-color:  #F2F8FF;
 }
 html{
     scroll-behavior: smooth;
@@ -90,14 +96,21 @@ a {
     z-index: -1;
 }
 
-#moon-icon {
+#toggleIcon-moon {
     width: 70px;
     cursor: pointer;
     position: absolute;
     top: 30px;
     left: 370px;
 }
-
+.toggle-sun {
+    display: none;
+    width: 70px;
+    cursor: pointer;
+    position: absolute;
+    top: 30px;
+    left: 370px;
+}
 .nav-logo {
     width: 20%;
 
@@ -192,14 +205,21 @@ nav ul li a:active {
         justify-content: space-between;
     }
     
-    #moon-icon {
+    #toggleIcon-moon {
         width: 80px;
         cursor: pointer;
         position: absolute;
         top: 25px;
         left: 280px;
     }
-    
+    .toggle-sun {
+        display: none;
+        width: 80px;
+        cursor: pointer;
+        position: absolute;
+        top: 25px;
+        left: 280px;
+    }
     .nav-logo {
         width: unset;
     
@@ -268,7 +288,14 @@ nav ul li a:active {
         left: 50px;
     }
 
-    #moon-icon {
+    #toggleIcon-moon {
+        width: 19%;
+        position: absolute;
+        top: 13px;
+        left: 500px;
+    }
+    .toggle-sun {
+        display: none;
         width: 19%;
         position: absolute;
         top: 13px;
@@ -403,7 +430,14 @@ nav ul li a:active {
         width: 150px;
     }
 
-    #moon-icon {
+    #toggleIcon-moon {
+        width: 25%;
+        position: absolute;
+        top: 13px;
+        left: 180px;
+    }
+    .toggle-sun  {
+        display: none;
         width: 25%;
         position: absolute;
         top: 13px;

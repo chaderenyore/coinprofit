@@ -22,13 +22,13 @@
 .littleicon3 {
   position: absolute;
   top:  350px;
-  left: 270px;
+  left: 250px;
   width: 100px;
 }
 .littleicon4 {
   position: absolute;
   top:  1050px;
-  /* left: 270px; */
+  left: 10px;
   width: 100px;
 }
 
@@ -201,7 +201,7 @@
   height: 100px;
   width: 100px;
   margin: auto;
-  border: 8px solid #f2f8ff;
+  border: 8px solid var(--light-color);
   border-radius: 50%;
   overflow: hidden;
 }
@@ -417,7 +417,7 @@
 }
 
 .custom-shape-divider-top-1644369928 .shape-fill {
-  fill: #f2f8ff;
+  fill: var(--light-color);
 }
 
 .custom-shape-divider-bottom-1644370252 {
@@ -439,7 +439,7 @@
 }
 
 .custom-shape-divider-bottom-1644370252 .shape-fill {
-  fill: #f2f8ff;
+  fill: var(--light-color);
 }
 
 /* Ends custom divider */
@@ -502,7 +502,7 @@
 }
 .listing-carousel-button {
   position: absolute;
-  top: 40%;
+  top: 45%;
   width: 80px;
   height: 50px;
   line-height: 50px;
@@ -563,14 +563,14 @@
   position: absolute;
   left: 50%;
   top: -30px;
-  width: 90px;
-  height: 90px;
+  width: 100px;
+  height: 100px;
   margin-left: -45px;
   z-index: 20;
 }
 .testi-avatar img {
-  width: 90px;
-  height: 90px;
+  width: 80px;
+  height: 80px;
   float: left;
   border-radius: 100%;
   border: 6px solid #fff;
@@ -683,23 +683,8 @@
   fill: #ffffff;
 }
 
-/* custom shape divider starts here */
+/* custom shape divider ends here */
 
-/* .app-features-two {
-    position: relative;
-    top: 114rem;
-    width: 100%;
-}
-
-.create-trade-plan {
-    position: relative;
-    padding-top: -45rem;
-    
-} */
-
-/* .featuretwo-wrapper {
-    margin-top: 400px;
-} */
 
 .app-features-two {
   position: relative;
@@ -775,7 +760,7 @@
 }
 
 .custom-shape-divider-top-1644623960 .shape-fill {
-  fill: #f2f8ff;
+  fill: var(--light-color);
 }
 /* shape divider ends here */
 
@@ -858,7 +843,7 @@
 }
 
 .custom-shape-divider-bottom-1644660326 .shape-fill {
-  fill: #f2f8ff;
+  fill: var(--light-color);
 }
 
 .profit-loss-sec {
@@ -919,7 +904,7 @@
 }
 
 .custom-shape-divider-top-1644670257 .shape-fill {
-  fill: #f2f8ff;
+  fill: var(--light-color);
   box-shadow: 20px 20px 40px #D6D6D629;
 }
 
@@ -983,7 +968,7 @@
 }
 
 .custom-shape-divider-bottom-1644669891 .shape-fill {
-    fill: #F2F8FF;
+    fill: var(--light-color);
 }
 
 .exchange-sec {
@@ -1494,6 +1479,32 @@
 /* IPAD SCEREEN SIZE */
 
 @media only screen and (min-width: 768px) {
+  .littleicon1 {
+    position: absolute;
+    top:  200px;
+    left: 10px;
+    width: 110px;
+  }
+  
+  .littleicon2 {
+    position: absolute;
+    top:  550px;
+    left: 10px;
+    width: 100px;
+  }
+  
+  .littleicon3 {
+    position: absolute;
+    top:  350px;
+    left: 650px;
+    width: 100px;
+  }
+  .littleicon4 {
+    position: absolute;
+    top:  650px;
+    left: 650px;
+    width: 100px;
+  }
   .blob-wrapper {
     position: relative; /* had a top postioning that was 40px */
     overflow-x: hidden;
@@ -1536,7 +1547,7 @@
   }
   .appui {
     width: 90%;
-    margin-left: 80px;
+    margin-left: 50px;
   }
   .app-features h1 {
     margin-bottom: 50px;
@@ -1901,6 +1912,33 @@
 /* START IPAD PRO SCREEN SIZE DESIGN */
 
 @media only screen and (min-width: 1024px) {
+  .littleicon1 {
+    position: absolute;
+    top:  200px;
+    left: 905px;
+    width: 110px;
+  }
+  
+  .littleicon2 {
+    position: absolute;
+    top:  620px;
+    left: 800px;
+    width: 100px;
+  }
+  
+  .littleicon3 {
+    position: absolute;
+    top:  350px;
+    left: 610px;
+    width: 100px;
+  }
+  .littleicon4 {
+    position: absolute;
+    top:  650px;
+    left: 10px;
+    width: 100px;
+  }
+  
   .blob-wrapper {
     height: 750px;
     position: relative;
@@ -2026,7 +2064,7 @@
     height: 148px;
     width: 148px;
     margin: auto;
-    border: 8px solid #f2f8ff;
+    border: 8px solid var(--light-color);
     border-radius: 50%;
     overflow: hidden;
   }
@@ -2191,13 +2229,17 @@
   .meet-leaders h1 {
     width: 90%;
     margin: 0 auto;
-    color: #f2f8ff;
+    color: var(--light-color);
     text-align: center;
     font-family: "Montserrat", sans-serif;
     font-weight: bold;
     font-size: 40px;
   }
-
+  .leader-level {
+    position: absolute;
+    right: -20px;
+    top: -20px;
+  }
   .leaders-p {
     width: 60%;
     margin: 10px auto 0;
@@ -2609,6 +2651,34 @@
 }
 /* START COMPUTER SCREEN DESIGN */
 @media only screen and (min-width: 1200px) {
+  .littleicon1 {
+    position: absolute;
+    top:  200px;
+    left: 1200px;
+    width: 150px;
+  }
+  
+  .littleicon2 {
+    position: absolute;
+    top:  720px;
+    left: 1040px;
+    width: 100px;
+  }
+  
+  .littleicon3 {
+    position: absolute;
+    top:  350px;
+    left: 780px;
+    width: 100px;
+  }
+  .littleicon4 {
+    position: absolute;
+    top:  650px;
+    left: 30px;
+    width: 100px;
+  }
+
+
   .blob-wrapper {
     height: 1100px;
     position: relative;
@@ -2662,14 +2732,13 @@
   .appUI-wrapper {
     position: absolute;
     top: -100px;
-    left: 35rem;
     width: 600px;
   }
   .appui {
     width: 65%;
       /* width: 507px;
       height: 838px; */
-      margin-left: 200px;
+      margin-left: 150px;
   }
 
   .review-section {
@@ -2709,7 +2778,7 @@
     height: 100px;
     width: 100px;
     margin: auto;
-    border: 8px solid #f2f8ff;
+    border: 8px solid var(--light-color);
     border-radius: 50%;
     overflow: hidden;
   }
@@ -2750,6 +2819,7 @@
     font-weight: 800;
     font-size: 40px;
     text-align: center;
+    margin-top: 90px;
   }
   .app-features p {
     color: #525b6d;
@@ -2795,6 +2865,7 @@
     padding-top: 300px;
   }
   .see-leaders h1 {
+    margin-top: 0;
     width: 403px;
     float: right;
     text-align: left;
@@ -2948,6 +3019,12 @@
   .listing-carousel-button {
     position: absolute;
     top: 40%;
+  }
+  .leader-level {
+    /* width: 0px; */
+    position: absolute;
+    right: -20px;
+    top: -20px;
   }
   .signal-img-wrapper {
     position: absolute;
@@ -3453,6 +3530,7 @@
     display: none;
   }
   .computer-footer {
+    display: block;
     position: relative;
     background-color: white;
     height: 240px;

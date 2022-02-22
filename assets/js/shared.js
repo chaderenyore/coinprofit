@@ -1,3 +1,22 @@
+// Toggle light and dark mode codes here
+
+let togglebtn = document.querySelector('#toggleIcon-moon');
+let suntoggle = document.querySelector('.toggle-sun');
+
+togglebtn.addEventListener('click', function() {
+    document.body.classList.toggle('dark-theme');
+    
+    if(document.body.classList.contains('dark-theme')) {
+        togglebtn.style.display = 'none';
+        suntoggle.style.display = 'block';
+    } else {
+        togglebtn.style.display = 'block';
+        suntoggle.style.display = 'none';
+    }
+});
+
+
+
 //  Back to top feature
 // window.addEventListener('scroll', function() {
 //     let backToUp = this.document.querySelector('.scrollTop');
