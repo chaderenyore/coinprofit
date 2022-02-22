@@ -1,17 +1,15 @@
 // Toggle light and dark mode codes here
 
-let togglebtn = document.querySelector('#toggleIcon-moon');
-let suntoggle = document.querySelector('.toggle-sun');
+let togglebtn = document.querySelector('#toggleIcon');
+
 
 togglebtn.addEventListener('click', function() {
     document.body.classList.toggle('dark-theme');
     
     if(document.body.classList.contains('dark-theme')) {
-        togglebtn.style.display = 'none';
-        suntoggle.style.display = 'block';
+        togglebtn.src = "toggle-dark.svg";
     } else {
-        togglebtn.style.display = 'block';
-        suntoggle.style.display = 'none';
+        togglebtn.src = "toggl.png";
     }
 });
 
