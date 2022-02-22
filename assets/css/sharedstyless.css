@@ -104,14 +104,7 @@ a {
     top: 30px;
     left: 370px;
 }
-.toggle-sun {
-    display: none;
-    width: 70px;
-    cursor: pointer;
-    position: absolute;
-    top: 30px;
-    left: 370px;
-}
+
 .nav-logo {
     width: 20%;
 
@@ -214,14 +207,7 @@ nav ul li a:active {
         top: 25px;
         left: 280px;
     }
-    .toggle-sun {
-        display: none;
-        width: 80px;
-        cursor: pointer;
-        position: absolute;
-        top: 25px;
-        left: 280px;
-    }
+
     .nav-logo {
         width: unset;
     
@@ -297,20 +283,14 @@ nav ul li a:active {
         top: 13px;
         left: 500px;
     }
-    .toggle-sun {
-        display: none;
-        width: 19%;
-        position: absolute;
-        top: 13px;
-        left: 500px;
-    }
+
     nav ul {
         position: fixed;
         left: -130%;
         top: 6rem;
         margin-left: 100px;
         flex-direction: column;
-        background-color: #fff !important;
+        background-color: var(--light-color);
         z-index: 2;
         width: 100%;
         height: 100vh;
@@ -417,10 +397,9 @@ nav ul li a:active {
         width: 100%;
         height: 10vh;
         padding: 10px 30px;
-        background-color: #fff;
+        background-color: var(--light-color);
         border-bottom-left-radius: 15px;
         border-bottom-right-radius: 15px;
-        /* position: fixed; */
         z-index: 10;
 
     }
@@ -440,20 +419,14 @@ nav ul li a:active {
         top: 13px;
         left: 180px;
     }
-    .toggle-sun  {
-        display: none;
-        width: 25%;
-        position: absolute;
-        top: 13px;
-        left: 180px;
-    }
+
     nav ul {
         position: fixed;
         left: -110%;
         top: 4.1rem;
         margin-left: 100px;
         flex-direction: column;
-        background-color: #fff !important;
+        background-color: var(--light-color);
         z-index: 2;
         width: 80%;
         height: 100vh;
