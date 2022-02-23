@@ -14,12 +14,18 @@
 :root {
     --light-color: #F2F8FF;
     --dark-color: #13141C;
+    --third-color: #ffffff; /* for white background like the boxes, FAQ and the footer section */
+    --fourth-color: #525b6d; /* for paragraphs..*/
+    --fifth-color: #000000; /* for paragraphs with black background*/
     
 }
 
 .dark-theme {
     --light-color: #13141C;
     --dark-color:  #F2F8FF;
+    --third-color: #09090b; 
+    --fourth-color: #F2F8FF;
+    --fifth-color: #F2F8FF; 
 }
 html{
     scroll-behavior: smooth;
@@ -123,7 +129,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #525B6D;
+    color: var(--fourth-color);
     font-size: 14px;
 }
 
@@ -260,7 +266,7 @@ nav ul li a:active {
         width: 100%;
         height: 10vh;
         padding: 10px 30px;
-        background-color: #fff;
+        background-color: var(--light-color);
         border-bottom-left-radius: 15px;
         border-bottom-right-radius: 15px;
         z-index: 10;
@@ -308,7 +314,7 @@ nav ul li a:active {
     }
     
     nav ul li a {
-        color: #525B6D;
+        color: var(--fourth-color);
         font-size: 26px;
     }
 
@@ -448,7 +454,7 @@ nav ul li a:active {
     }
 
     nav ul li a {
-        color: #525B6D;
+        color: var(--fourth-color);
         font-size: 16px;
     }
     nav ul li.actn {

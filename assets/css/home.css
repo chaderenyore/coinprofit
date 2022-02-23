@@ -5,6 +5,10 @@
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
 }
+
+p {
+  color: var(--dark-color); /* paragraph tags without any styles will have this color code by default. */
+}
 .littleicon1 {
   position: absolute;
   top:  260px;
@@ -150,15 +154,10 @@
   margin-left: 90px;
 }
 
-.appUI-wrapper {
+.appui {
   position: relative;
   top: 160px;
   width: 100%;
-  overflow: hidden;
-}
-.appui {
-  width: 100%;
-  margin-left: 18px;
 }
 
 .review-section {
@@ -188,7 +187,7 @@
 .box {
   width: 340px;
   padding: 0px 20px 50px;
-  background: #ffffff 0% 0% no-repeat padding-box;
+  background: var(--third-color) 0% 0% no-repeat padding-box;
   box-shadow: 0px 3px 6px #00000008;
   display: block;
   margin: 60px auto 90px;
@@ -231,11 +230,12 @@
   margin-bottom: 7px;
 }
 .box p {
-  color: #707070;
+  color: var(--fourth-color);
   font-size: 14px;
 }
 
 .reviews p {
+  color: var(--fourth-color);
   margin-top: 20px;
   font-size: 17px;
 }
@@ -266,7 +266,7 @@
   text-align: center;
 }
 .app-features p {
-  color: #525b6d;
+  color: var(--fourth-color);
   text-align: center;
   font-size: 17px;
   line-height: 30px;
@@ -308,7 +308,7 @@
   width: 80%;
   position: relative;
   top: 120px;
-  color: #525b6d;
+  color: var(--fourth-color);
   font-size: 17px;
   font-weight: 400;
   font-family: "Montserrat", sans-serif;
@@ -339,7 +339,7 @@
   left: 250px;
   width: 100px;
   height: 120px;
-  background: #ffffff;
+  background: var(--third-color);
   padding: 10px;
   box-shadow: 0px 20px 17px #1c19230d;
   border-radius: 10px;
@@ -369,7 +369,7 @@
   text-align: center;
   font-family: "Poppins", sans-serif;
   font-size: 12px;
-  color: #404040;
+  color: var(--fourth-color);
   margin-top: -15px;
 }
 .signal-packs h5 {
@@ -680,7 +680,7 @@
 }
 
 .custom-shape-divider-bottom-1644463655 .shape-fill {
-  fill: #ffffff;
+  fill: var(--light-color);
 }
 
 /* custom shape divider ends here */
@@ -699,7 +699,7 @@
 .app-features-two p {
   margin: 30px auto;
   width: 80%;
-  color: #525b6d;
+  color: var(--fourth-color);
   text-align: center;
   font-size: 17px;
   font-weight: 400;
@@ -717,7 +717,7 @@
 .trade-lessons p {
   margin: 30px auto;
   width: 80%;
-  color: #525b6d;
+  color: var(--fourth-color);
   text-align: center;
   font-size: 17px;
   font-weight: 400;
@@ -882,9 +882,9 @@
 /* share */
 
 .share-portfolio-sec {
-  background-color: #fff;
+  background-color: var(--third-color);
   position: relative;
-  height: 140vh;
+  height: 160vh;
 }
 .custom-shape-divider-top-1644670257 {
   position: absolute;
@@ -920,16 +920,15 @@
   font-weight: bold;
   font-size: 30px;
 }
-.share-blob-wrapper {
-  width: 20%;
+
+.share-blob {
   position: absolute;
   top: 300px;
-}
-.share-blob {
   width: 350px;
-  height: 400px;
+  /* height: 400px; */
   opacity: 0.8;
 }
+
 .share-portfolio-img-box {
   width: 90%;
   margin: 0 auto;
@@ -940,9 +939,9 @@
 }
 
 .share-portfolio p {
-  margin: 600px auto 0;
+  margin: 650px auto 0;
   width: 80%;
-  color: #525b6d;
+  color: var(--fourth-color);
   text-align: center;
   font-size: 17px;
   font-weight: 400;
@@ -973,7 +972,6 @@
 
 .exchange-sec {
   margin-top: 100px;
-  /* padding-top: 60px; */
   margin-bottom: 140px;
 }
 
@@ -1000,11 +998,12 @@
   margin-left: 15px;
   width: 101px;
   height: 110px;
-  background: #ffffff 0% 0% no-repeat padding-box;
+  background: var(--third-color) 0% 0% no-repeat padding-box;
   box-shadow: 0px 3px 6px #00000008;
   border-radius: 20px;
   opacity: 1;
 }
+
 .exchange-logo {
   margin-top: -12px;
   margin-left: 15px;
@@ -1021,7 +1020,7 @@
 .exchange-box p {
   display: none;
   padding-top: 3px;
-  color: #525b6d;
+  color: var(--fourth-color);
   text-align: center;
   font-size: 14px;
   font-family: "Montserrat", sans-serif;
@@ -1058,7 +1057,7 @@
     width: 350px;
     padding: 0 20px 0;
     height: 450px;
-    background: #ffffff 0% 0% no-repeat padding-box;
+    background: var(--third-color) 0% 0% no-repeat padding-box;
     box-shadow: 0px 20px 17px #1c192305;
     border-radius: 20px;
     opacity: 1;
@@ -1096,7 +1095,7 @@
   }
 .user-review-box p {
   margin: 20px 0;
-  color: #525b6d;
+  color: var(--fourth-color);
   text-align: center;
   font-size: 16px;
   font-weight: 300;
@@ -1174,7 +1173,7 @@
 .learn-more p {
   margin: 20px 0;
   padding: 10px 20px;
-  color: #525b6d;
+  color: var(--fourth-color);
   text-align: center;
   font-size: 16px;
   font-weight: 400;
@@ -1184,7 +1183,7 @@
 .learn-moreBTN {
   margin-top: 10px;
   margin-left: 85px;
-  background-color: #fff; /* Green */
+  background-color: #fff; 
   border: none;
   border-radius: 50px;
   color: #3374ea;
@@ -1315,7 +1314,6 @@
 .faqcontainer{
     width: 100%;
     margin: auto;
-    /* min-width: 500px; */
 }
 .faq-wrapper h1 {
   text-align: center;
@@ -1324,7 +1322,7 @@
   font-family: "Montserrat", sans-serif;
 }
 .faqwrapper{
-    background-color: #ffffff;
+    background-color: var(--third-color);
     margin-bottom: 20px;
     padding: 15px 30px;
     border-radius: 5px;
@@ -1391,14 +1389,16 @@
   width: 100%;
 }
 .mobilefooter {
-    background-color: #fff;
-
+    background-color: var(--light-color);
 }
 
 .MF-wrapper {
     width: 90%;
     margin: 50px auto 0 ;
 } 
+.slogan {
+  color: var(--fourth-color);
+}
 .footer-logo-wrapper {
     width: 20%;
 }
@@ -1420,7 +1420,7 @@
   margin: 50px 0;
 }
 .footerWrapper{
-  background-color: #ffffff;
+  background-color: var(--third-color);
   margin-bottom: 20px;
   padding: 15px 40px;
   border-radius: 5px;
@@ -1464,8 +1464,9 @@
 
 
 .copyright {
+  color: var(--fourth-color);
   position: relative;
-  margin-top: 100px;
+  margin-top: 10px;
   margin-bottom: 30px;
   text-align: center;
   font-family: "Montserrat", sans-serif;
@@ -1538,14 +1539,11 @@
     margin-top: 10px;
     margin-left: 10px;
   }
-  .appUI-wrapper {
+
+  .appui {
     position: relative;
     top: 160px;
-    width: 80%;
-    overflow: hidden;
-  }
-  .appui {
-    width: 90%;
+    width: 70%;
     margin-left: 50px;
   }
   .app-features h1 {
@@ -1580,7 +1578,7 @@
     left: 480px;
     width: 180px;
     height: 190px;
-    background: #ffffff;
+    background: var(--third-color);
     box-shadow: 0px 20px 17px #1c19230d;
     border-radius: 10px;
     transform: rotate(1deg);
@@ -1634,7 +1632,9 @@
   .signal-planner {
     width: 100%;
   }
-
+  .share-portfolio-sec {
+    height: 140vh;
+  }
   .share-portfolio h1 {
     text-align: center;
     color: #3374ea;
@@ -1642,13 +1642,11 @@
     font-weight: bold;
     font-size: 30px;
   }
-  .share-blob-wrapper {
-    width: 30%;
+
+  .share-blob {
     position: absolute;
     top: 300px;
     left: 120px;
-  }
-  .share-blob {
     width: 580px;
     height: 500px;
     opacity: 0.8;
@@ -1666,7 +1664,7 @@
   .share-portfolio p {
     margin: 900px auto 0;
     width: 80%;
-    color: #525b6d;
+    color: var(--fourth-color);
     text-align: center;
     font-size: 17px;
     font-weight: 400;
@@ -1701,7 +1699,7 @@
     margin-left: 15px;
     width: 101px;
     height: 110px;
-    background: #ffffff 0% 0% no-repeat padding-box;
+    background: var(--third-color) 0% 0% no-repeat padding-box;
     box-shadow: 0px 3px 6px #00000008;
     border-radius: 20px;
     opacity: 1;
@@ -1732,7 +1730,7 @@
     width: 500px;
     padding: 20px 20px 0;
     /* height: 450px; */
-    background: #ffffff 0% 0% no-repeat padding-box;
+    background: var(--third-color) 0% 0% no-repeat padding-box;
     box-shadow: 0px 20px 17px #1c192305;
     border-radius: 20px;
     opacity: 1;
@@ -1913,15 +1911,15 @@
 @media only screen and (min-width: 1024px) {
   .littleicon1 {
     position: absolute;
-    top:  200px;
-    left: 905px;
-    width: 110px;
+    top:  110px;
+    left: 910px;
+    width: 90px;
   }
   
   .littleicon2 {
     position: absolute;
     top:  620px;
-    left: 800px;
+    left: 900px;
     width: 100px;
   }
   
@@ -1966,7 +1964,7 @@
     opacity: 0.06;
   }
   .about {
-    top: 100px;
+    top: 140px;
     left: 60px;
     width: 50%;
   }
@@ -1983,12 +1981,11 @@
   .slideshow-container {
     max-width: 1000px;
     position: relative;
-    /* margin: auto; */
   }
   .slideshow-container p {
     font-weight: unset;
     width: 60%;
-    color: #525b6d;
+    color: var(--fourth-color);
     font-size: 17px;
     font-family: "Montserrat", sans-serif;
     text-align: left;
@@ -2022,14 +2019,12 @@
     width: 45%;
     margin: 10px auto;
   }
-  .appUI-wrapper {
+
+  .appui {
     position: absolute;
     top: -60px;
     left: 35rem;
-    width: 80%;
-  }
-  .appui {
-    width: 70%;
+    width: 60%;
   }
   .review-section {
     top: 0;
@@ -2046,8 +2041,7 @@
   }
   .box {
     width: 350px;
-    /* height: 390px; */
-    background: #ffffff 0% 0% no-repeat padding-box;
+    background: var(--third-color) 0% 0% no-repeat padding-box;
     box-shadow: 0px 3px 6px #00000008;
     display: inline-block;
     margin: 20px 10px 70px;
@@ -2087,7 +2081,7 @@
     text-align: center;
   }
   .app-features p {
-    color: #525b6d;
+    color: var(--fourth-color);
     text-align: center;
     font-size: 30px;
     font-weight: 400;
@@ -2103,7 +2097,6 @@
   }
   .copy-img-box {
     width: 60%;
-    /* margin-left: 0; */
     margin: 0 auto;
   }
   .copy-img {
@@ -2153,7 +2146,7 @@
     left: 700px;
     width: 180px;
     height: 210px;
-    background: #ffffff;
+    background: var(--third-color);
     box-shadow: 0px 20px 17px #1c19230d;
     border-radius: 10px;
     transform: rotate(5deg);
@@ -2197,10 +2190,6 @@
     font-size: 28px;
   }
 
-  /* .main-signal-wrapper {
-            display: none;
-            width: 70%;
-        } */
 
   .main-signal-img {
     position: relative;
@@ -2264,19 +2253,15 @@
   .signal-img-wrapper img {
     width: 380px;
   }
-/* .featuretwo-wrapper {
-    margin-top: 400px;
-} */
+
 
 .app-features-two {
     width: 90%;
     position: relative;
     padding-top: -500px;
   }
-  /* .app-features-two {
-    width: 90%;
-    margin: 0 auto;
-  } */
+
+
   .app-features-two h1 {
     color: #3374ea;
     font-family: "Montserrat", sans-serif;
@@ -2285,7 +2270,7 @@
     text-align: center;
   }
   .app-features-two p {
-    color: #525b6d;
+    color: var(--fourth-color);
     font-size: 30px;
     font-weight: 400;
     font-family: "Montserrat", sans-serif;
@@ -2305,7 +2290,7 @@
     text-align: center;
   }
   .trade-lessons p {
-    color: #525b6d;
+    color: var(--fourth-color);
     font-size: 30px;
     font-weight: 400;
     font-family: "Montserrat", sans-serif;
@@ -2386,13 +2371,11 @@
     font-weight: 800;
     font-size: 48px;
   }
-  .share-blob-wrapper {
-    width: 60%;
+
+  .share-blob {
     position: absolute;
     top: 330px;
     left: 90px;
-  }
-  .share-blob {
     width: 800px;
     height: 900px;
   }
@@ -2408,7 +2391,7 @@
   .share-portfolio p {
     margin: 1200px auto 0;
     width: 80%;
-    color: #525b6d;
+    color: var(--fourth-color);
     text-align: center;
     font-size: 26px;
     font-family: "Montserrat", sans-serif;
@@ -2433,7 +2416,7 @@
     width: 200px;
     height: 160px;
     
-    background: #ffffff 0% 0% no-repeat padding-box;
+    background: var(--third-color) 0% 0% no-repeat padding-box;
     box-shadow: 0px 3px 6px #00000008;
     border-radius: 20px;
     opacity: 1;
@@ -2456,7 +2439,7 @@
   .exchange-box p {
       display: block;
     padding-top: 10px;
-    color: #525b6d;
+    color: var(--fourth-color);
     text-align: center;
     font-size: 14px;
     font-family: "Montserrat", sans-serif;
@@ -2467,7 +2450,7 @@
     margin: 30px auto;
     width: 800px;
     height: 490px;
-    background: #ffffff 0% 0% no-repeat padding-box;
+    background: var(--third-color) 0% 0% no-repeat padding-box;
     box-shadow: 0px 20px 17px #1c192305;
     border-radius: 20px;
     opacity: 1;
@@ -2477,7 +2460,7 @@
   .user-review-box p {
     margin: 20px 0;
     padding: 20px;
-    color: #525b6d;
+    color: var(--fourth-color);
     text-align: center;
     font-size: 20px;
     font-family: "Montserrat", sans-serif;
@@ -2583,7 +2566,7 @@
   .learn-more p {
     float: left;
     width: 40%;
-    color: #525b6d;
+    color: var(--fourth-color);
     text-align: left;
     font-size: 16px;
     font-weight: 500;
@@ -2595,7 +2578,7 @@
     position: relative;
     margin-top: 10px;
     margin-left: 20px;
-    background-color: #fff; /* Green */
+    background-color: var(--fourth-color); /* Green */
     border: none;
     border-radius: 50px;
     color: #3374ea;
@@ -2698,14 +2681,14 @@
   .background-svg {
     display: block;
     position: absolute;
-    top: 70px;
+    top: 120px;
     left: 87px;
     width: 35%;
   }
   .about {
     left: 140px;
     width: 50%;
-    top: 130px;
+    top: 180px;
   }
   .about h1 {
     width: 70%;
@@ -2728,16 +2711,12 @@
     margin: 10px auto;
   }
 
-  .appUI-wrapper {
-    position: absolute;
-    top: -100px;
-    width: 600px;
-  }
   .appui {
-    width: 65%;
-      /* width: 507px;
-      height: 838px; */
-      margin-left: 150px;
+    position: absolute;
+    top: -120px;
+    width: 55%;
+    margin-left: 180px;
+    
   }
 
   .review-section {
@@ -2760,7 +2739,7 @@
   .box {
     width: 340px;
     height: 300px;
-    background: #ffffff 0% 0% no-repeat padding-box;
+    background: var(--third-color) 0% 0% no-repeat padding-box;
     box-shadow: 0px 3px 6px #00000008;
     display: block;
     margin: 60px 9px 90px;
@@ -2800,7 +2779,7 @@
     text-align: center;
   }
   .box p {
-    color: #707070;
+    color: var(--fourth-color);
     font-size: 16px;
     font-weight: 400;
   }
@@ -2821,7 +2800,7 @@
     margin-top: 90px;
   }
   .app-features p {
-    color: #525b6d;
+    color: var(--fourth-color);
     text-align: center;
     font-size: 14px;
     font-weight: 500;
@@ -2904,7 +2883,7 @@
     top: 410px;
     left: 140px;
     text-align: left;
-    color: #525b6d;
+    color: var(--fourth-color);
     font-size: 14px;
     font-weight: 500;
     font-family: "Montserrat", sans-serif;
@@ -2933,7 +2912,7 @@
     left: 1130px;
     width: 95px;
     height: 110px;
-    background: #ffffff;
+    background: var(--third-color);
     box-shadow: 0px 20px 17px #1c19230d;
     border-radius: 8px;
     z-index: 2;
@@ -3056,7 +3035,7 @@
     text-align: left;
   }
   .app-features-two p {
-    color: #525b6d;
+    color: var(--fourth-color);
     margin-top: -330px;
     text-align: left;
     font-size: 14px;
@@ -3095,7 +3074,7 @@
     text-align: left;
   }
   .trade-lessons p {
-    color: #525b6d;
+    color: var(--fourth-color);
     margin-top: 20px;
     text-align: left;
     font-size: 14px;
@@ -3195,7 +3174,7 @@
     text-align: left;
   }
   .share-portfolio p {
-    color: #525b6d;
+    color: var(--fourth-color);
     margin-top: 20px;
     margin-left: 120px;
     text-align: left;
@@ -3206,16 +3185,14 @@
     float: left;
     line-height: 30px;
   }
-  .share-blob-wrapper {
-    width: 60%;
+
+  .share-blob {
     position: absolute;
     top: 200px;
-    left: 500px;
-  }
-  .share-blob {
+    left: 700px;
     width: 500px;
     height: 500px;
-    margin-left: 200px;
+    /* margin-left: 200px; */
   }
   .share-portfolio-box {
     width: 50%;
@@ -3235,8 +3212,6 @@
     width: 80%;
     margin-top: 100px;
     margin-bottom: 200px;
-    /* margin-left: auto;
-    margin-right: auto; */
   }
   .exchange-wrapper h1 {
     width: 60%;
@@ -3251,7 +3226,7 @@
     margin: 10px 10px;
     width: 180px;
     height: 120px;
-    background: #ffffff 0% 0% no-repeat padding-box;
+    background: var(--third-color) 0% 0% no-repeat padding-box;
     box-shadow: 0px 3px 6px #00000008;
     border-radius: 20px;
     opacity: 1;
@@ -3276,9 +3251,8 @@
     margin-top: 10px;
   }
   .exchange-box p {
-    
     padding-top: 3px;
-    color: #525b6d;
+    color: var(--dark-color);
     text-align: center;
     font-size: 16px;
     font-family: "Montserrat", sans-serif;
@@ -3305,7 +3279,7 @@
     padding: 20px 0;
     width: 800px;
     height: 390px;
-    background: #ffffff 0% 0% no-repeat padding-box;
+    background: var(--third-color) 0% 0% no-repeat padding-box;
     box-shadow: 0px 20px 17px #1c192305;
     border-radius: 20px;
     opacity: 1;
@@ -3314,7 +3288,7 @@
   .user-review-box p {
     margin: 10px 0;
     padding: 20px;
-    color: #525b6d;
+    color: var(--fourth-color);
     text-align: center;
     font-size: 16px;
     font-family: "Montserrat", sans-serif;
@@ -3406,7 +3380,7 @@
   .learn-more p {
     float: left;
     width: 40%;
-    color: #525b6d;
+    color: var(--fourth-color);
     text-align: left;
     font-size: 14px;
     font-weight: 500;
@@ -3421,7 +3395,7 @@
     right: 480px;
     margin-top: 10px;
     margin-left: 20px;
-    background-color: #fff;
+    background-color: var(--third-color);
     border: none;
     border-radius: 50px;
     color: #3374ea;
@@ -3435,7 +3409,7 @@
   }
   .learn-moreBTN:hover {
     background-color: #3374ea;
-    color: #fff;
+    color: var(--third-color);
   }
 .faq-wrapper {
     position: relative;
@@ -3460,7 +3434,7 @@
     left: 600px;
 }
 .faqwrapper{
-    background-color: #ffffff;
+    background-color: var(--third-color);
     margin-bottom: 20px;
     padding: 10px 30px;
     border-radius: 20px;
@@ -3478,7 +3452,6 @@
     justify-content: space-between;
     font-size: 16px;
     color: #22a1f5;
-    /* font-weight: 500; */
     font-weight: bold;
     border: none;
     outline: none;
@@ -3531,7 +3504,7 @@
   .computer-footer {
     display: block;
     position: relative;
-    background-color: white;
+    background-color: var(--third-color);
     height: 240px;
     margin-top: 100px;
 
@@ -3540,7 +3513,6 @@
     width: 90%;
     margin: 0 auto;
     display: flex;
-    /* align-items: center; */
     justify-content: space-between;
   }
   .main-app-container {
@@ -3563,13 +3535,13 @@
     font-family: "Montserrat", sans-serif;
   }
   .computer-slogan {
-    color: #525B6D;
+    color: var(--fourth-color);
     font-family: "Montserrat", sans-serif;
     font-size: 14px;
     margin-bottom: 5px;
   }
   .company-head p {
-    color: #525B6D;
+    color: var(--fourth-color);
     font-family: "Montserrat", sans-serif;
     font-size: 14px;
     line-height: 30px;
@@ -3587,8 +3559,34 @@
 
 /* ----------- Retina Screens ----------- */
 @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+  .littleicon1 {
+    position: absolute;
+    top: 90px;
+    left: 1250px;
+    width: 130px;
+  }
+  
+  .littleicon2 {
+    position: absolute;
+    top:  720px;
+    left: 1250px;
+    width: 100px;
+  }
+  
+  .littleicon3 {
+    position: absolute;
+    top:  350px;
+    left: 860px;
+    width: 100px;
+  }
+  .littleicon4 {
+    position: absolute;
+    top:  650px;
+    left: 30px;
+    width: 100px;
+  }
   .blob-wrapper {
-    height: 1000px;
+    height: 1100px;
     position: relative;
     top: -100px;
     overflow-x: hidden;
@@ -3597,12 +3595,19 @@
   .blob1-d {
     display: block;
     object-fit: cover;
-    top: -11.6rem;
-    left: 670px;
-    height: 1100.33px;
-    width: 1100.04px;
+    top: -13rem;
+    left: 600px;
+    height: 1300;
+    width: 1300.04px;
     transform: translateY(27px);
     z-index: -1;
+  }
+  .appui {
+    position: absolute;
+    top: -120px;
+    width: 55%;
+    margin-left: 240px;
+    
   }
   .review-section {
     height: 10vh;
@@ -3634,6 +3639,78 @@
     width: 1000px;
     height: 1000px;
   }
+  .see-leaders h1 {
+    margin-top: 0;
+    width: 403px;
+    float: right;
+    text-align: left;
+  }
+  .see-leaders p {
+    position: absolute;
+    top: 430px;
+    left: 720px;
+    text-align: left;
+  }
+  .vid-play-wrapper {
+    float: right;
+    margin: 20px auto;
+    width: 500px;
+    height: 380px;
+    background: url("../images/video-play.jpg") no-repeat center center fixed;
+    box-shadow: 0px 30px 20px #22a1f51a;
+    border-radius: 23px;
+    opacity: 1;
+  }
 
+  .video-img {
+    width: 500px;
+    height: 380px;
+    position: absolute;
+    background: linear-gradient(180deg, #75e7ff 0%, #677bff 100%) 0% 0%
+      no-repeat padding-box;
+    border-radius: 23px;
+    opacity: 0.9;
+    transition: 1s ease-out;
+  }
+
+  .vid-play {
+    position: absolute;
+    left: 970px;
+    top: 180px;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    z-index: 3;
+    cursor: pointer;
+  }
+  .learn-more h1 {
+    margin: 80px auto 0;
+    margin-left: -50px;
+    text-align: center;
+    color: #3374ea;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    font-size: 35px;
+    float: left;
+    width: 50%;
+  }
+  .learn-more p {
+    float: left;
+    width: 40%;
+    color: var(--third-color);
+    text-align: left;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+    margin-top: 20px;
+    margin-left: 50px;
+    line-height: 25px;
+  }
+  .learn-moreBTN {
+    position: relative;
+    top: 260px;
+    right: 520px;
+    margin-top: 10px;
+  }
 
 }

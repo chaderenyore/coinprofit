@@ -3,13 +3,36 @@
 let togglebtn = document.querySelector('#toggleIcon');
 
 
+if(localStorage.getItem("theme") == null) {
+
+    localStorage.setItem("theme", "light");
+    
+}
+
+
+
+let localData = localStorage.getItem("theme");
+
+if(localData == "light") {
+    togglebtn.src = "toggl.png";
+    document.body.classList.remove("dark-theme");
+
+} else if (localData == "dark") {
+    togglebtn.src = "toggle-dark.svg";
+    document.body.classList.add("dark-theme");
+}
+
+
+
 togglebtn.addEventListener('click', function() {
     document.body.classList.toggle('dark-theme');
     
     if(document.body.classList.contains('dark-theme')) {
         togglebtn.src = "toggle-dark.svg";
+        localStorage.setItem("theme", "dark");
     } else {
         togglebtn.src = "toggl.png";
+        localStorage.setItem("theme", "light");
     }
 });
 
