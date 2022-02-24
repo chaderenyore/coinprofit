@@ -279,9 +279,9 @@ p {
 .get-signal {
   margin: 50px auto 20px;
 }
-.copy-img-box {
+/* .copy-img-box {
   width: 100%;
-}
+} */
 .copy-img {
   width: 100%;
   margin-left: 10px;
@@ -467,6 +467,7 @@ p {
   margin: 0 auto;
 }
 .section-title p {
+  color: #fff;
   font-size: 13px;
   line-height: 20px;
 }
@@ -725,15 +726,11 @@ p {
   line-height: 30px;
 }
 
-.trade-img-box {
-  width: 90%;
-}
+
 .trade-img {
   width: 100%;
 }
-.record-img-box {
-  width: 90%;
-}
+
 .record-img {
   width: 100%;
 }
@@ -791,6 +788,33 @@ p {
 .auto-track-img {
   width: 100%;
 }
+
+.auto-track-icons {
+  position: absolute;
+
+}
+.auto-track-icons.bcs1 {
+  width: 40%;
+  top: 300px;
+  left: 210px;
+}
+.auto-track-icons.eth1 {
+  width: 40%;
+  top: 260px;
+  left: 20px;
+}
+
+.auto-track-icons.bcs2 {
+  width: 40%;
+  top: 500px;
+  left: 20px;
+}
+.auto-track-icons.eth2 {
+  width: 40%;
+  top: 550px;
+  left: 210px;
+}
+
 
 .button,
 .button::after {
@@ -937,6 +961,8 @@ p {
   width: 100%;
   position: absolute;
 }
+
+
 
 .share-portfolio p {
   margin: 650px auto 0;
@@ -1352,6 +1378,7 @@ p {
 }
 
 .faqcontent{
+    color: var(--dark-color);
     position: relative;
     font-size: 16px;
     text-align: left;
@@ -1458,6 +1485,7 @@ p {
   transition: all 1s;
 }
 .footerContent p {
+  color: #3374EA;
   border-bottom: 1px solid #3374ea;
   margin-bottom: 8px;
 }
@@ -1632,6 +1660,37 @@ p {
   .signal-planner {
     width: 100%;
   }
+
+  .track-img-box {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .auto-track-img {
+    width: 80%;
+    margin-left: 100px;
+  }
+
+  .auto-track-icons.bcs1 {
+    width: 30%;
+    top: 350px;
+    left: 500px;
+  }
+  .auto-track-icons.eth1 {
+    width: 30%;
+    top: 260px;
+    left: 50px;
+  }
+  .auto-track-icons.bcs2 {
+    width: 30%;
+    top: 650px;
+    left: 20px;
+  }
+  .auto-track-icons.eth2 {
+    width: 30%;
+    top: 800px;
+    left: 500px;
+  }
+
   .share-portfolio-sec {
     height: 140vh;
   }
@@ -2095,18 +2154,15 @@ p {
   .get-signal {
     margin: 30px auto 60px;
   }
-  .copy-img-box {
-    width: 60%;
-    margin: 0 auto;
-  }
+
   .copy-img {
-    width: 100%;
+    width: 70%;
     margin: 0 auto;
   }
 
   .get-signal {
     position: relative;
-    top: 65rem;
+    top: 75rem;
   }
 
   .get-signal h1 {
@@ -2209,10 +2265,10 @@ p {
   }
 
   .meet-leaders {
-    top: 74rem; /* orignally 60rem */
+    top: 80rem; 
     width: 100%;
     height: 1000px;
-    margin-bottom: 1000px;
+    margin-bottom: 1500px;
   }
   .meet-leaders h1 {
     width: 90%;
@@ -2298,11 +2354,11 @@ p {
     text-align: center;
     line-height: 50px;
   }
-  .trade-img-box {
-    width: 70%;
-  }
+
+  
   .trade-img {
-    width: 90%;
+    width: 70%;
+    margin-left: 170px;
     transition: 0.3s ease;
   }
   .trade-img:hover {
@@ -2342,8 +2398,33 @@ p {
     margin: 0 auto;
   }
   .auto-track-img {
-    width: 100%;
+    width: 80%;
   }
+
+
+
+  .auto-track-icons.bcs1 {
+    width: 40%;
+    top: 450px;
+    left: 500px;
+  }
+  .auto-track-icons.eth1 {
+    width: 40%;
+    top: 350px;
+    left: 50px;
+  }
+  .auto-track-icons.bcs2 {
+    width: 40%;
+    top: 760px;
+    left: 20px;
+  }
+  .auto-track-icons.eth2 {
+    width: 40%;
+    top: 1000px;
+    left: 500px;
+  }
+
+
   .profit-loss h1 {
     width: 60%;
     margin: 0 auto;
@@ -3019,10 +3100,7 @@ p {
     position: relative;
     margin-top: 200px;
   }
-  /* .app-features-two {
-    width: 90%;
-    margin: 0 auto;
-  } */
+
 
   .app-features-two h1 {
     color: #3374ea;
@@ -3031,7 +3109,7 @@ p {
     font-size: 40px;
     width: 40%;
     float: right;
-    margin-top: 150px;
+    margin-top: 110px;
     text-align: left;
   }
   .app-features-two p {
@@ -3047,10 +3125,11 @@ p {
   }
 
   .trade-img-box {
-    margin-left: 100px;
-    width: 60%;
+    width: 70%;
   }
+  
   .trade-img {
+    margin-left: 100px;
     width: 50%;
     transition: 0.3s ease;
   }
@@ -3089,8 +3168,9 @@ p {
     width: 60%;
   }
   .record-img {
-    margin-left: 300px;
-    width: 60%;
+    margin-left: 200px;
+    margin-top: 60px;
+    width: 75%;
     transition: 0.3s ease;
   }
   .record-img:hover {
@@ -3137,6 +3217,28 @@ p {
     width: 60%;
     margin-left: 270px;
   }
+
+  .auto-track-icons.bcs1 {
+    width: 40%;
+    top: 110px;
+    left: 500px;
+  }
+  .auto-track-icons.eth1 {
+    width: 40%;
+    top: 210px;
+    left: 500px;
+  }
+  .auto-track-icons.bcs2 {
+    width: 40%;
+    top: 320px;
+    left: 500px;
+  }
+  .auto-track-icons.eth2 {
+    width: 40%;
+    top: 380px;
+    left: 100px;
+  }
+
   .auto-button {
     margin-left: 90px;
     background: none;
