@@ -541,13 +541,13 @@ p {
 .testimonials-text {
   padding: 75px 50px 75px;
   overflow: hidden;
-  background: #74beff;
   border: 1px solid #f1f1f1;
   border-radius: 10px;
   transition: all 0.3s ease-in-out;
   height: 350px;
   width: 90%;
   margin: 0 auto;
+  box-shadow: rgba(26, 38, 58, 0.1);
 }
 
 .testimonials-avatar h3 {
@@ -567,15 +567,17 @@ p {
   width: 100px;
   height: 100px;
   margin-left: -45px;
-  z-index: 20;
+  z-index: 1;
+  
 }
 .testi-avatar img {
-  width: 80px;
-  height: 80px;
+  width: 100%;
+  height: 100%;
   float: left;
   border-radius: 100%;
   border: 6px solid #fff;
   box-shadow: 0 9px 26px rgba(58, 87, 135, 0.1);
+  object-fit: cover;
 }
 .leader-level {
   position: absolute;
@@ -849,6 +851,17 @@ p {
   background-color: #fff;
   color: #3374ea;
 }
+.littleIcon6 {
+  position: absolute;
+  left: 170px;
+  top: 30px;
+}
+.littleIcon7 {
+  width: 20%;
+  position: absolute;
+  left: 140px;
+  top: 1150px;
+}
 .custom-shape-divider-bottom-1644660326 {
   position: absolute;
   bottom: 0;
@@ -901,6 +914,10 @@ p {
 }
 .proft-loss-img {
   width: 100%;
+}
+
+.groupshare {
+  display: none;
 }
 
 /* share */
@@ -1690,6 +1707,12 @@ p {
     top: 800px;
     left: 500px;
   }
+  .littleIcon7 {
+    width: 10%;
+    position: absolute;
+    left: 350px;
+    top: 1350px;
+  }
 
   .share-portfolio-sec {
     height: 140vh;
@@ -2423,7 +2446,12 @@ p {
     top: 1000px;
     left: 500px;
   }
-
+  .littleIcon7 {
+    width: 10%;
+    position: absolute;
+    left: 500px;
+    top: 1850px;
+  }
 
   .profit-loss h1 {
     width: 60%;
@@ -3252,7 +3280,9 @@ p {
     position: relative;
     text-transform: uppercase;
   }
-
+  .profit-loss-sec {
+    position: relative;
+  }
   .proft-loss-img-box {
     width: 60%;
     margin: 0 auto;
@@ -3261,6 +3291,32 @@ p {
     width: 50%;
     margin-left: 150px;
   }
+  .groupshare {
+    display: block;
+    position: absolute
+  }
+  .groupshare.geth1 {
+    width: 20%;
+    top: 200px;
+    margin-left: -60px ;
+  }
+  .groupshare.gbsc1 {
+    width: 20%;
+    top: 240px;
+    margin-left: 420px;
+  }
+
+  .groupshare.gbsc2 {
+    width: 20%;
+    top: 400px;
+    margin-left: -50px;
+  }
+  .groupshare.geth2 {
+    width: 20%;
+    top: 480px;
+    margin-left: 420px;
+  }
+
   /* .. */
   .share-portfolio {
     padding-top: 300px;
