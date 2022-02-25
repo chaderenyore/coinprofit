@@ -852,6 +852,7 @@ p {
   color: #3374ea;
 }
 .littleIcon6 {
+  width: 20%;
   position: absolute;
   left: 170px;
   top: 30px;
@@ -861,6 +862,9 @@ p {
   position: absolute;
   left: 140px;
   top: 1150px;
+}
+.littleIcon8{
+  display: none;
 }
 .custom-shape-divider-bottom-1644660326 {
   position: absolute;
@@ -1272,7 +1276,7 @@ p {
   margin: 20px auto;
   width: 300px;
   height: 300px;
-  background: url("../images/video-play.jpg") no-repeat center center fixed;
+  background: url("../images/video-background.jpg") no-repeat center center fixed;
   box-shadow: 0px 30px 20px #22a1f51a;
   border-radius: 23px;
   opacity: 1;
@@ -1694,7 +1698,7 @@ p {
   }
   .auto-track-icons.eth1 {
     width: 30%;
-    top: 260px;
+    top: 300px;
     left: 50px;
   }
   .auto-track-icons.bcs2 {
@@ -1707,11 +1711,18 @@ p {
     top: 800px;
     left: 500px;
   }
+  .littleIcon6 {
+    width: 10%;
+    position: absolute;
+    left: 170px;
+    top: 40px;
+  }
+
   .littleIcon7 {
     width: 10%;
     position: absolute;
-    left: 350px;
-    top: 1350px;
+    left: 650px;
+    top: 1250px;
   }
 
   .share-portfolio-sec {
@@ -1891,7 +1902,6 @@ p {
     margin: 20px auto;
     width: 500px;
     height: 300px;
-    background: url("../images/video-play.jpg") no-repeat center center fixed;
     box-shadow: 0px 30px 20px #22a1f51a;
     border-radius: 23px;
     opacity: 1;
@@ -2446,11 +2456,27 @@ p {
     top: 1000px;
     left: 500px;
   }
+  .littleIcon6 {
+    width: 10%;
+    position: absolute;
+    left: 590px;
+    top: 40px;
+  }
+
   .littleIcon7 {
     width: 10%;
     position: absolute;
-    left: 500px;
-    top: 1850px;
+    left: 650px;
+    top: 1900px;
+    display: none;
+  }
+  .littleIcon8 {
+    display: block;
+    /* width: 10%; */
+    position: absolute;
+    left: 900px;
+    top: 1900px;
+    
   }
 
   .profit-loss h1 {
@@ -2652,7 +2678,6 @@ p {
     margin: 20px auto;
     width: 500px;
     height: 300px;
-    background: url("../images/video-play.jpg") no-repeat center center fixed;
     box-shadow: 0px 30px 20px #22a1f51a;
     border-radius: 23px;
     opacity: 1;
@@ -3266,7 +3291,20 @@ p {
     top: 380px;
     left: 100px;
   }
-
+  .littleIcon6 {
+    width: 5%;
+    position: absolute;
+    left: 700px;
+    top: 800px;
+  }
+  .littleIcon8 {
+    display: block;
+    width: 2%;
+    position: absolute;
+    left: 200px;
+    top: 50px;
+    
+  }
   .auto-button {
     margin-left: 90px;
     background: none;
@@ -3506,7 +3544,6 @@ p {
     margin: 20px auto;
     width: 500px;
     height: 380px;
-    background: url("../images/video-play.jpg") no-repeat center center fixed;
     box-shadow: 0px 30px 20px #22a1f51a;
     border-radius: 23px;
     opacity: 1;
@@ -3814,7 +3851,6 @@ p {
     margin: 20px auto;
     width: 500px;
     height: 380px;
-    background: url("../images/video-play.jpg") no-repeat center center fixed;
     box-shadow: 0px 30px 20px #22a1f51a;
     border-radius: 23px;
     opacity: 1;
