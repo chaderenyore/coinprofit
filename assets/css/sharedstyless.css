@@ -149,6 +149,10 @@ nav ul li a:active {
     padding: 7px 25px;
     color: blue;
 }
+.actn a:hover {
+    background-color: #13141C;
+    color: #fff !important;
+}
 
 
 .hamburger {
@@ -167,6 +171,7 @@ nav ul li a:active {
 .bar:nth-child(2) {
     margin-left: 20px;
 }
+
 /* on ipad pro screen */
 
 @media only screen and (max-width: 1024px) {
