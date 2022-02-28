@@ -1,143 +1,257 @@
 /* Mobile first design */
 .first-page {
-    padding-top: 1rem;
+  padding-top: 1rem;
 }
 
 .background-svg {
-    display: none;
+  display: none;
 }
 
 .blob-wrapper {
-    position: relative; 
-    overflow-x: hidden;
-    z-index: -1;
-  }
-
+  position: relative;
+  overflow-x: hidden;
+  z-index: -1;
+}
 
 .mobile-blob {
-    object-fit: cover;
-    position: relative;
-    top: -15rem;
-    left: -170px;
-    margin-left: -100px;
-    height: 91.1875rem;
-    width: 91.1875rem;
-  }
-  
-  /* blob1-d will not be displayed on mobile screen - cux it's another image with another style */
-  .computer-blob {
-    display: none;
-  }
-/* Background SVG will not be displayed on mobile screen */
+  object-fit: cover;
+  position: relative;
+  top: -15rem;
+  left: -170px;
+  margin-left: -100px;
+  height: 60rem;
+  width: 91.1875rem;
+}
 
+/* blob1-d will not be displayed on mobile screen - cux it's another image with another style */
+.computer-blob {
+  display: none;
+}
 
+.leaders-about {
+  position: relative;
+  /* top: 120px; */
+  top: -52rem;
+  height: 20rem;
+}
+
+.leaders-about h1 {
+  font-family: "Montserrat", sans-serif;
+  width: 80%;
+  font-weight: 700;
+  margin: 10px auto 0;
+  text-align: center;
+  color: #fff;
+  letter-spacing: 0;
+}
+
+.appui {
+  position: relative;
+  top: px;
+  width: 100%;
+}
+.leaders-about p {
+  width: 90%;
+  margin: auto;
+  text-align: center;
+  margin-top: 4px;
+  color: var(--fourth-color);
+  line-height: 30px;
+}
 
 /* IPAD  */
 
-@media only screen and (max-width: 768px) {
-    .blob-wrapper {
-        height: 750px;
-        position: relative;
-        top: -100px;
-        overflow-x: hidden;
-      }
-    .blob-wrapper {
-        position: relative; /* had a top postioning that was 40px */
-        overflow-x: hidden;
-        z-index: -1;
-        height: 900px;
-      }
+@media only screen and (min-width: 768px) {
 
-      .mobile-blob{
-        object-fit: cover;
-        position: relative;
-        top: -20rem;
-        margin-left: -100px;
-        height: 1460px;
-        width: 1600px;
-      }
+  .blob-wrapper {
+    position: relative; /* had a top postioning that was 40px */
+    overflow-x: hidden;
+    z-index: -1;
+    height: 1500px;
+    top: -100px;
+  }
+
+  .mobile-blob {
+    object-fit: cover;
+    position: relative;
+    top: -20rem;
+    margin-left: -100px;
+    height: 90rem;
+    width: 100rem;
+  }
+
+  .leaders-about {
+    position: relative;
+    /* top: 120px; */
+    top: -80rem;
+    height: 0;
+  }
+
+  .leaders-about h1 {
+    font-family: "Montserrat", sans-serif;
+    width: 70%;
+    font-weight: 700;
+    margin: 10px auto 0;
+    text-align: center;
+    color: #fff;
+    letter-spacing: 0;
+    margin-left: 6rem;
+  }
+  .appui {
+    position: relative;
+    top: px;
+    width: 60%;
+    margin-left: 5.5rem;
+  }
 }
 
-
-  /* IPAD PRO */
+/* IPAD PRO */
 
 @media only screen and (min-width: 1024px) {
-    .background-svg {
-        display: block;
-        position: absolute;
-        top: 10rem;
-        left: 5rem;
-        width: 50%;
-        opacity: 0.09;
-      }
-      .blob-wrapper {
-        height: 750px;
-        position: relative;
-        top: -107px;
-        overflow-x: hidden;
-      }
-      .mobile-blob {
-        display: none;
-      }
-      .computer-blob {
-        display: block;
-        object-fit: cover;
-        position: absolute;
-        top: -15rem;
-        left: 29rem;
-        height: 68.770625rem;
-        width: 62.5025rem;
-        transform: translateY(27px);
-      }
+  .background-svg {
+    display: block;
+    position: absolute;
+    top: 10rem;
+    left: 5rem;
+    width: 50%;
+    opacity: 0.09;
+  }
+  .blob-wrapper {
+    height: 750px;
+    position: relative;
+    top: -107px;
+    overflow-x: hidden;
+  }
+  .mobile-blob {
+    display: none;
+  }
+  .computer-blob {
+    display: block;
+    object-fit: cover;
+    position: absolute;
+    top: -15rem;
+    left: 29rem;
+    height: 68.770625rem;
+    width: 62.5025rem;
+    transform: translateY(27px);
+  }
 
+  .leaders-about {
+    position: relative;
+    /* top: 120px; */
+    top: -40rem;
+    height: 0;
+    display: none;
+  }
+  .leaders-about h1 {
+    width: 60%;
+    font-family: "Montserrat", sans-serif;
+    text-align: left;
+    margin: 0.9rem 0;
+    color: #3374ea;
+    font-size: 2.9rem;
+    font-weight: 800;
+    letter-spacing: 0;
+    padding: 0 4rem;
+  }
+
+  .appui {
+    position: absolute;
+    top: -60px;
+    left: 35rem;
+    width: 60%;
+  }
+
+  .leaders-about p {
+    width: 50%;
+    text-align: left;
+    margin-top: 4px;
+    margin-left: 3.7rem;
+    color: var(--fourth-color);
+    line-height: 30px;
+  }
 }
 
-  /* START COMPUTER SCREEN DESIGN */
+/* START COMPUTER SCREEN DESIGN */
 @media only screen and (min-width: 1200px) {
-    .background-svg {
-        display: block;
-        position: absolute;
-        top: 7.5rem;
-        left: 5.4375rem;
-        width: 35%;
-      }
+  .background-svg {
+    display: block;
+    position: absolute;
+    top: 11rem;
+    left: 5.4375rem;
+    width: 35%;
+  }
 
-    .blob-wrapper {
-        height: 68rem;
-        position: relative;
-        top: -7.5rem;
-        overflow-x: hidden;
-      }
+  .blob-wrapper {
+    height: 68rem;
+    position: relative;
+    top: -7.5rem;
+    overflow-x: hidden;
+  }
 
-    .computer-blob {
-        display: block;
-        object-fit: cover;
-        top: -13rem;
-        left: 40.8125rem;
-        width: 62.5025rem;
-        transform: translateY(27px);
-        z-index: -1;
-      }
+  .computer-blob {
+    display: block;
+    object-fit: cover;
+    top: -13rem;
+    left: 40.8125rem;
+    width: 62.5025rem;
+    transform: translateY(27px);
+    z-index: -1;
+  }
 
+  .leaders-about {
+    display: block; /* just for now it will not be shown on ipad pro */
+    position: relative;
+    /* top: 120px; */
+    top: -65rem;
+    height: -40rem;
+  }
+  .leaders-about h1 {
+    width: 60%;
+    font-family: "Montserrat", sans-serif;
+    text-align: left;
+    margin: 0.9rem 0;
+    color: #3374ea;
+    font-weight: 800;
+    letter-spacing: 0;
+    padding: 0 4rem;
+  }
+
+  .appui {
+    position: absolute;
+    top: -3rem;
+    left: 40rem;
+    width: 25%;
+  }
+
+  .leaders-about p {
+    width: 40%;
+    text-align: left;
+    margin-top: 4px;
+    margin-left: 3.7rem;
+    color: var(--fourth-color);
+    line-height: 25px;
+    font-size: 0.9rem;
+  }
 }
 
 /* ----------- Retina Screens ----------- */
 @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
-    .blob-wrapper {
-        height: 1100px;
-        position: relative;
-        top: -100px;
-        overflow-x: hidden;
-      }
-    
-      .computer-blob {
-        display: block;
-        object-fit: cover;
-        top: -13rem;
-        left: 600px;
-        height: 1300;
-        width: 1300.04px;
-        transform: translateY(27px);
-        z-index: -1;
-      }
+  .blob-wrapper {
+    height: 1100px;
+    position: relative;
+    top: -100px;
+    overflow-x: hidden;
+  }
+
+  .computer-blob {
+    display: block;
+    object-fit: cover;
+    top: -13rem;
+    left: 600px;
+    height: 1300;
+    width: 1300.04px;
+    transform: translateY(27px);
+    z-index: -1;
+  }
 }

@@ -77,9 +77,6 @@ function initParadoxWay() {
               clickable: true,
               dynamicBullets: true,
           },
-          autoplay: {
-              delay: 3000,
-            },
           navigation: {
               nextEl: '.listing-carousel-button-next',
               prevEl: '.listing-carousel-button-prev',
