@@ -1,5 +1,11 @@
-/* Mobile first design */
+....
 
+
+
+
+
+
+/* Mobile first design */
 .first-page {
   padding-top: 1rem;
 }
@@ -30,10 +36,10 @@
 }
 
 .leaders-about {
-position: relative;
-top: -50rem;
-margin-bottom: -45rem;
-
+  position: relative;
+  /* top: 120px; */
+  top: -52rem;
+  height: 20rem;
 }
 
 .leaders-about h1 {
@@ -60,18 +66,10 @@ margin-bottom: -45rem;
   line-height: 30px;
 }
 
-.app-download {
-  display: block;
-  width: 50%;
-  margin: 2rem auto 0;
-  /* margin-top: 10px; */
-  /* margin-left: 90px; */
-}
-
-
 /* IPAD  */
 
 @media only screen and (min-width: 768px) {
+
   .blob-wrapper {
     position: relative; 
     overflow-x: hidden;
@@ -88,10 +86,12 @@ margin-bottom: -45rem;
     height: 90rem;
     width: 100rem;
   }
+
   .leaders-about {
     position: relative;
-    top: -82rem;
-    margin-bottom: -75rem;
+    /* top: 120px; */
+    top: -80rem;
+    height: 0;
   }
 
   .leaders-about h1 {
@@ -111,6 +111,8 @@ margin-bottom: -45rem;
     margin-left: 5.5rem;
   }
 }
+
+/* IPAD PRO */
 
 @media only screen and (min-width: 1024px) {
   .background-svg {
@@ -143,8 +145,10 @@ margin-bottom: -45rem;
 
   .leaders-about {
     position: relative;
-    top: -37rem;
-    margin-bottom: -25rem;
+    /* top: 120px; */
+    top: -40rem;
+    height: 0;
+    display: none;
   }
   .leaders-about h1 {
     width: 60%;
@@ -162,8 +166,7 @@ margin-bottom: -45rem;
     position: absolute;
     top: -60px;
     left: 35rem;
-    width: 40%;
-    display: none;
+    width: 60%;
   }
 
   .leaders-about p {
@@ -174,16 +177,6 @@ margin-bottom: -45rem;
     color: var(--fourth-color);
     line-height: 30px;
   }
-  .app-downloads {
-    margin-left: 3rem;
-  }
-  .app-download {
-    display: inline-block;
-    width: 30%;
-    margin: 2rem 1rem;
-    /* margin-top: 10px; */
-    /* margin-left: 90px; */
-  }
 }
 
 /* START COMPUTER SCREEN DESIGN */
@@ -191,13 +184,13 @@ margin-bottom: -45rem;
   .background-svg {
     display: block;
     position: absolute;
-    top: 15rem;
+    top: 11rem;
     left: 5.4375rem;
-    width: 30%;
+    width: 35%;
   }
 
   .blob-wrapper {
-    height: 41rem;
+    height: 40rem;
     position: relative;
     top: -7.5rem;
     overflow-x: hidden;
@@ -206,20 +199,19 @@ margin-bottom: -45rem;
   .computer-blob {
     display: block;
     object-fit: cover;
-    top: -1rem;
+    top: -13rem;
     left: 40.8125rem;
     width: 62.5025rem;
-    width: 62.5025rem;
-    height: 40rem;
     transform: translateY(27px);
     z-index: -1;
   }
 
-
   .leaders-about {
+    display: block; /* just for now it will not be shown on ipad pro */
     position: relative;
-    top: -37rem;
-    margin-bottom: -25rem;
+    /* top: 120px; */
+    top: -65rem;
+    height: -40rem;
   }
   .leaders-about h1 {
     width: 50%;
@@ -234,7 +226,6 @@ margin-bottom: -45rem;
   }
 
   .appui {
-    display: block;
     position: absolute;
     top: -3rem;
     left: 40rem;
@@ -249,16 +240,6 @@ margin-bottom: -45rem;
     color: var(--fourth-color);
     line-height: 25px;
     font-size: 0.9rem;
-  }
-  .app-downloads {
-    margin-left: 3rem;
-  }
-  .app-download {
-    display: inline-block;
-    width: 10rem;
-    margin: 2rem 1rem;
-    /* margin-top: 10px; */
-    /* margin-left: 90px; */
   }
 }
 
