@@ -69,12 +69,12 @@
   display: none;
 }
 
-.share-portfolio {
+.leaders-features{
   position: relative;
   padding-bottom: 1rem;
 }
 
-.share-portfolio h1 {
+.leaders-features h1{
   text-align: center;
   color: #3374ea;
   font-family: "Montserrat", sans-serif;
@@ -82,7 +82,7 @@
   font-size: 2rem;
 }
 
-.share-blob {
+.leadersF-blob {
   margin-top: 2rem;
   width: 100%;
   z-index: -1;
@@ -96,7 +96,7 @@
   margin-bottom: -19rem;
 }
 
-.share-portfolio p {
+.leaders-features p {
   margin: 0 auto;
   width: 90%;
   color: var(--fourth-color);
@@ -105,6 +105,14 @@
   font-weight: 400;
   font-family: "Montserrat", sans-serif;
   line-height: 30px;
+}
+
+.seeSubsimg {
+  margin: 0 auto;
+  width: 100%;
+  position: relative;
+  top: -17rem;
+  margin-bottom: -19rem;
 }
 
 /* IPAD  */
@@ -158,7 +166,7 @@
     margin: 4rem auto 0;
   }
 
-  .share-portfolio h1 {
+  .leaders-features h1{
     text-align: center;
     color: #3374ea;
     font-family: "Montserrat", sans-serif;
@@ -166,7 +174,7 @@
     font-size: 3.5rem;
   }
 
-  .share-blob {
+  .leadersF-blob {
     margin: 2.5rem auto 0;
     width: 90%;
     z-index: -1;
@@ -180,7 +188,7 @@
     margin-bottom: -39rem;
   }
 
-  .share-portfolio p {
+  .leaders-features p {
     margin: 0 auto;
     width: 90%;
     color: var(--fourth-color);
@@ -189,6 +197,13 @@
     font-weight: 400;
     font-family: "Montserrat", sans-serif;
     line-height: 30px;
+  }
+  .seeSubsimg {
+    margin-left: 5rem;
+    width: 80%;
+    position: relative;
+    top: -35rem;
+    margin-bottom: -39rem;
   }
 }
 
@@ -265,7 +280,8 @@
     margin: 2rem 1rem;
   }
 
-  .share-portfolio h1 {
+  .leaders-features h1{
+  
     text-align: center;
     color: #3374ea;
     font-family: "Montserrat", sans-serif;
@@ -273,7 +289,7 @@
     font-size: 5rem;
   }
 
-  .share-blob {
+  .leadersF-blob {
     margin-top: 3rem;
     margin-left: 3.5rem;
     width: 90%;
@@ -288,7 +304,7 @@
     top: -50rem;
   }
 
-  .share-portfolio p {
+  .leaders-features p {
     margin: 0 auto;
     width: 90%;
     color: var(--fourth-color);
@@ -297,6 +313,13 @@
     font-weight: 400;
     font-family: "Montserrat", sans-serif;
     line-height: 50px;
+  }
+  .seeSubsimg {
+    margin-left: 10rem;
+    margin-bottom: -50rem;
+    width: 70%;
+    position: relative;
+    top: -50rem;
   }
 }
 
@@ -429,12 +452,12 @@
     margin-top: 2px;
     font-size: 17px;
   }
-  .share-portfolio {
+  .leaders-features{
     width: 80%;
     margin: 0 auto;
     padding-bottom: 5rem;
   }
-  .share-portfolio h1 {
+  .leaders-features h1{
     float: right;
     margin-right: 14.5rem;
     margin-top: 16rem;
@@ -445,7 +468,7 @@
     font-size: 2.3rem;
   }
 
-  .share-blob {
+  .leadersF-blob {
     margin-top: 3rem;
     margin-left: 0;
     width: 40%;
@@ -460,7 +483,7 @@
     width: 30%;
   }
 
-  .share-portfolio p {
+  .leaders-features p {
     width: 40%;
     color: var(--fourth-color);
     text-align: left;
@@ -471,6 +494,41 @@
     float: right;
     margin-right: 3rem;
     margin-top: -12rem;
+  }
+  .leaders-features.two{
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 40rem;
+  }
+  .leaders-features.two h1{
+    float: left;
+    margin-right: 14.5rem;
+    margin-top: 16rem;
+    text-align: left;
+    color: #3374ea;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    font-size: 2.3rem;
+
+  }
+  .leadersF-blob.two {
+    float: right;
+    margin-top: 3rem;
+    margin-left: 0;
+    width: 40%;
+    z-index: -1;
+  }
+  .seeSubsimg {
+    position: relative;
+    top: -25rem;
+    margin-left: 23rem ;
+    margin-bottom: -30rem;
+    width: 30%;
+    float: right;
+  }
+  .leaders-features.two p {
+    float: left;
+    margin-top: -10rem;
   }
 }
 
