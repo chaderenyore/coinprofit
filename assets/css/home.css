@@ -1,27 +1,26 @@
-
 .littleicon1 {
   position: absolute;
-  top:  260px;
+  top: 260px;
   left: 10px;
   width: 110px;
 }
 
 .littleicon2 {
   position: absolute;
-  top:  460px;
+  top: 460px;
   left: 10px;
   width: 100px;
 }
 
 .littleicon3 {
   position: absolute;
-  top:  350px;
+  top: 350px;
   left: 250px;
   width: 100px;
 }
 .littleicon4 {
   position: absolute;
-  top:  1050px;
+  top: 1050px;
   left: 10px;
   width: 100px;
 }
@@ -558,7 +557,6 @@
   height: 100px;
   margin-left: -45px;
   z-index: 1;
-  
 }
 .testi-avatar img {
   width: 100%;
@@ -678,7 +676,6 @@
 
 /* custom shape divider ends here */
 
-
 .app-features-two {
   position: relative;
   margin-top: 2300px;
@@ -717,7 +714,6 @@
   font-family: "Montserrat", sans-serif;
   line-height: 30px;
 }
-
 
 .trade-img {
   width: 100%;
@@ -783,7 +779,6 @@
 
 .auto-track-icons {
   position: absolute;
-
 }
 .auto-track-icons.bcs1 {
   width: 40%;
@@ -806,7 +801,6 @@
   top: 550px;
   left: 210px;
 }
-
 
 .button,
 .button::after {
@@ -853,7 +847,7 @@
   left: 140px;
   top: 1150px;
 }
-.littleIcon8{
+.littleIcon8 {
   display: none;
 }
 .custom-shape-divider-bottom-1644660326 {
@@ -928,7 +922,6 @@
   width: 100%;
   overflow: hidden;
   line-height: 0;
-  
 }
 
 .custom-shape-divider-top-1644670257 svg {
@@ -940,7 +933,7 @@
 
 .custom-shape-divider-top-1644670257 .shape-fill {
   fill: var(--light-color);
-  box-shadow: 20px 20px 40px #D6D6D629;
+  box-shadow: 20px 20px 40px #d6d6d629;
 }
 
 .share-portfolio {
@@ -973,8 +966,6 @@
   position: absolute;
 }
 
-
-
 .share-portfolio p {
   margin: 650px auto 0;
   width: 80%;
@@ -987,24 +978,24 @@
 }
 
 .custom-shape-divider-bottom-1644669891 {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
 }
 
 .custom-shape-divider-bottom-1644669891 svg {
-    position: relative;
-    display: block;
-    width: calc(145% + 1.3px);
-    height: 169px;
+  position: relative;
+  display: block;
+  width: calc(145% + 1.3px);
+  height: 169px;
 }
 
 .custom-shape-divider-bottom-1644669891 .shape-fill {
-    fill: var(--light-color);
+  fill: var(--light-color);
 }
 
 .exchange-sec {
@@ -1028,7 +1019,7 @@
   font-family: "Montserrat", sans-serif;
 }
 .exchange-box-wrapper {
-  margin:  5px auto;
+  margin: 5px auto;
   display: inline-block;
 }
 .exchange-box {
@@ -1048,11 +1039,11 @@
   height: 120px;
 }
 .exchange-logo.min {
-    width: 110px;
-    margin-left: -5px;
+  width: 110px;
+  margin-left: -5px;
 }
 .exchange-box-wrapper.ten {
-    margin-left: 125px;
+  margin-left: 125px;
 }
 .exchange-box p {
   display: none;
@@ -1090,46 +1081,46 @@
   text-transform: capitalize;
 }
 .user-review-box {
-    margin: 30px auto;
-    width: 350px;
-    padding: 0 20px 0;
-    height: 450px;
-    background: var(--third-color) 0% 0% no-repeat padding-box;
-    box-shadow: 0px 20px 17px #1c192305;
-    border-radius: 20px;
-    opacity: 1;
-    text-align: center;
-  }
-  .user-review-box h3 {
-    margin: 30px 0;
-    text-align: center;
-    color: #3374ea;
-    font-family: "Montserrat", sans-serif;
-  }
+  margin: 30px auto;
+  width: 350px;
+  padding: 0 20px 0;
+  height: 450px;
+  background: var(--third-color) 0% 0% no-repeat padding-box;
+  box-shadow: 0px 20px 17px #1c192305;
+  border-radius: 20px;
+  opacity: 1;
+  text-align: center;
+}
+.user-review-box h3 {
+  margin: 30px 0;
+  text-align: center;
+  color: #3374ea;
+  font-family: "Montserrat", sans-serif;
+}
 
-  .users-img-wrapper {
-    position: relative;
-    top: 0px;
-    height: 90px;
-    width: 90px;
-    margin: auto;
-    border: 8px solid #22a1f5;
-    border-radius: 50%;
-    overflow: hidden;
-  }
-  .users-img-wrapper img {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    object-fit: cover;
-    transition: 0.3s ease;
-  }
+.users-img-wrapper {
+  position: relative;
+  top: 0px;
+  height: 90px;
+  width: 90px;
+  margin: auto;
+  border: 8px solid #22a1f5;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.users-img-wrapper img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  transition: 0.3s ease;
+}
 
-  .star-review {
-      margin-top: 20px;
-  }
+.star-review {
+  margin-top: 20px;
+}
 .user-review-box p {
   margin: 20px 0;
   color: var(--fourth-color);
@@ -1140,10 +1131,10 @@
 }
 
 .splide__arrow {
-    background-color: #3374ea;
+  background-color: #3374ea;
 }
 .splide__arrows button {
-    color: white;
+  color: white;
 }
 .splide .splide__arrows {
   position: absolute;
@@ -1168,10 +1159,10 @@
 }
 
 .users-CTA {
-    text-align: center;
-    width: 80%;
-    margin: 0 auto;
-    font-family: "Montserrat", sans-serif;
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  font-family: "Montserrat", sans-serif;
 }
 
 .get-details-review {
@@ -1220,7 +1211,7 @@
 .learn-moreBTN {
   margin-top: 10px;
   margin-left: 85px;
-  background-color: #fff; 
+  background-color: #fff;
   border: none;
   border-radius: 50px;
   color: #3374ea;
@@ -1266,7 +1257,8 @@
   margin: 20px auto;
   width: 300px;
   height: 300px;
-  background: url("../images/video-background.jpg") no-repeat center center fixed;
+  background: url("../images/video-background.jpg") no-repeat center center
+    fixed;
   box-shadow: 0px 30px 20px #22a1f51a;
   border-radius: 23px;
   opacity: 1;
@@ -1276,7 +1268,8 @@
   width: 300px;
   height: 300px;
   position: absolute;
-  background: linear-gradient(180deg, #75e7ff 0%, #677bff 100%) 0% 0% no-repeat padding-box;
+  background: linear-gradient(180deg, #75e7ff 0%, #677bff 100%) 0% 0% no-repeat
+    padding-box;
   border-radius: 23px;
   opacity: 0.9;
   transition: 1s ease-out;
@@ -1345,13 +1338,12 @@
 
 /* code for FAQ SECTION */
 .faq-wrapper {
-    max-width: 90%;
-    margin: 30px auto;
-
+  max-width: 90%;
+  margin: 30px auto;
 }
-.faqcontainer{
-    width: 100%;
-    margin: auto;
+.faqcontainer {
+  width: 100%;
+  margin: auto;
 }
 .faq-wrapper h1 {
   text-align: center;
@@ -1359,78 +1351,75 @@
   margin-bottom: 50px;
   font-family: "Montserrat", sans-serif;
 }
-.faqwrapper{
-    background-color: var(--third-color);
-    margin-bottom: 20px;
-    padding: 15px 30px;
-    border-radius: 5px;
-    box-shadow: 0px 20px 17px #1C192305;
+.faqwrapper {
+  background-color: var(--third-color);
+  margin-bottom: 20px;
+  padding: 15px 30px;
+  border-radius: 5px;
+  box-shadow: 0px 20px 17px #1c192305;
 }
 .faqtoggle,
-.faqcontent{
-    font-family: "Montserrat", sans-serif;
+.faqcontent {
+  font-family: "Montserrat", sans-serif;
 }
 .faqwrapper h3 {
   color: #3374ea;
 }
-.faqtoggle{
-    width: 100%;
-    background-color: transparent;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-size: 16px;
-    color: #111130;
-    font-weight: 500;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 15px 0;
-    text-align: left;
+.faqtoggle {
+  width: 100%;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 16px;
+  color: #111130;
+  font-weight: 500;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 15px 0;
+  text-align: left;
 }
 
-.faqcontent{
-    color: var(--dark-color);
-    position: relative;
-    font-size: 16px;
-    text-align: left;
-    line-height: 30px;
-    height: 0;
-    overflow: hidden;
-    transition: all 1s;
+.faqcontent {
+  color: var(--dark-color);
+  position: relative;
+  font-size: 16px;
+  text-align: left;
+  line-height: 30px;
+  height: 0;
+  overflow: hidden;
+  transition: all 1s;
 }
 
 /* FAQ ENDS HERE */
-
-
-
 
 /* IPAD SCEREEN SIZE */
 
 @media only screen and (min-width: 768px) {
   .littleicon1 {
     position: absolute;
-    top:  200px;
+    top: 200px;
     left: 10px;
     width: 110px;
   }
-  
+
   .littleicon2 {
     position: absolute;
-    top:  550px;
+    top: 550px;
     left: 10px;
     width: 100px;
   }
-  
+
   .littleicon3 {
     position: absolute;
-    top:  350px;
+    top: 350px;
     left: 650px;
     width: 100px;
   }
   .littleicon4 {
     position: absolute;
-    top:  650px;
+    top: 650px;
     left: 650px;
     width: 100px;
   }
@@ -1629,11 +1618,11 @@
     margin: 0 auto;
   }
   .share-portfolio-img {
-    width:70%;
+    width: 70%;
     position: absolute;
     left: 120px;
   }
-  
+
   .share-portfolio p {
     margin: 900px auto 0;
     width: 80%;
@@ -1648,7 +1637,7 @@
     width: 80%;
     margin: 100px auto 140px;
   }
-  
+
   .exchange-wrapper h1 {
     width: 80%;
     margin: 0 auto 50px;
@@ -1665,7 +1654,7 @@
     font-family: "Montserrat", sans-serif;
   }
   .exchange-box-wrapper {
-    margin:  5px auto;
+    margin: 5px auto;
     display: inline-block;
   }
   .exchange-box {
@@ -1684,11 +1673,11 @@
     height: 120px;
   }
   .exchange-logo.min {
-      width: 110px;
-      margin-left: -5px;
+    width: 110px;
+    margin-left: -5px;
   }
   .exchange-box-wrapper.ten {
-      margin-left: 0;
+    margin-left: 0;
   }
   .exchange-download-wrapper {
     margin-top: 2.5rem;
@@ -1710,19 +1699,18 @@
     text-align: center;
   }
 
+  .splide .splide__arrows {
+    position: absolute;
+    top: 170px;
+  }
+  .splide__arrows .splide__arrow--prev {
+    left: -30px;
+  }
+  .splide__arrows .splide__arrow--next {
+    left: 465px;
+  }
 
-.splide .splide__arrows {
-  position: absolute;
-  top: 170px;
-}
-.splide__arrows .splide__arrow--prev {
-  left: -30px;
-}
-.splide__arrows .splide__arrow--next {
-  left: 465px;
-}
-
-.review-download-wrapper {
+  .review-download-wrapper {
     margin-left: 190px;
   }
 
@@ -1748,7 +1736,7 @@
     font-weight: 700;
     cursor: pointer;
   }
-  
+
   .vid-play {
     position: absolute;
     left: 300px;
@@ -1762,7 +1750,7 @@
     animation: pulse 2s infinite;
     box-shadow: 0 0 0px rgba(121, 113, 113, 0.061);
   }
-  
+
   @keyframes pulse {
     0% {
       box-shadow: 0 0 0 0 rgba(153, 160, 141, 0.897);
@@ -1786,17 +1774,18 @@
     border-radius: 23px;
     opacity: 1;
   }
-  
+
   .video-img {
     width: 500px;
     height: 300px;
     position: absolute;
-    background: linear-gradient(180deg, #75e7ff 0%, #677bff 100%) 0% 0% no-repeat padding-box;
+    background: linear-gradient(180deg, #75e7ff 0%, #677bff 100%) 0% 0%
+      no-repeat padding-box;
     border-radius: 23px;
     opacity: 0.9;
     transition: 1s ease-out;
   }
-  
+
   .video-modal {
     position: fixed;
     top: 0;
@@ -1812,20 +1801,20 @@
     pointer-events: none;
     transition: all 0.3s ease-in;
   }
-  
+
   .video-modal.showmodal {
     visibility: visible;
     opacity: 1;
     pointer-events: all;
   }
-  
+
   .modal-container {
     width: 100%;
     max-width: 800px;
     padding: 20px;
     position: relative;
   }
-  
+
   .vid-close {
     width: 80px;
     height: 80px;
@@ -1841,13 +1830,13 @@
     height: 30px;
     fill: #fff;
   }
-  
+
   .iframe-container {
     position: relative;
     width: 95%;
     padding-top: 50%;
   }
-  
+
   .iframe-container iframe {
     position: absolute;
     top: 0;
@@ -1857,7 +1846,6 @@
     width: 100%;
     height: 100%;
   }
-
 }
 
 /* START IPAD PRO SCREEN SIZE DESIGN */
@@ -1865,31 +1853,31 @@
 @media only screen and (min-width: 1024px) {
   .littleicon1 {
     position: absolute;
-    top:  110px;
+    top: 110px;
     left: 910px;
     width: 90px;
   }
-  
+
   .littleicon2 {
     position: absolute;
-    top:  620px;
+    top: 620px;
     left: 900px;
     width: 100px;
   }
-  
+
   .littleicon3 {
     position: absolute;
-    top:  350px;
+    top: 350px;
     left: 610px;
     width: 100px;
   }
   .littleicon4 {
     position: absolute;
-    top:  650px;
+    top: 650px;
     left: 10px;
     width: 100px;
   }
-  
+
   .blob-wrapper {
     height: 750px;
     position: relative;
@@ -2141,7 +2129,6 @@
     font-size: 28px;
   }
 
-
   .main-signal-img {
     position: relative;
     top: -530px;
@@ -2160,7 +2147,7 @@
   }
 
   .meet-leaders {
-    top: 80rem; 
+    top: 80rem;
     width: 100%;
     height: 1000px;
     margin-bottom: 1500px;
@@ -2205,13 +2192,11 @@
     width: 380px;
   }
 
-
-.app-features-two {
+  .app-features-two {
     width: 90%;
     position: relative;
     padding-top: -500px;
   }
-
 
   .app-features-two h1 {
     color: #3374ea;
@@ -2227,7 +2212,7 @@
     font-family: "Montserrat", sans-serif;
     margin-top: 50px;
     text-align: center;
-    line-height: 50px
+    line-height: 50px;
   }
   .trade-lessons {
     width: 90%;
@@ -2250,7 +2235,6 @@
     line-height: 50px;
   }
 
-  
   .trade-img {
     width: 70%;
     margin-left: 170px;
@@ -2296,8 +2280,6 @@
     width: 80%;
   }
 
-
-
   .auto-track-icons.bcs1 {
     width: 40%;
     top: 450px;
@@ -2338,7 +2320,6 @@
     position: absolute;
     left: 900px;
     top: 1900px;
-    
   }
 
   .profit-loss h1 {
@@ -2412,7 +2393,7 @@
     margin: 20px auto 0;
     width: 200px;
     height: 160px;
-    
+
     background: var(--third-color) 0% 0% no-repeat padding-box;
     box-shadow: 0px 3px 6px #00000008;
     border-radius: 20px;
@@ -2434,7 +2415,7 @@
     margin-top: 10px;
   }
   .exchange-box p {
-      display: block;
+    display: block;
     padding-top: 10px;
     color: var(--fourth-color);
     text-align: center;
@@ -2483,7 +2464,7 @@
   }
   .users-CTA {
     font-size: 20px;
-}
+  }
   .users-img-wrapper {
     position: relative;
     top: 0px;
@@ -2596,41 +2577,35 @@
     top: -40px;
     left: 700px;
   }
-
-
-
-
-
 }
 /* START COMPUTER SCREEN DESIGN */
 @media only screen and (min-width: 1200px) {
   .littleicon1 {
     position: absolute;
-    top:  200px;
+    top: 200px;
     left: 1200px;
     width: 150px;
   }
-  
+
   .littleicon2 {
     position: absolute;
-    top:  720px;
+    top: 720px;
     left: 1040px;
     width: 100px;
   }
-  
+
   .littleicon3 {
     position: absolute;
-    top:  350px;
+    top: 350px;
     left: 780px;
     width: 100px;
   }
   .littleicon4 {
     position: absolute;
-    top:  650px;
+    top: 650px;
     left: 30px;
     width: 100px;
   }
-
 
   .blob-wrapper {
     height: 1100px;
@@ -2687,7 +2662,6 @@
     top: -120px;
     width: 55%;
     margin-left: 180px;
-    
   }
 
   .review-section {
@@ -2720,7 +2694,7 @@
   .box.three {
     margin-left: 0;
   }
- 
+
   .box-img {
     position: relative;
     top: -60px;
@@ -2991,7 +2965,6 @@
     margin-top: 200px;
   }
 
-
   .app-features-two h1 {
     color: #3374ea;
     font-family: "Montserrat", sans-serif;
@@ -3017,7 +2990,7 @@
   .trade-img-box {
     width: 70%;
   }
-  
+
   .trade-img {
     margin-left: 100px;
     width: 50%;
@@ -3140,7 +3113,6 @@
     position: absolute;
     left: 200px;
     top: 50px;
-    
   }
   .auto-button {
     margin-left: 90px;
@@ -3168,12 +3140,12 @@
   }
   .groupshare {
     display: block;
-    position: absolute
+    position: absolute;
   }
   .groupshare.geth1 {
     width: 20%;
     top: 200px;
-    margin-left: -60px ;
+    margin-left: -60px;
   }
   .groupshare.gbsc1 {
     width: 20%;
@@ -3354,7 +3326,7 @@
   }
   .users-CTA {
     font-size: 16px;
-}
+  }
   .review-download {
     display: inline-block;
     width: 40%;
@@ -3443,44 +3415,43 @@
     background-color: #3374ea;
     color: var(--third-color);
   }
-.faq-wrapper {
-  position: relative;
+  .faq-wrapper {
+    position: relative;
     max-width: 100%;
     margin: 30px auto;
-
   }
 
-  .faqcontainer{
+  .faqcontainer {
     width: 40%;
     margin-left: 90px;
     display: inline-block;
     vertical-align: middle;
-}
+  }
 
-.faq-wrapper h1 {
-  text-align: center;
-  color: #3374ea;
-  margin-bottom: 50px;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 800;
-  font-size: 42px;
-}
-.faqtwo {
-    position:absolute;
+  .faq-wrapper h1 {
+    text-align: center;
+    color: #3374ea;
+    margin-bottom: 50px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    font-size: 42px;
+  }
+  .faqtwo {
+    position: absolute;
     left: 600px;
-}
-.faqwrapper{
+  }
+  .faqwrapper {
     background-color: var(--third-color);
     margin-bottom: 20px;
     padding: 10px 30px;
     border-radius: 20px;
-    box-shadow: 0px 20px 17px #1C192305;
-}
-.faqtoggle,
-.faqcontent{
+    box-shadow: 0px 20px 17px #1c192305;
+  }
+  .faqtoggle,
+  .faqcontent {
     font-family: "Montserrat", sans-serif;
-}
-.faqtoggle{
+  }
+  .faqtoggle {
     width: 100%;
     background-color: transparent;
     display: flex;
@@ -3494,8 +3465,8 @@
     cursor: pointer;
     padding: 15px 0;
     text-align: left;
-}
-.faqcontent{
+  }
+  .faqcontent {
     position: relative;
     font-size: 16px;
     text-align: left;
@@ -3503,14 +3474,11 @@
     height: 0;
     overflow: hidden;
     transition: all 1s;
-}
+  }
 
- 
   .mobilefooter {
     display: none;
   }
-  
-
 }
 
 /* ----------- Retina Screens ----------- */
@@ -3521,23 +3489,23 @@
     left: 1250px;
     width: 130px;
   }
-  
+
   .littleicon2 {
     position: absolute;
-    top:  720px;
+    top: 720px;
     left: 1250px;
     width: 100px;
   }
-  
+
   .littleicon3 {
     position: absolute;
-    top:  350px;
+    top: 350px;
     left: 860px;
     width: 100px;
   }
   .littleicon4 {
     position: absolute;
-    top:  650px;
+    top: 650px;
     left: 30px;
     width: 100px;
   }
@@ -3563,7 +3531,6 @@
     top: -120px;
     width: 55%;
     margin-left: 240px;
-    
   }
   .review-section {
     height: 10vh;
@@ -3667,5 +3634,4 @@
     right: 520px;
     margin-top: 10px;
   }
-
 }

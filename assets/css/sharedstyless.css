@@ -137,13 +137,9 @@ nav ul li a {
 nav ul li a:hover {
   color: var(--dark-color);
   border-bottom: 2px solid #3374ea 2px;
-
 }
 
 
-nav ul li a:focus {
-  border-bottom: 2px solid blue;
-}
 .actn {
   margin-right: 50px;
 }

@@ -30,10 +30,9 @@
 }
 
 .leaders-about {
-position: relative;
-top: -50rem;
-margin-bottom: -45rem;
-
+  position: relative;
+  top: -52rem;
+  margin-bottom: -45rem;
 }
 
 .leaders-about h1 {
@@ -51,7 +50,7 @@ margin-bottom: -45rem;
   top: px;
   width: 100%;
 }
-.leaders-about p {
+.leaders-aboutP {
   width: 90%;
   margin: auto;
   text-align: center;
@@ -64,16 +63,55 @@ margin-bottom: -45rem;
   display: block;
   width: 50%;
   margin: 2rem auto 0;
-  /* margin-top: 10px; */
-  /* margin-left: 90px; */
 }
 
+.signal-packs {
+  display: none;
+}
+
+.share-portfolio {
+  position: relative;
+  padding-bottom: 1rem;
+}
+
+.share-portfolio h1 {
+  text-align: center;
+  color: #3374ea;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.share-blob {
+  margin-top: 2rem;
+  width: 100%;
+  z-index: -1;
+}
+
+.share-portfolio-img {
+  margin: 0 auto;
+  width: 100%;
+  position: relative;
+  top: -17rem;
+  margin-bottom: -19rem;
+}
+
+.share-portfolio p {
+  margin: 0 auto;
+  width: 90%;
+  color: var(--fourth-color);
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+  line-height: 30px;
+}
 
 /* IPAD  */
 
 @media only screen and (min-width: 768px) {
   .blob-wrapper {
-    position: relative; 
+    position: relative;
     overflow-x: hidden;
     z-index: -1;
     height: 1500px;
@@ -110,7 +148,51 @@ margin-bottom: -45rem;
     width: 60%;
     margin-left: 5.5rem;
   }
+  .leaders-aboutP {
+    line-height: 30px;
+    font-size: 1.5rem;
+  }
+  .app-download {
+    display: block;
+    width: 30%;
+    margin: 4rem auto 0;
+  }
+
+  .share-portfolio h1 {
+    text-align: center;
+    color: #3374ea;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 3.5rem;
+  }
+
+  .share-blob {
+    margin: 2.5rem auto 0;
+    width: 90%;
+    z-index: -1;
+  }
+
+  .share-portfolio-img {
+    margin-left: 5rem;
+    width: 80%;
+    position: relative;
+    top: -35rem;
+    margin-bottom: -39rem;
+  }
+
+  .share-portfolio p {
+    margin: 0 auto;
+    width: 90%;
+    color: var(--fourth-color);
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-family: "Montserrat", sans-serif;
+    line-height: 30px;
+  }
 }
+
+/* IPAD PRO */
 
 @media only screen and (min-width: 1024px) {
   .background-svg {
@@ -118,7 +200,7 @@ margin-bottom: -45rem;
     position: absolute;
     top: 10rem;
     left: 5rem;
-    width: 50%;
+    width: 80%;
     opacity: 0.1;
   }
   .blob-wrapper {
@@ -131,7 +213,6 @@ margin-bottom: -45rem;
     display: none;
   }
   .computer-blob {
-    display: block;
     object-fit: cover;
     position: absolute;
     top: -15rem;
@@ -147,9 +228,9 @@ margin-bottom: -45rem;
     margin-bottom: -25rem;
   }
   .leaders-about h1 {
-    width: 60%;
+    width: 100%;
     font-family: "Montserrat", sans-serif;
-    text-align: left;
+    text-align: center;
     margin: 0.9rem 0;
     color: #3374ea;
     font-size: 2.9rem;
@@ -166,23 +247,56 @@ margin-bottom: -45rem;
     display: none;
   }
 
-  .leaders-about p {
-    width: 50%;
-    text-align: left;
-    margin-top: 4px;
-    margin-left: 3.7rem;
+  .leaders-aboutP {
+    width: 90%;
+    text-align: center;
+    margin-top: 1rem;
     color: var(--fourth-color);
-    line-height: 30px;
+    font-size: 2rem;
+    line-height: 50px;
   }
   .app-downloads {
-    margin-left: 3rem;
+    width: 100%;
+    text-align: center;
   }
   .app-download {
     display: inline-block;
     width: 30%;
     margin: 2rem 1rem;
-    /* margin-top: 10px; */
-    /* margin-left: 90px; */
+  }
+
+  .share-portfolio h1 {
+    text-align: center;
+    color: #3374ea;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    font-size: 5rem;
+  }
+
+  .share-blob {
+    margin-top: 3rem;
+    margin-left: 3.5rem;
+    width: 90%;
+    z-index: -1;
+  }
+
+  .share-portfolio-img {
+    margin-left: 10rem;
+    margin-bottom: -50rem;
+    width: 70%;
+    position: relative;
+    top: -50rem;
+  }
+
+  .share-portfolio p {
+    margin: 0 auto;
+    width: 90%;
+    color: var(--fourth-color);
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 400;
+    font-family: "Montserrat", sans-serif;
+    line-height: 50px;
   }
 }
 
@@ -215,11 +329,10 @@ margin-bottom: -45rem;
     z-index: -1;
   }
 
-
   .leaders-about {
     position: relative;
     top: -37rem;
-    margin-bottom: -25rem;
+    margin-bottom: -33rem;
   }
   .leaders-about h1 {
     width: 50%;
@@ -241,8 +354,8 @@ margin-bottom: -45rem;
     width: 25%;
   }
 
-  .leaders-about p {
-    width: 40%;
+  .leaders-aboutP {
+    width: 35%;
     text-align: left;
     margin-top: 4px;
     margin-left: 3.7rem;
@@ -252,13 +365,112 @@ margin-bottom: -45rem;
   }
   .app-downloads {
     margin-left: 3rem;
+    text-align: unset;
+    width: 50%;
   }
   .app-download {
     display: inline-block;
-    width: 10rem;
+    width: 15rem;
     margin: 2rem 1rem;
-    /* margin-top: 10px; */
-    /* margin-left: 90px; */
+  }
+
+  .signal-packs {
+    display: block;
+    position: absolute;
+    top: 90px;
+    left: 1090px;
+    width: 95px;
+    padding-bottom: 0.6rem;
+    /* height: 110px; */
+    background: var(--third-color);
+    box-shadow: 0px 20px 17px #1c19230d;
+    border-radius: 20px;
+    z-index: 2;
+    transform: rotate(2.4deg);
+  }
+  .signal-packs.two {
+    position: absolute;
+    top: 200px;
+    left: 1020px;
+  }
+
+  .signal-packs.three {
+    position: absolute;
+    top: 205px;
+    left: 1160px;
+  }
+  .pack-img-wrapper {
+    position: relative;
+    top: -20px;
+    width: 40px;
+    height: 40px;
+    margin: auto;
+    border-radius: 50%;
+    background: transparent linear-gradient(180deg, #14cbff 0%, #366be8 100%)
+      no-repeat padding-box;
+  }
+  .pack-img {
+    width: 22px;
+    height: 23px;
+    margin-top: 6px;
+    margin-left: 9px;
+  }
+  .signal-packs p {
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    margin-top: -15px;
+    font-size: 0.7rem;
+  }
+  .signal-packs h5 {
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    color: #3374ea;
+    font-weight: 600;
+    margin-top: 2px;
+    font-size: 17px;
+  }
+  .share-portfolio {
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 5rem;
+  }
+  .share-portfolio h1 {
+    float: right;
+    margin-right: 14.5rem;
+    margin-top: 16rem;
+    text-align: left;
+    color: #3374ea;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    font-size: 2.3rem;
+  }
+
+  .share-blob {
+    margin-top: 3rem;
+    margin-left: 0;
+    width: 40%;
+    z-index: -1;
+  }
+
+  .share-portfolio-img {
+    position: relative;
+    top: -25rem;
+    margin-left: 2rem;
+    margin-bottom: -30rem;
+    width: 30%;
+  }
+
+  .share-portfolio p {
+    width: 40%;
+    color: var(--fourth-color);
+    text-align: left;
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: "Montserrat", sans-serif;
+    line-height: 30px;
+    float: right;
+    margin-right: 3rem;
+    margin-top: -12rem;
   }
 }
 

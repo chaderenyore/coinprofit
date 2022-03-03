@@ -1,7 +1,6 @@
 // PAGE SCROLL ANIMATIONS STARTS HERE
 
 const faders = document.querySelectorAll(".fadeIn-scroll");
-const slideIn = document.querySelectorAll(".slideIn");
 
 
 const appearOptions = {
@@ -28,11 +27,10 @@ faders.forEach(fader => {
   appearOnScroll.observe(fader);
 });
 
-slideIn.forEach(slideIn => {
-  appearOnScroll.observe(slideIn);
-});
 
 // PAGE SCROLL ANIMATIONS ENDS HERE
+
+
 
 // About slider starts here
 
