@@ -20,6 +20,7 @@ p {
 :root {
   --light-color: #f2f8ff;
   --dark-color: #13141c;
+  --nav-light: #ffffff;
   --third-color: #ffffff; /* for white background like the boxes, FAQ and the footer section */
   --fourth-color: #525b6d; /* for paragraphs..*/
   --fifth-color: #000000; /* for paragraphs with black background*/
@@ -28,6 +29,7 @@ p {
 .dark-theme {
   --light-color: #13141c;
   --dark-color: #f2f8ff;
+  --nav-light: #09090b;;
   --third-color: #09090b;
   --fourth-color: #f2f8ff;
   --fifth-color: #f2f8ff;
@@ -268,11 +270,12 @@ nav ul li a:hover {
     width: 100%;
 
     padding: 35px 30px;
-    background-color: var(--light-color);
+    background-color: var(--nav-light);
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
     z-index: 10;
     position: fixed;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
   }
   .logo {
     /* height: 90px; */
@@ -398,10 +401,12 @@ nav ul li a:hover {
     width: 100%;
     /* height: 10vh; */
     padding: 25px 30px;
-    background-color: var(--light-color);
+    background-color: var(--nav-light);
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
     z-index: 10;
+    /* box-shadow: rgba(0, 0, 0, 0.05); */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
   }
   .logo {
     height: 90px;
