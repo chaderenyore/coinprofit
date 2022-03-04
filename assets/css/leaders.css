@@ -116,12 +116,13 @@
 }
 
 
-
-
-.mobile-leaders-wrapper {
-  margin-top: 4rem;
+.mobile-leaders-section {
+  position: relative;
+  top: 7rem;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 10rem;
 }
-.mobile-leaders-wrapper h1 {
+.mobile-leaders-section h1 {
   width: 100%;
   margin: 0 auto;
   text-align: center;
@@ -132,29 +133,100 @@
   font-size: 2rem;
   text-transform: capitalize;
 }
-
-.mobile-leaders-wrapper p {
-  margin: 0 auto;
-  width: 90%;
-  color: var(--fourth-color);
+.mobile-leaders-section h6 {
   text-align: center;
-  font-size: 1rem;
-  font-weight: 400;
-  font-family: "Montserrat", sans-serif;
+  margin: 0.4rem auto 0;
+  width: 70%;
+  color: var(--fourth-color);
+  font-size: 17px;
   line-height: 30px;
+  font-weight: 500;
 }
 
-.mobile-leaders-background {
+.mobile-leaders-box-wrapper {
   position: relative;
-  margin-top: 10rem;
-  /* height: 60vh; */
-  padding:0 0 5rem;
-  background-color: #3374ea;
+  margin-top: 9rem;
+  /* padding: 0 0 8rem;  */
+  height: 40rem;
+  background-color: #3374ea; 
+  border-top-left-radius: 5rem;
+  border-top-right-radius: 5rem;
 }
 
-/* starts divider */
+.mobile-leaders-box {
+  width: 85%;
+  padding: 0px 20px 50px;
+  background: var(--third-color) no-repeat padding-box;
+  box-shadow: 0px 3px 6px #00000008;
+  display: block;
+  margin: 9rem auto 5rem;
+  font-family: "Montserrat", sans-serif;
+  border-radius: 10px;
+}
+.mobile-leaders-img-box {
+  margin: auto;
+  position: relative;
+  top: -6rem;
+  margin-bottom: -5rem;
+  height: 11rem;
+  width: 11rem;
+  border: 8px solid var(--light-color);
+  border-radius: 50%;
+  overflow: hidden;
+}
 
-.custom-shape-divider-bottom-1646350138 {
+.mobile-leaders-img-box img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  object-fit: cover;
+  transition: 0.3s ease;
+}
+
+.mobile-leaders-box p {
+  text-align: center;
+  color: var(--fourth-color);
+  font-size: 1rem;
+  line-height: 30px;
+  font-weight: 400;
+}
+
+.mobile-leaders-box h3 {
+  text-align: center;
+  color: #3374ea;
+  margin-bottom: 7px;
+}
+.mobile-leaders-box h4 {
+  color: #00BE13;
+  text-align: center;
+  margin: 0.4rem auto 0;
+  font-size: 1rem;
+  line-height: 30px;
+
+}
+.reviews p {
+  color: var(--fourth-color);
+  margin-top: 20px;
+  font-size: 17px;
+}
+
+.splide .splide__pagination {
+  position: relative;
+  top: -1rem;
+  text-align: center;
+}
+.splide__pagination__page {
+  background-color: #F7FF00;
+  width: 16px;
+  height: 16px;
+}
+.splide__pagination__page.is-active {
+  background-color: blue;
+}
+.custom-shape-divider-bottom-1644660326 {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -164,100 +236,19 @@
   transform: rotate(180deg);
 }
 
-.custom-shape-divider-bottom-1646350138 svg {
+.custom-shape-divider-bottom-1644660326 svg {
   position: relative;
   display: block;
   width: calc(100% + 1.3px);
-  height: 81px;
+  height: 150px;
 }
 
-.custom-shape-divider-bottom-1646350138 .shape-fill {
+.custom-shape-divider-bottom-1644660326 .shape-fill {
   fill: var(--light-color);
 }
 
-.user-review-box {
-  position: relative;
-  top: -3rem;
-  margin: 0px auto;
-  width: 80%;
-  padding: 0 20px 0;
-  /* height: 450px; */
-  background: var(--third-color) 0% 0% no-repeat padding-box;
-  box-shadow: 0px 20px 17px #1c192305;
-  border-radius: 20px;
-  text-align: center;
-  z-index: 1;
-}
 
 
-
-.leaders-img-wrapper {
-  position: reative;
-  top: -1rem;
-  /* left: 3rem; */
-  height: 9rem;
-  width: 9rem;
-  margin: auto;
-  border: 8px solid #22a1f5;
-  border-radius: 50%;
-  overflow: hidden;
-}
-.leaders-img-wrapper img {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
-  object-fit: cover;
-}
-
-.user-review-box h2 {
-  margin: 10px 0;
-  text-align: center;
-  color: #3374ea;
-  font-family: "Montserrat", sans-serif;
-}
-
-.splide .splide__pagination {
-  position: relative;
-  top: 3rem;
-  text-align: center;
-}
-.splide__pagination__page {
-  background-color: #F7FF00;
-  width: 0.8rem;
-  height: 0.8rem;
-}
-.splide__pagination__page.is-active {
-  background-color: #F2F8FF;
-}
-
-
-
-
-/* starts custom divider */
-
-.custom-shape-divider-top-1646350181 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-}
-
-.custom-shape-divider-top-1646350181 svg {
-  position: relative;
-  display: block;
-  width: calc(100% + 1.3px);
-  height: 81px;
-}
-
-.custom-shape-divider-top-1646350181 .shape-fill {
-  fill: var(--light-color);
-}
-
-/* ends custom dividier */
 
 /* IPAD  */
 
@@ -349,7 +340,6 @@
     top: -35rem;
     margin-bottom: -39rem;
   }
-
 }
 
 /* IPAD PRO */
@@ -467,7 +457,9 @@
     position: relative;
     top: -50rem;
   }
-
+  .mobile-leaders-box-wrapper, #mobile-shape {
+    display: none;
+  }
 }
 
 /* START COMPUTER SCREEN DESIGN */
