@@ -47,8 +47,7 @@
 
 .appui {
   position: relative;
-  top: px;
-  width: 100%;
+  width: 80%;
 }
 .leaders-aboutP {
   width: 90%;
@@ -66,7 +65,56 @@
 }
 
 .signal-packs {
-  display: none;
+  display: block;
+  position: absolute;
+  top: 140px;
+  left: 250px;
+  width: 95px;
+  padding-bottom: 0.6rem;
+  background: var(--third-color);
+  box-shadow: 0px 20px 17px #1c19230d;
+  border-radius: 20px;
+  z-index: 2;
+  transform: rotate(2.4deg);
+}
+.signal-packs.two {
+  position: absolute;
+  top: 260px;
+}
+
+.signal-packs.three {
+  position: absolute;
+  top: 380px;
+}
+.pack-img-wrapper {
+  position: relative;
+  top: -20px;
+  width: 40px;
+  height: 40px;
+  margin: auto;
+  border-radius: 50%;
+  background: transparent linear-gradient(180deg, #14cbff 0%, #366be8 100%)
+    no-repeat padding-box;
+}
+.pack-img {
+  width: 22px;
+  height: 23px;
+  margin-top: 6px;
+  margin-left: 9px;
+}
+.signal-packs p {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  margin-top: -15px;
+  font-size: 0.7rem;
+}
+.signal-packs h5 {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  color: #3374ea;
+  font-weight: 600;
+  margin-top: 2px;
+  font-size: 17px;
 }
 
 .leaders-features {
@@ -115,7 +163,6 @@
   margin-bottom: -19rem;
 }
 
-
 .mobile-leaders-section {
   position: relative;
   top: 7rem;
@@ -144,32 +191,39 @@
 }
 
 .mobile-leaders-box-wrapper {
+  margin-top: 2rem;
+  margin-bottom: 20rem;
   position: relative;
-  margin-top: 9rem;
-  /* padding: 0 0 8rem;  */
-  height: 40rem;
-  background-color: #3374ea; 
-  border-top-left-radius: 5rem;
-  border-top-right-radius: 5rem;
 }
 
+.mobile-leaders-box-background {
+  background: transparent linear-gradient(180deg, #22a1f5 0%, #677bff 100%)
+    no-repeat padding-box;
+  border-top-left-radius: 4rem;
+  border-top-right-radius: 4rem;
+  height: 30rem;
+  width: 100%;
+  position: absolute;
+  top: 15rem;
+  z-index: -1;
+}
 .mobile-leaders-box {
   width: 85%;
-  padding: 0px 20px 50px;
+  padding: 0 20px 50px;
   background: var(--third-color) no-repeat padding-box;
   box-shadow: 0px 3px 6px #00000008;
-  display: block;
   margin: 9rem auto 5rem;
   font-family: "Montserrat", sans-serif;
   border-radius: 10px;
 }
+
 .mobile-leaders-img-box {
   margin: auto;
   position: relative;
   top: -6rem;
   margin-bottom: -5rem;
-  height: 11rem;
-  width: 11rem;
+  height: 10rem;
+  width: 10rem;
   border: 8px solid var(--light-color);
   border-radius: 50%;
   overflow: hidden;
@@ -185,7 +239,16 @@
   object-fit: cover;
   transition: 0.3s ease;
 }
-
+.leader-lv {
+  position: relative;
+  top: -100px;
+  margin-bottom: -75px;
+  /* background color will be here once the real SVG is gotten */
+}
+.leader-lv img{
+  width: 70px;
+  margin-left: 250px;
+}
 .mobile-leaders-box p {
   text-align: center;
   color: var(--fourth-color);
@@ -200,13 +263,13 @@
   margin-bottom: 7px;
 }
 .mobile-leaders-box h4 {
-  color: #00BE13;
+  color: #00be13;
   text-align: center;
   margin: 0.4rem auto 0;
   font-size: 1rem;
   line-height: 30px;
-
 }
+
 .reviews p {
   color: var(--fourth-color);
   margin-top: 20px;
@@ -219,14 +282,15 @@
   text-align: center;
 }
 .splide__pagination__page {
-  background-color: #F7FF00;
+  background-color: yellow;
   width: 16px;
   height: 16px;
 }
 .splide__pagination__page.is-active {
-  background-color: blue;
+  background-color: #fff;
 }
-.custom-shape-divider-bottom-1644660326 {
+
+.custom-shape-divider-bottom-1646476356 {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -236,19 +300,80 @@
   transform: rotate(180deg);
 }
 
-.custom-shape-divider-bottom-1644660326 svg {
+.custom-shape-divider-bottom-1646476356 svg {
   position: relative;
   display: block;
-  width: calc(100% + 1.3px);
-  height: 150px;
+  width: calc(139% + 1.3px);
+  height: 95px;
 }
 
-.custom-shape-divider-bottom-1644660326 .shape-fill {
+.custom-shape-divider-bottom-1646476356 .shape-fill {
   fill: var(--light-color);
 }
 
+.computer-leaders-section {
+  display: none;
+}
 
 
+/* code for FAQ SECTION */
+.faq-wrapper {
+  max-width: 90%;
+  margin: 30px auto;
+}
+.faqcontainer {
+  width: 100%;
+  margin: auto;
+}
+.faq-wrapper h1 {
+  text-align: center;
+  color: #3374ea;
+  margin-bottom: 50px;
+  font-family: "Montserrat", sans-serif;
+}
+.faqwrapper {
+  background-color: var(--third-color);
+  margin-bottom: 20px;
+  padding: 15px 30px;
+  border-radius: 5px;
+  box-shadow: 0px 20px 17px #1c192305;
+}
+.faqtoggle,
+.faqcontent {
+  font-family: "Montserrat", sans-serif;
+}
+.faqwrapper h3 {
+  color: #3374ea;
+  font-weight: 600;
+}
+.faqtoggle {
+  width: 100%;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 16px;
+  color: #111130;
+  font-weight: 500;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 15px 0;
+  text-align: left;
+}
+
+.faqcontent {
+  color: var(--dark-color);
+  position: relative;
+  font-size: 16px;
+  text-align: left;
+  line-height: 30px;
+  height: 0;
+  overflow: hidden;
+  transition: all 1s;
+}
+
+/* FAQ ENDS HERE */
 
 /* IPAD  */
 
@@ -290,6 +415,30 @@
     top: px;
     width: 60%;
     margin-left: 5.5rem;
+  }
+
+  .signal-packs {
+    display: block;
+    position: absolute;
+    top: 200px;
+    left: 500px;
+    width: 95px;
+    padding-bottom: 0.6rem;
+    background: var(--third-color);
+    box-shadow: 0px 20px 17px #1c19230d;
+    border-radius: 20px;
+    z-index: 2;
+    transform: rotate(2.4deg);
+  }
+  .signal-packs.two {
+    position: absolute;
+    top: 290px;
+    left: 600px;
+  }
+  
+  .signal-packs.three {
+    position: absolute;
+    top: 380px;
   }
   .leaders-aboutP {
     line-height: 30px;
@@ -339,6 +488,36 @@
     position: relative;
     top: -35rem;
     margin-bottom: -39rem;
+  }
+  .mobile-leaders-section {
+    position: relative;
+    top: 7rem;
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 10rem;
+  }
+  .mobile-leaders-section h1 {
+    font-size: 2.5rem;
+  }
+  .mobile-leaders-section h6 {
+    font-size: 1.3rem;
+  }
+
+  .mobile-leaders-box-background {
+    height: 25rem;
+  }
+  .mobile-leaders-box {
+    width: 50%;
+  }
+
+  .leader-lv {
+    position: relative;
+    top: -100px;
+    margin-bottom: -75px;
+    /* background color will be here once the real SVG is gotten */
+  }
+  .leader-lv img{
+    width: 70px;
+    margin-left: 325px;
   }
 }
 
@@ -394,6 +573,9 @@
     top: -60px;
     left: 35rem;
     width: 40%;
+    display: none;
+  }
+  .signal-packs {
     display: none;
   }
 
@@ -457,8 +639,164 @@
     position: relative;
     top: -50rem;
   }
-  .mobile-leaders-box-wrapper, #mobile-shape {
+  .mobile-leaders-section {
     display: none;
+  }
+
+  .computer-leaders-section {
+    display: block;
+    position: relative;
+    top: 10rem;
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 10rem;
+  }
+  .computer-leaders-section h1 {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    letter-spacing: 0px;
+    color: #3374ea;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    font-size: 4rem;
+    text-transform: capitalize;
+  }
+  .computer-leaders-section h6 {
+    text-align: center;
+    margin: 0.4rem auto 0;
+    width: 70%;
+    color: var(--fourth-color);
+    font-size: 1.4rem;
+    line-height: 30px;
+    font-weight: 500;
+  }
+
+  .computer-leaders-box-wrapper {
+    position: relative;
+    margin-top: 12rem;
+    text-align: center;
+  }
+
+  /* computer leaders box background first svg */
+  .custom-shape-divider-top-1646479334 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+  }
+
+  .custom-shape-divider-top-1646479334 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 86px;
+    transform: rotateY(180deg);
+  }
+
+  .custom-shape-divider-top-1646479334 .shape-fill {
+    fill: var(--light-color);
+  }
+
+  /*  computer leaders box background first svg  ends */
+
+  .computer-leaders-box-background {
+    background: transparent linear-gradient(180deg, #22a1f5 0%, #677bff 100%)
+      no-repeat padding-box;
+    /* border-top-left-radius: 4rem;
+    border-top-right-radius: 4rem; */
+    height: 70vh;
+    width: 100%;
+    position: absolute;
+    top: 11rem;
+    z-index: -1;
+  }
+
+  .computer-leaders-box {
+    width: 40%;
+    padding: 0px 20px 50px;
+    background: var(--third-color) no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000008;
+    display: inline-block;
+    margin: -2rem 1rem 10rem;
+    font-family: "Montserrat", sans-serif;
+    border-radius: 10px;
+  }
+  .computer-leaders-img-box {
+    margin: auto;
+    position: relative;
+    top: -6rem;
+    margin-bottom: -5rem;
+    height: 11rem;
+    width: 11rem;
+    border: 8px solid var(--light-color);
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
+  .computer-leaders-img-box img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: 0.3s ease;
+  }
+  .leader-lv {
+    position: relative;
+    top: -120px;
+    margin-bottom: -75px;
+    /* background color will be here once the real SVG is gotten */
+  }
+  .leader-lv img{
+    width: 80px;
+    margin-left: 335px;
+  }
+  .computer-leaders-box p {
+    text-align: center;
+    color: var(--fourth-color);
+    font-size: 1rem;
+    line-height: 30px;
+    font-weight: 400;
+  }
+
+  .computer-leaders-box h3 {
+    text-align: center;
+    color: #3374ea;
+    margin-bottom: 7px;
+  }
+  .computer-leaders-box h4 {
+    color: #00be13;
+    text-align: center;
+    margin: 0.4rem auto 0;
+    font-size: 1rem;
+    line-height: 30px;
+  }
+  .reviews p {
+    color: var(--fourth-color);
+    margin-top: 20px;
+    font-size: 17px;
+  }
+  .faq-wrapper h1 {
+    width: 100%;
+    margin: 0 auto 2rem;
+    text-align: center;
+    letter-spacing: 0px;
+    color: #3374ea;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    font-size: 3rem;
+    text-transform: capitalize;
+
+  }
+  .faqwrapper h3 {
+    color: #3374ea;
+    font-weight: 800;
+    font-size: 1.5rem;
   }
 }
 
@@ -703,6 +1041,165 @@
     width: 10rem;
     margin: 2rem 1rem;
   }
+
+  .computer-leaders-section {
+    display: block;
+    position: relative;
+    top: 0rem;
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 2rem;
+  }
+  .computer-leaders-section h1 {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    letter-spacing: 0px;
+    color: #3374ea;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    font-size: 3rem;
+    text-transform: capitalize;
+  }
+  .computer-leaders-section h6 {
+    text-align: center;
+    margin: 0.4rem auto 0;
+    width: 70%;
+    color: var(--fourth-color);
+    font-size: 1rem;
+    line-height: 30px;
+    font-weight: 500;
+  }
+
+  .computer-leaders-box-wrapper {
+    position: relative;
+    margin-top: 12rem;
+    text-align: center;
+  }
+
+  /* computer leaders box background first svg */
+  .custom-shape-divider-top-1646479334 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+  }
+
+  .custom-shape-divider-top-1646479334 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 86px;
+    transform: rotateY(180deg);
+  }
+
+  .custom-shape-divider-top-1646479334 .shape-fill {
+    fill: var(--light-color);
+  }
+
+  /*  computer leaders box background first svg  ends */
+
+  .computer-leaders-box-background {
+    background: transparent linear-gradient(180deg, #22a1f5 0%, #677bff 100%)
+      no-repeat padding-box;
+    height: 110vh;
+    width: 100%;
+    position: absolute;
+    top: 3rem;
+    z-index: -1;
+  }
+
+  .computer-leaders-box {
+    width: 24%;
+    padding: 0px 20px 50px;
+    background: var(--third-color) no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000008;
+    display: inline-block;
+    margin: -2rem 2rem 10rem;
+    font-family: "Montserrat", sans-serif;
+    border-radius: 10px;
+  }
+  .computer-leaders-box:hover {
+    transform: rotate(5deg);
+    background-color: lightslategrey;
+  }
+  .computer-leaders-img-box {
+    margin: auto;
+    position: relative;
+    top: -6rem;
+    margin-bottom: -5rem;
+    height: 9rem;
+    width: 9rem;
+    border: 8px solid var(--light-color);
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
+  .computer-leaders-img-box img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: 0.3s ease;
+  }
+  .leader-lv {
+    position: relative;
+    top: -80px;
+    margin-bottom: -75px;
+    /* background color will be here once the real SVG is gotten */
+  }
+  .leader-lv img{
+    width: 70px;
+    margin-left: 260px;
+  }
+  .computer-leaders-box p {
+    text-align: center;
+    color: var(--fourth-color);
+    font-size: 1rem;
+    line-height: 30px;
+    font-weight: 400;
+  }
+
+  .computer-leaders-box h3 {
+    text-align: center;
+    color: #3374ea;
+    margin-bottom: 7px;
+  }
+  .computer-leaders-box h4 {
+    color: #00be13;
+    text-align: center;
+    margin: 0.4rem auto 0;
+    font-size: 1rem;
+    line-height: 30px;
+  }
+  .reviews p {
+    color: var(--fourth-color);
+    margin-top: 20px;
+    font-size: 17px;
+  }
+
+  /* code for FAQ SECTION */
+
+.faq-wrapper {
+  max-width: 50%;
+  margin: 30px auto;
+}
+.faq-wrapper h1 {
+  font-size: 2rem;
+}
+
+.faqwrapper h3 {
+  font-size: 1rem;
+  color: #3374ea;
+  font-weight: 600;
+}
+
+
 }
 
 /* ----------- Retina Screens ----------- */
