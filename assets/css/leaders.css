@@ -245,7 +245,7 @@
   margin-bottom: -75px;
   /* background color will be here once the real SVG is gotten */
 }
-.leader-lv img{
+.leader-lv img {
   width: 70px;
   margin-left: 250px;
 }
@@ -314,7 +314,6 @@
 .computer-leaders-section {
   display: none;
 }
-
 
 /* code for FAQ SECTION */
 .faq-wrapper {
@@ -435,7 +434,7 @@
     top: 290px;
     left: 600px;
   }
-  
+
   .signal-packs.three {
     position: absolute;
     top: 380px;
@@ -515,7 +514,7 @@
     margin-bottom: -75px;
     /* background color will be here once the real SVG is gotten */
   }
-  .leader-lv img{
+  .leader-lv img {
     width: 70px;
     margin-left: 325px;
   }
@@ -752,7 +751,7 @@
     margin-bottom: -75px;
     /* background color will be here once the real SVG is gotten */
   }
-  .leader-lv img{
+  .leader-lv img {
     width: 80px;
     margin-left: 335px;
   }
@@ -791,7 +790,6 @@
     font-weight: 800;
     font-size: 3rem;
     text-transform: capitalize;
-
   }
   .faqwrapper h3 {
     color: #3374ea;
@@ -811,7 +809,7 @@
   }
 
   .blob-wrapper {
-    height: 41rem;
+    height: 42rem;
     position: relative;
     top: -7.5rem;
     overflow-x: hidden;
@@ -821,9 +819,8 @@
     display: block;
     object-fit: cover;
     top: -1rem;
-    left: 40.8125rem;
-    width: 62.5025rem;
-    width: 62.5025rem;
+    left: 40rem;
+    width: 66.5025rem;
     height: 40rem;
     transform: translateY(27px);
     z-index: -1;
@@ -870,7 +867,7 @@
   }
   .app-download {
     display: inline-block;
-    width: 15rem;
+    width: 10rem;
     margin: 2rem 1rem;
   }
 
@@ -1125,8 +1122,9 @@
   .computer-leaders-box:hover {
     transition: 1s;
     filter: saturate(100%);
-    transform: scale(1.0);
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    transform: scale(1);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+      rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
   }
   .computer-leaders-img-box {
     margin: auto;
@@ -1156,7 +1154,7 @@
     margin-bottom: -75px;
     /* background color will be here once the real SVG is gotten */
   }
-  .leader-lv img{
+  .leader-lv img {
     width: 70px;
     margin-left: 260px;
   }
@@ -1188,40 +1186,71 @@
 
   /* code for FAQ SECTION */
 
-.faq-wrapper {
-  max-width: 50%;
-  margin: 30px auto;
-}
-.faq-wrapper h1 {
-  font-size: 2rem;
-}
+  .faq-wrapper {
+    max-width: 50%;
+    margin: 30px auto;
+  }
+  .faq-wrapper h1 {
+    font-size: 2rem;
+  }
 
-.faqwrapper h3 {
-  font-size: 1rem;
-  color: #3374ea;
-  font-weight: 600;
-}
-
-
+  .faqwrapper h3 {
+    font-size: 1rem;
+    color: #3374ea;
+    font-weight: 600;
+  }
 }
 
 /* ----------- Retina Screens ----------- */
-@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+@media screen and (min-device-width: 1200px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
   .blob-wrapper {
-    height: 1100px;
+    height: 42rem;
     position: relative;
-    top: -100px;
+    top: -7rem;
     overflow-x: hidden;
   }
 
   .computer-blob {
     display: block;
     object-fit: cover;
-    top: -13rem;
-    left: 600px;
-    height: 1300;
-    width: 1300.04px;
+    top: -1.5rem;
+    left: 30rem;
+    width: 68rem;
+    height: 40rem;
     transform: translateY(27px);
     z-index: -1;
+  }
+  .appui {
+    display: block;
+    position: absolute;
+    top: -3rem;
+    left: 35rem;
+    width: 25%;
+  }
+
+
+  .app-downloads {
+    margin-left: 3rem;
+    text-align: unset;
+    width: 50%;
+  }
+  .app-download {
+    display: inline-block;
+    width: 10rem;
+    margin: 2rem 1rem;
+  }
+
+  .signal-packs {
+    top: 90px;
+    left: 63rem;
+  }
+  .signal-packs.two {
+    top: 200px;
+    left: 60rem;
+  }
+
+  .signal-packs.three {
+    top: 205px;
+    left: 67rem;
   }
 }
