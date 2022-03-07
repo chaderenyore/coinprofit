@@ -1323,17 +1323,19 @@
     padding-bottom: 40rem;
   }
 
-  #last-leader h1 {
-    width: 20%;
-    float: left;
-    margin-right: 14.5rem;
-    margin-top: 10rem;
-    text-align: left;
-    color: #3374ea;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 800;
-    font-size: 2.3rem;
+  .leadersF-blob.last {
+    float: right;
+    margin-top: -10rem;
+    margin-left: 0;
+    width: 40%;
+    z-index: -1;
   }
+
+  .seeSubsimg:hover {
+    filter: saturate(100%);
+    transform: scale(1.1);
+  }
+
 
   .leaders-features.two p {
     float: left;
