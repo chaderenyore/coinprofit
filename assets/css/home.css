@@ -1596,6 +1596,7 @@
 
   .share-portfolio-sec {
     height: 140vh;
+    /* padding: 30rem 0; */
   }
   .share-portfolio h1 {
     text-align: center;
