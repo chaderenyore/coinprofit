@@ -1,63 +1,127 @@
-
 .about-sec {
-    padding-top: 5rem;
+  padding-top: 5rem;
 }
 
 .about_container {
-    width: 80%;
-    margin: 4rem auto 0;
+  width: 80%;
+  margin: 4rem auto 0;
 }
 
 .about_container h1 {
-    text-align: center;
-    color: #3374ea;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 800;
-    font-size: 2.5rem;
-  }
-  
-  .share-blob {
-    position: relative;
-    margin: 2rem 0;
-    width: 100%;
-    opacity: 0.8;
-  }
+  text-align: center;
+  color: #3374ea;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 2.5rem;
+}
 
-  .share-blob.two {
-    position: absolute;
-    left: 0;
-    opacity: 1;
-  }
-  
-  .share-portfolio-img-box {
-    position: relative;
-    width: 100%;
-  }
+.share-blob {
+  position: relative;
+  margin: 2rem 0;
+  width: 100%;
+  opacity: 0.8;
+}
 
-  .share-portfolio-img {
-    width: 60%;
-    position: absolute;
-    top:3rem;
-    left: 0;
-    right:0;
-    bottom: 0;
-    margin:auto;
+.share-blob.two {
+  position: absolute;
+  left: 0;
+  opacity: 1;
+}
 
-  }
-  
-  .about_container p {
-    width: 100%;
-    color: var(--fourth-color);
-    text-align: center;
-    font-size: 1.1rem;
-    font-weight: 400;
-    font-family: "Montserrat", sans-serif;
-    line-height: 30px;
+.share-portfolio-img-box {
+  position: relative;
+  width: 100%;
+}
 
-  }
+.share-portfolio-img {
+  width: 60%;
+  position: absolute;
+  top: 3rem;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.about_container p {
+  width: 100%;
+  color: var(--fourth-color);
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+  line-height: 30px;
+}
+
+.core_container {
+  width: 90%;
+  margin: 7rem auto 0;
+}
+
+.core_container h1 {
+  text-align: center;
+  color: #3374ea;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 2.5rem;
+}
+.core_container p {
+  margin-top: 1rem;
+  width: 100%;
+  color: var(--fourth-color);
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+  line-height: 30px;
+}
+
+.core-features_main_wrapper {
+  width: 100%;
+  margin-top: 2rem;
+  text-align: center;
+}
+.core_blobimg_wrapper {
+  z-index: -1;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  margin-bottom: -8rem;
+}
+.core_blobimg {
+  width: 60%;
+}
+
+.core_features_box {
+  display: block;
+  width: 100%;
+  padding: 2rem 2rem 3rem;
+  background: var(--third-color) no-repeat padding-box;
+  box-shadow: 0px 3px 6px #00000008;
+  margin: 0 auto 5rem;
+  font-family: "Montserrat", sans-serif;
+  border-radius: 10px;
+}
+.core-features_img_wrapper {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+.core-features_img_wrapper img {
+  width: 40%;
+}
+.core_features_box h4 {
+  text-align: center;
+  margin: 1rem 0;
+  color: #3374ea;
+}
 /* IPAD  */
 
 @media only screen and (min-width: 768px) {
+  .about_container h1 {
+    font-weight: 800;
+  }
   .share-blob {
     position: relative;
     margin: 2rem 1rem 3rem;
@@ -70,7 +134,7 @@
     left: 0;
     opacity: 1;
   }
-  
+
   .share-portfolio-img-box {
     position: relative;
     width: 100%;
@@ -79,120 +143,161 @@
   .share-portfolio-img {
     width: 40%;
     position: absolute;
-    top:-1rem;
+    top: -1rem;
     left: 0;
-    right:0;
+    right: 0;
     bottom: 0;
-    margin:auto;
-
+    margin: auto;
   }
 }
 
-
-
-  /* IPAD PRO */
+/* IPAD PRO */
 
 @media only screen and (min-width: 1024px) {
-    .about-sec  {
-        margin-bottom: 20rem;
-      }
+  .about-sec {
+    margin-bottom: 20rem;
+  }
 
-      .about_container  h1 {
-        float: left;
-        margin-right: 14.5rem;
-        margin-bottom: 1rem;
-        text-align: left;
-      }
-      .about_container p {
-        width: 50%;
-        color: var(--fourth-color);
-        text-align: left;
-        font-size: 1.1rem;
-        font-weight: 400;
-        font-family: "Montserrat", sans-serif;
-        line-height: 40px;
-    
-      }
-      .share-blob {
-        float: right;
-        position: relative;
-        margin: -5rem 0 2rem;
-        width: 50%;
-        opacity: 0.8;
-      }
-    
-      .share-blob.two {
-        position: absolute;
-        left: 30rem;
-        top: 15rem;
-        opacity: 1;
-      }
+  .about_container h1 {
+    float: left;
+    margin-right: 14.5rem;
+    margin-bottom: 1rem;
+    text-align: left;
+    font-weight: 800;
+  }
+  .about_container p {
+    width: 50%;
+    color: var(--fourth-color);
+    text-align: left;
+    font-size: 1.1rem;
+    font-weight: 400;
+    font-family: "Montserrat", sans-serif;
+    line-height: 40px;
+  }
+  .share-blob {
+    float: right;
+    position: relative;
+    margin: -5rem 0 2rem;
+    width: 50%;
+    opacity: 0.8;
+  }
 
-      .share-portfolio-img-box {
-        position: relative;
-        width: 100%;
-      }
-    
-      .share-portfolio-img {
-        width: 30%;
-        position: absolute;
-        top:-40%;
-        left: 30rem;
-        right:0;
-        bottom: 0;
+  .share-blob.two {
+    position: absolute;
+    left: 30rem;
+    top: 15rem;
+    opacity: 1;
+  }
 
-      }
+  .share-portfolio-img-box {
+    position: relative;
+    width: 100%;
+  }
+
+  .share-portfolio-img {
+    width: 30%;
+    position: absolute;
+    top: -40%;
+    left: 30rem;
+    right: 0;
+    bottom: 0;
+  }
 }
 
 /* START COMPUTER SCREEN DESIGN */
 @media only screen and (min-width: 1200px) {
-    .about-sec  {
-        margin-bottom: 40rem;
-      }
-    .about_container  h1 {
-        float: left;
-        margin-right: 14.5rem;
-        margin-bottom: 1rem;
-        margin-top: 3rem;
-        text-align: left;
-      }
-      .about_container p {
-        float: left;
-        width: 40%;
-        text-align: left;
-        font-size: 1rem;
-        line-height: 30px;
-    
-      }
-      .share-blob {
-        float: right;
-        position: relative;
-        margin: -4rem 0 2rem;
-        width: 50%;
-        opacity: 0.8;
-      }
-    
-      .share-blob.two {
-        position: absolute;
-        top: 10rem;
-        left: 40rem;
-        opacity: 1;
-      }
+  .about-sec {
+    margin-bottom: 30rem;
+  }
+  .about_container h1 {
+    float: left;
+    margin-right: 14.5rem;
+    margin-bottom: 1rem;
+    margin-top: 3rem;
+    text-align: left;
+  }
+  .about_container p {
+    float: left;
+    width: 50%;
+    text-align: left;
+    font-size: 1rem;
+    line-height: 30px;
+  }
+  .share-blob {
+    float: right;
+    position: relative;
+    margin: -4rem 0 2rem;
+    width: 40%;
+    opacity: 0.8;
+  }
 
+  .share-blob.two {
+    position: absolute;
+    top: 10rem;
+    left: 45rem;
+    opacity: 1;
+  }
 
-    
-      .share-portfolio-img {
-        width: 20%;
-        position: absolute;
-        top:30%;
-        left: 37rem;
-        right:0;
-        bottom: 0;
+  .share-portfolio-img {
+    width: 20%;
+    position: absolute;
+    top: 8rem;
+    left: 40rem;
+    right: 0;
+    bottom: 0;
+  }
+  .core_blobimg_wrapper {
+    display: none;
+    z-index: -1;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    margin-bottom: -8rem;
+  }
+  .core_blobimg {
+    width: 20%;
+  }
 
-      }
+  .core_features_box {
+    vertical-align: middle;
+    display: inline-block;
+    width: 30%;
+    padding: 2rem 2rem 3rem;
+    background: var(--third-color) no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000008;
+    margin: 3rem 1rem 5rem;
+    font-family: "Montserrat", sans-serif;
+    border-radius: 10px;
+  }
+
 }
+
+
 
 /* ----------- Retina Screens ----------- */
 @media screen and (min-device-width: 1200px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+  .share-blob {
+    float: right;
+    position: relative;
+    margin: -2rem 0 2rem;
+    width: 40%;
+    opacity: 0.8;
+  }
 
+  .share-blob.two {
+    position: absolute;
+    top: 13rem;
+    left: 40rem;
+    opacity: 1;
+  }
+
+  .share-portfolio-img {
+    width: 20%;
+    position: absolute;
+    top: 30rem;
+    left: 37rem;
+    right: 0;
+    bottom: 0;
+  }
 }

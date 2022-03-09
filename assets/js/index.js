@@ -127,6 +127,7 @@ playIcon.addEventListener("click", function(){
   playVideoModal.classList.add('showmodal');
 
 });
+
 closeIcon.addEventListener("click", function(){
   playVideoModal.classList.remove('showmodal');
   var iframes = playVideoModal.getElementsByTagName('iframe');
@@ -134,7 +135,6 @@ closeIcon.addEventListener("click", function(){
     for (let i = 0;  i < iframes.length; i++){  
        const iframe = iframes[i];
        iframe.src = iframe.src;
-
       }
   }
   
