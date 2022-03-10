@@ -276,39 +276,7 @@
   font-size: 17px;
 }
 
-.moreText {
-  display: none;
-}
-.read-more-btn {
-  padding: 15px 10px;
-  background-color: rgb(149, 170, 197);
-  color: rgb(53, 49, 49);
-  border: none;
-  outline: none;
-  cursor: pointer;
-}
-.text.show-more .moreText {
-  display: inline;
-}
-.text.show-more .dots {
-  display: none;
-}
 
-
-
-#see_moreBtn {
-  cursor: pointer;
-  background-color: white;
-  outline: none;
-  border-radius: 30px;
-  padding: 7px 25px;
-  color: blue;
-}
-#see_moreBtn:hover {
-  background-color: #13141c;
-  color: #fff !important;
-  border-bottom: none;
-}
 
 .splide .splide__pagination {
   position: relative;
@@ -897,8 +865,8 @@
   }
   .app-downloads {
     margin-left: 3rem;
-    text-align: unset;
-    width: 50%;
+    text-align: center;
+    width: 40%;
   }
   .app-download {
     display: inline-block;
@@ -1028,7 +996,7 @@
   }
   .leaders-features.three h1 {
     float: right;
-    margin-right: 5.5rem;
+    margin-right: 12rem;
     margin-top: 16rem;
     text-align: left;
     color: #3374ea;
@@ -1043,9 +1011,7 @@
     width: 40%;
     z-index: -1;
   }
-  .leadersF-blob.two:hover {
-    transform: rotate(20deg);
-  }
+
   .seeSubsimg {
     position: relative;
     top: -22rem;
@@ -1136,7 +1102,7 @@
   .computer-leaders-box-background {
     background: transparent linear-gradient(180deg, #22a1f5 0%, #677bff 100%)
       no-repeat padding-box;
-    height: 110vh;
+    padding: 40rem 0 0rem;
     width: 100%;
     position: absolute;
     top: 3rem;
@@ -1237,38 +1203,34 @@
 }
 
 /* ----------- Retina Screens ----------- */
-@media screen and (min-device-width: 1200px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
-  .blob-wrapper {
-    height: 42rem;
-    position: relative;
-    top: -7rem;
-    overflow-x: hidden;
-  }
+@media only screen and (min-device-width: 1200px) and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min--moz-device-pixel-ratio: 2),
+  only screen and (-o-min-device-pixel-ratio: 2/1),
+  only screen and (min-device-pixel-ratio: 2) {
+
 
   .computer-blob {
     display: block;
     object-fit: cover;
     top: -1.5rem;
-    left: 31rem;
-    width: 68rem;
+    left: 45rem;
+    width: 62rem;
     height: 40rem;
     transform: translateY(27px);
     z-index: -1;
 
   }
   .appui {
-    display: block;
     position: absolute;
     top: -3rem;
-    left: 35rem;
-    width: 25%;
+    left: 40rem;
+    width: 30%;
   }
 
 
   .app-downloads {
-    margin-left: 3rem;
-    text-align: unset;
-    width: 50%;
+    text-align: center;
+    width: 30%;
   }
   .app-download {
     display: inline-block;
@@ -1277,17 +1239,18 @@
   }
 
   .signal-packs {
-    top: 90px;
-    left: 63rem;
+    top: 3rem;
+    left: 75rem;
   }
   .signal-packs.two {
-    top: 200px;
-    left: 60rem;
+    top: 8.5rem;
+    left: 80rem;
+    right: 0;
   }
 
   .signal-packs.three {
-    top: 205px;
-    left: 67rem;
+    top: 8.5rem;
+    left: 70rem;
   }
 
   .leaders-features {
@@ -1298,8 +1261,8 @@
   }
   .leaders-features h1 {
     float: right;
-    margin-right: 12rem;
-    margin-top: 12rem;
+    margin-right: 16rem;
+    margin-top: 20rem;
     text-align: left;
     color: #3374ea;
     font-family: "Montserrat", sans-serif;
@@ -1316,7 +1279,7 @@
   .leaders-features.two h1 {
     float: left;
     margin-right: 14.5rem;
-    margin-top: 10rem;
+    margin-top: 19rem;
     text-align: left;
     color: #3374ea;
     font-family: "Montserrat", sans-serif;
@@ -1324,67 +1287,21 @@
     font-size: 2.3rem;
   }
   .leaders-features.three h1 {
-    float: right;
-    margin-right: 3rem;
-    margin-top: 12rem;
-    text-align: left;
-    color: #3374ea;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 800;
-    font-size: 2.3rem;
+    margin-right: 13.5rem;
+    margin-top: 20rem;
   }
-  .leadersF-blob.two {
-    float: right;
-    margin-top: 3rem;
-    margin-left: 0;
-    width: 40%;
-    z-index: -1;
-  }
-  .leadersF-blob.two:hover {
-    transform: rotate(20deg);
-  }
-  .seeSubsimg {
-    position: relative;
-    top: -22rem;
-    margin-left: 23rem;
-    margin-bottom: -30rem;
-    width: 30%;
-    float: right;
-  }
-
-  .leaders-features.two {
-    width: 80%;
-    margin: 0 auto;
-    padding-bottom: 40rem;
-  }
-
-  .leadersF-blob.last {
-    float: right;
-    margin-top: -10rem;
-    margin-left: 0;
-    width: 40%;
-    z-index: -1;
-  }
-
-  .seeSubsimg:hover {
-    filter: saturate(100%);
-    transform: scale(1.1);
-  }
-
-
-  .leaders-features.two p {
-    float: left;
-    margin-top: -10rem;
-  }
+  
   .app-downloads.wrapper {
     position: relative;
-    top: -10rem;
-    margin-left: 7rem;
+    top: -9rem;
+    width: 45%;
+    text-align: center;
+    margin-left: unset;
   }
 
   .app-download.features {
     display: inline-block;
     width: 10rem;
     margin: 2rem 1rem;
-  }
+  } 
 }

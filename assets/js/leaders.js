@@ -42,34 +42,3 @@ for(let i=0; i<faqtoggles.length; i++){
 }
 
 
-// see more button the leaders box.'
-// var seeMoredots = document.getElementById("see_more_dots");
-//   var moreText = document.getElementById("see_more");
-//   var btnText = document.getElementById("see_moreBtn");
-
-  
-//   btnText.addEventListener('click', function () { 
-//     if (seeMoredots.style.display === "none") {
-//       seeMoredots.style.display = "inline";
-//       btnText.innerHTML = "Read more";
-//       moreText.style.display = "none";
-//     } else {
-//       seeMoredots.style.display = "none";
-//       btnText.innerHTML = "Read less";
-//       moreText.style.display = "inline";
-//     }
-//   });
-
-const readMoreBtn = document.querySelector(".read-more-btn");
-const text = document.querySelector(".text");
-
-
-
-readMoreBtn.addEventListener("click", (e) => {
-  text.classList.toggle("show-more");
-  if (readMoreBtn.innerText === "Read More") {
-    readMoreBtn.innerText = "Read Less";
-  } else {
-    readMoreBtn.innerText = "Read More";
-  }
-});
