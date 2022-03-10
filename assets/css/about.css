@@ -56,6 +56,7 @@
 .core_container {
   width: 90%;
   margin: 7rem auto 0;
+  z-index: -1;
 }
 
 .core_container h1 {
@@ -119,12 +120,10 @@
   color: #3374ea;
 }
 
-
 .team-wrapper {
   margin-top: -15rem;
-  background-color: #3374ea;
-  /* height: 60vh; */
   z-index: -1;
+  background: transparent linear-gradient(180deg, #22A1F5 0%, #677BFF 100%) no-repeat padding-box;
   position: relative;
   padding: 10rem 0 4rem;
 }
@@ -155,8 +154,7 @@
   font-family: "Montserrat", sans-serif;
 }
 
-
-.team_content h1  {
+.team_content h1 {
   color: white;
   font-weight: 600;
   font-size: 2.5rem;
@@ -173,7 +171,11 @@
 .team_memebers_box {
   width: 85%;
   padding: 0 20px 50px;
-  background: transparent linear-gradient(180deg, #22a1f5 0%, #677bff 100%) no-repeat padding-box;
+  /* background: transparent linear-gradient(180deg, #22a1f5 0%, #677bff 100%)
+    no-repeat padding-box; */
+    background: transparent linear-gradient(180deg, #22a1f5 0%, #8690d1 100%) 0%
+    0% no-repeat padding-box;
+    
   box-shadow: 0px 3px 6px #00000008;
   margin: 9rem auto 5rem;
   font-family: "Montserrat", sans-serif;
@@ -203,15 +205,13 @@
   transition: 0.3s ease;
 }
 
-
-
 .team_memebers_box h3 {
   text-align: center;
   color: #fff;
   margin-bottom: 7px;
 }
 .team_memebers_box h4 {
-  color: #F7FF00;
+  color: #f7ff00;
   text-align: center;
   margin: 0.4rem auto 0;
   font-size: 0.8rem;
@@ -247,15 +247,25 @@
 }
 
 .we_made {
-  margin-top: 5rem; 
+  margin-top: 5rem;
   text-align: center;
 }
 
-.we_made h1{
-  color: #3374ea; 
+.we_made h1 {
+  color: #3374ea;
   font-weight: 600;
 }
 
+.we_made p{ 
+  margin-top: 1rem;
+  width: 100%;
+  color: var(--fourth-color);
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+  line-height: 30px;
+}
 
 .slideshow-container {
   width: 100%;
@@ -271,7 +281,6 @@
 .mySlides img {
   width: 100%;
 }
-
 
 /* The dots/bullets/indicators */
 .dot_wrapper {
@@ -444,8 +453,6 @@
     bottom: 0;
   }
 
-
-
   .core_blobimg_wrapper {
     z-index: -1;
     width: 100%;
@@ -462,7 +469,8 @@
     width: 80%;
     margin: 5rem auto 5rem;
   }
-  .slideshow-container, .dot_wrapper{
+  .slideshow-container,
+  .dot_wrapper {
     display: none;
   }
   .we_made_computer_container {
@@ -472,7 +480,6 @@
   .we_made_feature {
     display: inline-block;
   }
-  
 }
 
 /* START COMPUTER SCREEN DESIGN */
@@ -545,8 +552,6 @@
     width: 40%;
   }
 
-
-
   .core_features_box {
     padding: 2rem 2rem 3rem;
     background: var(--third-color) no-repeat padding-box;
@@ -563,27 +568,51 @@
     width: 80%;
     margin: 5rem auto 5rem;
   }
-  
+  .team_content h1 {
+      font-weight: 800;
+  }
+  .team_content h1:hover {
+    color: #f7ff00;
+  }
+
   .team_memebers_box {
     width: 30%;
     margin: 8rem 1rem 0;
     display: inline-block;
+    /* z-index: 2; */
+  }
+  .team_memebers_box:hover{
+    background-color: #fff;
+    color: black;
+    cursor: pointer;
   }
 
-
-  .we_made_feature.second {
-    top: 1rem;
+  .we_made h1 {
+    font-weight: 800;
+    font-size: 2.5rem;
   }
+
+  .we_made_computer_container {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .we_made_feature img {
+    width: 100%;
+  }
+  .second_img {
+    position: relative;
+    top: 5rem;
+  }
+
   
 }
 
 /* ----------- Retina Screens ----------- */
 /* @media screen and (min-device-width: 1200px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) { */
-  @media only screen  and (min-device-width: 1200px) and (-webkit-min-device-pixel-ratio: 2),
-                    only screen and (min--moz-device-pixel-ratio: 2),
-                    only screen and (-o-min-device-pixel-ratio: 2/1),
-                    only screen and (min-device-pixel-ratio: 2)
-{ 
+@media only screen and (min-device-width: 1200px) and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min--moz-device-pixel-ratio: 2),
+  only screen and (-o-min-device-pixel-ratio: 2/1),
+  only screen and (min-device-pixel-ratio: 2) {
   .share-blob {
     float: right;
     position: relative;
