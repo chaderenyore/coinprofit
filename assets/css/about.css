@@ -258,18 +258,24 @@
 
 
 .slideshow-container {
-  max-width: 1000px;
+  width: 100%;
+  text-align: center;
   position: relative;
 }
 .mySlides {
-  /* height: 40px; */
+  width: 100%;
+  margin: 0;
+  /* height: 20rem; */
+  padding: 0.4rem auto 0;
+}
+.mySlides img {
+  width: 100%;
 }
 
 
 /* The dots/bullets/indicators */
-.dot-wrapper {
+.dot_wrapper {
   text-align: center;
-  margin: auto;
 }
 .dot {
   height: 10px;
@@ -311,7 +317,9 @@
     opacity: 1;
   }
 }
-
+.we_made_computer_container {
+  display: none;
+}
 
 /* IPAD  */
 
@@ -379,7 +387,9 @@
     margin: 8rem 1rem 0;
     display: inline-block;
   }
-
+  .mySlides img {
+    width: 60%;
+  }
 }
 
 /* IPAD PRO */
@@ -452,6 +462,17 @@
     width: 80%;
     margin: 5rem auto 5rem;
   }
+  .slideshow-container, .dot_wrapper{
+    display: none;
+  }
+  .we_made_computer_container {
+    width: 100%;
+    display: block;
+  }
+  .we_made_feature {
+    display: inline-block;
+  }
+  
 }
 
 /* START COMPUTER SCREEN DESIGN */
@@ -547,6 +568,11 @@
     width: 30%;
     margin: 8rem 1rem 0;
     display: inline-block;
+  }
+
+
+  .we_made_feature.second {
+    top: 1rem;
   }
   
 }
