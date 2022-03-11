@@ -12,7 +12,7 @@
         /></a>
       </div>
       <img
-        src="../assets/images/toggle.png"
+        src="@/assets/images/toggle.png"
         alt="Toggle Button"
         id="toggleIcon"
         class="toggle-moon"
@@ -62,10 +62,10 @@ export default {
       let localData = localStorage.getItem("theme");
 
       if (localData == "light") {
-        togglebtn.src = "../assets/images/toggle.png";
+        togglebtn.src = require("@/assets/images/toggle.png");
         document.body.classList.remove("dark-theme");
       } else if (localData == "dark") {
-        togglebtn.src = "../assets/images/toggle-dark.svg";
+        togglebtn.src = require("@/assets/images/toggle-dark.svg");
         document.body.classList.add("dark-theme");
       }
 
@@ -73,10 +73,10 @@ export default {
         document.body.classList.toggle("dark-theme");
 
         if (document.body.classList.contains("dark-theme")) {
-          togglebtn.src = "../assets/images/toggle-dark.svg";
+          togglebtn.src = require("@/assets/images/toggle-dark.svg");
           localStorage.setItem("theme", "dark");
         } else {
-          togglebtn.src = "../assets/images/toggle.png";
+          togglebtn.src = require("@/assets/images/toggle.png");
           localStorage.setItem("theme", "light");
         }
       });
