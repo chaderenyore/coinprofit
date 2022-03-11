@@ -1,657 +1,1374 @@
 <template>
   <!-- The icons are set to absolute positioning... -->
 
-<!-- <img src="..assets/listtle Icons/1.svg" alt="little Icon" class="littleicon1">
-<img src="..assets/listtle Icons/2.svg" alt="little Icon"  class="littleicon2">
-<img src="..assets/listtle Icons/3.svg" alt="little Icon"  class="littleicon3">
-<img src="..assets/listtle Icons/4.svg" alt="little Icon"  class="littleicon4"> -->
+  <img
+    src="../assets/images/listtle-Icons/1.svg"
+    alt="little Icon"
+    class="littleicon1"
+  />
+  <img
+    src="../assets/images/listtle-Icons/2.svg"
+    alt="little Icon"
+    class="littleicon2"
+  />
+  <img
+    src="../assets/images/listtle-Icons/3.svg"
+    alt="little Icon"
+    class="littleicon3"
+  />
+  <img
+    src="../assets/images/listtle-Icons/4.svg"
+    alt="little Icon"
+    class="littleicon4"
+  />
 
-<!-- End Icons -->
-<!-- SOME OF THE IMAGES CHANGES ON DIFFRENT SCREEN SIZES AND ON HOVER -->
-<section class="first-page">
-    <img src="../assets/asset-background.svg" alt="" class="background-svg">
-    <div class="blob-wrapper"> 
-        <img src="../assets/blob-mobil1.png" alt="A blob SVG acts as a background here" class="blob1" />
+  <!-- End Icons -->
+  <!-- SOME OF THE IMAGES CHANGES ON DIFFRENT SCREEN SIZES AND ON HOVER -->
+  <section class="first-page" ref="mainpage">
+    <img src="../assets/images/Asset-1.svg" alt="" class="background-svg" />
+    <div class="blob-wrapper">
+      <img
+        src="../assets/images/blob-mobil1.png"
+        alt="A blob SVG acts as a background here"
+        class="blob1"
+      />
 
-    <img src="../assets/blob1.png" alt="A blob SVG acts as a background here" class="blob1-d" />
+      <img
+        src="../assets/images/blob1.png"
+        alt="A blob SVG acts as a background here"
+        class="blob1-d"
+      />
     </div>
     <div class="about">
-        <h1>Designed To Help You Make Money</h1>
+      <h1>Designed To Help You Make Money</h1>
 
-        <div class="slideshow-container">
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <p>
+            Automatically track your entire portfolio across multiple exchanges
+          </p>
+        </div>
 
-            <div class="mySlides fade">
-              <p>Automatically track your entire portfolio across multiple exchanges</p>
-            </div>
-            
-            <div class="mySlides fade">
-              <p>Create your own trading plans and record your own trade lessons</p>
-            </div>
-            
-            <div class="mySlides fade">
-              <p><b>Copy the best traders.</b> See the coins they buy, when they sell</p>
-            </div>
-            <div class="mySlides fade">
-                <p>Get signal from all leaders</p>
-              </div>
-            
-            </div>
-            <br>
+        <div class="mySlides fade">
+          <p>Create your own trading plans and record your own trade lessons</p>
+        </div>
 
-            <div class="dot-wrapper">
-                <span class="dot active"></span> 
-                <span class="dot"></span> 
-                <span class="dot"></span> 
-                <span class="dot"></span> 
-              </div>
-              <div class="app-downloads">
-                <a href="#" target="_blank" rel="noopener noreferrer"><img src="../assets/appstore.svg" alt="" srcset="" class="app-download"></a>
-                <!-- <img src="./assets/images/gplayblue.png" alt="" srcset="" class="app-download"> -->
-                <a href="#" target="_blank" rel="noopener noreferrer"><img src="../assets/goplay.svg" alt="" srcset="" class="app-download"></a>
-            </div>
+        <div class="mySlides fade">
+          <p>
+            <b>Copy the best traders.</b> See the coins they buy, when they sell
+          </p>
+        </div>
+        <div class="mySlides fade">
+          <p>Get signal from all leaders</p>
+        </div>
+      </div>
+      <br />
 
-                <img src="../assets/appUI.svg" alt="" class="appui"> 
+      <div class="dot-wrapper">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+      <div class="app-downloads">
+        <a href="#" target="_blank" rel="noopener noreferrer"
+          ><img
+            src="../assets/images/appstore.svg"
+            alt=""
+            srcset=""
+            class="app-download"
+        /></a>
+        <!-- <img src="./assets/images/gplayblue.png" alt="" srcset="" class="app-download"> -->
+        <a href="#" target="_blank" rel="noopener noreferrer"
+          ><img
+            src="../assets/images/goplay.svg"
+            alt=""
+            srcset=""
+            class="app-download"
+        /></a>
+      </div>
+
+      <img src="../assets/images/appUI.svg" alt="" class="appui" />
     </div>
-</section>
+  </section>
 
-<section class="review-section">
-    <h1 class="fadeIn-scroll">Discover What Top Crypto Experts Are Saying about the CoinProfit App</h1>
+  <section class="review-section">
+    <h1 class="fadeIn-scroll">
+      Discover What Top Crypto Experts Are Saying about the CoinProfit App
+    </h1>
     <div class="review-box">
-        <div class="box">
-            <div class="box-img">
-                <img src="../assets/review3.jpeg" alt="IMAGE" class="review-img">
-            </div>
-            <div class="star">
-    
-                <i class="fa fa-star" aria-hidden="true" style="color: #FCCF3B; font-size: 27px;"></i>
-                <i class="fa fa-star" aria-hidden="true" style="color: #FCCF3B; font-size: 27px;"></i>
-                <i class="fa fa-star" aria-hidden="true" style="color: #FCCF3B; font-size: 27px;"></i>
-                <i class="fa fa-star" aria-hidden="true" style="color: #FCCF3B; font-size: 27px;"></i>
-                <i class="fa fa-star" aria-hidden="true" style="color: #FCCF3B; font-size: 27px;"></i>
-    
-            </div>
-            
-            <h3 class="fadeIn-scroll">Emmanuel Ohworeko</h3>
-            <p class="fadeIn-scroll"> CEO and Founder of CoinProfit</p>
-            <div class="reviews">
-                <p class="fadeIn-scroll">I started to use Coinprofit app a few months ago and I love it so much, this app already generated me ton of real money</p>
-            </div>
+      <div class="box">
+        <div class="box-img">
+          <img
+            src="../assets/images/review3.jpeg"
+            alt="IMAGE"
+            class="review-img"
+          />
         </div>
-        <div class="box">
-            <div class="box-img">
-                <img src="../assets/review2.jpg" alt="IMAGE" class="review-img">
-            </div>
-            <div class="star">
-    
-                <i class="fa fa-star" aria-hidden="true" style="color: #FCCF3B; font-size: 27px;"></i>
-                <i class="fa fa-star" aria-hidden="true" style="color: #FCCF3B; font-size: 27px;"></i>
-                <i class="fa fa-star" aria-hidden="true" style="color: #FCCF3B; font-size: 27px;"></i>
-                <i class="fa fa-star" aria-hidden="true" style="color: #FCCF3B; font-size: 27px;"></i>
-                <i class="fa fa-star" aria-hidden="true" style="color: #FCCF3B; font-size: 27px;"></i>
-    
-            </div>
-            
-            <h3 class="fadeIn-scroll">Emmanuel Ohworeko</h3>
-            <p class="fadeIn-scroll"> CEO and Founder of CoinProfit</p>
-            <div class="reviews">
-                <p class="fadeIn-scroll">I could not believe how good the app is! I earned like 3k in first two months! Definitely recommend to give it a try.</p>
-            </div>
+        <div class="star">
+          <i
+            class="fa fa-star"
+            aria-hidden="true"
+            style="color: #fccf3b; font-size: 27px"
+          ></i>
+          <i
+            class="fa fa-star"
+            aria-hidden="true"
+            style="color: #fccf3b; font-size: 27px"
+          ></i>
+          <i
+            class="fa fa-star"
+            aria-hidden="true"
+            style="color: #fccf3b; font-size: 27px"
+          ></i>
+          <i
+            class="fa fa-star"
+            aria-hidden="true"
+            style="color: #fccf3b; font-size: 27px"
+          ></i>
+          <i
+            class="fa fa-star"
+            aria-hidden="true"
+            style="color: #fccf3b; font-size: 27px"
+          ></i>
         </div>
-        <div class="box three">
-            <div class="box-img">
-                <img src="../assets/review3.jpeg" alt="Third Image" class="review-img">
-            </div>
-            <div class="star">
-    
-                <i class="fa fa-star" aria-hidden="true" style="color: #FCCF3B; font-size: 27px;"></i>
-                <i class="fa fa-star" aria-hidden="true" style="color: #FCCF3B; font-size: 27px;"></i>
-                <i class="fa fa-star" aria-hidden="true" style="color: #FCCF3B; font-size: 27px;"></i>
-                <i class="fa fa-star" aria-hidden="true" style="color: #FCCF3B; font-size: 27px;"></i>
-                <i class="fa fa-star" aria-hidden="true" style="color: #FCCF3B; font-size: 27px;"></i>
-    
-            </div>
-            
-            <h3 class="fadeIn-scroll">Emmanuel Ohworeko</h3>
-            <p class="fadeIn-scroll">CEO and Founder of CoinProfit</p>
-            <div class="reviews">
-                <p class="fadeIn-scroll">I'm using this app every day as you are using Instagram, but Coinprofit helps me also to earn money!</p>
-            </div>
-         </div>
-    </div> 
-</section><!-- End Review Section-->
 
-<section class="app-features">
-    <div class="copy-traders ">
-        <h1 class="slideIn left">Copy The Best Traders</h1>
-       
-            <img src="../assets/app-feature1.svg" alt="App Feature 1" class="copy-img">
+        <h3 class="fadeIn-scroll">Emmanuel Ohworeko</h3>
+        <p class="fadeIn-scroll">CEO and Founder of CoinProfit</p>
+        <div class="reviews">
+          <p class="fadeIn-scroll">
+            I started to use Coinprofit app a few months ago and I love it so
+            much, this app already generated me ton of real money
+          </p>
+        </div>
+      </div>
+      <div class="box">
+        <div class="box-img">
+          <img
+            src="../assets/images/review2.jpg"
+            alt="IMAGE"
+            class="review-img"
+          />
+        </div>
+        <div class="star">
+          <i
+            class="fa fa-star"
+            aria-hidden="true"
+            style="color: #fccf3b; font-size: 27px"
+          ></i>
+          <i
+            class="fa fa-star"
+            aria-hidden="true"
+            style="color: #fccf3b; font-size: 27px"
+          ></i>
+          <i
+            class="fa fa-star"
+            aria-hidden="true"
+            style="color: #fccf3b; font-size: 27px"
+          ></i>
+          <i
+            class="fa fa-star"
+            aria-hidden="true"
+            style="color: #fccf3b; font-size: 27px"
+          ></i>
+          <i
+            class="fa fa-star"
+            aria-hidden="true"
+            style="color: #fccf3b; font-size: 27px"
+          ></i>
+        </div>
 
+        <h3 class="fadeIn-scroll">Emmanuel Ohworeko</h3>
+        <p class="fadeIn-scroll">CEO and Founder of CoinProfit</p>
+        <div class="reviews">
+          <p class="fadeIn-scroll">
+            I could not believe how good the app is! I earned like 3k in first
+            two months! Definitely recommend to give it a try.
+          </p>
+        </div>
+      </div>
+      <div class="box three">
+        <div class="box-img">
+          <img
+            src="../assets/images/review3.jpeg"
+            alt="Third Image"
+            class="review-img"
+          />
+        </div>
+        <div class="star">
+          <i
+            class="fa fa-star"
+            aria-hidden="true"
+            style="color: #fccf3b; font-size: 27px"
+          ></i>
+          <i
+            class="fa fa-star"
+            aria-hidden="true"
+            style="color: #fccf3b; font-size: 27px"
+          ></i>
+          <i
+            class="fa fa-star"
+            aria-hidden="true"
+            style="color: #fccf3b; font-size: 27px"
+          ></i>
+          <i
+            class="fa fa-star"
+            aria-hidden="true"
+            style="color: #fccf3b; font-size: 27px"
+          ></i>
+          <i
+            class="fa fa-star"
+            aria-hidden="true"
+            style="color: #fccf3b; font-size: 27px"
+          ></i>
+        </div>
 
-        <p class="slideIn left">Crypto trading and investment takes time to learn and master. It can be difficult for new traders to make a profit. <br> <br> Skip the steep learning curve and start earning by following the footsteps of leading crypto traders. See what they buy, when they buy, and when they sell.</p>
+        <h3 class="fadeIn-scroll">Emmanuel Ohworeko</h3>
+        <p class="fadeIn-scroll">CEO and Founder of CoinProfit</p>
+        <div class="reviews">
+          <p class="fadeIn-scroll">
+            I'm using this app every day as you are using Instagram, but
+            Coinprofit helps me also to earn money!
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Review Section-->
+
+  <section class="app-features">
+    <div class="copy-traders">
+      <h1>Copy The Best Traders</h1>
+
+      <img
+        src="../assets/images/app-feature1.svg"
+        alt="App Feature 1"
+        class="copy-img"
+      />
+
+      <p class="slideIn">
+        Crypto trading and investment takes time to learn and master. It can be
+        difficult for new traders to make a profit. <br />
+        <br />
+        Skip the steep learning curve and start earning by following the
+        footsteps of leading crypto traders. See what they buy, when they buy,
+        and when they sell.
+      </p>
     </div>
 
     <div class="see-leaders">
-        <h1 class="slideIn right">See Your Leader's Transactions In Real-Time</h1>
+      <h1 class="slideIn">See Your Leader's Transactions In Real-Time</h1>
 
-            <img src="../assets/see-leaders.svg" alt="App Planner" class="copy-img">
+      <img
+        src="../assets/images/see-leaders.svg"
+        alt="App Planner"
+        class="copy-img"
+      />
 
-
-        <p class="slideIn right">With CoinProfit, you can record your lessons, so you can continue learning anytime, anywhere. We make learning incredibly easy for you, so you can win in the crypto space.</p>
+      <p class="slideIn">
+        With CoinProfit, you can record your lessons, so you can continue
+        learning anytime, anywhere. We make learning incredibly easy for you, so
+        you can win in the crypto space.
+      </p>
+    </div>
+  </section>
+  <section class="get-signal">
+    <h1>Get Signals From All Your Leaders In One Place</h1>
+    <div class="blob-signal-wrapper slideIn">
+      <img
+        src="../assets/images/blob-signal.png"
+        alt="Blob Background for the Get Signal section"
+        class="signal-blob"
+      />
     </div>
 
-</section>
-<section class="get-signal">
-        <h1 class="slideIn right">Get Signals From All Your Leaders In One Place</h1>
-        <div class="blob-signal-wrapper slideIn right">
-            <img src="../assets/blob-signal.png" alt="Blob Background for the Get Signal section" class="signal-blob">
-        </div>
+    <div class="signal-packs">
+      <div class="pack-img-wrapper">
+        <img src="../assets/images/customer.svg" alt="" class="pack-img" />
+      </div>
+      <p>My Followers</p>
+      <h5>4290</h5>
+    </div>
+    <div class="signal-packs two">
+      <div class="pack-img-wrapper">
+        <img src="../assets/images/verified-user.svg" alt="" class="pack-img" />
+      </div>
+      <p>My Subscribers</p>
+      <h5>2 021</h5>
+    </div>
+    <div class="signal-packs three">
+      <div class="pack-img-wrapper">
+        <img src="../assets/images/money.svg" alt="" class="pack-img" />
+      </div>
+      <p>Subscribers Earnings</p>
+      <h5>$ 10 902</h5>
+    </div>
 
-        <div class="signal-packs slideIn left">
-            <div class="pack-img-wrapper">
-                <img src="../assets/customer.svg" alt="" class="pack-img">
-            </div>  
-            <p>My Followers</p>
-            <h5>4290</h5>
-               
-        </div>
-        <div class="signal-packs two slideIn left">
-            <div class="pack-img-wrapper">
-                <img src="../assets/verified-user.svg" alt="" class="pack-img">
-            </div>  
-            <p>My Subscribers</p>
-            <h5>2 021</h5>
-               
-        </div>
-        <div class="signal-packs three">
-            <div class="pack-img-wrapper">
-                <img src="../assets/verified-user.svg" alt="" class="pack-img">
-            </div>  
-            <p>Subscribers Earnings</p>
-            <h5>$ 10 902</h5>
-               
-        </div>
+    <div class="signal-planner-wrapper">
+      <img
+        src="../assets/images/planner-signal.png"
+        alt=""
+        class="signal-planner"
+      />
+    </div>
 
-        <div class="signal-planner-wrapper slideIn right">
-            <img src="../assets/planner-signal.png" alt="" class="signal-planner">
-        </div>
+    <div class="main-signal-wrapper">
+      <img src="../assets/images/main-si.svg" alt="" class="main-signal-img" />
+    </div>
 
-        <div class="main-signal-wrapper">
-            <img src="../assets/main-si.png" alt="" class="main-signal-img">
-        </div>
-    
-        <p class="signal-details">Get signals from the leading traders all in one place. Discover and rate their signal quality. Share whether or not you’ve been able to profit from the signal.</p>
-</section>
+    <p class="signal-details">
+      Get signals from the leading traders all in one place. Discover and rate
+      their signal quality. Share whether or not you’ve been able to profit from
+      the signal.
+    </p>
+  </section>
 
-
-<section class="meet-leaders">
+  <section class="meet-leaders">
     <div class="custom-shape-divider-top-1644369928">
-        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-            <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
-        </svg>
+      <svg
+        data-name="Layer 1"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1200 120"
+        preserveAspectRatio="none"
+      >
+        <path
+          d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+          class="shape-fill"
+        ></path>
+      </svg>
     </div>
-    
+
     <div class="container">
-        <div class="section-title">
-            <h2>Meet Some Leaders On Coinprofit App</h2>
-            <span class="section-separator"></span>
-            <p>If you’re an expert, you can sign up as a leader and start making money sharing your crypto know-how.</p>
-        </div>
+      <div class="section-title">
+        <h2>Meet Some Leaders On Coinprofit App</h2>
+        <span class="section-separator"></span>
+        <p>
+          If you’re an expert, you can sign up as a leader and start making
+          money sharing your crypto know-how.
+        </p>
+      </div>
     </div>
     <!-- This is a sliderjs framework.  -->
 
     <div class="testimonials-carousel-wrap">
-        <div class="listing-carousel-button listing-carousel-button-next"><i class="fa fa-caret-right" style="color: #fff"></i></div>
-        <div class="listing-carousel-button listing-carousel-button-prev"><i class="fa fa-caret-left" style="color: #fff"></i></div>
-        <div class="testimonials-carousel">
-            <div class="swiper-container">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="testi-item">
-                            <div class="testi-avatar"><img src="../assets/review3.jpeg"></div>
-                            <div class="leader-level"><img src="../assets/leader-level.svg" ></div>
-                            <div class="testimonials-text">
-                                <div class="testimonials-avatar">
-                                    <h3>Emmanuel Ohworeko</h3>
-                                </div>
-                                <p class="username">@lordemma</p> 
-                                <p>10x his portfolio in 3 months, that's incredible!</p>
-                                
-                            </div>
-                           
-                        </div>
-                        <div class="signal-img-wrapper"> <img src="../assets/signal-st.png" alt="" srcset=""></div>
-                    </div>
-
-                    <!--second--->
-                    <div class="swiper-slide">
-                        <div class="testi-item">
-                            <div class="testi-avatar"><img src="../assets/review3.jpeg"></div>
-                            <div class="leader-level"><img src="../assets/leader-level1.svg" ></div>
-                            <div class="testimonials-text">
-                                <div class="testimonials-avatar">
-                                    <h3>Chris Ani</h3>
-                                </div>
-                                <p class="username">@anichris</p> 
-                                <p>to running and hedge fund worth Millions of dollars</p>
-                                
-                            </div>
-                        </div>
-                        <div class="signal-img-wrapper"> <img src="../assets/signal-st.png" alt="" srcset=""></div>
-                    </div>
-                    <!--third-->
-
-                    <div class="swiper-slide">
-                        <div class="testi-item">
-                            <div class="testi-avatar"><img src="../assets/review2.jpg"></div>
-                            <div class="leader-level"><img src="../assets/leader-level1.svg" ></div>
-                            <div class="testimonials-text">
-                                <div class="testimonials-avatar">
-                                    <h3>Jahfegor Ohworeko</h3>
-                                </div>
-                                <p class="username">@jfegor</p> 
-                                <p>2x her portfolio in 1 month, she was new to crypto world</p>
-                                
-                            </div>
-                        </div>
-                        <div class="signal-img-wrapper"> <img src="../assets/signal-st.png" alt="" srcset=""></div>
-                    </div>
-
-                    <!--fourth-->
-                    <div class="swiper-slide">
-                        <div class="testi-item">
-                            <div class="testi-avatar"><img src="../assets/review1.jpg"></div>
-                            <div class="leader-level"><img src="../assets/leader-level.svg" ></div>
-                            <div class="testimonials-text">
-                                <div class="testimonials-avatar">
-                                    <h3>Iroro chadere</h3>
-                                </div>
-                                <p class="username">@irorochad</p> 
-                                <p>sharing some real signal - come join me</p>
-                                
-                            </div>
-                        </div>
-                        <div class="signal-img-wrapper"> <img src="../assets/signal-st.png" alt="" srcset=""></div>
-                    </div>
-                    <!--testi end-->
-
+      <div class="listing-carousel-button listing-carousel-button-next">
+        <i class="fa fa-caret-right" style="color: #fff"></i>
+      </div>
+      <div class="listing-carousel-button listing-carousel-button-prev">
+        <i class="fa fa-caret-left" style="color: #fff"></i>
+      </div>
+      <div class="testimonials-carousel">
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="testi-item">
+                <div class="testi-avatar">
+                  <img src="../assets/images/review3.jpeg" />
                 </div>
+                <div class="leader-level">
+                  <img src="../assets/images/leader-level.svg" />
+                </div>
+                <div class="testimonials-text">
+                  <div class="testimonials-avatar">
+                    <h3>Emmanuel Ohworeko</h3>
+                  </div>
+                  <p class="username">@lordemma</p>
+                  <p>10x his portfolio in 3 months, that's incredible!</p>
+                </div>
+              </div>
+              <div class="signal-img-wrapper">
+                <img src="../assets/images/signal-st.png" alt="" srcset="" />
+              </div>
             </div>
+
+            <!--second--->
+            <div class="swiper-slide">
+              <div class="testi-item">
+                <div class="testi-avatar">
+                  <img src="../assets/images/review3.jpeg" />
+                </div>
+                <div class="leader-level">
+                  <img src="../assets/images/leader-level1.svg" />
+                </div>
+                <div class="testimonials-text">
+                  <div class="testimonials-avatar">
+                    <h3>Chris Ani</h3>
+                  </div>
+                  <p class="username">@anichris</p>
+                  <p>to running and hedge fund worth Millions of dollars</p>
+                </div>
+              </div>
+              <div class="signal-img-wrapper">
+                <img src="../assets/images/signal-st.png" alt="" srcset="" />
+              </div>
+            </div>
+            <!--third-->
+
+            <div class="swiper-slide">
+              <div class="testi-item">
+                <div class="testi-avatar">
+                  <img src="../assets/images/review2.jpg" />
+                </div>
+                <div class="leader-level">
+                  <img src="../assets/images/leader-level1.svg" />
+                </div>
+                <div class="testimonials-text">
+                  <div class="testimonials-avatar">
+                    <h3>Jahfegor Ohworeko</h3>
+                  </div>
+                  <p class="username">@jfegor</p>
+                  <p>
+                    2x her portfolio in 1 month, she was new to crypto world
+                  </p>
+                </div>
+              </div>
+              <div class="signal-img-wrapper">
+                <img src="../assets/images/signal-st.png" alt="" srcset="" />
+              </div>
+            </div>
+
+            <!--fourth-->
+            <div class="swiper-slide">
+              <div class="testi-item">
+                <div class="testi-avatar">
+                  <img src="../assets/images/review1.jpg" />
+                </div>
+                <div class="leader-level">
+                  <img src="../assets/images/leader-level.svg" />
+                </div>
+                <div class="testimonials-text">
+                  <div class="testimonials-avatar">
+                    <h3>Iroro chadere</h3>
+                  </div>
+                  <p class="username">@irorochad</p>
+                  <p>sharing some real signal - come join me</p>
+                </div>
+              </div>
+              <div class="signal-img-wrapper">
+                <img src="../assets/images/signal-st.png" alt="" srcset="" />
+              </div>
+            </div>
+            <!--testi end-->
+          </div>
         </div>
+      </div>
 
-        <div class="tc-pagination"></div>
+      <div class="tc-pagination"></div>
     </div>
-   <div class="leaders-app-download">
-       <a href="#" target="_blank" rel="noopener noreferrer"><img src="../assets/appstore.svg" alt=""></a>
-       <a href="#" target="_blank" rel="noopener noreferrer"><img src="../assets/goplay.svg" alt=""></a>
-   </div>
+    <div class="leaders-app-download">
+      <a href="#" target="_blank" rel="noopener noreferrer"
+        ><img src="../assets/images/appstore.svg" alt=""
+      /></a>
+      <a href="#" target="_blank" rel="noopener noreferrer"
+        ><img src="../assets/images/goplay.svg" alt=""
+      /></a>
+    </div>
 
-   <!-- End sliderjs framework -->
+    <!-- End sliderjs framework -->
 
     <div class="custom-shape-divider-bottom-1644463655">
-        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-            <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
-            <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
-            <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
-        </svg>
-    </div>  
-</section>
-
-
-<section>
-    <div class="featuretwo-wrapper">
-        <div class="app-features-two" style="margin-bottom: 90px;">
-            <h1>Create Your Own Trading Plans</h1>
-            <div class="trade-img-box">
-                <img src="../assets/planner-trade-lesson.svg" alt="Create your trading plan" class="trade-img">
-            </div>
-            <p>Trade responsibly and profitably by creating a trading plan that works for you.<br> <br>  Plan your entry, stop loss, and take profit targets. Use tags to organize your plans. Receive notifications whenever your coin hits your target or stop limit.</p>
-        </div>
-        <div class="trade-lessons">
-            <h1>Record Your Trade Lessons</h1>
-            <div class="record-img-box">
-                <img src="../assets/trade-lesson.svg" alt="Record your trade lessons" class="record-img">
-                
-            </div>
-            <p>You trade on the go, so why not have your lessons on the go? <br> <br> With CoinProfit, you can record your lessons, so you can continue learning anytime, anywhere. We make learning incredibly easy for you, so you can win in the crypto space.</p>
-        </div>
+      <svg
+        data-name="Layer 1"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1200 120"
+        preserveAspectRatio="none"
+      >
+        <path
+          d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+          opacity=".25"
+          class="shape-fill"
+        ></path>
+        <path
+          d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+          opacity=".5"
+          class="shape-fill"
+        ></path>
+        <path
+          d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+          class="shape-fill"
+        ></path>
+      </svg>
     </div>
-</section>
+  </section>
 
-<section class="auto-sec">
+  <section>
+    <div class="featuretwo-wrapper">
+      <div class="app-features-two" style="margin-bottom: 90px">
+        <h1>Create Your Own Trading Plans</h1>
+        <div class="trade-img-box">
+          <img
+            src="../assets/images/planner-trade-lesson.svg"
+            alt="Create your trading plan"
+            class="trade-img"
+          />
+        </div>
+        <p>
+          Trade responsibly and profitably by creating a trading plan that works
+          for you.<br />
+          <br />
+          Plan your entry, stop loss, and take profit targets. Use tags to
+          organize your plans. Receive notifications whenever your coin hits
+          your target or stop limit.
+        </p>
+      </div>
+      <div class="trade-lessons">
+        <h1>Record Your Trade Lessons</h1>
+        <div class="record-img-box">
+          <img
+            src="../assets/images/trade-lesson.svg"
+            alt="Record your trade lessons"
+            class="record-img"
+          />
+        </div>
+        <p>
+          You trade on the go, so why not have your lessons on the go? <br />
+          <br />
+          With CoinProfit, you can record your lessons, so you can continue
+          learning anytime, anywhere. We make learning incredibly easy for you,
+          so you can win in the crypto space.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="auto-sec">
     <div class="custom-shape-divider-top-1644623960">
-        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-            <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
-        </svg>
+      <svg
+        data-name="Layer 1"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1200 120"
+        preserveAspectRatio="none"
+      >
+        <path
+          d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+          class="shape-fill"
+        ></path>
+      </svg>
     </div>
     <div class="auto-track">
-        <h1>Automatically Track Your Portfolio Across Multiple Exchange Platforms</h1>
-        <div class="track-img-box">
-            <img src="../assets/PortfolioUpgraded.svg" alt="App Feature 1" class="auto-track-img">
-            <img src="../assets/groupebsc1.svg" alt="" srcset="" class="auto-track-icons bcs1">
-            <img src="../assets/groupeth1.svg" alt="" srcset="" class="auto-track-icons eth1">
+      <h1>
+        Automatically Track Your Portfolio Across Multiple Exchange Platforms
+      </h1>
+      <div class="track-img-box">
+        <img
+          src="../assets/images/Portfolio-Upgraded.svg"
+          alt="App Feature 1"
+          class="auto-track-img"
+        />
+        <img
+          src="../assets/images/groupebsc1.svg"
+          alt=""
+          srcset=""
+          class="auto-track-icons bcs1"
+        />
+        <img
+          src="../assets/images/groupeth1.svg"
+          alt=""
+          srcset=""
+          class="auto-track-icons eth1"
+        />
 
-            <img src="../assets/groupebsc2.svg" alt="" srcset="" class="auto-track-icons bcs2">
-            <img src="../assets/groupeth2.svg" alt="" srcset="" class="auto-track-icons eth2">
-        </div>
-        <p>Conveniently and securely monitor your entire portfolio on one platform without worrying about compromising your data. CoinProfit supports over 300 exchanges and more than 8,000 crypto assets.</p>
-        <a href="#download-app"><button class="auto-button btn-1">TRY NOW</button></a>
+        <img
+          src="../assets/images/groupebsc2.svg"
+          alt=""
+          srcset=""
+          class="auto-track-icons bcs2"
+        />
+        <img
+          src="../assets/images/groupeth2.svg"
+          alt=""
+          srcset=""
+          class="auto-track-icons eth2"
+        />
+      </div>
+      <p>
+        Conveniently and securely monitor your entire portfolio on one platform
+        without worrying about compromising your data. CoinProfit supports over
+        300 exchanges and more than 8,000 crypto assets.
+      </p>
+      <a href="#download-app"
+        ><button class="auto-button btn-1">TRY NOW</button></a
+      >
 
-        <!-- The icons are set to absolute positioning... --> 
-            <img src="assets/images/listtle Icons/6.svg" alt="" srcset="" class="littleIcon6">
-            <img src="assets/images/listtle Icons/7.svg" alt="" srcset="" class="littleIcon7">
-            <img src="assets/images/listtle Icons/5.svg" alt="" srcset="" class="littleIcon8">
-        <!-- ENd little Icons -->
+      <!-- The icons are set to absolute positioning... -->
+      <img
+        src="../assets/images/listtle-Icons/6.svg"
+        alt=""
+        srcset=""
+        class="littleIcon6"
+      />
+      <img
+        src="../assets/images/listtle-Icons/7.svg"
+        alt=""
+        srcset=""
+        class="littleIcon7"
+      />
+      <img
+        src="../assets/images/listtle-Icons/5.svg"
+        alt=""
+        srcset=""
+        class="littleIcon8"
+      />
+      <!-- ENd little Icons -->
     </div>
     <div class="custom-shape-divider-bottom-1644660326">
-        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-            <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
-        </svg>
+      <svg
+        data-name="Layer 1"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1200 120"
+        preserveAspectRatio="none"
+      >
+        <path
+          d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+          class="shape-fill"
+        ></path>
+      </svg>
     </div>
-</section>
+  </section>
 
-<section class="profit-loss-sec">
+  <section class="profit-loss-sec">
     <div class="profit-loss">
-     <h1>See Your <span class="Hprofit">Profit</span><span class="Hslash">/</span><span class="Hloss">Loss</span> at a Glance! </h1>
- 
-     <div class="proft-loss-img-box">
-         <img src="../assets/profit-loss.png" alt="See your profit and Loss." class="proft-loss-img">
-         <!-- this images will only be displayed on desktop screens -->
-         <img src="../assets/groupshareeth1.svg" alt="" srcset="" class="groupshare geth1">
-         <img src="../assets/groupsharebsc1.svg" alt="" srcset="" class="groupshare gbsc1">
+      <h1>
+        See Your <span class="Hprofit">Profit</span><span class="Hslash">/</span
+        ><span class="Hloss">Loss</span> at a Glance!
+      </h1>
 
-        
-         <img src="../assets/groupsharebsc2.svg" alt="" srcset="" class="groupshare gbsc2">
-         <img src="../assets/groupshareeth2.svg" alt="" srcset="" class="groupshare geth2">
-         
-     </div>
+      <div class="proft-loss-img-box">
+        <img
+          src="../assets/images/profit-loss.png"
+          alt="See your profit and Loss."
+          class="proft-loss-img"
+        />
+        <!-- this images will only be displayed on desktop screens -->
+        <img
+          src="../assets/images/groupshareeth1.svg"
+          alt=""
+          srcset=""
+          class="groupshare geth1"
+        />
+        <img
+          src="../assets/images/groupsharebsc1.svg"
+          alt=""
+          srcset=""
+          class="groupshare gbsc1"
+        />
+
+        <img
+          src="../assets/images/groupsharebsc2.svg"
+          alt=""
+          srcset=""
+          class="groupshare gbsc2"
+        />
+        <img
+          src="../assets/images/groupshareeth2.svg"
+          alt=""
+          srcset=""
+          class="groupshare geth2"
+        />
+      </div>
     </div>
- </section>
+  </section>
 
- 
- <section class="share-portfolio-sec">
+  <section class="share-portfolio-sec">
     <div class="custom-shape-divider-top-1644670257">
-        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-            <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
-        </svg>
+      <svg
+        data-name="Layer 1"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1200 120"
+        preserveAspectRatio="none"
+      >
+        <path
+          d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+          class="shape-fill"
+        ></path>
+      </svg>
     </div>
 
     <div class="share-portfolio">
-        <h1>Share Your Portfolio Performance</h1>
-            <img src="../assets/share-blob.png" class="share-blob">
+      <h1>Share Your Portfolio Performance</h1>
+      <img src="../assets/images/share-blob.png" class="share-blob" />
 
-        <div class="share-portfolio-box">
-            <img src="../assets/share-img.png" alt="Share Image" class="share-portfolio-img">
-            
-        </div>
-        <p>Plan your entry, stop loss, and take profit targets. Use tags to organize your plans. Receive notifications whenever your coin hits your target or stop limit.</p>
+      <div class="share-portfolio-box">
+        <img
+          src="../assets/images/share-img.png"
+          alt="Share Image"
+          class="share-portfolio-img"
+        />
+      </div>
+      <p>
+        Plan your entry, stop loss, and take profit targets. Use tags to
+        organize your plans. Receive notifications whenever your coin hits your
+        target or stop limit.
+      </p>
     </div>
 
-<div class="custom-shape-divider-bottom-1644669891">
-    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-        <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
-        <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
-        <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
-    </svg>
-</div>
-</section>
+    <div class="custom-shape-divider-bottom-1644669891">
+      <svg
+        data-name="Layer 1"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1200 120"
+        preserveAspectRatio="none"
+      >
+        <path
+          d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+          opacity=".25"
+          class="shape-fill"
+        ></path>
+        <path
+          d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+          opacity=".5"
+          class="shape-fill"
+        ></path>
+        <path
+          d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+          class="shape-fill"
+        ></path>
+      </svg>
+    </div>
+  </section>
 
-<section class="exchange-sec">
+  <section class="exchange-sec">
     <div class="exchange-wrapper">
-        <h1>Supported Exchanges and Wallets</h1>
-        <div class="exchange-box-wrapper">
-            <div class="exchange-box">
-                <img src="../assets/binance-logo.svg" alt="binance-logo" class="exchange-logo">
-                <p>Binance</p>
-            </div>
+      <h1>Supported Exchanges and Wallets</h1>
+      <div class="exchange-box-wrapper">
+        <div class="exchange-box">
+          <img
+            src="../assets/images/binance-logo.svg"
+            alt="binance-logo"
+            class="exchange-logo"
+          />
+          <p>Binance</p>
         </div>
-        <div class="exchange-box-wrapper">
-            <div class="exchange-box">
-                <img src="../assets/kcs-3.svg" alt="exchange-logo" class="exchange-logo">
-                <p>kucoin</p>
-            </div>
+      </div>
+      <div class="exchange-box-wrapper">
+        <div class="exchange-box">
+          <img
+            src="../assets/images/kcs-3.svg"
+            alt="exchange-logo"
+            class="exchange-logo"
+          />
+          <p>kucoin</p>
         </div>
-        <div class="exchange-box-wrapper">
-            <div class="exchange-box">
-                <img src="../assets/ftx-2.svg" alt="exchange-logo" class="exchange-logo">
-                <p>FTX</p>
-            </div>
+      </div>
+      <div class="exchange-box-wrapper">
+        <div class="exchange-box">
+          <img
+            src="../assets/images/ftx-2.svg"
+            alt="exchange-logo"
+            class="exchange-logo"
+          />
+          <p>FTX</p>
         </div>
-        <div class="exchange-box-wrapper">
-            <div class="exchange-box">
-                <img src="../assets/gateio.svg" alt="exchange-logo" class="exchange-logo">
-                <p>Gateio</p>
-            </div>
+      </div>
+      <div class="exchange-box-wrapper">
+        <div class="exchange-box">
+          <img
+            src="../assets/images/gateio.svg"
+            alt="exchange-logo"
+            class="exchange-logo"
+          />
+          <p>Gateio</p>
         </div>
-        <div class="exchange-box-wrapper">
-            <div class="exchange-box">
-                <img src="../assets/okex-2.svg" alt="exchange-logo" class="exchange-logo">
-                <p>Okex</p>
-            </div>
+      </div>
+      <div class="exchange-box-wrapper">
+        <div class="exchange-box">
+          <img
+            src="../assets/images/okex-2.svg"
+            alt="exchange-logo"
+            class="exchange-logo"
+          />
+          <p>Okex</p>
         </div>
-        <div class="exchange-box-wrapper">
-            <div class="exchange-box ">
-                <img src="../assets/BSC.svg" alt="binance-logo" class="exchange-logo bsc">
-                <p>BSC</p>
-            </div>
+      </div>
+      <div class="exchange-box-wrapper">
+        <div class="exchange-box">
+          <img
+            src="../assets/images/Binance-Smart-Chain.svg.svg"
+            alt="binance-logo"
+            class="exchange-logo bsc"
+          />
+          <p>BSC</p>
         </div>
-        <div class="exchange-box-wrapper">
-            <div class="exchange-box coinbase">
-                <img src="../assets/Coinbase.svg" alt="binance-logo" class="exchange-logo min">
-                <p>coinbase</p>
-            </div>
+      </div>
+      <div class="exchange-box-wrapper">
+        <div class="exchange-box coinbase">
+          <img
+            src="../assets/images/Coinbase.svg"
+            alt="binance-logo"
+            class="exchange-logo min"
+          />
+          <p>coinbase</p>
         </div>
-        <div class="exchange-box-wrapper ">
-            <div class="exchange-box uniswap">
-                <img src="../assets/Uniswap.svg" alt="binance-logo" class="exchange-logo min">
-                <p>Uniswap</p>
-            </div>
+      </div>
+      <div class="exchange-box-wrapper">
+        <div class="exchange-box uniswap">
+          <img
+            src="../assets/images/Uniswap-(UNI).svg"
+            alt="binance-logo"
+            class="exchange-logo min"
+          />
+          <p>Uniswap</p>
         </div>
-        <div class="exchange-box-wrapper nine">
-            <div class="exchange-box ">
-                <img src="../assets/Pancakeswap.svg" alt="binance-logo" class="exchange-logo min">
-                <p>Pancake Swap</p>
-            </div>
+      </div>
+      <div class="exchange-box-wrapper nine">
+        <div class="exchange-box">
+          <img
+            src="../assets/images/Pancakeswap.svg"
+            alt="binance-logo"
+            class="exchange-logo min"
+          />
+          <p>Pancake Swap</p>
         </div>
-        <div class="exchange-box-wrapper ten">
-            <div class="exchange-box">
-                <img src="../assets/ethereum-1.svg" alt="binance-logo" class="exchange-logo">
-                <p>Ethereum</p>
-            </div>
+      </div>
+      <div class="exchange-box-wrapper ten">
+        <div class="exchange-box">
+          <img
+            src="../assets/images/ethereum-1.svg"
+            alt="binance-logo"
+            class="exchange-logo"
+          />
+          <p>ethereum</p>
         </div>
-        <p class="get-details">Get the app now on the Google Play Store or the App Store</p>
-        <div class="exchange-download-wrapper">
-            <a href="#" target="_blank" rel="noopener noreferrer"><img src="../assets/goplay.svg" alt="" srcset="" class="exchange-download"></a>
-            
-            <a href="#" target="_blank" rel="noopener noreferrer"><img src="../assets/appstore.svg" alt="" srcset="" class="exchange-download"></a>
-            
-            
-        </div>
+      </div>
+      <p class="get-details">
+        Get the app now on the Google Play Store or the App Store
+      </p>
+      <div class="exchange-download-wrapper">
+        <a href="#" target="_blank" rel="noopener noreferrer"
+          ><img
+            src="../assets/images/goplay.svg"
+            alt=""
+            srcset=""
+            class="exchange-download"
+        /></a>
+
+        <a href="#" target="_blank" rel="noopener noreferrer"
+          ><img
+            src="../assets/images/appstore.svg"
+            alt=""
+            srcset=""
+            class="exchange-download"
+        /></a>
+      </div>
     </div>
-    
-</section>
+  </section>
 
-
-<section class="users-review">
-
+  <section class="users-review">
     <h1>What Our Users Are Saying...</h1>
 
-<div class="user-review-box">
-    <div class="splide">
+    <div class="user-review-box">
+      <div class="splide">
         <div class="splide__arrows">
-            <button class="splide__arrow splide__arrow--prev">
-                <i class="fa fa-angle-left"></i>
-                
-            </button>
-            <button class="splide__arrow splide__arrow--next">
-                <i class="fa fa-angle-right"></i>
-            </button>
-      </div>
-        <div class="splide__progress" > </div>
+          <button class="splide__arrow splide__arrow--prev">
+            <i class="fa fa-angle-left"></i>
+          </button>
+          <button class="splide__arrow splide__arrow--next">
+            <i class="fa fa-angle-right"></i>
+          </button>
+        </div>
+        <div class="splide__progress"></div>
         <div class="splide__track">
-            <div class="splide__list">
-                <div class="splide__slide">
-
-                    <h3>John Doe</h3>
-                    <div class="users-img-wrapper">
-                        <img src="../assets/review3.jpeg" alt="">
-                    </div>
-                    <div class="star-review">
-    
-                        <i class="fa fa-star" aria-hidden="true" style="color: #FCCF3B; font-size: 27px;"></i>
-                        <i class="fa fa-star" aria-hidden="true" style="color: #FCCF3B; font-size: 27px;"></i>
-                        <i class="fa fa-star" aria-hidden="true" style="color: #FCCF3B; font-size: 27px;"></i>
-                        <i class="fa fa-star" aria-hidden="true" style="color: #FCCF3B; font-size: 27px;"></i>
-                        <i class="fa fa-star" aria-hidden="true" style="color: #FCCF3B; font-size: 27px;"></i>
-        
-                    </div>
-                    <p>This can be a long review. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere voluptas iure neque nemo est illo nobis possimus, eveniet animi facilis impedit velit. Incidunt maiores doloremque delectus blanditiis eius ad ipsam? lorem</p>
-                    
-                </div>
-                <div class="splide__slide">
-                    <h3>John Doe</h3>
-                    <div class="users-img-wrapper">
-                        <img src="../assets/review3.jpeg" alt="">
-                    </div>
-                    <div class="star-review">
-    
-                        <i class="fa fa-star" aria-hidden="true" style="color: #FCCF3B; font-size: 27px;"></i>
-                        <i class="fa fa-star" aria-hidden="true" style="color: #FCCF3B; font-size: 27px;"></i>
-                        <i class="fa fa-star" aria-hidden="true" style="color: #FCCF3B; font-size: 27px;"></i>
-                        <i class="fa fa-star" aria-hidden="true" style="color: #FCCF3B; font-size: 27px;"></i>
-                        <i class="fa fa-star" aria-hidden="true" style="color: #FCCF3B; font-size: 27px;"></i>
-        
-                    </div>
-                    <p>Amazing app, I made over $20k following a leaders call.</p>
-                    
-                </div>
-                      
-                <div class="splide__slide">
-
-                    <h3>Nyore Chadere</h3>
-                    <div class="users-img-wrapper">
-                        <img src="../assets/review1.jpg" alt="">
-                    </div>
-                    <div class="star-review">
-    
-                        <i class="fa fa-star" aria-hidden="true" style="color: #FCCF3B; font-size: 27px;"></i>
-                        <i class="fa fa-star" aria-hidden="true" style="color: #FCCF3B; font-size: 27px;"></i>
-                        <i class="fa fa-star" aria-hidden="true" style="color: #FCCF3B; font-size: 27px;"></i>
-                        <i class="fa fa-star" aria-hidden="true" style="color: #FCCF3B; font-size: 27px;"></i>
-                        <i class="fa fa-star" aria-hidden="true" style="color: #FCCF3B; font-size: 27px;"></i>
-        
-                    </div>
-                    <p>This is one of the best app I've used. I love it.</p>
-                    
-                </div>
-            </div> 
-        </div>
-    </div>
-</div>
-<p class="users-CTA">Get the app now on the Google Play Store or the App Store</p>
-<div class="review-download-wrapper">
-
-    <a href="#" target="_blank" rel="noopener noreferrer"><img src="../assets/goplay.svg" alt="" srcset="" class="review-download"></a>
-
-    <a href="#" target="_blank" rel="noopener noreferrer"><img src="../assets/appstore.svg" alt="" srcset="" class="review-download"></a>
-
-</div>
-</section>
-
-<section >
-
-    <div class="learn-more">
-        <h1>Want To Know More?</h1>
-
-        <span class="vid-play">
-            <i class="fa fa-play" aria-hidden="true" style="color: #3374EA; font-size: 40px; cursor: pointer;"></i>
-        </span>
-        <div class="vid-play-wrapper">
-            <div class="video-img"></div>
-        </div>
-        <p>
-            Get signals from different leaders in one place, see their signal quality, rate the signals and let everyone know if you made money from the signal or not.
-        </p>
-        <a href="#download-app"><button class="learn-moreBTN">Learn More</button></a>
-    </div>   
-    <div class="video-modal">
-        <div class="modal-container">
-            <span class="vid-close">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z" /></svg>
-            </span>
-
-            <div class="iframe-container">
-                <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/H9154xIoYTA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+          <div class="splide__list">
+            <div class="splide__slide">
+              <h3>John Doe</h3>
+              <div class="users-img-wrapper">
+                <img src="../assets/images/review3.jpeg" alt="" />
+              </div>
+              <div class="star-review">
+                <i
+                  class="fa fa-star"
+                  aria-hidden="true"
+                  style="color: #fccf3b; font-size: 27px"
+                ></i>
+                <i
+                  class="fa fa-star"
+                  aria-hidden="true"
+                  style="color: #fccf3b; font-size: 27px"
+                ></i>
+                <i
+                  class="fa fa-star"
+                  aria-hidden="true"
+                  style="color: #fccf3b; font-size: 27px"
+                ></i>
+                <i
+                  class="fa fa-star"
+                  aria-hidden="true"
+                  style="color: #fccf3b; font-size: 27px"
+                ></i>
+                <i
+                  class="fa fa-star"
+                  aria-hidden="true"
+                  style="color: #fccf3b; font-size: 27px"
+                ></i>
+              </div>
+              <p>
+                This can be a long review. Lorem ipsum dolor sit, amet
+                consectetur adipisicing elit. Facere voluptas iure neque nemo
+                est illo nobis possimus, eveniet animi facilis impedit velit.
+                Incidunt maiores doloremque delectus blanditiis eius ad ipsam?
+                lorem
+              </p>
             </div>
+            <div class="splide__slide">
+              <h3>John Doe</h3>
+              <div class="users-img-wrapper">
+                <img src="../assets/images/review3.jpeg" alt="" />
+              </div>
+              <div class="star-review">
+                <i
+                  class="fa fa-star"
+                  aria-hidden="true"
+                  style="color: #fccf3b; font-size: 27px"
+                ></i>
+                <i
+                  class="fa fa-star"
+                  aria-hidden="true"
+                  style="color: #fccf3b; font-size: 27px"
+                ></i>
+                <i
+                  class="fa fa-star"
+                  aria-hidden="true"
+                  style="color: #fccf3b; font-size: 27px"
+                ></i>
+                <i
+                  class="fa fa-star"
+                  aria-hidden="true"
+                  style="color: #fccf3b; font-size: 27px"
+                ></i>
+                <i
+                  class="fa fa-star"
+                  aria-hidden="true"
+                  style="color: #fccf3b; font-size: 27px"
+                ></i>
+              </div>
+              <p>Amazing app, I made over $20k following a leaders call.</p>
+            </div>
+
+            <div class="splide__slide">
+              <h3>Nyore Chadere</h3>
+              <div class="users-img-wrapper">
+                <img src="../assets/images/review1.jpg" alt="" />
+              </div>
+              <div class="star-review">
+                <i
+                  class="fa fa-star"
+                  aria-hidden="true"
+                  style="color: #fccf3b; font-size: 27px"
+                ></i>
+                <i
+                  class="fa fa-star"
+                  aria-hidden="true"
+                  style="color: #fccf3b; font-size: 27px"
+                ></i>
+                <i
+                  class="fa fa-star"
+                  aria-hidden="true"
+                  style="color: #fccf3b; font-size: 27px"
+                ></i>
+                <i
+                  class="fa fa-star"
+                  aria-hidden="true"
+                  style="color: #fccf3b; font-size: 27px"
+                ></i>
+                <i
+                  class="fa fa-star"
+                  aria-hidden="true"
+                  style="color: #fccf3b; font-size: 27px"
+                ></i>
+              </div>
+              <p>This is one of the best app I've used. I love it.</p>
+            </div>
+          </div>
         </div>
-
+      </div>
     </div>
-</section>
+    <p class="users-CTA">
+      Get the app now on the Google Play Store or the App Store
+    </p>
+    <div class="review-download-wrapper">
+      <a href="#" target="_blank" rel="noopener noreferrer"
+        ><img
+          src="../assets/images/goplay.svg"
+          alt=""
+          srcset=""
+          class="review-download"
+      /></a>
 
-<section>
-   <the-faq></the-faq>
-</section>
+      <a href="#" target="_blank" rel="noopener noreferrer"
+        ><img
+          src="../assets/images/appstore.svg"
+          alt=""
+          srcset=""
+          class="review-download"
+      /></a>
+    </div>
+  </section>
 
-<section>
-    <div class="final-download" id="download-app">
-        <h1>Download The Coinprofit App Now To Get Started!</h1>
-        <div class="final-download-wrapper">
-            <a href="#" target="_blank" rel="noopener noreferrer"><img src="../assets/goplay.svg" alt="" srcset="" class="final-download-img"></a>
-            <a href="#" target="_blank" rel="noopener noreferrer"><img src="../assets/appstore.svg" alt="" srcset="" class="final-download-img"></a>
+  <section>
+    <div class="learn-more">
+      <h1>Want To Know More?</h1>
+
+      <span class="vid-play">
+        <i
+          class="fa fa-play"
+          aria-hidden="true"
+          style="color: #3374ea; font-size: 40px; cursor: pointer"
+        ></i>
+      </span>
+      <div class="vid-play-wrapper">
+        <div class="video-img"></div>
+      </div>
+      <p>
+        Get signals from different leaders in one place, see their signal
+        quality, rate the signals and let everyone know if you made money from
+        the signal or not.
+      </p>
+      <a href="#download-app"
+        ><button class="learn-moreBTN">Learn More</button></a
+      >
+    </div>
+    <div class="video-modal">
+      <div class="modal-container">
+        <span class="vid-close">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+            <!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+            <path
+              d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"
+            />
+          </svg>
+        </span>
+
+        <div class="iframe-container">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/H9154xIoYTA"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
         </div>
+      </div>
     </div>
-</section>
+  </section>
+
+  <section>
+    <div class="faq-wrapper">
+      <h1>FAQ</h1>
+      <div class="faqcontainer">
+        <div class="faqwrapper">
+          <button class="faqtoggle">
+            <h3>
+              Question 1 look like this if the question is too long to display
+              on one line
+            </h3>
+            <i class="fa fa-chevron-down faqicon" style="color: #3374ea"></i>
+          </button>
+          <div class="faqcontent">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
+              aliquam facere adipisci quod mollitia, aut nemo deleniti fugiat
+              et, corrupti sequi. Omnis dolorem quos eligendi placeat soluta
+              sint corrupti quod.
+            </p>
+          </div>
+        </div>
+        <div class="faqwrapper">
+          <button class="faqtoggle">
+            <h3>What is the return policy?</h3>
+            <i class="fa fa-chevron-down faqicon" style="color: #3374ea"></i>
+          </button>
+          <div class="faqcontent">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
+              aliquam facere adipisci quod mollitia, aut nemo deleniti fugiat
+              et, corrupti sequi. Omnis dolorem quos eligendi placeat soluta
+              sint corrupti quod.
+            </p>
+          </div>
+        </div>
+        <div class="faqwrapper">
+          <button class="faqtoggle">
+            <h3>Question 3</h3>
+            <i class="fa fa-chevron-down faqicon" style="color: #3374ea"></i>
+          </button>
+          <div class="faqcontent">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
+              aliquam facere adipisci quod mollitia, aut nemo deleniti fugiat
+              et, corrupti sequi. Omnis dolorem quos eligendi placeat soluta
+              sint corrupti quod.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="faqcontainer faqtwo">
+        <div class="faqwrapper">
+          <button class="faqtoggle">
+            <h3>Queston 4</h3>
+            <i class="fa fa-chevron-down faqicon" style="color: #3374ea"></i>
+          </button>
+          <div class="faqcontent">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
+              aliquam facere adipisci quod mollitia, aut nemo deleniti fugiat
+              et, corrupti sequi. Omnis dolorem quos eligendi placeat soluta
+              sint corrupti quod.
+            </p>
+          </div>
+        </div>
+        <div class="faqwrapper">
+          <button class="faqtoggle">
+            <h3>Question 5</h3>
+            <i class="fa fa-chevron-down faqicon" style="color: #3374ea"></i>
+          </button>
+          <div class="faqcontent">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
+              aliquam facere adipisci quod mollitia, aut nemo deleniti fugiat
+              et, corrupti sequi. Omnis dolorem quos eligendi placeat soluta
+              sint corrupti quod.
+            </p>
+          </div>
+        </div>
+        <div class="faqwrapper">
+          <button class="faqtoggle">
+            <h3>Question 6</h3>
+            <i class="fa fa-chevron-down faqicon" style="color: #3374ea"></i>
+          </button>
+          <div class="faqcontent">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
+              aliquam facere adipisci quod mollitia, aut nemo deleniti fugiat
+              et, corrupti sequi. Omnis dolorem quos eligendi placeat soluta
+              sint corrupti quod.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <BaseCallToAction />
 </template>
 
 <script>
-import  TheFaq  from '../components/Home/TheFaq.vue'
+import $ from "jquery";
+import Swiper from "swiper/bundle";
+import "swiper/css/bundle";
+import Splide from "@splidejs/splide";
+
+import BaseCallToAction from "../components/BaseCallToAction.vue";
+
 export default {
   components: {
-   "the-faq": TheFaq
+    BaseCallToAction,
   },
-  data() {
-    return {
-      label: "Home Page",
-    };
 
-  }
+  methods: {
+    useSplide() {
+      document.addEventListener("DOMContentLoaded", function () {
+        new Splide(".splide", {
+          type: "loop",
+          perPage: 1,
+          autoplay: true,
+          interval: 2000, // How long to display each slide
+          pauseOnHover: true, // m
+          pauseOnFocus: false, // must be false
+          resetProgress: false,
+        }).mount();
+      });
+    },
+
+    initIndexFile() {
+      // PAGE SCROLL ANIMATIONS STARTS HERE
+
+      const faders = document.querySelectorAll(".fadeIn-scroll");
+
+      const appearOptions = {
+        threshold: 0,
+        rootMargin: "0px 0px -250px 0px",
+      };
+
+      const appearOnScroll = new IntersectionObserver(function (
+        entries,
+        appearOnScroll
+      ) {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) {
+            return;
+          } else {
+            entry.target.classList.add("appear");
+            appearOnScroll.unobserve(entry.target);
+          }
+        });
+      },
+      appearOptions);
+
+      faders.forEach((fader) => {
+        appearOnScroll.observe(fader);
+      });
+
+      // PAGE SCROLL ANIMATIONS ENDS HERE
+
+      // About slider starts here
+
+      var slideIndex = 0;
+      showSlides();
+
+      function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+          slideIndex = 1;
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" dot-active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " dot-active";
+        setTimeout(showSlides, 2000); // Change image every 2 seconds
+      }
+      // About slider ends here
+
+      // leaders silder starts here
+
+      function initParadoxWay() {
+        "use strict";
+
+        if ($(".testimonials-carousel").length > 0) {
+          new Swiper(".testimonials-carousel .swiper-container", {
+            preloadImages: false,
+            slidesPerView: 1,
+            spaceBetween: 20,
+            loop: true,
+            grabCursor: true,
+            mousewheel: false,
+            centeredSlides: true,
+            disableOnInteraction: false,
+            pagination: {
+              el: ".tc-pagination",
+              clickable: true,
+              dynamicBullets: true,
+            },
+            navigation: {
+              nextEl: ".listing-carousel-button-next",
+              prevEl: ".listing-carousel-button-prev",
+            },
+            breakpoints: {
+              768: {
+                slidesPerView: 2,
+              },
+              1024: {
+                slidesPerView: 2,
+              },
+              1200: {
+                slidesPerView: 3,
+              },
+            },
+          });
+        }
+      }
+
+      $(document).ready(function () {
+        initParadoxWay();
+      });
+
+      this.useSplide();
+
+      // Learn More Video codes starts here. When you click on the play icon, the video pops out of the page
+
+      const playIcon = document.querySelector(".vid-play"),
+        closeIcon = document.querySelector(".vid-close");
+      const playVideoModal = document.querySelector(".video-modal");
+
+      playIcon.addEventListener("click", function () {
+        playVideoModal.classList.add("showmodal");
+      });
+      closeIcon.addEventListener("click", function () {
+        playVideoModal.classList.remove("showmodal");
+        var iframes = playVideoModal.getElementsByTagName("iframe");
+        if (iframes != null) {
+          for (let i = 0; i < iframes.length; i++) {
+            const iframe = iframes[i];
+            let framer = iframe.src;
+            iframe.src = framer;
+          }
+        }
+      });
+
+      // Learn more video codes ends here
+
+      // FAQ SECTION
+      let faqtoggles = document.getElementsByClassName("faqtoggle");
+      let faqcontentDiv = document.getElementsByClassName("faqcontent");
+      let faqicons = document.getElementsByClassName("faqicon");
+
+      for (let i = 0; i < faqtoggles.length; i++) {
+        faqtoggles[i].addEventListener("click", () => {
+          if (
+            parseInt(faqcontentDiv[i].style.height) !=
+            faqcontentDiv[i].scrollHeight
+          ) {
+            faqcontentDiv[i].style.height =
+              faqcontentDiv[i].scrollHeight + "px";
+            faqicons[i].classList.remove("fa-chevron-down");
+            faqicons[i].classList.add("fa-chevron-up");
+          } else {
+            faqcontentDiv[i].style.height = "0px";
+            faqicons[i].classList.remove("fa-chevron-up");
+            faqicons[i].classList.add("fa-chevron-down");
+          }
+
+          for (let j = 0; j < faqcontentDiv.length; j++) {
+            if (j !== i) {
+              faqcontentDiv[j].style.height = "0px";
+              faqicons[j].classList.remove("fa-chevron-up");
+              faqicons[j].classList.add("fa-chevron-down");
+            }
+          }
+        });
+      }
+    },
+  },
+
+  mounted() {
+    this.initIndexFile();
+  },
 };
 </script>
 
 <style scoped>
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-}
+@import "@splidejs/splide/dist/css/splide.min.css";
 
-p {
-  color: var(--dark-color); /* paragraph tags without any styles will have this color code by default. */
-}
 .littleicon1 {
   position: absolute;
-  top:  260px;
+  top: 260px;
   left: 10px;
   width: 110px;
 }
 
 .littleicon2 {
   position: absolute;
-  top:  460px;
+  top: 460px;
   left: 10px;
   width: 100px;
 }
 
 .littleicon3 {
   position: absolute;
-  top:  350px;
+  top: 350px;
   left: 250px;
   width: 100px;
 }
 .littleicon4 {
   position: absolute;
-  top:  1050px;
+  top: 1050px;
   left: 10px;
   width: 100px;
 }
@@ -1188,7 +1905,6 @@ p {
   height: 100px;
   margin-left: -45px;
   z-index: 1;
-  
 }
 .testi-avatar img {
   width: 100%;
@@ -1308,7 +2024,6 @@ p {
 
 /* custom shape divider ends here */
 
-
 .app-features-two {
   position: relative;
   margin-top: 2300px;
@@ -1347,7 +2062,6 @@ p {
   font-family: "Montserrat", sans-serif;
   line-height: 30px;
 }
-
 
 .trade-img {
   width: 100%;
@@ -1413,7 +2127,6 @@ p {
 
 .auto-track-icons {
   position: absolute;
-
 }
 .auto-track-icons.bcs1 {
   width: 40%;
@@ -1436,7 +2149,6 @@ p {
   top: 550px;
   left: 210px;
 }
-
 
 .button,
 .button::after {
@@ -1483,7 +2195,7 @@ p {
   left: 140px;
   top: 1150px;
 }
-.littleIcon8{
+.littleIcon8 {
   display: none;
 }
 .custom-shape-divider-bottom-1644660326 {
@@ -1558,7 +2270,6 @@ p {
   width: 100%;
   overflow: hidden;
   line-height: 0;
-  
 }
 
 .custom-shape-divider-top-1644670257 svg {
@@ -1570,7 +2281,7 @@ p {
 
 .custom-shape-divider-top-1644670257 .shape-fill {
   fill: var(--light-color);
-  box-shadow: 20px 20px 40px #D6D6D629;
+  box-shadow: 20px 20px 40px #d6d6d629;
 }
 
 .share-portfolio {
@@ -1603,8 +2314,6 @@ p {
   position: absolute;
 }
 
-
-
 .share-portfolio p {
   margin: 650px auto 0;
   width: 80%;
@@ -1617,24 +2326,24 @@ p {
 }
 
 .custom-shape-divider-bottom-1644669891 {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
 }
 
 .custom-shape-divider-bottom-1644669891 svg {
-    position: relative;
-    display: block;
-    width: calc(145% + 1.3px);
-    height: 169px;
+  position: relative;
+  display: block;
+  width: calc(145% + 1.3px);
+  height: 169px;
 }
 
 .custom-shape-divider-bottom-1644669891 .shape-fill {
-    fill: var(--light-color);
+  fill: var(--light-color);
 }
 
 .exchange-sec {
@@ -1658,7 +2367,7 @@ p {
   font-family: "Montserrat", sans-serif;
 }
 .exchange-box-wrapper {
-  margin:  5px auto;
+  margin: 5px auto;
   display: inline-block;
 }
 .exchange-box {
@@ -1678,11 +2387,11 @@ p {
   height: 120px;
 }
 .exchange-logo.min {
-    width: 110px;
-    margin-left: -5px;
+  width: 110px;
+  margin-left: -5px;
 }
 .exchange-box-wrapper.ten {
-    margin-left: 125px;
+  margin-left: 125px;
 }
 .exchange-box p {
   display: none;
@@ -1720,46 +2429,46 @@ p {
   text-transform: capitalize;
 }
 .user-review-box {
-    margin: 30px auto;
-    width: 350px;
-    padding: 0 20px 0;
-    height: 450px;
-    background: var(--third-color) 0% 0% no-repeat padding-box;
-    box-shadow: 0px 20px 17px #1c192305;
-    border-radius: 20px;
-    opacity: 1;
-    text-align: center;
-  }
-  .user-review-box h3 {
-    margin: 30px 0;
-    text-align: center;
-    color: #3374ea;
-    font-family: "Montserrat", sans-serif;
-  }
+  margin: 30px auto;
+  width: 350px;
+  padding: 0 20px 0;
+  height: 450px;
+  background: var(--third-color) 0% 0% no-repeat padding-box;
+  box-shadow: 0px 20px 17px #1c192305;
+  border-radius: 20px;
+  opacity: 1;
+  text-align: center;
+}
+.user-review-box h3 {
+  margin: 30px 0;
+  text-align: center;
+  color: #3374ea;
+  font-family: "Montserrat", sans-serif;
+}
 
-  .users-img-wrapper {
-    position: relative;
-    top: 0px;
-    height: 90px;
-    width: 90px;
-    margin: auto;
-    border: 8px solid #22a1f5;
-    border-radius: 50%;
-    overflow: hidden;
-  }
-  .users-img-wrapper img {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    object-fit: cover;
-    transition: 0.3s ease;
-  }
+.users-img-wrapper {
+  position: relative;
+  top: 0px;
+  height: 90px;
+  width: 90px;
+  margin: auto;
+  border: 8px solid #22a1f5;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.users-img-wrapper img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  transition: 0.3s ease;
+}
 
-  .star-review {
-      margin-top: 20px;
-  }
+.star-review {
+  margin-top: 20px;
+}
 .user-review-box p {
   margin: 20px 0;
   color: var(--fourth-color);
@@ -1770,10 +2479,10 @@ p {
 }
 
 .splide__arrow {
-    background-color: #3374ea;
+  background-color: #3374ea;
 }
 .splide__arrows button {
-    color: white;
+  color: white;
 }
 .splide .splide__arrows {
   position: absolute;
@@ -1798,10 +2507,10 @@ p {
 }
 
 .users-CTA {
-    text-align: center;
-    width: 80%;
-    margin: 0 auto;
-    font-family: "Montserrat", sans-serif;
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  font-family: "Montserrat", sans-serif;
 }
 
 .get-details-review {
@@ -1850,7 +2559,7 @@ p {
 .learn-moreBTN {
   margin-top: 10px;
   margin-left: 85px;
-  background-color: #fff; 
+  background-color: #fff;
   border: none;
   border-radius: 50px;
   color: #3374ea;
@@ -1896,7 +2605,8 @@ p {
   margin: 20px auto;
   width: 300px;
   height: 300px;
-  background: url("../assets/video-background.jpg") no-repeat center center fixed;
+  background: url("../assets/images/video-background.jpg") no-repeat center
+    center fixed;
   box-shadow: 0px 30px 20px #22a1f51a;
   border-radius: 23px;
   opacity: 1;
@@ -1906,7 +2616,8 @@ p {
   width: 300px;
   height: 300px;
   position: absolute;
-  background: linear-gradient(180deg, #75e7ff 0%, #677bff 100%) 0% 0% no-repeat padding-box;
+  background: linear-gradient(180deg, #75e7ff 0%, #677bff 100%) 0% 0% no-repeat
+    padding-box;
   border-radius: 23px;
   opacity: 0.9;
   transition: 1s ease-out;
@@ -1974,83 +2685,35 @@ p {
 }
 
 /* code for FAQ SECTION */
-
-
-/* FAQ ENDS HERE */
-
-.final-download {
-  margin: 60px auto 40px;
-  width: 90%;
-  height: 500px;
-  border-radius: 25px;
-  background: transparent linear-gradient(180deg, #22a1f5 0%, #677bff 100%) 0%
-    0% no-repeat padding-box;
-  box-shadow: 0px 30px 20px #22a1f51a;
-  padding: 15px 25px;
-}
-.final-download h1 {
-  color: #fff;
-  text-align: center;
-  font-size: 32px;
-  font-weight: bold;
-  margin-top: 50px;
-}
-
-.final-download-wrapper {
-  width: 80%;
+.faq-wrapper {
+  max-width: 90%;
   margin: 30px auto;
 }
-.final-download-wrapper img {
+.faqcontainer {
   width: 100%;
+  margin: auto;
 }
-.mobilefooter {
-    background-color: var(--light-color);
+.faq-wrapper h1 {
+  text-align: center;
+  color: #3374ea;
+  margin-bottom: 50px;
+  font-family: "Montserrat", sans-serif;
 }
-
-.MF-wrapper {
-    width: 90%;
-    margin: 50px auto 0 ;
-} 
-.slogan {
-  color: var(--fourth-color);
-}
-.footer-logo-wrapper {
-    width: 20%;
-}
-.footer-logo-wrapper img {
-    width: 150px;
-    height: 90px;
-    object-fit: cover;
-}
-
-.social-link svg {
-    margin: 4px 5px;
-    width: 30px;
-}
-
-
-.FAQfooterContainer{
-  position: relative;
-  width: 100%;
-  margin: 50px 0;
-}
-.footerWrapper{
+.faqwrapper {
   background-color: var(--third-color);
   margin-bottom: 20px;
-  padding: 15px 40px;
+  padding: 15px 30px;
   border-radius: 5px;
-  box-shadow: 0px 20px 17px #1C192305;
-
+  box-shadow: 0px 20px 17px #1c192305;
 }
-
-.footerWrapper h3 {
+.faqtoggle,
+.faqcontent {
+  font-family: "Montserrat", sans-serif;
+}
+.faqwrapper h3 {
   color: #3374ea;
 }
-.footerToggle,
-.footerContent{
-      font-family: "Montserrat", sans-serif;
-}
-.footerToggle{
+.faqtoggle {
   width: 100%;
   background-color: transparent;
   display: flex;
@@ -2063,61 +2726,48 @@ p {
   outline: none;
   cursor: pointer;
   padding: 15px 0;
+  text-align: left;
 }
-.footerContent{
+
+.faqcontent {
+  color: var(--dark-color);
   position: relative;
-  font-size: 14px;
-  line-height: 20px;
+  font-size: 16px;
+  text-align: left;
+  line-height: 30px;
   height: 0;
   overflow: hidden;
   transition: all 1s;
 }
-.footerContent p {
-  color: #3374EA;
-  border-bottom: 1px solid #3374ea;
-  margin-bottom: 8px;
-}
 
-
-.copyright {
-  color: var(--fourth-color);
-  position: relative;
-  margin-top: 10px;
-  margin-bottom: 30px;
-  text-align: center;
-  font-family: "Montserrat", sans-serif;
-  z-index: 2;
-}
-.computer-footer {
-  display: none;
-}
+/* FAQ ENDS HERE */
 
 /* IPAD SCEREEN SIZE */
 
 @media only screen and (min-width: 768px) {
   .littleicon1 {
     position: absolute;
-    top:  200px;
+    top: 200px;
     left: 10px;
     width: 110px;
   }
-  
+
   .littleicon2 {
     position: absolute;
-    top:  550px;
+    top: 550px;
     left: 10px;
     width: 100px;
   }
-  
+
   .littleicon3 {
     position: absolute;
-    top:  350px;
+    top: 350px;
     left: 650px;
     width: 100px;
   }
   .littleicon4 {
     position: absolute;
-    top:  650px;
+    top: 650px;
     left: 650px;
     width: 100px;
   }
@@ -2294,6 +2944,7 @@ p {
 
   .share-portfolio-sec {
     height: 140vh;
+    /* padding: 30rem 0; */
   }
   .share-portfolio h1 {
     text-align: center;
@@ -2316,11 +2967,11 @@ p {
     margin: 0 auto;
   }
   .share-portfolio-img {
-    width:70%;
+    width: 70%;
     position: absolute;
     left: 120px;
   }
-  
+
   .share-portfolio p {
     margin: 900px auto 0;
     width: 80%;
@@ -2335,7 +2986,7 @@ p {
     width: 80%;
     margin: 100px auto 140px;
   }
-  
+
   .exchange-wrapper h1 {
     width: 80%;
     margin: 0 auto 50px;
@@ -2352,7 +3003,7 @@ p {
     font-family: "Montserrat", sans-serif;
   }
   .exchange-box-wrapper {
-    margin:  5px auto;
+    margin: 5px auto;
     display: inline-block;
   }
   .exchange-box {
@@ -2371,11 +3022,11 @@ p {
     height: 120px;
   }
   .exchange-logo.min {
-      width: 110px;
-      margin-left: -5px;
+    width: 110px;
+    margin-left: -5px;
   }
   .exchange-box-wrapper.ten {
-      margin-left: 0;
+    margin-left: 0;
   }
   .exchange-download-wrapper {
     margin-top: 2.5rem;
@@ -2397,19 +3048,18 @@ p {
     text-align: center;
   }
 
+  .splide .splide__arrows {
+    position: absolute;
+    top: 170px;
+  }
+  .splide__arrows .splide__arrow--prev {
+    left: -30px;
+  }
+  .splide__arrows .splide__arrow--next {
+    left: 465px;
+  }
 
-.splide .splide__arrows {
-  position: absolute;
-  top: 170px;
-}
-.splide__arrows .splide__arrow--prev {
-  left: -30px;
-}
-.splide__arrows .splide__arrow--next {
-  left: 465px;
-}
-
-.review-download-wrapper {
+  .review-download-wrapper {
     margin-left: 190px;
   }
 
@@ -2435,7 +3085,7 @@ p {
     font-weight: 700;
     cursor: pointer;
   }
-  
+
   .vid-play {
     position: absolute;
     left: 300px;
@@ -2449,7 +3099,7 @@ p {
     animation: pulse 2s infinite;
     box-shadow: 0 0 0px rgba(121, 113, 113, 0.061);
   }
-  
+
   @keyframes pulse {
     0% {
       box-shadow: 0 0 0 0 rgba(153, 160, 141, 0.897);
@@ -2473,17 +3123,18 @@ p {
     border-radius: 23px;
     opacity: 1;
   }
-  
+
   .video-img {
     width: 500px;
     height: 300px;
     position: absolute;
-    background: linear-gradient(180deg, #75e7ff 0%, #677bff 100%) 0% 0% no-repeat padding-box;
+    background: linear-gradient(180deg, #75e7ff 0%, #677bff 100%) 0% 0%
+      no-repeat padding-box;
     border-radius: 23px;
     opacity: 0.9;
     transition: 1s ease-out;
   }
-  
+
   .video-modal {
     position: fixed;
     top: 0;
@@ -2499,20 +3150,20 @@ p {
     pointer-events: none;
     transition: all 0.3s ease-in;
   }
-  
+
   .video-modal.showmodal {
     visibility: visible;
     opacity: 1;
     pointer-events: all;
   }
-  
+
   .modal-container {
     width: 100%;
     max-width: 800px;
     padding: 20px;
     position: relative;
   }
-  
+
   .vid-close {
     width: 80px;
     height: 80px;
@@ -2528,13 +3179,13 @@ p {
     height: 30px;
     fill: #fff;
   }
-  
+
   .iframe-container {
     position: relative;
     width: 95%;
     padding-top: 50%;
   }
-  
+
   .iframe-container iframe {
     position: absolute;
     top: 0;
@@ -2544,25 +3195,6 @@ p {
     width: 100%;
     height: 100%;
   }
-  .final-download {
-    margin: 60px auto 40px;
-    width: 90%;
-    height: 400px;
-    border-radius: 25px;
-    background: transparent linear-gradient(180deg, #22a1f5 0%, #677bff 100%) 0%
-      0% no-repeat padding-box;
-    box-shadow: 0px 30px 20px #22a1f51a;
-    padding: 15px 25px;
-  }
-  .final-download-wrapper {
-    width: 100%;
-    margin: 30px 40px 0;
-  }
-  .final-download-wrapper img {
-
-    width: 40%;
-    display: inline-block;
-  }
 }
 
 /* START IPAD PRO SCREEN SIZE DESIGN */
@@ -2570,31 +3202,31 @@ p {
 @media only screen and (min-width: 1024px) {
   .littleicon1 {
     position: absolute;
-    top:  110px;
+    top: 110px;
     left: 910px;
     width: 90px;
   }
-  
+
   .littleicon2 {
     position: absolute;
-    top:  620px;
+    top: 620px;
     left: 900px;
     width: 100px;
   }
-  
+
   .littleicon3 {
     position: absolute;
-    top:  350px;
+    top: 350px;
     left: 610px;
     width: 100px;
   }
   .littleicon4 {
     position: absolute;
-    top:  650px;
+    top: 650px;
     left: 10px;
     width: 100px;
   }
-  
+
   .blob-wrapper {
     height: 750px;
     position: relative;
@@ -2846,7 +3478,6 @@ p {
     font-size: 28px;
   }
 
-
   .main-signal-img {
     position: relative;
     top: -530px;
@@ -2865,7 +3496,7 @@ p {
   }
 
   .meet-leaders {
-    top: 80rem; 
+    top: 80rem;
     width: 100%;
     height: 1000px;
     margin-bottom: 1500px;
@@ -2910,13 +3541,11 @@ p {
     width: 380px;
   }
 
-
-.app-features-two {
+  .app-features-two {
     width: 90%;
     position: relative;
     padding-top: -500px;
   }
-
 
   .app-features-two h1 {
     color: #3374ea;
@@ -2932,7 +3561,7 @@ p {
     font-family: "Montserrat", sans-serif;
     margin-top: 50px;
     text-align: center;
-    line-height: 50px
+    line-height: 50px;
   }
   .trade-lessons {
     width: 90%;
@@ -2955,7 +3584,6 @@ p {
     line-height: 50px;
   }
 
-  
   .trade-img {
     width: 70%;
     margin-left: 170px;
@@ -3001,8 +3629,6 @@ p {
     width: 80%;
   }
 
-
-
   .auto-track-icons.bcs1 {
     width: 40%;
     top: 450px;
@@ -3043,7 +3669,6 @@ p {
     position: absolute;
     left: 900px;
     top: 1900px;
-    
   }
 
   .profit-loss h1 {
@@ -3117,7 +3742,7 @@ p {
     margin: 20px auto 0;
     width: 200px;
     height: 160px;
-    
+
     background: var(--third-color) 0% 0% no-repeat padding-box;
     box-shadow: 0px 3px 6px #00000008;
     border-radius: 20px;
@@ -3139,7 +3764,7 @@ p {
     margin-top: 10px;
   }
   .exchange-box p {
-      display: block;
+    display: block;
     padding-top: 10px;
     color: var(--fourth-color);
     text-align: center;
@@ -3188,7 +3813,7 @@ p {
   }
   .users-CTA {
     font-size: 20px;
-}
+  }
   .users-img-wrapper {
     position: relative;
     top: 0px;
@@ -3301,66 +3926,35 @@ p {
     top: -40px;
     left: 700px;
   }
-
-
-
-
-  .final-download {
-    margin: 100px auto 40px;
-    width: 80%;
-    height: 500px;
-    border-radius: 25px;
-    background: transparent linear-gradient(180deg, #22a1f5 0%, #677bff 100%) 0%
-      0% no-repeat padding-box;
-    box-shadow: 0px 30px 20px #22a1f51a;
-    padding: 15px 25px;
-  }
-  .final-download h1 {
-    color: #fff;
-    text-align: center;
-    font-size: 43px;
-    font-weight: 800;
-    margin-top: 100px;
-  }
-  .final-download-wrapper {
-    width: 80%;
-    margin: 30px auto;
-  }
-  .final-download-wrapper img {
-    width: 40%;
-    display: inline-block;
-    margin-left: 30px;
-  }
 }
 /* START COMPUTER SCREEN DESIGN */
 @media only screen and (min-width: 1200px) {
   .littleicon1 {
     position: absolute;
-    top:  200px;
+    top: 200px;
     left: 1200px;
     width: 150px;
   }
-  
+
   .littleicon2 {
     position: absolute;
-    top:  720px;
+    top: 720px;
     left: 1040px;
     width: 100px;
   }
-  
+
   .littleicon3 {
     position: absolute;
-    top:  350px;
+    top: 350px;
     left: 780px;
     width: 100px;
   }
   .littleicon4 {
     position: absolute;
-    top:  650px;
+    top: 650px;
     left: 30px;
     width: 100px;
   }
-
 
   .blob-wrapper {
     height: 1100px;
@@ -3417,7 +4011,6 @@ p {
     top: -120px;
     width: 55%;
     margin-left: 180px;
-    
   }
 
   .review-section {
@@ -3450,7 +4043,7 @@ p {
   .box.three {
     margin-left: 0;
   }
- 
+
   .box-img {
     position: relative;
     top: -60px;
@@ -3721,7 +4314,6 @@ p {
     margin-top: 200px;
   }
 
-
   .app-features-two h1 {
     color: #3374ea;
     font-family: "Montserrat", sans-serif;
@@ -3747,7 +4339,7 @@ p {
   .trade-img-box {
     width: 70%;
   }
-  
+
   .trade-img {
     margin-left: 100px;
     width: 50%;
@@ -3870,7 +4462,6 @@ p {
     position: absolute;
     left: 200px;
     top: 50px;
-    
   }
   .auto-button {
     margin-left: 90px;
@@ -3898,12 +4489,12 @@ p {
   }
   .groupshare {
     display: block;
-    position: absolute
+    position: absolute;
   }
   .groupshare.geth1 {
     width: 20%;
     top: 200px;
-    margin-left: -60px ;
+    margin-left: -60px;
   }
   .groupshare.gbsc1 {
     width: 20%;
@@ -4084,7 +4675,7 @@ p {
   }
   .users-CTA {
     font-size: 16px;
-}
+  }
   .review-download {
     display: inline-block;
     width: 40%;
@@ -4173,94 +4764,70 @@ p {
     background-color: #3374ea;
     color: var(--third-color);
   }
-
-
-  .final-download {
-    margin: 100px auto 40px;
-    width: 80%;
-    height: 480px;
-    border-radius: 25px;
-    background: transparent linear-gradient(180deg, #22a1f5 0%, #677bff 100%) 0%
-      0% no-repeat padding-box;
-    box-shadow: 0px 30px 20px #22a1f51a;
-    padding: 15px 0;
-  }
-  .final-download h1 {
-    width: 668px;
-    margin: 0 auto;
-    color: #fff;
-    text-align: center;
-    font-size: 43px;
-    font-weight: 800;
-    margin-top: 100px;
+  .faq-wrapper {
+    position: relative;
+    max-width: 100%;
+    margin: 30px auto;
   }
 
-  .final-download-wrapper {
-    width: 80%;
-    margin-top: 60px;
-    margin-left: 220px;
-  }
-  .final-download-wrapper img {
-    width: 30%;
+  .faqcontainer {
+    width: 40%;
+    margin-left: 90px;
     display: inline-block;
+    vertical-align: middle;
   }
+
+  .faq-wrapper h1 {
+    text-align: center;
+    color: #3374ea;
+    margin-bottom: 50px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    font-size: 42px;
+  }
+  .faqtwo {
+    position: absolute;
+    left: 600px;
+  }
+  .faqwrapper {
+    background-color: var(--third-color);
+    margin-bottom: 20px;
+    padding: 10px 30px;
+    border-radius: 20px;
+    box-shadow: 0px 20px 17px #1c192305;
+  }
+  .faqtoggle,
+  .faqcontent {
+    font-family: "Montserrat", sans-serif;
+  }
+  .faqtoggle {
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px;
+    color: #22a1f5;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 15px 0;
+    text-align: left;
+  }
+  .faqcontent {
+    position: relative;
+    font-size: 16px;
+    text-align: left;
+    line-height: 30px;
+    height: 0;
+    overflow: hidden;
+    transition: all 1s;
+  }
+
   .mobilefooter {
     display: none;
   }
-  .computer-footer {
-    display: block;
-    position: relative;
-    background-color: var(--third-color);
-    height: 240px;
-    margin-top: 100px;
-
-  }
-  .computer-footer-wrapper {
-    width: 90%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-  }
-  .main-app-container {
-    width: 200px
-  }
-  .computer-logo-wrapper {
-    width: 20%;
-}
-.computer-logo-wrapper img {
-    margin-top: 30px;
-    width: 150px;
-    height: 90px;
-    object-fit: cover;
-}
-  .company-head h3 {
-    letter-spacing: 0px;
-    color: #3374EA;
-    margin-top: 50px;
-    margin-bottom: 40px;
-    font-family: "Montserrat", sans-serif;
-  }
-  .computer-slogan {
-    color: var(--fourth-color);
-    font-family: "Montserrat", sans-serif;
-    font-size: 14px;
-    margin-bottom: 5px;
-  }
-  .company-head p {
-    color: var(--fourth-color);
-    font-family: "Montserrat", sans-serif;
-    font-size: 14px;
-    line-height: 30px;
-  }
-  .copyright {
-    position: relative;
-    margin-top: 60px;
-    margin-bottom: 0;
-    text-align: center;
-    font-family: "Montserrat", sans-serif;
-    z-index: 2;
-  }
-
 }
 
 /* ----------- Retina Screens ----------- */
@@ -4271,23 +4838,23 @@ p {
     left: 1250px;
     width: 130px;
   }
-  
+
   .littleicon2 {
     position: absolute;
-    top:  720px;
+    top: 720px;
     left: 1250px;
     width: 100px;
   }
-  
+
   .littleicon3 {
     position: absolute;
-    top:  350px;
+    top: 350px;
     left: 860px;
     width: 100px;
   }
   .littleicon4 {
     position: absolute;
-    top:  650px;
+    top: 650px;
     left: 30px;
     width: 100px;
   }
@@ -4313,7 +4880,6 @@ p {
     top: -120px;
     width: 55%;
     margin-left: 240px;
-    
   }
   .review-section {
     height: 10vh;
@@ -4417,7 +4983,5 @@ p {
     right: 520px;
     margin-top: 10px;
   }
-
 }
-
 </style>

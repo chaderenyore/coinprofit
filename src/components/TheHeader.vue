@@ -1,16 +1,18 @@
 <template>
+  <div class="backdrop"></div>
+
   <header class="header">
     <nav class="navbar">
       <div class="nav-logo">
         <a href="#"
           ><img
-            src="../assets/coin-profit-logo-11@1x.png"
+            src="../assets/images/coin-profit-logo-11@1x.png"
             alt="LOGO"
             class="logo"
         /></a>
       </div>
       <img
-        src="../assets/toggl.png"
+        src="../assets/images/toggle.png"
         alt="Toggle Button"
         id="toggleIcon"
         class="toggle-moon"
@@ -18,11 +20,9 @@
 
       <ul class="nav-menu">
         <li class="nav-item">
-          <!-- <a href="#">Home</a> -->
           <router-link to="/">Home</router-link>
         </li>
         <li class="nav-item">
-          <!-- <a href="#">Leaders</a> -->
           <router-link to="/leaders">Leaders</router-link>
         </li>
         <li class="nav-item">
@@ -47,6 +47,93 @@
   </header>
 </template>
 
+<script>
+export default {
+  methods: {
+    initHeader() {
+      // Toggle light and dark mode codes here
+
+      let togglebtn = document.querySelector("#toggleIcon");
+
+      if (localStorage.getItem("theme") == null) {
+        localStorage.setItem("theme", "light");
+      }
+
+      let localData = localStorage.getItem("theme");
+
+      if (localData == "light") {
+        togglebtn.src = "../assets/images/toggle.png";
+        document.body.classList.remove("dark-theme");
+      } else if (localData == "dark") {
+        togglebtn.src = "../assets/images/toggle-dark.svg";
+        document.body.classList.add("dark-theme");
+      }
+
+      togglebtn.addEventListener("click", function () {
+        document.body.classList.toggle("dark-theme");
+
+        if (document.body.classList.contains("dark-theme")) {
+          togglebtn.src = "../assets/images/toggle-dark.svg";
+          localStorage.setItem("theme", "dark");
+        } else {
+          togglebtn.src = "../assets/images/toggle.png";
+          localStorage.setItem("theme", "light");
+        }
+      });
+
+      //  Back to top feature
+      // window.addEventListener('scroll', function() {
+      //     let backToUp = this.document.querySelector('.scrollTop');
+      //     backToUp.classList.toggle("scrollactive", window.scrollY > 200)
+      // })
+
+      // function scrollToTop(){
+      //     window.scrollTo({
+      //         top: 0,
+      //         behavior: 'smooth'
+      //     })
+      // }
+
+      // Ends Back to top
+
+      // Start navbar
+      const hamburger = document.querySelector(".hamburger");
+      const navMenu = document.querySelector(".nav-menu");
+      const navLink = document.querySelectorAll(".nav-link");
+      const backdrop = document.querySelector(".backdrop");
+
+      hamburger.addEventListener("click", mobileMenu);
+      navLink.forEach((n) => n.addEventListener("click", closeMenu));
+
+      function mobileMenu() {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+        backdrop.classList.toggle("active");
+      }
+
+      function closeMenu() {
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
+        backdrop.classList.remove("active");
+      }
+
+      backdrop.addEventListener("click", closebackdrop);
+      function closebackdrop() {
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
+        backdrop.classList.remove("active");
+      }
+
+      // End Navabr
+    },
+  },
+
+  mounted() {
+    this.initHeader();
+  },
+};
+</script>
+
 <style scoped>
 .header {
   font-family: sans-serif;
@@ -59,7 +146,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  z-index: -1;
+  /* z-index: -1; */
 }
 
 .toggle-moon {
@@ -79,7 +166,7 @@
   object-fit: cover;
   position: absolute;
   top: 0;
-  width: 170px;
+  width: 8rem;
 }
 nav ul li {
   display: inline-block;
@@ -93,10 +180,9 @@ nav ul li a {
 
 nav ul li a:hover {
   color: var(--dark-color);
+  border-bottom: 2px solid #3374ea 2px;
 }
-nav ul li a:active {
-  border-bottom: 2px solid blue;
-}
+
 .actn {
   margin-right: 50px;
 }
@@ -106,6 +192,11 @@ nav ul li a:active {
   border-radius: 30px;
   padding: 7px 25px;
   color: blue;
+}
+.actn a:hover {
+  background-color: #13141c;
+  color: #fff !important;
+  border-bottom: none;
 }
 
 .hamburger {
@@ -124,6 +215,7 @@ nav ul li a:active {
 .bar:nth-child(2) {
   margin-left: 20px;
 }
+
 /* on ipad pro screen */
 
 @media only screen and (max-width: 1024px) {
@@ -185,13 +277,13 @@ nav ul li a:active {
 
 /* on ipad screen */
 
-@media only screen and (max-width: 769px) {
+@media only screen and (max-width: 768px) {
   .scrollTop {
     position: fixed;
     bottom: 400px;
     right: 30px;
     z-index: 10;
-    background: #ffa94f url("../assets/rocket.png");
+    background: #ffa94f url("../assets/images/rocket.png");
     width: 40px;
     height: 40px;
     cursor: pointer;
@@ -217,13 +309,15 @@ nav ul li a:active {
   .navbar {
     padding-top: 1rem;
     width: 100%;
-    height: 10vh;
-    padding: 10px 30px;
-    background-color: var(--light-color);
+
+    padding: 35px 30px;
+    background-color: var(--nav-light);
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
     z-index: 10;
     position: fixed;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+      rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
   }
   .logo {
     /* height: 90px; */
@@ -320,7 +414,7 @@ nav ul li a:active {
     bottom: 400px;
     right: 30px;
     z-index: 10;
-    background: #ffa94f url("../assets/rocket.png");
+    background: #ffa94f url("../assets/images/rocket.png");
     width: 40px;
     height: 40px;
     cursor: pointer;
@@ -337,25 +431,25 @@ nav ul li a:active {
 
   .backdrop.active {
     width: 100vw;
-    height: 94vh;
+    height: 100vh;
     position: fixed;
-    top: 78px;
+    top: 7px;
     left: 0;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 1;
   }
   .navbar {
-    padding-top: 1rem;
     width: 100%;
-    height: 10vh;
-    padding: 10px 30px;
-    background-color: var(--light-color);
+    padding: 20px 30px;
+    background-color: var(--nav-light);
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
     z-index: 10;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+      rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
   }
   .logo {
-    height: 90px;
+    height: 80px;
     object-fit: cover;
     position: absolute;
     top: 0;
