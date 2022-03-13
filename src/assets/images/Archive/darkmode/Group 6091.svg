@@ -1,0 +1,140 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="325.158" height="481.475" viewBox="0 0 325.158 481.475">
+  <defs>
+    <filter id="Union_1" x="0" y="0" width="325.158" height="481.475" filterUnits="userSpaceOnUse">
+      <feOffset dy="20" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="8.5" result="blur"/>
+      <feFlood flood-color="#1c1923" flood-opacity="0.031"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#14cbff"/>
+      <stop offset="1" stop-color="#366be8"/>
+    </linearGradient>
+    <filter id="Ellipse_41" x="62.234" y="55.927" width="44.64" height="44.64" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-2"/>
+      <feFlood flood-color="#3374ea" flood-opacity="0.302"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rectangle_113" x="77.509" y="222.132" width="44.64" height="44.64" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-3"/>
+      <feFlood flood-color="#3374ea" flood-opacity="0.302"/>
+      <feComposite operator="in" in2="blur-3"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rectangle_113-2" x="135.03" y="276.196" width="44.64" height="44.64" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-4"/>
+      <feFlood flood-color="#3374ea" flood-opacity="0.302"/>
+      <feComposite operator="in" in2="blur-4"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rectangle_21" x="99.52" y="361.815" width="102.242" height="58.635" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-5"/>
+      <feFlood flood-color="#3374ea" flood-opacity="0.302"/>
+      <feComposite operator="in" in2="blur-5"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_6091" data-name="Group 6091" transform="translate(-1384.7 -4456.734)">
+    <g id="Group_5104" data-name="Group 5104" transform="translate(586.793 -1005.975)">
+      <g transform="matrix(1, 0, 0, 1, 797.91, 5462.71)" filter="url(#Union_1)">
+        <g id="Union_1-2" data-name="Union 1" transform="matrix(1, 0.07, -0.07, 1, 55.04, -3.67)" fill="#09090b">
+          <path d="M 225.8541107177734 423.0292053222656 L 19.99979782104492 423.0292053222656 C 17.36711502075195 423.0292053222656 14.8134298324585 422.5137329101562 12.40969276428223 421.4970397949219 C 10.08774566650391 420.5149536132812 8.002325057983398 419.10888671875 6.211324691772461 417.3179016113281 C 4.420324802398682 415.5268859863281 3.014271974563599 413.4414672851562 2.032166719436646 411.1195068359375 C 1.015482544898987 408.7157897949219 0.5000088214874268 406.162109375 0.5000088214874268 403.5294189453125 L 0.5000088214874268 29.19599533081055 C 0.5000088214874268 26.56325912475586 1.015482544898987 24.00957489013672 2.032166719436646 21.60578536987305 C 3.014271974563599 19.2836799621582 4.420377254486084 17.19815444946289 6.211324691772461 15.40704822540283 C 8.002325057983398 13.61594295501709 10.08774566650391 12.20978546142578 12.40974521636963 11.22762775421143 C 14.8134298324585 10.21083831787109 17.36711502075195 9.695311546325684 19.99979782104492 9.695311546325684 L 225.8541107177734 9.695311546325684 C 228.4868011474609 9.695311546325684 231.0404815673828 10.21083831787109 233.4441680908203 11.22762775421143 C 235.7661743164062 12.20978546142578 237.8515930175781 13.61594295501709 239.6425933837891 15.40704822540283 C 241.4335327148438 17.19815444946289 242.8396453857422 19.2836799621582 243.8217468261719 21.60578536987305 C 244.8384246826172 24.00957489013672 245.3538970947266 26.56325912475586 245.3538970947266 29.19599533081055 L 245.3538970947266 403.5294189453125 C 245.3538970947266 406.162109375 244.8384246826172 408.7157897949219 243.8217468261719 411.1195068359375 C 242.8396453857422 413.4414672851562 241.43359375 415.5268859863281 239.6425933837891 417.3179016113281 C 237.8515930175781 419.10888671875 235.7661743164062 420.5149536132812 233.4442138671875 421.4970397949219 C 231.0404815673828 422.5137329101562 228.4868011474609 423.0292053222656 225.8541107177734 423.0292053222656 Z" stroke="none"/>
+          <path d="M 225.8541107177734 422.5292053222656 C 228.4195404052734 422.5292053222656 230.9076995849609 422.0270080566406 233.2494354248047 421.0365295410156 C 235.5117950439453 420.0796203613281 237.5437927246094 418.7095642089844 239.2890014648438 416.9643249511719 C 241.0342712402344 415.2191162109375 242.4043273925781 413.1871032714844 243.3612213134766 410.9247436523438 C 244.3516998291016 408.5830078125 244.8538970947266 406.0948486328125 244.8538970947266 403.5294189453125 L 244.8538970947266 29.19599533081055 C 244.8538970947266 26.63057518005371 244.3516998291016 24.14236450195312 243.3612213134766 21.80052185058594 C 242.4043273925781 19.53804779052734 241.0342254638672 17.50594329833984 239.2890014648438 15.76062774658203 C 237.5437927246094 14.0152587890625 235.5117492675781 12.64510059356689 233.2493743896484 11.68810081481934 C 230.9076385498047 10.69757461547852 228.4195404052734 10.19531154632568 225.8541107177734 10.19531154632568 L 19.99979782104492 10.19531154632568 C 17.43437767028809 10.19531154632568 14.9462718963623 10.69757461547852 12.60453510284424 11.68810081481934 C 10.34216690063477 12.64510059356689 8.310113906860352 14.0152587890625 6.564903736114502 15.76062774658203 C 4.819693088531494 17.50594329833984 3.449587821960449 19.53804779052734 2.492692947387695 21.80052185058594 C 1.502219319343567 24.14236450195312 1.000008821487427 26.63057518005371 1.000008821487427 29.19599533081055 L 1.000008821487427 403.5294189453125 C 1.000008821487427 406.0948486328125 1.502219319343567 408.5830078125 2.492692947387695 410.9247436523438 C 3.449587821960449 413.1871032714844 4.819640159606934 415.2191162109375 6.564903736114502 416.9643249511719 C 8.310113906860352 418.7095642089844 10.34211444854736 420.0796203613281 12.60448265075684 421.0365295410156 C 14.9462194442749 422.0270080566406 17.43437767028809 422.5292053222656 19.99979782104492 422.5292053222656 L 225.8541107177734 422.5292053222656 M 225.8541107177734 423.5292053222656 L 19.99979782104492 423.5292053222656 C 8.954113960266113 423.5292053222656 8.808337042864878e-06 414.5751037597656 8.808337042864878e-06 403.5294189453125 L 8.808337042864878e-06 29.19599533081055 C 8.808337042864878e-06 18.15031242370605 8.954113960266113 9.195311546325684 19.99979782104492 9.195311546325684 L 225.8541107177734 9.195311546325684 C 236.8997955322266 9.195311546325684 245.8538970947266 18.15031242370605 245.8538970947266 29.19599533081055 L 245.8538970947266 403.5294189453125 C 245.8538970947266 414.5751037597656 236.8997955322266 423.5292053222656 225.8541107177734 423.5292053222656 Z" stroke="none" fill="#26232d"/>
+        </g>
+      </g>
+      <g id="Calendar" transform="matrix(0.998, 0.07, -0.07, 0.998, 873.886, 5481.685)">
+        <g id="Group_6089" data-name="Group 6089">
+          <g id="calendar-2" data-name="calendar" transform="translate(0 0)">
+            <text id="September_2021" data-name="September 2021" transform="translate(94.656 9)" fill="#f2f8ff" font-size="9" font-family="Poppins-Medium, Poppins" font-weight="500"><tspan x="-36.049" y="0">September 2021</tspan></text>
+            <g id="arrow-down-sign-to-navigate" transform="translate(11.943 2.848) rotate(90)">
+              <path id="Path_56" data-name="Path 56" d="M4.368,4.98A.61.61,0,0,1,3.935,4.8L.179,1.044A.612.612,0,1,1,1.044.179L4.368,3.5,7.692.179a.612.612,0,0,1,.865.865L4.8,4.8A.61.61,0,0,1,4.368,4.98Z" fill="#959595"/>
+            </g>
+            <g id="arrow-down-sign-to-navigate-2" data-name="arrow-down-sign-to-navigate" transform="translate(189.17 11.584) rotate(-90)">
+              <path id="Path_56-2" data-name="Path 56" d="M4.368,4.98A.61.61,0,0,1,3.935,4.8L.179,1.044A.612.612,0,1,1,1.044.179L4.368,3.5,7.692.179a.612.612,0,0,1,.865.865L4.8,4.8A.61.61,0,0,1,4.368,4.98Z" fill="#959595"/>
+            </g>
+            <g transform="matrix(1, -0.07, 0.07, 1, -77.12, -13.63)" filter="url(#Ellipse_41)">
+              <circle id="Ellipse_41-2" data-name="Ellipse 41" cx="12.48" cy="12.48" r="12.48" transform="matrix(1, 0.07, -0.07, 1, 72.98, 61.93)" fill="url(#linear-gradient)"/>
+            </g>
+            <text id="Mo" transform="translate(11.864 34.456)" fill="#f2f8ff" font-size="7" font-family="Poppins-Medium, Poppins" font-weight="500"><tspan x="-5.32" y="0">Mo</tspan></text>
+            <text id="_7" data-name="7" transform="translate(11.984 57.553)" fill="#fff" font-size="7" font-family="Poppins-Regular, Poppins"><tspan x="-1.911" y="0">7</tspan></text>
+            <text id="_14" data-name="14" transform="translate(11.736 80.632)" fill="#8993a7" font-size="7" font-family="Poppins-Regular, Poppins"><tspan x="-3.322" y="0">14</tspan></text>
+            <text id="_21" data-name="21" transform="translate(12.36 103.719)" fill="#8993a7" font-size="7" font-family="Poppins-Regular, Poppins"><tspan x="-3.132" y="0">21</tspan></text>
+            <text id="_28" data-name="28" transform="translate(12.112 126.807)" fill="#8993a7" font-size="7" font-family="Poppins-Regular, Poppins"><tspan x="-4.221" y="0">28</tspan></text>
+            <text id="Tu" transform="translate(42.688 34.456)" fill="#f2f8ff" font-size="7" font-family="Poppins-Medium, Poppins" font-weight="500"><tspan x="-4.246" y="0">Tu</tspan></text>
+            <text id="_8" data-name="8" transform="translate(42.56 57.544)" fill="#8993a7" font-size="7" font-family="Poppins-Regular, Poppins"><tspan x="-2.208" y="0">8</tspan></text>
+            <text id="_15" data-name="15" transform="translate(42.312 80.632)" fill="#8993a7" font-size="7" font-family="Poppins-Regular, Poppins"><tspan x="-3.318" y="0">15</tspan></text>
+            <text id="_22" data-name="22" transform="translate(42.688 103.719)" fill="#8993a7" font-size="7" font-family="Poppins-Regular, Poppins"><tspan x="-4.025" y="0">22</tspan></text>
+            <text id="_29" data-name="29" transform="translate(42.688 126.807)" fill="#8993a7" font-size="7" font-family="Poppins-Regular, Poppins"><tspan x="-4.218" y="0">29</tspan></text>
+            <text id="We" transform="translate(73.392 34.456)" fill="#f2f8ff" font-size="7" font-family="Poppins-Medium, Poppins" font-weight="500"><tspan x="-5.656" y="0">We</tspan></text>
+            <text id="_9" data-name="9" transform="translate(73.136 57.544)" fill="#8993a7" font-size="7" font-family="Poppins-Regular, Poppins"><tspan x="-2.205" y="0">9</tspan></text>
+            <text id="_16" data-name="16" transform="translate(72.888 80.632)" fill="#8993a7" font-size="7" font-family="Poppins-Regular, Poppins"><tspan x="-3.342" y="0">16</tspan></text>
+            <text id="_23" data-name="23" transform="translate(73.264 103.719)" fill="#8993a7" font-size="7" font-family="Poppins-Regular, Poppins"><tspan x="-4.074" y="0">23</tspan></text>
+            <text id="_30" data-name="30" transform="translate(73.264 126.807)" fill="#8993a7" font-size="7" font-family="Poppins-Regular, Poppins"><tspan x="-4.26" y="0">30</tspan></text>
+            <text id="Th" transform="translate(104.463 34.456)" fill="#f2f8ff" font-size="7" font-family="Poppins-Medium, Poppins" font-weight="500"><tspan x="-4.246" y="0">Th</tspan></text>
+            <text id="_10" data-name="10" transform="translate(104.087 57.544)" fill="#8993a7" font-size="7" font-family="Poppins-Regular, Poppins"><tspan x="-3.318" y="0">10</tspan></text>
+            <text id="_17" data-name="17" transform="translate(104.711 80.632)" fill="#8993a7" font-size="7" font-family="Poppins-Regular, Poppins"><tspan x="-3.031" y="0">17</tspan></text>
+            <text id="_24" data-name="24" transform="translate(104.463 103.719)" fill="#8993a7" font-size="7" font-family="Poppins-Regular, Poppins"><tspan x="-4.214" y="0">24</tspan></text>
+            <text id="_1" data-name="1" transform="translate(104.583 126.807)" fill="#f2f8ff" font-size="7" font-family="Poppins-Regular, Poppins"><tspan x="-1.12" y="0">1</tspan></text>
+            <text id="Fr" transform="translate(132.791 34.456)" fill="#f2f8ff" font-size="7" font-family="Poppins-Medium, Poppins" font-weight="500"><tspan x="-3.147" y="0">Fr</tspan></text>
+            <text id="_11" data-name="11" transform="translate(132.415 57.544)" fill="#8993a7" font-size="7" font-family="Poppins-Regular, Poppins"><tspan x="-2.24" y="0">11</tspan></text>
+            <text id="_18" data-name="18" transform="translate(132.167 80.632)" fill="#8993a7" font-size="7" font-family="Poppins-Regular, Poppins"><tspan x="-3.329" y="0">18</tspan></text>
+            <text id="_25" data-name="25" transform="translate(132.543 103.719)" fill="#8993a7" font-size="7" font-family="Poppins-Regular, Poppins"><tspan x="-4.211" y="0">25</tspan></text>
+            <text id="_2" data-name="2" transform="translate(132.178 126.789)" fill="#f2f8ff" font-size="7" font-family="Poppins-Regular, Poppins"><tspan x="-2.013" y="0">2</tspan></text>
+            <text id="Sa" transform="translate(159.375 34.456)" fill="#f2f8ff" font-size="7" font-family="Poppins-Medium, Poppins" font-weight="500"><tspan x="-4.487" y="0">Sa</tspan></text>
+            <text id="_12" data-name="12" transform="translate(160.247 57.544)" fill="#8993a7" font-size="7" font-family="Poppins-Regular, Poppins"><tspan x="-3.132" y="0">12</tspan></text>
+            <text id="_19" data-name="19" transform="translate(159.623 80.632)" fill="#8993a7" font-size="7" font-family="Poppins-Regular, Poppins"><tspan x="-3.325" y="0">19</tspan></text>
+            <text id="_26" data-name="26" transform="translate(159.999 103.719)" fill="#8993a7" font-size="7" font-family="Poppins-Regular, Poppins"><tspan x="-4.235" y="0">26</tspan></text>
+            <text id="_3" data-name="3" transform="translate(159.871 126.807)" fill="#f2f8ff" font-size="7" font-family="Poppins-Regular, Poppins"><tspan x="-2.062" y="0">3</tspan></text>
+            <text id="Su" transform="translate(188.703 34.456)" fill="#f2f8ff" font-size="7" font-family="Poppins-Medium, Poppins" font-weight="500"><tspan x="-4.385" y="0">Su</tspan></text>
+            <text id="_13" data-name="13" transform="translate(189.575 57.544)" fill="#8993a7" font-size="7" font-family="Poppins-Regular, Poppins"><tspan x="-3.181" y="0">13</tspan></text>
+            <text id="_20" data-name="20" transform="translate(189.327 80.632)" fill="#8993a7" font-size="7" font-family="Poppins-Regular, Poppins"><tspan x="-4.211" y="0">20</tspan></text>
+            <text id="_27" data-name="27" transform="translate(189.327 103.719)" fill="#8993a7" font-size="7" font-family="Poppins-Regular, Poppins"><tspan x="-3.924" y="0">27</tspan></text>
+            <text id="_4" data-name="4" transform="translate(189.199 126.807)" fill="#f2f8ff" font-size="7" font-family="Poppins-Regular, Poppins"><tspan x="-2.201" y="0">4</tspan></text>
+          </g>
+        </g>
+      </g>
+      <g id="Time" transform="matrix(0.998, 0.07, -0.07, 0.998, 916.493, 5641.67)">
+        <text id=":" transform="translate(50.92 19.608)" fill="#b9b9b9" font-size="9" font-family="Poppins-Regular, Poppins"><tspan x="-0.959" y="0">:</tspan></text>
+        <g id="Group_2361" data-name="Group 2361">
+          <rect id="Rectangle_113-3" data-name="Rectangle 113" width="37.44" height="37.44" rx="15" transform="translate(0)" fill="#16191f"/>
+          <text id="_5" data-name="5" transform="translate(18.48 24.616)" fill="#3374ea" font-size="18" font-family="Poppins-Medium, Poppins" font-weight="500"><tspan x="-5.751" y="0">5</tspan></text>
+        </g>
+        <g id="Group_2362" data-name="Group 2362" transform="translate(64.896)">
+          <rect id="Rectangle_113-4" data-name="Rectangle 113" width="37.44" height="37.44" rx="15" transform="translate(0)" fill="#16191f"/>
+          <text id="_30-2" data-name="30" transform="translate(18.72 25.22)" fill="#3374ea" font-size="18" font-family="Poppins-Medium, Poppins" font-weight="500"><tspan x="-11.115" y="0">30</tspan></text>
+        </g>
+      </g>
+      <g id="Group_2328" data-name="Group 2328" transform="matrix(0.998, 0.07, -0.07, 0.998, 860.262, 5676.52)">
+        <text id="Hours" transform="translate(0 8)" fill="#b3bcce" font-size="8" font-family="Poppins-Regular, Poppins"><tspan x="0" y="0">Hours</tspan></text>
+        <rect id="Rectangle_15" data-name="Rectangle 15" width="200.927" height="3.744" rx="1.872" transform="translate(0 23.088)" fill="#16191f"/>
+        <g transform="matrix(1, -0.07, 0.07, 1, -77.12, -208.94)" filter="url(#Rectangle_113)">
+          <rect id="Rectangle_113-5" data-name="Rectangle 113" width="24.96" height="24.96" rx="12.48" transform="matrix(1, 0.07, -0.07, 1, 88.25, 228.13)" fill="url(#linear-gradient)"/>
+        </g>
+      </g>
+      <g id="Group_2363" data-name="Group 2363" transform="matrix(0.998, 0.07, -0.07, 0.998, 856.78, 5726.318)">
+        <text id="Minutes" transform="translate(0 8)" fill="#b3bcce" font-size="8" font-family="Poppins-Regular, Poppins"><tspan x="0" y="0">Minutes</tspan></text>
+        <rect id="Rectangle_15-2" data-name="Rectangle 15" width="200.927" height="3.744" rx="1.872" transform="translate(0 23.088)" fill="#16191f"/>
+        <g transform="matrix(1, -0.07, 0.07, 1, -77.12, -258.86)" filter="url(#Rectangle_113-2)">
+          <rect id="Rectangle_113-6" data-name="Rectangle 113" width="24.96" height="24.96" rx="12.48" transform="matrix(1, 0.07, -0.07, 1, 145.77, 282.2)" fill="url(#linear-gradient)"/>
+        </g>
+      </g>
+      <g id="Group_2356" data-name="Group 2356" transform="matrix(0.998, 0.07, -0.07, 0.998, 919.807, 5835.813)">
+        <g transform="matrix(1, -0.07, 0.07, 1, -147.63, -363.69)" filter="url(#Rectangle_21)">
+          <rect id="Rectangle_21-2" data-name="Rectangle 21" width="82" height="35" rx="17.5" transform="matrix(1, 0.07, -0.07, 1, 110.96, 367.82)" fill="url(#linear-gradient)"/>
+        </g>
+        <text id="Save" transform="translate(29.72 16.488)" fill="#fff" stroke="rgba(0,0,0,0)" stroke-miterlimit="10" stroke-width="1" font-size="9" font-family="Poppins-Regular, Poppins"><tspan x="-10.998" y="0">Save</tspan></text>
+      </g>
+      <g id="Component_8_4" data-name="Component 8 – 4" transform="matrix(0.998, 0.07, -0.07, 0.998, 920.971, 5786.912)">
+        <rect id="Rectangle_38" data-name="Rectangle 38" width="64" height="32" rx="16" fill="#16191f" opacity="0.47"/>
+        <circle id="Ellipse_30" data-name="Ellipse 30" cx="12" cy="12" r="12" transform="translate(4 4)" fill="#292e39"/>
+        <text id="PM" transform="translate(35.058 19.692)" fill="#8993a7" font-size="12" font-family="Poppins-Regular, Poppins"><tspan x="0" y="0">PM</tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,29 @@
+{
+  "name": "coinprofit",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "@splidejs/splide": "^3.6.12",
+    "@prismicio/vue": "^3.0.0-beta.4",
+    "core-js": "^3.21.1",
+    "jquery": "^3.6.0",
+    "swiper": "^8.0.7",
+    "vue": "^3.2.31",
+    "vue-router": "^4.0.14"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.17.5",
+    "@babel/eslint-parser": "^7.17.0",
+    "@vue/cli-plugin-babel": "~5.0.1",
+    "@vue/cli-plugin-eslint": "~5.0.1",
+    "@vue/cli-plugin-router": "~5.0.1",
+    "@vue/cli-service": "~5.0.1",
+    "eslint": "^8.10.0",
+    "eslint-plugin-vue": "^8.5.0"
+  }
+}

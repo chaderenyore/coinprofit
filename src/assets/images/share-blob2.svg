@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="873.959" height="880.184" viewBox="0 0 873.959 880.184">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#22a1f5"/>
+      <stop offset="1" stop-color="#677bff"/>
+    </linearGradient>
+    <filter id="blob_3_" x="0" y="0" width="873.959" height="880.184" filterUnits="userSpaceOnUse">
+      <feOffset dy="30" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feFlood flood-color="#22a1f5" flood-opacity="0.102"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#blob_3_)">
+    <path id="blob_3_2" data-name="blob (3)" d="M507.558,312.906C524.333,357.987,702.4,481.368,713.275,585.916S660.88,768.759,545.23,845.754c-67.243,44.768-141.561,59.4-169.925,46.767-76.168-34.94-60.733-121.562-127.817-172.574C180.4,668.236,134.26,650.867,125.873,580.624s34.593-153.508,130.015-220.437S490.784,267.825,507.558,312.906Z" transform="translate(1097.2 714.29) rotate(150)" fill="url(#linear-gradient)"/>
+  </g>
+</svg>

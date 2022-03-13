@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="350.891" height="149.449" viewBox="0 0 350.891 149.449">
+  <defs>
+    <filter id="Rectangle_95" x="0" y="0" width="350.891" height="149.449" filterUnits="userSpaceOnUse">
+      <feOffset dy="20" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="8.5" result="blur"/>
+      <feFlood flood-color="#1c1923" flood-opacity="0.051"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_5452" data-name="Group 5452" transform="matrix(0.998, -0.07, 0.07, 0.998, 25.5, 26.09)">
+    <g transform="matrix(1, 0.07, -0.07, 1, -23.62, -27.8)" filter="url(#Rectangle_95)">
+      <rect id="Rectangle_95-2" data-name="Rectangle 95" width="295.166" height="78.05" rx="10" transform="matrix(1, -0.07, 0.07, 1, 25.5, 26.09)" fill="#fff"/>
+    </g>
+    <text id="First_Lesson" data-name="First Lesson" transform="translate(15.354 33.354)" fill="#3374ea" font-size="17" font-family="Poppins-SemiBold, Poppins" font-weight="600"><tspan x="0" y="0">First Lesson</tspan></text>
+    <text id="Fri_Sep_7_2021_14:34:33" data-name="Fri, Sep 7, 2021, 14:34:33" transform="translate(15.354 56.224)" fill="#707070" font-size="13" font-family="Poppins-Regular, Poppins"><tspan x="0" y="0">Fri, Sep 7, 2021, 14:34:33</tspan></text>
+    <g id="dots" transform="translate(243.864 37.106)">
+      <circle id="Ellipse_56" data-name="Ellipse 56" cx="3.199" cy="3.199" r="3.199" fill="#cecece"/>
+      <circle id="Ellipse_57" data-name="Ellipse 57" cx="3.199" cy="3.199" r="3.199" transform="translate(10.236)" fill="#cecece"/>
+      <circle id="Ellipse_58" data-name="Ellipse 58" cx="3.199" cy="3.199" r="3.199" transform="translate(20.472)" fill="#cecece"/>
+    </g>
+  </g>
+</svg>
