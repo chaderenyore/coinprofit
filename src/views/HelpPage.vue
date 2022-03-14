@@ -120,7 +120,7 @@ export default {
 
 .help__cards--card {
   cursor: pointer;
-  background: #fff;
+  background: var(--help-hero-card);
   border-radius: 0.875rem;
   height: 10.25rem;
   width: 9.375rem;
@@ -166,7 +166,7 @@ export default {
 .help__section--search-p {
   font-size: 1.0625rem;
   line-height: 1.75rem;
-  color: #525b6d;
+  color: var(--help-hero-text);
   font-weight: 500;
   width: 92%;
   margin: 0 auto;
@@ -175,7 +175,7 @@ export default {
 
 .help__section--search__form {
   margin-top: 1.75rem;
-  background-color: #fff;
+  background-color: var(--help-search);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -185,7 +185,7 @@ export default {
 }
 
 .help__section--search__input {
-  background-color: #fff;
+  background-color: transparent;
   font-family: inherit;
   font-size: inherit;
   font-size: 1.125rem;
@@ -314,7 +314,7 @@ export default {
 .help__contact--card {
   display: flex;
   flex-direction: column;
-  background: #ffffff;
+  background: var(--help-contact-box);
   padding: 1.25rem;
   box-shadow: 0 1.25rem 1.0625rem #1c192305;
   border-radius: 0.15rem;
@@ -338,7 +338,7 @@ export default {
 .help__contact--card__div p {
   font-size: 1.0625rem;
   font-weight: 500;
-  color: #525b6d;
+  color: var(--help-contact-box-text);
   margin-left: 0.6875rem;
 }
 </style>

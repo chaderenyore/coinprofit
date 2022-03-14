@@ -40,7 +40,13 @@ export default {
   --dark-color: #13141c;
   --third-color: #ffffff; /* for white background like the boxes, FAQ and the footer section */
   --fourth-color: #525b6d; /* for paragraphs..*/
-  --fifth-color: #000000; /* for paragraphs with black background*/
+  --fifth-color: #1d1c1c; /* for paragraphs with black background*/
+  --help-hero-text: #525b6d;
+  --help-hero-card: #ffffff;
+  --help-search: #ffffff;
+  --help-article-text: #525b6d;
+  --help-contact-box: #ffffff;
+  --help-contact-box-text: #525b6d;
   --tab-sm: 48.75rem;
 }
 
@@ -50,6 +56,12 @@ export default {
   --third-color: #09090b;
   --fourth-color: #f2f8ff;
   --fifth-color: #f2f8ff;
+  --help-hero-text: #b3bcce;
+  --help-hero-card: #1c2029;
+  --help-article-text: #b3bcce;
+  --help-search: #202230;
+  --help-contact-box: #202230;
+  --help-contact-box-text: #f2f8ff;
 }
 html {
   scroll-behavior: smooth;

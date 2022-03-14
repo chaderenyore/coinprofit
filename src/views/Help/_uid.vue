@@ -8,25 +8,47 @@
     </header>
     <SliceZone :slices="post.data.body" :components="components" />
   </main>
+  <!-- <main v-if="post.data === null">
+    <NotFound />
+  </main> -->
 </template>
 
-<script setup>
+<script>
+// import NotFound from "@/components/Help/NotFound.vue";
+import { ref } from "vue";
 import { useRoute } from "vue-router";
 import {
   usePrismicDocumentByUID,
   defineSliceZoneComponents,
-  SliceZone,
 } from "@prismicio/vue";
 import BannerImage from "../../components/Slices/BannerImage.vue";
 import GalleryAndText from "../../components/Slices/GalleryAndText.vue";
 
-const route = useRoute();
+export default {
+  setup() {
+    const route = useRoute();
+    const { data: post } = usePrismicDocumentByUID(
+      "help_post",
+      route.params.uid
+    );
 
-const { data: post } = usePrismicDocumentByUID("help_post", route.params.uid);
-const components = defineSliceZoneComponents({
-  banner_image: BannerImage,
-  gallery_and_text: GalleryAndText,
-});
+    const components = ref(
+      defineSliceZoneComponents({
+        banner_image: BannerImage,
+        gallery_and_text: GalleryAndText,
+      })
+    );
+
+    return {
+      post,
+      components,
+    };
+  },
+
+  // components: {
+  //   NotFound,
+  // },
+};
 </script>
 
 <style scoped>
