@@ -33,20 +33,29 @@ export default {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+p {
+  color: var(
+    --dark-color
+  ); /* paragraph tags without any styles will have this color code by default. */
 }
 
 :root {
   --light-color: #f2f8ff;
   --dark-color: #13141c;
+  --nav-light: #ffffff;
   --third-color: #ffffff; /* for white background like the boxes, FAQ and the footer section */
   --fourth-color: #525b6d; /* for paragraphs..*/
   --fifth-color: #000000; /* for paragraphs with black background*/
-  --tab-sm: 48.75rem;
 }
 
 .dark-theme {
   --light-color: #13141c;
   --dark-color: #f2f8ff;
+  --nav-light: #09090b;;
   --third-color: #09090b;
   --fourth-color: #f2f8ff;
   --fifth-color: #f2f8ff;
@@ -77,6 +86,7 @@ a {
   text-decoration: none;
 }
 
+
 .backdrop.active {
   width: 100vw;
   height: 94vh;
@@ -86,27 +96,5 @@ a {
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 1;
 }
-.scrollTop {
-  position: fixed;
-  bottom: 400px;
-  right: 30px;
-  z-index: 10; /* Make sure it does not overlap */
-  background: #ffa94f url("./assets/images/rocket.png");
-  width: 40px;
-  height: 40px;
-  cursor: pointer;
-  padding: 25px;
-  border-radius: 50%;
-  background-size: 40px;
-  background-repeat: no-repeat;
-  background-position: center;
-  visibility: hidden;
-  opacity: 0;
-  transition: 0.3s;
-}
-.scrollTop.scrollactive {
-  bottom: 40px;
-  visibility: visible;
-  opacity: 1;
-}
+
 </style>
