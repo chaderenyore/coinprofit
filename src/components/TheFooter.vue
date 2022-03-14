@@ -214,7 +214,7 @@
   </footer>
   <div class="copyright">
     <p>
-      coinprofit.app &copy; <span id="copyrightyear"></span> All Rights
+      coinprofit.app &copy; 2022 <span id="copyrightyear"></span> All Rights
       Reserved.
     </p>
   </div>

@@ -1,476 +1,623 @@
 <template>
-<section class="first-page">
-    <img src="@/assets/images/Asset-1.svg" alt="" class="background-svg">
-    <div class="blob-wrapper"> 
-        <img src="@/assets/images/leaders/mobile-blob.png" alt="A blob SVG acts as a background here" class="mobile-blob" />
+  <section class="first-page">
+    <img src="@/assets/images/Asset-1.svg" alt="" class="background-svg" />
+    <div class="blob-wrapper">
+      <img
+        src="@/assets/images/leaders/mobile-blob.png"
+        alt="A blob SVG acts as a background here"
+        class="mobile-blob"
+      />
 
-        <img src="@/assets/images/leaders/computer-blob.png" alt="A blob SVG acts as a background here" class="computer-blob" />
-        
+      <img
+        src="@/assets/images/leaders/computer-blob.png"
+        alt="A blob SVG acts as a background here"
+        class="computer-blob"
+      />
     </div>
 
     <div class="leaders-about">
-        <h1>Make Money By Letting Others See Your Trades</h1>
+      <h1>Make Money By Letting Others See Your Trades</h1>
 
-        <img src="@/assets/images/appUI.svg" alt="" class="appui"> 
+      <img src="@/assets/images/appUI.svg" alt="" class="appui" />
 
-        <div class="signal-packs ">
-            <div class="pack-img-wrapper">
-                <img src="@/assets/images/customer.svg" alt="" class="pack-img">
-            </div>  
-            <p>My <br>Followers</p>
-            <h5>4290</h5>
-               
+      <div class="signal-packs">
+        <div class="pack-img-wrapper">
+          <img src="@/assets/images/customer.svg" alt="" class="pack-img" />
         </div>
-        <div class="signal-packs two ">
-            <div class="pack-img-wrapper">
-                <img src="@/assets/images/verified-user.svg" alt="" class="pack-img">
-            </div>  
-            <p>My <br> Subscribers</p>
-            <h5>2 021</h5>
-               
+        <p>My <br />Followers</p>
+        <h5>4290</h5>
+      </div>
+      <div class="signal-packs two">
+        <div class="pack-img-wrapper">
+          <img
+            src="@/assets/images/verified-user.svg"
+            alt=""
+            class="pack-img"
+          />
         </div>
-        <div class="signal-packs three">
-            <div class="pack-img-wrapper">
-                <img src="@/assets/images/money.svg" alt="" class="pack-img">
-            </div>  
-            <p>Subscribers Earnings</p>
-            <h5>$ 10 902</h5>
-               
+        <p>
+          My <br />
+          Subscribers
+        </p>
+        <h5>2 021</h5>
+      </div>
+      <div class="signal-packs three">
+        <div class="pack-img-wrapper">
+          <img src="@/assets/images/money.svg" alt="" class="pack-img" />
         </div>
+        <p>Subscribers Earnings</p>
+        <h5>$ 10 902</h5>
+      </div>
 
-        <p class="leaders-aboutP">Lead and let others follow your footstep. Let people follow and/or subscribe to you. <br> <br>
+      <p class="leaders-aboutP">
+        Lead and let others follow your footstep. Let people follow and/or
+        subscribe to you. <br />
+        <br />
 
-        You can choose to charge any amount of money <i>monthly/year/lifetime.</i> So those subscribed to you will be able to see the coins you buy, when you buy and when you sell without revealing the transaction amount. <br> <br>
-        
-        E.G, If you buy $BNB, you don’t need to tell anyone you bought it. Your subscribers (Those paying you) will see it and buy it too if they want. They make profit as you make profit. It’s a Win-Win!</p>
+        You can choose to charge any amount of money
+        <i>monthly/year/lifetime.</i> So those subscribed to you will be able to
+        see the coins you buy, when you buy and when you sell without revealing
+        the transaction amount. <br />
+        <br />
 
-        <div class="app-downloads">
-            <a href="#" target="_blank" rel="noopener noreferrer"><img src="@/assets/images/appstore.svg" alt="" srcset="" class="app-download"></a>
-            
-            <a href="#" target="_blank" rel="noopener noreferrer"><img src="@/assets/images/goplay.svg" alt="" srcset="" class="app-download"></a>
-        </div>
+        E.G, If you buy $BNB, you don’t need to tell anyone you bought it. Your
+        subscribers (Those paying you) will see it and buy it too if they want.
+        They make profit as you make profit. It’s a Win-Win!
+      </p>
 
+      <div class="app-downloads">
+        <a href="#" target="_blank" rel="noopener noreferrer"
+          ><img
+            src="@/assets/images/appstore.svg"
+            alt=""
+            srcset=""
+            class="app-download"
+        /></a>
+
+        <a href="#" target="_blank" rel="noopener noreferrer"
+          ><img
+            src="@/assets/images/goplay.svg"
+            alt=""
+            srcset=""
+            class="app-download"
+        /></a>
+      </div>
     </div>
+  </section>
 
-</section>
-
-
-<section >
+  <section>
     <div class="leaders-features">
-        <h1>Share Signal</h1>
-            <img src="@/assets/images/leaders/share-blob.png" class="leadersF-blob">
+      <h1>Share Signal</h1>
+      <img src="@/assets/images/leaders/share-blob.png" class="leadersF-blob" />
 
-        <div class="leaders-portfolio-box">
-            <img src="@/assets/images/share-img.png" alt="Share Image" class="share-portfolio-img">
-            
-        </div>
-        <p>Easily share signals with your followers and subscribers. We automatically track the signal progress and give you more bragging rights when your signals hit profit target.</p>
+      <div class="leaders-portfolio-box">
+        <img
+          src="@/assets/images/share-img.png"
+          alt="Share Image"
+          class="share-portfolio-img"
+        />
+      </div>
+      <p>
+        Easily share signals with your followers and subscribers. We
+        automatically track the signal progress and give you more bragging
+        rights when your signals hit profit target.
+      </p>
     </div>
 
     <div class="leaders-features two">
-        <h1>See Subscribers<br> Earnings</h1>
-            <img src="@/assets/images/leaders/share-blob.png" class="leadersF-blob two">
+      <h1>
+        See Subscribers<br />
+        Earnings
+      </h1>
+      <img
+        src="@/assets/images/leaders/share-blob.png"
+        class="leadersF-blob two"
+      />
 
-        <div class="leaders-portfolio-box">
-            <img src="@/assets/images/share-img.png" alt="Share Image" class="seeSubsimg ">
-            
-        </div>
-        <p>Your subscribers will be able to rate and share feedback on your signals. They will also be able to share how much profit/loss they made based on your signals. This will help you keep a track of how you are changing your subscribers' lives through financial education.</p>
+      <div class="leaders-portfolio-box">
+        <img
+          src="@/assets/images/share-img.png"
+          alt="Share Image"
+          class="seeSubsimg"
+        />
+      </div>
+      <p>
+        Your subscribers will be able to rate and share feedback on your
+        signals. They will also be able to share how much profit/loss they made
+        based on your signals. This will help you keep a track of how you are
+        changing your subscribers' lives through financial education.
+      </p>
     </div>
 
     <div class="leaders-features three">
-        <h1>Share Thought</h1>
-            <img src="@/assets/images/leaders/share-blob.png" class="leadersF-blob">
+      <h1>Share Thought</h1>
+      <img src="@/assets/images/leaders/share-blob.png" class="leadersF-blob" />
 
-        <div class="leaders-portfolio-box">
-            <img src="@/assets/images/share-img.png" alt="Share Image" class="share-portfolio-img">
-            
-        </div>
-        <p>Share your thoughts and let others know what you think about the crypto market, keep your followers updated.</p>
+      <div class="leaders-portfolio-box">
+        <img
+          src="@/assets/images/share-img.png"
+          alt="Share Image"
+          class="share-portfolio-img"
+        />
+      </div>
+      <p>
+        Share your thoughts and let others know what you think about the crypto
+        market, keep your followers updated.
+      </p>
     </div>
 
     <div class="leaders-features two last">
-        <h1>Generate And Share <br>Your Signal Report</h1>
-            <img src="@/assets/images/leaders/share-blob.png" class="leadersF-blob two last">
+      <h1>Generate And Share <br />Your Signal Report</h1>
+      <img
+        src="@/assets/images/leaders/share-blob.png"
+        class="leadersF-blob two last"
+      />
 
-        <div class="leaders-portfolio-box">
-            <img src="@/assets/images/share-img.png" alt="Share Image" class="seeSubsimg ">
-            
-        </div>
-        <p>Easily share signals with your followers and subscribers. We automatically track the signal progress and give you more bragging rights when your signals hit profit target.</p>
+      <div class="leaders-portfolio-box">
+        <img
+          src="@/assets/images/share-img.png"
+          alt="Share Image"
+          class="seeSubsimg"
+        />
+      </div>
+      <p>
+        Easily share signals with your followers and subscribers. We
+        automatically track the signal progress and give you more bragging
+        rights when your signals hit profit target.
+      </p>
     </div>
     <div class="app-downloads wrapper">
-        <a href="#" target="_blank" rel="noopener noreferrer"><img src="@/assets/images/appstore.svg" alt="" srcset="" class="app-download features"></a>
-        
-        <a href="#" target="_blank" rel="noopener noreferrer"><img src="@/assets/images/goplay.svg" alt="" srcset="" class="app-download features"></a>
+      <a href="#" target="_blank" rel="noopener noreferrer"
+        ><img
+          src="@/assets/images/appstore.svg"
+          alt=""
+          srcset=""
+          class="app-download features"
+      /></a>
+
+      <a href="#" target="_blank" rel="noopener noreferrer"
+        ><img
+          src="@/assets/images/goplay.svg"
+          alt=""
+          srcset=""
+          class="app-download features"
+      /></a>
     </div>
-</section>
+  </section>
 
-
-
-<section class="mobile-leaders-section">
+  <section class="mobile-leaders-section">
     <h1>Featured Leaders</h1>
-    <h6>Meet some of the leaders on the CoinProfit App.</h6>    
+    <h6>Meet some of the leaders on the CoinProfit App.</h6>
 
-<div class="mobile-leaders-box-wrapper">
+    <div class="mobile-leaders-box-wrapper">
+      <div class="splide">
+        <div class="splide__arrows">
+          <button class="splide__arrow splide__arrow--prev">
+            <i class="fa fa-angle-left"></i>
+          </button>
+          <button class="splide__arrow splide__arrow--next">
+            <i class="fa fa-angle-right"></i>
+          </button>
+        </div>
 
-    
-        <div class="splide">
-                <div class="splide__arrows">
-                    <button class="splide__arrow splide__arrow--prev">
-                        <i class="fa fa-angle-left"></i>
-                        
-                    </button>
-                    <button class="splide__arrow splide__arrow--next">
-                        <i class="fa fa-angle-right"></i>
-                    </button>
+        <div class="splide__progress"></div>
+        <div class="splide__track">
+          <div class="splide__list">
+            <div class="splide__slide">
+              <div class="mobile-leaders-box">
+                <div class="mobile-leaders-img-box">
+                  <img src="@/assets/images/review3.jpeg" alt="IMAGE" />
                 </div>
-        
-                <div class="splide__progress" > </div>
-                <div class="splide__track">
-                    <div class="splide__list">
-                        <div class="splide__slide">
-                                <div class="mobile-leaders-box">
-                                    <div class="mobile-leaders-img-box">
-                                        <img src="@/assets/images/review3.jpeg" alt="IMAGE" >
-                                    </div>
-
-                                    <div class="leader-lv">
-                                        <img src="@/assets/images/leader-level1.svg" >
-                                    </div>
-
-                                    <p>@lordemma</p>
-                                    <h3>Emmanuel Ohworeko</h3>
-                                    <h4>CEO and Founder of CoinProfit</h4>
-                            
-                                    <div class="reviews">
-                                        <p >Starting his crypto journey in 2020, Emmanuel has grown to become a leader through constant learning</p>
-                                    </div>
-                                </div>
-                        </div> <!-- End Splide Splide-->
-
-
-                        <div class="splide__slide">
-                            <div class="mobile-leaders-box">
-                                <div class="mobile-leaders-img-box">
-                                    <img src="@/assets/images/review3.jpeg" alt="IMAGE" >
-                                </div>
-
-                                <div class="leader-lv">
-                                        <img src="@/assets/images/leader-level1.svg" >
-                                    </div>
-
-                                <p>@lordemma</p>
-                                <h3>Emmanuel Ohworeko</h3>
-                                <h4>CEO and Founder of CoinProfit</h4>
-                        
-                                <div class="reviews">
-                                    <p >Starting his crypto journey in 2020, Emmanuel has grown to become a leader through constant learning</p>
-                                </div>
-                            </div>
-                    </div> <!-- End Splide Splide-->
-
-                    <div class="splide__slide">
-                        <div class="mobile-leaders-box">
-                            <div class="mobile-leaders-img-box">
-                                <img src="@/assets/images/review3.jpeg" alt="IMAGE" >
-                            </div>
-                            
-                            <div class="leader-lv">
-                                <img src="@/assets/images/leader-level1.svg" >
-                            </div>
-                            
-                            <p>@lordemma</p>
-                            <h3>Emmanuel Ohworeko</h3>
-                            <h4>CEO and Founder of CoinProfit</h4>
-                    
-                            <div class="reviews">
-                                <p >Starting his crypto journey in 2020, Emmanuel has grown to become a leader through constant learning</p>
-                            </div>
-                        </div>
-                </div> <!-- End Splide Splide-->
-        
-                    </div> <!-- End splide list-->
-                </div> <!-- end splide track-->
-        
-        </div>
-
-      <div class="mobile-leaders-box-background"> 
-          <div class="svg-background" ></div>
-          <div class="custom-shape-divider-top-1646475939">
-              <div class="custom-shape-divider-bottom-1646476356">
-                  <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                      <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
-                  </svg>
-              </div>
-          </div>
-      </div> <!-- End mobile leaders box background-->
-
-</div>
-</section>
-
-
-
-
-<section class="computer-leaders-section">
-    <h1>Featured Leaders</h1>
-    <h6>Meet some of the leaders on the CoinProfit App.</h6> 
-    
-    <div class="computer-leaders-box-wrapper">
-        <div class="computer-leaders-box">
-            <div class="computer-leaders-img-box">
-                <img src="@/assets/images/review3.jpeg" alt="IMAGE" >
-            </div>
-
-            <div class="leader-lv">
-                <img src="@/assets/images/leader-level1.svg" >
-            </div>
-            
-            <p>@lordemma</p>
-            <h3>Emmanuel Ohworeko</h3>
-            <h4>CEO and Founder of CoinProfit</h4>
-    
-            <div class="reviews">
-
-                <p class="text">Starting his crypto journey in 2020, Emmanuel has grown to become a leader through constant learning</p>
-                
-            </div>
-        </div>
-        <div class="computer-leaders-box">
-            <div class="computer-leaders-img-box">
-                <img src="@/assets/images/review3.jpeg" alt="IMAGE" >
-            </div>
-
-            <div class="leader-lv">
-                <img src="@/assets/images/leader-level.svg" >
-            </div>
-            
-            <p>@lordemma</p>
-            <h3>Emmanuel Ohworeko</h3>
-            <h4>CEO and Founder of CoinProfit</h4>
-    
-            <div class="reviews">
-
-                <p class="text">Starting his crypto journey in 2020, Emmanuel has grown to become a leader through constant learning</p>
-            </div>
-        </div>
-        <div class="computer-leaders-box">
-            <div class="computer-leaders-img-box">
-                <img src="@/assets/images/review3.jpeg" alt="IMAGE" >
-            </div>
-
-            <div class="leader-lv">
-                <img src="@/assets/images/leader-level1.svg" >
-            </div>
-            
-            <p>@lordemma</p>
-            <h3>Emmanuel Ohworeko</h3>
-            <h4>CEO and Founder of CoinProfit</h4>
-    
-            <div class="reviews">
-                <p >Starting his crypto journey in 2020, Emmanuel has grown to become a leader through constant learning</p>
-            </div>
-        </div>
-        <div class="computer-leaders-box">
-            <div class="computer-leaders-img-box">
-                <img src="@/assets/images/review3.jpeg" alt="IMAGE" >
-            </div>
-
-            <div class="leader-lv">
-                <img src="@/assets/images/leader-level1.svg" >
-            </div>
-            
-            <p>@lordemma</p>
-            <h3>Emmanuel Ohworeko</h3>
-            <h4>CEO and Founder of CoinProfit</h4>
-    
-            <div class="reviews">
-                <p >Starting his crypto journey in 2020, Emmanuel has grown to become a leader through constant learning</p>
-            </div>
-        </div>
-        <div class="computer-leaders-box">
-            <div class="computer-leaders-img-box">
-                <img src="@/assets/images/review3.jpeg" alt="IMAGE" >
-            </div>
-
-            <div class="leader-lv">
-                <img src="@/assets/images/leader-level.svg" >
-            </div>
-            
-            <p>@lordemma</p>
-            <h3>Emmanuel Ohworeko</h3>
-            <h4>CEO and Founder of CoinProfit</h4>
-    
-            <div class="reviews">
-                <p >Starting his crypto journey in 2020, Emmanuel has grown to become a leader through constant learning</p>
-            </div>
-        </div>
-        <div class="computer-leaders-box">
-            <div class="computer-leaders-img-box">
-                <img src="@/assets/images/review3.jpeg" alt="IMAGE" >
-            </div> 
 
                 <div class="leader-lv">
-                    <img src="@/assets/images/leader-level1.svg" >
+                  <img src="@/assets/images/leader-level1.svg" />
                 </div>
-            
-            <p>@lordemma</p>
-            <h3>Emmanuel Ohworeko</h3>
-            <h4>CEO and Founder of CoinProfit</h4>
-    
-            <div class="reviews">
-                <p >Starting his crypto journey in 2020, Emmanuel has grown to become a leader through constant learning</p>
-            </div>
-        </div>
 
-        <div class="computer-leaders-box-background"> 
-            <div class="svg-background"></div>
+                <p>@lordemma</p>
+                <h3>Emmanuel Ohworeko</h3>
+                <h4>CEO and Founder of CoinProfit</h4>
 
-            <div class="custom-shape-divider-top-1646479334">
-                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                    <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
-                </svg>
-            </div>
-
-
-              <div class="custom-shape-divider-top-1646475939">
-                  <div class="custom-shape-divider-bottom-1646476356">
-                      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                          <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
-                      </svg>
-                  </div>
+                <div class="reviews">
+                  <p>
+                    Starting his crypto journey in 2020, Emmanuel has grown to
+                    become a leader through constant learning
+                  </p>
+                </div>
               </div>
-        </div> <!-- End mobile leaders box background-->
+            </div>
+            <!-- End Splide Splide-->
+
+            <div class="splide__slide">
+              <div class="mobile-leaders-box">
+                <div class="mobile-leaders-img-box">
+                  <img src="@/assets/images/review3.jpeg" alt="IMAGE" />
+                </div>
+
+                <div class="leader-lv">
+                  <img src="@/assets/images/leader-level1.svg" />
+                </div>
+
+                <p>@lordemma</p>
+                <h3>Emmanuel Ohworeko</h3>
+                <h4>CEO and Founder of CoinProfit</h4>
+
+                <div class="reviews">
+                  <p>
+                    Starting his crypto journey in 2020, Emmanuel has grown to
+                    become a leader through constant learning
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- End Splide Splide-->
+
+            <div class="splide__slide">
+              <div class="mobile-leaders-box">
+                <div class="mobile-leaders-img-box">
+                  <img src="@/assets/images/review3.jpeg" alt="IMAGE" />
+                </div>
+
+                <div class="leader-lv">
+                  <img src="@/assets/images/leader-level1.svg" />
+                </div>
+
+                <p>@lordemma</p>
+                <h3>Emmanuel Ohworeko</h3>
+                <h4>CEO and Founder of CoinProfit</h4>
+
+                <div class="reviews">
+                  <p>
+                    Starting his crypto journey in 2020, Emmanuel has grown to
+                    become a leader through constant learning
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- End Splide Splide-->
+          </div>
+          <!-- End splide list-->
+        </div>
+        <!-- end splide track-->
+      </div>
+
+      <div class="mobile-leaders-box-background">
+        <div class="svg-background"></div>
+        <div class="custom-shape-divider-top-1646475939">
+          <div class="custom-shape-divider-bottom-1646476356">
+            <svg
+              data-name="Layer 1"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 1200 120"
+              preserveAspectRatio="none"
+            >
+              <path
+                d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                class="shape-fill"
+              ></path>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <!-- End mobile leaders box background-->
     </div>
+  </section>
 
-</section>
+  <section class="computer-leaders-section">
+    <h1>Featured Leaders</h1>
+    <h6>Meet some of the leaders on the CoinProfit App.</h6>
 
+    <div class="computer-leaders-box-wrapper">
+      <div class="computer-leaders-box">
+        <div class="computer-leaders-img-box">
+          <img src="@/assets/images/review3.jpeg" alt="IMAGE" />
+        </div>
 
-<section>
+        <div class="leader-lv">
+          <img src="@/assets/images/leader-level1.svg" />
+        </div>
 
+        <p>@lordemma</p>
+        <h3>Emmanuel Ohworeko</h3>
+        <h4>CEO and Founder of CoinProfit</h4>
+
+        <div class="reviews">
+          <p class="text">
+            Starting his crypto journey in 2020, Emmanuel has grown to become a
+            leader through constant learning
+          </p>
+        </div>
+      </div>
+      <div class="computer-leaders-box">
+        <div class="computer-leaders-img-box">
+          <img src="@/assets/images/review3.jpeg" alt="IMAGE" />
+        </div>
+
+        <div class="leader-lv">
+          <img src="@/assets/images/leader-level.svg" />
+        </div>
+
+        <p>@lordemma</p>
+        <h3>Emmanuel Ohworeko</h3>
+        <h4>CEO and Founder of CoinProfit</h4>
+
+        <div class="reviews">
+          <p class="text">
+            Starting his crypto journey in 2020, Emmanuel has grown to become a
+            leader through constant learning
+          </p>
+        </div>
+      </div>
+      <div class="computer-leaders-box">
+        <div class="computer-leaders-img-box">
+          <img src="@/assets/images/review3.jpeg" alt="IMAGE" />
+        </div>
+
+        <div class="leader-lv">
+          <img src="@/assets/images/leader-level1.svg" />
+        </div>
+
+        <p>@lordemma</p>
+        <h3>Emmanuel Ohworeko</h3>
+        <h4>CEO and Founder of CoinProfit</h4>
+
+        <div class="reviews">
+          <p>
+            Starting his crypto journey in 2020, Emmanuel has grown to become a
+            leader through constant learning
+          </p>
+        </div>
+      </div>
+      <div class="computer-leaders-box">
+        <div class="computer-leaders-img-box">
+          <img src="@/assets/images/review3.jpeg" alt="IMAGE" />
+        </div>
+
+        <div class="leader-lv">
+          <img src="@/assets/images/leader-level1.svg" />
+        </div>
+
+        <p>@lordemma</p>
+        <h3>Emmanuel Ohworeko</h3>
+        <h4>CEO and Founder of CoinProfit</h4>
+
+        <div class="reviews">
+          <p>
+            Starting his crypto journey in 2020, Emmanuel has grown to become a
+            leader through constant learning
+          </p>
+        </div>
+      </div>
+      <div class="computer-leaders-box">
+        <div class="computer-leaders-img-box">
+          <img src="@/assets/images/review3.jpeg" alt="IMAGE" />
+        </div>
+
+        <div class="leader-lv">
+          <img src="@/assets/images/leader-level.svg" />
+        </div>
+
+        <p>@lordemma</p>
+        <h3>Emmanuel Ohworeko</h3>
+        <h4>CEO and Founder of CoinProfit</h4>
+
+        <div class="reviews">
+          <p>
+            Starting his crypto journey in 2020, Emmanuel has grown to become a
+            leader through constant learning
+          </p>
+        </div>
+      </div>
+      <div class="computer-leaders-box">
+        <div class="computer-leaders-img-box">
+          <img src="@/assets/images/review3.jpeg" alt="IMAGE" />
+        </div>
+
+        <div class="leader-lv">
+          <img src="@/assets/images/leader-level1.svg" />
+        </div>
+
+        <p>@lordemma</p>
+        <h3>Emmanuel Ohworeko</h3>
+        <h4>CEO and Founder of CoinProfit</h4>
+
+        <div class="reviews">
+          <p>
+            Starting his crypto journey in 2020, Emmanuel has grown to become a
+            leader through constant learning
+          </p>
+        </div>
+      </div>
+
+      <div class="computer-leaders-box-background">
+        <div class="svg-background"></div>
+
+        <div class="custom-shape-divider-top-1646479334">
+          <svg
+            data-name="Layer 1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1200 120"
+            preserveAspectRatio="none"
+          >
+            <path
+              d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+              class="shape-fill"
+            ></path>
+          </svg>
+        </div>
+
+        <div class="custom-shape-divider-top-1646475939">
+          <div class="custom-shape-divider-bottom-1646476356">
+            <svg
+              data-name="Layer 1"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 1200 120"
+              preserveAspectRatio="none"
+            >
+              <path
+                d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                class="shape-fill"
+              ></path>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <!-- End mobile leaders box background-->
+    </div>
+  </section>
+
+  <section>
     <div class="faq-wrapper">
-
-        <h1>Leaders FAQs</h1>
-        <div class="faqcontainer">
-            <div class="faqwrapper">
-                <button class="faqtoggle">
-                    <h3>Who can be a leader?</h3>
-                    <i class="fa fa-chevron-down faqicon" ></i>
-                </button>
-                <div class="faqcontent">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta aliquam facere adipisci quod mollitia, aut nemo deleniti fugiat et, corrupti sequi. Omnis dolorem quos eligendi placeat soluta sint corrupti quod.</p>
-                </div>
-            </div>
-            <div class="faqwrapper">
-                <button class="faqtoggle">
-                    <h3>How much can I earn?</h3>
-                    <i class="fa fa-chevron-down faqicon" ></i>
-                </button>
-                <div class="faqcontent">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta aliquam facere adipisci quod mollitia, aut nemo deleniti fugiat et, corrupti sequi. Omnis dolorem quos eligendi placeat soluta sint corrupti quod.</p>
-                </div>
-            </div>
-            <div class="faqwrapper">
-                <button class="faqtoggle">
-                    <h3>Question 3</h3>
-                    <i class="fa fa-chevron-down faqicon" ></i>
-                </button>
-                <div class="faqcontent">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta aliquam facere adipisci quod mollitia, aut nemo deleniti fugiat et, corrupti sequi. Omnis dolorem quos eligendi placeat soluta sint corrupti quod.</p>
-                </div>
-            </div>
+      <h1>Leaders FAQs</h1>
+      <div class="faqcontainer">
+        <div class="faqwrapper">
+          <button class="faqtoggle">
+            <h3>Who can be a leader?</h3>
+            <i class="fa fa-chevron-down faqicon"></i>
+          </button>
+          <div class="faqcontent">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
+              aliquam facere adipisci quod mollitia, aut nemo deleniti fugiat
+              et, corrupti sequi. Omnis dolorem quos eligendi placeat soluta
+              sint corrupti quod.
+            </p>
+          </div>
         </div>
-        <div class="faqcontainer faqtwo">
-            <div class="faqwrapper">
-                <button class="faqtoggle">
-                   <h3>Queston 4</h3>
-                   <i class="fa fa-chevron-down faqicon" ></i>
-                </button>
-                <div class="faqcontent">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta aliquam facere adipisci quod mollitia, aut nemo deleniti fugiat et, corrupti sequi. Omnis dolorem quos eligendi placeat soluta sint corrupti quod.</p>
-                </div>
-            </div>
-            <div class="faqwrapper">
-                <button class="faqtoggle">
-                    <h3>Question 5</h3>
-                    <i class="fa fa-chevron-down faqicon" ></i>
-                </button>
-                <div class="faqcontent">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta aliquam facere adipisci quod mollitia, aut nemo deleniti fugiat et, corrupti sequi. Omnis dolorem quos eligendi placeat soluta sint corrupti quod.</p>
-                </div>
-            </div>
-            <div class="faqwrapper">
-                <button class="faqtoggle">
-                    <h3>Question 6</h3>
-                    <i class="fa fa-chevron-down faqicon" ></i>
-                </button>
-                <div class="faqcontent">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta aliquam facere adipisci quod mollitia, aut nemo deleniti fugiat et, corrupti sequi. Omnis dolorem quos eligendi placeat soluta sint corrupti quod.</p>
-                </div>
-            </div>
+        <div class="faqwrapper">
+          <button class="faqtoggle">
+            <h3>How much can I earn?</h3>
+            <i class="fa fa-chevron-down faqicon"></i>
+          </button>
+          <div class="faqcontent">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
+              aliquam facere adipisci quod mollitia, aut nemo deleniti fugiat
+              et, corrupti sequi. Omnis dolorem quos eligendi placeat soluta
+              sint corrupti quod.
+            </p>
+          </div>
         </div>
+        <div class="faqwrapper">
+          <button class="faqtoggle">
+            <h3>Question 3</h3>
+            <i class="fa fa-chevron-down faqicon"></i>
+          </button>
+          <div class="faqcontent">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
+              aliquam facere adipisci quod mollitia, aut nemo deleniti fugiat
+              et, corrupti sequi. Omnis dolorem quos eligendi placeat soluta
+              sint corrupti quod.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="faqcontainer faqtwo">
+        <div class="faqwrapper">
+          <button class="faqtoggle">
+            <h3>Queston 4</h3>
+            <i class="fa fa-chevron-down faqicon"></i>
+          </button>
+          <div class="faqcontent">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
+              aliquam facere adipisci quod mollitia, aut nemo deleniti fugiat
+              et, corrupti sequi. Omnis dolorem quos eligendi placeat soluta
+              sint corrupti quod.
+            </p>
+          </div>
+        </div>
+        <div class="faqwrapper">
+          <button class="faqtoggle">
+            <h3>Question 5</h3>
+            <i class="fa fa-chevron-down faqicon"></i>
+          </button>
+          <div class="faqcontent">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
+              aliquam facere adipisci quod mollitia, aut nemo deleniti fugiat
+              et, corrupti sequi. Omnis dolorem quos eligendi placeat soluta
+              sint corrupti quod.
+            </p>
+          </div>
+        </div>
+        <div class="faqwrapper">
+          <button class="faqtoggle">
+            <h3>Question 6</h3>
+            <i class="fa fa-chevron-down faqicon"></i>
+          </button>
+          <div class="faqcontent">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
+              aliquam facere adipisci quod mollitia, aut nemo deleniti fugiat
+              et, corrupti sequi. Omnis dolorem quos eligendi placeat soluta
+              sint corrupti quod.
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
-</section>
+  </section>
 </template>
 
 
 
 <script>
-import {Splide} from '@splidejs/splide'
+import Splide from "@splidejs/splide";
 export default {
   methods: {
+    useSplide() {
+      new Splide(".splide", {
+        type: "loop",
+        perPage: 1,
+        autoplay: true,
+        interval: 3000, // How long to display each slide
+        pauseOnHover: true, // m
+        pauseOnFocus: false, // must be false
+        resetProgress: false,
+      }).mount();
+    },
+
     initLeadersPage() {
-      document.addEventListener('DOMContentLoaded', function () {
-    var splide = new Splide('.splide', {
-      type         : 'loop',
-      perPage      : 1,
-      autoplay     : true,
-      interval     : 3000, // How long to display each slide
-      pauseOnHover : true, // m
-      pauseOnFocus : false, // must be false
-      resetProgress: false
-    })
-    splide.mount();
-  })
-  
-  // end of splider js
+        this.useSplide();
 
+      // end of splider js
 
-  // FAQ SECTION
-let faqtoggles = document.getElementsByClassName('faqtoggle');
-let faqcontentDiv = document.getElementsByClassName('faqcontent');
-let faqicons = document.getElementsByClassName('faqicon');
+      // FAQ SECTION
+      let faqtoggles = document.getElementsByClassName("faqtoggle");
+      let faqcontentDiv = document.getElementsByClassName("faqcontent");
+      let faqicons = document.getElementsByClassName("faqicon");
 
-for(let i=0; i<faqtoggles.length; i++){
-  faqtoggles[i].addEventListener('click', ()=>{
-        if( parseInt(faqcontentDiv[i].style.height) != faqcontentDiv[i].scrollHeight){
-          faqcontentDiv[i].style.height = faqcontentDiv[i].scrollHeight + "px";
-          faqicons[i].classList.remove('fa-chevron-down');
-          faqicons[i].classList.add('fa-chevron-up');
-        }
-        else{
-          faqcontentDiv[i].style.height = "0px";
-          faqicons[i].classList.remove('fa-chevron-up');
-          faqicons[i].classList.add('fa-chevron-down');
-        }
+      for (let i = 0; i < faqtoggles.length; i++) {
+        faqtoggles[i].addEventListener("click", () => {
+          if (
+            parseInt(faqcontentDiv[i].style.height) !=
+            faqcontentDiv[i].scrollHeight
+          ) {
+            faqcontentDiv[i].style.height =
+              faqcontentDiv[i].scrollHeight + "px";
+            faqicons[i].classList.remove("fa-chevron-down");
+            faqicons[i].classList.add("fa-chevron-up");
+          } else {
+            faqcontentDiv[i].style.height = "0px";
+            faqicons[i].classList.remove("fa-chevron-up");
+            faqicons[i].classList.add("fa-chevron-down");
+          }
 
-        for(let j=0; j<faqcontentDiv.length; j++){
-            if(j!==i){
-            faqcontentDiv[j].style.height = "0px";
-            faqicons[j].classList.remove('fa-chevron-up');
-            faqicons[j].classList.add('fa-chevron-down');
+          for (let j = 0; j < faqcontentDiv.length; j++) {
+            if (j !== i) {
+              faqcontentDiv[j].style.height = "0px";
+              faqicons[j].classList.remove("fa-chevron-up");
+              faqicons[j].classList.add("fa-chevron-down");
             }
-        }
-    });
-}
-
-
-
+          }
+        });
+      }
     },
   },
-  created() {
+  mounted() {
     this.initLeadersPage();
-  }
+  },
 };
 </script>
 
@@ -685,7 +832,7 @@ for(let i=0; i<faqtoggles.length; i++){
   top: 15rem;
   z-index: -1;
 }
-.svg-background{
+.svg-background {
   position: relative;
 }
 .splide__arrows {
@@ -760,8 +907,6 @@ for(let i=0; i<faqtoggles.length; i++){
   font-size: 17px;
 }
 
-
-
 .splide .splide__pagination {
   position: relative;
   top: -1rem;
@@ -832,7 +977,7 @@ for(let i=0; i<faqtoggles.length; i++){
   font-weight: 600;
 }
 .faqwrapper i {
-  color: #3374EA;
+  color: #3374ea;
 }
 .faqtoggle {
   width: 100%;
@@ -1694,8 +1839,6 @@ for(let i=0; i<faqtoggles.length; i++){
   only screen and (min--moz-device-pixel-ratio: 2),
   only screen and (-o-min-device-pixel-ratio: 2/1),
   only screen and (min-device-pixel-ratio: 2) {
-
-
   .computer-blob {
     display: block;
     object-fit: cover;
@@ -1705,7 +1848,6 @@ for(let i=0; i<faqtoggles.length; i++){
     height: 40rem;
     transform: translateY(27px);
     z-index: -1;
-
   }
   .appui {
     position: absolute;
@@ -1713,7 +1855,6 @@ for(let i=0; i<faqtoggles.length; i++){
     left: 40rem;
     width: 30%;
   }
-
 
   .app-downloads {
     text-align: center;
@@ -1777,7 +1918,7 @@ for(let i=0; i<faqtoggles.length; i++){
     margin-right: 13.5rem;
     margin-top: 20rem;
   }
-  
+
   .app-downloads.wrapper {
     position: relative;
     top: -9rem;
@@ -1790,6 +1931,6 @@ for(let i=0; i<faqtoggles.length; i++){
     display: inline-block;
     width: 10rem;
     margin: 2rem 1rem;
-  } 
+  }
 }
 </style>
