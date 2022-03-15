@@ -468,10 +468,10 @@ export default {
   padding: 0 20px 50px;
   /* background: transparent linear-gradient(180deg, #22a1f5 0%, #677bff 100%)
     no-repeat padding-box; */
-  background: transparent linear-gradient(180deg, #22a1f5 0%, #b292db 100%) 0%
+  background: transparent linear-gradient(180deg, #22a1f5 0%, #28a1f1 100%) 0%
     0% no-repeat padding-box;
 
-  box-shadow: 0px 3px 6px #00000008;
+  box-shadow: 10px  #00000008;
   margin: 9rem auto 5rem;
   font-family: "Montserrat", sans-serif;
   border-radius: 10px;

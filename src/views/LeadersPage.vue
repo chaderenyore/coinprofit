@@ -18,7 +18,7 @@
     <div class="leaders-about">
       <h1>Make Money By Letting Others See Your Trades</h1>
 
-      <img src="@/assets/images/appUI.svg" alt="" class="appui" />
+      <img src="@/assets/images/leaders/leaderUI.png" alt="" class="appui" />
 
       <div class="signal-packs">
         <div class="pack-img-wrapper">
@@ -476,10 +476,7 @@
           </button>
           <div class="faqcontent">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
-              aliquam facere adipisci quod mollitia, aut nemo deleniti fugiat
-              et, corrupti sequi. Omnis dolorem quos eligendi placeat soluta
-              sint corrupti quod.
+              Anyone can be a leader! If you're crypto guru or you have some followers, you can sign up as a leader.
             </p>
           </div>
         </div>
@@ -490,16 +487,13 @@
           </button>
           <div class="faqcontent">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
-              aliquam facere adipisci quod mollitia, aut nemo deleniti fugiat
-              et, corrupti sequi. Omnis dolorem quos eligendi placeat soluta
-              sint corrupti quod.
+              That depends mostly on you. You can choose to charge any amount monthly/yearly/lifetime for people to subscribe to you. How much you make at the end of the day, depends on how much you charge plus the number of subscribers.
             </p>
           </div>
         </div>
         <div class="faqwrapper">
           <button class="faqtoggle">
-            <h3>Question 3</h3>
+            <h3>How Do I Get Paid As A Leader?</h3>
             <i class="fa fa-chevron-down faqicon"></i>
           </button>
           <div class="faqcontent">
@@ -515,7 +509,7 @@
       <div class="faqcontainer faqtwo">
         <div class="faqwrapper">
           <button class="faqtoggle">
-            <h3>Queston 4</h3>
+            <h3>Is There A Subscribers Limit?</h3>
             <i class="fa fa-chevron-down faqicon"></i>
           </button>
           <div class="faqcontent">
@@ -529,7 +523,7 @@
         </div>
         <div class="faqwrapper">
           <button class="faqtoggle">
-            <h3>Question 5</h3>
+            <h3>What's the difference between followers and subscribers?</h3>
             <i class="fa fa-chevron-down faqicon"></i>
           </button>
           <div class="faqcontent">
@@ -543,7 +537,7 @@
         </div>
         <div class="faqwrapper">
           <button class="faqtoggle">
-            <h3>Question 6</h3>
+            <h3>How Do I Get Started As A Leader?</h3>
             <i class="fa fa-chevron-down faqicon"></i>
           </button>
           <div class="faqcontent">
