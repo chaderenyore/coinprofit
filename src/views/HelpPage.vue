@@ -67,7 +67,7 @@
         <div class="flex items-center">
           <img class="h-10" src="@/assets/images/okex-2.svg" alt="Email" />
           <p class="help__contact--card-p ml-3 font-medium">
-            contact@coinprofitapp.com
+            contact@coinprofitapp<span class="inline-block">.com</span>
           </p>
         </div>
       </div>

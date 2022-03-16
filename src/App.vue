@@ -100,6 +100,18 @@ body {
   background-color: #3374ea;
 }
 
+@media only screen and (max-width: 1024px) {
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  ::-webkit-scrollbar-track {
+    display: none;
+  }
+  ::-webkit-scrollbar-thumb {
+    display: none;
+  }
+}
+
 li {
   list-style: none;
 }
