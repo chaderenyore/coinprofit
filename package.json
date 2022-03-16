@@ -14,7 +14,8 @@
     "jquery": "^3.6.0",
     "swiper": "^8.0.7",
     "vue": "^3.2.31",
-    "vue-router": "^4.0.14"
+    "vue-router": "^4.0.14",
+    "vue-slicezone": "^0.1.2"
   },
   "devDependencies": {
     "@babel/core": "^7.17.5",

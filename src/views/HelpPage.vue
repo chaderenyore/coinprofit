@@ -27,7 +27,7 @@
         search down below in order to faster find to answer to your question.
       </p>
       <div>
-        <form action="#" class="help__section--search__form">
+        <form action="#" @submit.prevent class="help__section--search__form">
           <input
             type="text"
             class="help__section--search__input"
@@ -39,7 +39,17 @@
     </div>
   </section>
 
-  <help-post-card></help-post-card>
+  <section v-if="data" class="w-4/5 m-auto">
+    <h1 class="text-center font-extrabold text-3xl mb-3 text-[#3374ea]">
+      {{ $prismic.asText(data.data.welcome_heading) }}
+    </h1>
+    <p class="help__article text-center font-medium max-w-[636px] m-auto">
+      <PrismicRichText :field="data.data.welcome_text" />
+    </p>
+  </section>
+  <section class="w-[90%] m-auto">
+    <help-post-card></help-post-card>
+  </section>
 
   <div class="help__section--contact">
     <div class="help__section__texts">
@@ -49,28 +59,36 @@
       </p>
     </div>
 
-    <div class="help__contact-card--container">
-      <div class="help__contact--card">
-        <h2 class="help__contact--card__h2">Email Us</h2>
-        <div class="help__contact--card__div">
-          <img src="../assets/images/okex-2.svg" alt="Email" />
-          <p>contact@coinprofitapp.com</p>
+    <div
+      class="flex flex-col md:flex-wrap justify-center md:flex-row gap-6 md:gap-4"
+    >
+      <div class="help__contact--card p-4 rounded-xl">
+        <h2 class="text-xl font-bold mb-3 text-[#3374EA]">Email Us</h2>
+        <div class="flex items-center">
+          <img class="h-10" src="@/assets/images/okex-2.svg" alt="Email" />
+          <p class="help__contact--card-p ml-3 font-medium">
+            contact@coinprofitapp.com
+          </p>
         </div>
       </div>
 
-      <div class="help__contact--card">
-        <h2 class="help__contact--card__h2">Call Us</h2>
-        <div class="help__contact--card__div">
-          <img src="../assets/images/okex-2.svg" alt="Email" />
-          <p>+380 66 033 71 79</p>
+      <div class="help__contact--card p-4 rounded-xl">
+        <h2 class="text-xl font-bold mb-3 text-[#3374EA]">Call Us</h2>
+        <div class="flex items-center">
+          <img class="h-10" src="@/assets/images/okex-2.svg" alt="Email" />
+          <p class="help__contact--card-p ml-3 font-medium">
+            +380 66 033 71 79
+          </p>
         </div>
       </div>
 
-      <div class="help__contact--card">
-        <h2 class="help__contact--card__h2">Find Us</h2>
-        <div class="help__contact--card__div">
-          <img src="../assets/images/okex-2.svg" alt="Email" />
-          <p>Find Us</p>
+      <div class="help__contact--card p-4 rounded-xl">
+        <h2 class="text-xl font-bold mb-3 text-[#3374EA]">Find Us</h2>
+        <div class="flex items-center">
+          <img class="h-10" src="@/assets/images/okex-2.svg" alt="Email" />
+          <p class="help__contact--card-p ml-3 font-medium">
+            Ukraine, Sumy, st. Kharkivska 121
+          </p>
         </div>
       </div>
     </div>
@@ -78,10 +96,19 @@
 </template>
 
 <script>
+import { useSinglePrismicDocument } from "@prismicio/vue";
 import HelpPostCard from "../components/Help/HelpPostCard.vue";
 export default {
   components: {
     HelpPostCard,
+  },
+
+  setup() {
+    const { data } = useSinglePrismicDocument("help_welcome");
+
+    return {
+      data,
+    };
   },
 };
 </script>
@@ -289,7 +316,7 @@ export default {
 
 .help__contact__h2 {
   font-size: 2rem;
-  font-weight: 700;
+  font-weight: 800;
   color: #3374ea;
   text-align: center;
   margin-bottom: 1.25rem;
@@ -303,42 +330,14 @@ export default {
   text-align: center;
 }
 
-.help__contact-card--container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(18.75rem, 1fr));
-  column-gap: 1.25rem;
-  row-gap: 1.25rem;
-  align-items: center;
-}
-
 .help__contact--card {
-  display: flex;
-  flex-direction: column;
   background: var(--help-contact-box);
-  padding: 1.25rem;
-  box-shadow: 0 1.25rem 1.0625rem #1c192305;
-  border-radius: 0.15rem;
+  box-shadow: 0 20px 17px #1c192305;
 }
-
-.help__contact--card__h2 {
-  font-size: 1.375rem;
-  color: #3374ea;
-  margin-bottom: 0.75rem;
-}
-
-.help__contact--card__div {
-  display: flex;
-  align-items: center;
-}
-
-.help__contact--card__div img {
-  width: 10%;
-}
-
-.help__contact--card__div p {
-  font-size: 1.0625rem;
-  font-weight: 500;
+.help__contact--card-p {
   color: var(--help-contact-box-text);
-  margin-left: 0.6875rem;
+}
+.help__article {
+  color: var(--help-article-text);
 }
 </style>

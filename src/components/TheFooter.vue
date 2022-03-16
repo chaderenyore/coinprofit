@@ -98,7 +98,7 @@
           <div class="footerContent">
             <a href="#"><p>Terms and Condition</p></a>
             <a href="#"><p>Privacy policy</p></a>
-            <a href="/AML.html"><p>AML Policies</p></a>
+            <a href="/AML_POLICIES"><p>AML Policies</p></a>
           </div>
         </div>
       </div>
@@ -257,7 +257,7 @@ export default {
   },
   mounted() {
     this.initFooter();
-  }
+  },
 };
 </script>
 

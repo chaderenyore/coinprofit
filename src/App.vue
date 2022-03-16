@@ -47,6 +47,10 @@ export default {
   --help-article-text: #525b6d;
   --help-contact-box: #ffffff;
   --help-contact-box-text: #525b6d;
+  --article-container: #ffffff;
+  --article-date: #8993a7;
+  --article-tag: #ecf5ff;
+  --author-bio: #707070;
   --tab-sm: 48.75rem;
 }
 
@@ -61,6 +65,10 @@ export default {
   --help-article-text: #b3bcce;
   --help-search: #202230;
   --help-contact-box: #202230;
+  --article-container: #09090b;
+  --article-date: #fccf3b;
+  --article-tag: #202230;
+  --author-bio: #b3bcce;
   --help-contact-box-text: #f2f8ff;
 }
 html {
