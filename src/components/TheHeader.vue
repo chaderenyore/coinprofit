@@ -4,12 +4,12 @@
   <header class="header">
     <nav class="navbar">
       <div class="nav-logo">
-        <a href="#"
+        <router-link to="/"
           ><img
             src="../assets/images/coin-profit-logo-11@1x.png"
             alt="LOGO"
             class="logo"
-        /></a>
+        /></router-link>
       </div>
       <img
         src="@/assets/images/toggle.png"
