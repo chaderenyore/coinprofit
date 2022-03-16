@@ -1,10 +1,10 @@
 <template>
   <section>
-    <PrismicImage
-      v-for="image in slice.items"
-      :key="image.alt"
-      :field="image"
-    />
+    <ul>
+      <li v-for="item in slice.items" :key="item.alt">
+        <PrismicImage :field="item.image" />
+      </li>
+    </ul>
   </section>
 </template>
 

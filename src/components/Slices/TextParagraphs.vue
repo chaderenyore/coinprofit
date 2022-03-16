@@ -1,9 +1,11 @@
 <template>
   <div>
     <PrismicText
-      class="text-lg font-medium"
+    v-for="paragraph in slice.items"
+    :key="paragraph.length"
+      class="text-lg mt-2 font-medium"
       wrapper="p"
-      :field="slice.primary.paragraph_texts"
+      :field="paragraph.paragraphs"
     />
   </div>
 </template>
