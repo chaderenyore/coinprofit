@@ -1,7 +1,7 @@
 import { createPrismic } from "@prismicio/vue";
 
 const prismic = createPrismic({
-  endpoint: "nyore",
+  endpoint: "coinprofitapp",
   clientConfig: {
     routes: [
       {
@@ -9,7 +9,7 @@ const prismic = createPrismic({
         path: "/help",
       },
       {
-        type: "help_post",
+        type: "articles",
         path: "/help/:uid",
       },
     ],

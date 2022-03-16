@@ -30,6 +30,10 @@ const routes = [
     name: "SingleHelpPost",
   },
   {
+    path: "/:notfound(.*)",
+    redirect: "/",
+  },
+  {
     path: "/affiliate",
     name: "affiliate",
     component: () => import("../views/AffiliatePage.vue"),
@@ -39,6 +43,12 @@ const routes = [
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
   routes,
+  scrollBehavior() {
+    return {
+      left: 0,
+      top: 0,
+    };
+  },
 });
 
 export default router;

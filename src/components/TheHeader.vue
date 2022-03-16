@@ -12,7 +12,7 @@
         /></a>
       </div>
       <img
-        src="../assets/images/toggle.png"
+        src="@/assets/images/toggle.png"
         alt="Toggle Button"
         id="toggleIcon"
         class="toggle-moon"
@@ -62,10 +62,10 @@ export default {
       let localData = localStorage.getItem("theme");
 
       if (localData == "light") {
-        togglebtn.src = "../assets/images/toggle.png";
+        togglebtn.src = require("@/assets/images/toggle.png");
         document.body.classList.remove("dark-theme");
       } else if (localData == "dark") {
-        togglebtn.src = "../assets/images/toggle-dark.svg";
+        togglebtn.src = require("@/assets/images/toggle-dark.svg");
         document.body.classList.add("dark-theme");
       }
 
@@ -73,10 +73,10 @@ export default {
         document.body.classList.toggle("dark-theme");
 
         if (document.body.classList.contains("dark-theme")) {
-          togglebtn.src = "../assets/images/toggle-dark.svg";
+          togglebtn.src = require("@/assets/images/toggle-dark.svg");
           localStorage.setItem("theme", "dark");
         } else {
-          togglebtn.src = "../assets/images/toggle.png";
+          togglebtn.src = require("@/assets/images/toggle.png");
           localStorage.setItem("theme", "light");
         }
       });
@@ -146,7 +146,7 @@ export default {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* z-index: -1; */
+  z-index: -1;
 }
 
 .toggle-moon {
@@ -182,6 +182,7 @@ nav ul li a:hover {
   color: var(--dark-color);
   border-bottom: 2px solid #3374ea 2px;
 }
+
 
 .actn {
   margin-right: 50px;
@@ -283,7 +284,7 @@ nav ul li a:hover {
     bottom: 400px;
     right: 30px;
     z-index: 10;
-    background: #ffa94f url("../assets/images/rocket.png");
+    /* background: #ffa94f url("../images/rocket.png"); */
     width: 40px;
     height: 40px;
     cursor: pointer;
@@ -316,8 +317,7 @@ nav ul li a:hover {
     border-bottom-right-radius: 15px;
     z-index: 10;
     position: fixed;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
-      rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
   }
   .logo {
     /* height: 90px; */
@@ -414,7 +414,7 @@ nav ul li a:hover {
     bottom: 400px;
     right: 30px;
     z-index: 10;
-    background: #ffa94f url("../assets/images/rocket.png");
+    /* background: #ffa94f url("../images/rocket.png"); */
     width: 40px;
     height: 40px;
     cursor: pointer;
@@ -445,8 +445,7 @@ nav ul li a:hover {
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
     z-index: 10;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
-      rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
   }
   .logo {
     height: 80px;
@@ -462,6 +461,10 @@ nav ul li a:hover {
     position: absolute;
     top: 13px;
     left: 180px;
+    transition: all 0.5s ease-out;
+  }
+  .toggle-moon:active{
+    transition: all;
   }
 
   nav ul {
@@ -524,4 +527,5 @@ nav ul li a:hover {
     transform: translateY(-8px) rotate(-45deg);
   }
 }
+
 </style>
