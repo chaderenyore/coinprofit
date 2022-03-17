@@ -166,6 +166,7 @@
         </div>
       </div>
       <div class="box three">
+        
         <div class="box-img">
           <img
             src="../assets/images/review3.jpeg"
@@ -209,8 +210,15 @@
             Coinprofit helps me also to earn money!
           </p>
         </div>
+         <img
+    src="../assets/images/listtle-Icons/5.svg"
+    alt="little Icon"
+    class="littleicon5"
+  />
       </div>
+     
     </div>
+    
   </section>
   <!-- End Review Section-->
 
@@ -257,6 +265,11 @@
   </section>
   <section class="get-signal">
     <h1>Get Signals From All Your Leaders In One Place</h1>
+     <img
+    src="../assets/images/listtle-Icons/dollarontop.svg"
+    alt="little Icon"
+    class="iconuntop"
+  />
     <div class="blob-signal-wrapper slideIn">
       <img
         src="../assets/images/blob-signal.png"
@@ -298,7 +311,11 @@
     <div class="main-signal-wrapper">
       <img src="../assets/images/main-si.svg" alt="" class="main-signal-img" />
     </div>
-
+    <img
+    src="../assets/images/listtle-Icons/dollar.svg"
+    alt="little Icon"
+    class="dollarsvg"
+  />
     <p class="signal-details">
       Get signals from the leading traders all in one place. Discover and rate
       their signal quality. Share whether or not you’ve been able to profit from
@@ -1202,29 +1219,7 @@ export default {
 
       // PAGE SCROLL ANIMATIONS ENDS HERE
 
-      // About slider starts here
-
-      var slideIndex = 0;
-      showSlides();
-
-      function showSlides() {
-        var i;
-        var slides = document.getElementsByClassName("mySlides");
-        var dots = document.getElementsByClassName("dot");
-        for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";
-        }
-        slideIndex++;
-        if (slideIndex > slides.length) {
-          slideIndex = 1;
-        }
-        for (i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace(" dot-active", "");
-        }
-        slides[slideIndex - 1].style.display = "block";
-        dots[slideIndex - 1].className += " dot-active";
-        setTimeout(showSlides, 2000); // Change image every 2 seconds
-      }
+      
       // About slider ends here
 
       // leaders silder starts here
@@ -1339,29 +1334,34 @@ export default {
 
 .littleicon1 {
   position: absolute;
-  top: 260px;
-  left: 10px;
-  width: 110px;
+  top: 40%;
+  left: 8%;
+  width: 5rem;
 }
 
 .littleicon2 {
   position: absolute;
-  top: 460px;
-  left: 10px;
-  width: 100px;
+  top: 60%;
+  left: 7%;
+  width: 4rem;
 }
 
 .littleicon3 {
   position: absolute;
-  top: 350px;
-  left: 250px;
-  width: 100px;
+  top: 55%;
+  left: 75%;
+  width: 4rem;
 }
 .littleicon4 {
   position: absolute;
-  top: 1050px;
-  left: 10px;
-  width: 100px;
+  top: 140%;
+  left: 1%;
+  width: 4rem;
+  z-index: 1;
+}
+.littleicon5 {
+  position: absolute;
+  width: 1.5rem;
 }
 
 .first-page {
@@ -1603,13 +1603,24 @@ export default {
   margin-top: 20px;
 }
 .copy-traders,
-.see-leaders,
-.get-signal {
+.see-leaders{
   margin: 50px auto 20px;
 }
-/* .copy-img-box {
-  width: 100%;
-} */
+.get-signal {
+  margin-top: 180px;
+}
+ .iconuntop {
+    position: absolute;
+    width:2rem;
+    left: 80%;
+    top: 15%;
+  }
+  .dollarsvg {
+    position: absolute;
+    top: 90%;
+    left: 10%;
+    width:2rem;
+  }
 .copy-img {
   width: 100%;
   margin-left: 10px;
@@ -2252,7 +2263,6 @@ export default {
 .share-portfolio-sec {
   background-color: var(--third-color);
   position: relative;
-  height: 160vh;
 }
 .custom-shape-divider-top-1644670257 {
   position: absolute;
@@ -2935,7 +2945,7 @@ export default {
 
   .share-portfolio-sec {
     height: 140vh;
-    /* padding: 30rem 0; */
+    box-shadow: 3px;
   }
   .share-portfolio h1 {
     text-align: center;
@@ -3365,11 +3375,14 @@ export default {
     width: 70%;
     margin: 0 auto;
   }
-
+  .littleicon5 {
+    display: none;
+  }
   .get-signal {
     position: relative;
-    top: 75rem;
+    top: 85rem;
   }
+
 
   .get-signal h1 {
     color: #3374ea;
@@ -3379,7 +3392,7 @@ export default {
     width: 80%;
     margin: 0 auto;
   }
-
+ 
   .signal-details {
     top: 100px;
     font-size: 30px;
@@ -3470,7 +3483,7 @@ export default {
   }
 
   .meet-leaders {
-    top: 80rem;
+    top: 100rem;
     width: 100%;
     height: 1000px;
     margin-bottom: 1500px;
@@ -3983,6 +3996,7 @@ export default {
     display: inline-block;
     width: 35%;
     margin: 0 auto;
+    margin-right: 1rem;
   }
 
   .appui {
@@ -4137,7 +4151,10 @@ export default {
     position: relative;
     top: 17rem;
   }
-
+  .dollarsvg {
+    top: 70%;
+    left: 25%;
+  }
   .get-signal h1 {
     color: #3374ea;
     font-family: "Montserrat", sans-serif;

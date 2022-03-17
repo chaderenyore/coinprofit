@@ -1,6 +1,19 @@
 <template>
   <section class="about-sec">
     <div class="about_container">
+      <div class="littleIconWrapper">
+        <img src="@/assets/images/listtle-Icons/2.svg" class="svg-2" />
+        <img
+          src="@/assets/images/listtle-Icons/moneygold.svg"
+          class="moneygold"
+        />
+        <img src="@/assets/images/listtle-Icons/6.svg" class="svg-6" />
+        <img src="@/assets/images/listtle-Icons/icon-btc.svg" class="iconBTC" />
+        <img src="@/assets/images/listtle-Icons/dollar.svg" class="litegold" />
+        <img src="@/assets/images/listtle-Icons/1.svg" class="svg-1" />
+        <img src="@/assets/images/listtle-Icons/4.svg" class="svg-4" />
+        <img src="@/assets/images/listtle-Icons/7.svg" class="svg-7" />
+      </div>
       <h1>About us</h1>
       <div class="about-img-wrapper">
         <img src="@/assets/images/about/mainblob.svg" class="share-blob" />
@@ -246,46 +259,49 @@
       <!-- Desktop ends here -->
     </div>
   </section>
+  <BaseCallToAction />
 </template>
 
 <script>
+import BaseCallToAction from "@/components/BaseCallToAction.vue";
 export default {
+  components: {
+    BaseCallToAction,
+  },
+
   data() {
     return {
       slideIndex: 1,
-
-    }
+    };
   },
   methods: {
     currentSlide(n) {
-        this.showSlides(this.slideIndex = n);
-
+      this.showSlides((this.slideIndex = n));
     },
     showSlides(n) {
       var i;
-        var slides = document.getElementsByClassName("mySlides");
-        var dots = document.getElementsByClassName("dot");
-        if (n > slides.length) {
-          this.slideIndex = 1;
-        }
-        if (n < 1) {
-          this.slideIndex = slides.length;
-        }
-        for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";
-        }
-        for (i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[this.slideIndex - 1].style.display = "block";
-        dots[this.slideIndex - 1].className += " active";
-        setTimeout(this.showSlides, 1000);
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {
+        this.slideIndex = 1;
+      }
+      if (n < 1) {
+        this.slideIndex = slides.length;
+      }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[this.slideIndex - 1].style.display = "block";
+      dots[this.slideIndex - 1].className += " active";
+      setTimeout(this.showSlides, 1000);
     },
-
   },
   mounted() {
-    this.showSlides(this.slideIndex)
-  }
+    this.showSlides(this.slideIndex);
+  },
 };
 </script>
 
@@ -296,10 +312,55 @@ export default {
 }
 
 .about_container {
-  width: 80%;
+  width: 90%;
   margin: 4rem auto 0;
 }
-
+.svg-2 {
+  width: 3rem;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  z-index: 1;
+}
+.moneygold {
+  width: 3rem;
+  position: absolute;
+  top: 40%;
+  left: 70%;
+  z-index: 1;
+}
+.iconBTC {
+  width: 2rem;
+  position: absolute;
+  top: 40%;
+  left: 20%;
+  z-index: 1;
+}
+.svg-1 {
+  width: 5rem;
+  position: absolute;
+  top: 60%;
+  left: 42%;
+  z-index: 1;
+}
+.litegold {
+  position: absolute;
+  display: none;
+}
+.svg-4 {
+  width: 4rem;
+  position: absolute;
+  top: 70%;
+  left: 80%;
+  z-index: 1;
+}
+.svg-6 {
+  position: absolute;
+  display: none;
+}
+.svg-7 {
+  display: none;
+}
 .about_container h1 {
   text-align: center;
   color: #3374ea;
@@ -311,11 +372,8 @@ export default {
 .share-blob {
   position: relative;
   margin: 2rem 0;
-  width: 110%;
-  opacity: 0.8;
+  width: 100%;
 }
-
-
 
 .share-portfolio-img-box {
   position: relative;
@@ -323,10 +381,10 @@ export default {
 }
 
 .share-portfolio-img {
-  width: 60%;
+  width: 50%;
   position: absolute;
-  top: 37%;
-  left: 30%;
+  top: 40%;
+  left: 27%;
 }
 
 .about_container p {
@@ -463,7 +521,7 @@ export default {
   background: transparent linear-gradient(180deg, #22a1f5 0%, #28a1f1 100%) 0%
     0% no-repeat padding-box;
 
-  box-shadow: 10px  #00000008;
+  box-shadow: 10px #00000008;
   margin: 9rem auto 5rem;
   font-family: "Montserrat", sans-serif;
   border-radius: 10px;
@@ -694,7 +752,10 @@ export default {
   .about-sec {
     margin-bottom: 20rem;
   }
-
+.about_container {
+  width: 80%;
+  margin: 4rem auto 0;
+}
   .about_container h1 {
     float: left;
     margin-right: 14.5rem;
@@ -717,13 +778,6 @@ export default {
     margin: -5rem 0 2rem;
     width: 50%;
     opacity: 0.8;
-  }
-
-  .share-blob.two {
-    position: absolute;
-    left: 30rem;
-    top: 15rem;
-    opacity: 1;
   }
 
   .share-portfolio-img-box {
@@ -774,6 +828,67 @@ export default {
   .about-sec {
     margin-bottom: 30rem;
   }
+  .svg-2 {
+    display: block;
+    position: absolute;
+    width: 7rem;
+    left: 70%;
+    top: 27%;
+    z-index: 1;
+  }
+  .moneygold {
+    display: block;
+    position: absolute;
+    width: 5rem;
+    left: 80%;
+    top: 60%;
+    z-index: 1;
+  }
+  .iconBTC {
+    display: block;
+    position: absolute;
+    width: 3rem;
+    left: 55%;
+    top: 60%;
+    z-index: 1;
+  }
+  .svg-1 {
+    display: block;
+    position: absolute;
+    width: 8rem;
+    left: 65%;
+    top: 84%;
+    z-index: 1;
+  }
+  .svg-4 {
+    display: block;
+    position: absolute;
+    width: 5rem;
+    left: 40%;
+    top: 80%;
+    z-index: 1;
+  }
+
+  .litegold {
+    position: absolute;
+    display: block;
+  }
+  .svg-6 {
+    position: absolute;
+    display: block;
+    position: absolute;
+    width: 5rem;
+    left: 47%;
+    top: 30%;
+    z-index: 1;
+  }
+  .svg-7 {
+    display: block;
+    width: 5rem;
+    position: absolute;
+    top: 85%;
+    z-index: 1;
+  }
   .about_container h1 {
     float: left;
     margin-right: 14.5rem;
@@ -783,7 +898,7 @@ export default {
   }
   .about_container p {
     float: left;
-    width: 50%;
+    max-width: 40%;
     text-align: left;
     font-size: 1rem;
     line-height: 30px;
@@ -791,25 +906,20 @@ export default {
   .share-blob {
     float: right;
     position: relative;
-    margin: -4rem 0 2rem;
-    width: 40%;
+    margin: -5rem 0 2rem;
+    width: 50%;
     opacity: 0.8;
-  }
-
-  .share-blob.two {
-    position: absolute;
-    top: 10rem;
-    left: 45rem;
-    opacity: 1;
   }
 
   .share-portfolio-img {
     width: 20%;
     position: absolute;
-    top: 8rem;
-    left: 40rem;
-    right: 0;
-    bottom: 0;
+    top: 20%;
+    left: 43%;
+  }
+
+  .core_container {
+    padding-top: 20rem;
   }
   .core_container h1 {
     font-weight: 800;
@@ -899,27 +1009,13 @@ export default {
   only screen and (-o-min-device-pixel-ratio: 2/1),
   only screen and (min-device-pixel-ratio: 2) {
   .share-blob {
-    float: right;
-    position: relative;
-    margin: -2rem 0 2rem;
-    width: 35%;
-    opacity: 0.8;
-  }
-
-  .share-blob.two {
-    position: absolute;
-    top: 13rem;
-    left: 50rem;
-    opacity: 1;
+    width: 50%;
   }
 
   .share-portfolio-img {
-    width: 20%;
-    position: absolute;
-    top: -5rem;
-    left: 46rem;
-    right: 0;
-    bottom: 0;
+    width: 25%;
+    top: 0%;
+    left: 40%;
   }
 }
 </style>
