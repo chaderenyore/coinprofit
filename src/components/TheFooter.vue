@@ -63,7 +63,7 @@
             <i class="fa fa-chevron-down footerIcon" style="color: #3374ea"></i>
           </button>
           <div class="footerContent">
-            <a href="#"><p>About</p></a>
+            <a href="#"><p>About Us</p></a>
             <a href="#"><p>Blog</p></a>
             <a href="#"><p>Contact</p></a>
           </div>
@@ -180,7 +180,7 @@
       <div class="main-app-container">
         <div class="company-head">
           <h3>Compnay</h3>
-          <a href="#"><p>About</p></a>
+          <a href="#"><p>About Us</p></a>
           <a href="#"><p>Blog</p></a>
           <a href="#"><p>Contact</p></a>
         </div>

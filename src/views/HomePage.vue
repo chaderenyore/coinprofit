@@ -40,36 +40,18 @@
       />
     </div>
     <div class="about">
-      <h1>Designed To Help You Make Money</h1>
+      <h1>Subscribe to your favourite crypto influencers/leaders </h1>
 
       <div class="slideshow-container">
-        <div class="mySlides fade">
+        <div class="mySlides ">
           <p>
-            Automatically track your entire portfolio across multiple exchanges
+            See the coins they buy, when they buy and when they sell!
           </p>
         </div>
 
-        <div class="mySlides fade">
-          <p>Create your own trading plans and record your own trade lessons</p>
-        </div>
-
-        <div class="mySlides fade">
-          <p>
-            <b>Copy the best traders.</b> See the coins they buy, when they sell
-          </p>
-        </div>
-        <div class="mySlides fade">
-          <p>Get signal from all leaders</p>
-        </div>
+       
       </div>
       <br />
-
-      <div class="dot-wrapper">
-        <span class="dot active"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-      </div>
       <div class="app-downloads">
         <a href="#" target="_blank" rel="noopener noreferrer"
           ><img
@@ -3277,29 +3259,13 @@ export default {
     font-weight: unset;
     width: 60%;
     color: var(--fourth-color);
-    font-size: 17px;
+    font-size: 1rem;
     font-family: "Montserrat", sans-serif;
     text-align: left;
-    margin: 10px;
+    margin: 10px 0 ;
   }
 
-  /* The dots/bullets/indicators */
-  .dot-wrapper {
-    text-align: left;
-    margin-left: 10px;
-    margin-top: -20px;
-  }
-  .dot {
-    height: 10px;
-    width: 10px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-  }
-  .dot-active {
-    background-color: #3374ea;
-  }
+
   .app-downloads {
     position: absolute;
     margin-top: 2rem;
@@ -3991,19 +3957,24 @@ export default {
     text-align: left;
     margin: 7px 0;
     color: #3374ea;
-    font-size: 45px;
+    font-size: 3rem;
     font-weight: 800;
     letter-spacing: 0;
   }
   .slideshow-container p {
     width: 60%;
-    font-size: 14px;
+    font-size: 1rem;
     font-family: "Montserrat", sans-serif;
+    margin-bottom: 0;
+  }
+  .app-downloads {
+    margin-top: 0;
+    margin-left: 0;
   }
   .app-download {
     display: inline-block;
     width: 35%;
-    margin: 10px auto;
+    margin: 0 auto ;
   }
 
   .appui {
