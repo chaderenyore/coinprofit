@@ -1219,12 +1219,6 @@ export default {
 
       // PAGE SCROLL ANIMATIONS ENDS HERE
 
-<<<<<<< HEAD
-=======
-      
-      // About slider ends here
-
->>>>>>> iroro
       // leaders silder starts here
 
       function initParadoxWay() {

@@ -280,13 +280,8 @@ export default {
     },
     showSlides(n) {
       var i;
-<<<<<<< HEAD
       let slides = document.getElementsByClassName("mySlides");
       let dots = document.getElementsByClassName("dot");
-=======
-      var slides = document.getElementsByClassName("mySlides");
-      var dots = document.getElementsByClassName("dot");
->>>>>>> iroro
       if (n > slides.length) {
         this.slideIndex = 1;
       }
