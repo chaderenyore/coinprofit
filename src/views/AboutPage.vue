@@ -253,42 +253,38 @@ export default {
   data() {
     return {
       slideIndex: 1,
-
-    }
+    };
   },
   methods: {
     currentSlide(n) {
-        this.showSlides(this.slideIndex = n);
-
+      this.showSlides((this.slideIndex = n));
     },
     showSlides(n) {
       var i;
-        var slides = document.getElementsByClassName("mySlides");
-        var dots = document.getElementsByClassName("dot");
-        if (n > slides.length) {
-          this.slideIndex = 1;
-        }
-        if (n < 1) {
-          this.slideIndex = slides.length;
-        }
-        for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";
-        }
-        for (i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[this.slideIndex - 1].style.display = "block";
-        dots[this.slideIndex - 1].className += " active";
-        setTimeout(this.showSlides, 1000);
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {
+        this.slideIndex = 1;
+      }
+      if (n < 1) {
+        this.slideIndex = slides.length;
+      }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[this.slideIndex - 1].style.display = "block";
+      dots[this.slideIndex - 1].className += " active";
+      setTimeout(this.showSlides, 1000);
     },
-
   },
   mounted() {
-    this.showSlides(this.slideIndex)
-  }
+    this.showSlides(this.slideIndex);
+  },
 };
 </script>
-
 
 <style scoped>
 .about-sec {
@@ -314,8 +310,6 @@ export default {
   width: 110%;
   opacity: 0.8;
 }
-
-
 
 .share-portfolio-img-box {
   position: relative;
@@ -463,7 +457,7 @@ export default {
   background: transparent linear-gradient(180deg, #22a1f5 0%, #28a1f1 100%) 0%
     0% no-repeat padding-box;
 
-  box-shadow: 10px  #00000008;
+  box-shadow: 10px #00000008;
   margin: 9rem auto 5rem;
   font-family: "Montserrat", sans-serif;
   border-radius: 10px;

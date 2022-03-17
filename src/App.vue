@@ -19,8 +19,14 @@ export default {
     TheHeader: TheHeader,
     TheFooter: TheFooter,
   },
-  data() {
-    return {};
+
+  watch: {
+    $route: {
+      handler(to) {
+        document.title = to.meta.title || "Coinprofit";
+      },
+      immediate: true,
+    },
   },
 };
 </script>
@@ -60,6 +66,7 @@ p {
   --article-date: #8993a7;
   --article-tag: #ecf5ff;
   --author-bio: #707070;
+  --article-text: #525b6d;
   --tab-sm: 48.75rem;
   /* --fifth-color: #000000; for paragraphs with black background */
 }
@@ -80,6 +87,7 @@ p {
   --article-date: #fccf3b;
   --article-tag: #202230;
   --author-bio: #b3bcce;
+  --article-text: #b3bcce;
   --help-contact-box-text: #f2f8ff;
 }
 html {

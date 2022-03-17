@@ -2,7 +2,10 @@
   <main v-if="post" class="pt-24">
     <article class="article-container p-0 rounded-3xl w-[90%] m-auto">
       <header>
-        <PrismicImage class="rounded-3xl mb-4" :field="post.data.cover_image" />
+        <PrismicImage
+          class="rounded-3xl mb-4 w-[100%]"
+          :field="post.data.cover_image"
+        />
         <section class="w-[90%] m-auto">
           <p class="article-date font-medium text-[0.9375rem]">
             <time> {{ articleDate }}</time>
@@ -15,36 +18,46 @@
               <li
                 v-for="tag in post.tags"
                 :key="tag"
-                class="article-tag text-sm text-[#3374EA] rounded-full px-3 py-2"
+                class="article-tag text-sm text-[#3374EA] font-semibold rounded-full px-3 py-2"
               >
                 #{{ tag }}
               </li>
             </ul>
           </section>
-          <figure class="flex flex-row gap-3 mt-4 items-center">
+          <figure class="flex flex-row gap-3 mt-6 items-center mb-8">
             <PrismicImage
-              class="w-16 h-16 rounded-full border-4 border-[#ECF5FF]"
+              class="w-16 h-16 block rounded-full border-solid border-4 border-[#ECF5FF]"
               :field="author.avatar"
             />
             <figcaption class="flex flex-col gap-1">
-              <h1 class="font-bold text-lg text-[#3374EA]">
+              <h1 class="font-bold text-base md:text-lg text-[#3374EA]">
                 <PrismicRichText :field="author.name" wrapper="h1" />
               </h1>
-              <h5 class="author-bio text-sm font-medium">
-                <PrismicRichText :field="author.bio" wrapper="h5" />
-              </h5>
+              <p class="author-bio text-sm md:text-base font-medium">
+                <PrismicRichText :field="author.bio" wrapper="p" />
+              </p>
             </figcaption>
           </figure>
         </section>
       </header>
-      <main>
+      <main class="w-[90%] m-auto">
         <SliceZone :slices="post.data.body" :components="components" />
       </main>
+      <footer class="w-[90%] m-auto">
+        <section class="article__review rounded-lg p-8">
+          <h1 class="text-[#3374EA] mb-3">Share This Post</h1>
+          <div>
+            <img src="@/assets/images/twitter.svg" alt="Share on twitter" />
+          </div>
+        </section>
+      </footer>
     </article>
+  <BaseCallToAction />
   </main>
 </template>
 
 <script>
+import BaseCallToAction from '@/components/BaseCallToAction.vue';
 import { defineSliceZoneComponents } from "@prismicio/vue";
 import IntroductionText from "@/components/Slices/IntroductionText.vue";
 import TextParagraphs from "@/components/Slices/TextParagraphs.vue";
@@ -52,6 +65,9 @@ import ImageCard from "@/components/Slices/ImageCard.vue";
 import ImageGallery from "@/components/Slices/ImageGallery.vue";
 
 export default {
+  components: {
+    BaseCallToAction
+  },
   data() {
     return {
       post: null,
@@ -91,42 +107,6 @@ export default {
     this.getPost();
   },
 };
-
-// import NotFound from "@/components/Help/NotFound.vue";
-// import { ref } from "vue";
-// import { useRoute } from "vue-router";
-// import {
-//   usePrismicDocumentByUID,
-//   defineSliceZoneComponents,
-// } from "@prismicio/vue";
-// import BannerImage from "../../components/Slices/BannerImage.vue";
-// import GalleryAndText from "../../components/Slices/GalleryAndText.vue";
-
-// export default {
-//   setup() {
-//     const route = useRoute();
-//     const { data: post } = usePrismicDocumentByUID(
-//       "help_post",
-//       route.params.uid
-//     );
-
-//     const components = ref(
-//       defineSliceZoneComponents({
-//         banner_image: BannerImage,
-//         gallery_and_text: GalleryAndText,
-//       })
-//     );
-
-//     return {
-//       post,
-//       components,
-//     };
-//   },
-
-//   // components: {
-//   //   NotFound,
-//   // },
-// };
 </script>
 
 <style scoped>

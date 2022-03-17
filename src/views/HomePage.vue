@@ -1202,31 +1202,6 @@ export default {
 
       // PAGE SCROLL ANIMATIONS ENDS HERE
 
-      // About slider starts here
-
-      var slideIndex = 0;
-      showSlides();
-
-      function showSlides() {
-        var i;
-        var slides = document.getElementsByClassName("mySlides");
-        var dots = document.getElementsByClassName("dot");
-        for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";
-        }
-        slideIndex++;
-        if (slideIndex > slides.length) {
-          slideIndex = 1;
-        }
-        for (i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace(" dot-active", "");
-        }
-        slides[slideIndex - 1].style.display = "block";
-        dots[slideIndex - 1].className += " dot-active";
-        setTimeout(showSlides, 2000); // Change image every 2 seconds
-      }
-      // About slider ends here
-
       // leaders silder starts here
 
       function initParadoxWay() {

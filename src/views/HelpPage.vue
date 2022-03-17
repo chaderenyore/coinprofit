@@ -206,7 +206,7 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0.5rem;
+  padding: 0.3rem;
   border-radius: 2.25rem;
   box-shadow: 0 1.5625rem 1.25rem #1c192305;
 }
@@ -246,6 +246,7 @@ export default {
   padding: 0.875rem 1.875rem;
   border-radius: 12.5rem;
   color: white;
+  box-shadow: 0 10 10 #22a1f51a;
 }
 
 @media only screen and (min-width: 48.75rem) {

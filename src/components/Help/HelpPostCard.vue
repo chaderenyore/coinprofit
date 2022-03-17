@@ -1,6 +1,6 @@
 <template>
   <div v-if="helpost">
-    <ul class="md:grid gap-4 grid-cols-3 grid-rows-3">
+    <ul class="flex justify-center flex-wrap gap-y-6 gap-x-8">
       <li v-for="post in helpost.results" :key="post.uid">
         <article
           class="help__card--article p-6 rounded-3xl max-w-[360px] max-h-[650px]"
@@ -10,12 +10,23 @@
             class="w-[100%] rounded-3xl mb-3"
           />
           <section>
+            <section class="mb-3">
+              <ul class="flex flex-row gap-3 justify-around">
+                <li
+                  v-for="tag in post.tags"
+                  :key="tag"
+                  class="article-tag font-medium text-[#3374EA] rounded-full px-3 py-2"
+                >
+                  #{{ tag }}
+                </li>
+              </ul>
+            </section>
             <PrismicRichText
               :field="post.data.article_title"
               class="text-[#3374EA] text-2xl font-bold mb-4"
               wrapper="h1"
             />
-            <p class="card-article__text font-medium text-lg leading-8">
+            <p class="card-article__text font-medium text-lg leading-8 mb-3">
               {{ $prismic.asText(post.data.preview_text) }}{{ "..." }}
             </p>
             <prismic-link :field="post">
@@ -47,7 +58,6 @@ export default {
   methods: {
     async getData() {
       this.helpost = await this.$prismic.client.getByType("articles");
-      console.log(this.helpost);
     },
   },
   mounted() {
@@ -64,5 +74,9 @@ export default {
 
 .card-article__text {
   color: var(--help-article-text);
+}
+
+.article-tag {
+  background: var(--article-tag);
 }
 </style>
