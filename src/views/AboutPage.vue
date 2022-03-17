@@ -3,8 +3,7 @@
     <div class="about_container">
       <h1>About us</h1>
       <div class="about-img-wrapper">
-        <img src="@/assets/images/share-blob.png" class="share-blob" />
-        <img src="@/assets/images/about/blob1.png" class="share-blob two" />
+        <img src="@/assets/images/about/mainblob.svg" class="share-blob" />
 
         <div class="share-portfolio-box">
           <img
@@ -312,15 +311,11 @@ export default {
 .share-blob {
   position: relative;
   margin: 2rem 0;
-  width: 100%;
+  width: 110%;
   opacity: 0.8;
 }
 
-.share-blob.two {
-  position: absolute;
-  left: 0;
-  opacity: 1;
-}
+
 
 .share-portfolio-img-box {
   position: relative;
@@ -330,11 +325,8 @@ export default {
 .share-portfolio-img {
   width: 60%;
   position: absolute;
-  top: 3rem;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
+  top: 37%;
+  left: 30%;
 }
 
 .about_container p {
