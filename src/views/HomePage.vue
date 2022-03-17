@@ -3978,7 +3978,7 @@ export default {
     text-align: left;
     margin: 7px 0;
     color: #3374ea;
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 800;
     letter-spacing: 0;
   }

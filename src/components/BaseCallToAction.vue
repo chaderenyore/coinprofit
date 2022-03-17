@@ -46,7 +46,7 @@
   .svg-untop {
     position: absolute;
     width: 2rem;
-    left: 80%;
+    left: 88%;
     top: 35%;
   }
   .svg-1 {
@@ -55,9 +55,12 @@
     left: 40%;
     top: 0;
   }
+  .svg-4 {
+    display: none;
+  }
   .svg-7 {
     position: absolute;
-    width: 4rem;
+    width: 3rem;
     left: 80%;
     top: 0;
   }
@@ -65,6 +68,9 @@
     position: absolute;
     width: 4rem;
     bottom: 0;
+  }
+    .btc-lite {
+    display: none;
   }
   .btc-svg {
     position: absolute;
@@ -186,6 +192,7 @@
     top: 40%;
   }
    .svg-4 {
+     display: block;
     position: absolute;
     width: 4rem;
     left: -1%;
@@ -198,6 +205,7 @@
     top: 58%;
   }
   .btc-lite {
+    display: block;
     position: absolute;
     width: 3rem;
     left: 20%;
