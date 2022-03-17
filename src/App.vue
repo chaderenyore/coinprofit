@@ -49,16 +49,38 @@ p {
   --nav-light: #ffffff;
   --third-color: #ffffff; /* for white background like the boxes, FAQ and the footer section */
   --fourth-color: #525b6d; /* for paragraphs..*/
-  --fifth-color: #000000; /* for paragraphs with black background*/
+  --fifth-color: #1d1c1c; /* for paragraphs with black background*/
+  --help-hero-text: #525b6d;
+  --help-hero-card: #ffffff;
+  --help-search: #ffffff;
+  --help-article-text: #525b6d;
+  --help-contact-box: #ffffff;
+  --help-contact-box-text: #525b6d;
+  --article-container: #ffffff;
+  --article-date: #8993a7;
+  --article-tag: #ecf5ff;
+  --author-bio: #707070;
+  --tab-sm: 48.75rem;
+  /* --fifth-color: #000000; for paragraphs with black background */
 }
 
 .dark-theme {
   --light-color: #13141c;
   --dark-color: #f2f8ff;
-  --nav-light: #09090b;;
+  --nav-light: #09090b;
   --third-color: #09090b;
   --fourth-color: #f2f8ff;
   --fifth-color: #f2f8ff;
+  --help-hero-text: #b3bcce;
+  --help-hero-card: #1c2029;
+  --help-article-text: #b3bcce;
+  --help-search: #202230;
+  --help-contact-box: #202230;
+  --article-container: #09090b;
+  --article-date: #fccf3b;
+  --article-tag: #202230;
+  --author-bio: #b3bcce;
+  --help-contact-box-text: #f2f8ff;
 }
 html {
   scroll-behavior: smooth;
@@ -78,6 +100,18 @@ body {
   background-color: #3374ea;
 }
 
+@media only screen and (max-width: 1024px) {
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  ::-webkit-scrollbar-track {
+    display: none;
+  }
+  ::-webkit-scrollbar-thumb {
+    display: none;
+  }
+}
+
 li {
   list-style: none;
 }
@@ -85,7 +119,6 @@ li {
 a {
   text-decoration: none;
 }
-
 
 .backdrop.active {
   width: 100vw;
@@ -96,5 +129,4 @@ a {
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 1;
 }
-
 </style>
