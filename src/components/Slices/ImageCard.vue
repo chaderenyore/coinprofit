@@ -9,7 +9,7 @@
 
 <script>
 export default {
-  name: "TextParagraps",
+  name: "ImageCard",
   props: {
     slice: Object,
   },

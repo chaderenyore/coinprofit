@@ -1,7 +1,7 @@
 <template>
   <main v-if="post" class="pt-24 article-main">
     <article
-      class="article-container p-0 rounded-3xl w-[90%] md:w-[60%] lg:w-[50%] m-auto"
+      class="article-container p-0 rounded-3xl w-[90%] md:w-[60%] lg:w-2/5 m-auto"
     >
       <header>
         <PrismicImage
@@ -65,6 +65,7 @@ import IntroductionText from "@/components/Slices/IntroductionText.vue";
 import TextParagraphs from "@/components/Slices/TextParagraphs.vue";
 import ImageCard from "@/components/Slices/ImageCard.vue";
 import ImageGallery from "@/components/Slices/ImageGallery.vue";
+import VideoPlayer from "@/components/Slices/VideoPlayer.vue";
 
 export default {
   components: {
@@ -78,6 +79,7 @@ export default {
         text_paragraphs: TextParagraphs,
         image: ImageCard,
         gallery_of_images: ImageGallery,
+        video: VideoPlayer,
       }),
       articleDate: null,
       author: null,
