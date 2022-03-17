@@ -66,14 +66,11 @@
     width: 4rem;
     bottom: 0;
   }
-
   .btc-svg {
     position: absolute;
     width: 2rem;
     top: 43%;
   }
-
-
   .moneygold {
     position: absolute;
     width: 4rem;
@@ -86,7 +83,6 @@
     left: 52%;
     bottom: 0;
   }
-
 .final-download {
   margin: 5rem auto 40px;
   width: 90%;
@@ -104,7 +100,6 @@
   font-weight: bold;
   margin-top: 50px;
 }
-
 .final-download-wrapper {
   width: 80%;
   margin: 30px auto;
@@ -135,9 +130,7 @@
     display: inline-block;
   }
 }
-
 /* IPAD PRO */
-
 @media only screen and (min-width: 1024px) {
   .final-download {
     margin: 100px auto 40px;
@@ -168,7 +161,6 @@
   }
 }
 @media only screen and (min-width: 1200px) {
-
   .svg-shield {
     width: 2.5rem;
     position: absolute;
@@ -217,7 +209,6 @@
     left: 95%;
     top: -1rem;
   }
-
   .moneygold {
     position: absolute;
     width: 6rem;
@@ -230,7 +221,6 @@
     left:  97%;
     top: 90%;
   }
-
   .final-download {
     margin: 100px auto 40px;
     width: 80%;
@@ -251,7 +241,6 @@
     font-weight: 800;
     margin-top: 4rem;
   }
-
   .final-download-wrapper {
     width: 80%;
     text-align: center;
