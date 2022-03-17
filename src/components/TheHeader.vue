@@ -50,6 +50,15 @@
 <script>
 export default {
   methods: {
+    closeMenu() {
+      const hamburger = document.querySelector(".hamburger");
+      const navMenu = document.querySelector(".nav-menu");
+      const backdrop = document.querySelector(".backdrop");
+
+      hamburger.classList.remove("active");
+      navMenu.classList.remove("active");
+      backdrop.classList.remove("active");
+    },
     initHeader() {
       // Toggle light and dark mode codes here
 
@@ -103,18 +112,12 @@ export default {
       const backdrop = document.querySelector(".backdrop");
 
       hamburger.addEventListener("click", mobileMenu);
-      navLink.forEach((n) => n.addEventListener("click", closeMenu));
+      navLink.forEach((n) => n.addEventListener("click", this.closeMenu));
 
       function mobileMenu() {
         hamburger.classList.toggle("active");
         navMenu.classList.toggle("active");
         backdrop.classList.toggle("active");
-      }
-
-      function closeMenu() {
-        hamburger.classList.remove("active");
-        navMenu.classList.remove("active");
-        backdrop.classList.remove("active");
       }
 
       backdrop.addEventListener("click", closebackdrop);
@@ -125,6 +128,12 @@ export default {
       }
 
       // End Navabr
+    },
+  },
+
+  watch: {
+    $route() {
+      this.closeMenu();
     },
   },
 
@@ -182,7 +191,6 @@ nav ul li a:hover {
   color: var(--dark-color);
   border-bottom: 2px solid #3374ea 2px;
 }
-
 
 .actn {
   margin-right: 50px;
@@ -317,7 +325,8 @@ nav ul li a:hover {
     border-bottom-right-radius: 15px;
     z-index: 10;
     position: fixed;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+      rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
   }
   .logo {
     /* height: 90px; */
@@ -445,7 +454,8 @@ nav ul li a:hover {
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
     z-index: 10;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+      rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
   }
   .logo {
     height: 80px;
@@ -463,7 +473,7 @@ nav ul li a:hover {
     left: 180px;
     transition: all 0.5s ease-out;
   }
-  .toggle-moon:active{
+  .toggle-moon:active {
     transition: all;
   }
 
@@ -527,5 +537,4 @@ nav ul li a:hover {
     transform: translateY(-8px) rotate(-45deg);
   }
 }
-
 </style>
