@@ -40,36 +40,14 @@
       />
     </div>
     <div class="about">
-      <h1>Designed To Help You Make Money</h1>
+      <h1>Subscribe to your favourite crypto influencers/leaders</h1>
 
       <div class="slideshow-container">
-        <div class="mySlides fade">
-          <p>
-            Automatically track your entire portfolio across multiple exchanges
-          </p>
-        </div>
-
-        <div class="mySlides fade">
-          <p>Create your own trading plans and record your own trade lessons</p>
-        </div>
-
-        <div class="mySlides fade">
-          <p>
-            <b>Copy the best traders.</b> See the coins they buy, when they sell
-          </p>
-        </div>
-        <div class="mySlides fade">
-          <p>Get signal from all leaders</p>
+        <div class="mySlides">
+          <p>See the coins they buy, when they buy and when they sell!</p>
         </div>
       </div>
       <br />
-
-      <div class="dot-wrapper">
-        <span class="dot active"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-      </div>
       <div class="app-downloads">
         <a href="#" target="_blank" rel="noopener noreferrer"
           ><img
@@ -247,12 +225,16 @@
       />
 
       <p class="slideIn">
-        Crypto trading and investment takes time to learn and master. It can be
-        difficult for new traders to make a profit. <br />
+        Don’t waste your money buying courses you won’t watch or joining
+        countless Whatsapp groups, Facebook groups or Telegram channels looking
+        for signals.
+
         <br />
-        Skip the steep learning curve and start earning by following the
-        footsteps of leading crypto traders. See what they buy, when they buy,
-        and when they sell.
+        <br />
+        Simply subscribe to your favorite crypto influencer/leader on the
+        CoinProfit App. See the coins your leader is buying, when he buys and
+        when he sells. You can simply copy him.
+        <b>As your leader makes money, you make money too!</b>
       </p>
     </div>
 
@@ -266,9 +248,10 @@
       />
 
       <p class="slideIn">
-        With CoinProfit, you can record your lessons, so you can continue
-        learning anytime, anywhere. We make learning incredibly easy for you, so
-        you can win in the crypto space.
+        Don’t let anyone dump on you. Even if your leader has a limit order that
+        is yet to be filled, you’ll see it right inside the CoinProfit App so
+        you can enter the market when your leader is entering, and exit when
+        he’s exiting. He makes a profit? You make a profit too!
       </p>
     </div>
   </section>
@@ -523,9 +506,15 @@
         <p>
           You trade on the go, so why not have your lessons on the go? <br />
           <br />
-          With CoinProfit, you can record your lessons, so you can continue
-          learning anytime, anywhere. We make learning incredibly easy for you,
-          so you can win in the crypto space.
+
+          With CoinProfit App, you can record your trade lessons and keep a
+          journal, so you can continue learning anytime, anywhere. <br />
+          <br />
+
+          Keeping records of your good and bad trades helps you make better
+          trading decisions. We make this incredibly easy for you, so you can
+          win in the crypto space. WAGMI! (We All Gonna Make It)
+          <br />
         </p>
       </div>
     </div>
@@ -696,9 +685,11 @@
         />
       </div>
       <p>
-        Plan your entry, stop loss, and take profit targets. Use tags to
-        organize your plans. Receive notifications whenever your coin hits your
-        target or stop limit.
+        Did you buy a coin and it did 100%, 200% or even 1000% in profit? Then
+        you deserve a bottle of champagne and a bragging right! Take some of
+        your profit and go get a champagne and use CoinProfit App to let the
+        world know how you roll. You deserve it. You can share the performance
+        of an asset or a particular transaction.
       </p>
     </div>
 
@@ -1230,7 +1221,7 @@ export default {
         for (i = 0; i < dots.length; i++) {
           dots[i].className = dots[i].className.replace(" dot-active", "");
         }
-          slides[slideIndex - 1].style.display = "block";
+        slides[slideIndex - 1].style.display = "block";
         dots[slideIndex - 1].className += " dot-active";
         setTimeout(showSlides, 2000); // Change image every 2 seconds
       }
@@ -3277,29 +3268,12 @@ export default {
     font-weight: unset;
     width: 60%;
     color: var(--fourth-color);
-    font-size: 17px;
+    font-size: 1rem;
     font-family: "Montserrat", sans-serif;
     text-align: left;
-    margin: 10px;
+    margin: 10px 0;
   }
 
-  /* The dots/bullets/indicators */
-  .dot-wrapper {
-    text-align: left;
-    margin-left: 10px;
-    margin-top: -20px;
-  }
-  .dot {
-    height: 10px;
-    width: 10px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-  }
-  .dot-active {
-    background-color: #3374ea;
-  }
   .app-downloads {
     position: absolute;
     margin-top: 2rem;
@@ -3991,19 +3965,24 @@ export default {
     text-align: left;
     margin: 7px 0;
     color: #3374ea;
-    font-size: 45px;
+    font-size: 3rem;
     font-weight: 800;
     letter-spacing: 0;
   }
   .slideshow-container p {
     width: 60%;
-    font-size: 14px;
+    font-size: 1rem;
     font-family: "Montserrat", sans-serif;
+    margin-bottom: 0;
+  }
+  .app-downloads {
+    margin-top: 0;
+    margin-left: 0;
   }
   .app-download {
     display: inline-block;
     width: 35%;
-    margin: 10px auto;
+    margin: 0 auto;
   }
 
   .appui {

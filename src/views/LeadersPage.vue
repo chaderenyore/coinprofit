@@ -92,7 +92,7 @@
 
       <div class="leaders-portfolio-box">
         <img
-          src="@/assets/images/share-img.png"
+          src="@/assets/images/leaders/leader1.svg"
           alt="Share Image"
           class="share-portfolio-img"
         />
@@ -116,7 +116,7 @@
 
       <div class="leaders-portfolio-box">
         <img
-          src="@/assets/images/share-img.png"
+          src="@/assets/images/leaders/leader2.svg"
           alt="Share Image"
           class="seeSubsimg"
         />
@@ -135,7 +135,7 @@
 
       <div class="leaders-portfolio-box">
         <img
-          src="@/assets/images/share-img.png"
+          src="@/assets/images/leaders/leader3.svg"
           alt="Share Image"
           class="share-portfolio-img"
         />
@@ -552,13 +552,20 @@
       </div>
     </div>
   </section>
+   <BaseCallToAction />
+   
 </template>
 
 
 
 <script>
 import Splide from "@splidejs/splide";
+import BaseCallToAction from "@/components/BaseCallToAction.vue";
 export default {
+  components: {
+    BaseCallToAction,
+  },
+  
   methods: {
     useSplide() {
       new Splide(".splide", {
