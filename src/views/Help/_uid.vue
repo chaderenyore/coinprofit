@@ -1,6 +1,8 @@
 <template>
-  <main v-if="post" class="pt-24">
-    <article class="article-container p-0 rounded-3xl w-[90%] m-auto">
+  <main v-if="post" class="pt-24 article-main">
+    <article
+      class="article-container p-0 rounded-3xl w-[90%] md:w-[60%] lg:w-[50%] m-auto"
+    >
       <header>
         <PrismicImage
           class="rounded-3xl mb-4 w-[100%]"
@@ -52,12 +54,12 @@
         </section>
       </footer>
     </article>
-  <BaseCallToAction />
+    <BaseCallToAction />
   </main>
 </template>
 
 <script>
-import BaseCallToAction from '@/components/BaseCallToAction.vue';
+import BaseCallToAction from "@/components/BaseCallToAction.vue";
 import { defineSliceZoneComponents } from "@prismicio/vue";
 import IntroductionText from "@/components/Slices/IntroductionText.vue";
 import TextParagraphs from "@/components/Slices/TextParagraphs.vue";
@@ -66,7 +68,7 @@ import ImageGallery from "@/components/Slices/ImageGallery.vue";
 
 export default {
   components: {
-    BaseCallToAction
+    BaseCallToAction,
   },
   data() {
     return {
@@ -110,6 +112,18 @@ export default {
 </script>
 
 <style scoped>
+@media (min-width: 27.5rem) {
+  .article-main {
+    padding-top: 8rem;
+  }
+}
+
+@media (min-width: 48rem) {
+  .article-main {
+    padding-top: 2rem;
+  }
+}
+
 .article-container {
   background: var(--article-container);
   box-shadow: 0 20px 17px #1c192305;
