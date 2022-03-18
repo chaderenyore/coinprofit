@@ -84,10 +84,20 @@
       </div>
     </div>
   </section>
-
+  <section class="iconholder">
+    <img
+      src="@/assets/images/listtle-Icons/icon-btc.svg"
+      alt=""
+      class="iconBTC1"
+    />
+  </section>
   <section>
     <div class="leaders-features">
       <h1>Share Signal</h1>
+      <img src="@/assets/images/listtle-Icons/4.svg" alt="" class="svg4" />
+      <img src="@/assets/images/listtle-Icons/2.svg" alt="" class="svg2F" />
+      <img src="@/assets/images/listtle-Icons/7.svg" alt="" class="svg7F" />
+
       <img src="@/assets/images/leaders/share-blob.png" class="leadersF-blob" />
 
       <div class="leaders-portfolio-box">
@@ -109,6 +119,14 @@
         See Subscribers<br />
         Earnings
       </h1>
+      <img src="@/assets/images/listtle-Icons/1.svg" alt="" class="svgOne" />
+      <img
+        src="@/assets/images/listtle-Icons/dollarontop.svg"
+        alt=""
+        class="svgontop"
+      />
+      <img src="@/assets/images/listtle-Icons/6.svg" alt="" class="svg6F" />
+
       <img
         src="@/assets/images/leaders/share-blob.png"
         class="leadersF-blob two"
@@ -131,6 +149,19 @@
 
     <div class="leaders-features three">
       <h1>Share Thought</h1>
+      <img
+        src="@/assets/images/listtle-Icons/litegold.svg"
+        alt=""
+        class="svgOneNP"
+      />
+      <img
+        src="@/assets/images/listtle-Icons/moneygold.svg"
+        class="svgontopNP"
+      />
+
+      <img src="@/assets/images/listtle-Icons/3.svg" alt="" class="svg6NP" />
+      <img src="@/assets/images/listtle-Icons/4.svg" alt="" class="svg4NP" />
+
       <img src="@/assets/images/leaders/share-blob.png" class="leadersF-blob" />
 
       <div class="leaders-portfolio-box">
@@ -148,6 +179,8 @@
 
     <div class="leaders-features two last">
       <h1>Generate And Share <br />Your Signal Report</h1>
+  
+
       <img
         src="@/assets/images/leaders/share-blob.png"
         class="leadersF-blob two last"
@@ -476,7 +509,8 @@
           </button>
           <div class="faqcontent">
             <p>
-              Anyone can be a leader! If you're crypto guru or you have some followers, you can sign up as a leader.
+              Anyone can be a leader! If you're crypto guru or you have some
+              followers, you can sign up as a leader.
             </p>
           </div>
         </div>
@@ -487,7 +521,10 @@
           </button>
           <div class="faqcontent">
             <p>
-              That depends mostly on you. You can choose to charge any amount monthly/yearly/lifetime for people to subscribe to you. How much you make at the end of the day, depends on how much you charge plus the number of subscribers.
+              That depends mostly on you. You can choose to charge any amount
+              monthly/yearly/lifetime for people to subscribe to you. How much
+              you make at the end of the day, depends on how much you charge
+              plus the number of subscribers.
             </p>
           </div>
         </div>
@@ -552,8 +589,7 @@
       </div>
     </div>
   </section>
-   <BaseCallToAction />
-   
+  <BaseCallToAction />
 </template>
 
 
@@ -565,7 +601,7 @@ export default {
   components: {
     BaseCallToAction,
   },
-  
+
   methods: {
     useSplide() {
       new Splide(".splide", {
@@ -580,7 +616,7 @@ export default {
     },
 
     initLeadersPage() {
-        this.useSplide();
+      this.useSplide();
 
       // end of splider js
 
@@ -687,7 +723,7 @@ export default {
 .app-download {
   display: block;
   width: 50%;
-  margin: 2rem auto 0;
+  margin: 1rem auto 0;
 }
 
 .signal-packs {
@@ -742,10 +778,18 @@ export default {
   margin-top: 2px;
   font-size: 17px;
 }
-
+.iconholder {
+  position: relative;
+}
+.iconBTC1 {
+  position: relative;
+  left: 10%;
+  width: 2rem;
+}
 .leaders-features {
   position: relative;
   padding-bottom: 1rem;
+  margin-bottom: 3rem;
 }
 
 .leaders-features h1 {
@@ -755,6 +799,74 @@ export default {
   font-weight: bold;
   font-size: 2rem;
 }
+.svg4 {
+  position: absolute;
+  left: 75%;
+  top: 5%;
+  width: 3rem;
+}
+.svg7F {
+  position: absolute;
+  left: 4%;
+  top: 30%;
+  width: 3rem;
+}
+.svg2F {
+  position: absolute;
+  left: 85%;
+  top: 30%;
+  width: 3rem;
+}
+
+/*  */
+.svgOne {
+  position: absolute;
+  left: 70%;
+  top: 15%;
+  width: 3rem;
+}
+.svgontop {
+  position: absolute;
+  left: 4%;
+  top: 40%;
+  width: 3rem;
+}
+.svg4N {
+  display: none;
+}
+.svg6F {
+  position: absolute;
+  left: 80%;
+  top: 40%;
+  width: 3rem;
+  z-index: 1;
+}
+
+/*  */
+.svgOneNP {
+  position: absolute;
+  left: 70%;
+  top: 15%;
+  width: 3rem;
+}
+.svgontopNP {
+  position: absolute;
+  left: 4%;
+  top: 40%;
+  width: 3rem;
+}
+.svg4NP {
+  display: none;
+}
+.svg6NP {
+  position: absolute;
+  left: 80%;
+  top: 40%;
+  width: 3rem;
+  z-index: 1;
+}
+
+/*  */
 
 .leadersF-blob {
   margin-top: 2rem;
@@ -763,10 +875,10 @@ export default {
 }
 
 .share-portfolio-img {
-  margin: 0 auto;
-  width: 100%;
+  width: 70%;
   position: relative;
   top: -17rem;
+  margin-left: 20%;
   margin-bottom: -19rem;
 }
 
@@ -782,10 +894,10 @@ export default {
 }
 
 .seeSubsimg {
-  margin: 0 auto;
-  width: 100%;
+  width: 70%;
   position: relative;
   top: -17rem;
+  margin-left: 20%;
   margin-bottom: -19rem;
 }
 
@@ -1230,15 +1342,93 @@ export default {
     width: 30%;
     margin: 2rem 1rem;
   }
+  .iconholder {
+    position: relative;
+  }
+  .iconBTC1 {
+    position: relative;
+    left: 10%;
+    width: 5rem;
+  }
+
+  .svg4 {
+    position: absolute;
+    left: 80%;
+    top: 8%;
+    width: 5rem;
+  }
   .leaders-features {
-    margin-top: 10rem;
+    margin-bottom: 5rem;
   }
   .leaders-features h1 {
     text-align: center;
     color: #3374ea;
     font-family: "Montserrat", sans-serif;
     font-weight: 800;
-    font-size: 5rem;
+    font-size: 3rem;
+  }
+  .svg4 {
+    position: absolute;
+    left: 80%;
+    top: 8%;
+    width: 5rem;
+  }
+  .svg7F {
+    position: absolute;
+    left: 85%;
+    top: 50%;
+    width: 5rem;
+  }
+  .svg2F {
+    position: absolute;
+    left: 5%;
+    top: 50%;
+    width: 5rem;
+  }
+
+  .svgOne {
+    position: absolute;
+    left: 70%;
+    top: 15%;
+    width: 5rem;
+  }
+  .svgontop {
+    position: absolute;
+    left: 5%;
+    top: 50%;
+    width: 5rem;
+  }
+  .svg6F {
+    position: absolute;
+    left: 85%;
+    top: 50%;
+    width: 5rem;
+  }
+
+  /*  */
+
+  /*  */
+  .svgOneNP {
+    position: absolute;
+    left: 70%;
+    top: 15%;
+    width: 6rem;
+  }
+  .svgontopNP {
+    position: absolute;
+    left: 4%;
+    top: 40%;
+    width: 6rem;
+  }
+  .svg4NP {
+    display: none;
+  }
+  .svg6NP {
+    position: absolute;
+    left: 80%;
+    top: 40%;
+    width: 7rem;
+    z-index: 1;
   }
 
   .leadersF-blob {
@@ -1497,7 +1687,7 @@ export default {
     font-size: 0.9rem;
   }
   .app-downloads {
-    margin-left: 3rem;
+    margin-left: -2rem;
     text-align: center;
     width: 40%;
   }
@@ -1562,6 +1752,15 @@ export default {
     margin-top: 2px;
     font-size: 17px;
   }
+  .iconholder {
+    position: relative;
+  }
+  .iconBTC1 {
+    position: relative;
+    left: 10%;
+    width: 3rem;
+  }
+
   .leaders-features {
     width: 80%;
     margin: 0 auto;
@@ -1577,6 +1776,82 @@ export default {
     font-weight: 800;
     font-size: 2.3rem;
   }
+  .svg4 {
+    position: absolute;
+    left: 80%;
+    top: 8%;
+    width: 5rem;
+  }
+  .svg7F {
+    position: absolute;
+    left: 90%;
+    top: 80%;
+    width: 5rem;
+  }
+  .svg2F {
+    position: absolute;
+    left: 0%;
+    top: 90%;
+    width: 5rem;
+  }
+
+  .svgOne {
+    position: absolute;
+    left: 90%;
+    top: 90%;
+    width: 5rem;
+  }
+  .svgontop {
+    position: absolute;
+    left: 45%;
+    top: 90%;
+    width: 2rem;
+  }
+  .svg4N {
+    display: block;
+    position: absolute;
+    width: 4rem;
+    left: 4%;
+    top: 20%;
+  }
+  .svg6F {
+    position: absolute;
+    left: 5%;
+    top: 90%;
+    width: 3rem;
+  }
+
+  /* ... */
+
+  /*  */
+  .svgOneNP {
+    position: absolute;
+    left: 85%;
+    top: 25%;
+    width: 3rem;
+  }
+  .svgontopNP {
+    position: absolute;
+    left: 4%;
+    top: 40%;
+    width: 3rem;
+    display: none;
+  }
+  .svg6NP {
+    position: absolute;
+    left: 85%;
+    top: 70%;
+    width: 5rem;
+    z-index: 1;
+  }
+  .svg4NP {
+    display: block;
+    position: absolute;
+    width: 5rem;
+    left: 5%;
+    top: 12%;
+  }
+  
 
   .leadersF-blob {
     margin-top: 3rem;
@@ -1584,13 +1859,11 @@ export default {
     width: 40%;
     z-index: -1;
   }
-  .leadersF-blob:hover {
-    transform: rotate(20deg);
-  }
+
   .share-portfolio-img {
     position: relative;
     top: -23rem;
-    margin-left: 2rem;
+    margin-left: 5rem;
     margin-bottom: -30rem;
     width: 30%;
   }
@@ -1664,7 +1937,7 @@ export default {
   .app-downloads.wrapper {
     position: relative;
     top: -10rem;
-    margin-left: 7rem;
+    margin-left: 2rem;
   }
 
   .app-download.features {

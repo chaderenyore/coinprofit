@@ -165,7 +165,7 @@
           </p>
         </div>
       </div>
-      <div class="box three">
+      <div class="box">
         
         <div class="box-img">
           <img
@@ -351,6 +351,7 @@
     <!-- This is a sliderjs framework.  -->
 
     <div class="testimonials-carousel-wrap">
+      
       <div class="listing-carousel-button listing-carousel-button-next">
         <i class="fa fa-caret-right" style="color: #fff"></i>
       </div>
@@ -376,9 +377,7 @@
                   <p>10x his portfolio in 3 months, that's incredible!</p>
                 </div>
               </div>
-              <div class="signal-img-wrapper">
-                <img src="../assets/images/signal-st.png" alt="" srcset="" />
-              </div>
+             
             </div>
 
             <!--second--->
@@ -398,9 +397,7 @@
                   <p>to running and hedge fund worth Millions of dollars</p>
                 </div>
               </div>
-              <div class="signal-img-wrapper">
-                <img src="../assets/images/signal-st.png" alt="" srcset="" />
-              </div>
+             
             </div>
             <!--third-->
 
@@ -422,9 +419,7 @@
                   </p>
                 </div>
               </div>
-              <div class="signal-img-wrapper">
-                <img src="../assets/images/signal-st.png" alt="" srcset="" />
-              </div>
+              
             </div>
 
             <!--fourth-->
@@ -444,9 +439,7 @@
                   <p>sharing some real signal - come join me</p>
                 </div>
               </div>
-              <div class="signal-img-wrapper">
-                <img src="../assets/images/signal-st.png" alt="" srcset="" />
-              </div>
+             
             </div>
             <!--testi end-->
           </div>
@@ -1047,7 +1040,7 @@
         </span>
 
         <div class="iframe-container">
-          <iframe
+          <!-- <iframe
             width="560"
             height="315"
             src="https://www.youtube.com/embed/H9154xIoYTA"
@@ -1055,7 +1048,7 @@
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
-          ></iframe>
+          ></iframe> -->
         </div>
       </div>
     </div>
@@ -1219,8 +1212,6 @@ export default {
 
       // PAGE SCROLL ANIMATIONS ENDS HERE
 
-      
-      // About slider ends here
 
       // leaders silder starts here
 
@@ -1233,6 +1224,7 @@ export default {
             slidesPerView: 1,
             spaceBetween: 20,
             loop: true,
+            freeMode: true,
             grabCursor: true,
             mousewheel: false,
             centeredSlides: true,
@@ -1254,6 +1246,7 @@ export default {
                 slidesPerView: 2,
               },
               1200: {
+                spaceBetween: 0,
                 slidesPerView: 3,
               },
             },
@@ -1788,10 +1781,11 @@ export default {
   top: 69rem;
   width: 100%;
   float: left;
-  height: 1100px;
+  /* height: 1100px; */
   background: transparent linear-gradient(180deg, #22a1f5 0%, #677bff 100%) 0%
     0% no-repeat padding-box;
   padding-top: 100px;
+  padding-bottom: 10rem;
   overflow: hidden;
   margin-bottom: 800px;
 }
@@ -1842,7 +1836,7 @@ export default {
 }
 .listing-carousel-button {
   position: absolute;
-  top: 45%;
+  top: 50%;
   width: 80px;
   height: 50px;
   line-height: 50px;
@@ -1880,22 +1874,18 @@ export default {
 .testimonials-text {
   padding: 75px 50px 75px;
   overflow: hidden;
-  border: 1px solid #f1f1f1;
   border-radius: 10px;
   transition: all 0.3s ease-in-out;
-  height: 350px;
   width: 90%;
   margin: 0 auto;
-  box-shadow: rgba(26, 38, 58, 0.1);
+  box-shadow: 0 9px 26px rgba(58, 87, 135, 0.1);
 }
-
 .testimonials-avatar h3 {
   font-weight: 600;
   color: #fff;
   font-size: 18px;
   font-family: "Montserrat", sans-serif;
 }
-
 .testimonials-carousel .swiper-slide {
   padding: 30px 0;
 }
@@ -1947,15 +1937,7 @@ export default {
   text-align: center;
 }
 
-.signal-img-wrapper {
-  position: absolute;
-  left: 10%;
-  top: 250px;
-  margin-left: -28px;
-}
-.signal-img-wrapper img {
-  width: 350px;
-}
+
 .swiper-slide-active .testi-item {
   opacity: 1;
   transform: scale(1);
@@ -3312,7 +3294,8 @@ export default {
   }
   .review-box {
     width: 100%;
-    margin-left: 20px;
+    /* margin-left: 20px; */
+    text-align: center;
   }
   .box {
     width: 350px;
@@ -3323,9 +3306,7 @@ export default {
     font-family: "Montserrat", sans-serif;
     border-radius: 10px;
   }
-  .box.three {
-    margin-left: 190px;
-  }
+
   .box-img {
     position: relative;
     top: -60px;
@@ -3485,8 +3466,7 @@ export default {
   .meet-leaders {
     top: 100rem;
     width: 100%;
-    height: 1000px;
-    margin-bottom: 1500px;
+    margin-bottom: 1800px;
   }
   .meet-leaders h1 {
     width: 90%;
@@ -3499,8 +3479,9 @@ export default {
   }
   .leader-level {
     position: absolute;
-    right: -20px;
+    right: -30px;
     top: -20px;
+    z-index: 2;
   }
   .leaders-p {
     width: 60%;
@@ -3516,17 +3497,9 @@ export default {
   }
   .listing-carousel-button {
     position: absolute;
-    top: 41%;
+    top: 50%;
   }
-  .signal-img-wrapper {
-    position: absolute;
-    left: 12%;
-    top: 250px;
-    margin-left: -35px;
-  }
-  .signal-img-wrapper img {
-    width: 380px;
-  }
+
 
   .app-features-two {
     width: 90%;
@@ -4017,11 +3990,12 @@ export default {
     margin: 0 auto;
   }
   .review-box {
-    margin-top: 60px;
-    margin-left: 0;
+    margin-top: 60px auto 0;
+    text-align: center;
     display: flex;
     flex: wrap;
     justify-content: center;
+
   }
   .box {
     width: 340px;
@@ -4033,9 +4007,7 @@ export default {
     font-family: "Montserrat", sans-serif;
     border-radius: 10px;
   }
-  .box.three {
-    margin-left: 0;
-  }
+
 
   .box-img {
     position: relative;
@@ -4278,31 +4250,37 @@ export default {
   .meet-leaders {
     top: 10rem;
     width: 100%;
+    padding-bottom: 15rem;
     margin-bottom: 200px;
     z-index: 2;
   }
   .swiper-container {
-    width: 90%;
+    width: 80%;
+    margin: 0 auto;
   }
   .listing-carousel-button {
     position: absolute;
-    top: 40%;
+    top: 50%;
   }
   .leader-level {
-    /* width: 0px; */
     position: absolute;
-    right: -20px;
-    top: -20px;
+    right: 10%;
+    top: -2%;
+   
   }
-  .signal-img-wrapper {
-    position: absolute;
-    left: 13%;
-    top: 250px;
-    margin-left: -20px;
+  .leader-level img {
+     width: 4rem
   }
-  .signal-img-wrapper img {
-    width: 320px;
-  }
+    .testimonials-text {
+    padding: 5rem 1rem 3rem;
+    overflow: hidden;
+    background: #22a1f5;
+    box-shadow: 0 9px 26px rgba(58, 87, 135, 0.1);
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+    width: 70%;
+    margin: 0 auto;
+    }
 
   .app-features-two {
     width: 90%;
