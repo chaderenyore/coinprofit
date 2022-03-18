@@ -1,14 +1,18 @@
 <template>
   <div v-if="helpost">
-    <ul class="flex justify-center flex-wrap gap-y-6 gap-x-8">
+    <ul
+      class="flex justify-center flex-wrap gap-y-6 gap-x-3 md:gap-x-5 md:grid md:grid-cols-2 lg:flex lg:flex-wrap lg:justify-start xl:grid xl:grid-cols-3"
+    >
       <li v-for="post in helpost.results" :key="post.uid">
         <article
           class="help__card--article p-6 rounded-3xl max-w-[360px] max-h-[650px]"
         >
-          <PrismicImage
-            :field="post.data.cover_image"
-            class="w-[100%] rounded-3xl mb-3"
-          />
+          <prismic-link :field="post">
+            <PrismicImage
+              :field="post.data.cover_image"
+              class="w-[100%] rounded-3xl mb-3"
+            />
+          </prismic-link>
           <section>
             <section class="mb-3">
               <ul class="flex flex-row gap-3 justify-around">
@@ -21,11 +25,13 @@
                 </li>
               </ul>
             </section>
-            <PrismicRichText
-              :field="post.data.article_title"
-              class="text-[#3374EA] text-2xl font-bold mb-4"
-              wrapper="h1"
-            />
+            <prismic-link :field="post">
+              <PrismicRichText
+                :field="post.data.article_title"
+                class="text-[#3374EA] text-2xl font-bold mb-4"
+                wrapper="h1"
+              />
+            </prismic-link>
             <p class="card-article__text font-medium text-lg leading-8 mb-3">
               {{ $prismic.asText(post.data.preview_text) }}{{ "..." }}
             </p>

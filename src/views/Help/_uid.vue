@@ -1,7 +1,7 @@
 <template>
   <main v-if="post" class="pt-24 article-main">
     <article
-      class="article-container p-0 rounded-3xl w-[90%] md:w-[60%] lg:w-2/5 m-auto"
+      class="article-container p-0 rounded-3xl w-[90%] md:w-[60%] lg:w-2/4 m-auto"
     >
       <header>
         <PrismicImage
@@ -97,7 +97,6 @@ export default {
 
       this.author = this.post.data.author.data;
 
-      console.log(this.post);
       const date = new Date(this.post.first_publication_date);
       this.articleDate = date.toLocaleString([], {
         day: "numeric",
@@ -107,8 +106,21 @@ export default {
     },
   },
 
-  created() {
+  beforeRouteEnter(to, from, next) {
+    // this.getPost();
+    console.log(to);
+    next((vm) => vm.getPost());
+    // next(false);
+  },
+
+  beforeRouteUpdate(to, from, next) {
     this.getPost();
+    console.log(next);
+    setTimeout(() => {
+      next();
+    }, 30000);
+
+    console.log("Helo");
   },
 };
 </script>

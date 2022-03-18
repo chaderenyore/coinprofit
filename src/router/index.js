@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from "vue-router";
-
+import NProgress from "nprogress";
 import HomePage from "../views/HomePage.vue";
 import BlogPost from "../views/Help/_uid.vue";
 
@@ -63,12 +63,29 @@ const routes = [
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
   routes,
-  scrollBehavior() {
+  scrollBehavior(_, _2, savedPosition) {
+    if (savedPosition) {
+      return savedPosition;
+    }
     return {
       left: 0,
       top: 0,
     };
   },
+});
+
+router.beforeResolve((to, _, next) => {
+  // If this isn't an initial page load.
+  if (to.name) {
+    // Start the route progress bar.
+    NProgress.start();
+  }
+  next();
+});
+
+router.afterEach(() => {
+  // Complete the animation of the route progress bar.
+  NProgress.done();
 });
 
 export default router;
