@@ -1040,7 +1040,7 @@
         </span>
 
         <div class="iframe-container">
-          <iframe
+          <!-- <iframe
             width="560"
             height="315"
             src="https://www.youtube.com/embed/H9154xIoYTA"
@@ -1048,7 +1048,7 @@
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
-          ></iframe>
+          ></iframe> -->
         </div>
       </div>
     </div>
@@ -3479,8 +3479,9 @@ export default {
   }
   .leader-level {
     position: absolute;
-    right: -20px;
+    right: -30px;
     top: -20px;
+    z-index: 2;
   }
   .leaders-p {
     width: 60%;
@@ -4263,11 +4264,15 @@ export default {
   }
   .leader-level {
     position: absolute;
-    right: -20px;
-    top: -30px;
+    right: 10%;
+    top: -2%;
+   
+  }
+  .leader-level img {
+     width: 4rem
   }
     .testimonials-text {
-    padding: 75px 1rem 1rem;
+    padding: 5rem 1rem 3rem;
     overflow: hidden;
     background: #22a1f5;
     box-shadow: 0 9px 26px rgba(58, 87, 135, 0.1);
