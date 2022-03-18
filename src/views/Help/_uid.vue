@@ -1,4 +1,11 @@
 <template>
+  <section v-if="loading" class="text-3xl pt-20 font-extrabold">
+    <div class="spinner">
+      <svg>
+        <use href="@/assets/images/icons.svg#icon-loader"></use>
+      </svg>
+    </div>
+  </section>
   <main v-if="post" class="pt-24 article-main">
     <article
       class="article-container p-0 rounded-3xl w-[90%] md:w-[60%] lg:w-2/4 m-auto"
@@ -56,6 +63,10 @@
     </article>
     <BaseCallToAction />
   </main>
+
+  <div v-if="error" class="pt-32 md:pt-24 mb-16">
+    <NotFound :errorMessage="errorMessage" />
+  </div>
 </template>
 
 <script>
@@ -66,14 +77,19 @@ import TextParagraphs from "@/components/Slices/TextParagraphs.vue";
 import ImageCard from "@/components/Slices/ImageCard.vue";
 import ImageGallery from "@/components/Slices/ImageGallery.vue";
 import VideoPlayer from "@/components/Slices/VideoPlayer.vue";
+import NotFound from "@/components/Help/NotFound.vue";
 
 export default {
   components: {
     BaseCallToAction,
+    NotFound,
   },
   data() {
     return {
+      loading: true,
       post: null,
+      error: false,
+      errorMessage: null,
       components: defineSliceZoneComponents({
         introduction: IntroductionText,
         text_paragraphs: TextParagraphs,
@@ -87,40 +103,44 @@ export default {
   },
   methods: {
     async getPost() {
-      this.post = await this.$prismic.client.getByUID(
-        "articles",
-        this.$route.params.uid,
-        {
-          fetchLinks: ["author.name", "author.avatar", "author.bio"],
-        }
-      );
+      try {
+        this.post = await this.$prismic.client.getByUID(
+          "articles",
+          this.$route.params.uid,
+          {
+            fetchLinks: ["author.name", "author.avatar", "author.bio"],
+          }
+        );
 
-      this.author = this.post.data.author.data;
+        this.author = this.post.data.author.data;
 
-      const date = new Date(this.post.first_publication_date);
-      this.articleDate = date.toLocaleString([], {
-        day: "numeric",
-        month: "short",
-        year: "numeric",
-      });
+        const date = new Date(this.post.first_publication_date);
+        this.articleDate = date.toLocaleString([], {
+          day: "numeric",
+          month: "short",
+          year: "numeric",
+        });
+      } catch (error) {
+        console.log(error.message);
+        this.loading = false;
+        this.error = true;
+        this.errorMessage = error.message;
+      }
     },
   },
 
   beforeRouteEnter(to, from, next) {
-    // this.getPost();
-    console.log(to);
-    next((vm) => vm.getPost());
-    // next(false);
+    next((vm) => {
+      vm.getPost();
+    });
   },
 
-  beforeRouteUpdate(to, from, next) {
+  created() {
     this.getPost();
-    console.log(next);
-    setTimeout(() => {
-      next();
-    }, 30000);
+  },
 
-    console.log("Helo");
+  beforeUpdate() {
+    this.loading = false;
   },
 };
 </script>
@@ -151,5 +171,27 @@ export default {
 
 .author-bio {
   color: var(--author-bio);
+}
+
+.spinner {
+  margin: 5rem auto;
+  text-align: center;
+}
+
+.spinner svg {
+  height: 6rem;
+  width: 6rem;
+  fill: #3374ea;
+  animation: rotate 2s infinite linear;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
 </style>

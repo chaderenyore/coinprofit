@@ -39,12 +39,14 @@
     </div>
   </section>
 
-  <section v-if="data" class="w-4/5 m-auto">
+  <section v-if="data" class="w-4/5 m-auto mb-8">
     <h1 class="text-center font-extrabold text-3xl mb-3 text-[#3374ea]">
       {{ $prismic.asText(data.data.welcome_heading) }}
     </h1>
-    <p class="help__article text-center font-medium max-w-[636px] m-auto">
-      <PrismicRichText :field="data.data.welcome_text" />
+    <p
+      class="help__article text-center text-[1.2rem] font-medium max-w-[636px] m-auto"
+    >
+      {{ $prismic.asText(data.data.welcome_text) }}
     </p>
   </section>
   <section class="w-[90%] m-auto">
