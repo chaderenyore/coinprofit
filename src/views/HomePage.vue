@@ -3306,9 +3306,7 @@ export default {
     font-family: "Montserrat", sans-serif;
     border-radius: 10px;
   }
-  .box.three {
-    
-  }
+
   .box-img {
     position: relative;
     top: -60px;
