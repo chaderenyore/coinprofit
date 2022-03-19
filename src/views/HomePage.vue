@@ -1413,6 +1413,7 @@ export default {
 
 
 .app-downloads {
+  text-align: center;
   position: absolute;
   margin-top: 2rem;
 }
@@ -2292,7 +2293,9 @@ export default {
   margin-top: 100px;
   margin-bottom: 140px;
 }
-
+.exchange-wrapper {
+  text-align: center;
+}
 .exchange-wrapper h1 {
   width: 80%;
   margin: 0 auto 50px;
@@ -2311,6 +2314,7 @@ export default {
 .exchange-box-wrapper {
   margin: 5px auto;
   display: inline-block;
+  text-align: center;
 }
 .exchange-box {
   margin-left: 15px;
@@ -2332,9 +2336,9 @@ export default {
   width: 110px;
   margin-left: -5px;
 }
-.exchange-box-wrapper.ten {
+/* .exchange-box-wrapper.ten {
   margin-left: 125px;
-}
+} */
 .exchange-box p {
   display: none;
   padding-top: 3px;
@@ -2962,6 +2966,7 @@ export default {
     font-family: "Montserrat", sans-serif;
   }
   .exchange-box-wrapper {
+    text-align: center;
     margin: 5px auto;
     display: inline-block;
   }
@@ -2984,9 +2989,9 @@ export default {
     width: 110px;
     margin-left: -5px;
   }
-  .exchange-box-wrapper.ten {
+  /* .exchange-box-wrapper.ten {
     margin-left: 0;
-  }
+  } */
   .exchange-download-wrapper {
     margin-top: 2.5rem;
   }
