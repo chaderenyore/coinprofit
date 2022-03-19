@@ -50,19 +50,24 @@
       </div>
 
       <p class="leaders-aboutP">
-        Lead and let others follow your footstep. Let people follow and/or
-        subscribe to you. <br />
+        If you are an influencer or leader in the crypto space with a track
+        record, you can make money by letting your community of subscribers see
+        the coins you buy, when you buy and when you sell! <br />
         <br />
 
-        You can choose to charge any amount of money
-        <i>monthly/year/lifetime.</i> So those subscribed to you will be able to
-        see the coins you buy, when you buy and when you sell without revealing
-        the transaction amount. <br />
+        We have integration with DEX (BSC, ETH) and CEX (Binance, Kucoin and
+        FTX). This means, your subscribers will be able to see anytime you
+        perform a trade on any of these platforms.
+        <br />
         <br />
 
-        E.G, If you buy $BNB, you don’t need to tell anyone you bought it. Your
-        subscribers (Those paying you) will see it and buy it too if they want.
-        They make profit as you make profit. It’s a Win-Win!
+        Your subscribers will only see the coins you buy/sell and the price of
+        the coin as at when you execute the trade but won’t see the amount of
+        money you’re trading with. <br />
+        <br />
+
+        And of course, you can set your own subscription fee per month. $5, $10,
+        $20, $100, whatever you want - It’s passive income for you.
       </p>
 
       <div class="app-downloads">
@@ -84,7 +89,15 @@
       </div>
     </div>
   </section>
-  <section class="iconholder">
+  
+
+  <section class="win-win">
+    <h1>It’s a WIN-WIN!</h1>
+    <p>Your subscribers see your trades so they can choose to buy when you buy and sell when you sell. You make money, they make money too!
+</p>
+  </section>
+
+<section class="iconholder">
     <img
       src="@/assets/images/listtle-Icons/icon-btc.svg"
       alt=""
@@ -108,9 +121,8 @@
         />
       </div>
       <p>
-        Easily share signals with your followers and subscribers. We
-        automatically track the signal progress and give you more bragging
-        rights when your signals hit profit target.
+        Easily share signals with your followers and subscribers. Select exchange, pick a coin, set entry targets, take profit targets and stop loss. We make signal sharing super easy.
+
       </p>
     </div>
 
@@ -148,7 +160,7 @@
     </div>
 
     <div class="leaders-features three">
-      <h1>Share Thought</h1>
+      <h1>Share Thought / <br />Keep Your subscribers <br />informed</h1>
       <img
         src="@/assets/images/listtle-Icons/litegold.svg"
         alt=""
@@ -172,14 +184,33 @@
         />
       </div>
       <p>
-        Share your thoughts and let others know what you think about the crypto
-        market, keep your followers updated.
+        Share your thoughts and the latest happenings on the market with your followers and subscribers. Help them stay informed and stay profitable
+
+
       </p>
     </div>
 
     <div class="leaders-features two last">
       <h1>Generate And Share <br />Your Signal Report</h1>
-  
+
+      <img src="@/assets/images/listtle-Icons/6.svg" class="svg6FNP" />
+      <img src="@/assets/images/listtle-Icons/iconuntop.svg" class="svgOneNP" />
+      <img
+        src="@/assets/images/listtle-Icons/moneygold.svg"
+        class="svgontopNP"
+      />
+
+      <img
+        src="@/assets/images/listtle-Icons/iconsheidl.svg"
+        alt=""
+        class="svg6NP"
+      />
+      <img src="@/assets/images/listtle-Icons/4.svg" alt="" class="svg4NP" />
+      <img
+        src="@/assets/images/listtle-Icons/iconsheidl.svg"
+        alt=""
+        class="sheildicoNP"
+      />
 
       <img
         src="@/assets/images/leaders/share-blob.png"
@@ -786,6 +817,29 @@ export default {
   left: 10%;
   width: 2rem;
 }
+
+.win-win {
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+}
+.win-win h1 {
+  text-align: center;
+  color: #3374ea;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.win-win p {
+  width: 90%;
+  margin: auto;
+  text-align: center;
+  margin-top: 4px;
+  color: var(--fourth-color);
+  line-height: 30px;
+}
 .leaders-features {
   position: relative;
   padding-bottom: 1rem;
@@ -843,17 +897,24 @@ export default {
 }
 
 /*  */
+
+.svg6FNP {
+  position: absolute;
+  left: 8%;
+  top: 20%;
+  width: 4rem;
+}
 .svgOneNP {
   position: absolute;
   left: 70%;
-  top: 15%;
+  top: 20%;
   width: 3rem;
 }
 .svgontopNP {
   position: absolute;
   left: 4%;
   top: 40%;
-  width: 3rem;
+  width: 5rem;
 }
 .svg4NP {
   display: none;
@@ -864,6 +925,9 @@ export default {
   top: 40%;
   width: 3rem;
   z-index: 1;
+}
+.sheildicoNP {
+  display: none;
 }
 
 /*  */
@@ -1342,6 +1406,16 @@ export default {
     width: 30%;
     margin: 2rem 1rem;
   }
+
+  .win-win p {
+    width: 90%;
+    color: var(--fourth-color);
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 400;
+    font-family: "Montserrat", sans-serif;
+    line-height: 50px;
+}
   .iconholder {
     position: relative;
   }
@@ -1752,6 +1826,18 @@ export default {
     margin-top: 2px;
     font-size: 17px;
   }
+
+
+  .win-win p {
+    width: 50%;
+    color: var(--fourth-color);
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: "Montserrat", sans-serif;
+    line-height: 30px;
+}
+
   .iconholder {
     position: relative;
   }
@@ -1824,10 +1910,17 @@ export default {
   /* ... */
 
   /*  */
+  .svg6FNP {
+    position: absolute;
+    left: 97%;
+    top: 40%;
+    width: 4rem;
+    z-index: 2;
+  }
   .svgOneNP {
     position: absolute;
-    left: 85%;
-    top: 25%;
+    left: 80%;
+    top: 95%;
     width: 3rem;
   }
   .svgontopNP {
@@ -1838,11 +1931,7 @@ export default {
     display: none;
   }
   .svg6NP {
-    position: absolute;
-    left: 85%;
-    top: 70%;
-    width: 5rem;
-    z-index: 1;
+    display: none;
   }
   .svg4NP {
     display: block;
@@ -1851,8 +1940,13 @@ export default {
     left: 5%;
     top: 12%;
   }
-  
-
+  .sheildicoNP {
+    display: block;
+    position: absolute;
+    width: 2rem;
+    left: 60%;
+    top: 70%;
+  }
   .leadersF-blob {
     margin-top: 3rem;
     margin-left: 0;
@@ -1902,8 +1996,8 @@ export default {
   }
   .leaders-features.three h1 {
     float: right;
-    margin-right: 12rem;
-    margin-top: 16rem;
+    margin-right: 3rem;
+    margin-top: 11rem;
     text-align: left;
     color: #3374ea;
     font-family: "Montserrat", sans-serif;
@@ -1921,7 +2015,7 @@ export default {
   .seeSubsimg {
     position: relative;
     top: -22rem;
-    margin-left: 23rem;
+    margin-left: 20.5rem;
     margin-bottom: -30rem;
     width: 30%;
     float: right;
