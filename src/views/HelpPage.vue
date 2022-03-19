@@ -49,7 +49,7 @@
       {{ $prismic.asText(data.data.welcome_text) }}
     </p>
   </section>
-  <section class="w-[90%] m-auto">
+  <section class="w-[80%] m-auto">
     <help-post-card></help-post-card>
   </section>
 

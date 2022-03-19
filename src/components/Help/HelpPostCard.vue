@@ -1,7 +1,7 @@
 <template>
   <div v-if="helpost">
     <ul
-      class="flex justify-center flex-wrap gap-y-6 gap-x-3 md:gap-x-5 md:grid md:grid-cols-2 lg:flex lg:flex-wrap lg:justify-start xl:grid xl:grid-cols-3"
+      class="flex justify-center flex-wrap gap-y-6 gap-x-3 md:grid md:justify-start md:items-start md:content-center md:grid-cols-2 lg:flex lg:flex-wrap lg:justify-start xl:grid xl:grid-cols-3 xl:gap-x-5"
     >
       <li v-for="post in helpost.results" :key="post.uid">
         <article
