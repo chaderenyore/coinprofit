@@ -598,7 +598,13 @@
         src="../assets/images/listtle-Icons/5.svg"
         alt=""
         srcset=""
-        class="littleIcon8"
+        class="littleIcon8" 
+      />
+      <img
+        src="../assets/images/listtle-Icons/roundicon.svg"
+        alt=""
+        srcset=""
+        class="roundicon1" 
       />
       <!-- ENd little Icons -->
     </div>
@@ -625,6 +631,18 @@
       </h1>
 
       <div class="proft-loss-img-box">
+         <img
+        src="../assets/images/listtle-Icons/4.svg"
+        alt=""
+        srcset=""
+        class="littleIconS1"
+      />
+       <img
+        src="../assets/images/listtle-Icons/3.svg"
+        alt=""
+        srcset=""
+        class="littleIconS2"
+      />
         <img
           src="../assets/images/profit-loss.png"
           alt="See your profit and Loss."
@@ -1174,33 +1192,7 @@ export default {
     },
 
     initIndexFile() {
-      // PAGE SCROLL ANIMATIONS STARTS HERE
 
-      const faders = document.querySelectorAll(".fadeIn-scroll");
-
-      const appearOptions = {
-        threshold: 0,
-        rootMargin: "0px 0px -250px 0px",
-      };
-
-      const appearOnScroll = new IntersectionObserver(function (
-        entries,
-        appearOnScroll
-      ) {
-        entries.forEach((entry) => {
-          if (!entry.isIntersecting) {
-            return;
-          } else {
-            entry.target.classList.add("appear");
-            appearOnScroll.unobserve(entry.target);
-          }
-        });
-      },
-      appearOptions);
-
-      faders.forEach((fader) => {
-        appearOnScroll.observe(fader);
-      });
 
       // PAGE SCROLL ANIMATIONS ENDS HERE
 
@@ -1410,50 +1402,6 @@ export default {
   margin: 10px auto;
 }
 
-/* The dots/bullets/indicators */
-.dot-wrapper {
-  text-align: center;
-  margin: auto;
-}
-.dot {
-  height: 10px;
-  width: 10px;
-  margin: 0 2px;
-  background-color: #fff;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.dot-active {
-  background-color: greenyellow;
-}
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
-}
 
 .app-downloads {
   position: absolute;
@@ -1551,17 +1499,7 @@ export default {
   margin-top: 20px;
   font-size: 17px;
 }
-/* Fade in codes starts from here */
 
-.fadeIn-scroll {
-  opacity: 0;
-  transition: opacity 190ms ease-in;
-}
-.fadeIn-scroll.appear {
-  opacity: 1;
-}
-
-/* fade in codes ends here */
 .app-features {
   height: 1000px;
   position: relative;
@@ -2164,13 +2102,20 @@ export default {
   top: 30px;
 }
 .littleIcon7 {
-  width: 20%;
+  width: 4rem;
   position: absolute;
-  left: 140px;
-  top: 1150px;
+  left: 4%;
+  top: 83%;
 }
 .littleIcon8 {
   display: none;
+}
+.roundicon1 {
+  width: 3rem;
+  position: absolute;
+  left: 80%;
+  top: 87%;
+  z-index: 1;
 }
 .custom-shape-divider-bottom-1644660326 {
   position: absolute;
@@ -2194,13 +2139,27 @@ export default {
 }
 
 .profit-loss-sec {
+  
   margin-top: 60px;
   margin-bottom: 30px;
 }
 .profit-loss {
+  position: relative;
   width: 95%;
   margin: 0 auto;
 }
+  .littleIconS1 {
+    position: absolute;
+    left: 80%;
+    
+    width: 4rem;
+  }
+  .littleIconS2 {
+     position: absolute;
+     top: 90%;
+     width: 4rem;
+
+  }
 
 .profit-loss h1 {
   text-align: center;
@@ -2901,18 +2860,35 @@ export default {
     top: 800px;
     left: 500px;
   }
+
   .littleIcon6 {
-    width: 10%;
+    width: 4rem;
     position: absolute;
     left: 170px;
     top: 40px;
   }
 
   .littleIcon7 {
-    width: 10%;
+    width: 4rem;
     position: absolute;
-    left: 650px;
-    top: 1250px;
+    left: 2%;
+    top: 87%;
+    z-index: 1;
+  }
+
+
+.roundicon1 {
+  width: 3rem;
+  position: absolute;
+  left: 80%;
+  top: 90%;
+  z-index: 1;
+}
+
+
+  .littleIconS1 {
+    
+    top: 9%;
   }
 
   .share-portfolio-sec {
@@ -3598,26 +3574,36 @@ export default {
     left: 500px;
   }
   .littleIcon6 {
-    width: 10%;
+    width: 5rem;
     position: absolute;
-    left: 590px;
-    top: 40px;
+    left: 50%;
+    top: 95%;
   }
 
   .littleIcon7 {
-    width: 10%;
+    width: 4rem;
     position: absolute;
-    left: 650px;
-    top: 1900px;
+    left: 10%;
+    top: 80%;
     display: none;
   }
   .littleIcon8 {
     display: block;
-    /* width: 10%; */
+    width: 3rem;
     position: absolute;
-    left: 900px;
-    top: 1900px;
+    left: 5%;
+    top: 2%;
+    z-index: 1;
   }
+.roundicon1 {
+  width: 3rem;
+  position: absolute;
+  left: 90%;
+  top: 2%;
+  z-index: 1;
+}
+
+
 
   .profit-loss h1 {
     width: 60%;
@@ -4412,15 +4398,22 @@ export default {
   .littleIcon6 {
     width: 5%;
     position: absolute;
-    left: 700px;
-    top: 800px;
+    left: 50%;
+    top: 95%;
   }
   .littleIcon8 {
     display: block;
     width: 2%;
     position: absolute;
-    left: 200px;
-    top: 50px;
+    left: 15%;
+    top: 5%;
+  }
+  .roundicon1 {
+     width: 3rem;
+    position: absolute;
+    left: 80%;
+    top: 2%;
+    z-index: 1;
   }
   .auto-button {
     margin-left: 90px;
@@ -4438,6 +4431,18 @@ export default {
   .profit-loss-sec {
     position: relative;
   }
+  .littleIconS1 {
+    position: absolute;
+    width: 5rem;
+    left: 5%;
+  }
+  .littleIconS2 {
+     position: absolute;
+     left: 80%;
+     top: 70%;
+     width: 5rem;
+
+  }
   .proft-loss-img-box {
     width: 60%;
     margin: 0 auto;
@@ -4446,6 +4451,7 @@ export default {
     width: 50%;
     margin-left: 150px;
   }
+
   .groupshare {
     display: block;
     position: absolute;
