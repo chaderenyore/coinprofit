@@ -1413,7 +1413,7 @@ export default {
 
 
 .app-downloads {
-  text-align: center;
+  /* text-align: center; */
   position: absolute;
   margin-top: 2rem;
 }
