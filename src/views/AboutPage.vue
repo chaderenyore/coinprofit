@@ -280,8 +280,8 @@ export default {
     },
     showSlides(n) {
       var i;
-      var slides = document.getElementsByClassName("mySlides");
-      var dots = document.getElementsByClassName("dot");
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
       if (n > slides.length) {
         this.slideIndex = 1;
       }
@@ -304,7 +304,6 @@ export default {
   },
 };
 </script>
-
 
 <style scoped>
 .about-sec {

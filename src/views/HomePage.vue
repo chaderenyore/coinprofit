@@ -166,7 +166,6 @@
         </div>
       </div>
       <div class="box">
-        
         <div class="box-img">
           <img
             src="../assets/images/review3.jpeg"
@@ -210,15 +209,13 @@
             Coinprofit helps me also to earn money!
           </p>
         </div>
-         <img
-    src="../assets/images/listtle-Icons/5.svg"
-    alt="little Icon"
-    class="littleicon5"
-  />
+        <img
+          src="../assets/images/listtle-Icons/5.svg"
+          alt="little Icon"
+          class="littleicon5"
+        />
       </div>
-     
     </div>
-    
   </section>
   <!-- End Review Section-->
 
@@ -265,11 +262,11 @@
   </section>
   <section class="get-signal">
     <h1>Get Signals From All Your Leaders In One Place</h1>
-     <img
-    src="../assets/images/listtle-Icons/dollarontop.svg"
-    alt="little Icon"
-    class="iconuntop"
-  />
+    <img
+      src="../assets/images/listtle-Icons/dollarontop.svg"
+      alt="little Icon"
+      class="iconuntop"
+    />
     <div class="blob-signal-wrapper slideIn">
       <img
         src="../assets/images/blob-signal.png"
@@ -312,10 +309,10 @@
       <img src="../assets/images/main-si.svg" alt="" class="main-signal-img" />
     </div>
     <img
-    src="../assets/images/listtle-Icons/dollar.svg"
-    alt="little Icon"
-    class="dollarsvg"
-  />
+      src="../assets/images/listtle-Icons/dollar.svg"
+      alt="little Icon"
+      class="dollarsvg"
+    />
     <p class="signal-details">
       Get signals from the leading traders all in one place. Discover and rate
       their signal quality. Share whether or not you’ve been able to profit from
@@ -351,7 +348,6 @@
     <!-- This is a sliderjs framework.  -->
 
     <div class="testimonials-carousel-wrap">
-      
       <div class="listing-carousel-button listing-carousel-button-next">
         <i class="fa fa-caret-right" style="color: #fff"></i>
       </div>
@@ -377,7 +373,6 @@
                   <p>10x his portfolio in 3 months, that's incredible!</p>
                 </div>
               </div>
-             
             </div>
 
             <!--second--->
@@ -397,7 +392,6 @@
                   <p>to running and hedge fund worth Millions of dollars</p>
                 </div>
               </div>
-             
             </div>
             <!--third-->
 
@@ -419,7 +413,6 @@
                   </p>
                 </div>
               </div>
-              
             </div>
 
             <!--fourth-->
@@ -439,7 +432,6 @@
                   <p>sharing some real signal - come join me</p>
                 </div>
               </div>
-             
             </div>
             <!--testi end-->
           </div>
@@ -1204,7 +1196,6 @@ export default {
 
       // PAGE SCROLL ANIMATIONS ENDS HERE
 
-
       // leaders silder starts here
 
       function initParadoxWay() {
@@ -1535,24 +1526,24 @@ export default {
   margin-top: 20px;
 }
 .copy-traders,
-.see-leaders{
+.see-leaders {
   margin: 50px auto 20px;
 }
 .get-signal {
   margin-top: 180px;
 }
- .iconuntop {
-    position: absolute;
-    width:2rem;
-    left: 80%;
-    top: 15%;
-  }
-  .dollarsvg {
-    position: absolute;
-    top: 90%;
-    left: 10%;
-    width:2rem;
-  }
+.iconuntop {
+  position: absolute;
+  width: 2rem;
+  left: 80%;
+  top: 15%;
+}
+.dollarsvg {
+  position: absolute;
+  top: 90%;
+  left: 10%;
+  width: 2rem;
+}
 .copy-img {
   width: 100%;
   margin-left: 10px;
@@ -1875,7 +1866,6 @@ export default {
   font-weight: 500;
   text-align: center;
 }
-
 
 .swiper-slide-active .testi-item {
   opacity: 1;
@@ -3345,7 +3335,6 @@ export default {
     top: 85rem;
   }
 
-
   .get-signal h1 {
     color: #3374ea;
     font-family: "Montserrat", sans-serif;
@@ -3354,7 +3343,7 @@ export default {
     width: 80%;
     margin: 0 auto;
   }
- 
+
   .signal-details {
     top: 100px;
     font-size: 30px;
@@ -3480,7 +3469,6 @@ export default {
     position: absolute;
     top: 50%;
   }
-
 
   .app-features-two {
     width: 90%;
@@ -3986,7 +3974,6 @@ export default {
     display: flex;
     flex: wrap;
     justify-content: center;
-
   }
   .box {
     width: 340px;
@@ -3998,7 +3985,6 @@ export default {
     font-family: "Montserrat", sans-serif;
     border-radius: 10px;
   }
-
 
   .box-img {
     position: relative;
@@ -4257,12 +4243,11 @@ export default {
     position: absolute;
     right: 10%;
     top: -2%;
-   
   }
   .leader-level img {
-     width: 4rem
+    width: 4rem;
   }
-    .testimonials-text {
+  .testimonials-text {
     padding: 5rem 1rem 3rem;
     overflow: hidden;
     background: #22a1f5;
@@ -4271,7 +4256,7 @@ export default {
     transition: all 0.3s ease-in-out;
     width: 70%;
     margin: 0 auto;
-    }
+  }
 
   .app-features-two {
     width: 90%;
