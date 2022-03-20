@@ -39,15 +39,17 @@
     </div>
   </section>
 
-  <section v-if="data" class="w-4/5 m-auto">
+  <section v-if="data" class="w-4/5 m-auto mb-8">
     <h1 class="text-center font-extrabold text-3xl mb-3 text-[#3374ea]">
       {{ $prismic.asText(data.data.welcome_heading) }}
     </h1>
-    <p class="help__article text-center font-medium max-w-[636px] m-auto">
-      <PrismicRichText :field="data.data.welcome_text" />
+    <p
+      class="help__article text-center text-[1.2rem] font-medium max-w-[636px] m-auto"
+    >
+      {{ $prismic.asText(data.data.welcome_text) }}
     </p>
   </section>
-  <section class="w-[90%] m-auto">
+  <section class="w-[80%] m-auto">
     <help-post-card></help-post-card>
   </section>
 
@@ -206,7 +208,7 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0.5rem;
+  padding: 0.3rem;
   border-radius: 2.25rem;
   box-shadow: 0 1.5625rem 1.25rem #1c192305;
 }
@@ -246,6 +248,7 @@ export default {
   padding: 0.875rem 1.875rem;
   border-radius: 12.5rem;
   color: white;
+  box-shadow: 0 10 10 #22a1f51a;
 }
 
 @media only screen and (min-width: 48.75rem) {

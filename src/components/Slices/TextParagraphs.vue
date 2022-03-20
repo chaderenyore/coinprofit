@@ -1,9 +1,9 @@
 <template>
   <div>
     <PrismicText
-    v-for="paragraph in slice.items"
-    :key="paragraph.length"
-      class="text-lg mt-2 font-medium"
+      v-for="paragraph in slice.items"
+      :key="paragraph.length"
+      class="article-introtext text-base mb-6 font-medium"
       wrapper="p"
       :field="paragraph.paragraphs"
     />
@@ -18,3 +18,9 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+.article-introtext {
+  color: var(--article-text);
+}
+</style>

@@ -1,16 +1,14 @@
 <template>
-  <div>
+  <div class="mb-6">
     <PrismicRichText
-      class="font-bold text-2xl mb-6"
+      class="font-bold text-[#3374EA] mb-4"
       :field="slice.primary.intro_header"
       wrapper="h1"
     />
 
-    <PrismicRichText
-      class="font-medium text-emerald-700 text-lg"
-      wrapper="p"
-      :field="slice.primary.intro_text"
-    />
+    <p class="article-introtext font-medium text-base">
+      {{ $prismic.asText(slice.primary.intro_text) }}
+    </p>
   </div>
 </template>
 
@@ -22,3 +20,9 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+.article-introtext {
+  color: var(--article-text);
+}
+</style>

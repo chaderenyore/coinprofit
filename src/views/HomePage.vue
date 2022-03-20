@@ -165,7 +165,7 @@
           </p>
         </div>
       </div>
-      <div class="box three">
+      <div class="box">
         <div class="box-img">
           <img
             src="../assets/images/review3.jpeg"
@@ -209,6 +209,11 @@
             Coinprofit helps me also to earn money!
           </p>
         </div>
+        <img
+          src="../assets/images/listtle-Icons/5.svg"
+          alt="little Icon"
+          class="littleicon5"
+        />
       </div>
     </div>
   </section>
@@ -257,6 +262,11 @@
   </section>
   <section class="get-signal">
     <h1>Get Signals From All Your Leaders In One Place</h1>
+    <img
+      src="../assets/images/listtle-Icons/dollarontop.svg"
+      alt="little Icon"
+      class="iconuntop"
+    />
     <div class="blob-signal-wrapper slideIn">
       <img
         src="../assets/images/blob-signal.png"
@@ -298,7 +308,11 @@
     <div class="main-signal-wrapper">
       <img src="../assets/images/main-si.svg" alt="" class="main-signal-img" />
     </div>
-
+    <img
+      src="../assets/images/listtle-Icons/dollar.svg"
+      alt="little Icon"
+      class="dollarsvg"
+    />
     <p class="signal-details">
       Get signals from the leading traders all in one place. Discover and rate
       their signal quality. Share whether or not you’ve been able to profit from
@@ -359,9 +373,6 @@
                   <p>10x his portfolio in 3 months, that's incredible!</p>
                 </div>
               </div>
-              <div class="signal-img-wrapper">
-                <img src="../assets/images/signal-st.png" alt="" srcset="" />
-              </div>
             </div>
 
             <!--second--->
@@ -380,9 +391,6 @@
                   <p class="username">@anichris</p>
                   <p>to running and hedge fund worth Millions of dollars</p>
                 </div>
-              </div>
-              <div class="signal-img-wrapper">
-                <img src="../assets/images/signal-st.png" alt="" srcset="" />
               </div>
             </div>
             <!--third-->
@@ -405,9 +413,6 @@
                   </p>
                 </div>
               </div>
-              <div class="signal-img-wrapper">
-                <img src="../assets/images/signal-st.png" alt="" srcset="" />
-              </div>
             </div>
 
             <!--fourth-->
@@ -426,9 +431,6 @@
                   <p class="username">@irorochad</p>
                   <p>sharing some real signal - come join me</p>
                 </div>
-              </div>
-              <div class="signal-img-wrapper">
-                <img src="../assets/images/signal-st.png" alt="" srcset="" />
               </div>
             </div>
             <!--testi end-->
@@ -596,7 +598,13 @@
         src="../assets/images/listtle-Icons/5.svg"
         alt=""
         srcset=""
-        class="littleIcon8"
+        class="littleIcon8" 
+      />
+      <img
+        src="../assets/images/listtle-Icons/roundicon.svg"
+        alt=""
+        srcset=""
+        class="roundicon1" 
       />
       <!-- ENd little Icons -->
     </div>
@@ -623,6 +631,18 @@
       </h1>
 
       <div class="proft-loss-img-box">
+         <img
+        src="../assets/images/listtle-Icons/4.svg"
+        alt=""
+        srcset=""
+        class="littleIconS1"
+      />
+       <img
+        src="../assets/images/listtle-Icons/3.svg"
+        alt=""
+        srcset=""
+        class="littleIconS2"
+      />
         <img
           src="../assets/images/profit-loss.png"
           alt="See your profit and Loss."
@@ -1030,7 +1050,7 @@
         </span>
 
         <div class="iframe-container">
-          <iframe
+          <!-- <iframe
             width="560"
             height="315"
             src="https://www.youtube.com/embed/H9154xIoYTA"
@@ -1038,7 +1058,7 @@
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
-          ></iframe>
+          ></iframe> -->
         </div>
       </div>
     </div>
@@ -1172,60 +1192,9 @@ export default {
     },
 
     initIndexFile() {
-      // PAGE SCROLL ANIMATIONS STARTS HERE
 
-      const faders = document.querySelectorAll(".fadeIn-scroll");
-
-      const appearOptions = {
-        threshold: 0,
-        rootMargin: "0px 0px -250px 0px",
-      };
-
-      const appearOnScroll = new IntersectionObserver(function (
-        entries,
-        appearOnScroll
-      ) {
-        entries.forEach((entry) => {
-          if (!entry.isIntersecting) {
-            return;
-          } else {
-            entry.target.classList.add("appear");
-            appearOnScroll.unobserve(entry.target);
-          }
-        });
-      },
-      appearOptions);
-
-      faders.forEach((fader) => {
-        appearOnScroll.observe(fader);
-      });
 
       // PAGE SCROLL ANIMATIONS ENDS HERE
-
-      // About slider starts here
-
-      var slideIndex = 0;
-      showSlides();
-
-      function showSlides() {
-        var i;
-        var slides = document.getElementsByClassName("mySlides");
-        var dots = document.getElementsByClassName("dot");
-        for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";
-        }
-        slideIndex++;
-        if (slideIndex > slides.length) {
-          slideIndex = 1;
-        }
-        for (i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace(" dot-active", "");
-        }
-        slides[slideIndex - 1].style.display = "block";
-        dots[slideIndex - 1].className += " dot-active";
-        setTimeout(showSlides, 2000); // Change image every 2 seconds
-      }
-      // About slider ends here
 
       // leaders silder starts here
 
@@ -1238,6 +1207,7 @@ export default {
             slidesPerView: 1,
             spaceBetween: 20,
             loop: true,
+            freeMode: true,
             grabCursor: true,
             mousewheel: false,
             centeredSlides: true,
@@ -1259,6 +1229,7 @@ export default {
                 slidesPerView: 2,
               },
               1200: {
+                spaceBetween: 0,
                 slidesPerView: 3,
               },
             },
@@ -1339,29 +1310,34 @@ export default {
 
 .littleicon1 {
   position: absolute;
-  top: 260px;
-  left: 10px;
-  width: 110px;
+  top: 40%;
+  left: 8%;
+  width: 5rem;
 }
 
 .littleicon2 {
   position: absolute;
-  top: 460px;
-  left: 10px;
-  width: 100px;
+  top: 60%;
+  left: 7%;
+  width: 4rem;
 }
 
 .littleicon3 {
   position: absolute;
-  top: 350px;
-  left: 250px;
-  width: 100px;
+  top: 55%;
+  left: 75%;
+  width: 4rem;
 }
 .littleicon4 {
   position: absolute;
-  top: 1050px;
-  left: 10px;
-  width: 100px;
+  top: 140%;
+  left: 1%;
+  width: 4rem;
+  z-index: 1;
+}
+.littleicon5 {
+  position: absolute;
+  width: 1.5rem;
 }
 
 .first-page {
@@ -1426,50 +1402,6 @@ export default {
   margin: 10px auto;
 }
 
-/* The dots/bullets/indicators */
-.dot-wrapper {
-  text-align: center;
-  margin: auto;
-}
-.dot {
-  height: 10px;
-  width: 10px;
-  margin: 0 2px;
-  background-color: #fff;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.dot-active {
-  background-color: greenyellow;
-}
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
-}
 
 .app-downloads {
   position: absolute;
@@ -1567,17 +1499,7 @@ export default {
   margin-top: 20px;
   font-size: 17px;
 }
-/* Fade in codes starts from here */
 
-.fadeIn-scroll {
-  opacity: 0;
-  transition: opacity 190ms ease-in;
-}
-.fadeIn-scroll.appear {
-  opacity: 1;
-}
-
-/* fade in codes ends here */
 .app-features {
   height: 1000px;
   position: relative;
@@ -1603,13 +1525,24 @@ export default {
   margin-top: 20px;
 }
 .copy-traders,
-.see-leaders,
-.get-signal {
+.see-leaders {
   margin: 50px auto 20px;
 }
-/* .copy-img-box {
-  width: 100%;
-} */
+.get-signal {
+  margin-top: 180px;
+}
+.iconuntop {
+  position: absolute;
+  width: 2rem;
+  left: 80%;
+  top: 15%;
+}
+.dollarsvg {
+  position: absolute;
+  top: 90%;
+  left: 10%;
+  width: 2rem;
+}
 .copy-img {
   width: 100%;
   margin-left: 10px;
@@ -1777,10 +1710,11 @@ export default {
   top: 69rem;
   width: 100%;
   float: left;
-  height: 1100px;
+  /* height: 1100px; */
   background: transparent linear-gradient(180deg, #22a1f5 0%, #677bff 100%) 0%
     0% no-repeat padding-box;
   padding-top: 100px;
+  padding-bottom: 10rem;
   overflow: hidden;
   margin-bottom: 800px;
 }
@@ -1831,7 +1765,7 @@ export default {
 }
 .listing-carousel-button {
   position: absolute;
-  top: 45%;
+  top: 50%;
   width: 80px;
   height: 50px;
   line-height: 50px;
@@ -1869,22 +1803,18 @@ export default {
 .testimonials-text {
   padding: 75px 50px 75px;
   overflow: hidden;
-  border: 1px solid #f1f1f1;
   border-radius: 10px;
   transition: all 0.3s ease-in-out;
-  height: 350px;
   width: 90%;
   margin: 0 auto;
-  box-shadow: rgba(26, 38, 58, 0.1);
+  box-shadow: 0 9px 26px rgba(58, 87, 135, 0.1);
 }
-
 .testimonials-avatar h3 {
   font-weight: 600;
   color: #fff;
   font-size: 18px;
   font-family: "Montserrat", sans-serif;
 }
-
 .testimonials-carousel .swiper-slide {
   padding: 30px 0;
 }
@@ -1936,15 +1866,6 @@ export default {
   text-align: center;
 }
 
-.signal-img-wrapper {
-  position: absolute;
-  left: 10%;
-  top: 250px;
-  margin-left: -28px;
-}
-.signal-img-wrapper img {
-  width: 350px;
-}
 .swiper-slide-active .testi-item {
   opacity: 1;
   transform: scale(1);
@@ -2181,13 +2102,20 @@ export default {
   top: 30px;
 }
 .littleIcon7 {
-  width: 20%;
+  width: 4rem;
   position: absolute;
-  left: 140px;
-  top: 1150px;
+  left: 4%;
+  top: 83%;
 }
 .littleIcon8 {
   display: none;
+}
+.roundicon1 {
+  width: 3rem;
+  position: absolute;
+  left: 80%;
+  top: 87%;
+  z-index: 1;
 }
 .custom-shape-divider-bottom-1644660326 {
   position: absolute;
@@ -2211,13 +2139,27 @@ export default {
 }
 
 .profit-loss-sec {
+  
   margin-top: 60px;
   margin-bottom: 30px;
 }
 .profit-loss {
+  position: relative;
   width: 95%;
   margin: 0 auto;
 }
+  .littleIconS1 {
+    position: absolute;
+    left: 80%;
+    
+    width: 4rem;
+  }
+  .littleIconS2 {
+     position: absolute;
+     top: 90%;
+     width: 4rem;
+
+  }
 
 .profit-loss h1 {
   text-align: center;
@@ -2252,7 +2194,6 @@ export default {
 .share-portfolio-sec {
   background-color: var(--third-color);
   position: relative;
-  height: 160vh;
 }
 .custom-shape-divider-top-1644670257 {
   position: absolute;
@@ -2919,23 +2860,40 @@ export default {
     top: 800px;
     left: 500px;
   }
+
   .littleIcon6 {
-    width: 10%;
+    width: 4rem;
     position: absolute;
     left: 170px;
     top: 40px;
   }
 
   .littleIcon7 {
-    width: 10%;
+    width: 4rem;
     position: absolute;
-    left: 650px;
-    top: 1250px;
+    left: 2%;
+    top: 87%;
+    z-index: 1;
+  }
+
+
+.roundicon1 {
+  width: 3rem;
+  position: absolute;
+  left: 80%;
+  top: 90%;
+  z-index: 1;
+}
+
+
+  .littleIconS1 {
+    
+    top: 9%;
   }
 
   .share-portfolio-sec {
     height: 140vh;
-    /* padding: 30rem 0; */
+    box-shadow: 3px;
   }
   .share-portfolio h1 {
     text-align: center;
@@ -3302,7 +3260,8 @@ export default {
   }
   .review-box {
     width: 100%;
-    margin-left: 20px;
+    /* margin-left: 20px; */
+    text-align: center;
   }
   .box {
     width: 350px;
@@ -3313,9 +3272,7 @@ export default {
     font-family: "Montserrat", sans-serif;
     border-radius: 10px;
   }
-  .box.three {
-    margin-left: 190px;
-  }
+
   .box-img {
     position: relative;
     top: -60px;
@@ -3365,10 +3322,12 @@ export default {
     width: 70%;
     margin: 0 auto;
   }
-
+  .littleicon5 {
+    display: none;
+  }
   .get-signal {
     position: relative;
-    top: 75rem;
+    top: 85rem;
   }
 
   .get-signal h1 {
@@ -3470,10 +3429,9 @@ export default {
   }
 
   .meet-leaders {
-    top: 80rem;
+    top: 100rem;
     width: 100%;
-    height: 1000px;
-    margin-bottom: 1500px;
+    margin-bottom: 1800px;
   }
   .meet-leaders h1 {
     width: 90%;
@@ -3486,8 +3444,9 @@ export default {
   }
   .leader-level {
     position: absolute;
-    right: -20px;
+    right: -30px;
     top: -20px;
+    z-index: 2;
   }
   .leaders-p {
     width: 60%;
@@ -3503,16 +3462,7 @@ export default {
   }
   .listing-carousel-button {
     position: absolute;
-    top: 41%;
-  }
-  .signal-img-wrapper {
-    position: absolute;
-    left: 12%;
-    top: 250px;
-    margin-left: -35px;
-  }
-  .signal-img-wrapper img {
-    width: 380px;
+    top: 50%;
   }
 
   .app-features-two {
@@ -3624,26 +3574,36 @@ export default {
     left: 500px;
   }
   .littleIcon6 {
-    width: 10%;
+    width: 5rem;
     position: absolute;
-    left: 590px;
-    top: 40px;
+    left: 50%;
+    top: 95%;
   }
 
   .littleIcon7 {
-    width: 10%;
+    width: 4rem;
     position: absolute;
-    left: 650px;
-    top: 1900px;
+    left: 10%;
+    top: 80%;
     display: none;
   }
   .littleIcon8 {
     display: block;
-    /* width: 10%; */
+    width: 3rem;
     position: absolute;
-    left: 900px;
-    top: 1900px;
+    left: 5%;
+    top: 2%;
+    z-index: 1;
   }
+.roundicon1 {
+  width: 3rem;
+  position: absolute;
+  left: 90%;
+  top: 2%;
+  z-index: 1;
+}
+
+
 
   .profit-loss h1 {
     width: 60%;
@@ -3965,7 +3925,7 @@ export default {
     text-align: left;
     margin: 7px 0;
     color: #3374ea;
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 800;
     letter-spacing: 0;
   }
@@ -3983,6 +3943,7 @@ export default {
     display: inline-block;
     width: 35%;
     margin: 0 auto;
+    margin-right: 1rem;
   }
 
   .appui {
@@ -4003,8 +3964,8 @@ export default {
     margin: 0 auto;
   }
   .review-box {
-    margin-top: 60px;
-    margin-left: 0;
+    margin-top: 60px auto 0;
+    text-align: center;
     display: flex;
     flex: wrap;
     justify-content: center;
@@ -4018,9 +3979,6 @@ export default {
     margin: 60px 9px 90px;
     font-family: "Montserrat", sans-serif;
     border-radius: 10px;
-  }
-  .box.three {
-    margin-left: 0;
   }
 
   .box-img {
@@ -4137,7 +4095,10 @@ export default {
     position: relative;
     top: 17rem;
   }
-
+  .dollarsvg {
+    top: 70%;
+    left: 25%;
+  }
   .get-signal h1 {
     color: #3374ea;
     font-family: "Montserrat", sans-serif;
@@ -4261,30 +4222,35 @@ export default {
   .meet-leaders {
     top: 10rem;
     width: 100%;
+    padding-bottom: 15rem;
     margin-bottom: 200px;
     z-index: 2;
   }
   .swiper-container {
-    width: 90%;
+    width: 80%;
+    margin: 0 auto;
   }
   .listing-carousel-button {
     position: absolute;
-    top: 40%;
+    top: 50%;
   }
   .leader-level {
-    /* width: 0px; */
     position: absolute;
-    right: -20px;
-    top: -20px;
+    right: 10%;
+    top: -2%;
   }
-  .signal-img-wrapper {
-    position: absolute;
-    left: 13%;
-    top: 250px;
-    margin-left: -20px;
+  .leader-level img {
+    width: 4rem;
   }
-  .signal-img-wrapper img {
-    width: 320px;
+  .testimonials-text {
+    padding: 5rem 1rem 3rem;
+    overflow: hidden;
+    background: #22a1f5;
+    box-shadow: 0 9px 26px rgba(58, 87, 135, 0.1);
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+    width: 70%;
+    margin: 0 auto;
   }
 
   .app-features-two {
@@ -4432,15 +4398,22 @@ export default {
   .littleIcon6 {
     width: 5%;
     position: absolute;
-    left: 700px;
-    top: 800px;
+    left: 50%;
+    top: 95%;
   }
   .littleIcon8 {
     display: block;
     width: 2%;
     position: absolute;
-    left: 200px;
-    top: 50px;
+    left: 15%;
+    top: 5%;
+  }
+  .roundicon1 {
+     width: 3rem;
+    position: absolute;
+    left: 80%;
+    top: 2%;
+    z-index: 1;
   }
   .auto-button {
     margin-left: 90px;
@@ -4458,6 +4431,18 @@ export default {
   .profit-loss-sec {
     position: relative;
   }
+  .littleIconS1 {
+    position: absolute;
+    width: 5rem;
+    left: 5%;
+  }
+  .littleIconS2 {
+     position: absolute;
+     left: 80%;
+     top: 70%;
+     width: 5rem;
+
+  }
   .proft-loss-img-box {
     width: 60%;
     margin: 0 auto;
@@ -4466,6 +4451,7 @@ export default {
     width: 50%;
     margin-left: 150px;
   }
+
   .groupshare {
     display: block;
     position: absolute;

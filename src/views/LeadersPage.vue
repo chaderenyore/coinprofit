@@ -50,19 +50,24 @@
       </div>
 
       <p class="leaders-aboutP">
-        Lead and let others follow your footstep. Let people follow and/or
-        subscribe to you. <br />
+        If you are an influencer or leader in the crypto space with a track
+        record, you can make money by letting your community of subscribers see
+        the coins you buy, when you buy and when you sell! <br />
         <br />
 
-        You can choose to charge any amount of money
-        <i>monthly/year/lifetime.</i> So those subscribed to you will be able to
-        see the coins you buy, when you buy and when you sell without revealing
-        the transaction amount. <br />
+        We have integration with DEX (BSC, ETH) and CEX (Binance, Kucoin and
+        FTX). This means, your subscribers will be able to see anytime you
+        perform a trade on any of these platforms.
+        <br />
         <br />
 
-        E.G, If you buy $BNB, you don’t need to tell anyone you bought it. Your
-        subscribers (Those paying you) will see it and buy it too if they want.
-        They make profit as you make profit. It’s a Win-Win!
+        Your subscribers will only see the coins you buy/sell and the price of
+        the coin as at when you execute the trade but won’t see the amount of
+        money you’re trading with. <br />
+        <br />
+
+        And of course, you can set your own subscription fee per month. $5, $10,
+        $20, $100, whatever you want - It’s passive income for you.
       </p>
 
       <div class="app-downloads">
@@ -84,10 +89,28 @@
       </div>
     </div>
   </section>
+  
 
+  <section class="win-win">
+    <h1>It’s a WIN-WIN!</h1>
+    <p>Your subscribers see your trades so they can choose to buy when you buy and sell when you sell. You make money, they make money too!
+</p>
+  </section>
+
+<section class="iconholder">
+    <img
+      src="@/assets/images/listtle-Icons/icon-btc.svg"
+      alt=""
+      class="iconBTC1"
+    />
+  </section>
   <section>
     <div class="leaders-features">
       <h1>Share Signal</h1>
+      <img src="@/assets/images/listtle-Icons/4.svg" alt="" class="svg4" />
+      <img src="@/assets/images/listtle-Icons/2.svg" alt="" class="svg2F" />
+      <img src="@/assets/images/listtle-Icons/7.svg" alt="" class="svg7F" />
+
       <img src="@/assets/images/leaders/share-blob.png" class="leadersF-blob" />
 
       <div class="leaders-portfolio-box">
@@ -98,9 +121,8 @@
         />
       </div>
       <p>
-        Easily share signals with your followers and subscribers. We
-        automatically track the signal progress and give you more bragging
-        rights when your signals hit profit target.
+        Easily share signals with your followers and subscribers. Select exchange, pick a coin, set entry targets, take profit targets and stop loss. We make signal sharing super easy.
+
       </p>
     </div>
 
@@ -109,6 +131,14 @@
         See Subscribers<br />
         Earnings
       </h1>
+      <img src="@/assets/images/listtle-Icons/1.svg" alt="" class="svgOne" />
+      <img
+        src="@/assets/images/listtle-Icons/dollarontop.svg"
+        alt=""
+        class="svgontop"
+      />
+      <img src="@/assets/images/listtle-Icons/6.svg" alt="" class="svg6F" />
+
       <img
         src="@/assets/images/leaders/share-blob.png"
         class="leadersF-blob two"
@@ -130,7 +160,20 @@
     </div>
 
     <div class="leaders-features three">
-      <h1>Share Thought</h1>
+      <h1>Share Thought / <br />Keep Your subscribers <br />informed</h1>
+      <img
+        src="@/assets/images/listtle-Icons/litegold.svg"
+        alt=""
+        class="svgOneNP"
+      />
+      <img
+        src="@/assets/images/listtle-Icons/moneygold.svg"
+        class="svgontopNP"
+      />
+
+      <img src="@/assets/images/listtle-Icons/3.svg" alt="" class="svg6NP" />
+      <img src="@/assets/images/listtle-Icons/4.svg" alt="" class="svg4NP" />
+
       <img src="@/assets/images/leaders/share-blob.png" class="leadersF-blob" />
 
       <div class="leaders-portfolio-box">
@@ -141,13 +184,34 @@
         />
       </div>
       <p>
-        Share your thoughts and let others know what you think about the crypto
-        market, keep your followers updated.
+        Share your thoughts and the latest happenings on the market with your followers and subscribers. Help them stay informed and stay profitable
+
+
       </p>
     </div>
 
     <div class="leaders-features two last">
       <h1>Generate And Share <br />Your Signal Report</h1>
+
+      <img src="@/assets/images/listtle-Icons/6.svg" class="svg6FNP" />
+      <img src="@/assets/images/listtle-Icons/iconuntop.svg" class="svgOneNP" />
+      <img
+        src="@/assets/images/listtle-Icons/moneygold.svg"
+        class="svgontopNP"
+      />
+
+      <img
+        src="@/assets/images/listtle-Icons/iconsheidl.svg"
+        alt=""
+        class="svg6NP"
+      />
+      <img src="@/assets/images/listtle-Icons/4.svg" alt="" class="svg4NP" />
+      <img
+        src="@/assets/images/listtle-Icons/iconsheidl.svg"
+        alt=""
+        class="sheildicoNP"
+      />
+
       <img
         src="@/assets/images/leaders/share-blob.png"
         class="leadersF-blob two last"
@@ -476,7 +540,8 @@
           </button>
           <div class="faqcontent">
             <p>
-              Anyone can be a leader! If you're crypto guru or you have some followers, you can sign up as a leader.
+              Anyone can be a leader! If you're crypto guru or you have some
+              followers, you can sign up as a leader.
             </p>
           </div>
         </div>
@@ -487,7 +552,10 @@
           </button>
           <div class="faqcontent">
             <p>
-              That depends mostly on you. You can choose to charge any amount monthly/yearly/lifetime for people to subscribe to you. How much you make at the end of the day, depends on how much you charge plus the number of subscribers.
+              That depends mostly on you. You can choose to charge any amount
+              monthly/yearly/lifetime for people to subscribe to you. How much
+              you make at the end of the day, depends on how much you charge
+              plus the number of subscribers.
             </p>
           </div>
         </div>
@@ -552,8 +620,7 @@
       </div>
     </div>
   </section>
-   <BaseCallToAction />
-   
+  <BaseCallToAction />
 </template>
 
 
@@ -565,7 +632,7 @@ export default {
   components: {
     BaseCallToAction,
   },
-  
+
   methods: {
     useSplide() {
       new Splide(".splide", {
@@ -580,7 +647,7 @@ export default {
     },
 
     initLeadersPage() {
-        this.useSplide();
+      this.useSplide();
 
       // end of splider js
 
@@ -687,7 +754,7 @@ export default {
 .app-download {
   display: block;
   width: 50%;
-  margin: 2rem auto 0;
+  margin: 1rem auto 0;
 }
 
 .signal-packs {
@@ -742,10 +809,41 @@ export default {
   margin-top: 2px;
   font-size: 17px;
 }
+.iconholder {
+  position: relative;
+}
+.iconBTC1 {
+  position: relative;
+  left: 10%;
+  width: 2rem;
+}
 
+.win-win {
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+}
+.win-win h1 {
+  text-align: center;
+  color: #3374ea;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.win-win p {
+  width: 90%;
+  margin: auto;
+  text-align: center;
+  margin-top: 4px;
+  color: var(--fourth-color);
+  line-height: 30px;
+}
 .leaders-features {
   position: relative;
   padding-bottom: 1rem;
+  margin-bottom: 3rem;
 }
 
 .leaders-features h1 {
@@ -755,6 +853,84 @@ export default {
   font-weight: bold;
   font-size: 2rem;
 }
+.svg4 {
+  position: absolute;
+  left: 75%;
+  top: 5%;
+  width: 3rem;
+}
+.svg7F {
+  position: absolute;
+  left: 4%;
+  top: 30%;
+  width: 3rem;
+}
+.svg2F {
+  position: absolute;
+  left: 85%;
+  top: 30%;
+  width: 3rem;
+}
+
+/*  */
+.svgOne {
+  position: absolute;
+  left: 70%;
+  top: 15%;
+  width: 3rem;
+}
+.svgontop {
+  position: absolute;
+  left: 4%;
+  top: 40%;
+  width: 3rem;
+}
+.svg4N {
+  display: none;
+}
+.svg6F {
+  position: absolute;
+  left: 80%;
+  top: 40%;
+  width: 3rem;
+  z-index: 1;
+}
+
+/*  */
+
+.svg6FNP {
+  position: absolute;
+  left: 8%;
+  top: 20%;
+  width: 4rem;
+}
+.svgOneNP {
+  position: absolute;
+  left: 70%;
+  top: 20%;
+  width: 3rem;
+}
+.svgontopNP {
+  position: absolute;
+  left: 4%;
+  top: 40%;
+  width: 5rem;
+}
+.svg4NP {
+  display: none;
+}
+.svg6NP {
+  position: absolute;
+  left: 80%;
+  top: 40%;
+  width: 3rem;
+  z-index: 1;
+}
+.sheildicoNP {
+  display: none;
+}
+
+/*  */
 
 .leadersF-blob {
   margin-top: 2rem;
@@ -763,10 +939,10 @@ export default {
 }
 
 .share-portfolio-img {
-  margin: 0 auto;
-  width: 100%;
+  width: 70%;
   position: relative;
   top: -17rem;
+  margin-left: 20%;
   margin-bottom: -19rem;
 }
 
@@ -782,10 +958,10 @@ export default {
 }
 
 .seeSubsimg {
-  margin: 0 auto;
-  width: 100%;
+  width: 70%;
   position: relative;
   top: -17rem;
+  margin-left: 20%;
   margin-bottom: -19rem;
 }
 
@@ -1230,15 +1406,103 @@ export default {
     width: 30%;
     margin: 2rem 1rem;
   }
+
+  .win-win p {
+    width: 90%;
+    color: var(--fourth-color);
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 400;
+    font-family: "Montserrat", sans-serif;
+    line-height: 50px;
+}
+  .iconholder {
+    position: relative;
+  }
+  .iconBTC1 {
+    position: relative;
+    left: 10%;
+    width: 5rem;
+  }
+
+  .svg4 {
+    position: absolute;
+    left: 80%;
+    top: 8%;
+    width: 5rem;
+  }
   .leaders-features {
-    margin-top: 10rem;
+    margin-bottom: 5rem;
   }
   .leaders-features h1 {
     text-align: center;
     color: #3374ea;
     font-family: "Montserrat", sans-serif;
     font-weight: 800;
-    font-size: 5rem;
+    font-size: 3rem;
+  }
+  .svg4 {
+    position: absolute;
+    left: 80%;
+    top: 8%;
+    width: 5rem;
+  }
+  .svg7F {
+    position: absolute;
+    left: 85%;
+    top: 50%;
+    width: 5rem;
+  }
+  .svg2F {
+    position: absolute;
+    left: 5%;
+    top: 50%;
+    width: 5rem;
+  }
+
+  .svgOne {
+    position: absolute;
+    left: 70%;
+    top: 15%;
+    width: 5rem;
+  }
+  .svgontop {
+    position: absolute;
+    left: 5%;
+    top: 50%;
+    width: 5rem;
+  }
+  .svg6F {
+    position: absolute;
+    left: 85%;
+    top: 50%;
+    width: 5rem;
+  }
+
+  /*  */
+
+  /*  */
+  .svgOneNP {
+    position: absolute;
+    left: 70%;
+    top: 15%;
+    width: 6rem;
+  }
+  .svgontopNP {
+    position: absolute;
+    left: 4%;
+    top: 40%;
+    width: 6rem;
+  }
+  .svg4NP {
+    display: none;
+  }
+  .svg6NP {
+    position: absolute;
+    left: 80%;
+    top: 40%;
+    width: 7rem;
+    z-index: 1;
   }
 
   .leadersF-blob {
@@ -1497,7 +1761,7 @@ export default {
     font-size: 0.9rem;
   }
   .app-downloads {
-    margin-left: 3rem;
+    margin-left: -2rem;
     text-align: center;
     width: 40%;
   }
@@ -1562,6 +1826,27 @@ export default {
     margin-top: 2px;
     font-size: 17px;
   }
+
+
+  .win-win p {
+    width: 50%;
+    color: var(--fourth-color);
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: "Montserrat", sans-serif;
+    line-height: 30px;
+}
+
+  .iconholder {
+    position: relative;
+  }
+  .iconBTC1 {
+    position: relative;
+    left: 10%;
+    width: 3rem;
+  }
+
   .leaders-features {
     width: 80%;
     margin: 0 auto;
@@ -1577,20 +1862,102 @@ export default {
     font-weight: 800;
     font-size: 2.3rem;
   }
+  .svg4 {
+    position: absolute;
+    left: 80%;
+    top: 8%;
+    width: 5rem;
+  }
+  .svg7F {
+    position: absolute;
+    left: 90%;
+    top: 80%;
+    width: 5rem;
+  }
+  .svg2F {
+    position: absolute;
+    left: 0%;
+    top: 90%;
+    width: 5rem;
+  }
 
+  .svgOne {
+    position: absolute;
+    left: 90%;
+    top: 90%;
+    width: 5rem;
+  }
+  .svgontop {
+    position: absolute;
+    left: 45%;
+    top: 90%;
+    width: 2rem;
+  }
+  .svg4N {
+    display: block;
+    position: absolute;
+    width: 4rem;
+    left: 4%;
+    top: 20%;
+  }
+  .svg6F {
+    position: absolute;
+    left: 5%;
+    top: 90%;
+    width: 3rem;
+  }
+
+  /* ... */
+
+  /*  */
+  .svg6FNP {
+    position: absolute;
+    left: 97%;
+    top: 40%;
+    width: 4rem;
+    z-index: 2;
+  }
+  .svgOneNP {
+    position: absolute;
+    left: 80%;
+    top: 95%;
+    width: 3rem;
+  }
+  .svgontopNP {
+    position: absolute;
+    left: 4%;
+    top: 40%;
+    width: 3rem;
+    display: none;
+  }
+  .svg6NP {
+    display: none;
+  }
+  .svg4NP {
+    display: block;
+    position: absolute;
+    width: 5rem;
+    left: 5%;
+    top: 12%;
+  }
+  .sheildicoNP {
+    display: block;
+    position: absolute;
+    width: 2rem;
+    left: 60%;
+    top: 70%;
+  }
   .leadersF-blob {
     margin-top: 3rem;
     margin-left: 0;
     width: 40%;
     z-index: -1;
   }
-  .leadersF-blob:hover {
-    transform: rotate(20deg);
-  }
+
   .share-portfolio-img {
     position: relative;
     top: -23rem;
-    margin-left: 2rem;
+    margin-left: 5rem;
     margin-bottom: -30rem;
     width: 30%;
   }
@@ -1629,8 +1996,8 @@ export default {
   }
   .leaders-features.three h1 {
     float: right;
-    margin-right: 12rem;
-    margin-top: 16rem;
+    margin-right: 3rem;
+    margin-top: 11rem;
     text-align: left;
     color: #3374ea;
     font-family: "Montserrat", sans-serif;
@@ -1648,7 +2015,7 @@ export default {
   .seeSubsimg {
     position: relative;
     top: -22rem;
-    margin-left: 23rem;
+    margin-left: 20.5rem;
     margin-bottom: -30rem;
     width: 30%;
     float: right;
@@ -1664,7 +2031,7 @@ export default {
   .app-downloads.wrapper {
     position: relative;
     top: -10rem;
-    margin-left: 7rem;
+    margin-left: 2rem;
   }
 
   .app-download.features {

@@ -46,7 +46,7 @@
   .svg-untop {
     position: absolute;
     width: 2rem;
-    left: 80%;
+    left: 88%;
     top: 35%;
   }
   .svg-1 {
@@ -55,9 +55,12 @@
     left: 40%;
     top: 0;
   }
+  .svg-4 {
+    display: none;
+  }
   .svg-7 {
     position: absolute;
-    width: 4rem;
+    width: 3rem;
     left: 80%;
     top: 0;
   }
@@ -66,14 +69,14 @@
     width: 4rem;
     bottom: 0;
   }
-
+    .btc-lite {
+    display: none;
+  }
   .btc-svg {
     position: absolute;
     width: 2rem;
     top: 43%;
   }
-
-
   .moneygold {
     position: absolute;
     width: 4rem;
@@ -86,7 +89,6 @@
     left: 52%;
     bottom: 0;
   }
-
 .final-download {
   margin: 5rem auto 40px;
   width: 90%;
@@ -104,7 +106,6 @@
   font-weight: bold;
   margin-top: 50px;
 }
-
 .final-download-wrapper {
   width: 80%;
   margin: 30px auto;
@@ -135,9 +136,7 @@
     display: inline-block;
   }
 }
-
 /* IPAD PRO */
-
 @media only screen and (min-width: 1024px) {
   .final-download {
     margin: 100px auto 40px;
@@ -168,7 +167,6 @@
   }
 }
 @media only screen and (min-width: 1200px) {
-
   .svg-shield {
     width: 2.5rem;
     position: absolute;
@@ -194,6 +192,7 @@
     top: 40%;
   }
    .svg-4 {
+     display: block;
     position: absolute;
     width: 4rem;
     left: -1%;
@@ -206,6 +205,7 @@
     top: 58%;
   }
   .btc-lite {
+    display: block;
     position: absolute;
     width: 3rem;
     left: 20%;
@@ -217,7 +217,6 @@
     left: 95%;
     top: -1rem;
   }
-
   .moneygold {
     position: absolute;
     width: 6rem;
@@ -230,7 +229,6 @@
     left:  97%;
     top: 90%;
   }
-
   .final-download {
     margin: 100px auto 40px;
     width: 80%;
@@ -251,7 +249,6 @@
     font-weight: 800;
     margin-top: 4rem;
   }
-
   .final-download-wrapper {
     width: 80%;
     text-align: center;

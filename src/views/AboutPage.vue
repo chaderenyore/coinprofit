@@ -280,8 +280,13 @@ export default {
     },
     showSlides(n) {
       var i;
+<<<<<<< HEAD
       var slides = document.getElementsByClassName("mySlides");
       var dots = document.getElementsByClassName("dot");
+=======
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+>>>>>>> 1ee88e3c83646bc19a05b5a0307112153616a3a1
       if (n > slides.length) {
         this.slideIndex = 1;
       }
@@ -304,7 +309,6 @@ export default {
   },
 };
 </script>
-
 
 <style scoped>
 .about-sec {
@@ -752,7 +756,10 @@ export default {
   .about-sec {
     margin-bottom: 20rem;
   }
-
+.about_container {
+  width: 80%;
+  margin: 4rem auto 0;
+}
   .about_container h1 {
     float: left;
     margin-right: 14.5rem;
