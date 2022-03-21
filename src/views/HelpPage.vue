@@ -22,7 +22,10 @@
     </div>
     <div class="help__section--search">
       <p class="help__section--search-p">
-        Check out our tutorial section where we show you step by step guides on how to use the different features of the CoinProfit App. And also our various articles to help you get started. You can use the search bar to easily find what you are looking for.
+        Check out our tutorial section where we show you step by step guides on
+        how to use the different features of the CoinProfit App. And also our
+        various articles to help you get started. You can use the search bar to
+        easily find what you are looking for.
       </p>
       <div>
         <form action="#" @submit.prevent class="help__section--search__form">
@@ -96,249 +99,249 @@
 </template>
 
 <script>
-import { useSinglePrismicDocument } from "@prismicio/vue";
-import HelpPostCard from "../components/Help/HelpPostCard.vue";
-export default {
-  components: {
-    HelpPostCard,
-  },
+  import { useSinglePrismicDocument } from "@prismicio/vue";
+  import HelpPostCard from "../components/Help/HelpPostCard.vue";
+  export default {
+    components: {
+      HelpPostCard,
+    },
 
-  setup() {
-    const { data } = useSinglePrismicDocument("help_welcome");
+    setup() {
+      const { data } = useSinglePrismicDocument("help_welcome");
 
-    return {
-      data,
-    };
-  },
-};
+      return {
+        data,
+      };
+    },
+  };
 </script>
 
 <style scoped>
-.help__section {
-  padding-top: 7rem;
-  width: 80%;
-  margin: 0 auto;
-  margin-bottom: 3.2rem;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.help__section--welcome {
-  color: #00be13;
-  font-size: 1.25rem;
-  font-weight: 500;
-  margin-bottom: 0.5rem;
-  text-align: center;
-}
-
-.help__section--welcome__bold {
-  color: #3374ea;
-  font-size: 1.5625rem;
-  font-weight: 700;
-  text-align: center;
-}
-
-.help__cards {
-  margin-top: 1.5625rem;
-  display: flex;
-}
-
-.help__cards--card {
-  cursor: pointer;
-  background: var(--help-hero-card);
-  border-radius: 0.875rem;
-  height: 10.25rem;
-  width: 9.375rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 1.25rem 1.0625rem #1c192305;
-  transition: all;
-}
-
-.help__cards--card:hover {
-  background-image: linear-gradient(180deg, #22a1f5, #677bff);
-}
-
-.help__cards--card:hover p {
-  color: #fff;
-}
-
-.help__cards--card:not(:first-child) {
-  margin-left: 1.25rem;
-}
-
-.help__cards__img-div {
-  height: 40%;
-  margin-bottom: 1.375rem;
-}
-
-.help__cards__img-div img {
-  height: 100%;
-}
-
-.help__cards--card p {
-  font-size: 1rem;
-  color: #3374ea;
-  font-weight: bold;
-}
-
-.help__section--search {
-  margin-top: 1.5rem;
-}
-
-.help__section--search-p {
-  font-size: 1.0625rem;
-  line-height: 1.75rem;
-  color: var(--help-hero-text);
-  font-weight: 500;
-  width: 92%;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.help__section--search__form {
-  margin-top: 1.75rem;
-  background-color: var(--help-search);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0.3rem;
-  border-radius: 2.25rem;
-  box-shadow: 0 1.5625rem 1.25rem #1c192305;
-}
-
-.help__section--search__input {
-  background-color: transparent;
-  font-family: inherit;
-  font-size: inherit;
-  font-size: 1.125rem;
-  border: none;
-  padding: 0.4375rem 1.25rem;
-  width: 90%;
-}
-
-.help__section--search__input:focus {
-  outline: none;
-  outline-style: none;
-  box-shadow: none;
-  border-color: transparent;
-}
-
-.help__section--search__form:focus-within {
-  box-shadow: 0 0.625rem 0.75rem #1c192305;
-}
-
-.help__section--search__input::placeholder {
-  color: #b3bcce;
-}
-
-.help__section--search__button {
-  border: none;
-  background-image: linear-gradient(180deg, #22a1f5, #677bff);
-  font-family: inherit;
-  font-size: inherit;
-  font-size: 1rem;
-  font-weight: 500;
-  padding: 0.875rem 1.875rem;
-  border-radius: 12.5rem;
-  color: white;
-  box-shadow: 0 10 10 #22a1f51a;
-}
-
-@media only screen and (min-width: 48.75rem) {
   .help__section {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    margin-bottom: 9rem;
-  }
+    padding-top: 7rem;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 3.2rem;
 
-  .help__section--div-1 {
-    align-self: end;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .help__section--welcome {
-    margin-bottom: 2rem;
-    text-align: left;
-  }
-
-  .help__cards {
-    grid-row: 1 / span 2;
-    margin-top: 0;
-    grid-column-start: 2;
-    justify-self: center;
+    color: #00be13;
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    text-align: center;
   }
 
   .help__section--welcome__bold {
-    text-align: left;
-    font-size: 2rem;
-    margin-bottom: 3rem;
+    color: #3374ea;
+    font-size: 1.5625rem;
+    font-weight: 700;
+    text-align: center;
   }
 
-  .help__section--search__form {
-    width: 80%;
+  .help__cards {
+    margin-top: 1.5625rem;
+    display: flex;
+  }
+
+  .help__cards--card {
+    cursor: pointer;
+    background: var(--help-hero-card);
+    border-radius: 0.875rem;
+    height: 10.25rem;
+    width: 9.375rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 1.25rem 1.0625rem #1c192305;
+    transition: all;
+  }
+
+  .help__cards--card:hover {
+    background-image: linear-gradient(180deg, #22a1f5, #677bff);
+  }
+
+  .help__cards--card:hover p {
+    color: #fff;
+  }
+
+  .help__cards--card:not(:first-child) {
+    margin-left: 1.25rem;
+  }
+
+  .help__cards__img-div {
+    height: 40%;
+    margin-bottom: 1.375rem;
+  }
+
+  .help__cards__img-div img {
+    height: 100%;
+  }
+
+  .help__cards--card p {
+    font-size: 1rem;
+    color: #3374ea;
+    font-weight: bold;
   }
 
   .help__section--search {
-    margin-top: 0;
+    margin-top: 1.5rem;
   }
 
   .help__section--search-p {
-    margin: 0;
-    text-align: left;
+    font-size: 1.0625rem;
     line-height: 1.75rem;
+    color: var(--help-hero-text);
+    font-weight: 500;
+    width: 92%;
+    margin: 0 auto;
+    text-align: center;
   }
-}
 
-@media only screen and (min-width: 65rem) {
-  .help__section {
-    margin-bottom: 12.5rem;
+  .help__section--search__form {
+    margin-top: 1.75rem;
+    background-color: var(--help-search);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.3rem;
+    border-radius: 2.25rem;
+    box-shadow: 0 1.5625rem 1.25rem #1c192305;
   }
-}
 
-@media only screen and (min-width: 90rem) {
-  .help__section {
-    grid-column-gap: 0.375rem;
+  .help__section--search__input {
+    background-color: transparent;
+    font-family: inherit;
+    font-size: inherit;
+    font-size: 1.125rem;
+    border: none;
+    padding: 0.4375rem 1.25rem;
+    width: 90%;
   }
-}
 
-.help__section--contact {
-  width: 80%;
-  margin: 0 auto;
-  margin-top: 5.625rem;
-}
+  .help__section--search__input:focus {
+    outline: none;
+    outline-style: none;
+    box-shadow: none;
+    border-color: transparent;
+  }
 
-.help__section__texts {
-  margin-bottom: 2.5rem;
-}
+  .help__section--search__form:focus-within {
+    box-shadow: 0 0.625rem 0.75rem #1c192305;
+  }
 
-.help__contact__h2 {
-  font-size: 2rem;
-  font-weight: 800;
-  color: #3374ea;
-  text-align: center;
-  margin-bottom: 1.25rem;
-}
+  .help__section--search__input::placeholder {
+    color: #b3bcce;
+  }
 
-.help__contact__p {
-  font-size: 1rem;
-  line-height: 1.375rem;
-  color: #525b6d;
-  font-weight: 500;
-  text-align: center;
-}
+  .help__section--search__button {
+    border: none;
+    background-image: linear-gradient(180deg, #22a1f5, #677bff);
+    font-family: inherit;
+    font-size: inherit;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0.875rem 1.875rem;
+    border-radius: 12.5rem;
+    color: white;
+    box-shadow: 0 10 10 #22a1f51a;
+  }
 
-.help__contact--card {
-  background: var(--help-contact-box);
-  box-shadow: 0 20px 17px #1c192305;
-}
-.help__contact--card-p {
-  color: var(--help-contact-box-text);
-}
-.help__article {
-  color: var(--help-article-text);
-}
+  @media only screen and (min-width: 48.75rem) {
+    .help__section {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      margin-bottom: 9rem;
+    }
+
+    .help__section--div-1 {
+      align-self: end;
+    }
+
+    .help__section--welcome {
+      margin-bottom: 2rem;
+      text-align: left;
+    }
+
+    .help__cards {
+      grid-row: 1 / span 2;
+      margin-top: 0;
+      grid-column-start: 2;
+      justify-self: center;
+    }
+
+    .help__section--welcome__bold {
+      text-align: left;
+      font-size: 2rem;
+      margin-bottom: 3rem;
+    }
+
+    .help__section--search__form {
+      width: 80%;
+    }
+
+    .help__section--search {
+      margin-top: 0;
+    }
+
+    .help__section--search-p {
+      margin: 0;
+      text-align: left;
+      line-height: 1.75rem;
+    }
+  }
+
+  @media only screen and (min-width: 65rem) {
+    .help__section {
+      margin-bottom: 12.5rem;
+    }
+  }
+
+  @media only screen and (min-width: 90rem) {
+    .help__section {
+      grid-column-gap: 0.375rem;
+    }
+  }
+
+  .help__section--contact {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 5.625rem;
+  }
+
+  .help__section__texts {
+    margin-bottom: 2.5rem;
+  }
+
+  .help__contact__h2 {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #3374ea;
+    text-align: center;
+    margin-bottom: 1.25rem;
+  }
+
+  .help__contact__p {
+    font-size: 1rem;
+    line-height: 1.375rem;
+    color: #525b6d;
+    font-weight: 500;
+    text-align: center;
+  }
+
+  .help__contact--card {
+    background: var(--help-contact-box);
+    box-shadow: 0 20px 17px #1c192305;
+  }
+  .help__contact--card-p {
+    color: var(--help-contact-box-text);
+  }
+  .help__article {
+    color: var(--help-article-text);
+  }
 </style>
