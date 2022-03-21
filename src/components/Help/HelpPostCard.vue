@@ -49,40 +49,86 @@
         </article>
       </li>
     </ul>
+    <div class="pagination text-center mt-14">
+      <button class="pagination-button" @click="loadMore" v-if="showLoadMore">
+        <p class="text-[#3374ea] text-base font-semibold">Load More</p>
+      </button>
+    </div>
   </div>
 </template>
 
 <script>
-// import { useAllPrismicDocumentsByType } from "@prismicio/vue";
-// const { data: helpost } = useAllPrismicDocumentsByType("articles");
-export default {
-  data() {
-    return {
-      helpost: "",
-    };
-  },
-  methods: {
-    async getData() {
-      this.helpost = await this.$prismic.client.getByType("articles");
+  // import { useAllPrismicDocumentsByType } from "@prismicio/vue";
+  // const { data: helpost } = useAllPrismicDocumentsByType("articles");
+  export default {
+    data() {
+      return {
+        helpost: "",
+        pageSize: 6,
+        showLoadMore: true,
+      };
     },
-  },
-  mounted() {
-    this.getData();
-  },
-};
+    methods: {
+      async getData() {
+        this.helpost = await this.$prismic.client.getByType("articles", {
+          pageSize: this.pageSize,
+        });
+        console.log(this.helpost);
+      },
+
+      loadMore() {
+        this.pageSize *= 2;
+        this.getData();
+      },
+    },
+
+    watch: {
+      "helpost.next_page"(newValue) {
+        if (!newValue) {
+          this.showLoadMore = false;
+        } else {
+          this.showLoadMore = true;
+        }
+      },
+    },
+
+    mounted() {
+      this.getData();
+    },
+  };
 </script>
 
 <style scoped>
-.help__card--article {
-  background-color: var(--third-color);
-  box-shadow: 0 20px 17px #1c192305;
-}
+  .help__card--article {
+    background-color: var(--third-color);
+    box-shadow: 0 20px 17px #1c192305;
+  }
 
-.card-article__text {
-  color: var(--help-article-text);
-}
+  .card-article__text {
+    color: var(--help-article-text);
+  }
 
-.article-tag {
-  background: var(--article-tag);
-}
+  .article-tag {
+    background: var(--article-tag);
+  }
+
+  .pagination-button {
+    cursor: pointer;
+    border: none;
+    padding: 0.8rem 2rem;
+    margin: 0;
+    text-decoration: none;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    box-shadow: 0px 1.25rem 1.0625rem #1c192305;
+    border-radius: 1.875rem;
+    transition: all 0.2s;
+  }
+
+  .pagination-button:hover {
+    box-shadow: 0px 1rem 1.0625rem #1c192305;
+  }
+
+  .pagination-button:active {
+    box-shadow: none;
+  }
 </style>

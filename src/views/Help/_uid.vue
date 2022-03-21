@@ -39,8 +39,8 @@
               :field="author.avatar"
             />
             <figcaption class="flex flex-col gap-1">
-              <h1 class="font-bold text-base md:text-lg text-[#3374EA]">
-                <PrismicRichText :field="author.name" wrapper="h1" />
+              <h1 class="font-bold text-sm md:text-lg text-[#3374EA]">
+                {{ $prismic.asText(author.name) }}
               </h1>
               <p class="author-bio text-sm md:text-base font-medium">
                 <PrismicRichText :field="author.bio" wrapper="p" />
