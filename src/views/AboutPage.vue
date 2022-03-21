@@ -153,12 +153,12 @@
           <h3>Emmanuel Ohworeko</h3>
           <h4>CEO and Founder of CoinProfit</h4>
 
-          <div class="reviews">
+          <!-- <div class="reviews">
             <p>
               With over 6 years in digital marketing, Emmanuel has helped
               businesses around the world
             </p>
-          </div>
+          </div> -->
         </div>
         <!-- end team_memebers_box-->
 
@@ -170,12 +170,12 @@
           <h3>Emmanuel Ohworeko</h3>
           <h4>CEO and Founder of CoinProfit</h4>
 
-          <div class="reviews">
+          <!-- <div class="reviews">
             <p>
               With over 6 years in digital marketing, Emmanuel has helped
               businesses around the world
             </p>
-          </div>
+          </div> -->
         </div>
         <!-- end team_memebers_box-->
 
@@ -187,12 +187,12 @@
           <h3>Emmanuel Ohworeko</h3>
           <h4>CEO and Founder of CoinProfit</h4>
 
-          <div class="reviews">
+          <!-- <div class="reviews">
             <p>
               With over 6 years in digital marketing, Emmanuel has helped
               businesses around the world
             </p>
-          </div>
+          </div> -->
         </div>
         <!-- end team_memebers_box-->
       </div>
@@ -515,8 +515,6 @@ export default {
 .team_memebers_box {
   width: 85%;
   padding: 0 20px 50px;
-  /* background: transparent linear-gradient(180deg, #22a1f5 0%, #677bff 100%)
-    no-repeat padding-box; */
   background: transparent linear-gradient(180deg, #22a1f5 0%, #28a1f1 100%) 0%
     0% no-repeat padding-box;
 
@@ -531,10 +529,10 @@ export default {
   position: relative;
   top: -4rem;
   margin-bottom: -3rem;
-  height: 7rem;
-  width: 7rem;
-  border: 3px solid var(--light-color);
-  border-radius: 50%;
+  height: 17rem;
+  width: 17rem;
+  /* border: 3px solid var(--light-color); */
+  border-radius: 10rem;
   overflow: hidden;
 }
 

@@ -454,7 +454,7 @@ export default {
   .copyright {
     position: relative;
     margin-top: 60px;
-    margin-bottom: 0;
+    margin-bottom: 10px;
     text-align: center;
     font-family: "Montserrat", sans-serif;
     z-index: 2;
