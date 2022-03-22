@@ -66,12 +66,14 @@
         /></a>
       </div>
 
-      <img src="../assets/images/appUI.svg" alt="" class="appui" />
+      <div class="main-appUI_wrapper">
+        <img src="../assets/images/appUI.svg" alt="" class="appui" />
+      </div>
     </div>
   </section>
 
   <section class="review-section">
-    <h1 class="fadeIn-scroll">
+    <h1>
       Discover What Top Crypto Experts Are Saying about the CoinProfit App
     </h1>
     <div class="review-box">
@@ -598,13 +600,13 @@
         src="../assets/images/listtle-Icons/5.svg"
         alt=""
         srcset=""
-        class="littleIcon8" 
+        class="littleIcon8"
       />
       <img
         src="../assets/images/listtle-Icons/roundicon.svg"
         alt=""
         srcset=""
-        class="roundicon1" 
+        class="roundicon1"
       />
       <!-- ENd little Icons -->
     </div>
@@ -631,18 +633,18 @@
       </h1>
 
       <div class="proft-loss-img-box">
-         <img
-        src="../assets/images/listtle-Icons/4.svg"
-        alt=""
-        srcset=""
-        class="littleIconS1"
-      />
-       <img
-        src="../assets/images/listtle-Icons/3.svg"
-        alt=""
-        srcset=""
-        class="littleIconS2"
-      />
+        <img
+          src="../assets/images/listtle-Icons/4.svg"
+          alt=""
+          srcset=""
+          class="littleIconS1"
+        />
+        <img
+          src="../assets/images/listtle-Icons/3.svg"
+          alt=""
+          srcset=""
+          class="littleIconS2"
+        />
         <img
           src="../assets/images/profit-loss.png"
           alt="See your profit and Loss."
@@ -1192,8 +1194,6 @@ export default {
     },
 
     initIndexFile() {
-
-
       // PAGE SCROLL ANIMATIONS ENDS HERE
 
       // leaders silder starts here
@@ -1343,21 +1343,33 @@ export default {
 .first-page {
   width: 100%;
   position: relative;
+  padding-top: 1rem;
+  margin-bottom: 7rem;
+}
+@media only screen and (min-width: 470px) {
+  .first-page {
+    margin-bottom: 20rem;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .first-page {
+    margin-bottom: 30rem;
+  }
 }
 .blob-wrapper {
-  position: relative; /* had a top postioning that was 40px */
+  position: relative;
   overflow-x: hidden;
   z-index: -1;
-  height: 710px;
+  height: 60rem;
 }
 .blob1 {
   object-fit: cover;
   position: relative;
   top: -28rem;
-  left: -170px;
-  margin-left: -100px;
-  height: 1460px;
-  width: 1459px;
+  left: -16rem;
+  height: auto;
+  max-width: 98rem;
+  z-index: -1;
 }
 
 /* blob1-d will not be displayed on mobile screen - cux it's another image with another style */
@@ -1371,7 +1383,8 @@ export default {
 
 .about {
   position: absolute;
-  top: 150px;
+  top: 10rem;
+  text-align: center;
 }
 .about h1 {
   font-family: "Montserrat", sans-serif;
@@ -1402,30 +1415,29 @@ export default {
   margin: 10px auto;
 }
 
-
 .app-downloads {
-  /* text-align: center; */
-  position: absolute;
-  margin-top: 2rem;
+  position: relative;
+  margin: 2rem auto 0;
+  width: 100%;
 }
 .app-download {
   display: block;
   width: 45%;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 10px;
-  margin-left: 90px;
 }
 
-.appui {
+.main-appUI_wrapper {
   position: relative;
-  top: 160px;
-  width: 100%;
+}
+.appui {
+  width: 80%;
 }
 
 .review-section {
   position: relative;
-  top: 500px;
   width: 100%;
-  height: 70vh;
   font-family: "Montserrat", sans-serif;
 }
 .review-section h1 {
@@ -1504,9 +1516,8 @@ export default {
 .app-features {
   height: 1000px;
   position: relative;
-  padding-top: 25rem;
   width: 80%;
-  margin: 1100px auto 0;
+  margin:0 auto;
 }
 
 .app-features h1 {
@@ -2140,7 +2151,6 @@ export default {
 }
 
 .profit-loss-sec {
-  
   margin-top: 60px;
   margin-bottom: 30px;
 }
@@ -2149,18 +2159,17 @@ export default {
   width: 95%;
   margin: 0 auto;
 }
-  .littleIconS1 {
-    position: absolute;
-    left: 80%;
-    
-    width: 4rem;
-  }
-  .littleIconS2 {
-     position: absolute;
-     top: 90%;
-     width: 4rem;
+.littleIconS1 {
+  position: absolute;
+  left: 80%;
 
-  }
+  width: 4rem;
+}
+.littleIconS2 {
+  position: absolute;
+  top: 90%;
+  width: 4rem;
+}
 
 .profit-loss h1 {
   text-align: center;
@@ -2678,48 +2687,52 @@ export default {
 
 /* FAQ ENDS HERE */
 
-/* IPAD SCEREEN SIZE */
-
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 700px) {
   .littleicon1 {
     position: absolute;
     top: 200px;
     left: 10px;
-    width: 110px;
+    width: 3rem;
   }
 
   .littleicon2 {
     position: absolute;
     top: 550px;
     left: 10px;
-    width: 100px;
+    width: 3rem;
   }
 
   .littleicon3 {
     position: absolute;
     top: 350px;
     left: 650px;
-    width: 100px;
+    width: 3rem;
   }
   .littleicon4 {
     position: absolute;
     top: 650px;
     left: 650px;
-    width: 100px;
+    width: 3rem;
+  }
+   .first-page {
+    margin-bottom: 20rem;
   }
   .blob-wrapper {
-    position: relative; /* had a top postioning that was 40px */
-    overflow-x: hidden;
-    z-index: -1;
+    width: 100%;
     height: 900px;
+    background: #22a1f5;
+     border-radius:10%;
+    -moz-border-radius:10%;
+    -webkit-border-radius:10%;
   }
   .blob1 {
     object-fit: cover;
     position: relative;
     top: -20rem;
-    margin-left: -100px;
-    height: 1460px;
-    width: 1600px;
+    margin-left: -4rem;
+    height: auto;
+    max-width: 98rem;
+    display: none;
   }
   .about {
     position: absolute;
@@ -2730,24 +2743,50 @@ export default {
   .slideshow-container p {
     width: 50%;
   }
+  
   .app-downloads {
-    position: absolute;
-    margin-top: 2rem;
-    margin-left: 120px;
+    position: relative;
+    margin: 2rem auto 0;
+    width: 100%;
   }
   .app-download {
     display: inline-block;
-    width: 45%;
+    width: 30%;
     margin-top: 10px;
-    margin-left: 10px;
+    margin-right: 10px;
   }
 
   .appui {
-    position: relative;
-    top: 160px;
-    width: 70%;
-    margin-left: 50px;
+    width: 50%;
   }
+  @media only screen and (min-width: 950px) { 
+
+  .app-download {
+    display: inline-block;
+    width: 20%;
+    margin-top: 10px;
+    margin-right: 10px;
+  }
+  .appui {
+    width: 40%;
+  }
+  }
+.review-box {
+  text-align: center;
+}
+.box {
+  width: 40%;
+  display: inline-block;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+.littleicon5 {
+  display: none;
+}
+.app-features {
+  margin-top: 1rem;
+}
+
   .app-features h1 {
     margin-bottom: 50px;
   }
@@ -2880,18 +2919,15 @@ export default {
     z-index: 1;
   }
 
-
-.roundicon1 {
-  width: 3rem;
-  position: absolute;
-  left: 80%;
-  top: 90%;
-  z-index: 1;
-}
-
+  .roundicon1 {
+    width: 3rem;
+    position: absolute;
+    left: 80%;
+    top: 90%;
+    z-index: 1;
+  }
 
   .littleIconS1 {
-    
     top: 9%;
   }
 
@@ -3186,6 +3222,10 @@ export default {
     position: relative;
     top: -100px;
     overflow-x: hidden;
+    background: unset;
+     border-radius:unset;
+    -moz-border-radius:unset;
+    -webkit-border-radius:unset;
   }
   .blob1 {
     display: none;
@@ -3238,20 +3278,24 @@ export default {
   }
 
   .app-downloads {
-    position: absolute;
     margin-top: 2rem;
-    margin-left: 10px;
+    text-align: left;
+    width: 100%;
+
   }
   .app-download {
     display: inline-block;
     width: 45%;
     margin: 10px auto;
   }
-
+  .main-appUI_wrapper {
+    float: left;
+    width: 60%;
+  }
   .appui {
     position: absolute;
-    top: -60px;
-    left: 35rem;
+    top: 0;
+    /* left: 35rem; */
     width: 60%;
   }
   .review-section {
@@ -3600,15 +3644,13 @@ export default {
     top: 2%;
     z-index: 1;
   }
-.roundicon1 {
-  width: 3rem;
-  position: absolute;
-  left: 90%;
-  top: 2%;
-  z-index: 1;
-}
-
-
+  .roundicon1 {
+    width: 3rem;
+    position: absolute;
+    left: 90%;
+    top: 2%;
+    z-index: 1;
+  }
 
   .profit-loss h1 {
     width: 60%;
@@ -4414,7 +4456,7 @@ export default {
     top: 5%;
   }
   .roundicon1 {
-     width: 3rem;
+    width: 3rem;
     position: absolute;
     left: 80%;
     top: 2%;
@@ -4442,11 +4484,10 @@ export default {
     left: 5%;
   }
   .littleIconS2 {
-     position: absolute;
-     left: 80%;
-     top: 70%;
-     width: 5rem;
-
+    position: absolute;
+    left: 80%;
+    top: 70%;
+    width: 5rem;
   }
   .proft-loss-img-box {
     width: 60%;
