@@ -1,7 +1,7 @@
 <template>
   <div v-if="helpost">
     <ul
-      class="flex justify-center flex-wrap gap-y-6 gap-x-3 md:grid md:justify-center md:items-start md:content-center md:grid-cols-2 lg:flex lg:flex-wrap lg:justify-start xl:grid xl:grid-cols-3 xl:gap-x-5"
+      class="flex justify-center flex-wrap gap-y-20 gap-x-3 md:grid md:justify-center md:items-start md:content-center md:grid-cols-2 lg:flex lg:flex-wrap lg:justify-start xl:grid xl:grid-cols-3 xl:gap-x-5"
     >
       <li v-for="post in helpost.results" :key="post.uid">
         <article
@@ -58,8 +58,6 @@
 </template>
 
 <script>
-  // import { useAllPrismicDocumentsByType } from "@prismicio/vue";
-  // const { data: helpost } = useAllPrismicDocumentsByType("articles");
   export default {
     data() {
       return {
@@ -85,15 +83,17 @@
     watch: {
       "helpost.next_page"(newValue) {
         if (!newValue) {
-          this.showLoadMore = false;
-        } else {
-          this.showLoadMore = true;
+          this.showLoadMore = !this.showLoadMore;
         }
       },
     },
 
     mounted() {
       this.getData();
+    },
+
+    beforeUpdate() {
+      console.log("Do Some thing");
     },
   };
 </script>
@@ -102,6 +102,15 @@
   .help__card--article {
     background-color: var(--third-color);
     box-shadow: 0 20px 17px #1c192305;
+    position: relative;
+  }
+
+  .help__card--article::before {
+    content: url(@/assets/images/article-blob.png);
+    position: absolute;
+    top: -20%;
+    z-index: -1;
+    left: 0;
   }
 
   .card-article__text {

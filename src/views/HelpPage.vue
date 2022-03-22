@@ -5,16 +5,28 @@
       <h2 class="help__section--welcome__bold">What can we help you with?</h2>
     </div>
     <div class="help__cards">
-      <div class="help__cards--card">
+      <div
+        class="help__cards--card"
+        :class="{
+          'card-on': selectedComponent === 'video-card',
+        }"
+        @click="selectedComponent = 'video-card'"
+      >
         <div class="help__cards__img-div">
-          <img src="../assets/images/okex-2.svg" alt="" />
+          <img src="@/assets/images/play.png" alt="" />
         </div>
 
         <p>Tutorials</p>
       </div>
-      <div class="help__cards--card">
+      <div
+        class="help__cards--card"
+        :class="{
+          'card-on': selectedComponent === 'help-post-card',
+        }"
+        @click="selectedComponent = 'help-post-card'"
+      >
         <div class="help__cards__img-div">
-          <img src="../assets/images/okex-2.svg" alt="" />
+          <img src="@/assets/images/blogging.png" alt="" />
         </div>
 
         <p>Articles</p>
@@ -40,7 +52,7 @@
     </div>
   </section>
 
-  <section v-if="data" class="w-4/5 m-auto mb-8">
+  <section v-if="data" class="w-4/5 m-auto mb-24">
     <h1 class="text-center font-extrabold text-3xl mb-3 text-[#3374ea]">
       {{ $prismic.asText(data.data.welcome_heading) }}
     </h1>
@@ -51,7 +63,9 @@
     </p>
   </section>
   <section class="w-[80%] m-auto">
-    <help-post-card></help-post-card>
+    <KeepAlive>
+      <component :is="selectedComponent" />
+    </KeepAlive>
   </section>
 
   <div class="help__section--contact">
@@ -101,16 +115,21 @@
 <script>
   import { useSinglePrismicDocument } from "@prismicio/vue";
   import HelpPostCard from "../components/Help/HelpPostCard.vue";
+  import VideoCard from "../components/Help/VideoCard.vue";
+  import { ref } from "@vue/reactivity";
+
   export default {
     components: {
       HelpPostCard,
+      VideoCard,
     },
 
     setup() {
       const { data } = useSinglePrismicDocument("help_welcome");
-
+      const selectedComponent = ref("help-post-card");
       return {
         data,
+        selectedComponent,
       };
     },
   };
@@ -187,6 +206,10 @@
     font-size: 1rem;
     color: #3374ea;
     font-weight: bold;
+  }
+
+  .card-on {
+    border: 2px solid #677bff;
   }
 
   .help__section--search {
