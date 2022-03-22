@@ -91,10 +91,6 @@
     mounted() {
       this.getData();
     },
-
-    beforeUpdate() {
-      console.log("Do Some thing");
-    },
   };
 </script>
 
