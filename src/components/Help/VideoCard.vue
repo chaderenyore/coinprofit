@@ -1,9 +1,7 @@
 <template>
-  <ul v-if="helpvid" class="flex flex-col justify-center items-center">
+  <ul v-if="helpvid" class="flex flex-col gap-6">
     <li v-for="video in helpvid.results" :key="video.uid">
-      <figure
-        class="video-list flex flex-row gap-3 items-center rounded-xl pr-8"
-      >
+      <figure class="video-list flex flex-row gap-3 items-center rounded-xl">
         <div class="video-thumbnail h-28 w-32 rounded-xl">
           <PrismicImage
             :field="video.data.thumbnail"
@@ -45,7 +43,7 @@
 <style scoped>
   .video-list {
     background: var(--nav-light);
-    /* max-width: 29.625rem; */
+    box-shadow: 0 1.25rem 17px #1c192305;
   }
 
   .video-thumbnail {
