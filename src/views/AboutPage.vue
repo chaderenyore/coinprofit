@@ -1,4 +1,7 @@
 <template>
+
+<div class="mainaboutWrapper">
+
   <section class="about-sec">
     <div class="about_container">
       <div class="littleIconWrapper">
@@ -248,6 +251,8 @@
       <!-- Desktop ends here -->
     </div>
   </section>
+
+  </div>
   <BaseCallToAction />
 </template>
 
@@ -295,6 +300,11 @@ export default {
 </script>
 
 <style scoped>
+
+.mainaboutWrapper {
+  width: 100%;
+  max-width: 1250px;
+}
 .about-sec {
   padding-top: 5rem;
 }

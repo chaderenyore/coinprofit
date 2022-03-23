@@ -142,7 +142,7 @@ export default {
 }
 
 .navbar {
-  width: 80%;
+  width: 90%;
   margin: auto;
   padding: 10px 0;
   display: flex;

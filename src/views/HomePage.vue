@@ -1326,7 +1326,7 @@ export default {
   width: 100%;
   margin: 0 auto;
 }
-@media (min-width: 1400px) {
+@media (min-width: 1500px) {
   .mainContainer {
     max-width: 1250px;
   }
@@ -3482,18 +3482,14 @@ export default {
   .blob1-d {
     object-fit: cover;
     top: -13rem;
-    left: 45%;
+    left: 52%;
     height: 1200.33px;
     width: 62rem;
     transform: translateY(27px);
     z-index: -1;
   }
 
-  @media (min-width: 1300px) {
-    .blob1-d {
-      left: 47%;
-    }
-  }
+
   .background-svg {
     display: block;
     position: absolute;
@@ -3537,9 +3533,13 @@ export default {
     position: absolute;
     top: -23rem;
     width: 90%;
-    margin-left: 15%;
+    margin-left: 20%;
   }
-
+@media (min-width: 1440px) {
+    .appui {
+    margin-left: 40%;
+  }
+}
   .review-section {
     top: -200px;
     margin-bottom: 30px;
@@ -3666,16 +3666,19 @@ export default {
     width: 30rem;
     position: absolute;
     top: 140%;
-    left: 62%;
+    left: 60%;
     float: right;
     text-align: left;
-  }
+    width: 40%;
+  }  
   @media (min-width: 1400px) {
     .see-leaders p {
       top: 140%;
-      left: 60%;
+      left: 65%;
     }
   }
+
+
   .see-leaders .copy-img {
     width: 50%;
     position: absolute;
@@ -3726,7 +3729,7 @@ export default {
   .signal-blob {
     position: relative;
     top: -2rem;
-    left: 600px;
+    left: 700px;
     width: 1000px;
     height: 1000px;
   }
@@ -3744,13 +3747,13 @@ export default {
   }
   .signal-packs.two {
     position: absolute;
-    top: 40%;
+    top: 38%;
     left: 80%;
   }
 
   .signal-packs.three {
     position: absolute;
-    top: 41%;
+    top: 38%;
     left: 90%;
   }
   .pack-img-wrapper {
@@ -3785,12 +3788,12 @@ export default {
   .main-signal-wrapper {
     display: block;
     position: relative;
-    top: 28rem;
-    left: 22rem;
+    top: 25rem;
+    left: 32%;
     width: 30%;
   }
   .main-signal-img {
-    width: 70%;
+    width: 60%;
   }
 
   .signal-planner-wrapper {
@@ -3804,7 +3807,15 @@ export default {
     width: 100%;
     transition: 00.3s ease-out;
   }
-
+@media (min-width: 1440px) {
+    .main-signal-img {
+    width: 50%;
+    margin-left: 5rem;
+  }
+  .signal-planner {
+    margin-left: 5rem;
+  }
+}
   .signal-planner:hover {
     filter: saturate(140%);
     transform: scale(0.9);
