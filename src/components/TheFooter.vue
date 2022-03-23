@@ -1,4 +1,5 @@
 <template>
+<div class="main-footerWrapper">
   <footer class="mobilefooter">
     <!-- mobile footer will be displayed only for mobile and tablets screens -->
     <div class="MF-wrapper">
@@ -218,6 +219,8 @@
       Reserved.
     </p>
   </div>
+
+ </div> 
 </template>
 
 <script>
@@ -262,6 +265,15 @@ export default {
 </script>
 
 <style scoped>
+.main-footerWrapper {
+  width: 100%;
+  margin: 0 auto;
+}
+@media (min-width: 1400px) {
+  .main-footerWrapper {
+    max-width: 1350px;
+  }
+}
 .mobilefooter {
   background-color: var(--light-color);
 }
@@ -413,9 +425,10 @@ export default {
     background-color: var(--third-color);
     height: 240px;
     margin-top: 100px;
+
   }
   .computer-footer-wrapper {
-    max-width: 90%;
+    width: 90%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;

@@ -1,4 +1,5 @@
 <template>
+
   <div class="backdrop"></div>
 
   <header class="header">
@@ -26,7 +27,7 @@
           <router-link to="/leaders">Leaders</router-link>
         </li>
         <li class="nav-item">
-          <router-link to="/affiliate">Affiliate</router-link>
+          <router-link to="/affiliate">Calculator</router-link>
         </li>
         <li class="nav-item">
           <router-link to="/help">Help</router-link>
@@ -92,20 +93,7 @@ export default {
         }
       });
 
-      //  Back to top feature
-      // window.addEventListener('scroll', function() {
-      //     let backToUp = this.document.querySelector('.scrollTop');
-      //     backToUp.classList.toggle("scrollactive", window.scrollY > 200)
-      // })
 
-      // function scrollToTop(){
-      //     window.scrollTo({
-      //         top: 0,
-      //         behavior: 'smooth'
-      //     })
-      // }
-
-      // Ends Back to top
 
       // Start navbar
       const hamburger = document.querySelector(".hamburger");
@@ -148,6 +136,9 @@ export default {
 <style scoped>
 .header {
   font-family: sans-serif;
+  width: 100%;
+  max-width: 1250px;
+  margin: 0 auto;
 }
 
 .navbar {
@@ -203,6 +194,7 @@ nav ul li a:hover {
   border-radius: 30px;
   padding: 7px 25px;
   color: blue;
+  margin-left: 2rem;
 }
 .actn a:hover {
   background-color: #13141c;

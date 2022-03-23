@@ -89,15 +89,16 @@
       </div>
     </div>
   </section>
-  
 
   <section class="win-win">
     <h1>It’s a WIN-WIN!</h1>
-    <p>Your subscribers see your trades so they can choose to buy when you buy and sell when you sell. You make money, they make money too!
-</p>
+    <p>
+      Your subscribers see your trades so they can choose to buy when you buy
+      and sell when you sell. You make money, they make money too!
+    </p>
   </section>
 
-<section class="iconholder">
+  <section class="iconholder">
     <img
       src="@/assets/images/listtle-Icons/icon-btc.svg"
       alt=""
@@ -121,8 +122,9 @@
         />
       </div>
       <p>
-        Easily share signals with your followers and subscribers. Select exchange, pick a coin, set entry targets, take profit targets and stop loss. We make signal sharing super easy.
-
+        Easily share signals with your followers and subscribers. Select
+        exchange, pick a coin, set entry targets, take profit targets and stop
+        loss. We make signal sharing super easy.
       </p>
     </div>
 
@@ -184,9 +186,8 @@
         />
       </div>
       <p>
-        Share your thoughts and the latest happenings on the market with your followers and subscribers. Help them stay informed and stay profitable
-
-
+        Share your thoughts and the latest happenings on the market with your
+        followers and subscribers. Help them stay informed and stay profitable
       </p>
     </div>
 
@@ -540,36 +541,32 @@
           </button>
           <div class="faqcontent">
             <p>
-              Anyone can be a leader! If you're crypto guru or you have some
-              followers, you can sign up as a leader.
+              Anyone with a crypto community or followers who he/she shares
+              trades and signals with can become a leader.
             </p>
           </div>
         </div>
         <div class="faqwrapper">
           <button class="faqtoggle">
-            <h3>How much can I earn?</h3>
+            <h3>How Can I Become A Leader?</h3>
             <i class="fa fa-chevron-down faqicon"></i>
           </button>
           <div class="faqcontent">
             <p>
-              That depends mostly on you. You can choose to charge any amount
-              monthly/yearly/lifetime for people to subscribe to you. How much
-              you make at the end of the day, depends on how much you charge
-              plus the number of subscribers.
+              Please download the app, click on upgrade and select the leader’s
+              plan.
             </p>
           </div>
         </div>
         <div class="faqwrapper">
           <button class="faqtoggle">
-            <h3>How Do I Get Paid As A Leader?</h3>
+            <h3>How Much Does It Cost To Become A Leader?</h3>
             <i class="fa fa-chevron-down faqicon"></i>
           </button>
           <div class="faqcontent">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
-              aliquam facere adipisci quod mollitia, aut nemo deleniti fugiat
-              et, corrupti sequi. Omnis dolorem quos eligendi placeat soluta
-              sint corrupti quod.
+              Upgrading to a leader plan costs $19/month plus a 10% commission
+              on every subscription.
             </p>
           </div>
         </div>
@@ -577,43 +574,42 @@
       <div class="faqcontainer faqtwo">
         <div class="faqwrapper">
           <button class="faqtoggle">
-            <h3>Is There A Subscribers Limit?</h3>
+            <h3>How Much Can I Make As A Leader?</h3>
             <i class="fa fa-chevron-down faqicon"></i>
           </button>
           <div class="faqcontent">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
-              aliquam facere adipisci quod mollitia, aut nemo deleniti fugiat
-              et, corrupti sequi. Omnis dolorem quos eligendi placeat soluta
-              sint corrupti quod.
+              There is no limit to how much you can make monthly from the app.
+              You can have an unlimited number of subscribers. Let’s say you
+              have 100 subscribers and you charge $10/month as your subscription
+              fee. 100 X $10 = $1,000. If you have 300 subscribers, that’s
+              $3k/mo. And if you have 500 subscribers, that’s $5k/mo! We charge
+              a 10% commission for every subscription. So for 300 subscribers
+              paying $10 each, our commission is just $300 and you will be
+              netting $2,700/mo. For 500 subscribers, your earnings will be
+              $4,500/month
             </p>
           </div>
         </div>
         <div class="faqwrapper">
           <button class="faqtoggle">
-            <h3>What's the difference between followers and subscribers?</h3>
+            <h3>How Do I Withdraw My Earnings?</h3>
             <i class="fa fa-chevron-down faqicon"></i>
           </button>
           <div class="faqcontent">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
-              aliquam facere adipisci quod mollitia, aut nemo deleniti fugiat
-              et, corrupti sequi. Omnis dolorem quos eligendi placeat soluta
-              sint corrupti quod.
+              All payments from your subscribers are available after a 14 days hold period.
             </p>
           </div>
         </div>
         <div class="faqwrapper">
           <button class="faqtoggle">
-            <h3>How Do I Get Started As A Leader?</h3>
+            <h3>Do You Support Future Trading?</h3>
             <i class="fa fa-chevron-down faqicon"></i>
           </button>
           <div class="faqcontent">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
-              aliquam facere adipisci quod mollitia, aut nemo deleniti fugiat
-              et, corrupti sequi. Omnis dolorem quos eligendi placeat soluta
-              sint corrupti quod.
+              Not yet. Only spot for now but we have plans to support future trading soon.
             </p>
           </div>
         </div>
@@ -1415,7 +1411,7 @@ export default {
     font-weight: 400;
     font-family: "Montserrat", sans-serif;
     line-height: 50px;
-}
+  }
   .iconholder {
     position: relative;
   }
@@ -1603,8 +1599,6 @@ export default {
   .computer-leaders-box-background {
     background: transparent linear-gradient(180deg, #22a1f5 0%, #677bff 100%)
       no-repeat padding-box;
-    /* border-top-left-radius: 4rem;
-    border-top-right-radius: 4rem; */
     height: 70vh;
     width: 100%;
     position: absolute;
@@ -1827,7 +1821,6 @@ export default {
     font-size: 17px;
   }
 
-
   .win-win p {
     width: 50%;
     color: var(--fourth-color);
@@ -1836,7 +1829,7 @@ export default {
     font-weight: 400;
     font-family: "Montserrat", sans-serif;
     line-height: 30px;
-}
+  }
 
   .iconholder {
     position: relative;

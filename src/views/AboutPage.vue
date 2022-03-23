@@ -28,9 +28,7 @@
       </div>
 
       <p>
-        Tired of seeing people losing money to fake crypto gurus, we came
-        together to change the game. We’re leading a revolution to copy trading
-        allowing users to do what their leaders and doing and not what they say.
+        We are a small team of crypto traders and investors on a mission to make crypto trading and investment profitable for everyone. Tired of seeing beginners lose money to pump and dump schemes, we&rsquo;re set to change the game with our unique social trading platform that lets users subscribe to and follow the footsteps of profitable crypto traders with a track record. We made the Coinprofit app to make making money as easy as doing what seasoned crypto traders do. You&rsquo;re welcome
       </p>
     </div>
   </section>
@@ -39,7 +37,7 @@
     <div class="core_container">
       <h1>Our core value</h1>
       <p>
-        Our company is built around
+       Safe and Transparent Crypto Community
         <span style="color: var(--dark-color)"><b>3 core values</b></span>
       </p>
 
@@ -61,10 +59,7 @@
             <h4>Safe and Transparent Crypto Community</h4>
 
             <p>
-              We want Download the CoinProfit App from either Playstore or Apple
-              Store and copy your affiliate ID from your referral dashboard.
-              Playstore or Apple Store and copy your affiliate ID from your
-              referral dashboard. Playstore or Apple Store and copy.
+             Your funds are SAFU! We are neither an exchange company nor a wallet service provider. Your funds are in your custody, we can only read your connected wallets to display your balance and your assets. And you see the live trade of the leaders you subscribe to, not a simulated trade.
             </p>
           </div>
         </div>
@@ -83,13 +78,10 @@
               <img src="@/assets/images/about/money.png" alt="IMAGE" />
             </div>
 
-            <h4>Build for People to Make Money</h4>
+            <h4>Built for People to Make Money</h4>
 
             <p>
-              When we make decisions at CoinProfit, we think about people - not
-              profits. We’re going to the places the rest of the world has
-              ignored and forgotten. We’re helping families to thrive, building
-              schools, and enabling our users to become their own boss.
+             We are tired of seeing people lose money to fake crypto gurus so we changed the rules of the game. With our growing list of leaders with a track record and our revolutionary social trading feature, we empower our users to do what their preferred leaders are doing and not what they are saying.
             </p>
           </div>
         </div>
@@ -111,13 +103,10 @@
               />
             </div>
 
-            <h4>Stay Connected to the Streets</h4>
+            <h4>Customer Is Always Right</h4>
 
             <p>
-              We listen to our community 24/7 at CoinProfit. We’re not in
-              skyscrapers with “the suits”—we’re on the streets with the people.
-              We’re always talking with our users, asking them for their
-              feedback, and creating something even better.
+              Wherever and whenever, we listen to our users with 24/7 IT Support. Don&rsquo;t be a stranger, get in touch with your feedback and we will make the Coinprofit app even better for you. WAGMI!!
             </p>
           </div>
         </div>
