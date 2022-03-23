@@ -1,257 +1,270 @@
 <template>
-
-<div class="mainaboutWrapper">
-
-  <section class="about-sec">
-    <div class="about_container">
-      <div class="littleIconWrapper">
-        <img src="@/assets/images/listtle-Icons/2.svg" class="svg-2" />
-        <img
-          src="@/assets/images/listtle-Icons/moneygold.svg"
-          class="moneygold"
-        />
-        <img src="@/assets/images/listtle-Icons/6.svg" class="svg-6" />
-        <img src="@/assets/images/listtle-Icons/icon-btc.svg" class="iconBTC" />
-        <img src="@/assets/images/listtle-Icons/dollar.svg" class="litegold" />
-        <img src="@/assets/images/listtle-Icons/1.svg" class="svg-1" />
-        <img src="@/assets/images/listtle-Icons/4.svg" class="svg-4" />
-        <img src="@/assets/images/listtle-Icons/7.svg" class="svg-7" />
-      </div>
-      <h1>About us</h1>
-      <div class="about-img-wrapper">
-        <img src="@/assets/images/about/mainblob.svg" class="share-blob" />
-
-        <div class="share-portfolio-box">
+  <div class="mainaboutWrapper">
+    <section class="about-sec">
+      <div class="about_container">
+        <div class="littleIconWrapper">
+          <img src="@/assets/images/listtle-Icons/2.svg" class="svg-2" />
           <img
-            src="@/assets/images/about/Asset-1.svg"
-            alt="Share Image"
-            class="share-portfolio-img"
+            src="@/assets/images/listtle-Icons/moneygold.svg"
+            class="moneygold"
           />
+          <img src="@/assets/images/listtle-Icons/6.svg" class="svg-6" />
+          <img
+            src="@/assets/images/listtle-Icons/icon-btc.svg"
+            class="iconBTC"
+          />
+          <img
+            src="@/assets/images/listtle-Icons/dollar.svg"
+            class="litegold"
+          />
+          <img src="@/assets/images/listtle-Icons/1.svg" class="svg-1" />
+          <img src="@/assets/images/listtle-Icons/4.svg" class="svg-4" />
+          <img src="@/assets/images/listtle-Icons/7.svg" class="svg-7" />
         </div>
+        <h1>About us</h1>
+        <div class="about-img-wrapper">
+          <img src="@/assets/images/about/mainblob.svg" class="share-blob" />
+
+          <div class="share-portfolio-img-box">
+            <img
+              src="@/assets/images/about/Asset-1.svg"
+              alt="Share Image"
+              class="share-portfolio-img"
+            />
+          </div>
+        </div>
+
+        <p>
+          We are a small team of crypto traders and investors on a mission to
+          make crypto trading and investment profitable for everyone. Tired of
+          seeing beginners lose money to pump and dump schemes, we&rsquo;re set
+          to change the game with our unique social trading platform that lets
+          users subscribe to and follow the footsteps of profitable crypto
+          traders with a track record. We made the Coinprofit app to make making
+          money as easy as doing what seasoned crypto traders do. You&rsquo;re
+          welcome
+        </p>
       </div>
+    </section>
 
-      <p>
-        We are a small team of crypto traders and investors on a mission to make crypto trading and investment profitable for everyone. Tired of seeing beginners lose money to pump and dump schemes, we&rsquo;re set to change the game with our unique social trading platform that lets users subscribe to and follow the footsteps of profitable crypto traders with a track record. We made the Coinprofit app to make making money as easy as doing what seasoned crypto traders do. You&rsquo;re welcome
-      </p>
-    </div>
-  </section>
+    <section>
+      <div class="core_container">
+        <h1>Our core value</h1>
+        <p>
+          Our company is built around <span style="color: var(--dark-color)"><b>3 core values</b></span>
+        </p>
 
-  <section>
-    <div class="core_container">
-      <h1>Our core value</h1>
-      <p>
-       Safe and Transparent Crypto Community
-        <span style="color: var(--dark-color)"><b>3 core values</b></span>
-      </p>
-
-      <div class="core-features_wrapper">
-        <div class="core_feature_main_wrapper">
-          <div class="core_blobimg_wrapper">
-            <img
-              src="@/assets/images/about/core_blob.png"
-              alt=""
-              class="core_blobimg"
-            />
-          </div>
-
-          <div class="core_features_box">
-            <div class="core-features_img_wrapper">
-              <img src="@/assets/images/about/security.png" alt="IMAGE" />
-            </div>
-
-            <h4>Safe and Transparent Crypto Community</h4>
-
-            <p>
-             Your funds are SAFU! We are neither an exchange company nor a wallet service provider. Your funds are in your custody, we can only read your connected wallets to display your balance and your assets. And you see the live trade of the leaders you subscribe to, not a simulated trade.
-            </p>
-          </div>
-        </div>
-
-        <div class="core_feature_main_wrapper">
-          <div class="core_blobimg_wrapper">
-            <img
-              src="@/assets/images/about/core_blob.png"
-              alt=""
-              class="core_blobimg"
-            />
-          </div>
-
-          <div class="core_features_box">
-            <div class="core-features_img_wrapper">
-              <img src="@/assets/images/about/money.png" alt="IMAGE" />
-            </div>
-
-            <h4>Built for People to Make Money</h4>
-
-            <p>
-             We are tired of seeing people lose money to fake crypto gurus so we changed the rules of the game. With our growing list of leaders with a track record and our revolutionary social trading feature, we empower our users to do what their preferred leaders are doing and not what they are saying.
-            </p>
-          </div>
-        </div>
-
-        <div class="core_feature_main_wrapper">
-          <div class="core_blobimg_wrapper">
-            <img
-              src="@/assets/images/about/core_blob.png"
-              alt=""
-              class="core_blobimg"
-            />
-          </div>
-
-          <div class="core_features_box">
-            <div class="core-features_img_wrapper">
+        <div class="core-features_wrapper">
+          <div class="core_feature_main_wrapper">
+            <div class="core_blobimg_wrapper">
               <img
-                src="@/assets/images/about/customer_service.png"
-                alt="IMAGE"
+                src="@/assets/images/about/core_blob.png"
+                alt=""
+                class="core_blobimg"
               />
             </div>
 
-            <h4>Customer Is Always Right</h4>
+            <div class="core_features_box">
+              <div class="core-features_img_wrapper">
+                <img src="@/assets/images/about/security.png" alt="IMAGE" />
+              </div>
 
-            <p>
-              Wherever and whenever, we listen to our users with 24/7 IT Support. Don&rsquo;t be a stranger, get in touch with your feedback and we will make the Coinprofit app even better for you. WAGMI!!
-            </p>
+              <h4>Safe and Transparent Crypto Community</h4>
+
+              <p>
+                Your funds are SAFU! We are neither an exchange company nor a
+                wallet service provider. Your funds are in your custody, we can
+                only read your connected wallets to display your balance and
+                your assets. And you see the live trade of the leaders you
+                subscribe to, not a simulated trade.
+              </p>
+            </div>
+          </div>
+
+          <div class="core_feature_main_wrapper">
+            <div class="core_blobimg_wrapper">
+              <img
+                src="@/assets/images/about/core_blob.png"
+                alt=""
+                class="core_blobimg"
+              />
+            </div>
+
+            <div class="core_features_box">
+              <div class="core-features_img_wrapper">
+                <img src="@/assets/images/about/money.png" alt="IMAGE" />
+              </div>
+
+              <h4>Built for People to Make Money</h4>
+
+              <p>
+                We are tired of seeing people lose money to fake crypto gurus so
+                we changed the rules of the game. With our growing list of
+                leaders with a track record and our revolutionary social trading
+                feature, we empower our users to do what their preferred leaders
+                are doing and not what they are saying.
+              </p>
+            </div>
+          </div>
+
+          <div class="core_feature_main_wrapper">
+            <div class="core_blobimg_wrapper">
+              <img
+                src="@/assets/images/about/core_blob.png"
+                alt=""
+                class="core_blobimg"
+              />
+            </div>
+
+            <div class="core_features_box">
+              <div class="core-features_img_wrapper">
+                <img
+                  src="@/assets/images/about/customer_service.png"
+                  alt="IMAGE"
+                />
+              </div>
+
+              <h4>Customer Is Always Right</h4>
+
+              <p>
+                Wherever and whenever, we listen to our users with 24/7 IT
+                Support. Don&rsquo;t be a stranger, get in touch with your
+                feedback and we will make the Coinprofit app even better for
+                you. WAGMI!!
+              </p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section>
-    <div class="team-wrapper">
-      <div class="custom-shape-divider-top-1646868710">
-        <svg
-          data-name="Layer 1"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 1200 120"
-          preserveAspectRatio="none"
-        >
-          <path
-            d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
-            class="shape-fill"
-          ></path>
-        </svg>
-      </div>
+    <section>
+      <div class="team-wrapper">
+        <div class="custom-shape-divider-top-1646868710">
+          <svg
+            data-name="Layer 1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1200 120"
+            preserveAspectRatio="none"
+          >
+            <path
+              d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+              class="shape-fill"
+            ></path>
+          </svg>
+        </div>
 
-      <div class="team_content">
-        <h1>Team</h1>
-        <p>Meet the coinprofit App team members</p>
+        <div class="team_content">
+          <h1>Team</h1>
+          <p>Meet the coinprofit App team members</p>
 
-        <div class="team_memebers_box">
-          <div class="team_memebers_box_img_box">
-            <img src="@/assets/images/review3.jpeg" alt="IMAGE" />
+          <div class="team_memebers_box">
+            <div class="team_memebers_box_img_box">
+              <img src="@/assets/images/about/emmanuel.png" alt="IMAGE" />
+            </div>
+
+            <h3>Emmanuel Ohworeko</h3>
+            <!-- <h4>CEO and Founder of CoinProfit</h4> -->
           </div>
+          <!-- end team_memebers_box-->
 
-          <h3>Emmanuel Ohworeko</h3>
-          <h4>CEO and Founder of CoinProfit</h4>
+          <div class="team_memebers_box">
+            <div class="team_memebers_box_img_box">
+              <img src="@/assets/images/about/Assurance.jpg" alt="IMAGE" />
+            </div>
 
-          <!-- <div class="reviews">
+            <h3>Ogwezi Assurance Oghenenyore</h3>
+          </div>
+          <!-- end team_memebers_box-->
+
+          <div class="team_memebers_box">
+            <div class="team_memebers_box_img_box">
+              <img src="@/assets/images/about/mudi.jpg" alt="IMAGE" />
+            </div>
+
+            <h3>Uwojeya Mudiaga</h3>
+
+            <!-- <div class="reviews">
             <p>
               With over 6 years in digital marketing, Emmanuel has helped
               businesses around the world
             </p>
           </div> -->
-        </div>
-        <!-- end team_memebers_box-->
+          </div>
+          <!-- end team_memebers_box-->
 
-        <div class="team_memebers_box">
-          <div class="team_memebers_box_img_box">
-            <img src="@/assets/images/review3.jpeg" alt="IMAGE" />
+          <div class="team_memebers_box">
+            <div class="team_memebers_box_img_box">
+              <img src="@/assets/images/about/Uzoatu.jpeg" alt="IMAGE" />
+            </div>
+
+            <h3>Uzoatu Bryan</h3>
+          </div>
+          <!-- end team_memebers_box-->
+        </div>
+        <!-- end team_content-->
+
+        <div class="custom-shape-divider-bottom-1646872311">
+          <svg
+            data-name="Layer 1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1200 120"
+            preserveAspectRatio="none"
+          >
+            <path
+              d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+              class="shape-fill"
+            ></path>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="we_made">
+        <h1>We made Coinprofit with Love</h1>
+        <p>Try it and you'll see</p>
+
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+          <div class="mySlides fade">
+            <img src="@/assets/images/about/we_made1.png" />
           </div>
 
-          <h3>Emmanuel Ohworeko</h3>
-          <h4>CEO and Founder of CoinProfit</h4>
-
-          <!-- <div class="reviews">
-            <p>
-              With over 6 years in digital marketing, Emmanuel has helped
-              businesses around the world
-            </p>
-          </div> -->
-        </div>
-        <!-- end team_memebers_box-->
-
-        <div class="team_memebers_box">
-          <div class="team_memebers_box_img_box">
-            <img src="@/assets/images/review3.jpeg" alt="IMAGE" />
+          <div class="mySlides fade">
+            <img src="@/assets/images/about/we_made2.png" />
           </div>
 
-          <h3>Emmanuel Ohworeko</h3>
-          <h4>CEO and Founder of CoinProfit</h4>
-
-          <!-- <div class="reviews">
-            <p>
-              With over 6 years in digital marketing, Emmanuel has helped
-              businesses around the world
-            </p>
-          </div> -->
+          <div class="mySlides fade">
+            <img src="@/assets/images/about/we_made3.png" />
+          </div>
         </div>
-        <!-- end team_memebers_box-->
+        <br />
+
+        <!-- The dots/circles -->
+        <div style="text-align: center" class="dot_wrapper">
+          <span class="dot" @click="currentSlide(1)"></span>
+          <span class="dot" @click="currentSlide(2)"></span>
+          <span class="dot" @click="currentSlide(3)"></span>
+        </div>
+
+        <!-- Desktop starts here -->
+        <div class="we_made_computer_container">
+          <div class="we_made_feature">
+            <img src="@/assets/images/about/we_made1.png" />
+          </div>
+
+          <div class="we_made_feature">
+            <img src="@/assets/images/about/we_made2.png" class="second_img" />
+          </div>
+
+          <div class="we_made_feature">
+            <img src="@/assets/images/about/we_made3.png" />
+          </div>
+        </div>
+        <!-- Desktop ends here -->
       </div>
-      <!-- end team_content-->
-
-      <div class="custom-shape-divider-bottom-1646872311">
-        <svg
-          data-name="Layer 1"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 1200 120"
-          preserveAspectRatio="none"
-        >
-          <path
-            d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
-            class="shape-fill"
-          ></path>
-        </svg>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <div class="we_made">
-      <h1>We made Coinprofit with Love</h1>
-      <p>Try it and you'll see</p>
-
-      <!-- Slideshow container -->
-      <div class="slideshow-container">
-        <div class="mySlides fade">
-          <img src="@/assets/images/about/we_made1.png" />
-        </div>
-
-        <div class="mySlides fade">
-          <img src="@/assets/images/about/we_made2.png" />
-        </div>
-
-        <div class="mySlides fade">
-          <img src="@/assets/images/about/we_made3.png" />
-        </div>
-      </div>
-      <br />
-
-      <!-- The dots/circles -->
-      <div style="text-align: center" class="dot_wrapper">
-        <span class="dot" @click="currentSlide(1)"></span>
-        <span class="dot" @click="currentSlide(2)"></span>
-        <span class="dot" @click="currentSlide(3)"></span>
-      </div>
-
-      <!-- Desktop starts here -->
-      <div class="we_made_computer_container">
-        <div class="we_made_feature">
-          <img src="@/assets/images/about/we_made1.png" />
-        </div>
-
-        <div class="we_made_feature">
-          <img src="@/assets/images/about/we_made2.png" class="second_img" />
-        </div>
-
-        <div class="we_made_feature">
-          <img src="@/assets/images/about/we_made3.png" />
-        </div>
-      </div>
-      <!-- Desktop ends here -->
-    </div>
-  </section>
-
+    </section>
   </div>
   <BaseCallToAction />
 </template>
@@ -300,46 +313,64 @@ export default {
 </script>
 
 <style scoped>
-
 .mainaboutWrapper {
   width: 100%;
-  max-width: 1250px;
+  max-width: 1450px;
+  margin: 0 auto;
 }
 .about-sec {
   padding-top: 5rem;
+  position: relative;
 }
 
 .about_container {
+  position: relative;
   width: 90%;
   margin: 4rem auto 0;
 }
 .svg-2 {
   width: 3rem;
   position: absolute;
-  top: 30%;
+  top: 8%;
   left: 50%;
   z-index: 1;
 }
 .moneygold {
   width: 3rem;
   position: absolute;
-  top: 40%;
+  top: 30%;
   left: 70%;
   z-index: 1;
 }
 .iconBTC {
   width: 2rem;
   position: absolute;
-  top: 40%;
-  left: 20%;
+  top: 26%;
+  left: 13%;
   z-index: 1;
 }
 .svg-1 {
   width: 5rem;
   position: absolute;
-  top: 60%;
+  top: 35%;
   left: 42%;
   z-index: 1;
+}
+@media (min-width: 375px) {
+  .svg-1 {
+  top: 40%;
+  }
+}
+
+@media (min-width: 450px) {
+  .svg-1 {
+  top: 45%;
+}
+}
+@media (min-width: 550px) {
+  .svg-1 {
+  top: 50%;
+}
 }
 .litegold {
   position: absolute;
@@ -348,7 +379,7 @@ export default {
 .svg-4 {
   width: 4rem;
   position: absolute;
-  top: 70%;
+  top: 100%;
   left: 80%;
   z-index: 1;
 }
@@ -374,17 +405,33 @@ export default {
 }
 
 .share-portfolio-img-box {
-  position: relative;
-  width: 100%;
+  /* position: relative ; */
+  width: 50%;
 }
 
 .share-portfolio-img {
   width: 50%;
   position: absolute;
-  top: 40%;
+  top: 17%;
   left: 27%;
 }
 
+@media (min-width: 360px) {
+  .share-portfolio-img {
+    top: 20%;
+  }
+}
+
+@media (min-width: 430px) {
+  .share-portfolio-img {
+    top: 23%;
+  }
+}
+@media (min-width: 704px) {
+  .share-portfolio-img {
+    top: 25%;
+  }
+}
 .about_container p {
   width: 100%;
   color: var(--fourth-color);
@@ -528,17 +575,16 @@ export default {
   position: relative;
   top: -4rem;
   margin-bottom: -3rem;
-  height: 17rem;
-  width: 17rem;
-  /* border: 3px solid var(--light-color); */
-  border-radius: 10rem;
+  height: 15rem;
+  width: 15rem;
+  border-radius: 0;
   overflow: hidden;
 }
 
 .team_memebers_box_img_box img {
   position: absolute;
-  height: 100%;
-  width: 100%;
+  height: 90%;
+  width: 90%;
   top: 0;
   left: 0;
   border-radius: 50%;
@@ -674,35 +720,28 @@ export default {
 /* IPAD  */
 
 @media only screen and (min-width: 768px) {
+    .svg-1 {
+    display: block;
+    position: absolute;
+    width: 4rem;
+    left: 50%;
+    top: 60%;
+    z-index: 1;
+  }
   .about_container h1 {
     font-weight: 800;
   }
   .share-blob {
     position: relative;
-    margin: 2rem 1rem 3rem;
+    margin: 2rem 1rem 0;
     width: 90%;
     opacity: 0.8;
   }
 
-  .share-blob.two {
-    position: absolute;
-    left: 0;
-    opacity: 1;
-  }
-
-  .share-portfolio-img-box {
-    position: relative;
-    width: 100%;
-  }
-
   .share-portfolio-img {
     width: 40%;
-    position: absolute;
-    top: -1rem;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
+    top: 30%;
+    left: 30%;
   }
   .core_feature_main_wrapper {
     vertical-align: middle;
@@ -745,19 +784,83 @@ export default {
 /* IPAD PRO */
 
 @media only screen and (min-width: 1024px) {
+    .svg-2 {
+    display: block;
+    position: absolute;
+    width: 4rem;
+    left: 78%;
+    top: -5%;
+    z-index: 1;
+  }
+  .moneygold {
+    display: block;
+    position: absolute;
+    width: 4rem;
+    left: 90%;
+    top: 40%;
+    z-index: 1;
+  }
+  .iconBTC {
+    display: block;
+    position: absolute;
+    width: 3rem;
+    left: 55%;
+    top: 40%;
+    z-index: 1;
+  }
+  .svg-1 {
+    display: block;
+    position: absolute;
+    width: 4rem;
+    left: 75%;
+    top: 105%;
+    z-index: 1;
+  }
+  .svg-4 {
+    display: block;
+    position: absolute;
+    width: 5rem;
+    left: 40%;
+    top: 100%;
+    z-index: 1;
+  }
+
+  .litegold {
+    position: absolute;
+    top: -10%;
+    display: block;
+  }
+  .svg-6 {
+    position: absolute;
+    display: block;
+    position: absolute;
+    width: 4rem;
+    left: 47%;
+    top: 0%;
+    z-index: 1;
+  }
+  .svg-7 {
+    display: block;
+    width: 4rem;
+    position: absolute;
+    top: 110%;
+    z-index: 1;
+  }
+
   .about-sec {
     margin-bottom: 20rem;
   }
-.about_container {
-  width: 80%;
-  margin: 4rem auto 0;
-}
+  .about_container {
+    width: 80%;
+    margin: 4rem auto 0;
+  }
   .about_container h1 {
     float: left;
     margin-right: 14.5rem;
     margin-bottom: 1rem;
     text-align: left;
     font-weight: 800;
+    width: 60%;
   }
   .about_container p {
     width: 50%;
@@ -776,18 +879,10 @@ export default {
     opacity: 0.8;
   }
 
-  .share-portfolio-img-box {
-    position: relative;
-    width: 100%;
-  }
-
   .share-portfolio-img {
-    width: 30%;
-    position: absolute;
-    top: -40%;
-    left: 30rem;
-    right: 0;
-    bottom: 0;
+    width: 28%;
+    top: 20%;
+    left: 62%;
   }
 
   .core_blobimg_wrapper {
@@ -820,23 +915,21 @@ export default {
 }
 
 /* START COMPUTER SCREEN DESIGN */
-@media only screen and (min-width: 1200px) {
-  .about-sec {
-    margin-bottom: 30rem;
-  }
+@media only screen and (min-width: 1200px) { 
+
   .svg-2 {
     display: block;
     position: absolute;
-    width: 7rem;
-    left: 70%;
-    top: 27%;
+    width: 4rem;
+    left: 78%;
+    top: -5%;
     z-index: 1;
   }
   .moneygold {
     display: block;
     position: absolute;
-    width: 5rem;
-    left: 80%;
+    width: 4rem;
+    left: 90%;
     top: 60%;
     z-index: 1;
   }
@@ -851,9 +944,9 @@ export default {
   .svg-1 {
     display: block;
     position: absolute;
-    width: 8rem;
-    left: 65%;
-    top: 84%;
+    width: 4rem;
+    left: 75%;
+    top: 120%;
     z-index: 1;
   }
   .svg-4 {
@@ -861,61 +954,50 @@ export default {
     position: absolute;
     width: 5rem;
     left: 40%;
-    top: 80%;
+    top: 100%;
     z-index: 1;
   }
 
   .litegold {
     position: absolute;
+    top: -20%;
     display: block;
   }
   .svg-6 {
     position: absolute;
     display: block;
     position: absolute;
-    width: 5rem;
+    width: 4rem;
     left: 47%;
-    top: 30%;
+    top: 0%;
     z-index: 1;
   }
   .svg-7 {
     display: block;
-    width: 5rem;
+    width: 4rem;
     position: absolute;
-    top: 85%;
+    top: 110%;
     z-index: 1;
   }
-  .about_container h1 {
-    float: left;
-    margin-right: 14.5rem;
-    margin-bottom: 1rem;
-    margin-top: 3rem;
-    text-align: left;
-  }
   .about_container p {
-    float: left;
-    max-width: 40%;
-    text-align: left;
-    font-size: 1rem;
     line-height: 30px;
+    font-size: 1rem;
   }
   .share-blob {
     float: right;
     position: relative;
-    margin: -5rem 0 2rem;
+    margin: -9rem 0 2rem;
     width: 50%;
     opacity: 0.8;
   }
 
   .share-portfolio-img {
-    width: 20%;
-    position: absolute;
+    width: 30%;
     top: 20%;
-    left: 43%;
   }
 
-  .core_container {
-    padding-top: 20rem;
+   .core_container {
+    padding-top: 1rem;
   }
   .core_container h1 {
     font-weight: 800;
@@ -972,7 +1054,6 @@ export default {
     width: 30%;
     margin: 8rem 1rem 0;
     display: inline-block;
-    /* z-index: 2; */
   }
   .team_memebers_box:hover {
     background-color: #fff;
@@ -996,11 +1077,12 @@ export default {
     position: relative;
     top: 5rem;
   }
+
 }
 
 /* ----------- Retina Screens ----------- */
 /* @media screen and (min-device-width: 1200px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) { */
-@media only screen and (min-device-width: 1200px) and (-webkit-min-device-pixel-ratio: 2),
+/* @media only screen and (min-device-width: 1200px) and (-webkit-min-device-pixel-ratio: 2),
   only screen and (min--moz-device-pixel-ratio: 2),
   only screen and (-o-min-device-pixel-ratio: 2/1),
   only screen and (min-device-pixel-ratio: 2) {
@@ -1013,5 +1095,5 @@ export default {
     top: 0%;
     left: 40%;
   }
-}
+} */
 </style>

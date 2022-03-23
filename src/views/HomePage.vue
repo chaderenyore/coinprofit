@@ -1317,6 +1317,10 @@ export default {
   mounted() {
     this.initIndexFile();
   },
+
+  updated() {
+    this.initIndexFile();
+  }
 };
 </script>
 
@@ -3453,14 +3457,14 @@ export default {
   .littleicon2 {
     position: absolute;
     top: 60%;
-    left: 1040px;
+    left: 70%;
     width: 5rem;
   }
 
   .littleicon3 {
     position: absolute;
     top: 20%;
-    left: 780px;
+    left: 62%;
     width: 5rem;
   }
   .littleicon4 {
@@ -3489,6 +3493,12 @@ export default {
     z-index: -1;
   }
 
+@media (min-width: 1440px) {
+    .blob1-d {
+    top: -13rem;
+    left: 55%;
+  }
+}
 
   .background-svg {
     display: block;

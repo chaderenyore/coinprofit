@@ -137,12 +137,13 @@ export default {
 .header {
   font-family: sans-serif;
   width: 100%;
-  max-width: 1250px;
+  max-width: 1450px;
   margin: 0 auto;
 }
 
 .navbar {
   width: 90%;
+  max-width: 1450px;
   margin: auto;
   padding: 10px 0;
   display: flex;
@@ -151,12 +152,13 @@ export default {
   z-index: -1;
 }
 
+
 .toggle-moon {
   width: 70px;
   cursor: pointer;
   position: absolute;
   top: 30px;
-  left: 370px;
+  left: 30%;
 }
 
 .nav-logo {
@@ -164,7 +166,7 @@ export default {
 }
 .logo {
   height: 100px;
-  left: 164px;
+  left: 10%;
   object-fit: cover;
   position: absolute;
   top: 0;
@@ -257,14 +259,11 @@ nav ul li a:hover {
     justify-content: space-between;
   }
 
-  .toggle-moon {
-    width: 80px;
-    cursor: pointer;
-    position: absolute;
-    top: 25px;
-    left: 280px;
-  }
 
+  .toggle-moon {
+  top: 30px;
+  left: 30%;
+}
   .nav-logo {
     width: unset;
   }
@@ -332,19 +331,15 @@ nav ul li a:hover {
   }
 
   .toggle-moon {
-    width: 19%;
-    position: absolute;
-    top: 13px;
-    left: 500px;
-  }
-
+  left: 40%;
+}
   nav ul {
     position: fixed;
     left: -130%;
     top: 6rem;
     margin-left: 100px;
     flex-direction: column;
-    background-color: var(--light-color);
+    background-color: var(--nav-light);
     z-index: 2;
     width: 100%;
     height: 100vh;
@@ -460,16 +455,13 @@ nav ul li a:hover {
     width: 150px;
   }
 
-  .toggle-moon {
-    width: 25%;
-    position: absolute;
-    top: 13px;
-    left: 180px;
-    transition: all 0.5s ease-out;
-  }
-  .toggle-moon:active {
-    transition: all;
-  }
+.toggle-moon {
+  width: 70px;
+  cursor: pointer;
+  position: absolute;
+  top: 1rem;
+  left: 50%;
+}
 
   nav ul {
     position: fixed;
@@ -477,7 +469,7 @@ nav ul li a:hover {
     top: 4.1rem;
     margin-left: 100px;
     flex-direction: column;
-    background-color: var(--light-color);
+    background-color: var(--nav-light);
     z-index: 2;
     width: 80%;
     height: 100vh;
