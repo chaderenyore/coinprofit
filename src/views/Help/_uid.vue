@@ -70,128 +70,128 @@
 </template>
 
 <script>
-import BaseCallToAction from "@/components/BaseCallToAction.vue";
-import { defineSliceZoneComponents } from "@prismicio/vue";
-import IntroductionText from "@/components/Slices/IntroductionText.vue";
-import TextParagraphs from "@/components/Slices/TextParagraphs.vue";
-import ImageCard from "@/components/Slices/ImageCard.vue";
-import ImageGallery from "@/components/Slices/ImageGallery.vue";
-import VideoPlayer from "@/components/Slices/VideoPlayer.vue";
-import NotFound from "@/components/Help/NotFound.vue";
+  import BaseCallToAction from "@/components/BaseCallToAction.vue";
+  import { defineSliceZoneComponents } from "@prismicio/vue";
+  import IntroductionText from "@/components/Slices/IntroductionText.vue";
+  import TextParagraphs from "@/components/Slices/TextParagraphs.vue";
+  import ImageCard from "@/components/Slices/ImageCard.vue";
+  import ImageGallery from "@/components/Slices/ImageGallery.vue";
+  import VideoPlayer from "@/components/Slices/VideoPlayer.vue";
+  import NotFound from "@/components/Help/NotFound.vue";
 
-export default {
-  components: {
-    BaseCallToAction,
-    NotFound,
-  },
-  data() {
-    return {
-      loading: true,
-      post: null,
-      error: false,
-      errorMessage: null,
-      components: defineSliceZoneComponents({
-        introduction: IntroductionText,
-        text_paragraphs: TextParagraphs,
-        image: ImageCard,
-        gallery_of_images: ImageGallery,
-        video: VideoPlayer,
-      }),
-      articleDate: null,
-      author: null,
-    };
-  },
-  methods: {
-    async getPost() {
-      try {
-        this.post = await this.$prismic.client.getByUID(
-          "articles",
-          this.$route.params.uid,
-          {
-            fetchLinks: ["author.name", "author.avatar", "author.bio"],
-          }
-        );
-
-        this.author = this.post.data.author.data;
-
-        const date = new Date(this.post.first_publication_date);
-        this.articleDate = date.toLocaleString([], {
-          day: "numeric",
-          month: "short",
-          year: "numeric",
-        });
-      } catch (error) {
-        console.log(error.message);
-        this.loading = false;
-        this.error = true;
-        this.errorMessage = error.message;
-      }
+  export default {
+    components: {
+      BaseCallToAction,
+      NotFound,
     },
-  },
+    data() {
+      return {
+        loading: true,
+        post: null,
+        error: false,
+        errorMessage: null,
+        components: defineSliceZoneComponents({
+          introduction: IntroductionText,
+          text_paragraphs: TextParagraphs,
+          image: ImageCard,
+          gallery_of_images: ImageGallery,
+          video: VideoPlayer,
+        }),
+        articleDate: null,
+        author: null,
+      };
+    },
+    methods: {
+      async getPost() {
+        try {
+          this.post = await this.$prismic.client.getByUID(
+            "articles",
+            this.$route.params.uid,
+            {
+              fetchLinks: ["author.name", "author.avatar", "author.bio"],
+            }
+          );
 
-  beforeRouteEnter(to, from, next) {
-    next((vm) => {
-      vm.getPost();
-    });
-  },
+          this.author = this.post.data.author.data;
 
-  created() {
-    this.getPost();
-  },
+          const date = new Date(this.post.first_publication_date);
+          this.articleDate = date.toLocaleString([], {
+            day: "numeric",
+            month: "short",
+            year: "numeric",
+          });
+        } catch (error) {
+          console.log(error.message);
+          this.loading = false;
+          this.error = true;
+          this.errorMessage = error.message;
+        }
+      },
+    },
 
-  beforeUpdate() {
-    this.loading = false;
-  },
-};
+    beforeRouteEnter(to, from, next) {
+      next((vm) => {
+        vm.getPost();
+      });
+    },
+
+    created() {
+      this.getPost();
+    },
+
+    beforeUpdate() {
+      this.loading = false;
+    },
+  };
 </script>
 
 <style scoped>
-@media (min-width: 27.5rem) {
-  .article-main {
-    padding-top: 8rem;
-  }
-}
-
-@media (min-width: 48rem) {
-  .article-main {
-    padding-top: 2rem;
-  }
-}
-
-.article-container {
-  background: var(--article-container);
-  box-shadow: 0 20px 17px #1c192305;
-}
-.article-date {
-  color: var(--article-date);
-}
-.article-tag {
-  background: var(--article-tag);
-}
-
-.author-bio {
-  color: var(--author-bio);
-}
-
-.spinner {
-  margin: 5rem auto;
-  text-align: center;
-}
-
-.spinner svg {
-  height: 6rem;
-  width: 6rem;
-  fill: #3374ea;
-  animation: rotate 2s infinite linear;
-}
-
-@keyframes rotate {
-  0% {
-    transform: rotate(0);
+  @media (min-width: 27.5rem) {
+    .article-main {
+      padding-top: 8rem;
+    }
   }
 
-  100% {
-    transform: rotate(360deg);
+  @media (min-width: 820px) {
+    .article-main {
+      padding-top: 2rem;
+    }
   }
-}
+
+  .article-container {
+    background: var(--article-container);
+    box-shadow: 0 20px 17px #1c192305;
+  }
+  .article-date {
+    color: var(--article-date);
+  }
+  .article-tag {
+    background: var(--article-tag);
+  }
+
+  .author-bio {
+    color: var(--author-bio);
+  }
+
+  .spinner {
+    margin: 5rem auto;
+    text-align: center;
+  }
+
+  .spinner svg {
+    height: 6rem;
+    width: 6rem;
+    fill: #3374ea;
+    animation: rotate 2s infinite linear;
+  }
+
+  @keyframes rotate {
+    0% {
+      transform: rotate(0);
+    }
+
+    100% {
+      transform: rotate(360deg);
+    }
+  }
 </style>

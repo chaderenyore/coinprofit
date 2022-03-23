@@ -147,6 +147,18 @@
     align-items: center;
   }
 
+  @media screen and (min-width: 520px) {
+    .help__section {
+      padding-top: 8rem;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    .help__section {
+      padding-top: 9rem;
+    }
+  }
+
   .help__section--welcome {
     color: #00be13;
     font-size: 1.25rem;
