@@ -3943,8 +3943,10 @@ export default {
   }
   .auto-track {
     padding-top: 250px;
-    padding-bottom: 250px;
+    padding-bottom: 30%;
   }
+
+
   .auto-track h1 {
     width: 40%;
     margin: 0;
