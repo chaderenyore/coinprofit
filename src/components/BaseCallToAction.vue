@@ -92,6 +92,7 @@
 .final-download {
   margin: 5rem auto 40px;
   width: 90%;
+  max-width: 1250px;
   height: 500px;
   border-radius: 25px;
   background: transparent linear-gradient(180deg, #22a1f5 0%, #677bff 100%) 0%
