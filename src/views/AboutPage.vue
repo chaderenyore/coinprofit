@@ -302,7 +302,7 @@ export default {
         dots[i].className = dots[i].className.replace(" active", "");
       }
       slides[this.slideIndex - 1].style.display = "block";
-      dots[this.slideIndex - 1].className += " active";
+      dots[this.slideIndex - 1].classList+= " active";
       setTimeout(this.showSlides, 1000);
     },
   },

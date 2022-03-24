@@ -108,7 +108,7 @@
     </section>
     <section>
       <div class="leaders-features">
-        <h1>Share Signal </h1>
+        <h1>Share Signal</h1>
         <img src="@/assets/images/listtle-Icons/4.svg" alt="" class="svg4" />
         <img src="@/assets/images/listtle-Icons/2.svg" alt="" class="svg2F" />
         <img src="@/assets/images/listtle-Icons/7.svg" alt="" class="svg7F" />
@@ -166,10 +166,7 @@
       </div>
 
       <div class="leaders-features three">
-        <h1>
-          Keep Your subscribers
-          informed
-        </h1>
+        <h1>Keep Your subscribers informed</h1>
         <img
           src="@/assets/images/listtle-Icons/litegold.svg"
           alt=""
@@ -284,16 +281,18 @@
               <div class="splide__slide">
                 <div class="mobile-leaders-box">
                   <div class="mobile-leaders-img-box">
-                    <img src="@/assets/images/review3.jpeg" alt="IMAGE" />
+                    <img
+                      src="@/assets/images/leaders/emmanuel.png"
+                      alt="Leader Image"
+                    />
                   </div>
 
-                  <div class="leader-lv">
+                  <!-- <div class="leader-lv">
                     <img src="@/assets/images/leader-level1.svg" />
-                  </div>
+                  </div> -->
 
                   <p>@lordemma</p>
                   <h3>Emmanuel Ohworeko</h3>
-                  <h4>CEO and Founder of CoinProfit</h4>
 
                   <div class="reviews">
                     <p>
@@ -308,21 +307,25 @@
               <div class="splide__slide">
                 <div class="mobile-leaders-box">
                   <div class="mobile-leaders-img-box">
-                    <img src="@/assets/images/review3.jpeg" alt="IMAGE" />
+                    <img
+                      src="@/assets/images/leaders/Uzoatu.jpeg"
+                      alt="leader Image"
+                    />
                   </div>
 
-                  <div class="leader-lv">
+                  <!-- <div class="leader-lv">
                     <img src="@/assets/images/leader-level1.svg" />
-                  </div>
+                  </div> -->
 
-                  <p>@lordemma</p>
-                  <h3>Emmanuel Ohworeko</h3>
-                  <h4>CEO and Founder of CoinProfit</h4>
+                  <p>@username</p>
+                  <h3>Bryan Ifeanyi</h3>
 
                   <div class="reviews">
                     <p>
-                      Starting his crypto journey in 2020, Emmanuel has grown to
-                      become a leader through constant learning
+                      My name is Bryan, I'm a Blockchain and cryptocurrency
+                      educator. I joined the space in 2017, and from then on,
+                      it's been a truly amazing journey. Learning, growing,
+                      building, and teaching.
                     </p>
                   </div>
                 </div>
@@ -332,21 +335,227 @@
               <div class="splide__slide">
                 <div class="mobile-leaders-box">
                   <div class="mobile-leaders-img-box">
-                    <img src="@/assets/images/review3.jpeg" alt="IMAGE" />
+                    <img
+                      src="@/assets/images/leaders/moses.jpeg"
+                      alt="Leader Image"
+                    />
                   </div>
 
-                  <div class="leader-lv">
+                  <!-- <div class="leader-lv">
                     <img src="@/assets/images/leader-level1.svg" />
-                  </div>
+                  </div> -->
 
-                  <p>@lordemma</p>
-                  <h3>Emmanuel Ohworeko</h3>
-                  <h4>CEO and Founder of CoinProfit</h4>
+                  <p>@username</p>
+                  <h3>Moses-Ugoh</h3>
 
                   <div class="reviews">
                     <p>
-                      Starting his crypto journey in 2020, Emmanuel has grown to
-                      become a leader through constant learning
+                      I read of Bitcoin from a Business Magazine in 2009. I
+                      can't really remember how much it was in that news report
+                      because to me, the idea was weird, insane and strange.
+                      <!-- Not until 2020 during the pandemic that I realized Bitcoin’s maximum potentials and my interest quickly expanded to everything blockchain-related. I became particularly excited about real-world applications of blockchain technology and blockchain centered projects. -->
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- End Splide Splide-->
+              <div class="splide__slide">
+                <div class="mobile-leaders-box">
+                  <div class="mobile-leaders-img-box">
+                    <img
+                      src="@/assets/images/leaders/marvelous.jpeg"
+                      alt="leader Image"
+                    />
+                  </div>
+
+                  <p>@username</p>
+                  <h3>Marvelous Macaulay</h3>
+
+                  <div class="reviews">
+                    <p>I'm a Crypto trader and technical analyst.</p>
+                  </div>
+                </div>
+              </div>
+              <!-- End Splide Splide-->
+
+              <div class="splide__slide">
+                <div class="mobile-leaders-box">
+                  <div class="mobile-leaders-img-box">
+                    <img
+                      src="@/assets/images/leaders/Ibrahim.jpeg"
+                      alt="leader Image"
+                    />
+                  </div>
+
+                  <p>@username</p>
+                  <h3>Ibrahim Dauda</h3>
+
+                  <div class="reviews">
+                    <p>
+                      The journey wasn't easy at the beginning. But I thank God
+                      for the things I got from crypto investment.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- End Splide Splide-->
+
+              <div class="splide__slide">
+                <div class="mobile-leaders-box">
+                  <div class="mobile-leaders-img-box">
+                    <img
+                      src="@/assets/images/leaders/uche.jpeg"
+                      alt="leader Image"
+                    />
+                  </div>
+
+                  <p>@username</p>
+                  <h3>Uche Sylvester</h3>
+
+                  <div class="reviews">
+                    <p>
+                      I'm Uche, a Crypto enthusiast. I use my skillset to create
+                      wealth and also diversify my income using crypto hedge
+                      fund, farming and staking.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- End Splide Splide-->
+
+              <div class="splide__slide">
+                <div class="mobile-leaders-box">
+                  <div class="mobile-leaders-img-box">
+                    <img
+                      src="@/assets/images/leaders/sibi.jpeg"
+                      alt="leader Image"
+                    />
+                  </div>
+
+                  <p>@username</p>
+                  <h3>George Sibi onokuma</h3>
+
+                  <div class="reviews">
+                    <p>I'm a cryptocurrency trader and a coach.</p>
+                  </div>
+                </div>
+              </div>
+              <!-- End Splide Splide-->
+
+              <div class="splide__slide">
+                <div class="mobile-leaders-box">
+                  <div class="mobile-leaders-img-box">
+                    <img
+                      src="@/assets/images/leaders/mukhtar.jpeg"
+                      alt="leader Image"
+                    />
+                  </div>
+
+                  <p>@username</p>
+                  <h3>Adam Muhammad Mukhtar</h3>
+
+                  <div class="reviews">
+                    <p>
+                      I'm a Cryptocurrency freak. Since the sunrise of 2021,
+                      with mutual Fundamental and technical analyses, I have
+                      been growing and educating my crypto community of over six
+                      thousand members, most of them are locals than global.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- End Splide Splide-->
+
+              <div class="splide__slide">
+                <div class="mobile-leaders-box">
+                  <div class="mobile-leaders-img-box">
+                    <img
+                      src="@/assets/images/leaders/BK.jpeg"
+                      alt="leader Image"
+                    />
+                  </div>
+
+                  <p>@username</p>
+                  <h3>Ibrahim BK</h3>
+
+                  <div class="reviews">
+                    <p>
+                      I'm Ibrahim BK. A professional crypto trader with 3+ years
+                      of experience in Blockchain development.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- End Splide Splide-->
+
+              <div class="splide__slide">
+                <div class="mobile-leaders-box">
+                  <div class="mobile-leaders-img-box">
+                    <img
+                      src="@/assets/images/leaders/voski.jpeg"
+                      alt="leader Image"
+                    />
+                  </div>
+
+                  <p>@username</p>
+                  <h3>Stephen Voski</h3>
+
+                  <div class="reviews">
+                    <p>
+                      I'm Chukwu Stephen Ndubuisi, popularly known as Voski.
+                      I've been a blockchain and cryptocurrency advocate since
+                      2016. My aim has always been to change the lives of
+                      others, using the opportunities provided by blockchain
+                      technology.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- End Splide Splide-->
+
+              <div class="splide__slide">
+                <div class="mobile-leaders-box">
+                  <div class="mobile-leaders-img-box">
+                    <img
+                      src="@/assets/images/leaders/CHUKWU.jpeg"
+                      alt="leader Image"
+                    />
+                  </div>
+
+                  <p>@username</p>
+                  <h3>Victor CHUKWU</h3>
+
+                  <div class="reviews">
+                    <p>
+                      I'm Victor CHUKWU. I have been able to coach and still
+                      coaching a lot of people in the crypto space.
+                      <!-- Even at that, I'm still learning because learning is a constant process so I have some gurus that I submit to. I have been in the crypto space for quite a long time now, -->
+                      and I have seen both failures and success, the ups and
+                      downs, but I keep the movement because of the B PICTURE.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- End Splide Splide-->
+
+              <div class="splide__slide">
+                <div class="mobile-leaders-box">
+                  <div class="mobile-leaders-img-box">
+                    <img
+                      src="@/assets/images/leaders/Greatness.jpeg"
+                      alt="leader Image"
+                    />
+                  </div>
+
+                  <p>@username</p>
+                  <h3>Mayor Chikwe Greatness</h3>
+
+                  <div class="reviews">
+                    <p>
+                      I started my crypto journey since 2016 and have since then
+                      acquired at least 4 years experience in crypto technical
+                      analysis, trading and teaching.
                     </p>
                   </div>
                 </div>
@@ -387,16 +596,16 @@
       <div class="computer-leaders-box-wrapper">
         <div class="computer-leaders-box">
           <div class="computer-leaders-img-box">
-            <img src="@/assets/images/review3.jpeg" alt="IMAGE" />
+            <img src="@/assets/images/leaders/emmanuel.png" alt="IMAGE" />
           </div>
 
-          <div class="leader-lv">
+          <!-- <div class="leader-lv">
             <img src="@/assets/images/leader-level1.svg" />
-          </div>
+          </div> -->
 
           <p>@lordemma</p>
           <h3>Emmanuel Ohworeko</h3>
-          <h4>CEO and Founder of CoinProfit</h4>
+          <!-- <h4>CEO and Founder of CoinProfit</h4> -->
 
           <div class="reviews">
             <p class="text">
@@ -405,103 +614,99 @@
             </p>
           </div>
         </div>
+        <!-- end leaders box -->
+
         <div class="computer-leaders-box">
           <div class="computer-leaders-img-box">
-            <img src="@/assets/images/review3.jpeg" alt="IMAGE" />
+            <img src="@/assets/images/leaders/Greatness.jpeg" alt="IMAGE" />
+          </div>
+
+          <p>@username</p>
+          <h3>Mayor Chikwe Greatness</h3>
+
+          <div class="reviews">
+            <p>
+              I started my crypto journey since 2016 and have since then
+              acquired at least 4 years experience in crypto technical analysis,
+              trading and teaching.
+            </p>
+          </div>
+        </div>
+        <!-- end leaders box -->
+
+        <div class="computer-leaders-box">
+          <div class="computer-leaders-img-box">
+            <img src="@/assets/images/leaders/voski.jpeg" alt="IMAGE" />
+          </div>
+          <p>@username</p>
+          <h3>Stephen Voski</h3>
+
+          <div class="reviews">
+            <p>
+              I'm Chukwu Stephen Ndubuisi, popularly known as Voski. I've been a
+              blockchain and cryptocurrency advocate since 2016. My aim has
+              always been to change the lives of others, using the opportunities
+              provided by blockchain technology.
+            </p>
+          </div>
+        </div>
+        <!-- end leaders box -->
+
+        <div class="computer-leaders-box">
+          <div class="computer-leaders-img-box">
+            <img src="@/assets/images/leaders/mukhtar.jpeg" alt="IMAGE" />
+          </div>
+
+          <p>@username</p>
+          <h3>Adam Muhammad Mukhtar</h3>
+
+          <div class="reviews">
+            <p>
+              I'm a Cryptocurrency freak. Since the sunrise of 2021, with mutual
+              Fundamental and technical analyses, I have been growing and
+              educating my crypto community of over six thousand members, most
+              of them are locals than global.
+            </p>
+          </div>
+        </div>
+
+        <div class="computer-leaders-box">
+          <div class="computer-leaders-img-box">
+            <img src="@/assets/images/leaders/Uzoatu.jpeg" alt="IMAGE" />
           </div>
 
           <div class="leader-lv">
             <img src="@/assets/images/leader-level.svg" />
           </div>
 
-          <p>@lordemma</p>
-          <h3>Emmanuel Ohworeko</h3>
-          <h4>CEO and Founder of CoinProfit</h4>
+          <p>@username</p>
+          <h3>Bryan Ifeanyi</h3>
 
           <div class="reviews">
-            <p class="text">
-              Starting his crypto journey in 2020, Emmanuel has grown to become
-              a leader through constant learning
+            <p>
+              My name is Bryan, I'm a Blockchain and cryptocurrency educator. I
+              joined the space in 2017, and from then on, it's been a truly
+              amazing journey. Learning, growing, building, and teaching.
             </p>
           </div>
         </div>
         <div class="computer-leaders-box">
           <div class="computer-leaders-img-box">
-            <img src="@/assets/images/review3.jpeg" alt="IMAGE" />
+            <img src="@/assets/images/leaders/moses.jpeg" alt="IMAGE" />
           </div>
 
-          <div class="leader-lv">
-            <img src="@/assets/images/leader-level1.svg" />
-          </div>
-
-          <p>@lordemma</p>
-          <h3>Emmanuel Ohworeko</h3>
-          <h4>CEO and Founder of CoinProfit</h4>
+          <p>@username</p>
+          <h3>Moses Ugoh</h3>
 
           <div class="reviews">
             <p>
-              Starting his crypto journey in 2020, Emmanuel has grown to become
-              a leader through constant learning
-            </p>
-          </div>
-        </div>
-        <div class="computer-leaders-box">
-          <div class="computer-leaders-img-box">
-            <img src="@/assets/images/review3.jpeg" alt="IMAGE" />
-          </div>
-
-          <div class="leader-lv">
-            <img src="@/assets/images/leader-level1.svg" />
-          </div>
-
-          <p>@lordemma</p>
-          <h3>Emmanuel Ohworeko</h3>
-          <h4>CEO and Founder of CoinProfit</h4>
-
-          <div class="reviews">
-            <p>
-              Starting his crypto journey in 2020, Emmanuel has grown to become
-              a leader through constant learning
-            </p>
-          </div>
-        </div>
-        <div class="computer-leaders-box">
-          <div class="computer-leaders-img-box">
-            <img src="@/assets/images/review3.jpeg" alt="IMAGE" />
-          </div>
-
-          <div class="leader-lv">
-            <img src="@/assets/images/leader-level.svg" />
-          </div>
-
-          <p>@lordemma</p>
-          <h3>Emmanuel Ohworeko</h3>
-          <h4>CEO and Founder of CoinProfit</h4>
-
-          <div class="reviews">
-            <p>
-              Starting his crypto journey in 2020, Emmanuel has grown to become
-              a leader through constant learning
-            </p>
-          </div>
-        </div>
-        <div class="computer-leaders-box">
-          <div class="computer-leaders-img-box">
-            <img src="@/assets/images/review3.jpeg" alt="IMAGE" />
-          </div>
-
-          <div class="leader-lv">
-            <img src="@/assets/images/leader-level1.svg" />
-          </div>
-
-          <p>@lordemma</p>
-          <h3>Emmanuel Ohworeko</h3>
-          <h4>CEO and Founder of CoinProfit</h4>
-
-          <div class="reviews">
-            <p>
-              Starting his crypto journey in 2020, Emmanuel has grown to become
-              a leader through constant learning
+              I read of Bitcoin from a Business Magazine in 2009. I can't really
+              remember how much it was in that news report because to me. the
+               <!-- idea was weird, insane and strange. Not until 2020 during the
+              pandemic that I realized Bitcoin’s maximum potentials and my
+              interest quickly expanded to everything blockchain-related. I
+              became particularly excited about real-world applications of
+              blockchain technology and blockchain centered projects. -->
             </p>
           </div>
         </div>
@@ -953,7 +1158,7 @@ export default {
 }
 .svgOneNP {
   position: absolute;
-  left: 70%;
+  left: 85%;
   top: 20%;
   width: 3rem;
 }
@@ -968,7 +1173,7 @@ export default {
 }
 .svg6NP {
   position: absolute;
-  left: 80%;
+  left: 83%;
   top: 40%;
   width: 3rem;
   z-index: 1;
@@ -989,7 +1194,7 @@ export default {
   width: 70%;
   position: relative;
   top: -17rem;
-  margin-left: 20%;
+  margin-left: 17%;
   margin-bottom: -19rem;
 }
 @media (min-width: 405px) {
@@ -1014,7 +1219,7 @@ export default {
   width: 70%;
   position: relative;
   top: -17rem;
-  margin-left: 20%;
+  margin-left: 16%;
   margin-bottom: -19rem;
 }
 @media (min-width: 405px) {
@@ -1077,6 +1282,7 @@ export default {
   display: none;
 }
 .mobile-leaders-box {
+  vertical-align: middle;
   width: 85%;
   padding: 0 20px 50px;
   background: var(--third-color) no-repeat padding-box;
@@ -1515,9 +1721,9 @@ export default {
   }
   .svg6NP {
     position: absolute;
-    left: 80%;
+    left: 85%;
     top: 40%;
-    width: 4rem;
+    width: 3rem;
     z-index: 1;
   }
 
@@ -1895,7 +2101,7 @@ export default {
 
   .svgOne {
     position: absolute;
-    left: 90%;
+    left: 95%;
     top: 90%;
     width: 5rem;
   }
@@ -1903,7 +2109,7 @@ export default {
     position: absolute;
     left: 45%;
     top: 90%;
-    width: 2rem;
+    width: 4rem;
   }
   .svg4N {
     display: block;
@@ -1915,24 +2121,16 @@ export default {
   .svg6F {
     position: absolute;
     left: 5%;
-    top: 90%;
-    width: 3rem;
+    top: 50%;
+    width: 5rem;
   }
 
   /* ... */
 
-  /*  */
-  .svg6FNP {
-    position: absolute;
-    left: 97%;
-    top: 40%;
-    width: 4rem;
-    z-index: 2;
-  }
   .svgOneNP {
     position: absolute;
-    left: 80%;
-    top: 95%;
+    left: 85%;
+    top: 85%;
     width: 3rem;
   }
   .svgontopNP {
@@ -1950,7 +2148,7 @@ export default {
     position: absolute;
     width: 5rem;
     left: 5%;
-    top: 12%;
+    top: 40%;
   }
   .sheildicoNP {
     display: block;
@@ -2020,7 +2218,7 @@ export default {
     margin-top: -12rem;
   }
 
-/*  */
+  /*  */
 
   .leaders-features.two h1 {
     float: left;
@@ -2034,7 +2232,7 @@ export default {
     font-size: 2.3rem;
   }
 
-    @media (min-width: 1300px) {
+  @media (min-width: 1300px) {
     .leaders-features.two h1 {
       margin-top: 11rem;
     }
@@ -2044,13 +2242,12 @@ export default {
       margin-top: 17rem;
     }
   }
-    .leadersF-blob.two {
+  .leadersF-blob.two {
     float: right;
     margin-top: 3rem;
     margin-left: 0;
     width: 40%;
     z-index: -1;
-
   }
 
   .seeSubsimg {
@@ -2066,29 +2263,32 @@ export default {
     float: left;
     margin-top: -10rem;
   }
+  .leaders-features.three {
+    padding-top: 10rem;
+  }
   .app-downloads.wrapper {
     position: relative;
     top: 10rem;
     margin-left: 9rem;
   }
-@media (min-width: 1340px) {
+  @media (min-width: 1340px) {
     .app-downloads.wrapper {
-    position: relative;
-    top: 15rem;
-    margin-left: 7rem;
-    width: 50%;
+      position: relative;
+      top: 15rem;
+      margin-left: 7rem;
+      width: 50%;
+    }
   }
-}
+  @media (min-width: 1400px) {
+    .app-downloads.wrapper {
+      top: -2rem;
+    }
+  }
   .app-download.features {
     display: inline-block;
     width: 20%;
     margin: 2rem 1rem;
   }
-
-
-
-
-
 
   .computer-leaders-section {
     display: block;
@@ -2161,6 +2361,7 @@ export default {
   }
 
   .computer-leaders-box {
+    vertical-align: middle;
     width: 24%;
     transform: scale(0.9);
     padding: 0px 20px 50px;
@@ -2252,5 +2453,4 @@ export default {
     font-weight: 600;
   }
 }
-
 </style>

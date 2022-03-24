@@ -27,7 +27,7 @@
           <router-link to="/leaders">Leaders</router-link>
         </li>
         <li class="nav-item">
-          <router-link to="/affiliate">Calculator</router-link>
+          <router-link to="/calculator">Calculator</router-link>
         </li>
         <li class="nav-item">
           <router-link to="/help">Help</router-link>

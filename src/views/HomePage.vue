@@ -1,33 +1,31 @@
 <template>
   <div class="mainContainer">
-    
     <!-- SOME OF THE IMAGES CHANGES ON DIFFRENT SCREEN SIZES AND ON HOVER -->
     <section class="first-page" ref="mainpage">
-
       <!-- The icons are set to absolute positioning... -->
 
-    <img
-      src="../assets/images/listtle-Icons/1.svg"
-      alt="little Icon"
-      class="littleicon1"
-    />
-    <img
-      src="../assets/images/listtle-Icons/2.svg"
-      alt="little Icon"
-      class="littleicon2"
-    />
-    <img
-      src="../assets/images/listtle-Icons/3.svg"
-      alt="little Icon"
-      class="littleicon3"
-    />
-    <img
-      src="../assets/images/listtle-Icons/4.svg"
-      alt="little Icon"
-      class="littleicon4"
-    />
+      <img
+        src="../assets/images/listtle-Icons/1.svg"
+        alt="little Icon"
+        class="littleicon1"
+      />
+      <img
+        src="../assets/images/listtle-Icons/2.svg"
+        alt="little Icon"
+        class="littleicon2"
+      />
+      <img
+        src="../assets/images/listtle-Icons/3.svg"
+        alt="little Icon"
+        class="littleicon3"
+      />
+      <img
+        src="../assets/images/listtle-Icons/4.svg"
+        alt="little Icon"
+        class="littleicon4"
+      />
 
-    <!-- End Icons -->
+      <!-- End Icons -->
       <img src="../assets/images/Asset-1.svg" alt="" class="background-svg" />
       <div class="blob-wrapper">
         <img
@@ -120,7 +118,8 @@
           <p class="fadeIn-scroll">CEO And Founder: DABA.School</p>
           <div class="reviews">
             <p class="fadeIn-scroll">
-              This is first of a kind product that will change the face of crypto social trading.  Don't bet against this!
+              This is first of a kind product that will change the face of
+              crypto social trading. Don't bet against this!
             </p>
           </div>
         </div>
@@ -161,12 +160,9 @@
           </div>
 
           <h3>Tola Joseph Fadugbagbe</h3>
-          <p>Founder: Crypto Masterclass </p>
+          <p>Founder: Crypto Masterclass</p>
           <div class="reviews">
-            <p>
-             CoinProfit App is a laudable development. Kudos!
-
-            </p>
+            <p>CoinProfit App is a laudable development. Kudos!</p>
           </div>
         </div>
         <div class="box">
@@ -209,8 +205,8 @@
           <p class="fadeIn-scroll">Founder: NiiOkanta Services LLC</p>
           <div class="reviews">
             <p class="fadeIn-scroll">
-              I&prime;m Super Proud of the creators of the CoinProfit App. I&prime;m Very impressed with this creativity. a huge GAMECHANGER!
-
+              I&prime;m Super Proud of the creators of the CoinProfit App.
+              I&prime;m Very impressed with this creativity. a huge GAMECHANGER!
             </p>
           </div>
           <img
@@ -372,17 +368,20 @@
               <div class="swiper-slide">
                 <div class="testi-item">
                   <div class="testi-avatar">
-                    <img src="../assets/images/review3.jpeg" />
+                    <img src="../assets/images/leaders/emmanuel.png" />
                   </div>
-                  <div class="leader-level">
+                  <!-- <div class="leader-level">
                     <img src="../assets/images/leader-level.svg" />
-                  </div>
+                  </div> -->
                   <div class="testimonials-text">
                     <div class="testimonials-avatar">
                       <h3>Emmanuel Ohworeko</h3>
                     </div>
                     <p class="username">@lordemma</p>
-                    <p>10x his portfolio in 3 months, that's incredible!</p>
+                    <p>
+                      Starting his crypto journey in 2020, Emmanuel has grown to
+                      become a leader through constant learning!
+                    </p>
                   </div>
                 </div>
               </div>
@@ -391,17 +390,22 @@
               <div class="swiper-slide">
                 <div class="testi-item">
                   <div class="testi-avatar">
-                    <img src="../assets/images/review3.jpeg" />
+                    <img src="../assets/images/leaders/Uzoatu.jpeg" />
                   </div>
-                  <div class="leader-level">
+                  <!-- <div class="leader-level">
                     <img src="../assets/images/leader-level1.svg" />
-                  </div>
+                  </div> -->
                   <div class="testimonials-text">
                     <div class="testimonials-avatar">
-                      <h3>Chris Ani</h3>
+                      <h3>Bryan Ifeanyi</h3>
                     </div>
-                    <p class="username">@anichris</p>
-                    <p>to running and hedge fund worth Millions of dollars</p>
+                    <p class="username">@username</p>
+                    <p>
+                      My name is Bryan, I'm a Blockchain and cryptocurrency
+                      educator. I joined the space in 2017, and from then on,
+                      it's been a truly amazing journey. Learning, growing,
+                      building, and teaching.
+                    </p>
                   </div>
                 </div>
               </div>
@@ -410,18 +414,21 @@
               <div class="swiper-slide">
                 <div class="testi-item">
                   <div class="testi-avatar">
-                    <img src="../assets/images/review2.jpg" />
+                    <img src="../assets/images/leaders/moses.jpeg" />
                   </div>
-                  <div class="leader-level">
-                    <img src="../assets/images/leader-level1.svg" />
-                  </div>
+
                   <div class="testimonials-text">
                     <div class="testimonials-avatar">
-                      <h3>Jahfegor Ohworeko</h3>
+                      <h3>Moses Ugoh</h3>
                     </div>
-                    <p class="username">@jfegor</p>
+                    <p class="username">@username</p>
                     <p>
-                      2x her portfolio in 1 month, she was new to crypto world
+                      idea was weird, insane and strange. Not until 2020 during
+                      the pandemic that I realized Bitcoin’s maximum potentials
+                      and my interest quickly expanded to everything
+                      blockchain-related. I became particularly excited about
+                      real-world applications of blockchain technology and
+                      blockchain centered projects.
                     </p>
                   </div>
                 </div>
@@ -431,26 +438,181 @@
               <div class="swiper-slide">
                 <div class="testi-item">
                   <div class="testi-avatar">
-                    <img src="../assets/images/review1.jpg" />
+                    <img src="../assets/images/leaders/marvelous.jpeg" />
                   </div>
-                  <div class="leader-level">
-                    <img src="../assets/images/leader-level.svg" />
-                  </div>
+
                   <div class="testimonials-text">
                     <div class="testimonials-avatar">
-                      <h3>Iroro chadere</h3>
+                      <h3>Marvelous Macaulay</h3>
                     </div>
-                    <p class="username">@irorochad</p>
-                    <p>sharing some real signal - come join me</p>
+                    <p class="username">@username</p>
+                    <p>I'm a Crypto trader and technical analyst.</p>
                   </div>
                 </div>
               </div>
+
+              <!-- fifth -->
+              <div class="swiper-slide">
+                <div class="testi-item">
+                  <div class="testi-avatar">
+                    <img src="../assets/images/leaders/Ibrahim.jpeg" />
+                  </div>
+
+                  <div class="testimonials-text">
+                    <div class="testimonials-avatar">
+                      <h3>Ibrahim Dauda</h3>
+                    </div>
+                    <p class="username">@username</p>
+                    <p>
+                      The journey wasn't easy at the beginning. But I thank God
+                      for the things I got from crypto investment.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- sixth -->
+              <div class="swiper-slide">
+                <div class="testi-item">
+                  <div class="testi-avatar">
+                    <img src="../assets/images/leaders/uche.jpeg" />
+                  </div>
+
+                  <div class="testimonials-text">
+                    <div class="testimonials-avatar">
+                      <h3>Uche Sylvester</h3>
+                    </div>
+                    <p class="username">@username</p>
+                    <p>
+                      I'm Uche, a Crypto enthusiast. I use my skillset to create
+                      wealth and also diversify my income using crypto hedge
+                      fund, farming and staking.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 7th -->
+              <div class="swiper-slide">
+                <div class="testi-item">
+                  <div class="testi-avatar">
+                    <img src="../assets/images/leaders/sibi.jpeg" />
+                  </div>
+
+                  <div class="testimonials-text">
+                    <div class="testimonials-avatar">
+                      <h3>George Sibi onokuma</h3>
+                    </div>
+                    <p class="username">@username</p>
+                    <p>I'm a cryptocurrency trader and a coach.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 8th -->
+              <div class="swiper-slide">
+                <div class="testi-item">
+                  <div class="testi-avatar">
+                    <img src="../assets/images/leaders/mukhtar.jpeg" />
+                  </div>
+
+                  <div class="testimonials-text">
+                    <div class="testimonials-avatar">
+                      <h3>Adam Muhammad Mukhtar</h3>
+                    </div>
+
+                    <p class="username">@username</p>
+                    <p>
+                      I'm a Cryptocurrency freak. Since the sunrise of 2021,
+                      with mutual Fundamental and technical analyses, I have
+                      been growing and educating my crypto community of over six
+                      thousand members, most of them are locals than global.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 9th -->
+              <div class="swiper-slide">
+                <div class="testi-item">
+                  <div class="testi-avatar">
+                    <img src="../assets/images/leaders/BK.jpeg" />
+                  </div>
+
+                  <div class="testimonials-text">
+                    <div class="testimonials-avatar">
+                      <h3>Ibrahim BK</h3>
+                    </div>
+
+                    <p class="username">@username</p>
+                    <p>
+                      I'm Ibrahim BK. A professional crypto trader with 3+ years
+                      of experience in Blockchain development.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 10th -->
+              <div class="swiper-slide">
+                <div class="testi-item">
+                  <div class="testi-avatar">
+                    <img src="../assets/images/leaders/voski.jpeg" />
+                  </div>
+
+                  <div class="testimonials-text">
+                    <div class="testimonials-avatar">
+                      <h3>Stephen Voski</h3>
+                    </div>
+
+                    <p class="username">@username</p>
+                    <p>
+                      I'm Chukwu Stephen Ndubuisi, popularly known as Voski.
+                      I've been a blockchain and cryptocurrency advocate since
+                      2016. My aim has always been to change the lives of
+                      others, using the opportunities provided by blockchain
+                      technology.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 12th -->
+              <div class="swiper-slide">
+                <div class="testi-item">
+                  <div class="testi-avatar">
+                    <img src="../assets/images/leaders/CHUKWU.jpeg" />
+                  </div>
+
+                  <div class="testimonials-text">
+                    <div class="testimonials-avatar">
+                      <h3>Victor CHUKWU</h3>
+                    </div>
+
+                    <p class="username">@username</p>
+                    <p>
+                      I'm Victor CHUKWU. I have been able to coach and still
+                      coaching a lot of people in the crypto space. Even at
+                      that, I'm still learning because learning is a constant
+                      process so I have some gurus that I submit to. I have been
+                      in the crypto space for quite a long time now, and I have
+                      seen both failures and success, the ups and downs, but I
+                      keep the movement because of the B PICTURE.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
               <!--testi end-->
             </div>
           </div>
         </div>
 
-        <div class="tc-pagination"></div>
+        <!-- <div class="swiper-pagination">
+          <span></span>
+           <span></span>
+            <span></span>
+        </div> -->
       </div>
       <div class="leaders-app-download">
         <a href="#" target="_blank" rel="noopener noreferrer"
@@ -717,7 +879,6 @@
         </div>
         <img src="../assets/images/share-blob.png" class="share-blob" />
 
-      
         <p>
           Did you buy a coin and it did 100%, 200% or even 1000% in profit? Then
           you deserve a bottle of champagne and a bragging right! Take some of
@@ -1011,22 +1172,22 @@
         Get the app now on the Google Play Store or the App Store
       </p>
       <div class="exchange-download-wrapper">
-          <a href="#" target="_blank" rel="noopener noreferrer"
-            ><img
-              src="../assets/images/goplay.svg"
-              alt=""
-              srcset=""
-              class="exchange-download"
-          /></a>
+        <a href="#" target="_blank" rel="noopener noreferrer"
+          ><img
+            src="../assets/images/goplay.svg"
+            alt=""
+            srcset=""
+            class="exchange-download"
+        /></a>
 
-          <a href="#" target="_blank" rel="noopener noreferrer"
-            ><img
-              src="../assets/images/appstore.svg"
-              alt=""
-              srcset=""
-              class="exchange-download"
-          /></a>
-        </div>
+        <a href="#" target="_blank" rel="noopener noreferrer"
+          ><img
+            src="../assets/images/appstore.svg"
+            alt=""
+            srcset=""
+            class="exchange-download"
+        /></a>
+      </div>
     </section>
 
     <section>
@@ -1034,11 +1195,7 @@
         <h1>Want To Know More?</h1>
 
         <span class="vid-play">
-          <i
-            class="fa fa-play"
-            aria-hidden="true"
-            
-          ></i>
+          <i class="fa fa-play" aria-hidden="true"></i>
         </span>
         <div class="vid-play-wrapper">
           <div class="video-img"></div>
@@ -1065,14 +1222,14 @@
 
           <div class="iframe-container">
             <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/H9154xIoYTA"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/H9154xIoYTA"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
           </div>
         </div>
       </div>
@@ -1084,43 +1241,46 @@
         <div class="faqcontainer">
           <div class="faqwrapper">
             <button class="faqtoggle">
-              <h3>
-                I&rsquo;m New To Crypto. Who Should I Subscribe To?
-
-              </h3>
+              <h3>I&rsquo;m New To Crypto. Who Should I Subscribe To?</h3>
               <i class="fa fa-chevron-down faqicon" style="color: #3374ea"></i>
             </button>
             <div class="faqcontent">
               <p>
-                We are working on adding rating and analytics systems to the CoinProfit app so it will be easier for you to see the track records of all the leaders. In the meantime, we encourage you to subscribe to only leaders you know and trust. If you are completely new and don’t know any leader, your best bet will be to subscribe to our CEO and Founder - Emmanuel Ohworeko. Or any of the leaders featured on our website on the leader's page
-
+                We are working on adding rating and analytics systems to the
+                CoinProfit app so it will be easier for you to see the track
+                records of all the leaders. In the meantime, we encourage you to
+                subscribe to only leaders you know and trust. If you are
+                completely new and don’t know any leader, your best bet will be
+                to subscribe to our CEO and Founder - Emmanuel Ohworeko. Or any
+                of the leaders featured on our website on the leader's page
               </p>
             </div>
           </div>
           <div class="faqwrapper">
             <button class="faqtoggle">
-              <h3>How Can I Download The Coinprofit App? </h3>
+              <h3>How Can I Download The Coinprofit App?</h3>
               <i class="fa fa-chevron-down faqicon" style="color: #3374ea"></i>
             </button>
             <div class="faqcontent">
               <p>
-                We are available on both IOS and Android. Please use the download button above to download the app to your device.
-
+                We are available on both IOS and Android. Please use the
+                download button above to download the app to your device.
               </p>
             </div>
           </div>
           <div class="faqwrapper">
             <button class="faqtoggle">
-              <h3> How Much Does It Cost To Subscribe To A Leader? </h3>
+              <h3>How Much Does It Cost To Subscribe To A Leader?</h3>
               <i class="fa fa-chevron-down faqicon" style="color: #3374ea"></i>
             </button>
             <div class="faqcontent">
               <p>
-                Every leader on the platform determines how much he wants to charge for his subscription.
+                Every leader on the platform determines how much he wants to
+                charge for his subscription.
               </p>
             </div>
           </div>
-          
+
           <div class="faqwrapper">
             <button class="faqtoggle">
               <h3>What Payment Method Do You Accept?</h3>
@@ -1128,14 +1288,13 @@
             </button>
             <div class="faqcontent">
               <p>
-                All Payments on the CoinProfit App are facilitated through cryptocurrency. We do not accept credit cards or paypal.
-
+                All Payments on the CoinProfit App are facilitated through
+                cryptocurrency. We do not accept credit cards or paypal.
               </p>
             </div>
           </div>
         </div>
         <div class="faqcontainer faqtwo">
-          
           <div class="faqwrapper">
             <button class="faqtoggle">
               <h3>How do I subscribe to a leader?</h3>
@@ -1143,8 +1302,14 @@
             </button>
             <div class="faqcontent">
               <p>
-                After downloading the CoinProfit App, go to the explore tab under the ‘Leader’ section. Search for the leader you want to subscribe to, click on his profile and click on subscribe. The cost of subscribing to each leader is shown on his profile. When you click on subscribe, a USDT wallet address via BSC network will be generated for you. Send the equivalent USDT to the address and click on confirm. Once payment is confirmed, your subscription will be activated.
-
+                After downloading the CoinProfit App, go to the explore tab
+                under the ‘Leader’ section. Search for the leader you want to
+                subscribe to, click on his profile and click on subscribe. The
+                cost of subscribing to each leader is shown on his profile. When
+                you click on subscribe, a USDT wallet address via BSC network
+                will be generated for you. Send the equivalent USDT to the
+                address and click on confirm. Once payment is confirmed, your
+                subscription will be activated.
               </p>
             </div>
           </div>
@@ -1155,8 +1320,8 @@
             </button>
             <div class="faqcontent">
               <p>
-               We have resources to help you get started in your crypto journey. Please check out our help centre.
-
+                We have resources to help you get started in your crypto
+                journey. Please check out our help centre.
               </p>
             </div>
           </div>
@@ -1167,9 +1332,8 @@
             </button>
             <div class="faqcontent">
               <p>
-               Not yet. Only spot for now but we have plans to support future trading in the future.
-
-
+                Not yet. Only spot for now but we have plans to support future
+                trading in the future.
               </p>
             </div>
           </div>
@@ -1202,7 +1366,7 @@ export default {
           autoplay: true,
           interval: 2000, // How long to display each slide
           pauseOnHover: true, // m
-          pauseOnFocus: false, // must be false
+          pauseOnFocus: false, // must be
           resetProgress: false,
         }).mount();
       });
@@ -1232,6 +1396,9 @@ export default {
               clickable: true,
               dynamicBullets: true,
             },
+            autoplay: {
+              delay: 2000, // auto play at 2s.
+            },
             navigation: {
               nextEl: ".listing-carousel-button-next",
               prevEl: ".listing-carousel-button-prev",
@@ -1244,7 +1411,7 @@ export default {
                 slidesPerView: 2,
               },
               1200: {
-                spaceBetween: 0,
+                spaceBetween: 50,
                 slidesPerView: 3,
               },
             },
@@ -1320,7 +1487,7 @@ export default {
 
   updated() {
     this.initIndexFile();
-  }
+  },
 };
 </script>
 
@@ -1814,7 +1981,7 @@ export default {
 }
 .swiper-container {
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
 }
 .listing-carousel-button {
   position: absolute;
@@ -1923,27 +2090,31 @@ export default {
   opacity: 1;
   transform: scale(1);
 }
-.tc-pagination {
-  text-align: center;
-  margin-top: 10px;
-  width: 100% !important;
-}
-.tc-pagination_wrap {
-  position: absolute;
-  bottom: -40px;
-  left: 0;
+/* .swiper-pagination {
+	position: relative;
   width: 100%;
+  height: 100px;
+	margin: 0;
+  background: yellow;
 }
-.tc-pagination2 {
-  float: none;
-  display: inline-block;
-  padding: 14px 0;
-  background: #fff;
-  border-radius: 30px;
-  min-width: 250px;
-  border-bottom: 0;
+.swiper-pagination-bullet {
+	padding: 5px 10px;
+	border-radius: 0;
+	width: auto;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+	font-size: 12px;
+	color:#000;
+	opacity: 1;
+	background: rgba(0,0,0,0.2);
 }
-.tc-pagination .swiper-pagination-bullet,
+.swiper-pagination-bullet-active {
+	color:#fff;
+	background: #007aff;
+} */
+
+/* .tc-pagination.swiper-pagination-bullet,
 .tc-pagination2.swiper-pagination-bullet {
   opacity: 1;
   background: #f7ff00;
@@ -1951,7 +2122,7 @@ export default {
   width: 10px;
   height: 10px;
   transition: all 300ms ease-in-out;
-}
+} */
 
 .leaders-app-download {
   width: 100%;
@@ -2162,6 +2333,7 @@ export default {
   position: absolute;
   left: 4%;
   top: 83%;
+  z-index: 1;
 }
 .littleIcon8 {
   display: none;
@@ -2275,7 +2447,7 @@ export default {
   padding-bottom: 50%;
   margin-bottom: 4rem;
   position: relative;
-  box-shadow: 200px ;
+  box-shadow: 200px;
 }
 
 .share-portfolio h1 {
@@ -2304,9 +2476,8 @@ export default {
   z-index: 1;
 }
 
-
 .share-portfolio p {
-  margin: 0 auto ;
+  margin: 0 auto;
   width: 80%;
   color: var(--fourth-color);
   text-align: center;
@@ -2374,7 +2545,7 @@ export default {
   opacity: 1;
 }
 
-.exchange-logo{
+.exchange-logo {
   margin-top: -12px;
   margin-left: 6px;
   width: 60px;
@@ -2491,7 +2662,7 @@ export default {
 }
 .splide .splide__pagination {
   position: relative;
-  margin-top :2rem;
+  margin-top: 2rem;
   text-align: center;
 }
 .splide__pagination__page {
@@ -2515,9 +2686,6 @@ export default {
   font-family: "Montserrat", sans-serif;
 }
 
-
-
-
 .learn-more {
   position: relative;
   width: 90%;
@@ -2526,9 +2694,8 @@ export default {
 
 @media (min-width: 1200px) {
   .learn-more {
- 
-  margin: 4rem auto 0;
-}
+    margin: 4rem auto 0;
+  }
 }
 
 .learn-more h1 {
@@ -2568,9 +2735,9 @@ export default {
 }
 
 .vid-play {
-  position:absolute; 
-  left:50%; 
-  top:40%; 
+  position: absolute;
+  left: 50%;
+  top: 40%;
   transform: translate(-50%, -50%);
   background: linear-gradient(to right, #fdfffefb, #a5d872e3);
   border-radius: 50%;
@@ -2595,11 +2762,11 @@ export default {
 }
 .vid-play i {
   position: absolute;
-  color: #3374ea; 
-  font-size: 40px; 
+  color: #3374ea;
+  font-size: 40px;
   cursor: pointer;
-  left:50%; 
-  top:50%; 
+  left: 50%;
+  top: 50%;
   transform: translate(-50%, -50%);
 }
 .vid-play-wrapper {
@@ -2662,11 +2829,9 @@ export default {
   /* top: -40px;
   left: 270px; */
 
-  left:80%; 
-  top:4%; 
+  left: 80%;
+  top: 4%;
   transform: translate(-50%, -50%);
-
-
 }
 .vid-close svg {
   float: right;
@@ -2938,11 +3103,6 @@ export default {
     font-weight: 800;
     letter-spacing: 0;
   }
-  /* Slideshow container */
-  .slideshow-container {
-    max-width: 1000px;
-    position: relative;
-  }
   .slideshow-container p {
     font-weight: unset;
     width: 60%;
@@ -3004,7 +3164,6 @@ export default {
     border-radius: 50%;
     overflow: hidden;
   }
-
 
   .app-features {
     height: 1100px;
@@ -3184,32 +3343,32 @@ export default {
     width: 60%;
     margin: 0 auto;
   }
-.auto-track-img {
-  width: 80%;
-  margin-left: 13%;
-}
-.auto-track-icons.bcs1 {
-  width: 30%;
-  top: 18%;
-  left: 70%;
-}
+  .auto-track-img {
+    width: 80%;
+    margin-left: 13%;
+  }
+  .auto-track-icons.bcs1 {
+    width: 30%;
+    top: 18%;
+    left: 70%;
+  }
 
-.auto-track-icons.eth1 {
-  width: 30%;
-  top: 260px;
-  left: 20px;
-}
+  .auto-track-icons.eth1 {
+    width: 30%;
+    top: 260px;
+    left: 20px;
+  }
 
-.auto-track-icons.bcs2 {
-  width: 30%;
-  top: 500px;
-  left: 20px;
-}
-.auto-track-icons.eth2 {
-  width: 30%;
-  top: 55%;
-  left: 60%;
-}
+  .auto-track-icons.bcs2 {
+    width: 30%;
+    top: 500px;
+    left: 20px;
+  }
+  .auto-track-icons.eth2 {
+    width: 30%;
+    top: 55%;
+    left: 60%;
+  }
 
   .profit-loss h1 {
     width: 60%;
@@ -3229,10 +3388,10 @@ export default {
     width: 80%;
     margin-left: 70px;
   }
-.share-portfolio {
-  padding-bottom: 30%;
-}
-  
+  .share-portfolio {
+    padding-bottom: 30%;
+  }
+
   .share-portfolio h1 {
     width: 60%;
     margin: 0 auto;
@@ -3363,8 +3522,6 @@ export default {
     overflow: hidden;
   }
 
-
-
   .learn-more {
     height: 400px;
     margin-bottom: 8rem;
@@ -3382,11 +3539,10 @@ export default {
 
   .vid-play {
     position: absolute;
-      left:80%; 
-    top:50%; 
+    left: 80%;
+    top: 50%;
     transform: translate(-50%, -50%);
   }
-
 
   .vid-play-wrapper {
     float: right;
@@ -3413,10 +3569,10 @@ export default {
   }
 
   .learn-more h1 {
-  width: 50%;
-  text-align: left;
-  margin-left: 19px;
-}
+    width: 50%;
+    text-align: left;
+    margin-left: 19px;
+  }
 
   .learn-more p {
     float: left;
@@ -3444,7 +3600,6 @@ export default {
     background-color: #3374ea;
     color: var(--fourth-color);
   }
-
 }
 /* START COMPUTER SCREEN DESIGN */
 @media only screen and (min-width: 1200px) {
@@ -3494,12 +3649,12 @@ export default {
     z-index: -1;
   }
 
-@media (min-width: 1440px) {
+  @media (min-width: 1440px) {
     .blob1-d {
-    top: -13rem;
-    left: 55%;
+      top: -13rem;
+      left: 55%;
+    }
   }
-}
 
   .background-svg {
     display: block;
@@ -3546,11 +3701,11 @@ export default {
     width: 90%;
     margin-left: 20%;
   }
-@media (min-width: 1440px) {
+  @media (min-width: 1440px) {
     .appui {
-    margin-left: 40%;
+      margin-left: 40%;
+    }
   }
-}
   .review-section {
     top: -200px;
     margin-bottom: 30px;
@@ -3681,14 +3836,13 @@ export default {
     float: right;
     text-align: left;
     width: 40%;
-  }  
+  }
   @media (min-width: 1400px) {
     .see-leaders p {
       top: 140%;
       left: 65%;
     }
   }
-
 
   .see-leaders .copy-img {
     width: 50%;
@@ -3818,15 +3972,15 @@ export default {
     width: 100%;
     transition: 00.3s ease-out;
   }
-@media (min-width: 1440px) {
+  @media (min-width: 1440px) {
     .main-signal-img {
-    width: 50%;
-    margin-left: 5rem;
+      width: 50%;
+      margin-left: 5rem;
+    }
+    .signal-planner {
+      margin-left: 5rem;
+    }
   }
-  .signal-planner {
-    margin-left: 5rem;
-  }
-}
   .signal-planner:hover {
     filter: saturate(140%);
     transform: scale(0.9);
@@ -3838,8 +3992,14 @@ export default {
   }
 
   .swiper-container {
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
+    overflow: hidden;
+  }
+  .swiper-wrapper {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
   }
   .listing-carousel-button {
     position: absolute;
@@ -3860,7 +4020,7 @@ export default {
     box-shadow: 0 9px 26px rgba(58, 87, 135, 0.1);
     border-radius: 10px;
     transition: all 0.3s ease-in-out;
-    width: 70%;
+    width: 100%;
     margin: 0 auto;
   }
 
@@ -3956,7 +4116,6 @@ export default {
     padding-top: 250px;
     padding-bottom: 30%;
   }
-
 
   .auto-track h1 {
     width: 40%;
@@ -4241,7 +4400,6 @@ export default {
     left: 785px;
   }
 
-
   /* End of splide js file */
   .review-download-wrapper {
     margin: 2.5rem 30rem 0;
@@ -4276,8 +4434,6 @@ export default {
     opacity: 0.9;
     transition: 1s ease-out;
   }
-
-
 
   .learn-more p {
     float: left;
