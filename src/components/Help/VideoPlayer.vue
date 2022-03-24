@@ -1,13 +1,14 @@
 <template>
-  <div class="backdrop" @click="closePlayer"></div>
+  <div class="backdrop"></div>
 
   <div class="video-player">
-    <!-- <div @click="closePlayer" class="close-icon">
-      <img src="@/assets/images/close-player.svg" alt="Close Player" />
-    </div> -->
+    <div @click="closePlayer" class="close-icon">
+      <img src="@/assets/images/close-player.svg" alt="Close" />
+    </div>
     <video
       :src="src"
       class="video"
+      @keyup.space="playVideo"
       @timeupdate="
         currentTime();
         seekVideo();
@@ -32,15 +33,22 @@
           <div class="video-progress-bar"></div>
         </div>
         <div class="control-container flex justify-between">
-          <div class="play-button cursor-pointer" @click="playVideo">
+          <div class="video-control-button cursor-pointer" @click="playVideo">
             <img
               src="@/assets/images/play-video.svg"
               v-if="videoIsPlaying === false"
-              alt=""
+              alt="Play"
             />
-            <img src="@/assets/images/pause-video.svg" v-else alt="" />
+            <img
+              src="@/assets/images/pause-video.svg"
+              class="video-control-button-pause"
+              v-else
+              alt="Pause"
+            />
           </div>
-          <p class="text-[#3374EA] text-base font-semibold">{{ videoName }}</p>
+          <p class="text-[#3374EA] text-base font-semibold">
+            {{ videoName }}
+          </p>
           <div
             @click="enterFullScreen"
             class="fullscreen cursor-pointer text-white"
@@ -164,6 +172,7 @@
     border-bottom-left-radius: 12px;
     border-bottom-right-radius: 12px;
     min-width: 320px;
+    padding-top: 20px;
     overflow: hidden;
   }
 
@@ -271,23 +280,33 @@
     }
   }
 
+  .video-control-button {
+    background: white;
+    height: 27px;
+    border-radius: 50%;
+    padding: 5px 9px 8px 11px;
+  }
+
+  .video-control-button img {
+    height: 100%;
+  }
+
   .close-icon {
     cursor: pointer;
     position: absolute;
-    right: -5px;
-    top: -7%;
-    height: 2.2rem;
-    width: 2.2rem;
+    top: 0;
+    right: 0;
+    background: #d8dce4;
+    padding: 7px 10px;
+    border-radius: 100%;
   }
 
   .close-icon img {
     width: 100%;
-    height: 100%;
   }
 
   .backdrop {
     position: fixed;
-    /* display: none; */
     width: 100%;
     height: 100%;
     top: 0;
@@ -296,7 +315,6 @@
     bottom: 0;
     background-color: #525b6d;
     opacity: 96%;
-    cursor: pointer;
     z-index: 12;
   }
 </style>
