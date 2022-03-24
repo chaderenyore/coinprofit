@@ -2098,7 +2098,7 @@ export default {
 .auto-track-icons.bcs1 {
   width: 40%;
   top: 300px;
-  left: 210px;
+  left: 50%;
 }
 .auto-track-icons.eth1 {
   width: 40%;
@@ -2114,7 +2114,7 @@ export default {
 .auto-track-icons.eth2 {
   width: 40%;
   top: 550px;
-  left: 210px;
+  left: 50%;
 }
 
 .button,
@@ -2289,8 +2289,9 @@ export default {
 .share-blob {
   position: absolute;
   top: 300px;
-  width: 350px;
+  width: 100%;
   opacity: 0.8;
+  overflow-x: hidden;
 }
 
 .share-portfolio-img-box {

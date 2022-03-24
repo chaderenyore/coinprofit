@@ -563,7 +563,6 @@ export default {
   padding: 0 20px 50px;
   background: transparent linear-gradient(180deg, #22a1f5 0%, #28a1f1 100%) 0%
     0% no-repeat padding-box;
-
   box-shadow: 10px #00000008;
   margin: 9rem auto 5rem;
   font-family: "Montserrat", sans-serif;
@@ -576,20 +575,17 @@ export default {
   top: -4rem;
   margin-bottom: -3rem;
   height: 15rem;
-  width: 15rem;
-  border-radius: 0;
-  overflow: hidden;
+  width: 14rem;
 }
 
 .team_memebers_box_img_box img {
   position: absolute;
-  height: 90%;
-  width: 90%;
+  height: 100%;
+  width: 100%;
   top: 0;
   left: 0;
   border-radius: 50%;
   object-fit: cover;
-  transition: 0.3s ease;
 }
 
 .team_memebers_box h3 {
@@ -1046,20 +1042,12 @@ export default {
   .team_content h1 {
     font-weight: 800;
   }
-  .team_content h1:hover {
-    color: #f7ff00;
-  }
-
   .team_memebers_box {
-    width: 30%;
+    /* width: 30%; */
     margin: 8rem 1rem 0;
     display: inline-block;
   }
-  .team_memebers_box:hover {
-    background-color: #fff;
-    color: black;
-    cursor: pointer;
-  }
+
 
   .we_made h1 {
     font-weight: 800;
