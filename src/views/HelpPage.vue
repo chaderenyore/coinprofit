@@ -52,16 +52,6 @@
     </div>
   </section>
 
-  <section v-if="data" class="w-4/5 m-auto mb-24">
-    <h1 class="text-center font-extrabold text-3xl mb-3 text-[#3374ea]">
-      {{ $prismic.asText(data.data.welcome_heading) }}
-    </h1>
-    <p
-      class="help__article text-center text-[1.2rem] font-medium max-w-[636px] m-auto"
-    >
-      {{ $prismic.asText(data.data.welcome_text) }}
-    </p>
-  </section>
   <section class="w-[80%] m-auto">
     <KeepAlive>
       <component :is="selectedComponent" />
@@ -113,7 +103,6 @@
 </template>
 
 <script>
-  import { useSinglePrismicDocument } from "@prismicio/vue";
   import HelpPostCard from "../components/Help/HelpPostCard.vue";
   import VideoCard from "../components/Help/VideoCard.vue";
   import { ref } from "@vue/reactivity";
@@ -125,10 +114,8 @@
     },
 
     setup() {
-      const { data } = useSinglePrismicDocument("help_welcome");
       const selectedComponent = ref("help-post-card");
       return {
-        data,
         selectedComponent,
       };
     },
@@ -375,8 +362,5 @@
   }
   .help__contact--card-p {
     color: var(--help-contact-box-text);
-  }
-  .help__article {
-    color: var(--help-article-text);
   }
 </style>

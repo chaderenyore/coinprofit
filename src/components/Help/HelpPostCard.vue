@@ -1,4 +1,14 @@
 <template>
+  <section v-if="data" class="mb-24">
+    <h1 class="text-center font-extrabold text-3xl mb-3 text-[#3374ea]">
+      {{ $prismic.asText(data.data.welcome_heading) }}
+    </h1>
+    <p
+      class="help__article text-center text-[1.2rem] font-medium max-w-[636px] m-auto"
+    >
+      {{ $prismic.asText(data.data.welcome_text) }}
+    </p>
+  </section>
   <div v-if="helpost">
     <ul
       class="flex justify-center flex-wrap gap-y-20 gap-x-3 md:grid md:justify-center md:items-start md:content-center md:grid-cols-2 lg:flex lg:flex-wrap lg:justify-start xl:grid xl:grid-cols-3 xl:gap-x-5"
@@ -61,12 +71,17 @@
   export default {
     data() {
       return {
+        data: null,
         helpost: "",
         pageSize: 6,
         showLoadMore: true,
       };
     },
     methods: {
+      async getPageDatafromPrismic() {
+        this.data = await this.$prismic.client.getSingle("help_welcome");
+      },
+
       async getData() {
         this.helpost = await this.$prismic.client.getByType("articles", {
           pageSize: this.pageSize,
@@ -88,6 +103,10 @@
       },
     },
 
+    created() {
+      this.getPageDatafromPrismic();
+    },
+
     mounted() {
       this.getData();
     },
@@ -107,6 +126,10 @@
     top: -20%;
     z-index: -1;
     left: 0;
+  }
+
+  .help__article {
+    color: var(--help-article-text);
   }
 
   .card-article__text {

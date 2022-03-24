@@ -126,6 +126,7 @@
       seekVideo() {
         const progressBar = document.querySelector(".video-progress-filled");
         const video = document.querySelector(".video");
+        if (!video) return;
 
         const percentage = (video.currentTime / video.duration) * 100;
         progressBar.value = percentage;
@@ -147,7 +148,7 @@
     },
 
     mounted() {
-      // this.playVideo();
+      this.playVideo();
     },
   };
 </script>
