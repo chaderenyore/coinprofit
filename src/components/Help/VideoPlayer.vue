@@ -8,7 +8,6 @@
     <video
       :src="src"
       class="video"
-      @click="playVideo"
       @timeupdate="
         currentTime();
         seekVideo();
