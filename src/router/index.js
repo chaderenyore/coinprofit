@@ -44,6 +44,10 @@ const routes = [
     path: "/help/:uid",
     component: BlogPost,
     name: "SingleHelpPost",
+    meta: {
+      auth: true,
+      title: "Coinprofit - Blog Post",
+    },
   },
   {
     path: "/:notfound(.*)",
@@ -56,7 +60,7 @@ const routes = [
     meta: {
       auth: true,
       title: "Coinprofit - Calculator",
-    },  
+    },
   },
 
   {
@@ -67,7 +71,7 @@ const routes = [
       auth: true,
       title: "Coinprofit - Aml-Policy",
     },
-  }
+  },
 ];
 
 const router = createRouter({
