@@ -1,10 +1,10 @@
 <template>
-  <div class="backdrop" @keypress.space="playVideo"></div>
+  <div class="backdrop" @click="closePlayer"></div>
 
-  <div class="video-player" @keyup.space="playVideo">
-    <div @click="closePlayer" class="close-icon">
+  <div class="video-player">
+    <!-- <div @click="closePlayer" class="close-icon">
       <img src="@/assets/images/close-player.svg" alt="Close Player" />
-    </div>
+    </div> -->
     <video
       :src="src"
       class="video"
@@ -21,8 +21,6 @@
           <span class="duration">0:00</span>
         </div>
         <div class="video-progress">
-          <div class="video-progress-bar"></div>
-
           <input
             type="range"
             class="video-progress-filled"
@@ -31,6 +29,7 @@
             value="0"
             @click="updateProgressAndVideo"
           />
+          <div class="video-progress-bar"></div>
         </div>
         <div class="control-container flex justify-between">
           <div class="play-button cursor-pointer" @click="playVideo">
@@ -39,12 +38,7 @@
               v-if="videoIsPlaying === false"
               alt=""
             />
-            <img
-              class="play-button-pause"
-              src="@/assets/images/pause-video.svg"
-              v-else
-              alt="Pause"
-            />
+            <img src="@/assets/images/pause-video.svg" v-else alt="" />
           </div>
           <p class="text-[#3374EA] text-base font-semibold">{{ videoName }}</p>
           <div
@@ -170,7 +164,7 @@
     border-bottom-left-radius: 12px;
     border-bottom-right-radius: 12px;
     min-width: 320px;
-    /* overflow: hidden; */
+    overflow: hidden;
   }
 
   @media screen and (min-width: 678px) {
@@ -200,14 +194,12 @@
     border-bottom-left-radius: 12px;
     border-bottom-right-radius: 12px;
     background-color: #1c1923;
-    transition: all 0.3s;
-    visibility: hidden;
-    opacity: 0;
+    transform: translateY(100%);
+    transition: all 0.6s ease-out;
   }
 
   .video-player:hover .player-controls {
-    visibility: visible;
-    opacity: 1;
+    transform: translateY(0);
   }
 
   .player-controls-wrapper {
@@ -258,8 +250,6 @@
     /* margin-top: 0; */
     cursor: pointer;
     background-image: linear-gradient(180deg, #14cbff, #366be8);
-    position: relative;
-    z-index: 2000;
   }
 
   .video-progress-filled:focus {
@@ -272,29 +262,13 @@
     height: 4px;
     position: absolute;
     top: 10px;
-    /* z-index: -1; */
+    z-index: -1;
   }
 
   @-moz-document url-prefix() {
     .video-progress-bar {
-      top: 7px;
-      height: 3px;
+      top: 8px;
     }
-  }
-
-  .play-button {
-    background: white;
-    padding: 9px 9px 4px 13px;
-    border-radius: 50%;
-  }
-
-  .play-button img {
-    width: 12px;
-  }
-
-  .play-button-pause {
-    transform: translateY(0px) translateX(-2px);
-    width: 10px !important;
   }
 
   .close-icon {
@@ -302,16 +276,12 @@
     position: absolute;
     right: -5px;
     top: -7%;
-    height: 31px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 8px;
-    border-radius: 100%;
-    background-color: #d7d7dd;
+    height: 2.2rem;
+    width: 2.2rem;
   }
 
   .close-icon img {
+    width: 100%;
     height: 100%;
   }
 
@@ -326,6 +296,7 @@
     bottom: 0;
     background-color: #525b6d;
     opacity: 96%;
+    cursor: pointer;
     z-index: 12;
   }
 </style>
