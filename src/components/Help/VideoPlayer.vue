@@ -42,7 +42,10 @@
             <img src="@/assets/images/pause-video.svg" v-else alt="" />
           </div>
           <p class="text-[#3374EA] text-base font-semibold">{{ videoName }}</p>
-          <div class="control-button cursor-pointer text-white">
+          <div
+            @click="enterFullScreen"
+            class="fullscreen cursor-pointer text-white"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               class="h-6 w-6"
@@ -135,6 +138,11 @@
         const progressTime =
           (e.offsetX / progress.offsetWidth) * video.duration;
         video.currentTime = progressTime;
+      },
+
+      enterFullScreen() {
+        const video = document.querySelector(".video");
+        video.requestFullscreen();
       },
     },
 
