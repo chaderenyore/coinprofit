@@ -239,7 +239,7 @@
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    margin-top: 0;
+    /* margin-top: 0; */
     background-image: linear-gradient(180deg, #14cbff, #366be8);
   }
 
