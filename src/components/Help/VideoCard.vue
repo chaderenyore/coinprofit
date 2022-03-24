@@ -137,6 +137,7 @@
       rgba(103, 123, 255, 1)
     );
     opacity: 0.8;
+    width: 95px;
   }
 
   .play-video {
