@@ -173,6 +173,13 @@
     }
   }
 
+  @media screen and (min-width: 768px) {
+    .video-player {
+      /* top: 50%; */
+      width: 70%;
+    }
+  }
+
   .video {
     width: 100%;
     border-bottom-left-radius: 12px;
