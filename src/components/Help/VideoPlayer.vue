@@ -1,46 +1,64 @@
 <template>
   <div class="backdrop" @click="closePlayer"></div>
+
   <div class="video-player">
-    <div
-      @click="closePlayer"
-      class="close-icon bg-[#B3BCCE] absolute top-0 right-1 p-2 rounded-full"
-    ></div>
+    <!-- <div @click="closePlayer" class="close-icon">
+      <img src="@/assets/images/close-player.svg" alt="Close Player" />
+    </div> -->
     <video
       :src="src"
       class="video"
       @click="playVideo"
-      @timeupdate="currentTime"
+      @timeupdate="
+        currentTime();
+        seekVideo();
+      "
       ref="video"
     ></video>
     <div class="player-controls">
-      <div class="time-stamp flex justify-between text-[#F2F8FF]">
-        <span class="current">0:00</span>
-        <span class="duration">0:00</span>
-      </div>
-      <div class="control-container flex justify-between">
-        <div class="play-button" @click="playVideo">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="h-6 w-6"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-            stroke-width="2"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"
-            />
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-            />
-          </svg>
+      <div class="player-controls-wrapper">
+        <div class="time-stamp flex justify-between text-[#F2F8FF]">
+          <span class="current">0:00</span>
+          <span class="duration">0:00</span>
         </div>
-        <p class="text-[#3374EA] text-base font-semibold">{{ videoName }}</p>
-        <p>FullScreen</p>
+        <div class="video-progress">
+          <input
+            type="range"
+            class="video-progress-filled"
+            @input="changeProgressBar"
+            min="0"
+            value="0"
+            @click="updateProgressAndVideo"
+          />
+          <div class="video-progress-bar"></div>
+        </div>
+        <div class="control-container flex justify-between">
+          <div class="play-button cursor-pointer" @click="playVideo">
+            <img
+              src="@/assets/images/play-video.svg"
+              v-if="videoIsPlaying === false"
+              alt=""
+            />
+            <img src="@/assets/images/pause-video.svg" v-else alt="" />
+          </div>
+          <p class="text-[#3374EA] text-base font-semibold">{{ videoName }}</p>
+          <div class="control-button cursor-pointer text-white">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"
+              />
+            </svg>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -51,6 +69,12 @@
     props: ["src", "thumbnail", "videoName"],
     emits: ["close-player"],
 
+    data() {
+      return {
+        videoIsPlaying: true,
+      };
+    },
+
     methods: {
       closePlayer() {
         this.$emit("close-player");
@@ -60,8 +84,10 @@
         const video = document.querySelector(".video");
         if (video.paused) {
           video.play();
+          this.videoIsPlaying = true;
         } else {
           video.pause();
+          this.videoIsPlaying = false;
         }
       },
 
@@ -70,6 +96,11 @@
         const durationTimeElement = document.querySelector(".duration");
 
         const video = document.querySelector(".video");
+
+        if (!video) {
+          return;
+        }
+
         let currentMinutes = Math.floor(video.currentTime / 60);
         let currentSeconds = Math.floor(
           video.currentTime - currentMinutes * 60
@@ -77,13 +108,38 @@
         let durationMintues = Math.floor(video.duration / 60);
         let durationSeconds = Math.floor(video.duration - durationMintues * 60);
 
-        currentTimeElement.innerHTML = `${currentMinutes}:${currentSeconds}`;
+        currentTimeElement.innerHTML = `${currentMinutes}:${
+          currentSeconds < 10 ? "0" + currentSeconds : currentSeconds
+        }`;
         durationTimeElement.innerHTML = `${durationMintues}:${durationSeconds}`;
+      },
+
+      changeProgressBar() {
+        const slider = document.querySelector(".video-progress-filled");
+        const progressBar = document.querySelector(".video-progress-bar");
+        progressBar.style.width = slider.value + "%";
+      },
+
+      seekVideo() {
+        const progressBar = document.querySelector(".video-progress-filled");
+        const video = document.querySelector(".video");
+
+        const percentage = (video.currentTime / video.duration) * 100;
+        progressBar.value = percentage;
+        this.changeProgressBar();
+      },
+
+      updateProgressAndVideo(e) {
+        const video = document.querySelector(".video");
+        const progress = document.querySelector(".video-progress-filled");
+        const progressTime =
+          (e.offsetX / progress.offsetWidth) * video.duration;
+        video.currentTime = progressTime;
       },
     },
 
     mounted() {
-      this.playVideo();
+      // this.playVideo();
     },
   };
 </script>
@@ -92,11 +148,15 @@
   .video-player {
     z-index: 14;
     position: fixed;
-    top: 30%;
+    top: 36%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #1c1923;
     width: 95%;
+    border-radius: 14px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    min-width: 320px;
+    overflow: hidden;
   }
 
   @media screen and (min-width: 678px) {
@@ -107,20 +167,92 @@
 
   .video {
     width: 100%;
-    border-radius: 20px;
-    padding: 12px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
   }
 
   .player-controls {
-    display: flex;
-    flex-direction: column;
-    width: 90%;
-    margin: 0 auto;
-    gap: 0.3rem;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 6.25rem;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    background-color: #1c1923;
+    transform: translateY(100%);
+    transition: all 0.6s ease-out;
   }
 
-  .play-button {
-    padding: 0.5rem 0.5rem;
+  .video-player:hover .player-controls {
+    transform: translateY(0);
+  }
+
+  .player-controls-wrapper {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    gap: 0.3rem;
+    margin-top: 0.625rem;
+    flex-direction: column;
+  }
+
+  .video-progress {
+    position: relative;
+  }
+
+  .video-progress-filled {
+    -webkit-appearance: none;
+    background: transparent;
+    width: 100%;
+  }
+
+  .video-progress-filled::-webkit-slider-runnable-track {
+    cursor: pointer;
+    background: #b3bcce80;
+    height: 4px;
+  }
+
+  .video-progress-filled::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-image: linear-gradient(180deg, #14cbff, #366be8);
+    margin-top: -8px;
+  }
+
+  .video-progress-filled::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-image: linear-gradient(180deg, #14cbff, #366be8);
+  }
+
+  .video-progress-filled:focus {
+    outline: none;
+  }
+
+  .video-progress-bar {
+    background: #3374ea;
+    width: 0;
+    height: 4px;
+    position: absolute;
+    top: 10px;
+    z-index: -1;
+  }
+
+  .close-icon {
+    cursor: pointer;
+    position: absolute;
+    right: -5px;
+    top: -7%;
+    height: 2.2rem;
+    width: 2.2rem;
+  }
+
+  .close-icon img {
+    width: 100%;
+    height: 100%;
   }
 
   .backdrop {
