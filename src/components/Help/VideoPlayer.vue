@@ -220,6 +220,12 @@
     height: 4px;
   }
 
+  .video-progress-filled::-moz-range-track {
+    cursor: pointer;
+    background: #b3bcce80;
+    height: 4px;
+  }
+
   .video-progress-filled::-webkit-slider-thumb {
     -webkit-appearance: none;
     width: 20px;
@@ -233,6 +239,7 @@
     width: 20px;
     height: 20px;
     border-radius: 50%;
+    margin-top: 0;
     background-image: linear-gradient(180deg, #14cbff, #366be8);
   }
 
