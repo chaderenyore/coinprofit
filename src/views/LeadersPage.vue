@@ -317,7 +317,7 @@
                     <img src="@/assets/images/leader-level1.svg" />
                   </div> -->
 
-                  <p>@username</p>
+                  <p>@Bryan</p>
                   <h3>Bryan Ifeanyi</h3>
 
                   <div class="reviews">
@@ -370,7 +370,7 @@
                     />
                   </div>
 
-                  <p>@username</p>
+                  <p>@Iam_Marvelous</p>
                   <h3>Marvelous Macaulay</h3>
 
                   <div class="reviews">
@@ -389,7 +389,7 @@
                     />
                   </div>
 
-                  <p>@username</p>
+                  <p>@Aazama</p>
                   <h3>Ibrahim Dauda</h3>
 
                   <div class="reviews">
@@ -411,7 +411,7 @@
                     />
                   </div>
 
-                  <p>@username</p>
+                  <p>@Investorsylver</p>
                   <h3>Uche Sylvester</h3>
 
                   <div class="reviews">
@@ -434,7 +434,7 @@
                     />
                   </div>
 
-                  <p>@username</p>
+                  <p>@Onokus</p>
                   <h3>George Sibi onokuma</h3>
 
                   <div class="reviews">
@@ -453,7 +453,7 @@
                     />
                   </div>
 
-                  <p>@username</p>
+                  <p>@Ammukhtar2</p>
                   <h3>Adam Muhammad Mukhtar</h3>
 
                   <div class="reviews">
@@ -477,7 +477,7 @@
                     />
                   </div>
 
-                  <p>@username</p>
+                  <p>@khaleell</p>
                   <h3>Ibrahim BK</h3>
 
                   <div class="reviews">
@@ -499,7 +499,7 @@
                     />
                   </div>
 
-                  <p>@username</p>
+                  <p>@Voski</p>
                   <h3>Stephen Voski</h3>
 
                   <div class="reviews">
@@ -524,7 +524,7 @@
                     />
                   </div>
 
-                  <p>@username</p>
+                  <p>@Vicsouls</p>
                   <h3>Victor CHUKWU</h3>
 
                   <div class="reviews">
@@ -549,7 +549,7 @@
                     />
                   </div>
 
-                  <p>@username</p>
+                  <p>@BitMayor</p>
                   <h3>Mayor Chikwe Greatness</h3>
 
                   <div class="reviews">
@@ -622,7 +622,7 @@
             <img src="@/assets/images/leaders/Greatness.jpeg" alt="IMAGE" />
           </div>
 
-          <p>@username</p>
+          <p>@BitMayor</p>
           <h3>Mayor Chikwe Greatness</h3>
 
           <div class="reviews">
@@ -639,7 +639,7 @@
           <div class="computer-leaders-img-box">
             <img src="@/assets/images/leaders/voski.jpeg" alt="IMAGE" />
           </div>
-          <p>@username</p>
+          <p>@Voski</p>
           <h3>Stephen Voski</h3>
 
           <div class="reviews">
@@ -658,7 +658,7 @@
             <img src="@/assets/images/leaders/mukhtar.jpeg" alt="IMAGE" />
           </div>
 
-          <p>@username</p>
+          <p>@Ammukhtar2</p>
           <h3>Adam Muhammad Mukhtar</h3>
 
           <div class="reviews">
@@ -680,7 +680,7 @@
             <img src="@/assets/images/leader-level.svg" />
           </div> -->
 
-          <p>@username</p>
+          <p>@Bryan</p>
           <h3>Bryan Ifeanyi</h3>
 
           <div class="reviews">
@@ -750,117 +750,107 @@
       <div class="computer-leaders-box-wrapper two">
         <div class="computer-leaders-box">
           <div class="computer-leaders-img-box">
-            <img src="@/assets/images/leaders/emmanuel.png" alt="IMAGE" />
+            <img src="@/assets/images/leaders/BK.jpeg" alt="IMAGE" />
           </div>
 
           <!-- <div class="leader-lv">
             <img src="@/assets/images/leader-level1.svg" />
           </div> -->
 
-          <p>@lordemma</p>
-          <h3>Emmanuel Ohworeko</h3>
+          <p>@khaleell</p>
+                  <h3>Ibrahim BK</h3>
           <!-- <h4>CEO and Founder of CoinProfit</h4> -->
 
-          <div class="reviews">
-            <p class="text">
-              Starting his crypto journey in 2020, Emmanuel has grown to become
-              a leader through constant learning
-            </p>
-          </div>
+           <div class="reviews">
+                    <p>
+                      I'm Ibrahim BK. A professional crypto trader with 3+ years
+                      of experience in Blockchain development.
+                    </p>
+                  </div>
         </div>
         <!-- end leaders box -->
 
         <div class="computer-leaders-box">
           <div class="computer-leaders-img-box">
-            <img src="@/assets/images/leaders/Greatness.jpeg" alt="IMAGE" />
+            <img src="@/assets/images/leaders/CHUKWU.jpeg" alt="IMAGE" />
           </div>
 
-          <p>@username</p>
-          <h3>Mayor Chikwe Greatness</h3>
+          <p>@Vicsouls</p>
+                  <h3>Victor CHUKWU</h3>
 
           <div class="reviews">
-            <p>
-              I started my crypto journey since 2016 and have since then
-              acquired at least 4 years experience in crypto technical analysis,
-              trading and teaching.
-            </p>
-          </div>
+                    <p>
+                      I'm Victor CHUKWU. I have been able to coach and still
+                      coaching a lot of people in the crypto space. I have been
+                      in the crypto space for quite a long time now, and I have
+                      seen both failures and success, the ups and downs, but I
+                      keep the movement because of the B PICTURE.
+                    </p>
+                  </div>
         </div>
         <!-- end leaders box -->
 
         <div class="computer-leaders-box">
           <div class="computer-leaders-img-box">
-            <img src="@/assets/images/leaders/voski.jpeg" alt="IMAGE" />
+            <img src="@/assets/images/leaders/sibi.jpeg" alt="IMAGE" />
           </div>
-          <p>@username</p>
-          <h3>Stephen Voski</h3>
+          <p>@Onokus</p>
+                  <h3>George Sibi onokuma</h3>
 
           <div class="reviews">
-            <p>
-              I'm Chukwu Stephen Ndubuisi, popularly known as Voski. I've been a
-              blockchain and cryptocurrency advocate since 2016. My aim has
-              always been to change the lives of others, using the opportunities
-              provided by blockchain technology.
-            </p>
-          </div>
+                    <p>I'm a cryptocurrency trader and a coach.</p>
+                  </div>
         </div>
         <!-- end leaders box -->
 
         <div class="computer-leaders-box">
           <div class="computer-leaders-img-box">
-            <img src="@/assets/images/leaders/mukhtar.jpeg" alt="IMAGE" />
+            <img src="@/assets/images/leaders/marvelous.jpeg" alt="IMAGE" />
           </div>
 
-          <p>@username</p>
-          <h3>Adam Muhammad Mukhtar</h3>
+           <p>@Iam_Marvelous</p>
+                  <h3>Marvelous Macaulay</h3>
 
-          <div class="reviews">
-            <p>
-              I'm a Cryptocurrency freak. Since the sunrise of 2021, with mutual
-              Fundamental and technical analyses, I have been growing and
-              educating my crypto community of over six thousand members, most
-              of them are locals than global.
-            </p>
-          </div>
+         <div class="reviews">
+                    <p>I'm a Crypto trader and technical analyst.</p>
+                  </div>
         </div>
 
         <div class="computer-leaders-box">
           <div class="computer-leaders-img-box">
-            <img src="@/assets/images/leaders/Uzoatu.jpeg" alt="IMAGE" />
+            <img src="@/assets/images/leaders/Ibrahim.jpeg" alt="IMAGE" />
           </div>
 
-          <div class="leader-lv">
+          <!-- <div class="leader-lv">
             <img src="@/assets/images/leader-level.svg" />
-          </div>
+          </div> -->
 
-          <p>@username</p>
-          <h3>Bryan Ifeanyi</h3>
+           <p>@Aazama</p>
+            <h3>Ibrahim Dauda</h3>
 
-          <div class="reviews">
-            <p>
-              My name is Bryan, I'm a Blockchain and cryptocurrency educator. I
-              joined the space in 2017, and from then on, it's been a truly
-              amazing journey. Learning, growing, building, and teaching.
-            </p>
-          </div>
+           <div class="reviews">
+                    <p>
+                      The journey wasn't easy at the beginning. But I thank God
+                      for the things I got from crypto investment.
+                    </p>
+                  </div>
         </div>
 
         <div class="computer-leaders-box">
           <div class="computer-leaders-img-box">
-            <img src="@/assets/images/leaders/moses.jpeg" alt="IMAGE" />
+            <img src="@/assets/images/leaders/uche.jpeg" alt="IMAGE" />
           </div>
 
-          <p>@username</p>
-          <h3>Moses Ugoh</h3>
+         <p>@Investorsylver</p>
+                  <h3>Uche Sylvester</h3>
 
           <div class="reviews">
-            <p>
-              It was since 2020 that I realized Bitcoin’s maximum potentials and
-              my interest quickly expanded to everything blockchain-related. I
-              became particularly excited about real-world applications of
-              blockchain technology and blockchain centered projects.
-            </p>
-          </div>
+                    <p>
+                      I'm Uche, a Crypto enthusiast. I use my skillset to create
+                      wealth and also diversify my income using crypto hedge
+                      fund, farming and staking.
+                    </p>
+                  </div>
         </div>
         <!-- end -->
 
