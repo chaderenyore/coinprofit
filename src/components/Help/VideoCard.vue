@@ -2,7 +2,13 @@
   <ul v-if="helpvid" class="flex flex-col gap-6">
     <li v-for="video in helpvid.results" :key="video.uid">
       <figure
-        @click="playVideo(video.data.video.url, video.data.thumbnail.url)"
+        @click="
+          playVideo(
+            video.data.video.url,
+            video.data.thumbnail.url,
+            video.data.name[0].text
+          )
+        "
         class="video-list flex flex-row gap-3 items-center rounded-xl"
       >
         <div class="video-thumbnail h-20 md:h-28 rounded-xl">
@@ -26,6 +32,7 @@
     <video-player
       :src="videoSrc"
       :thumbnail="videoThumbnail"
+      :videoName="videoName"
       v-if="videoIsPlaying"
       @close-player="closePlayer"
     ></video-player>
@@ -45,6 +52,7 @@
         videoIsPlaying: false,
         videoSrc: null,
         videoThumbnail: null,
+        videoName: null,
       };
     },
     methods: {
@@ -53,10 +61,11 @@
         // console.log(this.helpvid);
       },
 
-      playVideo(src, thumbnail) {
+      playVideo(src, thumbnail, name) {
         this.videoIsPlaying = true;
         this.videoSrc = src;
         this.videoThumbnail = thumbnail;
+        this.videoName = name;
       },
 
       closePlayer() {
