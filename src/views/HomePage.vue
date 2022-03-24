@@ -423,12 +423,7 @@
                     </div>
                     <p class="username">@username</p>
                     <p>
-                      idea was weird, insane and strange. Not until 2020 during
-                      the pandemic that I realized Bitcoin’s maximum potentials
-                      and my interest quickly expanded to everything
-                      blockchain-related. I became particularly excited about
-                      real-world applications of blockchain technology and
-                      blockchain centered projects.
+                     It was since 2020 that I realized Bitcoin’s maximum potentials and my interest quickly expanded to everything blockchain-related. I became particularly excited about real-world applications of blockchain technology and blockchain centered projects.
                     </p>
                   </div>
                 </div>
@@ -591,13 +586,7 @@
 
                     <p class="username">@username</p>
                     <p>
-                      I'm Victor CHUKWU. I have been able to coach and still
-                      coaching a lot of people in the crypto space. Even at
-                      that, I'm still learning because learning is a constant
-                      process so I have some gurus that I submit to. I have been
-                      in the crypto space for quite a long time now, and I have
-                      seen both failures and success, the ups and downs, but I
-                      keep the movement because of the B PICTURE.
+                      I'm Victor CHUKWU. I have been able to coach and still coaching a lot of people in the crypto space. I have been in the crypto space for quite a long time now, and I have seen both failures and success, the ups and downs, but I keep the movement because of the B PICTURE.
                     </p>
                   </div>
                 </div>

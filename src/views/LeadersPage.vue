@@ -350,10 +350,11 @@
 
                   <div class="reviews">
                     <p>
-                      I read of Bitcoin from a Business Magazine in 2009. I
-                      can't really remember how much it was in that news report
-                      because to me, the idea was weird, insane and strange.
-                      <!-- Not until 2020 during the pandemic that I realized Bitcoin’s maximum potentials and my interest quickly expanded to everything blockchain-related. I became particularly excited about real-world applications of blockchain technology and blockchain centered projects. -->
+                      It was since 2020 that I realized Bitcoin’s maximum
+                      potentials and my interest quickly expanded to everything
+                      blockchain-related. I became particularly excited about
+                      real-world applications of blockchain technology and
+                      blockchain centered projects.
                     </p>
                   </div>
                 </div>
@@ -529,10 +530,10 @@
                   <div class="reviews">
                     <p>
                       I'm Victor CHUKWU. I have been able to coach and still
-                      coaching a lot of people in the crypto space.
-                      <!-- Even at that, I'm still learning because learning is a constant process so I have some gurus that I submit to. I have been in the crypto space for quite a long time now, -->
-                      and I have seen both failures and success, the ups and
-                      downs, but I keep the movement because of the B PICTURE.
+                      coaching a lot of people in the crypto space. I have been
+                      in the crypto space for quite a long time now, and I have
+                      seen both failures and success, the ups and downs, but I
+                      keep the movement because of the B PICTURE.
                     </p>
                   </div>
                 </div>
@@ -675,9 +676,9 @@
             <img src="@/assets/images/leaders/Uzoatu.jpeg" alt="IMAGE" />
           </div>
 
-          <div class="leader-lv">
+          <!-- <div class="leader-lv">
             <img src="@/assets/images/leader-level.svg" />
-          </div>
+          </div> -->
 
           <p>@username</p>
           <h3>Bryan Ifeanyi</h3>
@@ -690,6 +691,7 @@
             </p>
           </div>
         </div>
+
         <div class="computer-leaders-box">
           <div class="computer-leaders-img-box">
             <img src="@/assets/images/leaders/moses.jpeg" alt="IMAGE" />
@@ -700,16 +702,14 @@
 
           <div class="reviews">
             <p>
-              I read of Bitcoin from a Business Magazine in 2009. I can't really
-              remember how much it was in that news report because to me. the
-               <!-- idea was weird, insane and strange. Not until 2020 during the
-              pandemic that I realized Bitcoin’s maximum potentials and my
-              interest quickly expanded to everything blockchain-related. I
+              It was since 2020 that I realized Bitcoin’s maximum potentials and
+              my interest quickly expanded to everything blockchain-related. I
               became particularly excited about real-world applications of
-              blockchain technology and blockchain centered projects. -->
+              blockchain technology and blockchain centered projects.
             </p>
           </div>
         </div>
+        <!-- end -->
 
         <div class="computer-leaders-box-background">
           <div class="svg-background"></div>
@@ -744,9 +744,185 @@
             </div>
           </div>
         </div>
-        <!-- End mobile leaders box background-->
+        <!-- End computer leaders box background-->
+      </div>
+
+      <div class="computer-leaders-box-wrapper two">
+        <div class="computer-leaders-box">
+          <div class="computer-leaders-img-box">
+            <img src="@/assets/images/leaders/emmanuel.png" alt="IMAGE" />
+          </div>
+
+          <!-- <div class="leader-lv">
+            <img src="@/assets/images/leader-level1.svg" />
+          </div> -->
+
+          <p>@lordemma</p>
+          <h3>Emmanuel Ohworeko</h3>
+          <!-- <h4>CEO and Founder of CoinProfit</h4> -->
+
+          <div class="reviews">
+            <p class="text">
+              Starting his crypto journey in 2020, Emmanuel has grown to become
+              a leader through constant learning
+            </p>
+          </div>
+        </div>
+        <!-- end leaders box -->
+
+        <div class="computer-leaders-box">
+          <div class="computer-leaders-img-box">
+            <img src="@/assets/images/leaders/Greatness.jpeg" alt="IMAGE" />
+          </div>
+
+          <p>@username</p>
+          <h3>Mayor Chikwe Greatness</h3>
+
+          <div class="reviews">
+            <p>
+              I started my crypto journey since 2016 and have since then
+              acquired at least 4 years experience in crypto technical analysis,
+              trading and teaching.
+            </p>
+          </div>
+        </div>
+        <!-- end leaders box -->
+
+        <div class="computer-leaders-box">
+          <div class="computer-leaders-img-box">
+            <img src="@/assets/images/leaders/voski.jpeg" alt="IMAGE" />
+          </div>
+          <p>@username</p>
+          <h3>Stephen Voski</h3>
+
+          <div class="reviews">
+            <p>
+              I'm Chukwu Stephen Ndubuisi, popularly known as Voski. I've been a
+              blockchain and cryptocurrency advocate since 2016. My aim has
+              always been to change the lives of others, using the opportunities
+              provided by blockchain technology.
+            </p>
+          </div>
+        </div>
+        <!-- end leaders box -->
+
+        <div class="computer-leaders-box">
+          <div class="computer-leaders-img-box">
+            <img src="@/assets/images/leaders/mukhtar.jpeg" alt="IMAGE" />
+          </div>
+
+          <p>@username</p>
+          <h3>Adam Muhammad Mukhtar</h3>
+
+          <div class="reviews">
+            <p>
+              I'm a Cryptocurrency freak. Since the sunrise of 2021, with mutual
+              Fundamental and technical analyses, I have been growing and
+              educating my crypto community of over six thousand members, most
+              of them are locals than global.
+            </p>
+          </div>
+        </div>
+
+        <div class="computer-leaders-box">
+          <div class="computer-leaders-img-box">
+            <img src="@/assets/images/leaders/Uzoatu.jpeg" alt="IMAGE" />
+          </div>
+
+          <div class="leader-lv">
+            <img src="@/assets/images/leader-level.svg" />
+          </div>
+
+          <p>@username</p>
+          <h3>Bryan Ifeanyi</h3>
+
+          <div class="reviews">
+            <p>
+              My name is Bryan, I'm a Blockchain and cryptocurrency educator. I
+              joined the space in 2017, and from then on, it's been a truly
+              amazing journey. Learning, growing, building, and teaching.
+            </p>
+          </div>
+        </div>
+
+        <div class="computer-leaders-box">
+          <div class="computer-leaders-img-box">
+            <img src="@/assets/images/leaders/moses.jpeg" alt="IMAGE" />
+          </div>
+
+          <p>@username</p>
+          <h3>Moses Ugoh</h3>
+
+          <div class="reviews">
+            <p>
+              It was since 2020 that I realized Bitcoin’s maximum potentials and
+              my interest quickly expanded to everything blockchain-related. I
+              became particularly excited about real-world applications of
+              blockchain technology and blockchain centered projects.
+            </p>
+          </div>
+        </div>
+        <!-- end -->
+
+        <div class="computer-leaders-box-background">
+          <div class="svg-background"></div>
+
+          <div class="custom-shape-divider-top-1646479334">
+            <svg
+              data-name="Layer 1"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 1200 120"
+              preserveAspectRatio="none"
+            >
+              <path
+                d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+                class="shape-fill"
+              ></path>
+            </svg>
+          </div>
+
+          <div class="custom-shape-divider-top-1646475939">
+            <div class="custom-shape-divider-bottom-1646476356">
+              <svg
+                data-name="Layer 1"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 1200 120"
+                preserveAspectRatio="none"
+              >
+                <path
+                  d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                  class="shape-fill"
+                ></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <!-- End computer leaders box background-->
       </div>
     </section>
+
+    <div class="becomeLeadersCTA">
+      <h1>Become a Leader Today</h1>
+      <h6>Downlaod the coinprofit app NOW to become a leader!</h6>
+
+      <div class="leaderCTADownloadWrapper">
+        <a href="#" target="_blank" rel="noopener noreferrer"
+          ><img
+            src="@/assets/images/appstore.svg"
+            alt=""
+            srcset=""
+            class="leaderCTADownloadApp"
+        /></a>
+
+        <a href="#" target="_blank" rel="noopener noreferrer"
+          ><img
+            src="@/assets/images/goplay.svg"
+            alt=""
+            srcset=""
+            class="leaderCTADownloadApp"
+        /></a>
+      </div>
+    </div>
 
     <section>
       <div class="faq-wrapper">
@@ -1390,6 +1566,54 @@ export default {
   display: none;
 }
 
+.becomeLeadersCTA {
+  width: 80%;
+  margin: 0 auto 10rem;
+  text-align: center;
+}
+.becomeLeadersCTA h1 {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  letter-spacing: 0px;
+  color: #3374ea;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 2rem;
+  text-transform: capitalize;
+}
+
+
+.becomeLeadersCTA h6 {
+     text-align: center;
+    margin: 0.4rem auto 0;
+    width: 100%;
+    color: var(--fourth-color);
+    font-size: 17px;
+    font-weight: 500;
+}
+.leaderCTADownloadWrapper {
+  width: 100%;
+  text-align: center;
+  margin-top: 2rem;
+}
+.leaderCTADownloadApp {
+     display: block;
+    width: 50%;
+    margin: 1rem auto 0;
+}
+
+@media (min-width: 765px) {
+  .leaderCTADownloadApp {
+     display: inline-block;
+    width: 20%;
+    margin: 2rem 1rem;
+}
+.becomeLeadersCTA h1 { 
+  font-size: 2.5rem;
+}
+}
+
 /* code for FAQ SECTION */
 .faq-wrapper {
   max-width: 90%;
@@ -1451,6 +1675,8 @@ export default {
 }
 
 /* FAQ ENDS HERE */
+
+
 
 @media only screen and (min-width: 720px) {
   .blob-wrapper {
@@ -1825,7 +2051,7 @@ export default {
   .computer-leaders-box-background {
     background: transparent linear-gradient(180deg, #22a1f5 0%, #677bff 100%)
       no-repeat padding-box;
-    height: 70vh;
+    height: 70%;
     width: 100%;
     position: absolute;
     top: 11rem;
@@ -2325,6 +2551,10 @@ export default {
     text-align: center;
   }
 
+  .computer-leaders-box-wrapper.two {
+    margin-top: 3rem;
+  }
+
   /* computer leaders box background first svg */
   .custom-shape-divider-top-1646479334 {
     position: absolute;
@@ -2364,7 +2594,7 @@ export default {
     vertical-align: middle;
     width: 24%;
     transform: scale(0.9);
-    padding: 0px 20px 50px;
+    padding: 0px 15px 50px;
     background: var(--third-color) no-repeat padding-box;
     box-shadow: 0px 3px 6px #00000008;
     display: inline-block;
@@ -2441,7 +2671,7 @@ export default {
 
   .faq-wrapper {
     max-width: 50%;
-    margin: 30px auto;
+    margin: 5rem auto;
   }
   .faq-wrapper h1 {
     font-size: 2rem;

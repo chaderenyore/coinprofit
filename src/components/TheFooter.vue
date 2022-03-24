@@ -6,7 +6,7 @@
       <div class="footer-logo-wrapper">
         <img src="../assets/images/footerlogo.png" alt="logo" srcset="" />
       </div>
-      <div class="slogan"><p>Easily track your crypto Assets</p></div>
+      <div class="slogan"><p>Helping you become a profitable crypto trader and investor</p></div>
       <div class="social-link">
         <a href="http://twitter.com" target="_blank" rel="noopener noreferrer">
           <svg
@@ -113,7 +113,7 @@
           <img src="../assets/images/footerlogo.png" alt="logo" srcset="" />
         </div>
         <div class="computer-slogan">
-          <p>Easily track your crypto Assets</p>
+          <p>Helping you become a profitable crypto trader and investor</p>
         </div>
         <div class="social-link">
           <a
@@ -284,6 +284,7 @@ export default {
 }
 .slogan {
   color: var(--fourth-color);
+  width: 60%;
 }
 .footer-logo-wrapper {
   width: 20%;
