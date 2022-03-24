@@ -99,7 +99,7 @@
           <div class="footerContent">
             <a href="#"><p>Terms and Condition</p></a>
             <a href="#"><p>Privacy policy</p></a>
-            <a href="/AML_POLICIES"><p>AML Policies</p></a>
+            <router-link to="/AML_POLICIES"><p>AML Policies</p></router-link>
           </div>
         </div>
       </div>
@@ -208,7 +208,7 @@
           <h3>Legal</h3>
           <a href="#"><p>Terms and Condition</p></a>
           <a href="#"><p>Privacy policy</p></a>
-          <a href="/AML.html"><p>AML Policies</p></a>
+           <router-link to="/AML_POLICIES"><p>AML Policies</p></router-link>
         </div>
       </div>
     </div>
@@ -425,7 +425,6 @@ export default {
     background-color: var(--third-color);
     height: 240px;
     margin-top: 100px;
-
   }
   .computer-footer-wrapper {
     width: 90%;

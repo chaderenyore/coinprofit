@@ -50,14 +50,24 @@ const routes = [
     redirect: "/",
   },
   {
-    path: "/affiliate",
-    name: "affiliate",
+    path: "/calculator",
+    name: "calculator",
     component: () => import("../views/AffiliatePage.vue"),
     meta: {
       auth: true,
-      title: "Coinprofit - Affiliates",
-    },
+      title: "Coinprofit - Calculator",
+    },  
   },
+
+  {
+    path: "/AML_POLICIES",
+    name: "amlpolicies",
+    component: () => import("../views//Legal/AmlPolicies.vue"),
+    meta: {
+      auth: true,
+      title: "Coinprofit - Aml-Policy",
+    },
+  }
 ];
 
 const router = createRouter({
