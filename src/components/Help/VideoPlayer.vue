@@ -1,5 +1,5 @@
 <template>
-  <div class="backdrop" @keyup.space="playVideo"></div>
+  <div class="backdrop" @keypress.space="playVideo"></div>
 
   <div class="video-player" @keyup.space="playVideo">
     <div @click="closePlayer" class="close-icon">
@@ -21,6 +21,8 @@
           <span class="duration">0:00</span>
         </div>
         <div class="video-progress">
+          <div class="video-progress-bar"></div>
+
           <input
             type="range"
             class="video-progress-filled"
@@ -29,7 +31,6 @@
             value="0"
             @click="updateProgressAndVideo"
           />
-          <div class="video-progress-bar"></div>
         </div>
         <div class="control-container flex justify-between">
           <div class="play-button cursor-pointer" @click="playVideo">
@@ -257,6 +258,8 @@
     /* margin-top: 0; */
     cursor: pointer;
     background-image: linear-gradient(180deg, #14cbff, #366be8);
+    position: relative;
+    z-index: 2000;
   }
 
   .video-progress-filled:focus {
@@ -266,14 +269,16 @@
   .video-progress-bar {
     background: #3374ea;
     width: 0;
-    height: 3px;
+    height: 4px;
     position: absolute;
     top: 10px;
+    /* z-index: -1; */
   }
 
   @-moz-document url-prefix() {
     .video-progress-bar {
       top: 7px;
+      height: 3px;
     }
   }
 
@@ -297,12 +302,16 @@
     position: absolute;
     right: -5px;
     top: -7%;
-    height: 2.2rem;
-    width: 2.2rem;
+    height: 31px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    border-radius: 100%;
+    background-color: #d7d7dd;
   }
 
   .close-icon img {
-    width: 100%;
     height: 100%;
   }
 
