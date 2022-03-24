@@ -86,7 +86,6 @@
         this.helpost = await this.$prismic.client.getByType("articles", {
           pageSize: this.pageSize,
         });
-        console.log(this.helpost);
       },
 
       loadMore() {

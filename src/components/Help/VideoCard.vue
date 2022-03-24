@@ -82,7 +82,6 @@
         this.helpvid = await this.$prismic.client.getByType("tutorial", {
           pageSize: this.pageSize,
         });
-        console.log(this.helpvid);
       },
 
       loadMore() {

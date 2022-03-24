@@ -1,10 +1,10 @@
 <template>
-  <div class="backdrop" @click="closePlayer"></div>
+  <div class="backdrop" @keyup.space="playVideo"></div>
 
-  <div class="video-player">
-    <!-- <div @click="closePlayer" class="close-icon">
+  <div class="video-player" @keyup.space="playVideo">
+    <div @click="closePlayer" class="close-icon">
       <img src="@/assets/images/close-player.svg" alt="Close Player" />
-    </div> -->
+    </div>
     <video
       :src="src"
       class="video"
@@ -38,7 +38,12 @@
               v-if="videoIsPlaying === false"
               alt=""
             />
-            <img src="@/assets/images/pause-video.svg" v-else alt="" />
+            <img
+              class="play-button-pause"
+              src="@/assets/images/pause-video.svg"
+              v-else
+              alt="Pause"
+            />
           </div>
           <p class="text-[#3374EA] text-base font-semibold">{{ videoName }}</p>
           <div
@@ -164,7 +169,7 @@
     border-bottom-left-radius: 12px;
     border-bottom-right-radius: 12px;
     min-width: 320px;
-    overflow: hidden;
+    /* overflow: hidden; */
   }
 
   @media screen and (min-width: 678px) {
@@ -194,12 +199,14 @@
     border-bottom-left-radius: 12px;
     border-bottom-right-radius: 12px;
     background-color: #1c1923;
-    transform: translateY(100%);
-    transition: all 0.6s ease-out;
+    transition: all 0.3s;
+    visibility: hidden;
+    opacity: 0;
   }
 
   .video-player:hover .player-controls {
-    transform: translateY(0);
+    visibility: visible;
+    opacity: 1;
   }
 
   .player-controls-wrapper {
@@ -259,16 +266,30 @@
   .video-progress-bar {
     background: #3374ea;
     width: 0;
-    height: 4px;
+    height: 3px;
     position: absolute;
     top: 10px;
-    z-index: -1;
   }
 
   @-moz-document url-prefix() {
     .video-progress-bar {
-      top: 8px;
+      top: 7px;
     }
+  }
+
+  .play-button {
+    background: white;
+    padding: 9px 9px 4px 13px;
+    border-radius: 50%;
+  }
+
+  .play-button img {
+    width: 12px;
+  }
+
+  .play-button-pause {
+    transform: translateY(0px) translateX(-2px);
+    width: 10px !important;
   }
 
   .close-icon {
@@ -296,7 +317,6 @@
     bottom: 0;
     background-color: #525b6d;
     opacity: 96%;
-    cursor: pointer;
     z-index: 12;
   }
 </style>
