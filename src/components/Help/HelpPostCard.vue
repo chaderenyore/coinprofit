@@ -103,11 +103,8 @@
       },
     },
 
-    created() {
-      this.getPageDatafromPrismic();
-    },
-
     mounted() {
+      this.getPageDatafromPrismic();
       this.getData();
     },
   };

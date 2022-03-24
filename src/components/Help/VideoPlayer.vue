@@ -233,6 +233,7 @@
     border-radius: 50%;
     background-image: linear-gradient(180deg, #14cbff, #366be8);
     margin-top: -8px;
+    cursor: pointer;
   }
 
   .video-progress-filled::-moz-range-thumb {
@@ -240,6 +241,7 @@
     height: 20px;
     border-radius: 50%;
     /* margin-top: 0; */
+    cursor: pointer;
     background-image: linear-gradient(180deg, #14cbff, #366be8);
   }
 
@@ -254,6 +256,12 @@
     position: absolute;
     top: 10px;
     z-index: -1;
+  }
+
+  @-moz-document url-prefix() {
+    .video-progress-bar {
+      top: 8px;
+    }
   }
 
   .close-icon {
