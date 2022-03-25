@@ -148,6 +148,10 @@
     }
   }
 
+  .help__section--div-1 {
+    order: -3;
+  }
+
   .help__section--welcome {
     color: #00be13;
     font-size: 1.25rem;
@@ -214,6 +218,7 @@
   }
 
   .help__section--search {
+    order: -2;
     margin-top: 1.5rem;
   }
 
@@ -222,7 +227,6 @@
     line-height: 1.75rem;
     color: var(--help-hero-text);
     font-weight: 500;
-    width: 92%;
     margin: 0 auto;
     text-align: center;
   }
@@ -286,6 +290,7 @@
 
     .help__section--div-1 {
       align-self: end;
+      order: unset;
     }
 
     .help__section--welcome {
@@ -312,12 +317,14 @@
 
     .help__section--search {
       margin-top: 0;
+      order: unset;
     }
 
     .help__section--search-p {
       margin: 0;
       text-align: left;
       line-height: 1.75rem;
+      width: 92%;
     }
   }
 
