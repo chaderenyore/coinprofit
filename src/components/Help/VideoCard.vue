@@ -1,10 +1,12 @@
 <template>
   <section class="mb-8">
-    <h1 class="text-center font-extrabold text-3xl mb-3 text-[#3374ea]">
+    <h1
+      class="text-center font-extrabold text-2xl md:text-3xl mb-3 text-[#3374ea]"
+    >
       Our Helpful Tutorial Collection
     </h1>
     <p
-      class="help__article text-center text-[1.2rem] font-medium max-w-[636px] m-auto"
+      class="help__article text-center text-lg md:text-[1.2rem] font-medium max-w-[636px] m-auto"
     >
       You will definitely find everything that you have questions about answered
       in one of our tutorials.

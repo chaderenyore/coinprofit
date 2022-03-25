@@ -8,7 +8,6 @@
     <video
       :src="src"
       class="video"
-      @keyup.space="playVideo"
       @timeupdate="
         currentTime();
         seekVideo();
@@ -173,6 +172,7 @@
     border-bottom-right-radius: 12px;
     min-width: 320px;
     padding-top: 20px;
+    padding-right: 7px;
     overflow: hidden;
   }
 
@@ -203,6 +203,7 @@
     border-bottom-left-radius: 12px;
     border-bottom-right-radius: 12px;
     background-color: #1c1923;
+    margin-left: -7px;
     transform: translateY(100%);
     transition: all 0.6s ease-out;
   }
@@ -297,8 +298,12 @@
     top: 0;
     right: 0;
     background: #d8dce4;
-    padding: 7px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
     border-radius: 100%;
+    z-index: 15;
   }
 
   .close-icon img {

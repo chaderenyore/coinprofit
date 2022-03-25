@@ -52,7 +52,7 @@
     </div>
   </section>
 
-  <section class="w-[80%] m-auto">
+  <section class="w-[85%] md:w-[80%] m-auto">
     <KeepAlive>
       <component :is="selectedComponent" />
     </KeepAlive>
