@@ -143,7 +143,6 @@ export default {
 
 .navbar {
   width: 90%;
-  max-width: 1450px;
   margin: auto;
   padding: 10px 0;
   display: flex;
@@ -158,7 +157,7 @@ export default {
   cursor: pointer;
   position: absolute;
   top: 30px;
-  left: 30%;
+  left: 25%;
 }
 
 .nav-logo {
@@ -169,8 +168,8 @@ export default {
   left: 10%;
   object-fit: cover;
   position: absolute;
-  top: 0;
-  width: 8rem;
+  top: 0.3rem;
+  width: 12%;
 }
 nav ul li {
   display: inline-block;
@@ -261,8 +260,8 @@ nav ul li a:hover {
 
 
   .toggle-moon {
-  top: 30px;
-  left: 30%;
+  top: 6%;
+  left: 25%;
 }
   .nav-logo {
     width: unset;
@@ -331,6 +330,7 @@ nav ul li a:hover {
   }
 
   .toggle-moon {
+  top: 30%;
   left: 40%;
 }
   nav ul {
