@@ -1322,6 +1322,16 @@ export default {
   top: 20%;
   width: 4rem;
 }
+
+@media (min-width: 1000px) {
+  .svg6FNP {
+  position: absolute;
+  left: 60%;
+  top: 320%;
+  width: 4rem;
+  z-index: 1;
+}
+}
 .svgOneNP {
   position: absolute;
   left: 85%;
