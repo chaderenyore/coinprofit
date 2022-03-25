@@ -82,7 +82,6 @@
     data() {
       return {
         videoIsPlaying: true,
-        video: document.querySelector(".video"),
       };
     },
 
