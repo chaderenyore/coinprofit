@@ -244,6 +244,7 @@
     border: none;
     padding: 0.4375rem 1.25rem;
     width: 90%;
+    color: var(--help-hero-text);
   }
 
   .help__section--search__input:focus {
