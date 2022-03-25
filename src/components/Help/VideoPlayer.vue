@@ -12,6 +12,7 @@
         currentTime();
         seekVideo();
       "
+      @ended="listenTOVideoEnded"
       ref="video"
     ></video>
     <div class="player-controls">
@@ -45,7 +46,7 @@
               alt="Pause"
             />
           </div>
-          <p class="text-[#3374EA] text-base font-semibold">
+          <p class="text-[#fff] text-base font-semibold">
             {{ videoName }}
           </p>
           <div
@@ -81,6 +82,7 @@
     data() {
       return {
         videoIsPlaying: true,
+        video: document.querySelector(".video"),
       };
     },
 
@@ -150,6 +152,10 @@
       enterFullScreen() {
         const video = document.querySelector(".video");
         video.requestFullscreen();
+      },
+
+      listenTOVideoEnded() {
+        this.videoIsPlaying = false;
       },
     },
 

@@ -1,6 +1,8 @@
 <template>
   <section v-if="data" class="mb-24">
-    <h1 class="text-center font-extrabold text-3xl mb-3 text-[#3374ea]">
+    <h1
+      class="text-center font-extrabold text-2xl md:text-3xl mb-3 text-[#3374ea]"
+    >
       {{ $prismic.asText(data.data.welcome_heading) }}
     </h1>
     <p
@@ -15,7 +17,7 @@
     >
       <li v-for="post in helpost.results" :key="post.uid">
         <article
-          class="help__card--article p-6 rounded-3xl max-w-[360px] max-h-[650px]"
+          class="help__card--article p-6 rounded-3xl w[80%] max-w-[360px] max-h-[650px]"
         >
           <prismic-link :field="post">
             <PrismicImage
@@ -25,22 +27,20 @@
           </prismic-link>
           <section>
             <section class="mb-3">
-              <ul class="flex flex-row gap-3 justify-around">
+              <ul class="flex flex-row gap-2 justify-between">
                 <li
-                  v-for="tag in post.tags"
-                  :key="tag"
-                  class="article-tag font-medium text-[#3374EA] rounded-full px-3 py-2"
+                  v-for="(n, index) in 3"
+                  :key="index"
+                  class="article-tag font-medium text-sm text-[#3374EA] rounded-full p-1.5"
                 >
-                  #{{ tag }}
+                  #{{ post.tags[index] }}
                 </li>
               </ul>
             </section>
             <prismic-link :field="post">
-              <PrismicRichText
-                :field="post.data.article_title"
-                class="text-[#3374EA] text-2xl font-bold mb-4"
-                wrapper="h1"
-              />
+              <h1 class="text-[#3374EA] text-lg md:text-2xl font-bold mb-4">
+                {{ $prismic.asText(post.data.article_title) }}
+              </h1>
             </prismic-link>
             <p class="card-article__text font-medium text-lg leading-8 mb-3">
               {{ $prismic.asText(post.data.preview_text) }}{{ "..." }}
@@ -116,13 +116,13 @@
     position: relative;
   }
 
-  .help__card--article::before {
+  /* .help__card--article::before {
     content: url(@/assets/images/article-blob.png);
     position: absolute;
     top: -20%;
     z-index: -1;
     left: 0;
-  }
+  } */
 
   .help__article {
     color: var(--help-article-text);

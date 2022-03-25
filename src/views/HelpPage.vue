@@ -60,7 +60,9 @@
 
   <div class="help__section--contact">
     <div class="help__section__texts">
-      <h2 class="help__contact__h2">Still have questions?</h2>
+      <h2 class="help__contact__h2 text-xl md:text-2xl">
+        Still have questions?
+      </h2>
       <p class="help__contact__p">
         Contact our team and we will help you as fast as we can.
       </p>
@@ -332,7 +334,7 @@
   }
 
   .help__section--contact {
-    width: 80%;
+    width: 85%;
     margin: 0 auto;
     margin-top: 5.625rem;
   }
@@ -342,8 +344,6 @@
   }
 
   .help__contact__h2 {
-    font-size: 2rem;
-    font-weight: 800;
     color: #3374ea;
     text-align: center;
     margin-bottom: 1.25rem;

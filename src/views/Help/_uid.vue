@@ -19,15 +19,15 @@
           <p class="article-date font-medium text-[0.9375rem]">
             <time> {{ articleDate }}</time>
           </p>
-          <h1 class="text-2xl text-[#3374EA] font-bold">
+          <h1 class="text-xl md:text-2xl text-[#3374EA] font-bold">
             {{ $prismic.asText(post.data.article_title) }}
           </h1>
           <section class="mt-5">
-            <ul class="flex flex-row gap-3 justify-around">
+            <ul class="flex flex-row gap-2 md:gap-3 justify-around">
               <li
                 v-for="tag in post.tags"
                 :key="tag"
-                class="article-tag text-sm text-[#3374EA] font-semibold rounded-full px-3 py-2"
+                class="article-tag text-sm text-[#3374EA] font-medium md:font-semibold rounded-full p-1.5 md:px-3 md:py-2"
               >
                 #{{ tag }}
               </li>
@@ -43,7 +43,7 @@
                 {{ $prismic.asText(author.name) }}
               </h1>
               <p class="author-bio text-sm md:text-base font-medium">
-                <PrismicRichText :field="author.bio" wrapper="p" />
+                {{ $prismic.asText(author.bio) }}
               </p>
             </figcaption>
           </figure>
