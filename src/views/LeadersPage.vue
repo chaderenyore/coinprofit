@@ -345,7 +345,7 @@
                     <img src="@/assets/images/leader-level1.svg" />
                   </div> -->
 
-                  <p>@username</p>
+                  <p>@BossVNN</p>
                   <h3>Moses-Ugoh</h3>
 
                   <div class="reviews">
@@ -697,7 +697,7 @@
             <img src="@/assets/images/leaders/moses.jpeg" alt="IMAGE" />
           </div>
 
-          <p>@username</p>
+          <p>@BossVNN</p>
           <h3>Moses Ugoh</h3>
 
           <div class="reviews">

@@ -260,7 +260,6 @@ nav ul li a:hover {
 
 
   .toggle-moon {
-  top: 6%;
   left: 25%;
 }
   .nav-logo {
