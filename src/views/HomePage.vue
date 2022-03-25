@@ -399,7 +399,7 @@
                     <div class="testimonials-avatar">
                       <h3>Bryan Ifeanyi</h3>
                     </div>
-                    <p class="username">@username</p>
+                    <p class="username">@Bryan</p>
                     <p>
                       My name is Bryan, I'm a Blockchain and cryptocurrency
                       educator. I joined the space in 2017, and from then on,
@@ -440,7 +440,7 @@
                     <div class="testimonials-avatar">
                       <h3>Marvelous Macaulay</h3>
                     </div>
-                    <p class="username">@username</p>
+                    <p class="username">@Iam_Marvelous</p>
                     <p>I'm a Crypto trader and technical analyst.</p>
                   </div>
                 </div>
@@ -457,7 +457,7 @@
                     <div class="testimonials-avatar">
                       <h3>Ibrahim Dauda</h3>
                     </div>
-                    <p class="username">@username</p>
+                    <p class="username">@Aazama</p>
                     <p>
                       The journey wasn't easy at the beginning. But I thank God
                       for the things I got from crypto investment.
@@ -477,7 +477,7 @@
                     <div class="testimonials-avatar">
                       <h3>Uche Sylvester</h3>
                     </div>
-                    <p class="username">@username</p>
+                    <p class="username">@Investorsylver</p>
                     <p>
                       I'm Uche, a Crypto enthusiast. I use my skillset to create
                       wealth and also diversify my income using crypto hedge
@@ -498,7 +498,7 @@
                     <div class="testimonials-avatar">
                       <h3>George Sibi onokuma</h3>
                     </div>
-                    <p class="username">@username</p>
+                    <p class="username">@Onokus</p>
                     <p>I'm a cryptocurrency trader and a coach.</p>
                   </div>
                 </div>
@@ -516,7 +516,7 @@
                       <h3>Adam Muhammad Mukhtar</h3>
                     </div>
 
-                    <p class="username">@username</p>
+                    <p class="username">@Ammukhtar2</p>
                     <p>
                       I'm a Cryptocurrency freak. Since the sunrise of 2021,
                       with mutual Fundamental and technical analyses, I have
@@ -539,7 +539,7 @@
                       <h3>Ibrahim BK</h3>
                     </div>
 
-                    <p class="username">@username</p>
+                    <p class="username">@khaleell</p>
                     <p>
                       I'm Ibrahim BK. A professional crypto trader with 3+ years
                       of experience in Blockchain development.
@@ -560,7 +560,7 @@
                       <h3>Stephen Voski</h3>
                     </div>
 
-                    <p class="username">@username</p>
+                    <p class="username">@Voski</p>
                     <p>
                       I'm Chukwu Stephen Ndubuisi, popularly known as Voski.
                       I've been a blockchain and cryptocurrency advocate since
@@ -581,10 +581,10 @@
 
                   <div class="testimonials-text">
                     <div class="testimonials-avatar">
-                      <h3>Victor CHUKWU</h3>
+                      <h3>Victor Chukwu</h3>
                     </div>
 
-                    <p class="username">@username</p>
+                    <p class="username">@Vicsouls</p>
                     <p>
                       I'm Victor CHUKWU. I have been able to coach and still coaching a lot of people in the crypto space. I have been in the crypto space for quite a long time now, and I have seen both failures and success, the ups and downs, but I keep the movement because of the B PICTURE.
                     </p>
@@ -3596,27 +3596,27 @@ export default {
     position: absolute;
     /* top: 200px; */
     left: 90%;
-    width: 5rem;
+    width: 10%;
   }
 
   .littleicon2 {
     position: absolute;
     top: 60%;
     left: 70%;
-    width: 5rem;
+    width: 10%;
   }
 
   .littleicon3 {
     position: absolute;
     top: 20%;
-    left: 62%;
-    width: 5rem;
+    left: 60%;
+    width: 10%;
   }
   .littleicon4 {
     position: absolute;
     top: 50%;
     left: 10%;
-    width: 5rem;
+    width: 10%;
   }
   .first-page {
     margin-bottom: 1rem;
@@ -3658,14 +3658,15 @@ export default {
     top: 180px;
   }
   .about h1 {
-    width: 80%;
+    width: 100%;
     font-family: "Montserrat", sans-serif;
     text-align: left;
     margin: 7px 0;
     color: #3374ea;
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: 800;
     letter-spacing: 0;
+    line-height: 50px;
   }
   .slideshow-container p {
     width: 60%;
@@ -3688,11 +3689,12 @@ export default {
     position: absolute;
     top: -23rem;
     width: 90%;
-    margin-left: 20%;
+    margin-left: 30%;
   }
   @media (min-width: 1440px) {
     .appui {
-      margin-left: 40%;
+      width: 86%;
+      margin-left: 43%;
     }
   }
   .review-section {
@@ -3723,8 +3725,8 @@ export default {
   .box-img {
     position: relative;
     top: -60px;
-    height: 100px;
-    width: 100px;
+    height: 150px;
+    width: 150px;
     margin: auto;
     border: 8px solid var(--light-color);
     border-radius: 50%;
@@ -4107,13 +4109,14 @@ export default {
   }
 
   .auto-track h1 {
-    width: 40%;
+    width: 50%;
     margin: 0;
     margin-left: 90px;
     color: #ffffff;
     font-family: "Montserrat", sans-serif;
     font-weight: 800;
     text-align: left;
+    font-size: 2.5rem;
   }
   .auto-track p {
     margin: 30px 0;
