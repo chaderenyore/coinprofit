@@ -15,7 +15,16 @@
     <ul
       class="flex justify-center flex-wrap gap-y-20 gap-x-3 md:grid md:justify-center md:items-start md:content-center md:grid-cols-2 lg:flex lg:flex-wrap lg:justify-start xl:grid xl:grid-cols-3 xl:gap-x-5"
     >
-      <li v-for="post in helpost.results" :key="post.uid">
+      <li
+        v-for="post in helpost.results"
+        :key="post.uid"
+        class="help__card--list"
+      >
+        <!-- <img
+          src="@/assets/images/article-blob.png"
+          class="article-blob"
+          alt=""
+        /> -->
         <article
           class="help__card--article p-6 rounded-3xl w[80%] max-w-[360px] max-h-[650px]"
         >
@@ -116,14 +125,6 @@
     position: relative;
   }
 
-  /* .help__card--article::before {
-    content: url(@/assets/images/article-blob.png);
-    position: absolute;
-    top: -20%;
-    z-index: -1;
-    left: 0;
-  } */
-
   .help__article {
     color: var(--help-article-text);
   }
@@ -134,6 +135,14 @@
 
   .article-tag {
     background: var(--article-tag);
+  }
+
+  .help__card--list {
+    position: relative;
+  }
+
+  .article-blob {
+    width: 15.625rem;
   }
 
   .pagination-button {
