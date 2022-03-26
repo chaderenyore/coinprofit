@@ -56,7 +56,7 @@ const routes = [
   {
     path: "/calculator",
     name: "calculator",
-    component: () => import("../views/AffiliatePage.vue"),
+    component: () => import("../views/CalculatorPage.vue"),
     meta: {
       auth: true,
       title: "Coinprofit - Calculator",

@@ -1068,20 +1068,5 @@ export default {
 
 }
 
-/* ----------- Retina Screens ----------- */
-/* @media screen and (min-device-width: 1200px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) { */
-/* @media only screen and (min-device-width: 1200px) and (-webkit-min-device-pixel-ratio: 2),
-  only screen and (min--moz-device-pixel-ratio: 2),
-  only screen and (-o-min-device-pixel-ratio: 2/1),
-  only screen and (min-device-pixel-ratio: 2) {
-  .share-blob {
-    width: 50%;
-  }
 
-  .share-portfolio-img {
-    width: 25%;
-    top: 0%;
-    left: 40%;
-  }
-} */
 </style>

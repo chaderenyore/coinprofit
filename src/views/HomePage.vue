@@ -421,7 +421,7 @@
                     <div class="testimonials-avatar">
                       <h3>Moses Ugoh</h3>
                     </div>
-                    <p class="username">@username</p>
+                    <p class="username">@BossVNN</p>
                     <p>
                      It was since 2020 that I realized Bitcoin’s maximum potentials and my interest quickly expanded to everything blockchain-related. I became particularly excited about real-world applications of blockchain technology and blockchain centered projects.
                     </p>
@@ -682,6 +682,8 @@
             <br />
           </p>
         </div>
+
+        
       </div>
     </section>
 

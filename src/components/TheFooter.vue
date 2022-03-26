@@ -8,7 +8,7 @@
       </div>
       <div class="slogan"><p>Helping you become a profitable crypto trader and investor</p></div>
       <div class="social-link">
-        <a href="http://twitter.com" target="_blank" rel="noopener noreferrer">
+        <a href="https://twitter.com/coinprofit_app" target="_blank" rel="noopener noreferrer">
           <svg
             style="fill: #3374ea"
             xmlns="http://www.w3.org/2000/svg"
@@ -117,7 +117,7 @@
         </div>
         <div class="social-link">
           <a
-            href="http://twitter.com"
+            href="https://twitter.com/coinprofit_app"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -199,7 +199,7 @@
         <div class="company-head">
           <h3>Products</h3>
           <a href="#"><p>Andrioid App</p></a>
-          <a href="#"><p>Ios Spp</p></a>
+          <a href="#"><p>Ios App</p></a>
         </div>
       </div>
 
