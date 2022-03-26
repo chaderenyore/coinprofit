@@ -1350,7 +1350,6 @@ export default {
 
   methods: {
     useSplide() {
-      document.addEventListener("DOMContentLoaded", function () {
         new Splide(".splide", {
           type: "loop",
           perPage: 1,
@@ -1360,7 +1359,6 @@ export default {
           pauseOnFocus: false, // must be
           resetProgress: false,
         }).mount();
-      });
     },
 
     initIndexFile() {
@@ -1473,10 +1471,6 @@ export default {
   },
 
   mounted() {
-    this.initIndexFile();
-  },
-
-  updated() {
     this.initIndexFile();
   },
 };
