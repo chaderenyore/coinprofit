@@ -459,7 +459,7 @@ nav ul li a:hover {
   cursor: pointer;
   position: absolute;
   top: 1rem;
-  left: 40%;
+  left: 50%;
 }
 
   nav ul {
