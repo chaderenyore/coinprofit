@@ -27,6 +27,7 @@
               <li
                 v-for="tag in post.tags"
                 :key="tag"
+                @click="searchTag(tag)"
                 class="article-tag text-sm text-[#3374EA] font-medium md:font-semibold rounded-full p-1.5 md:px-3 md:py-2"
               >
                 #{{ tag }}
@@ -127,6 +128,15 @@
           this.errorMessage = error.message;
         }
       },
+
+      searchTag(tag) {
+        this.$router.push({
+          name: "help-search",
+          query: {
+            tag: tag,
+          },
+        });
+      },
     },
 
     beforeRouteEnter(to, from, next) {
@@ -166,6 +176,7 @@
     color: var(--article-date);
   }
   .article-tag {
+    cursor: pointer;
     background: var(--article-tag);
   }
 

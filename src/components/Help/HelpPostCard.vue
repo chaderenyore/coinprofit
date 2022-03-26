@@ -41,6 +41,7 @@
                   v-for="(n, index) in 3"
                   :key="index"
                   class="article-tag font-medium text-sm text-[#3374EA] rounded-full p-1.5"
+                  @click="searchTag(post.tags[index])"
                 >
                   #{{ post.tags[index] }}
                 </li>
@@ -97,6 +98,15 @@
         });
       },
 
+      searchTag(tag) {
+        this.$router.push({
+          name: "help-search",
+          query: {
+            tag: tag,
+          },
+        });
+      },
+
       loadMore() {
         this.pageSize *= 2;
         this.getData();
@@ -134,6 +144,7 @@
   }
 
   .article-tag {
+    cursor: pointer;
     background: var(--article-tag);
   }
 

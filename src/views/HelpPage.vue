@@ -40,11 +40,16 @@
         easily find what you are looking for.
       </p>
       <div>
-        <form action="#" @submit.prevent class="help__section--search__form">
+        <form
+          action="#"
+          @submit.prevent="searchArticles"
+          class="help__section--search__form"
+        >
           <input
             type="text"
             class="help__section--search__input"
             placeholder="Search"
+            v-model="searchQuery"
           />
           <button class="help__section--search__button">Find</button>
         </form>
@@ -107,7 +112,7 @@
 <script>
   import HelpPostCard from "../components/Help/HelpPostCard.vue";
   import VideoCard from "../components/Help/VideoCard.vue";
-  import { ref } from "@vue/reactivity";
+  // import { ref } from "@vue/reactivity";
 
   export default {
     components: {
@@ -115,11 +120,25 @@
       VideoCard,
     },
 
-    setup() {
-      const selectedComponent = ref("help-post-card");
+    data() {
       return {
-        selectedComponent,
+        selectedComponent: "help-post-card",
+        searchQuery: "",
       };
+    },
+    methods: {
+      searchArticles() {
+        let regex = /^\s+$/;
+        if (this.searchQuery.match(regex) || !this.searchQuery) {
+          return;
+        }
+        this.$router.push({
+          name: "help-search",
+          query: {
+            q: this.searchQuery.trim(),
+          },
+        });
+      },
     },
   };
 </script>
@@ -270,6 +289,7 @@
 
   .help__section--search__button {
     border: none;
+    cursor: pointer;
     background-image: linear-gradient(180deg, #22a1f5, #677bff);
     font-family: inherit;
     font-size: inherit;
