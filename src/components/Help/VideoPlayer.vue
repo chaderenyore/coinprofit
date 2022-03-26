@@ -168,7 +168,7 @@
   .video-player {
     z-index: 14;
     position: fixed;
-    top: 36%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 95%;
@@ -178,26 +178,8 @@
     min-width: 320px;
     padding-top: 20px;
     padding-right: 7px;
+    text-align: center;
     overflow: hidden;
-  }
-
-  @media screen and (min-width: 678px) {
-    .video-player {
-      top: 50%;
-    }
-  }
-
-  @media screen and (min-width: 768px) {
-    .video-player {
-      /* top: 50%; */
-      width: 70%;
-    }
-  }
-
-  .video {
-    width: 100%;
-    border-bottom-left-radius: 12px;
-    border-bottom-right-radius: 12px;
   }
 
   .player-controls {
@@ -301,7 +283,7 @@
     cursor: pointer;
     position: absolute;
     top: 0;
-    right: 0;
+    right: 20px;
     background: #d8dce4;
     display: flex;
     justify-content: center;
@@ -326,5 +308,99 @@
     background-color: #525b6d;
     opacity: 96%;
     z-index: 12;
+  }
+
+  @media screen and (min-width: 768px) {
+    .video-player {
+      /* top: 50%; */
+      width: 70%;
+    }
+  }
+
+  .video {
+    width: 60% !important;
+    height: auto !important;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+  }
+
+  @media screen and (min-width: 445px) {
+    .video {
+      width: 50% !important;
+    }
+  }
+
+  @media screen and (min-width: 550px) {
+    .video {
+      width: 45% !important;
+    }
+  }
+
+  @media screen and (min-width: 610px) {
+    .video {
+      width: 40% !important;
+    }
+  }
+
+  @media screen and (min-width: 687px) {
+    .video {
+      width: 37% !important;
+    }
+
+    .close-icon {
+      top: 14px;
+      right: 17%;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    .video {
+      width: 80% !important;
+    }
+    .close-icon {
+      right: 0;
+    }
+  }
+
+  @media screen and (min-width: 820px) {
+    .video {
+      width: 88% !important;
+    }
+  }
+
+  @media screen and (min-width: 848px) {
+    .video {
+      width: 41% !important;
+    }
+  }
+
+  @media screen and (min-width: 912px) {
+    .video {
+      width: 88% !important;
+    }
+  }
+
+  @media screen and (min-width: 1001px) {
+    .video {
+      width: 35% !important;
+    }
+  }
+
+  @media screen and (min-width: 1011px) {
+    .video {
+      width: 48% !important;
+    }
+  }
+
+  @media screen and (min-width: 1017px) {
+    .video {
+      width: 35% !important;
+    }
+  }
+
+  @media screen and (min-width: 1240px) {
+    .video {
+      width: 30% !important;
+    }
   }
 </style>
