@@ -17,7 +17,8 @@
         </p>
       </div>
       <div class="calcImgWrapper">
-        <img src="@/assets/images/calculator.jpg" alt="IMAGE" class="calcimg" />
+        <img src="@/assets/images/calculator/mainblob.svg" alt="" class="blob">
+        <img src="@/assets/images/calculator/calculator.png" alt="IMAGE" class="calcimg" />
       </div>
     </div>
   </div>
@@ -68,11 +69,17 @@ export default {
   width: 70%;
   margin: 2rem auto 0;
 }
+.blob {
+  width: 90%;
+  position: absolute;
+  margin-left: -40px;
+  z-index: -1;
+}
 .calcimg {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 100%;
+  width: 70%;
 }
 
 @media (min-width: 600px) {
@@ -109,6 +116,10 @@ export default {
     width: 30%;
     margin: 0;
   }
+  .blob {
+  width: 40%;
+  margin-left: -60px;
+}
   .calcimg {
     display: block;
     margin-left: auto;
@@ -118,8 +129,36 @@ export default {
 }
 
 @media (min-width: 1200px) {
+
     .calcwrapper {
     width: 90%;
+  }
+  .calcContnet {
+    width: 60%;
+    padding-top: 5rem;
+  }
+    .calcContnet h2 {
+    width: 90%;
+    font-family: "Montserrat", sans-serif;
+    margin: 0.9rem 0;
+    font-weight: 800;
+    font-size: 40px;
+    padding: 0 4rem;
+  }
+  .calcContnet p {
+    width: 80%;
+    margin-top: 4px;
+    line-height: 25px;
+    font-size: 0.9rem;
+  }
+    .blob {
+  width: 50%;
+  margin-left: -140px;
+}
+    .calcimg {
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
   }
 }
 </style>

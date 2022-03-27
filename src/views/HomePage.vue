@@ -2651,17 +2651,18 @@ export default {
 .splide__arrows .splide__arrow--next {
   left: 120%;
 }
-.splide .splide__pagination {
-  position: relative;
-  margin-top: 2rem;
+.splide__pagination {
   text-align: center;
 }
 .splide__pagination__page {
-  background-color: #00be13;
+  background-color: #00be13 !important;
 }
 .splide__pagination__page.is-active {
-  background-color: blue;
+  background: blue !important;
 }
+/* .splide__pagination__page {
+
+} */
 
 .users-CTA {
   text-align: center;
