@@ -87,7 +87,7 @@
           <div class="footerContent">
             <a href="#"><p>How to Guide</p></a>
             <a href="#"><p>Learn</p></a>
-            <a href="#"><p>FAQ</p></a>
+            
           </div>
         </div>
 
@@ -192,7 +192,7 @@
           <h3>Help</h3>
           <a href="#"><p>How to Guide</p></a>
           <a href="#"><p>Learn</p></a>
-          <a href="#"><p>FAQ</p></a>
+          
         </div>
       </div>
       <div class="main-app-container">
@@ -215,7 +215,7 @@
   </footer>
   <div class="copyright">
     <p>
-      coinprofit.app &copy; 2022 <span id="copyrightyear"></span> All Rights
+      coinprofit.app Copyright &copy; 2022 2022 All Rights
       Reserved.
     </p>
   </div>
@@ -351,11 +351,13 @@ export default {
 .copyright {
   color: var(--fourth-color);
   position: relative;
-  margin-top: 10px;
-  margin-bottom: 30px;
+  margin: 10px auto 30px;
+  width: 80%;
   text-align: center;
   font-family: "Montserrat", sans-serif;
-  z-index: 2;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+ 
 }
 .computer-footer {
   display: none;
@@ -465,12 +467,10 @@ export default {
     line-height: 30px;
   }
   .copyright {
-    position: relative;
     margin-top: 60px;
     margin-bottom: 10px;
-    text-align: center;
-    font-family: "Montserrat", sans-serif;
-    z-index: 2;
+    font-weight: 500;
+
   }
 }
 </style>
