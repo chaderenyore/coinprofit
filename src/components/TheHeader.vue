@@ -196,7 +196,7 @@
     padding: 7px 25px;
     color: blue;
     margin-left: 2rem;
-    outline: none;
+    border: none;
   }
   .actn button:hover {
     background-color: #13141c;
@@ -373,7 +373,6 @@
       color: #fff;
       font-weight: bold;
       padding: 10px 30px;
-      outline: none;
     }
 
     .hamburger {
