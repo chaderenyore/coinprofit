@@ -362,7 +362,7 @@ nav ul li a:hover {
     margin: 2.5rem 300px;
   }
   nav ul li.actn {
-    margin-left: 260px !important;
+    margin-left: 259px !important;
   }
 
   nav ul li.actn a {
