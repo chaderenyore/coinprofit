@@ -22,9 +22,7 @@
     </div>
     <div class="help__section--search">
       <p class="help__section--search-p">
-        Check out our tutorials section where we show you step by step how to
-        use all of our features. You can type what you are looking for in the
-        search down below in order to faster find to answer to your question.
+       Check out our tutorial section where we show you step by step video guides on how to use the different features of the CoinProfit App. Also, we have various articles to help you get started. You can use the search bar to easily find what you are looking for.
       </p>
       <div>
         <form action="#" @submit.prevent class="help__section--search__form">

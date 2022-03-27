@@ -871,11 +871,8 @@
         <img src="../assets/images/share-blob.png" class="share-blob" />
 
         <p>
-          Did you buy a coin and it did 100%, 200% or even 1000% in profit? Then
-          you deserve a bottle of champagne and a bragging right! Take some of
-          your profit and go get a champagne and use CoinProfit App to let the
-          world know how you roll. You deserve it. You can share the performance
-          of an asset or a particular transaction.
+         Did you buy a coin that did 100%, 200% or even 1000% in profit? Then you deserve a bottle of champagne and bragging rights! Take some of your profit, go get champagne and use CoinProfit App to let the world know how you roll. You deserve it. You can share the performance of an asset or a particular transaction.
+
         </p>
       </div>
 
@@ -1237,13 +1234,7 @@
             </button>
             <div class="faqcontent">
               <p>
-                We are working on adding rating and analytics systems to the
-                CoinProfit app so it will be easier for you to see the track
-                records of all the leaders. In the meantime, we encourage you to
-                subscribe to only leaders you know and trust. If you are
-                completely new and don’t know any leader, your best bet will be
-                to subscribe to our CEO and Founder - Emmanuel Ohworeko. Or any
-                of the leaders featured on our website on the leader's page
+                We are working on adding rating and analytics systems to the CoinProfit app so it will be easier for you to see the track records of all the leaders. In the meantime, we encourage you to subscribe to only leaders you know and trust. If you are completely new and don&rsquo;t know any leader, your best bet will be to subscribe to our CEO and Founder - Emmanuel Ohworeko or any of the leaders featured on the leader's page of our website.
               </p>
             </div>
           </div>
@@ -1254,8 +1245,8 @@
             </button>
             <div class="faqcontent">
               <p>
-                We are available on both IOS and Android. Please use the
-                download button above to download the app to your device.
+                We are available on both the IOS and Android app store. Please use the download button above to download the app to your device.
+
               </p>
             </div>
           </div>
@@ -1323,8 +1314,7 @@
             </button>
             <div class="faqcontent">
               <p>
-                Not yet. Only spot for now but we have plans to support future
-                trading in the future.
+                Not yet. We only support spot trading for now but we have plans to support future trading in the future.
               </p>
             </div>
           </div>

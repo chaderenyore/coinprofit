@@ -4,21 +4,31 @@
       <div class="calcContnet">
         <h2>THE IF CALCULATOR</h2>
         <p>
-          Crypto boss, we love “I told you so. If you bought $1,000 worth of
-          Solana at $2, you would have been a billionaire by now. If you bought
-          this, If you bought that… Anyway, we added this as a fun feature to
-          the CoinProfit App! We call it the &ldquo;If Calculator &rdquo; <br />
+          THE IF CALCULATOR Crypto boss, we love “I told you so. If you bought
+          $1,000 worth of Solana at $2, you would have been a billionaire by
+          now. If you bought this, If you bought that… Anyway, we added this as
+          a fun feature to the CoinProfit App! We call it the “If Calculator.”
           <br />
+          <br />
+
           You think you would have been a BILLIONAIRE if you HODL? Use the ‘If
-          Calculator…. Let&rsquo;s see how much you would have made. <br />
-          The "If calculator" lets you calculate how much you would have made if
-          you bought a coin with a certain amount of money on a particular day
-          or price and HOLD till the time of doing the calculation.
+          Calculator…. Let&rsquo;s see how much you would have made. The "If
+          calculator" lets you calculate how much you would have made if you
+          bought a coin with a certain amount of money on a particular day or
+          price and HODL till the time of doing the calculation.
         </p>
       </div>
       <div class="calcImgWrapper">
-        <img src="@/assets/images/calculator/mainblob.svg" alt="" class="blob">
-        <img src="@/assets/images/calculator/calculator.png" alt="IMAGE" class="calcimg" />
+        <img
+          src="@/assets/images/calculator/mainblob.svg"
+          alt=""
+          class="blob"
+        />
+        <img
+          src="@/assets/images/calculator/calculator.png"
+          alt="IMAGE"
+          class="calcimg"
+        />
       </div>
     </div>
   </div>
@@ -117,9 +127,9 @@ export default {
     margin: 0;
   }
   .blob {
-  width: 40%;
-  margin-left: -60px;
-}
+    width: 40%;
+    margin-left: -60px;
+  }
   .calcimg {
     display: block;
     margin-left: auto;
@@ -129,15 +139,14 @@ export default {
 }
 
 @media (min-width: 1200px) {
-
-    .calcwrapper {
+  .calcwrapper {
     width: 90%;
   }
   .calcContnet {
     width: 60%;
     padding-top: 5rem;
   }
-    .calcContnet h2 {
+  .calcContnet h2 {
     width: 90%;
     font-family: "Montserrat", sans-serif;
     margin: 0.9rem 0;
@@ -151,11 +160,11 @@ export default {
     line-height: 25px;
     font-size: 0.9rem;
   }
-    .blob {
-  width: 50%;
-  margin-left: -140px;
-}
-    .calcimg {
+  .blob {
+    width: 50%;
+    margin-left: -140px;
+  }
+  .calcimg {
     margin-left: auto;
     margin-right: auto;
     width: 70%;
