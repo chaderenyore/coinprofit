@@ -78,6 +78,7 @@
   import ImageGallery from "@/components/Slices/ImageGallery.vue";
   import VideoPlayer from "@/components/Slices/VideoPlayer.vue";
   import NotFound from "@/components/Help/NotFound.vue";
+  import MobileImageScreenshotImage from "@/components/Slices/MobileImageScreenshotImage.vue";
 
   export default {
     components: {
@@ -96,6 +97,7 @@
           image: ImageCard,
           gallery_of_images: ImageGallery,
           video: VideoPlayer,
+          mobile_image___screenshot_image: MobileImageScreenshotImage,
         }),
         articleDate: null,
         author: null,
@@ -111,6 +113,7 @@
               fetchLinks: ["author.name", "author.avatar", "author.bio"],
             }
           );
+          console.log(this.post);
 
           this.author = this.post.data.author.data;
 
