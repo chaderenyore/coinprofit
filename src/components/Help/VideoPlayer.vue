@@ -46,7 +46,7 @@
               alt="Pause"
             />
           </div>
-          <p class="text-[#fff] text-base font-semibold">
+          <p class="text-[#fff] text-sm md:text-base font-semibold">
             {{ videoName }}
           </p>
           <div
