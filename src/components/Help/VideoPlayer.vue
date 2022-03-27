@@ -25,7 +25,7 @@
           <input
             type="range"
             class="video-progress-filled"
-            @input="changeProgressBar"
+            @change="changeProgressBar"
             min="0"
             value="0"
             @click="updateProgressAndVideo"

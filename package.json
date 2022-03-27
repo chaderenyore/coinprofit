@@ -16,6 +16,7 @@
     "swiper": "^8.0.7",
     "vue": "^3.2.31",
     "vue-router": "^4.0.14",
+    "vue-share-buttons": "^1.1.1",
     "vue-slicezone": "^0.1.2"
   },
   "devDependencies": {
