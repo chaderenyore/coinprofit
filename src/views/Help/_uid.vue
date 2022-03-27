@@ -27,7 +27,7 @@
               <li
                 v-for="tag in post.tags"
                 :key="tag"
-                class="article-tag text-sm text-[#3374EA] font-medium md:font-semibold rounded-full p-1.5 md:px-3 md:py-2"
+                class="article-tag self-start text-sm text-[#3374EA] font-medium md:font-semibold rounded-full p-1.5 md:px-3 md:py-2"
               >
                 #{{ tag }}
               </li>
