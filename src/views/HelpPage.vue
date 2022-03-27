@@ -76,27 +76,7 @@
         <div class="flex items-center">
           <img class="h-10" src="@/assets/images/okex-2.svg" alt="Email" />
           <p class="help__contact--card-p ml-3 font-medium">
-            contact@coinprofitapp<span class="inline-block">.com</span>
-          </p>
-        </div>
-      </div>
-
-      <div class="help__contact--card p-4 rounded-xl">
-        <h2 class="text-xl font-bold mb-3 text-[#3374EA]">Call Us</h2>
-        <div class="flex items-center">
-          <img class="h-10" src="@/assets/images/okex-2.svg" alt="Email" />
-          <p class="help__contact--card-p ml-3 font-medium">
-            +380 66 033 71 79
-          </p>
-        </div>
-      </div>
-
-      <div class="help__contact--card p-4 rounded-xl">
-        <h2 class="text-xl font-bold mb-3 text-[#3374EA]">Find Us</h2>
-        <div class="flex items-center">
-          <img class="h-10" src="@/assets/images/okex-2.svg" alt="Email" />
-          <p class="help__contact--card-p ml-3 font-medium">
-            Ukraine, Sumy, st. Kharkivska 121
+            contact@coinprofit.app
           </p>
         </div>
       </div>
