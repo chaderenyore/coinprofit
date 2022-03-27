@@ -1,7 +1,7 @@
 <template>
   <div class="text-center">
     <PrismicImage
-      class="w-[75%] rounded-2xl mb-6"
+      class="w-[75%] xl:w-[50%] rounded-2xl mb-6"
       :field="slice.primary.screenshot_image"
     />
   </div>
