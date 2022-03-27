@@ -34,7 +34,7 @@
           </div>
         </div>
         <figcaption class="ml-3 flex flex-col">
-          <h1 class="text-base md:text-xl font-bold text-[#3374EA] mb-3">
+          <h1 class="text-sm md:text-xl font-bold text-[#3374EA] mb-3">
             {{ $prismic.asText(video.data.name) }}
           </h1>
           <p class="text-base md:text-lg text-[#8993a7]">

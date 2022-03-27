@@ -38,11 +38,13 @@
             <section class="mb-3">
               <ul class="flex flex-row gap-2 justify-between">
                 <li
-                  v-for="(n, index) in 3"
-                  :key="index"
-                  class="article-tag font-medium text-sm text-[#3374EA] rounded-full p-1.5"
+                  v-for="(e, i) in 3"
+                  :key="i"
+                  class="article-tag font-medium text-sm self-start text-[#3374EA] rounded-full p-1.5"
                 >
-                  #{{ post.tags[index] }}
+                  <template v-if="post.tags[i]">
+                    {{ "#" + post.tags[i] }}
+                  </template>
                 </li>
               </ul>
             </section>
