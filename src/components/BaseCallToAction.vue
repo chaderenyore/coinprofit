@@ -4,11 +4,10 @@
     <div class="final-download" id="download-app">
 
       <img src="@/assets/images/listtle-Icons/iconsheidl.svg" class="svg-shield">
-        <img src="@/assets/images/listtle-Icons/iconuntop.svg" class="svg-untop">
+        <!-- <img src="@/assets/images/listtle-Icons/iconuntop.svg" class="svg-untop"> -->
         <img src="@/assets/images/listtle-Icons/1.svg" class="svg-1">
         <img src="@/assets/images/listtle-Icons/4.svg" class="svg-4">
         <img src="@/assets/images/listtle-Icons/6.svg" class="svg-6">
-        <img src="@/assets/images/listtle-Icons/icon-btc.svg" class="btc-svg">
        <img src="@/assets/images/listtle-Icons/btc-lite.svg" class="btc-lite">
         <img src="@/assets/images/listtle-Icons/7.svg" class="svg-7">
         <img src="@/assets/images/listtle-Icons/moneygold.svg" class="moneygold">
@@ -68,25 +67,22 @@
     position: absolute;
     width: 4rem;
     bottom: 0;
+    left: 10px;
   }
     .btc-lite {
     display: none;
   }
-  .btc-svg {
-    position: absolute;
-    width: 2rem;
-    top: 43%;
-  }
+
   .moneygold {
     position: absolute;
     width: 4rem;
-    left: 80%;
-    top: 80%;
+    left: 75%;
+    top: 93%;
   }
   .litegold {
     position: absolute;
     width: 3rem;
-    left: 52%;
+    left: 41%;
     bottom: 0;
   }
 .final-download {

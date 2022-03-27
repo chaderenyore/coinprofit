@@ -34,10 +34,10 @@
     </div>
     <div class="help__section--search">
       <p class="help__section--search-p">
-        Check out our tutorial section where we show you step by step guides on
-        how to use the different features of the CoinProfit App. And also our
-        various articles to help you get started. You can use the search bar to
-        easily find what you are looking for.
+        Check out our tutorial section where we show you step by step video
+        guides on how to use the different features of the CoinProfit App. Also,
+        we have various articles to help you get started. You can use the search
+        bar to easily find what you are looking for.
       </p>
       <div>
         <form action="#" @submit.prevent class="help__section--search__form">

@@ -76,7 +76,7 @@
           </button>
           <div class="footerContent">
             <a href="#"><p>Andrioid App</p></a>
-            <a href="#"><p>Ios App</p></a>
+            <a href="#"><p>ios App</p></a>
           </div>
         </div>
         <div class="footerWrapper">
@@ -97,7 +97,7 @@
             <i class="fa fa-chevron-down footerIcon" style="color: #3374ea"></i>
           </button>
           <div class="footerContent">
-            <a href="#"><p>Terms and Condition</p></a>
+            <a href="#"><p>Terms and Conditions</p></a>
             <a href="#"><p>Privacy policy</p></a>
             <router-link to="/AML_POLICIES"><p>AML Policies</p></router-link>
           </div>
@@ -180,7 +180,7 @@
       </div>
       <div class="main-app-container">
         <div class="company-head">
-          <h3>Compnay</h3>
+          <h3>Company</h3>
           <a href="#"><p>About Us</p></a>
           <a href="#"><p>Blog</p></a>
           <a href="#"><p>Contact</p></a>
@@ -199,14 +199,14 @@
         <div class="company-head">
           <h3>Products</h3>
           <a href="#"><p>Andrioid App</p></a>
-          <a href="#"><p>Ios App</p></a>
+          <a href="#"><p>ios App</p></a>
         </div>
       </div>
 
       <div class="main-app-container">
         <div class="company-head">
           <h3>Legal</h3>
-          <a href="#"><p>Terms and Condition</p></a>
+          <a href="#"><p>Terms and Conditions</p></a>
           <a href="#"><p>Privacy policy</p></a>
            <router-link to="/AML_POLICIES"><p>AML Policies</p></router-link>
         </div>
@@ -215,8 +215,7 @@
   </footer>
   <div class="copyright">
     <p>
-      coinprofit.app Copyright &copy; 2022 2022 All Rights
-      Reserved.
+      COINPROFIT.APP COPYRIGHT &copy; 2022 ALL RIGHTS RESERVED.
     </p>
   </div>
 
