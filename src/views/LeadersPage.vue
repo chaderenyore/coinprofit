@@ -988,11 +988,7 @@
 
 <script>
 import Splide from "@splidejs/splide";
-import BaseCallToAction from "@/components/BaseCallToAction.vue";
 export default {
-  components: {
-    BaseCallToAction,
-  },
 
   methods: {
     useSplide() {

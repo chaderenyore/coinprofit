@@ -35,7 +35,7 @@
           <router-link to="/about">About</router-link>
         </li>
         <li class="nav-item actn">
-          <a href="#">Get App</a>
+          <button @click="scrollToDownload">Get App</button>
         </li>
       </ul>
       <div class="hamburger">
@@ -52,6 +52,10 @@
 <script>
   export default {
     methods: {
+      scrollToDownload() {
+        const element = document.querySelector(".final-download");
+        element.scrollIntoView({ behavior: "smooth" });
+      },
       closeMenu() {
         const hamburger = document.querySelector(".hamburger");
         const navMenu = document.querySelector(".nav-menu");
@@ -185,15 +189,16 @@
   .actn {
     margin-right: 50px;
   }
-  .actn a {
+  .actn button {
     cursor: pointer;
     background-color: white;
     border-radius: 30px;
     padding: 7px 25px;
     color: blue;
     margin-left: 2rem;
+    outline: none;
   }
-  .actn a:hover {
+  .actn button:hover {
     background-color: #13141c;
     color: #fff !important;
     border-bottom: none;
@@ -360,13 +365,15 @@
       margin-left: 259px !important;
     }
 
-    nav ul li.actn a {
+    nav ul li.actn button {
+      border: none;
       background-color: blue;
       border-radius: 30px;
       padding: 7px 25px;
       color: #fff;
       font-weight: bold;
       padding: 10px 30px;
+      outline: none;
     }
 
     .hamburger {
@@ -489,7 +496,7 @@
     nav ul li.actn {
       margin-left: 30px !important;
     }
-    .actn a {
+    .actn button {
       background-color: blue;
       border-radius: 30px;
       padding: 7px 25px;

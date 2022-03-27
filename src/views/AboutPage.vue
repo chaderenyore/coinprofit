@@ -35,7 +35,14 @@
         </div>
 
         <p>
-         We are a small team of crypto traders and investors on a mission to make crypto trading and investment profitable for everyone. Tired of seeing beginners lose money to pump and dump schemes, we&rsquo;re set to change the game with our unique social trading platform that lets users subscribe to and follow the footsteps of profitable crypto traders with a track record. We made the Coinprofit app to make making money as easy as doing what seasoned crypto traders do. You&rsquo;re welcome!
+          We are a small team of crypto traders and investors on a mission to
+          make crypto trading and investment profitable for everyone. Tired of
+          seeing beginners lose money to pump and dump schemes, we&rsquo;re set
+          to change the game with our unique social trading platform that lets
+          users subscribe to and follow the footsteps of profitable crypto
+          traders with a track record. We made the Coinprofit app to make making
+          money as easy as doing what seasoned crypto traders do. You&rsquo;re
+          welcome!
         </p>
       </div>
     </section>
@@ -264,12 +271,7 @@
 </template>
 
 <script>
-  import BaseCallToAction from "@/components/BaseCallToAction.vue";
   export default {
-    components: {
-      BaseCallToAction,
-    },
-
     data() {
       return {
         slideIndex: 1,

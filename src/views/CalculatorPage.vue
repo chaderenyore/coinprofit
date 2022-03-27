@@ -35,139 +35,129 @@
   <BaseCallToAction />
 </template>
 
-<script>
-import BaseCallToAction from "@/components/BaseCallToAction.vue";
-export default {
-  components: {
-    BaseCallToAction,
-  },
-  methods: {},
-};
-</script>
-
 <style scoped>
-.mainContainer {
-  width: 100%;
-  max-width: 1450px;
-  margin: 0 auto;
-  padding-top: 1rem;
-}
-
-.calcwrapper {
-  position: relative;
-  margin-top: 10rem;
-}
-
-.calcContnet h2 {
-  font-family: "Montserrat", sans-serif;
-  width: 80%;
-  font-weight: 700;
-  margin: 10px auto 0;
-  text-align: center;
-  color: #3374ea;
-  letter-spacing: 0;
-}
-.calcContnet p {
-  width: 90%;
-  margin: auto;
-  text-align: center;
-  margin-top: 4px;
-  color: var(--fourth-color);
-  line-height: 30px;
-}
-.calcImgWrapper {
-  width: 70%;
-  margin: 2rem auto 0;
-}
-.blob {
-  width: 90%;
-  position: absolute;
-  margin-left: -40px;
-  z-index: -1;
-}
-.calcimg {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 70%;
-}
-
-@media (min-width: 600px) {
-  .calcimg {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-  }
-}
-
-@media only screen and (min-width: 1024px) {
-  .calcwrapper {
-    padding-top: 10rem;
-  }
-  .calcwrapper {
-    display: flex;
-    flex-wrap: nowrap;
+  .mainContainer {
     width: 100%;
+    max-width: 1450px;
     margin: 0 auto;
+    padding-top: 1rem;
   }
 
-  .calcContnet {
-    width: 60%;
+  .calcwrapper {
+    position: relative;
+    margin-top: 10rem;
   }
+
   .calcContnet h2 {
-    width: 90%;
-    text-align: left;
+    font-family: "Montserrat", sans-serif;
+    width: 80%;
+    font-weight: 700;
+    margin: 10px auto 0;
+    text-align: center;
+    color: #3374ea;
+    letter-spacing: 0;
   }
   .calcContnet p {
-    text-align: left;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    margin-top: 4px;
+    color: var(--fourth-color);
+    line-height: 30px;
   }
   .calcImgWrapper {
-    width: 30%;
-    margin: 0;
+    width: 70%;
+    margin: 2rem auto 0;
   }
   .blob {
-    width: 40%;
-    margin-left: -60px;
+    width: 90%;
+    position: absolute;
+    margin-left: -40px;
+    z-index: -1;
   }
   .calcimg {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-  }
-}
-
-@media (min-width: 1200px) {
-  .calcwrapper {
-    width: 90%;
-  }
-  .calcContnet {
-    width: 60%;
-    padding-top: 5rem;
-  }
-  .calcContnet h2 {
-    width: 90%;
-    font-family: "Montserrat", sans-serif;
-    margin: 0.9rem 0;
-    font-weight: 800;
-    font-size: 40px;
-    padding: 0 4rem;
-  }
-  .calcContnet p {
-    width: 80%;
-    margin-top: 4px;
-    line-height: 25px;
-    font-size: 0.9rem;
-  }
-  .blob {
-    width: 50%;
-    margin-left: -140px;
-  }
-  .calcimg {
     margin-left: auto;
     margin-right: auto;
     width: 70%;
   }
-}
+
+  @media (min-width: 600px) {
+    .calcimg {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+    }
+  }
+
+  @media only screen and (min-width: 1024px) {
+    .calcwrapper {
+      padding-top: 10rem;
+    }
+    .calcwrapper {
+      display: flex;
+      flex-wrap: nowrap;
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    .calcContnet {
+      width: 60%;
+    }
+    .calcContnet h2 {
+      width: 90%;
+      text-align: left;
+    }
+    .calcContnet p {
+      text-align: left;
+    }
+    .calcImgWrapper {
+      width: 30%;
+      margin: 0;
+    }
+    .blob {
+      width: 40%;
+      margin-left: -60px;
+    }
+    .calcimg {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .calcwrapper {
+      width: 90%;
+    }
+    .calcContnet {
+      width: 60%;
+      padding-top: 5rem;
+    }
+    .calcContnet h2 {
+      width: 90%;
+      font-family: "Montserrat", sans-serif;
+      margin: 0.9rem 0;
+      font-weight: 800;
+      font-size: 40px;
+      padding: 0 4rem;
+    }
+    .calcContnet p {
+      width: 80%;
+      margin-top: 4px;
+      line-height: 25px;
+      font-size: 0.9rem;
+    }
+    .blob {
+      width: 50%;
+      margin-left: -140px;
+    }
+    .calcimg {
+      margin-left: auto;
+      margin-right: auto;
+      width: 70%;
+    }
+  }
 </style>
