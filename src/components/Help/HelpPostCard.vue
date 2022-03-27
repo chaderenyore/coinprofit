@@ -13,7 +13,7 @@
   </section>
   <div v-if="helpost">
     <ul
-      class="flex justify-center flex-wrap gap-y-20 gap-x-3 md:grid md:justify-center md:items-start md:content-center md:grid-cols-2 lg:flex lg:flex-wrap lg:justify-start xl:grid xl:grid-cols-3 xl:gap-x-5"
+      class="flex justify-center flex-wrap gap-y-8 gap-x-3 md:grid md:justify-center md:items-start md:content-center md:grid-cols-2 lg:flex lg:flex-wrap lg:justify-start xl:grid xl:grid-cols-3 xl:gap-x-5"
     >
       <li
         v-for="post in helpost.results"
