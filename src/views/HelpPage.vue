@@ -34,10 +34,10 @@
     </div>
     <div class="help__section--search">
       <p class="help__section--search-p">
-        Check out our tutorial section where we show you step by step guides on
-        how to use the different features of the CoinProfit App. And also our
-        various articles to help you get started. You can use the search bar to
-        easily find what you are looking for.
+        Check out our tutorial section where we show you step by step video
+        guides on how to use the different features of the CoinProfit App. Also,
+        we have various articles to help you get started. You can use the search
+        bar to easily find what you are looking for.
       </p>
       <div>
         <form
@@ -81,32 +81,13 @@
         <div class="flex items-center">
           <img class="h-10" src="@/assets/images/okex-2.svg" alt="Email" />
           <p class="help__contact--card-p ml-3 font-medium">
-            contact@coinprofitapp<span class="inline-block">.com</span>
-          </p>
-        </div>
-      </div>
-
-      <div class="help__contact--card p-4 rounded-xl">
-        <h2 class="text-xl font-bold mb-3 text-[#3374EA]">Call Us</h2>
-        <div class="flex items-center">
-          <img class="h-10" src="@/assets/images/okex-2.svg" alt="Email" />
-          <p class="help__contact--card-p ml-3 font-medium">
-            +380 66 033 71 79
-          </p>
-        </div>
-      </div>
-
-      <div class="help__contact--card p-4 rounded-xl">
-        <h2 class="text-xl font-bold mb-3 text-[#3374EA]">Find Us</h2>
-        <div class="flex items-center">
-          <img class="h-10" src="@/assets/images/okex-2.svg" alt="Email" />
-          <p class="help__contact--card-p ml-3 font-medium">
-            Ukraine, Sumy, st. Kharkivska 121
+            contact@coinprofit.app
           </p>
         </div>
       </div>
     </div>
   </div>
+  <base-call-to-action></base-call-to-action>
 </template>
 
 <script>

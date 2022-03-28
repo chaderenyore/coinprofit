@@ -34,7 +34,7 @@
           </div>
         </div>
         <figcaption class="ml-3 flex flex-col">
-          <h1 class="text-base md:text-xl font-bold text-[#3374EA] mb-3">
+          <h1 class="text-sm md:text-xl font-bold text-[#3374EA] mb-3">
             {{ $prismic.asText(video.data.name) }}
           </h1>
           <p class="text-base md:text-lg text-[#8993a7]">
@@ -138,7 +138,8 @@
       rgba(103, 123, 255, 1)
     );
     opacity: 0.8;
-    width: 95px;
+    min-width: 95px;
+    height: 100%;
   }
 
   .play-video {

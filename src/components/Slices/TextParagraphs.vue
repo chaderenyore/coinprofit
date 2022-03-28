@@ -11,16 +11,16 @@
 </template>
 
 <script>
-export default {
-  name: "TextParagraps",
-  props: {
-    slice: Object,
-  },
-};
+  export default {
+    name: "TextParagraps",
+    props: {
+      slice: Object,
+    },
+  };
 </script>
 
 <style scoped>
-.article-introtext {
-  color: var(--article-text);
-}
+  .article-introtext {
+    color: var(--article-text);
+  }
 </style>

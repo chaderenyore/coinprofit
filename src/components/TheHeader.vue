@@ -35,7 +35,7 @@
           <router-link to="/about">About</router-link>
         </li>
         <li class="nav-item actn">
-          <a href="#">Get App</a>
+          <button @click="scrollToDownload">Get App</button>
         </li>
       </ul>
       <div class="hamburger">
@@ -52,6 +52,13 @@
 <script>
   export default {
     methods: {
+      scrollToDownload() {
+        const element = document
+          .querySelector(".final-download")
+          .closest("section");
+        element.scrollIntoView({ behavior: "smooth" });
+        this.closeMenu();
+      },
       closeMenu() {
         const hamburger = document.querySelector(".hamburger");
         const navMenu = document.querySelector(".nav-menu");
@@ -185,15 +192,16 @@
   .actn {
     margin-right: 50px;
   }
-  .actn a {
+  .actn button {
     cursor: pointer;
     background-color: white;
     border-radius: 30px;
     padding: 7px 25px;
     color: blue;
     margin-left: 2rem;
+    border: none;
   }
-  .actn a:hover {
+  .actn button:hover {
     background-color: #13141c;
     color: #fff !important;
     border-bottom: none;
@@ -255,7 +263,6 @@
     }
 
     .toggle-moon {
-      top: 6%;
       left: 25%;
     }
     .nav-logo {
@@ -358,10 +365,11 @@
       margin: 2.5rem 300px;
     }
     nav ul li.actn {
-      margin-left: 260px !important;
+      margin-left: 259px !important;
     }
 
-    nav ul li.actn a {
+    nav ul li.actn button {
+      border: none;
       background-color: blue;
       border-radius: 30px;
       padding: 7px 25px;
@@ -460,7 +468,7 @@
 
     nav ul {
       position: fixed;
-      left: -127%;
+      left: -110%;
       top: 4.1rem;
       margin-left: 100px;
       flex-direction: column;
@@ -490,7 +498,7 @@
     nav ul li.actn {
       margin-left: 30px !important;
     }
-    .actn a {
+    .actn button {
       background-color: blue;
       border-radius: 30px;
       padding: 7px 25px;

@@ -13,7 +13,7 @@
   </section>
   <div v-if="helpost">
     <ul
-      class="flex justify-center flex-wrap gap-y-20 gap-x-3 md:grid md:justify-center md:items-start md:content-center md:grid-cols-2 lg:flex lg:flex-wrap lg:justify-start xl:grid xl:grid-cols-3 xl:gap-x-5"
+      class="flex justify-center flex-wrap gap-y-8 gap-x-3 md:grid md:justify-center md:items-start md:content-center md:grid-cols-2 lg:flex lg:flex-wrap lg:justify-start xl:grid xl:grid-cols-3 xl:gap-x-5"
     >
       <li
         v-for="post in helpost.results"
@@ -38,12 +38,13 @@
             <section class="mb-3">
               <ul class="flex flex-row gap-2 justify-between">
                 <li
-                  v-for="(n, index) in 3"
-                  :key="index"
-                  class="article-tag font-medium text-sm text-[#3374EA] rounded-full p-1.5"
-                  @click="searchTag(post.tags[index])"
+                  v-for="(e, i) in 3"
+                  :key="i"
+                  class="article-tag font-medium text-sm self-start text-[#3374EA] rounded-full p-1.5"
                 >
-                  #{{ post.tags[index] }}
+                  <template v-if="post.tags[i]">
+                    {{ "#" + post.tags[i] }}
+                  </template>
                 </li>
               </ul>
             </section>

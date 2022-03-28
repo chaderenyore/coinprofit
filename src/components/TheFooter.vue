@@ -8,7 +8,7 @@
       </div>
       <div class="slogan"><p>Helping you become a profitable crypto trader and investor</p></div>
       <div class="social-link">
-        <a href="http://twitter.com" target="_blank" rel="noopener noreferrer">
+        <a href="https://twitter.com/coinprofit_app" target="_blank" rel="noopener noreferrer">
           <svg
             style="fill: #3374ea"
             xmlns="http://www.w3.org/2000/svg"
@@ -76,7 +76,7 @@
           </button>
           <div class="footerContent">
             <a href="#"><p>Andrioid App</p></a>
-            <a href="#"><p>Ios App</p></a>
+            <a href="#"><p>ios App</p></a>
           </div>
         </div>
         <div class="footerWrapper">
@@ -87,7 +87,7 @@
           <div class="footerContent">
             <a href="#"><p>How to Guide</p></a>
             <a href="#"><p>Learn</p></a>
-            <a href="#"><p>FAQ</p></a>
+            
           </div>
         </div>
 
@@ -97,7 +97,7 @@
             <i class="fa fa-chevron-down footerIcon" style="color: #3374ea"></i>
           </button>
           <div class="footerContent">
-            <a href="#"><p>Terms and Condition</p></a>
+            <a href="#"><p>Terms and Conditions</p></a>
             <a href="#"><p>Privacy policy</p></a>
             <router-link to="/AML_POLICIES"><p>AML Policies</p></router-link>
           </div>
@@ -117,7 +117,7 @@
         </div>
         <div class="social-link">
           <a
-            href="http://twitter.com"
+            href="https://twitter.com/coinprofit_app"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -180,7 +180,7 @@
       </div>
       <div class="main-app-container">
         <div class="company-head">
-          <h3>Compnay</h3>
+          <h3>Company</h3>
           <a href="#"><p>About Us</p></a>
           <a href="#"><p>Blog</p></a>
           <a href="#"><p>Contact</p></a>
@@ -192,21 +192,21 @@
           <h3>Help</h3>
           <a href="#"><p>How to Guide</p></a>
           <a href="#"><p>Learn</p></a>
-          <a href="#"><p>FAQ</p></a>
+          
         </div>
       </div>
       <div class="main-app-container">
         <div class="company-head">
           <h3>Products</h3>
           <a href="#"><p>Andrioid App</p></a>
-          <a href="#"><p>Ios Spp</p></a>
+          <a href="#"><p>ios App</p></a>
         </div>
       </div>
 
       <div class="main-app-container">
         <div class="company-head">
           <h3>Legal</h3>
-          <a href="#"><p>Terms and Condition</p></a>
+          <a href="#"><p>Terms and Conditions</p></a>
           <a href="#"><p>Privacy policy</p></a>
            <router-link to="/AML_POLICIES"><p>AML Policies</p></router-link>
         </div>
@@ -215,8 +215,7 @@
   </footer>
   <div class="copyright">
     <p>
-      coinprofit.app &copy; 2022 <span id="copyrightyear"></span> All Rights
-      Reserved.
+      COINPROFIT.APP COPYRIGHT &copy; 2022 ALL RIGHTS RESERVED.
     </p>
   </div>
 
@@ -351,11 +350,13 @@ export default {
 .copyright {
   color: var(--fourth-color);
   position: relative;
-  margin-top: 10px;
-  margin-bottom: 30px;
+  margin: 10px auto 30px;
+  width: 80%;
   text-align: center;
   font-family: "Montserrat", sans-serif;
-  z-index: 2;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+ 
 }
 .computer-footer {
   display: none;
@@ -465,12 +466,10 @@ export default {
     line-height: 30px;
   }
   .copyright {
-    position: relative;
     margin-top: 60px;
     margin-bottom: 10px;
-    text-align: center;
-    font-family: "Montserrat", sans-serif;
-    z-index: 2;
+    font-weight: 500;
+
   }
 }
 </style>

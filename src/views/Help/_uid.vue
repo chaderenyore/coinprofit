@@ -28,7 +28,7 @@
                 v-for="tag in post.tags"
                 :key="tag"
                 @click="searchTag(tag)"
-                class="article-tag text-sm text-[#3374EA] font-medium md:font-semibold rounded-full p-1.5 md:px-3 md:py-2"
+                class="article-tag self-start text-sm text-[#3374EA] font-medium md:font-semibold rounded-full p-1.5 md:px-3 md:py-2"
               >
                 #{{ tag }}
               </li>
@@ -53,11 +53,24 @@
       <main class="w-[90%] m-auto">
         <SliceZone :slices="post.data.body" :components="components" />
       </main>
-      <footer class="w-[90%] m-auto">
-        <section class="article__review rounded-lg p-8">
-          <h1 class="text-[#3374EA] mb-3">Share This Post</h1>
-          <div>
-            <img src="@/assets/images/twitter.svg" alt="Share on twitter" />
+      <footer class="w-[90%] m-auto pb-3">
+        <section class="article__review rounded-lg p-[1.5rem]">
+          <h1 class="text-[#3374EA] text-sm mb-3 w-4/5 m-auto md:w-2/5">
+            Share This Post
+          </h1>
+          <div class="social-button-container w-4/5 m-auto md:w-2/5">
+            <twitter-button
+              :url="location"
+              :description="post.data.preview_text[0].text"
+              :isBlank="false"
+              btnText=""
+            />
+            <facebook-button
+              :url="location"
+              :description="post.data.preview_text[0].text"
+              :isBlank="false"
+              btnText=""
+            />
           </div>
         </section>
       </footer>
@@ -79,11 +92,15 @@
   import ImageGallery from "@/components/Slices/ImageGallery.vue";
   import VideoPlayer from "@/components/Slices/VideoPlayer.vue";
   import NotFound from "@/components/Help/NotFound.vue";
-
+  import MobileImageScreenshotImage from "@/components/Slices/MobileImageScreenshotImage.vue";
+  import TwitterButton from "vue-share-buttons/src/components/TwitterButton";
+  import FacebookButton from "vue-share-buttons/src/components/FacebookButton";
   export default {
     components: {
       BaseCallToAction,
       NotFound,
+      TwitterButton,
+      FacebookButton,
     },
     data() {
       return {
@@ -97,10 +114,16 @@
           image: ImageCard,
           gallery_of_images: ImageGallery,
           video: VideoPlayer,
+          mobile_image___screenshot_image: MobileImageScreenshotImage,
         }),
         articleDate: null,
         author: null,
       };
+    },
+    computed: {
+      location() {
+        return document.location.href;
+      },
     },
     methods: {
       async getPost() {
@@ -184,6 +207,10 @@
     color: var(--author-bio);
   }
 
+  .article__review {
+    background: var(--social-button-container);
+  }
+
   .spinner {
     margin: 5rem auto;
     text-align: center;
@@ -204,5 +231,14 @@
     100% {
       transform: rotate(360deg);
     }
+  }
+
+  .share-button {
+    border-radius: 1200px !important;
+  }
+
+  social-button-container {
+    display: flex;
+    justify-content: space-around;
   }
 </style>

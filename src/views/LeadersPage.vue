@@ -51,24 +51,17 @@
         </div>
 
         <p class="leaders-aboutP">
-          If you are an influencer or leader in the crypto space with a track
-          record, you can make money by letting your community of subscribers
-          see the coins you buy, when you buy and when you sell! <br />
+          If you are an influencer or leader in the crypto space with a track record, you can make money by letting your community of subscribers see the coins you buy, when you buy and when you sell. <br />
           <br />
 
-          We have integration with DEX (BSC, ETH) and CEX (Binance, Kucoin and
-          FTX). This means, your subscribers will be able to see anytime you
-          perform a trade on any of these platforms.
+          We have integration with DEX (BSC, ETH) and CEX (Binance, Kucoin and FTX). This means your subscribers will be able to see anytime you perform a trade on any of these platforms.
           <br />
           <br />
 
-          Your subscribers will only see the coins you buy/sell and the price of
-          the coin as at when you execute the trade but won’t see the amount of
-          money you’re trading with. <br />
+          Your subscribers will only see the coins you buy/sell and the price of the coin as at when you executed the trade but won&rsquo;t see the amount of money yoursquore trading with. <br />
           <br />
 
-          And of course, you can set your own subscription fee per month. $5,
-          $10, $20, $100, whatever you want - It’s passive income for you.
+          And of course, you can set your own subscription fee per month. $5, $10, $20, $100, whatever you want - It&rsquo;s passive income for you.
         </p>
 
         <div class="app-downloads">
@@ -158,15 +151,12 @@
           />
         </div>
         <p>
-          Your subscribers will be able to rate and share feedback on your
-          signals. They will also be able to share how much profit/loss they
-          made based on your signals. This will help you keep a track of how you
-          are changing your subscribers' lives through financial education.
+          Your subscribers will be able to rate and share feedback on your signals. They will also be able to share how much profit/loss they made based on your signals. This will help you keep track of how you are changing your subscribers' lives through financial education.
         </p>
       </div>
 
       <div class="leaders-features three">
-        <h1>Keep Your subscribers informed</h1>
+        <h1>Keep Your Subscribers Informed</h1>
         <img
           src="@/assets/images/listtle-Icons/litegold.svg"
           alt=""
@@ -345,7 +335,7 @@
                     <img src="@/assets/images/leader-level1.svg" />
                   </div> -->
 
-                  <p>@username</p>
+                  <p>@BossVNN</p>
                   <h3>Moses-Ugoh</h3>
 
                   <div class="reviews">
@@ -697,7 +687,7 @@
             <img src="@/assets/images/leaders/moses.jpeg" alt="IMAGE" />
           </div>
 
-          <p>@username</p>
+          <p>@BossVNN</p>
           <h3>Moses Ugoh</h3>
 
           <div class="reviews">
@@ -893,7 +883,7 @@
 
     <div class="becomeLeadersCTA">
       <h1>Become a Leader Today</h1>
-      <h6>Downlaod the coinprofit app NOW to become a leader!</h6>
+      <h6>Download the coinprofit app NOW to become a leader!</h6>
 
       <div class="leaderCTADownloadWrapper">
         <a href="#" target="_blank" rel="noopener noreferrer"
@@ -925,8 +915,7 @@
             </button>
             <div class="faqcontent">
               <p>
-                Anyone with a crypto community or followers who he/she shares
-                trades and signals with can become a leader.
+               Anyone with a crypto community or followers whom he/she shares trades and signals with can become a leader.
               </p>
             </div>
           </div>
@@ -937,8 +926,7 @@
             </button>
             <div class="faqcontent">
               <p>
-                Please download the app, click on upgrade and select the
-                leader’s plan.
+                Please download the app, click on upgrade and select the leader plan.
               </p>
             </div>
           </div>
@@ -949,8 +937,7 @@
             </button>
             <div class="faqcontent">
               <p>
-                Upgrading to a leader plan costs $19/month plus a 10% commission
-                on every subscription.
+                Upgrading to a leader plan costs $19/month plus we charge a 10% commission on every subscription fee you earn.
               </p>
             </div>
           </div>
@@ -963,15 +950,7 @@
             </button>
             <div class="faqcontent">
               <p>
-                There is no limit to how much you can make monthly from the app.
-                You can have an unlimited number of subscribers. Let’s say you
-                have 100 subscribers and you charge $10/month as your
-                subscription fee. 100 X $10 = $1,000. If you have 300
-                subscribers, that’s $3k/mo. And if you have 500 subscribers,
-                that’s $5k/mo! We charge a 10% commission for every
-                subscription. So for 300 subscribers paying $10 each, our
-                commission is just $300 and you will be netting $2,700/mo. For
-                500 subscribers, your earnings will be $4,500/month
+                There is no limit to how much you can make monthly from the app. You can have an unlimited number of subscribers. Let&rsquo;s say you have 100 subscribers and you charge $10/month as your subscription fee. 100 X $10 = $1,000. If you have 300 subscribers, that&rsquo;s $3k/month. And if you have 500 subscribers, that&rsquo;s $5k/month! We charge a 10% commission for every subscription. So for 300 subscribers paying $10 each, our commission is just $300 and you will be netting $2,700/mo. For 500 subscribers, your earnings will be $4,500/month.
               </p>
             </div>
           </div>
@@ -994,8 +973,7 @@
             </button>
             <div class="faqcontent">
               <p>
-                Not yet. Only spot for now but we have plans to support future
-                trading soon.
+               Not yet. We only support spot trading for now but we have plans to support future trading in the future.
               </p>
             </div>
           </div>
@@ -1010,11 +988,7 @@
 
 <script>
 import Splide from "@splidejs/splide";
-import BaseCallToAction from "@/components/BaseCallToAction.vue";
 export default {
-  components: {
-    BaseCallToAction,
-  },
 
   methods: {
     useSplide() {
