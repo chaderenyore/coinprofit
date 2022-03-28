@@ -4,7 +4,7 @@
     <!-- mobile footer will be displayed only for mobile and tablets screens -->
     <div class="MF-wrapper">
       <div class="footer-logo-wrapper">
-        <img src="../assets/images/footerlogo.png" alt="logo" srcset="" />
+       <router-link to="/"> <img src="../assets/images/footerlogo.png" alt="logo"/> </router-link>
       </div>
       <div class="slogan"><p>Helping you become a profitable crypto trader and investor</p></div>
       <div class="social-link">
@@ -20,7 +20,7 @@
             /></svg
         ></a>
 
-        <a href="http://facebook.com" target="_blank" rel="noopener noreferrer"
+        <a href="https://www.facebook.com/coinprofitapp" target="_blank" rel="noopener noreferrer"
           ><svg
             style="fill: #3374ea"
             xmlns="http://www.w3.org/2000/svg"
@@ -32,7 +32,7 @@
             /></svg
         ></a>
 
-        <a href="http://telegram.com" target="_blank" rel="noopener noreferrer"
+        <a href="https://t.me/+dHybmF8BHyY3ZDY0" target="_blank" rel="noopener noreferrer"
           ><svg
             style="fill: #1188c3"
             xmlns="http://www.w3.org/2000/svg"
@@ -44,17 +44,6 @@
             /></svg
         ></a>
 
-        <a href="http://instagram.com" target="_blank" rel="noopener noreferrer"
-          ><svg
-            style="fill: #f47133"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 448 512"
-          >
-            <!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
-            <path
-              d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
-            /></svg
-        ></a>
       </div>
 
       <div class="FAQfooterContainer">
@@ -64,7 +53,7 @@
             <i class="fa fa-chevron-down footerIcon" style="color: #3374ea"></i>
           </button>
           <div class="footerContent">
-            <a href="#"><p>About Us</p></a>
+            <router-link to="/about"><p>About Us</p></router-link>
             <a href="#"><p>Blog</p></a>
             <a href="#"><p>Contact</p></a>
           </div>
@@ -110,7 +99,7 @@
     <div class="computer-footer-wrapper">
       <div class="main-app-container">
         <div class="computer-logo-wrapper">
-          <img src="../assets/images/footerlogo.png" alt="logo" srcset="" />
+          <router-link to="/"> <img src="../assets/images/footerlogo.png" alt="logo"/> </router-link>
         </div>
         <div class="computer-slogan">
           <p>Helping you become a profitable crypto trader and investor</p>
@@ -133,7 +122,7 @@
           ></a>
 
           <a
-            href="http://facebook.com"
+            href="https://www.facebook.com/coinprofitapp"
             target="_blank"
             rel="noopener noreferrer"
             ><svg
@@ -148,7 +137,7 @@
           ></a>
 
           <a
-            href="http://telegram.com"
+            href="https://t.me/+dHybmF8BHyY3ZDY0"
             target="_blank"
             rel="noopener noreferrer"
             ><svg
@@ -162,26 +151,13 @@
               /></svg
           ></a>
 
-          <a
-            href="http://instagram.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            ><svg
-              style="fill: #f47133"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 448 512"
-            >
-              <!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
-              <path
-                d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
-              /></svg
-          ></a>
+          
         </div>
       </div>
       <div class="main-app-container">
         <div class="company-head">
           <h3>Company</h3>
-          <a href="#"><p>About Us</p></a>
+         <router-link to="/about"><p>About Us</p></router-link>
           <a href="#"><p>Blog</p></a>
           <a href="#"><p>Contact</p></a>
         </div>
@@ -190,7 +166,7 @@
       <div class="main-app-container">
         <div class="company-head">
           <h3>Help</h3>
-          <a href="#"><p>How to Guide</p></a>
+          <router-link to="/help"><p>How to Guide</p></router-link>
           <a href="#"><p>Learn</p></a>
           
         </div>
