@@ -22,4 +22,8 @@
   .article-introtext >>> p {
     color: var(--article-text);
   }
+
+  .article-introtext >>> a {
+    color: #3374ea;
+  }
 </style>
