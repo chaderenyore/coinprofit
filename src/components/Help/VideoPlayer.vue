@@ -7,12 +7,15 @@
       </video>
     </vue-plyr>
   </div>
+  <div class="close-player" @click="this.$emit('close-player')">
+    <img src="@/assets/images/close-player.svg" alt="Close player" />
+  </div>
 </template>
 
 <script>
   export default {
     props: ["src", "thumbnail", "videoName"],
-    // emits: ["close-player"]
+    emits: ["close-player"],
     mounted() {
       console.log("mounted");
     },
@@ -30,7 +33,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(165, 165, 165, 0.9);
+    background-color: rgb(82, 91, 109);
   }
   .video-container-div {
     position: fixed;
@@ -55,6 +58,41 @@
       top: 50%;
       width: 65%;
       height: 95vh;
+    }
+  }
+
+  .close-player {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.7rem;
+    cursor: pointer;
+    z-index: 16;
+    top: 2%;
+    right: 3%;
+    background: #d8dce4;
+    border-radius: 400px;
+  }
+
+  @media screen and (min-width: 768px) {
+    .close-player {
+      top: 6%;
+      right: 6%;
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    .close-player {
+      top: 2%;
+      right: 11%;
+    }
+  }
+
+  @media screen and (min-width: 1440px) {
+    .close-player {
+      top: 1%;
+      right: 11%;
     }
   }
 </style>
