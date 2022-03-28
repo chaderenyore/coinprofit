@@ -87,8 +87,8 @@
           </button>
           <div class="footerContent">
             <a href="#"><p>Terms and Conditions</p></a>
-            <a href="#"><p>Privacy policy</p></a>
-            <router-link to="/AML_POLICIES"><p>AML Policies</p></router-link>
+             <router-link to="/privacy_policy"><p>Privacy policy</p></router-link>
+            <router-link to="/aml_policy"><p>AML Policies</p></router-link>
           </div>
         </div>
       </div>
@@ -183,8 +183,8 @@
         <div class="company-head">
           <h3>Legal</h3>
           <a href="#"><p>Terms and Conditions</p></a>
-          <a href="#"><p>Privacy policy</p></a>
-           <router-link to="/AML_POLICIES"><p>AML Policies</p></router-link>
+          <router-link to="/privacy_policy"><p>Privacy policy</p></router-link>
+           <router-link to="/aml_policy"><p>AML Policies</p></router-link>
         </div>
       </div>
     </div>

@@ -64,12 +64,22 @@ const routes = [
   },
 
   {
-    path: "/AML_POLICIES",
+    path: "/aml_policy",
     name: "amlpolicies",
     component: () => import("../views//Legal/AmlPolicies.vue"),
     meta: {
       auth: true,
       title: "Coinprofit - Aml-Policy",
+    },
+  },
+
+  {
+    path: "/privacy_policy",
+    name: "privacypolicy",
+    component: () => import("../views//Legal/PrivacyPolicyPage.vue"),
+    meta: {
+      auth: true,
+      title: "Coinprofit - Privacy policy",
     },
   },
 ];
