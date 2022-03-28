@@ -53,8 +53,11 @@
   export default {
     methods: {
       scrollToDownload() {
-        const element = document.querySelector(".final-download");
+        const element = document
+          .querySelector(".final-download")
+          .closest("section");
         element.scrollIntoView({ behavior: "smooth" });
+        this.closeMenu();
       },
       closeMenu() {
         const hamburger = document.querySelector(".hamburger");
