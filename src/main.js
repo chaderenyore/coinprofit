@@ -7,7 +7,9 @@ import VuePlyr from "vue-plyr";
 import "vue-plyr/dist/vue-plyr.css";
 const app = createApp(App);
 import BaseCallToAction from "@/components/BaseCallToAction.vue";
+import ArticleCard from "@/components/Help/ArticleCard.vue";
 
 app.component("BaseCallToAction", BaseCallToAction);
+app.component("ArticleCard", ArticleCard);
 
 app.use(router).use(prismic).use(VuePlyr).mount("#app");

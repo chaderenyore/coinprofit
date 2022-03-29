@@ -16,12 +16,6 @@
   export default {
     props: ["src", "thumbnail", "videoName"],
     emits: ["close-player"],
-    mounted() {
-      console.log("mounted");
-    },
-    updated() {
-      console.log("Updated");
-    },
   };
 </script>
 

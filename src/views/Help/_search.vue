@@ -1,12 +1,26 @@
 <template>
-  <p>Hello world</p>
+  <section
+    class="search__tag--section w-[85%] md:w-[80%] m-auto"
+    v-if="tagArticleResult"
+  >
+    <ArticleCard
+      :queryobj="tagArticleResult"
+      @search-tag="searchFromComponent"
+    />
+  </section>
+  <section
+    class="search__query--section w-[85%] md:w-[80%] m-auto"
+    v-if="queryResult"
+  ></section>
 </template>
 
 <script>
   export default {
     data() {
       return {
-        tagResult: "",
+        tagArticleResult: "",
+        tagTutorialResult: "",
+        queryResult: "",
       };
     },
 
@@ -16,8 +30,27 @@
       },
 
       async searchByTag(tag) {
-        this.tagResult = await this.$prismic.client.getByTag(tag);
-        console.log(this.tagResult);
+        const tagResult = await this.$prismic.client.getByTag(tag);
+        const result = tagResult.results;
+
+        this.tagArticleResult = result.filter(function (article) {
+          return article.type == "articles";
+        });
+
+        this.tagTutorialResult = result.filter(function (article) {
+          return article.type == "tutorial";
+        });
+      },
+
+      searchFromComponent(tag) {
+        console.log(tag);
+        this.searchByTag(tag);
+        this.$router.push({
+          name: "help-search",
+          query: {
+            tag: tag,
+          },
+        });
       },
     },
 
@@ -33,4 +66,25 @@
   };
 </script>
 
-<style scoped></style>
+<style scoped>
+  @media (min-width: 1400px) {
+    .search__tag--section {
+      max-width: 1350px;
+    }
+  }
+  .search__tag--section {
+    padding-top: 7rem;
+  }
+
+  @media screen and (min-width: 520px) {
+    .search__tag--section {
+      padding-top: 8rem;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    .search__tag--section {
+      padding-top: 9rem;
+    }
+  }
+</style>
