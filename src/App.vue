@@ -68,6 +68,7 @@
     --author-bio: #707070;
     --article-text: #525b6d;
     --social-button-container: #f2f8ff;
+    --plyr-color-main: #3374ea;
     /* --fifth-color: #000000; for paragraphs with black background */
   }
 

@@ -57,7 +57,7 @@
     </div>
   </section>
 
-  <section class="w-[85%] md:w-[80%] m-auto">
+  <section class="help__guide-section w-[85%] md:w-[80%] m-auto">
     <KeepAlive>
       <component :is="selectedComponent" />
     </KeepAlive>
@@ -81,7 +81,18 @@
         <div class="flex items-center">
           <img class="h-10" src="@/assets/images/okex-2.svg" alt="Email" />
           <p class="help__contact--card-p ml-3 font-medium">
-            contact@coinprofit.app
+            support@coinprofit.app
+          </p>
+        </div>
+      </div>
+      <div class="help__contact--card p-4 rounded-xl">
+        <p class="text-lg mb-3 font-semibold text-[#3374EA]">
+          For Business Proposals, Please Email
+        </p>
+        <div class="flex items-center">
+          <img class="h-10" src="@/assets/images/okex-2.svg" alt="Email" />
+          <p class="help__contact--card-p ml-3 font-medium">
+            business@coinprofit.app
           </p>
         </div>
       </div>
@@ -371,5 +382,19 @@
   }
   .help__contact--card-p {
     color: var(--help-contact-box-text);
+  }
+
+  @media (min-width: 1400px) {
+    .help__section {
+      max-width: 1350px;
+    }
+
+    .help__section--contact {
+      max-width: 1350px;
+    }
+
+    .help__guide-section {
+      max-width: 1350px;
+    }
   }
 </style>

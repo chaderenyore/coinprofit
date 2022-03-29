@@ -13,18 +13,18 @@
   </section>
   <div v-if="helpost">
     <ul
-      class="flex justify-center flex-wrap gap-y-8 gap-x-3 md:grid md:justify-center md:items-start md:content-center md:grid-cols-2 lg:flex lg:flex-wrap lg:justify-start xl:grid xl:grid-cols-3 xl:gap-x-5"
+      class="flex justify-center flex-wrap gap-y-20 md:gap-y-16 gap-x-6 md:grid md:justify-center md:items-start md:content-center md:grid-cols-2 lg:flex lg:flex-wrap lg:justify-start xl:grid xl:grid-cols-3 xl:gap-x-5"
     >
       <li
         v-for="post in helpost.results"
         :key="post.uid"
         class="help__card--list"
       >
-        <!-- <img
+        <img
           src="@/assets/images/article-blob.png"
           class="article-blob"
           alt=""
-        /> -->
+        />
         <article
           class="help__card--article p-6 rounded-3xl w[80%] max-w-[360px] max-h-[650px]"
         >
@@ -40,7 +40,7 @@
                 <li
                   v-for="(e, i) in 3"
                   :key="i"
-                  class="article-tag font-medium text-sm self-start text-[#3374EA] rounded-full p-1.5"
+                  class="article-tag font-medium text-sm self-start text-[#3374EA] rounded-full p-1.5 md:p-2"
                 >
                   <template v-if="post.tags[i]">
                     {{ "#" + post.tags[i] }}
@@ -154,7 +154,16 @@
   }
 
   .article-blob {
-    width: 15.625rem;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  @media (min-width: 2560px) {
+    .article-blob {
+      left: 43%;
+    }
   }
 
   .pagination-button {
