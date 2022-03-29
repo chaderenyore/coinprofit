@@ -445,7 +445,11 @@
                       <h3>Marvelous Macaulay</h3>
                     </div>
                     <p class="username">@Iam_Marvelous</p>
-                    <p>I'm a Crypto trader and technical analyst.</p>
+                    <p>
+                      Technical/Market Analyst. Not a Bull or Bear. I only trade
+                      what the market shows me. No sentiments, Just Objective
+                      Technical analysis.
+                    </p>
                   </div>
                 </div>
               </div>
@@ -1313,8 +1317,6 @@
             </div>
           </div>
 
-
-
           <div class="faqwrapper">
             <button class="faqtoggle">
               <h3>I’m Subscribed To A Leader But Don’t Know How To Trade?</h3>
@@ -1482,7 +1484,7 @@ export default {
 
 <style scoped>
 @import "swiper/css/bundle";
-@import '@splidejs/splide/dist/css/splide.min.css';
+@import "@splidejs/splide/dist/css/splide.min.css";
 .mainContainer {
   width: 100%;
   margin: 0 auto;
@@ -3557,7 +3559,6 @@ export default {
   .video-img:hover {
     opacity: 0;
   }
-
 
   .learn-more h1 {
     width: 50%;
