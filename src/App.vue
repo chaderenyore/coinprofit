@@ -139,4 +139,11 @@
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 1;
   }
+
+  *:focus {
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+    -ms-touch-action: none;
+    touch-action: none;
+  }
 </style>
