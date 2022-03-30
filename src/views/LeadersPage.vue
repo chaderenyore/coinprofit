@@ -1088,7 +1088,11 @@ export default {
 .first-page {
   padding-top: 1rem;
 }
-
+@media (min-width:1200px) {
+  .first-page {
+  padding-top: 7rem;
+}
+}
 .background-svg {
   display: none;
 }

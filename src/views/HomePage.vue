@@ -1487,12 +1487,15 @@ export default {
 @import "@splidejs/splide/dist/css/splide.min.css";
 .mainContainer {
   width: 100%;
+  max-width: 1500px;
   margin: 0 auto;
 }
-@media (min-width: 1500px) {
-  .mainContainer {
-    max-width: 1250px;
-  }
+
+@media (min-width: 1200px) {
+  .mainContainer { 
+    padding-top: 7rem;
+    }
+ 
 }
 
 .littleicon1 {
@@ -1530,7 +1533,6 @@ export default {
 .first-page {
   width: 100%;
   position: relative;
-  padding-top: 1rem;
   margin-bottom: 2rem;
 }
 @media only screen and (min-width: 470px) {
@@ -3021,6 +3023,9 @@ export default {
 /* START IPAD PRO SCREEN SIZE DESIGN */
 
 @media only screen and (min-width: 1024px) {
+   .mainContainer { 
+    padding-top: 7rem;
+    }
   .littleicon1 {
     position: absolute;
     top: 110px;
@@ -3634,17 +3639,17 @@ export default {
   .blob1-d {
     object-fit: cover;
     top: -13rem;
-    left: 52%;
+    left: 50%;
     height: 1200.33px;
     width: 62rem;
     transform: translateY(27px);
     z-index: -1;
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: 1430px) {
     .blob1-d {
       top: -13rem;
-      left: 55%;
+      left: 53%;
     }
   }
 

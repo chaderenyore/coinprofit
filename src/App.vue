@@ -53,6 +53,9 @@
     --light-color: #f2f8ff;
     --dark-color: #13141c;
     --nav-light: #ffffff;
+    --navScroll-light: #ffffff; /*apply this color to the background when you scroll on desktop screen */
+    --navScrollp: #313131;
+    --navShadow: #a594941a;
     --third-color: #ffffff; /* for white background like the boxes, FAQ and the footer section */
     --fourth-color: #525b6d; /* for paragraphs..*/
     --fifth-color: #1d1c1c; /* for paragraphs with black background*/
@@ -68,13 +71,15 @@
     --author-bio: #707070;
     --article-text: #525b6d;
     --social-button-container: #f2f8ff;
-    /* --fifth-color: #000000; for paragraphs with black background */
   }
 
   .dark-theme {
     --light-color: #13141c;
     --dark-color: #f2f8ff;
     --nav-light: #09090b;
+    --navScroll-light: #310909;
+     --navScrollp: #d8d4d4; /* for nav li a  */
+      --navShadow: #f1eaea1a;
     --third-color: #09090b;
     --fourth-color: #f2f8ff;
     --fifth-color: #f2f8ff;
