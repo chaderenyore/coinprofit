@@ -23,11 +23,11 @@
 </script>
 
 <style scoped>
-  .article-introtext >>> p {
+  .article-introtext :deep(p) {
     color: var(--article-text);
   }
 
-  .article-introtext >>> a {
+  .article-introtext :deep(a) {
     color: #3374ea;
   }
 </style>
