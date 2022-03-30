@@ -187,7 +187,7 @@
 
   @media (min-width: 820px) {
     .article-main {
-      padding-top: 2rem;
+      padding-top: 6.5rem;
     }
   }
 
