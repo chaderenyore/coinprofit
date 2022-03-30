@@ -1,4 +1,5 @@
 <template>
+  <div class="pt-20"></div>
   <section
     class="search__tag--section w-[85%] md:w-[80%] m-auto"
     v-if="tagArticleResult"
