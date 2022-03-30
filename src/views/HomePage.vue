@@ -1057,9 +1057,9 @@
           <div class="splide__track">
             <div class="splide__list">
               <div class="splide__slide">
-                <h3>John Doe</h3>
+                <h3>Kingdom Augustine</h3>
                 <div class="users-img-wrapper">
-                  <img src="../assets/images/review3.jpeg" alt="" />
+                  <img src="../assets/images/kingdom.jpeg" alt="" />
                 </div>
                 <div class="star-review">
                   <i
@@ -1089,52 +1089,16 @@
                   ></i>
                 </div>
                 <p>
-                  This can be a long review. Lorem ipsum dolor sit, amet
-                  consectetur adipisicing elit. Facere voluptas iure neque nemo
-                  est illo nobis possimus, eveniet animi facilis impedit velit.
-                  Incidunt maiores doloremque delectus blanditiis eius ad ipsam?
-                  lorem
+                 Swift experience in all modules.
+This is at last the opportunity for the average person who's not interested in the technicalities of trading to make wealth. 
+ I personally call this app "trade made easy".
                 </p>
-              </div>
-              <div class="splide__slide">
-                <h3>John Doe</h3>
-                <div class="users-img-wrapper">
-                  <img src="../assets/images/review3.jpeg" alt="" />
-                </div>
-                <div class="star-review">
-                  <i
-                    class="fa fa-star"
-                    aria-hidden="true"
-                    style="color: #fccf3b; font-size: 27px"
-                  ></i>
-                  <i
-                    class="fa fa-star"
-                    aria-hidden="true"
-                    style="color: #fccf3b; font-size: 27px"
-                  ></i>
-                  <i
-                    class="fa fa-star"
-                    aria-hidden="true"
-                    style="color: #fccf3b; font-size: 27px"
-                  ></i>
-                  <i
-                    class="fa fa-star"
-                    aria-hidden="true"
-                    style="color: #fccf3b; font-size: 27px"
-                  ></i>
-                  <i
-                    class="fa fa-star"
-                    aria-hidden="true"
-                    style="color: #fccf3b; font-size: 27px"
-                  ></i>
-                </div>
-                <p>Amazing app, I made over $20k following a leaders call.</p>
               </div>
 
               <div class="splide__slide">
-                <h3>Nyore Chadere</h3>
+                <h3>Israel Odenu</h3>
                 <div class="users-img-wrapper">
-                  <img src="../assets/images/review1.jpg" alt="" />
+                  <img src="../assets/images/israel.png" alt="" />
                 </div>
                 <div class="star-review">
                   <i
@@ -1163,8 +1127,9 @@
                     style="color: #fccf3b; font-size: 27px"
                   ></i>
                 </div>
-                <p>This is one of the best app I've used. I love it.</p>
+                <p>The best app I have ever seen, easy Navigation, and a great "if" Calculator.</p>
               </div>
+
             </div>
           </div>
         </div>
@@ -2681,6 +2646,7 @@ export default {
 }
 
 .learn-more {
+  display: none;
   position: relative;
   width: 90%;
   margin: 10rem auto 0;
@@ -2765,9 +2731,9 @@ export default {
 }
 .vid-play-wrapper {
   margin: 20px auto;
-  width: 80%;
+  width: 100%;
   height: 300px;
-  background: url("../assets/images/video-background.jpg") no-repeat center
+  background: url("../assets/images/video-background.jpeg") no-repeat center
     center fixed;
   box-shadow: 0px 30px 20px #22a1f51a;
   border-radius: 23px;
@@ -2775,7 +2741,7 @@ export default {
 }
 
 .video-img {
-  width: 80%;
+  width: 100%;
   height: 300px;
   position: absolute;
   background: linear-gradient(180deg, #75e7ff 0%, #677bff 100%) 0% 0% no-repeat
@@ -3536,8 +3502,8 @@ export default {
 
   .vid-play {
     position: absolute;
-    left: 80%;
-    top: 50%;
+    left: 75%;
+    top: 78%;
     transform: translate(-50%, -50%);
   }
 
@@ -3591,11 +3557,15 @@ export default {
     text-align: center;
     font-size: 19px;
     font-weight: 700;
-    width: 40%;
+    width: 30%;
+    float: left;
   }
   .learn-moreBTN:hover {
     background-color: #3374ea;
     color: var(--fourth-color);
+  }
+  .faq-wrapper {
+    margin-top: 120px;
   }
 }
 /* START COMPUTER SCREEN DESIGN */
