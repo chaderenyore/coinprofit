@@ -12,6 +12,10 @@ const prismic = createPrismic({
         type: "articles",
         path: "/help/articles/:uid",
       },
+      {
+        type: "blog",
+        path: "/blog/:uid",
+      },
     ],
   },
 });

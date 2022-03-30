@@ -41,6 +41,15 @@ const routes = [
     },
   },
   {
+    path: "/blog/:uid",
+    name: "SingleBlogPost",
+    component: () => import("../views/Blog/_uid.vue"),
+    meta: {
+      auth: true,
+      title: "CoinProfit - BlogPost",
+    },
+  },
+  {
     path: "/help",
     name: "help",
     component: () => import("../views/HelpPage.vue"),
@@ -55,7 +64,7 @@ const routes = [
     name: "SingleHelpPost",
     meta: {
       auth: true,
-      title: "Coinprofit - Blog Post",
+      title: "Coinprofit - HelpPost",
     },
   },
   {

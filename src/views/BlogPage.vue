@@ -3,7 +3,20 @@
 </template>
 
 <script>
-  export default {};
+  export default {
+    data() {
+      return {
+        blogpost: "",
+      };
+    },
+    // methods: {
+    //   async getData() {
+    //     this.blogpost = await this.$prismic.client.getByType("articles", {
+    //       pageSize: this.pageSize,
+    //     });
+    //   },
+    // },
+  };
 </script>
 
 <style scoped>
