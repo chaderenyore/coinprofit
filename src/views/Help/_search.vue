@@ -27,7 +27,10 @@
     methods: {
       async searchByQuery(query) {
         const fullTextResult = await this.$prismic.client.get({
-          predicates: this.$prismic.predicate.fulltext("articles", query),
+          predicates: this.$prismic.predicate.not(
+            "articles.article_title",
+            query
+          ),
         });
         console.log(fullTextResult);
       },
