@@ -194,14 +194,7 @@
           </div>
           <!-- end team_memebers_box-->
 
-          <div class="team_memebers_box">
-            <div class="team_memebers_box_img_box">
-              <img src="@/assets/images/about/Uzoatu.jpeg" alt="IMAGE" />
-            </div>
 
-            <h3>Uzoatu Bryan</h3>
-          </div>
-          <!-- end team_memebers_box-->
         </div>
         <!-- end team_content-->
 
@@ -315,7 +308,7 @@
     margin: 0 auto;
   }
   .about-sec {
-    padding-top: 5rem;
+    padding-top: 10rem;
     position: relative;
   }
 
@@ -969,6 +962,9 @@
       position: absolute;
       top: 110%;
       z-index: 1;
+    }
+    .about-sec {
+      padding-top: 12rem;
     }
     .about_container p {
       line-height: 30px;

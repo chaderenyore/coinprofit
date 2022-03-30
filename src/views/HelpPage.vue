@@ -158,6 +158,11 @@
       padding-top: 9rem;
     }
   }
+   @media screen and (min-width: 1200px) {
+    .help__section {
+      padding-top: 15rem;
+    }
+  }
 
   .help__section--div-1 {
     order: -3;
@@ -347,7 +352,9 @@
   }
 
   @media only screen and (min-width: 90rem) {
+
     .help__section {
+     
       grid-column-gap: 0.375rem;
     }
   }

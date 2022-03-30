@@ -1,52 +1,61 @@
 <template>
   <div class="backdrop"></div>
 
-  <header class="header">
-    <nav class="navbar">
-      <div class="nav-logo">
-        <router-link to="/"
-          ><img
-            src="../assets/images/coin-profit-logo-11@1x.png"
-            alt="LOGO"
-            class="logo"
-        /></router-link>
-      </div>
-      <img
-        src="@/assets/images/toggle.png"
-        alt="Toggle Button"
-        id="toggleIcon"
-        class="toggle-moon"
-      />
+  <header>
+    <div class="container">
+      <nav class="navbar">
+        <div class="nav-logo">
+          <router-link to="/"
+            ><img
+              src="../assets/images/coin-profit-logo-11@1x.png"
+              alt="LOGO"
+              class="logo"
+          /></router-link>
+        </div>
+        <img
+          src="@/assets/images/toggle.png"
+          alt="Toggle Button"
+          id="toggleIcon"
+          class="toggle-moon"
+        />
 
-      <ul class="nav-menu">
-        <li class="nav-item">
-          <router-link to="/">Home</router-link>
-        </li>
-        <li class="nav-item">
-          <router-link to="/leaders">Leaders</router-link>
-        </li>
-        <li class="nav-item">
-          <router-link to="/calculator">Calculator</router-link>
-        </li>
-        <li class="nav-item">
-          <router-link to="/help">Help</router-link>
-        </li>
-        <li class="nav-item">
-          <router-link to="/about">About</router-link>
-        </li>
-        <li class="nav-item actn">
-          <button @click="scrollToDownload">Get App</button>
-        </li>
-      </ul>
-      <div class="hamburger">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </div>
-    </nav>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <router-link to="/">Home</router-link>
+          </li>
+          <li class="nav-item">
+            <router-link to="/leaders">Leaders</router-link>
+          </li>
+          <li class="nav-item">
+            <router-link to="/calculator">Calculator</router-link>
+          </li>
+          <li class="nav-item">
+            <div class="navDropDown">
+              <button class="navdropBTN">
+                Company
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <router-link to="/about">About</router-link>
+                <router-link to="/help">Blog</router-link>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <router-link to="/help">Help</router-link>
+          </li>
+          <li class="nav-item actn">
+            <button @click="scrollToDownload">Get App</button>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </div>
   </header>
-
-  <!--  -->
 </template>
 
 <script>
@@ -58,6 +67,19 @@
           .closest("section");
         element.scrollIntoView({ behavior: "smooth" });
         this.closeMenu();
+      },
+
+      scrollNavbar() {
+        window.addEventListener("scroll", function () {
+          let header = document.querySelector("header");
+          let windowPosition = window.scrollY > 0;
+          header.classList.toggle("navscroll-active", windowPosition);
+        });
+      },
+
+      scrollToDownload() {
+        const element = document.querySelector(".final-download");
+        element.scrollIntoView({ behavior: "smooth" });
       },
       closeMenu() {
         const hamburger = document.querySelector(".hamburger");
@@ -133,16 +155,27 @@
 
     mounted() {
       this.initHeader();
+
+      this.scrollNavbar();
     },
   };
 </script>
 
 <style scoped>
-  .header {
+  header {
     font-family: sans-serif;
+    width: 100%;
+    margin: 0 auto;
+    z-index: 1000;
+    position: fixed;
+    transition: background-color 0.5s ease;
+  }
+
+  .container {
     width: 100%;
     max-width: 1450px;
     margin: 0 auto;
+    padding: 0 1.5rem;
   }
 
   .navbar {
@@ -152,7 +185,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    z-index: -1;
+    transition: height 0.5s ease;
   }
 
   .toggle-moon {
@@ -176,17 +209,67 @@
   }
   nav ul li {
     display: inline-block;
-    margin: 27px 20px;
+    margin: 24px 20px;
   }
 
   nav ul li a {
     color: var(--fourth-color);
     font-size: 14px;
+    position: relative;
   }
 
-  nav ul li a:hover {
-    color: var(--dark-color);
-    border-bottom: 2px solid #3374ea 2px;
+  /* The dropdown container */
+
+  /* Dropdown button */
+  .navDropDown .navdropBTN {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    margin: 0;
+    background-color: transparent;
+    color: var(--fourth-color);
+  }
+
+  /* Dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    /* background-color: #f9f9f9; */
+    color: #13141c;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    float: none;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    color: var(--fourth-color);
+  }
+
+  /* Show the dropdown menu on hover */
+  .navDropDown:hover .dropdown-content {
+    display: block;
+  }
+
+  nav ul li a::after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: #3374ea;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.5s ease;
+  }
+  nav ul li a:hover::after {
+    transform: scaleX(1);
   }
 
   .actn {
@@ -223,6 +306,27 @@
   .bar:nth-child(2) {
     margin-left: 20px;
   }
+
+  /*Apply styles after scroll*/
+
+  .navscroll-active {
+    background-color: var(--navScroll-light);
+    box-shadow: 0 3px 1rem var(--navShadow);
+  }
+
+  .navbar {
+    padding: 10px 0;
+  }
+  .navscroll-active nav ul li a {
+    color: var(--navScrollp);
+  }
+
+  .navscroll-active .actn button {
+    background-color: #3374ea;
+    color: #fff;
+  }
+
+  /*Apply styles after scroll end*/
 
   /* on ipad pro screen */
 
@@ -309,10 +413,12 @@
       background-color: rgba(0, 0, 0, 0.5);
       z-index: 1;
     }
+    .container {
+      padding: 0;
+    }
     .navbar {
       padding-top: 1rem;
       width: 100%;
-
       padding: 35px 30px;
       background-color: var(--nav-light);
       border-bottom-left-radius: 15px;
@@ -345,7 +451,7 @@
       z-index: 2;
       width: 100%;
       height: 100vh;
-      border-radius: 10px;
+      /* border-radius: 10px; */
       text-align: left;
       transition: 0.5s;
       box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
@@ -363,6 +469,9 @@
     nav ul li {
       display: block;
       margin: 2.5rem 300px;
+    }
+    .dropdown-content {
+      position: relative;
     }
     nav ul li.actn {
       margin-left: 259px !important;
@@ -476,7 +585,7 @@
       z-index: 2;
       width: 80%;
       height: 100vh;
-      border-radius: 10px;
+      /* border-radius: 10px; */
       text-align: left;
       transition: 0.5s;
       box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
