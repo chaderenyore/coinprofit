@@ -25,8 +25,11 @@
     },
 
     methods: {
-      searchByQuery(query) {
-        console.log(query);
+      async searchByQuery(query) {
+        const fullTextResult = await this.$prismic.client.get({
+          predicates: this.$prismic.predicate.fulltext("articles", query),
+        });
+        console.log(fullTextResult);
       },
 
       async searchByTag(tag) {
@@ -43,7 +46,6 @@
       },
 
       searchFromComponent(tag) {
-        console.log(tag);
         this.searchByTag(tag);
         this.$router.push({
           name: "help-search",
