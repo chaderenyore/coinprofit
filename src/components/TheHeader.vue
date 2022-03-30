@@ -77,10 +77,6 @@
         });
       },
 
-      scrollToDownload() {
-        const element = document.querySelector(".final-download");
-        element.scrollIntoView({ behavior: "smooth" });
-      },
       closeMenu() {
         const hamburger = document.querySelector(".hamburger");
         const navMenu = document.querySelector(".nav-menu");
