@@ -32,6 +32,15 @@ const routes = [
     },
   },
   {
+    path: "/blog",
+    name: "blog",
+    component: () => import("../views/BlogPage.vue"),
+    meta: {
+      auth: true,
+      title: "Coinprofit - Blog",
+    },
+  },
+  {
     path: "/help",
     name: "help",
     component: () => import("../views/HelpPage.vue"),
