@@ -15,6 +15,18 @@
           class="rounded-3xl mb-4 w-[100%]"
           :field="video.data.thumbnail"
         />
+        <section class="w-[90%] m-auto mt-2 mb-4">
+          <ul class="flex flex-row gap-2 md:gap-3 justify-around">
+            <li
+              v-for="tag in video.tags"
+              :key="tag"
+              @click="searchTag(tag)"
+              class="article-tag self-start text-sm text-[#3374EA] font-medium md:font-semibold rounded-full p-1.5 md:px-3 md:py-2"
+            >
+              #{{ tag }}
+            </li>
+          </ul>
+        </section>
         <section class="w-[90%] m-auto">
           <p class="text-base font-bold text-green-600">Tutorials</p>
           <h1 class="text-xl md:text-2xl text-[#3374EA] font-bold">
@@ -105,6 +117,15 @@
           this.errorMessage = error.message;
         }
       },
+
+      searchTag(tag) {
+        this.$router.push({
+          name: "help-search",
+          query: {
+            tag: tag,
+          },
+        });
+      },
     },
 
     created() {
@@ -137,6 +158,11 @@
 
   .article__review {
     background: var(--social-button-container);
+  }
+
+  .article-tag {
+    cursor: pointer;
+    background: var(--article-tag);
   }
 
   .spinner {
