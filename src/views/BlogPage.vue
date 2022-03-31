@@ -1,5 +1,12 @@
 <template>
-  <p>CoinProfit Blog</p>
+  <main v-if="blogpost">
+    <h1
+      class="text-xl md:text-2xl text-[#3374EA] font-bold text-center mb-[6rem]"
+    >
+      Our Blog Section
+    </h1>
+    <article-card :queryobj="blogpost.results"></article-card>
+  </main>
 </template>
 
 <script>
@@ -9,20 +16,21 @@
         blogpost: "",
       };
     },
-    // methods: {
-    //   async getData() {
-    //     this.blogpost = await this.$prismic.client.getByType("articles", {
-    //       pageSize: this.pageSize,
-    //     });
-    //   },
-    // },
+    methods: {
+      async getData() {
+        this.blogpost = await this.$prismic.client.getByType("blog");
+        console.log(this.blogpost);
+      },
+    },
+
+    mounted() {
+      this.getData();
+    },
   };
 </script>
 
 <style scoped>
-  p {
+  main {
     padding-top: 8rem;
-    font-size: 1.2rem;
-    color: #337ea3;
   }
 </style>

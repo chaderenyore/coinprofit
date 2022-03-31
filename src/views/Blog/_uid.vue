@@ -129,7 +129,7 @@
       async getPost() {
         try {
           this.post = await this.$prismic.client.getByUID(
-            "articles",
+            "blog",
             this.$route.params.uid,
             {
               fetchLinks: ["author.name", "author.avatar", "author.bio"],
