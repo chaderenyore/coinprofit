@@ -120,17 +120,16 @@
     },
     methods: {
       searchArticles() {
-        // let regex = /^\s+$/;
-        // if (this.searchQuery.match(regex) || !this.searchQuery) {
-        //   return;
-        // }
-        // this.$router.push({
-        //   name: "help-search",
-        //   query: {
-        //     q: this.searchQuery.trim(),
-        //   },
-        // });
-        return;
+        let regex = /^\s+$/;
+        if (this.searchQuery.match(regex) || !this.searchQuery) {
+          return;
+        }
+        this.$router.push({
+          name: "help-search",
+          query: {
+            q: this.searchQuery.trim(),
+          },
+        });
       },
     },
   };
