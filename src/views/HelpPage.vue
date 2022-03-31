@@ -79,7 +79,11 @@
       <div class="help__contact--card p-4 rounded-xl">
         <h2 class="text-xl font-bold mb-3 text-[#3374EA]">Email Us</h2>
         <div class="flex items-center">
-          <img class="h-10" src="@/assets/images/okex-2.svg" alt="Email" />
+          <img
+            class="h-4 email-icon"
+            src="@/assets/images/email.svg"
+            alt="Email"
+          />
           <p class="help__contact--card-p ml-3 font-medium">
             support@coinprofit.app
           </p>
@@ -90,7 +94,11 @@
           For Business Proposals, Please Email
         </p>
         <div class="flex items-center">
-          <img class="h-10" src="@/assets/images/okex-2.svg" alt="Email" />
+          <img
+            class="h-4 email-icon"
+            src="@/assets/images/email.svg"
+            alt="Email"
+          />
           <p class="help__contact--card-p ml-3 font-medium">
             business@coinprofit.app
           </p>
@@ -159,7 +167,7 @@
       padding-top: 9rem;
     }
   }
-   @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1200px) {
     .help__section {
       padding-top: 15rem;
     }
@@ -353,9 +361,7 @@
   }
 
   @media only screen and (min-width: 90rem) {
-
     .help__section {
-     
       grid-column-gap: 0.375rem;
     }
   }
@@ -390,6 +396,10 @@
   }
   .help__contact--card-p {
     color: var(--help-contact-box-text);
+  }
+
+  .email-icon {
+    background: var(--help-email-icon);
   }
 
   @media (min-width: 1400px) {

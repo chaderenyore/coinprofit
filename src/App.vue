@@ -73,6 +73,7 @@
     --article-text: #525b6d;
     --social-button-container: #f2f8ff;
     --plyr-color-main: #3374ea;
+    --help-email-icon: #525b6d;
     /* --fifth-color: #000000; for paragraphs with black background */
   }
 
@@ -102,6 +103,7 @@
     --article-text: #b3bcce;
     --help-contact-box-text: #f2f8ff;
     --social-button-container: #202230;
+    --help-email-icon: transparent;
   }
   html {
     scroll-behavior: smooth;
