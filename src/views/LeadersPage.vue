@@ -87,6 +87,7 @@
               srcset=""
               class="app-download"
           /></a>
+           <p class="comingSoon font-bold md:font-semibold text-2xl" >coming soon...</p>
         </div>
       </div>
     </section>
@@ -257,6 +258,7 @@
             srcset=""
             class="app-download features"
         /></a>
+        <p class="comingSoon font-bold md:font-semibold text-2xl" >coming soon...</p>
       </div>
     </section>
 
@@ -498,7 +500,7 @@
                 <div class="mobile-leaders-box">
                   <div class="mobile-leaders-img-box">
                     <img
-                      src="@/assets/images/leaders/voski.jpeg"
+                      src="@/assets/images/leaders/voski.webp"
                       alt="leader Image"
                     />
                   </div>
@@ -641,7 +643,7 @@
 
         <div class="computer-leaders-box">
           <div class="computer-leaders-img-box">
-            <img src="@/assets/images/leaders/voski.jpeg" alt="IMAGE" />
+            <img src="@/assets/images/leaders/voski.webp" alt="IMAGE" />
           </div>
           <p>@Voski</p>
           <h3>Stephen Voski</h3>
@@ -919,6 +921,7 @@
             srcset=""
             class="leaderCTADownloadApp"
         /></a>
+        <p class="comingSoon font-bold md:font-semibold text-2xl" >coming soon...</p>
       </div>
     </div>
 
@@ -1156,6 +1159,10 @@ export default {
   display: block;
   width: 50%;
   margin: 1rem auto 0;
+}
+.comingSoon {
+  margin-top: 1rem;
+  text-align: center;
 }
 
 @media (min-width: 480px) {
@@ -2232,7 +2239,11 @@ export default {
   .app-download {
     display: inline-block;
     width: 10rem;
-    margin: 2rem 1rem;
+    margin: 2rem 1rem 0;
+  }
+  .comingSoon {
+    text-align: unset;
+    margin-left: 1rem;
   }
 
   .signal-packs {

@@ -29,13 +29,13 @@
       <img src="../assets/images/Asset-1.svg" alt="" class="background-svg" />
       <div class="blob-wrapper">
         <img
-          src="../assets/images/blob-mobil1.png"
+          src="../assets/images/blob-mobil1.webp"
           alt="A blob SVG acts as a background here"
           class="blob1"
         />
 
         <img
-          src="../assets/images/blob1.png"
+          src="../assets/images/blob1.webp"
           alt="A blob SVG acts as a background here"
           class="blob1-d"
         />
@@ -65,6 +65,7 @@
               srcset=""
               class="app-download"
           /></a>
+          <p class="comingSoon font-bold md:font-semibold text-2xl" >coming soon...</p>
         </div>
 
         <div class="main-appUI_wrapper">
@@ -269,7 +270,7 @@
       />
       <div class="blob-signal-wrapper slideIn">
         <img
-          src="../assets/images/blob-signal.png"
+          src="../assets/images/blob-signal.webp"
           alt="Blob Background for the Get Signal section"
           class="signal-blob"
         />
@@ -560,7 +561,7 @@
               <div class="swiper-slide">
                 <div class="testi-item">
                   <div class="testi-avatar">
-                    <img src="../assets/images/leaders/voski.jpeg" />
+                    <img src="../assets/images/leaders/voski.webp" />
                   </div>
 
                   <div class="testimonials-text">
@@ -622,6 +623,7 @@
         <a href="#" target="_blank" rel="noopener noreferrer"
           ><img src="../assets/images/goplay.svg" alt=""
         /></a>
+        <p class="comingSoon font-bold md:font-semibold text-2xl" >coming soon...</p>
       </div>
 
       <!-- End sliderjs framework -->
@@ -1037,6 +1039,7 @@
               class="exchange-download"
           /></a>
         </div>
+        <p class="comingSoon font-bold md:font-semibold text-2xl" >coming soon...</p>
       </div>
     </section>
 
@@ -1153,6 +1156,7 @@ This is at last the opportunity for the average person who's not interested in t
             srcset=""
             class="exchange-download"
         /></a>
+       <p class="comingSoon font-bold md:font-semibold text-2xl" >coming soon...</p>
       </div>
     </section>
 
@@ -1581,7 +1585,9 @@ export default {
   margin-right: auto;
   margin-top: 10px;
 }
-
+  .comingSoon {
+    margin-top: 1rem;
+  }
 .main-appUI_wrapper {
   position: relative;
 }
@@ -3656,10 +3662,11 @@ export default {
     width: 60%;
     font-size: 1rem;
     font-family: "Montserrat", sans-serif;
+    margin-top: 20px;
     margin-bottom: 0;
   }
   .app-downloads {
-    margin-top: 0;
+    margin-top: 2rem;
     margin-left: 0;
   }
   .app-download {
@@ -3668,7 +3675,6 @@ export default {
     margin: 0 auto;
     margin-right: 1rem;
   }
-
   .appui {
     position: absolute;
     top: -23rem;

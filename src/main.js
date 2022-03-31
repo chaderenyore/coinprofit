@@ -9,3 +9,6 @@ import BaseCallToAction from "@/components/BaseCallToAction.vue";
 app.component("BaseCallToAction", BaseCallToAction);
 
 app.use(router).use(prismic).mount("#app");
+
+
+
