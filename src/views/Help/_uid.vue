@@ -145,7 +145,6 @@
             year: "numeric",
           });
         } catch (error) {
-          console.log(error.message);
           this.loading = false;
           this.error = true;
           this.errorMessage = error.message;
@@ -187,7 +186,7 @@
 
   @media (min-width: 820px) {
     .article-main {
-      padding-top: 6.5rem;
+      padding-top: 10rem;
     }
   }
 

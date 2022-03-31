@@ -68,6 +68,15 @@ const routes = [
     },
   },
   {
+    path: "/help/tutorials/:uid",
+    component: () => import("../views/Tutorial/_uid.vue"),
+    name: "TutorialVideo",
+    meta: {
+      auth: true,
+      title: "Coinprofit - Tutorial",
+    },
+  },
+  {
     path: "/help/search",
     name: "help-search",
     component: () => import("../views/Help/_search.vue"),

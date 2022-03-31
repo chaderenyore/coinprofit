@@ -14,34 +14,27 @@
   </section>
   <ul v-if="helpvid" class="flex flex-col gap-6">
     <li v-for="video in helpvid.results" :key="video.uid">
-      <figure
-        @click="
-          playVideo(
-            video.data.video.url,
-            video.data.thumbnail.url,
-            video.data.name[0].text
-          )
-        "
-        class="video-list flex flex-row gap-3 items-center rounded-xl"
-      >
-        <div class="video-thumbnail h-20 md:h-28 w-24 rounded-xl">
-          <PrismicImage
-            :field="video.data.thumbnail"
-            class="thumbnial-image w-[100%] h-[100%] rounded-xl"
-          />
-          <div class="play-video">
-            <img src="@/assets/images/play-video.svg" alt="" />
+      <prismic-link :field="video">
+        <figure class="video-list flex flex-row gap-3 items-center rounded-xl">
+          <div class="video-thumbnail h-20 md:h-28 w-24 rounded-xl">
+            <PrismicImage
+              :field="video.data.thumbnail"
+              class="thumbnial-image w-[100%] rounded-xl"
+            />
+            <div class="play-video">
+              <img src="@/assets/images/play-video.svg" alt="" />
+            </div>
           </div>
-        </div>
-        <figcaption class="ml-3 flex flex-col">
-          <h1 class="text-sm md:text-xl font-bold text-[#3374EA] mb-3">
-            {{ $prismic.asText(video.data.name) }}
-          </h1>
-          <p class="text-base md:text-lg text-[#8993a7]">
-            {{ $prismic.asText(video.data.duration) }}
-          </p>
-        </figcaption>
-      </figure>
+          <figcaption class="ml-3 flex flex-col">
+            <h1 class="text-sm md:text-xl font-bold text-[#3374EA] mb-3">
+              {{ $prismic.asText(video.data.name) }}
+            </h1>
+            <p class="text-base md:text-lg text-[#8993a7]">
+              {{ $prismic.asText(video.data.duration) }}
+            </p>
+          </figcaption>
+        </figure>
+      </prismic-link>
     </li>
   </ul>
   <div class="pagination text-center mt-14">
@@ -49,31 +42,13 @@
       <p class="text-[#3374ea] text-base font-semibold">Load More</p>
     </button>
   </div>
-  <teleport to="body">
-    <video-player
-      :src="videoSrc"
-      :thumbnail="videoThumbnail"
-      :videoName="videoName"
-      v-if="videoIsPlaying"
-      @close-player="closePlayer"
-    ></video-player>
-  </teleport>
 </template>
 
 <script>
-  import VideoPlayer from "./VideoPlayer.vue";
   export default {
-    components: {
-      VideoPlayer,
-    },
-
     data() {
       return {
         helpvid: "",
-        videoIsPlaying: false,
-        videoSrc: null,
-        videoThumbnail: null,
-        videoName: null,
         pageSize: 8,
         showLoadMore: true,
       };
@@ -89,18 +64,6 @@
       loadMore() {
         this.pageSize *= 2;
         this.getData();
-      },
-
-      playVideo(src, thumbnail, name) {
-        this.videoIsPlaying = true;
-        this.videoSrc = src;
-        this.videoThumbnail = thumbnail;
-        this.videoName = name;
-      },
-
-      closePlayer() {
-        this.videoIsPlaying = false;
-        this.videoSrc = null;
       },
     },
 
@@ -162,6 +125,7 @@
     z-index: -1;
     display: block;
     opacity: 0.2;
+    height: 4.6875rem;
   }
 
   .pagination-button {
