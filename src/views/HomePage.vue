@@ -947,7 +947,7 @@
             <p>FTX</p>
           </div>
         </div>
-        <div class="exchange-box-wrapper">
+        <!-- <div class="exchange-box-wrapper">
           <div class="exchange-box">
             <img
               src="../assets/images/gateio.svg"
@@ -1016,7 +1016,7 @@
             />
             <p>ethereum</p>
           </div>
-        </div>
+        </div> -->
         <p class="get-details">
           Get the app now on the Google Play Store or the App Store
         </p>
@@ -2498,17 +2498,19 @@ export default {
 .exchange-box {
   margin-left: 15px;
   width: 101px;
+  height: 125px;
   background: var(--third-color) 0% 0% no-repeat padding-box;
   box-shadow: 0px 3px 6px #00000008;
   border-radius: 20px;
   opacity: 1;
+  vertical-align: middle;
 }
 
 .exchange-logo {
-  margin-top: -12px;
-  margin-left: 6px;
+  /* margin-top: 12px; */
+  /* margin-left: 6px; */
   width: 60px;
-  height: 120px;
+  height: 90px;
 }
 .exchange-logo.min {
   width: 110px;
@@ -2516,8 +2518,7 @@ export default {
 }
 
 .exchange-box p {
-  display: none;
-  padding-top: 3px;
+  /* display: none; */
   color: var(--fourth-color);
   text-align: center;
   font-size: 14px;
@@ -3609,7 +3610,7 @@ export default {
   .blob1-d {
     object-fit: cover;
     top: -13rem;
-    left: 50%;
+    left: 52%;
     height: 1200.33px;
     width: 62rem;
     transform: translateY(27px);
@@ -3620,6 +3621,11 @@ export default {
     .blob1-d {
       top: -13rem;
       left: 53%;
+    }
+  }
+    @media (min-width: 1440px) {
+    .blob1-d  {
+      left: 54%;
     }
   }
 
@@ -3672,7 +3678,7 @@ export default {
   @media (min-width: 1440px) {
     .appui {
       width: 86%;
-      margin-left: 43%;
+      margin-left: 48%;
     }
   }
   .review-section {

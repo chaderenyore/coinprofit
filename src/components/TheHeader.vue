@@ -215,11 +215,10 @@ nav ul li a {
 
 /* Dropdown button */
 .navDropDown .navdropBTN {
-  font-size: 16px;
   border: none;
   outline: none;
   margin: 0;
-  background-color: transparent;
+  background: transparent;
   color: var(--fourth-color);
 }
 
@@ -227,11 +226,11 @@ nav ul li a {
 .dropdown-content {
   display: none;
   position: absolute;
-  /* background-color: #f9f9f9; */
-  color: #13141c;
+  background-color: var(--dropdown-content);
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
+  margin-top: 3px;
 }
 
 
