@@ -1,5 +1,5 @@
 <template>
-  <main v-if="blogpost">
+  <main v-if="blogpost" class="w-[85%] md:w-[80%] m-auto">
     <h1
       class="text-xl md:text-2xl text-[#3374EA] font-bold text-center mb-[6rem]"
     >
