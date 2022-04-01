@@ -74,7 +74,6 @@
     --social-button-container: #f2f8ff;
     --plyr-color-main: #3374ea;
     --help-email-icon: #525b6d;
-    /* --fifth-color: #000000; for paragraphs with black background */
   }
 
   .dark-theme {
@@ -115,9 +114,7 @@
   ::-webkit-scrollbar {
     width: 15px;
   }
-  ::-webkit-scrollbar-track {
-    border: 2px solid #95c8d1;
-  }
+
   ::-webkit-scrollbar-thumb {
     border-radius: 30px;
     background-color: #3374ea;

@@ -31,10 +31,10 @@
           </li>
           <li class="nav-item">
             <div class="navDropDown">
-              <button class="navdropBTN">
+              <a class="navdropBTN">
                 Company
                 <i class="fa fa-caret-down"></i>
-              </button>
+              </a>
               <div class="dropdown-content">
                 <router-link to="/about">About</router-link>
                 <router-link to="/help">Blog</router-link>
@@ -109,6 +109,7 @@
         const navMenu = document.querySelector(".nav-menu");
         const navLink = document.querySelectorAll(".nav-link");
         const backdrop = document.querySelector(".backdrop");
+
         hamburger.addEventListener("click", mobileMenu);
         navLink.forEach((n) => n.addEventListener("click", this.closeMenu));
         function mobileMenu() {
@@ -139,7 +140,6 @@
 
 <style scoped>
   header {
-    font-family: sans-serif;
     width: 100%;
     margin: 0 auto;
     z-index: 1000;
@@ -159,7 +159,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    transition: height 0.5s ease;
+    transition: padding 0.5s ease;
   }
   .toggle-moon {
     width: 70px;
@@ -187,16 +187,10 @@
     color: var(--fourth-color);
     font-size: 14px;
     position: relative;
+    transition:  font-size 0.5s ease;
   }
-  /* The dropdown container */
-  /* Dropdown button */
-  .navDropDown .navdropBTN {
-    border: none;
-    outline: none;
-    margin: 0;
-    background: transparent;
-    color: var(--fourth-color);
-  }
+  
+
   /* Dropdown content (hidden by default) */
   .dropdown-content {
     display: none;
@@ -205,7 +199,6 @@
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
-    /* margin-top: 3px; */
   }
   /* Links inside the dropdown */
   .dropdown-content a {
@@ -220,6 +213,7 @@
   .navDropDown:hover .dropdown-content {
     display: block;
   }
+
   nav ul li a::after {
     content: "";
     width: 100%;
@@ -267,33 +261,34 @@
   .bar:nth-child(2) {
     margin-left: 20px;
   }
+
   /*Apply styles after scroll*/
   .navscroll-active {
     background-color: var(--navScroll-light);
     box-shadow: 0 3px 1rem var(--navShadow);
   }
-  .navbar {
-    padding: 10px 0;
+
+  .navscroll-active .navbar {
+    padding: 4px 0;
   }
+
+
+
   .navscroll-active nav ul li a {
     color: var(--navScrollp);
+    font-size: 15px;
   }
   .navscroll-active .actn button {
     background-color: #3374ea;
     color: #fff;
   }
+
   /*Apply styles after scroll end*/
+
+  
   /* on ipad pro screen */
   @media only screen and (max-width: 1024px) {
-    ::-webkit-scrollbar {
-      display: none;
-    }
-    ::-webkit-scrollbar-track {
-      display: none;
-    }
-    ::-webkit-scrollbar-thumb {
-      display: none;
-    }
+
     .scrollTop {
       position: fixed;
       bottom: 400px;
@@ -333,28 +328,14 @@
       top: 0;
       width: 20%;
     }
+    .navscroll-active .navbar{
+      padding: 10px 0;
+    }
   }
   /* on ipad screen */
   @media only screen and (max-width: 768px) {
-    .scrollTop {
-      position: fixed;
-      bottom: 400px;
-      right: 30px;
-      z-index: 10;
-      /* background: #ffa94f url("../images/rocket.png"); */
-      width: 40px;
-      height: 40px;
-      cursor: pointer;
-      padding: 25px;
-      border-radius: 50%;
-      background-size: 40px;
-      background-repeat: no-repeat;
-      background-position: center;
-      visibility: hidden;
-      opacity: 0;
-      transition: 0.3s;
-      /* display: none; */
-    }
+
+
     .backdrop.active {
       width: 100vw;
       height: 94vh;
@@ -370,7 +351,7 @@
     .navbar {
       padding-top: 1rem;
       width: 100%;
-      padding: 35px 30px;
+      padding: 30px 30px;
       background-color: var(--nav-light);
       border-bottom-left-radius: 15px;
       border-bottom-right-radius: 15px;
@@ -380,7 +361,7 @@
         rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
     }
     .logo {
-      /* height: 90px; */
+
       width: 25%;
       object-fit: cover;
       position: absolute;
@@ -401,7 +382,6 @@
       z-index: 2;
       width: 100%;
       height: 100vh;
-      /* border-radius: 10px; */
       text-align: left;
       transition: 0.5s;
       box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
@@ -410,7 +390,6 @@
       left: 0;
     }
     nav ul li a {
-      color: var(--fourth-color);
       font-size: 26px;
     }
     nav ul li {
@@ -419,6 +398,9 @@
     }
     .dropdown-content {
       position: relative;
+    }
+     .navscroll-active .navbar{
+      padding: 30px 0;
     }
     nav ul li.actn {
       margin-left: 259px !important;
@@ -451,34 +433,7 @@
   }
   /* On Mobile Screens */
   @media only screen and (max-width: 440px) {
-    ::-webkit-scrollbar {
-      display: none;
-    }
-    ::-webkit-scrollbar-track {
-      display: none;
-    }
-    ::-webkit-scrollbar-thumb {
-      display: none;
-    }
-    .scrollTop {
-      position: fixed;
-      bottom: 400px;
-      right: 30px;
-      z-index: 10;
-      /* background: #ffa94f url("../images/rocket.png"); */
-      width: 40px;
-      height: 40px;
-      cursor: pointer;
-      padding: 25px;
-      border-radius: 50%;
-      background-size: 40px;
-      background-repeat: no-repeat;
-      background-position: center;
-      visibility: hidden;
-      opacity: 0;
-      transition: 0.3s;
-      /* display: none; */
-    }
+
     .backdrop.active {
       width: 100vw;
       height: 100vh;
@@ -536,12 +491,11 @@
       margin: 2.5rem 30px;
     }
     nav ul li a {
-      color: var(--fourth-color);
       font-size: 16px;
     }
-    .navDropDown .navdropBTN {
-      background: transparent;
-      font-size: 16px;
+
+     .navscroll-active .navbar{
+       padding: 20px 30px;
     }
     nav ul li.actn {
       margin-left: 30px !important;
@@ -553,21 +507,6 @@
       color: #fff;
       font-weight: bold;
     }
-    .hamburger {
-      display: block;
-      cursor: pointer;
-      background: none;
-    }
-    .hamburger.active .bar:nth-child(2) {
-      opacity: 0;
-    }
-    .hamburger.active .bar:nth-child(1) {
-      -webkit-transform: translateY(8px) rotate(45deg);
-      transform: translateY(8px) rotate(45deg);
-    }
-    .hamburger.active .bar:nth-child(3) {
-      -webkit-transform: translateY(-8px) rotate(-45deg);
-      transform: translateY(-8px) rotate(-45deg);
-    }
+    
   }
 </style>
