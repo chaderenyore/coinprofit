@@ -13,4 +13,3 @@ app.component("BaseCallToAction", BaseCallToAction);
 app.component("ArticleCard", ArticleCard);
 
 app.use(router).use(prismic).use(VuePlyr).mount("#app");
-

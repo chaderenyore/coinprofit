@@ -276,7 +276,11 @@
         />
       </div>
 
+<<<<<<< HEAD
       <div class="signal-packs one">
+=======
+      <div class="signal-packs">
+>>>>>>> main
           <img src="../assets/images/customer.webp" alt="" class="pack-img" />
       </div>
 
@@ -1762,12 +1766,16 @@ export default {
 .signal-packs{
   position: absolute;
   top: 25%;
+<<<<<<< HEAD
   left: 65%;
 }
 .signal-packs.one {
   position: absolute;
   top: 25%;
   left: 66%;
+=======
+  left: 55%;
+>>>>>>> main
 }
 .signal-packs.two {
   top: 43%;
@@ -1792,7 +1800,12 @@ export default {
   }
 }
 .pack-img {
+<<<<<<< HEAD
   width: 100%;
+=======
+  width: 80%;
+  margin-left: 10%;
+>>>>>>> main
 
 }
 
