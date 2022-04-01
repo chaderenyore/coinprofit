@@ -290,7 +290,7 @@
 
       <div class="signal-planner-wrapper">
         <img
-          src="../assets/images/planner-signal.png"
+          src="../assets/images/planner-signal.webp"
           alt=""
           class="signal-planner"
         />
@@ -355,7 +355,7 @@
               <div class="swiper-slide">
                 <div class="testi-item">
                   <div class="testi-avatar">
-                    <img src="../assets/images/leaders/emmanuel.png" />
+                    <img src="../assets/images/leaders/emmanuel.webp" />
                   </div>
                   <!-- <div class="leader-level">
                     <img src="../assets/images/leader-level.svg" />
@@ -3822,8 +3822,8 @@ export default {
   }
   .signal-packs.two {
     position: absolute;
-    top: 35%;
-    left: 70%;
+    top: 37%;
+    left: 73%;
 
   }
 

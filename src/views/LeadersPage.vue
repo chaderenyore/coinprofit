@@ -284,7 +284,7 @@
                 <div class="mobile-leaders-box">
                   <div class="mobile-leaders-img-box">
                     <img
-                      src="@/assets/images/leaders/emmanuel.png"
+                      src="@/assets/images/leaders/emmanuel.webp"
                       alt="Leader Image"
                     />
                   </div>
@@ -603,7 +603,7 @@
       <div class="computer-leaders-box-wrapper">
         <div class="computer-leaders-box">
           <div class="computer-leaders-img-box">
-            <img src="@/assets/images/leaders/emmanuel.png" alt="IMAGE" />
+            <img src="@/assets/images/leaders/emmanuel.webp" alt="IMAGE" />
           </div>
 
           <!-- <div class="leader-lv">
