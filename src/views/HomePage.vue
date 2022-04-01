@@ -1,836 +1,1129 @@
 <template>
-  <!-- The icons are set to absolute positioning... -->
-
-  <img
-    src="../assets/images/listtle-Icons/1.svg"
-    alt="little Icon"
-    class="littleicon1"
-  />
-  <img
-    src="../assets/images/listtle-Icons/2.svg"
-    alt="little Icon"
-    class="littleicon2"
-  />
-  <img
-    src="../assets/images/listtle-Icons/3.svg"
-    alt="little Icon"
-    class="littleicon3"
-  />
-  <img
-    src="../assets/images/listtle-Icons/4.svg"
-    alt="little Icon"
-    class="littleicon4"
-  />
-
-  <!-- End Icons -->
-  <!-- SOME OF THE IMAGES CHANGES ON DIFFRENT SCREEN SIZES AND ON HOVER -->
-  <section class="first-page" ref="mainpage">
-    <img src="../assets/images/Asset-1.svg" alt="" class="background-svg" />
-    <div class="blob-wrapper">
-      <img
-        src="../assets/images/blob-mobil1.png"
-        alt="A blob SVG acts as a background here"
-        class="blob1"
-      />
+  <div class="mainContainer">
+    <!-- SOME OF THE IMAGES CHANGES ON DIFFRENT SCREEN SIZES AND ON HOVER -->
+    <section class="first-page" ref="mainpage">
+      <!-- The icons are set to absolute positioning... -->
 
       <img
-        src="../assets/images/blob1.png"
-        alt="A blob SVG acts as a background here"
-        class="blob1-d"
+        src="../assets/images/listtle-Icons/1.svg"
+        alt="little Icon"
+        class="littleicon1"
       />
-    </div>
-    <div class="about">
-      <h1>Designed To Help You Make Money</h1>
-
-      <div class="slideshow-container">
-        <div class="mySlides fade">
-          <p>
-            Automatically track your entire portfolio across multiple exchanges
-          </p>
-        </div>
-
-        <div class="mySlides fade">
-          <p>Create your own trading plans and record your own trade lessons</p>
-        </div>
-
-        <div class="mySlides fade">
-          <p>
-            <b>Copy the best traders.</b> See the coins they buy, when they sell
-          </p>
-        </div>
-        <div class="mySlides fade">
-          <p>Get signal from all leaders</p>
-        </div>
-      </div>
-      <br />
-
-      <div class="dot-wrapper">
-        <span class="dot active"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-      </div>
-      <div class="app-downloads">
-        <a href="#" target="_blank" rel="noopener noreferrer"
-          ><img
-            src="../assets/images/appstore.svg"
-            alt=""
-            srcset=""
-            class="app-download"
-        /></a>
-        <!-- <img src="./assets/images/gplayblue.png" alt="" srcset="" class="app-download"> -->
-        <a href="#" target="_blank" rel="noopener noreferrer"
-          ><img
-            src="../assets/images/goplay.svg"
-            alt=""
-            srcset=""
-            class="app-download"
-        /></a>
-      </div>
-
-      <img src="../assets/images/appUI.svg" alt="" class="appui" />
-    </div>
-  </section>
-
-  <section class="review-section">
-    <h1 class="fadeIn-scroll">
-      Discover What Top Crypto Experts Are Saying about the CoinProfit App
-    </h1>
-    <div class="review-box">
-      <div class="box">
-        <div class="box-img">
-          <img
-            src="../assets/images/review3.jpeg"
-            alt="IMAGE"
-            class="review-img"
-          />
-        </div>
-        <div class="star">
-          <i
-            class="fa fa-star"
-            aria-hidden="true"
-            style="color: #fccf3b; font-size: 27px"
-          ></i>
-          <i
-            class="fa fa-star"
-            aria-hidden="true"
-            style="color: #fccf3b; font-size: 27px"
-          ></i>
-          <i
-            class="fa fa-star"
-            aria-hidden="true"
-            style="color: #fccf3b; font-size: 27px"
-          ></i>
-          <i
-            class="fa fa-star"
-            aria-hidden="true"
-            style="color: #fccf3b; font-size: 27px"
-          ></i>
-          <i
-            class="fa fa-star"
-            aria-hidden="true"
-            style="color: #fccf3b; font-size: 27px"
-          ></i>
-        </div>
-
-        <h3 class="fadeIn-scroll">Emmanuel Ohworeko</h3>
-        <p class="fadeIn-scroll">CEO and Founder of CoinProfit</p>
-        <div class="reviews">
-          <p class="fadeIn-scroll">
-            I started to use Coinprofit app a few months ago and I love it so
-            much, this app already generated me ton of real money
-          </p>
-        </div>
-      </div>
-      <div class="box">
-        <div class="box-img">
-          <img
-            src="../assets/images/review2.jpg"
-            alt="IMAGE"
-            class="review-img"
-          />
-        </div>
-        <div class="star">
-          <i
-            class="fa fa-star"
-            aria-hidden="true"
-            style="color: #fccf3b; font-size: 27px"
-          ></i>
-          <i
-            class="fa fa-star"
-            aria-hidden="true"
-            style="color: #fccf3b; font-size: 27px"
-          ></i>
-          <i
-            class="fa fa-star"
-            aria-hidden="true"
-            style="color: #fccf3b; font-size: 27px"
-          ></i>
-          <i
-            class="fa fa-star"
-            aria-hidden="true"
-            style="color: #fccf3b; font-size: 27px"
-          ></i>
-          <i
-            class="fa fa-star"
-            aria-hidden="true"
-            style="color: #fccf3b; font-size: 27px"
-          ></i>
-        </div>
-
-        <h3 class="fadeIn-scroll">Emmanuel Ohworeko</h3>
-        <p class="fadeIn-scroll">CEO and Founder of CoinProfit</p>
-        <div class="reviews">
-          <p class="fadeIn-scroll">
-            I could not believe how good the app is! I earned like 3k in first
-            two months! Definitely recommend to give it a try.
-          </p>
-        </div>
-      </div>
-      <div class="box three">
-        <div class="box-img">
-          <img
-            src="../assets/images/review3.jpeg"
-            alt="Third Image"
-            class="review-img"
-          />
-        </div>
-        <div class="star">
-          <i
-            class="fa fa-star"
-            aria-hidden="true"
-            style="color: #fccf3b; font-size: 27px"
-          ></i>
-          <i
-            class="fa fa-star"
-            aria-hidden="true"
-            style="color: #fccf3b; font-size: 27px"
-          ></i>
-          <i
-            class="fa fa-star"
-            aria-hidden="true"
-            style="color: #fccf3b; font-size: 27px"
-          ></i>
-          <i
-            class="fa fa-star"
-            aria-hidden="true"
-            style="color: #fccf3b; font-size: 27px"
-          ></i>
-          <i
-            class="fa fa-star"
-            aria-hidden="true"
-            style="color: #fccf3b; font-size: 27px"
-          ></i>
-        </div>
-
-        <h3 class="fadeIn-scroll">Emmanuel Ohworeko</h3>
-        <p class="fadeIn-scroll">CEO and Founder of CoinProfit</p>
-        <div class="reviews">
-          <p class="fadeIn-scroll">
-            I'm using this app every day as you are using Instagram, but
-            Coinprofit helps me also to earn money!
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- End Review Section-->
-
-  <section class="app-features">
-    <div class="copy-traders">
-      <h1>Copy The Best Traders</h1>
-
       <img
-        src="../assets/images/app-feature1.svg"
-        alt="App Feature 1"
-        class="copy-img"
+        src="../assets/images/listtle-Icons/2.svg"
+        alt="little Icon"
+        class="littleicon2"
+      />
+      <img
+        src="../assets/images/listtle-Icons/3.svg"
+        alt="little Icon"
+        class="littleicon3"
+      />
+      <img
+        src="../assets/images/listtle-Icons/4.svg"
+        alt="little Icon"
+        class="littleicon4"
       />
 
-      <p class="slideIn">
-        Crypto trading and investment takes time to learn and master. It can be
-        difficult for new traders to make a profit. <br />
+      <!-- End Icons -->
+      <img src="../assets/images/Asset-1.svg" alt="" class="background-svg" />
+      <div class="blob-wrapper">
+        <img
+          src="../assets/images/blob-mobil1.webp"
+          alt="A blob SVG acts as a background here"
+          class="blob1"
+        />
+
+        <img
+          src="../assets/images/blob1.webp"
+          alt="A blob SVG acts as a background here"
+          class="blob1-d"
+        />
+      </div>
+      <div class="about">
+        <h1>Subscribe to your favourite crypto influencers/leaders</h1>
+
+        <div class="slideshow-container">
+          <div class="mySlides">
+            <p>See the coins they buy, when they buy and when they sell!</p>
+          </div>
+        </div>
         <br />
-        Skip the steep learning curve and start earning by following the
-        footsteps of leading crypto traders. See what they buy, when they buy,
-        and when they sell.
-      </p>
-    </div>
+        <div class="app-downloads">
+          <a href="#" target="_blank" rel="noopener noreferrer"
+            ><img
+              src="../assets/images/appstore.svg"
+              alt=""
+              srcset=""
+              class="app-download"
+          /></a>
+          <!-- <img src="./assets/images/gplayblue.png" alt="" srcset="" class="app-download"> -->
+          <a href="#" target="_blank" rel="noopener noreferrer"
+            ><img
+              src="../assets/images/goplay.svg"
+              alt=""
+              srcset=""
+              class="app-download"
+          /></a>
+          <p class="comingSoon font-bold md:font-semibold text-2xl" >coming soon...</p>
+        </div>
 
-    <div class="see-leaders">
-      <h1 class="slideIn">See Your Leader's Transactions In Real-Time</h1>
-
-      <img
-        src="../assets/images/see-leaders.svg"
-        alt="App Planner"
-        class="copy-img"
-      />
-
-      <p class="slideIn">
-        With CoinProfit, you can record your lessons, so you can continue
-        learning anytime, anywhere. We make learning incredibly easy for you, so
-        you can win in the crypto space.
-      </p>
-    </div>
-  </section>
-  <section class="get-signal">
-    <h1>Get Signals From All Your Leaders In One Place</h1>
-    <div class="blob-signal-wrapper slideIn">
-      <img
-        src="../assets/images/blob-signal.png"
-        alt="Blob Background for the Get Signal section"
-        class="signal-blob"
-      />
-    </div>
-
-    <div class="signal-packs">
-      <div class="pack-img-wrapper">
-        <img src="../assets/images/customer.svg" alt="" class="pack-img" />
+        <div class="main-appUI_wrapper">
+          <img src="../assets/images/appUI.svg" alt="" class="appui lazy-img" />
+        </div>
       </div>
-      <p>My Followers</p>
-      <h5>4290</h5>
-    </div>
-    <div class="signal-packs two">
-      <div class="pack-img-wrapper">
-        <img src="../assets/images/verified-user.svg" alt="" class="pack-img" />
+    </section>
+
+    <section class="review-section">
+      <h1>
+        Discover What Top Crypto Experts Are Saying about the CoinProfit App
+      </h1>
+      <div class="review-box">
+        <div class="box">
+          <div class="box-img">
+            <img
+              src="../assets/images/chris.jpeg"
+              alt="IMAGE"
+              class="review-img lazy-img"
+            />
+          </div>
+          <div class="star">
+            <i
+              class="fa fa-star"
+              aria-hidden="true"
+              style="color: #fccf3b; font-size: 27px"
+            ></i>
+            <i
+              class="fa fa-star"
+              aria-hidden="true"
+              style="color: #fccf3b; font-size: 27px"
+            ></i>
+            <i
+              class="fa fa-star"
+              aria-hidden="true"
+              style="color: #fccf3b; font-size: 27px"
+            ></i>
+            <i
+              class="fa fa-star"
+              aria-hidden="true"
+              style="color: #fccf3b; font-size: 27px"
+            ></i>
+            <i
+              class="fa fa-star"
+              aria-hidden="true"
+              style="color: #fccf3b; font-size: 27px"
+            ></i>
+          </div>
+
+          <h3 class="fadeIn-scroll">Chris Ani</h3>
+          <p class="fadeIn-scroll">CEO And Founder: DABA.School</p>
+          <div class="reviews">
+            <p class="fadeIn-scroll">
+              This is first of a kind product that will change the face of
+              crypto social trading. Don't bet against this!
+            </p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-img">
+            <img
+              src="../assets/images/tola.jpeg"
+              alt="IMAGE"
+              class="review-img lazy-img"
+            />
+          </div>
+          <div class="star">
+            <i
+              class="fa fa-star"
+              aria-hidden="true"
+              style="color: #fccf3b; font-size: 27px"
+            ></i>
+            <i
+              class="fa fa-star"
+              aria-hidden="true"
+              style="color: #fccf3b; font-size: 27px"
+            ></i>
+            <i
+              class="fa fa-star"
+              aria-hidden="true"
+              style="color: #fccf3b; font-size: 27px"
+            ></i>
+            <i
+              class="fa fa-star"
+              aria-hidden="true"
+              style="color: #fccf3b; font-size: 27px"
+            ></i>
+            <i
+              class="fa fa-star"
+              aria-hidden="true"
+              style="color: #fccf3b; font-size: 27px"
+            ></i>
+          </div>
+
+          <h3>Tola Joseph Fadugbagbe</h3>
+          <p>Founder: Crypto Masterclass</p>
+          <div class="reviews">
+            <p>CoinProfit App is a laudable development. Kudos!</p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="box-img">
+            <img
+              src="../assets/images/Frank.jpeg"
+              alt="Third Image"
+              class="review-img lazy-img"
+            />
+          </div>
+          <div class="star">
+            <i
+              class="fa fa-star"
+              aria-hidden="true"
+              style="color: #fccf3b; font-size: 27px"
+            ></i>
+            <i
+              class="fa fa-star"
+              aria-hidden="true"
+              style="color: #fccf3b; font-size: 27px"
+            ></i>
+            <i
+              class="fa fa-star"
+              aria-hidden="true"
+              style="color: #fccf3b; font-size: 27px"
+            ></i>
+            <i
+              class="fa fa-star"
+              aria-hidden="true"
+              style="color: #fccf3b; font-size: 27px"
+            ></i>
+            <i
+              class="fa fa-star"
+              aria-hidden="true"
+              style="color: #fccf3b; font-size: 27px"
+            ></i>
+          </div>
+
+          <h3 class="fadeIn-scroll">Frank Nii Okanta Ankrah</h3>
+          <p class="fadeIn-scroll">Founder: NiiOkanta Services LLC</p>
+          <div class="reviews">
+            <p class="fadeIn-scroll">
+              I&prime;m Super Proud of the creators of the CoinProfit App.
+              I&prime;m Very impressed with this creativity. a huge GAMECHANGER!
+            </p>
+          </div>
+          <img
+            src="../assets/images/listtle-Icons/5.svg"
+            alt="little Icon"
+            class="littleicon5"
+          />
+        </div>
       </div>
-      <p>My Subscribers</p>
-      <h5>2 021</h5>
-    </div>
-    <div class="signal-packs three">
-      <div class="pack-img-wrapper">
-        <img src="../assets/images/money.svg" alt="" class="pack-img" />
-      </div>
-      <p>Subscribers Earnings</p>
-      <h5>$ 10 902</h5>
-    </div>
+    </section>
+    <!-- End Review Section-->
 
-    <div class="signal-planner-wrapper">
-      <img
-        src="../assets/images/planner-signal.png"
-        alt=""
-        class="signal-planner"
-      />
-    </div>
+    <section class="app-features">
+      <div class="copy-traders">
+        <h1>Copy The Best Traders</h1>
 
-    <div class="main-signal-wrapper">
-      <img src="../assets/images/main-si.svg" alt="" class="main-signal-img" />
-    </div>
+        <img
+          src="../assets/images/app-feature1.webp"
+          alt="App Feature 1"
+          class="copy-img"
+        />
 
-    <p class="signal-details">
-      Get signals from the leading traders all in one place. Discover and rate
-      their signal quality. Share whether or not you’ve been able to profit from
-      the signal.
-    </p>
-  </section>
+        <p class="slideIn">
+          Don’t waste your money buying courses you won’t watch or joining
+          countless Whatsapp groups, Facebook groups or Telegram channels
+          looking for signals.
 
-  <section class="meet-leaders">
-    <div class="custom-shape-divider-top-1644369928">
-      <svg
-        data-name="Layer 1"
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 1200 120"
-        preserveAspectRatio="none"
-      >
-        <path
-          d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
-          class="shape-fill"
-        ></path>
-      </svg>
-    </div>
-
-    <div class="container">
-      <div class="section-title">
-        <h2>Meet Some Leaders On Coinprofit App</h2>
-        <span class="section-separator"></span>
-        <p>
-          If you’re an expert, you can sign up as a leader and start making
-          money sharing your crypto know-how.
+          <br />
+          <br />
+          Simply subscribe to your favorite crypto influencer/leader on the
+          CoinProfit App. See the coins your leader is buying, when he buys and
+          when he sells. You can simply copy him.
+          <b>As your leader makes money, you make money too!</b>
         </p>
       </div>
-    </div>
-    <!-- This is a sliderjs framework.  -->
 
-    <div class="testimonials-carousel-wrap">
-      <div class="listing-carousel-button listing-carousel-button-next">
-        <i class="fa fa-caret-right" style="color: #fff"></i>
+      <div class="see-leaders">
+        <h1>See Your Leader's Transactions In Real-Time</h1>
+
+        <img
+          src="../assets/images/see-leaders.webp"
+          alt="App Planner"
+          class="copy-img"
+        />
+
+        <p>
+          Don’t let anyone dump on you. Even if your leader has a limit order
+          that is yet to be filled, you’ll see it right inside the CoinProfit
+          App so you can enter the market when your leader is entering, and exit
+          when he’s exiting. He makes a profit? You make a profit too!
+        </p>
       </div>
-      <div class="listing-carousel-button listing-carousel-button-prev">
-        <i class="fa fa-caret-left" style="color: #fff"></i>
+    </section>
+    <section class="get-signal">
+      <h1>Get Signals From All Your Leaders In One Place</h1>
+      <img
+        src="../assets/images/listtle-Icons/dollarontop.svg"
+        alt="little Icon"
+        class="iconuntop"
+      />
+      <div class="blob-signal-wrapper slideIn">
+        <img
+          src="../assets/images/blob-signal.webp"
+          alt="Blob Background for the Get Signal section"
+          class="signal-blob"
+        />
       </div>
-      <div class="testimonials-carousel">
-        <div class="swiper-container">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="testi-item">
-                <div class="testi-avatar">
-                  <img src="../assets/images/review3.jpeg" />
-                </div>
-                <div class="leader-level">
-                  <img src="../assets/images/leader-level.svg" />
-                </div>
-                <div class="testimonials-text">
-                  <div class="testimonials-avatar">
-                    <h3>Emmanuel Ohworeko</h3>
-                  </div>
-                  <p class="username">@lordemma</p>
-                  <p>10x his portfolio in 3 months, that's incredible!</p>
-                </div>
-              </div>
-              <div class="signal-img-wrapper">
-                <img src="../assets/images/signal-st.png" alt="" srcset="" />
-              </div>
-            </div>
 
-            <!--second--->
-            <div class="swiper-slide">
-              <div class="testi-item">
-                <div class="testi-avatar">
-                  <img src="../assets/images/review3.jpeg" />
-                </div>
-                <div class="leader-level">
-                  <img src="../assets/images/leader-level1.svg" />
-                </div>
-                <div class="testimonials-text">
-                  <div class="testimonials-avatar">
-                    <h3>Chris Ani</h3>
-                  </div>
-                  <p class="username">@anichris</p>
-                  <p>to running and hedge fund worth Millions of dollars</p>
-                </div>
-              </div>
-              <div class="signal-img-wrapper">
-                <img src="../assets/images/signal-st.png" alt="" srcset="" />
-              </div>
-            </div>
-            <!--third-->
+      <div class="signal-packs">
+          <img src="../assets/images/customer.webp" alt="" class="pack-img" />
+      </div>
 
-            <div class="swiper-slide">
-              <div class="testi-item">
-                <div class="testi-avatar">
-                  <img src="../assets/images/review2.jpg" />
-                </div>
-                <div class="leader-level">
-                  <img src="../assets/images/leader-level1.svg" />
-                </div>
-                <div class="testimonials-text">
-                  <div class="testimonials-avatar">
-                    <h3>Jahfegor Ohworeko</h3>
-                  </div>
-                  <p class="username">@jfegor</p>
-                  <p>
-                    2x her portfolio in 1 month, she was new to crypto world
-                  </p>
-                </div>
-              </div>
-              <div class="signal-img-wrapper">
-                <img src="../assets/images/signal-st.png" alt="" srcset="" />
-              </div>
-            </div>
+      <div class="signal-packs two">
+        <img src="../assets/images/verified-user.webp" alt="" class="pack-img" />
+      </div>
 
-            <!--fourth-->
-            <div class="swiper-slide">
-              <div class="testi-item">
-                <div class="testi-avatar">
-                  <img src="../assets/images/review1.jpg" />
-                </div>
-                <div class="leader-level">
-                  <img src="../assets/images/leader-level.svg" />
-                </div>
-                <div class="testimonials-text">
-                  <div class="testimonials-avatar">
-                    <h3>Iroro chadere</h3>
+      <div class="signal-packs three">
+        <img src="../assets/images/money.webp" alt="" class="pack-img" />
+      </div>
+
+      <div class="signal-planner-wrapper">
+        <img
+          src="../assets/images/planner-signal.webp"
+          alt=""
+          class="signal-planner"
+        />
+      </div>
+
+      <div class="main-signal-wrapper">
+        <img
+          src="../assets/images/main-si.webp"
+          alt=""
+          class="main-signal-img"
+        />
+      </div>
+      <img
+        src="../assets/images/listtle-Icons/dollar.svg"
+        alt="little Icon"
+        class="dollarsvg"
+      />
+      <p class="signal-details">
+        Get signals from the leading traders all in one place. Discover and rate
+        their signal quality. Share whether or not you’ve been able to profit
+        from the signal.
+      </p>
+    </section>
+
+    <section class="meet-leaders">
+      <div class="custom-shape-divider-top-1644369928">
+        <svg
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+            class="shape-fill"
+          ></path>
+        </svg>
+      </div>
+
+      <div class="container">
+        <div class="section-title">
+          <h2>Meet Some Leaders On Coinprofit App</h2>
+          <span class="section-separator"></span>
+          <p>
+            If you’re an expert, you can sign up as a leader and start making
+            money sharing your crypto know-how.
+          </p>
+        </div>
+      </div>
+      <!-- This is a sliderjs framework.  -->
+
+      <div class="testimonials-carousel-wrap">
+        <div class="listing-carousel-button listing-carousel-button-next">
+          <i class="fa fa-caret-right" style="color: #fff"></i>
+        </div>
+        <div class="listing-carousel-button listing-carousel-button-prev">
+          <i class="fa fa-caret-left" style="color: #fff"></i>
+        </div>
+        <div class="testimonials-carousel">
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="testi-item">
+                  <div class="testi-avatar">
+                    <img src="../assets/images/leaders/emmanuel.webp" />
                   </div>
-                  <p class="username">@irorochad</p>
-                  <p>sharing some real signal - come join me</p>
+                  <!-- <div class="leader-level">
+                    <img src="../assets/images/leader-level.svg" />
+                  </div> -->
+                  <div class="testimonials-text">
+                    <div class="testimonials-avatar">
+                      <h3>Emmanuel Ohworeko</h3>
+                    </div>
+                    <p class="username">@lordemma</p>
+                    <p>
+                      Starting his crypto journey in 2020, Emmanuel has grown to
+                      become a leader through constant learning!
+                    </p>
+                  </div>
                 </div>
               </div>
-              <div class="signal-img-wrapper">
-                <img src="../assets/images/signal-st.png" alt="" srcset="" />
+
+              <!--second--->
+              <div class="swiper-slide">
+                <div class="testi-item">
+                  <div class="testi-avatar">
+                    <img src="../assets/images/leaders/Uzoatu.jpeg" />
+                  </div>
+                  <!-- <div class="leader-level">
+                    <img src="../assets/images/leader-level1.svg" />
+                  </div> -->
+                  <div class="testimonials-text">
+                    <div class="testimonials-avatar">
+                      <h3>Bryan Ifeanyi</h3>
+                    </div>
+                    <p class="username">@Bryan</p>
+                    <p>
+                      My name is Bryan, I'm a Blockchain and cryptocurrency
+                      educator. I joined the space in 2017, and from then on,
+                      it's been a truly amazing journey. Learning, growing,
+                      building, and teaching.
+                    </p>
+                  </div>
+                </div>
               </div>
+              <!--third-->
+
+              <div class="swiper-slide">
+                <div class="testi-item">
+                  <div class="testi-avatar">
+                    <img src="../assets/images/leaders/moses.jpeg" />
+                  </div>
+
+                  <div class="testimonials-text">
+                    <div class="testimonials-avatar">
+                      <h3>Moses Ugoh</h3>
+                    </div>
+                    <p class="username">@BossVNN</p>
+                    <p>
+                      It was since 2020 that I realized Bitcoin’s maximum
+                      potentials and my interest quickly expanded to everything
+                      blockchain-related. I became particularly excited about
+                      real-world applications of blockchain technology and
+                      blockchain centered projects.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!--fourth-->
+              <div class="swiper-slide">
+                <div class="testi-item">
+                  <div class="testi-avatar">
+                    <img src="../assets/images/leaders/marvelous.jpeg" />
+                  </div>
+
+                  <div class="testimonials-text">
+                    <div class="testimonials-avatar">
+                      <h3>Marvelous Macaulay</h3>
+                    </div>
+                    <p class="username">@Iam_Marvelous</p>
+                    <p>
+                      Technical/Market Analyst. Not a Bull or Bear. I only trade
+                      what the market shows me. No sentiments, Just Objective
+                      Technical analysis.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- fifth -->
+              <div class="swiper-slide">
+                <div class="testi-item">
+                  <div class="testi-avatar">
+                    <img src="../assets/images/leaders/Ibrahim.jpeg" />
+                  </div>
+
+                  <div class="testimonials-text">
+                    <div class="testimonials-avatar">
+                      <h3>Ibrahim Dauda</h3>
+                    </div>
+                    <p class="username">@Aazama</p>
+                    <p>
+                      The journey wasn't easy at the beginning. But I thank God
+                      for the things I got from crypto investment.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- sixth -->
+              <div class="swiper-slide">
+                <div class="testi-item">
+                  <div class="testi-avatar">
+                    <img src="../assets/images/leaders/uche.jpeg" />
+                  </div>
+
+                  <div class="testimonials-text">
+                    <div class="testimonials-avatar">
+                      <h3>Uche Sylvester</h3>
+                    </div>
+                    <p class="username">@Investorsylver</p>
+                    <p>
+                      I'm Uche, a Crypto enthusiast. I use my skillset to create
+                      wealth and also diversify my income using crypto hedge
+                      fund, farming and staking.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 7th -->
+              <div class="swiper-slide">
+                <div class="testi-item">
+                  <div class="testi-avatar">
+                    <img src="../assets/images/leaders/sibi.jpeg" />
+                  </div>
+
+                  <div class="testimonials-text">
+                    <div class="testimonials-avatar">
+                      <h3>George Sibi onokuma</h3>
+                    </div>
+                    <p class="username">@Onokus</p>
+                    <p>I'm a cryptocurrency trader and a coach.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 8th -->
+              <div class="swiper-slide">
+                <div class="testi-item">
+                  <div class="testi-avatar">
+                    <img src="../assets/images/leaders/mukhtar.jpeg" />
+                  </div>
+
+                  <div class="testimonials-text">
+                    <div class="testimonials-avatar">
+                      <h3>Adam Muhammad Mukhtar</h3>
+                    </div>
+
+                    <p class="username">@Ammukhtar2</p>
+                    <p>
+                      I'm a Cryptocurrency freak. Since the sunrise of 2021,
+                      with mutual Fundamental and technical analyses, I have
+                      been growing and educating my crypto community of over six
+                      thousand members, most of them are locals than global.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 9th -->
+              <div class="swiper-slide">
+                <div class="testi-item">
+                  <div class="testi-avatar">
+                    <img src="../assets/images/leaders/BK.jpeg" />
+                  </div>
+
+                  <div class="testimonials-text">
+                    <div class="testimonials-avatar">
+                      <h3>Ibrahim BK</h3>
+                    </div>
+
+                    <p class="username">@khaleell</p>
+                    <p>
+                      I'm Ibrahim BK. A professional crypto trader with 3+ years
+                      of experience in Blockchain development.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 10th -->
+              <div class="swiper-slide">
+                <div class="testi-item">
+                  <div class="testi-avatar">
+                    <img src="../assets/images/leaders/voski.webp" />
+                  </div>
+
+                  <div class="testimonials-text">
+                    <div class="testimonials-avatar">
+                      <h3>Stephen Voski</h3>
+                    </div>
+
+                    <p class="username">@Voski</p>
+                    <p>
+                      I'm Chukwu Stephen Ndubuisi, popularly known as Voski.
+                      I've been a blockchain and cryptocurrency advocate since
+                      2016. My aim has always been to change the lives of
+                      others, using the opportunities provided by blockchain
+                      technology.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 12th -->
+              <div class="swiper-slide">
+                <div class="testi-item">
+                  <div class="testi-avatar">
+                    <img src="../assets/images/leaders/CHUKWU.jpeg" />
+                  </div>
+
+                  <div class="testimonials-text">
+                    <div class="testimonials-avatar">
+                      <h3>Victor Chukwu</h3>
+                    </div>
+
+                    <p class="username">@Vicsouls</p>
+                    <p>
+                      I'm Victor CHUKWU. I have been able to coach and still
+                      coaching a lot of people in the crypto space. I have been
+                      in the crypto space for quite a long time now, and I have
+                      seen both failures and success, the ups and downs, but I
+                      keep the movement because of the B PICTURE.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!--testi end-->
             </div>
-            <!--testi end-->
+          </div>
+        </div>
+
+        <!-- <div class="swiper-pagination">
+          <span></span>
+           <span></span>
+            <span></span>
+        </div> -->
+      </div>
+      <div class="leaders-app-download">
+        <a href="#" target="_blank" rel="noopener noreferrer"
+          ><img src="../assets/images/appstore.svg" alt=""
+        /></a>
+        <a href="#" target="_blank" rel="noopener noreferrer"
+          ><img src="../assets/images/goplay.svg" alt=""
+        /></a>
+        <p class="comingSoon font-bold md:font-semibold text-2xl" >coming soon...</p>
+      </div>
+
+      <!-- End sliderjs framework -->
+
+      <div class="custom-shape-divider-bottom-1644463655">
+        <svg
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+            opacity=".25"
+            class="shape-fill"
+          ></path>
+          <path
+            d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+            opacity=".5"
+            class="shape-fill"
+          ></path>
+          <path
+            d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+            class="shape-fill"
+          ></path>
+        </svg>
+      </div>
+    </section>
+
+    <section>
+      <div class="featuretwo-wrapper">
+        <div class="app-features-two" style="margin-bottom: 90px">
+          <h1>Create Your Own Trading Plans</h1>
+          <div class="trade-img-box">
+            <img
+              src="../assets/images/planner-trade-lesson.svg"
+              alt="Create your trading plan"
+              class="trade-img"
+            />
+          </div>
+          <p>
+            Trade responsibly and profitably by creating a trading plan that
+            works for you.<br />
+            <br />
+            Plan your entry, stop loss, and take profit targets. Use tags to
+            organize your plans. Receive notifications whenever your coin hits
+            your target or stop limit.
+          </p>
+        </div>
+        <div class="trade-lessons">
+          <h1>Record Your Trade Lessons</h1>
+          <div class="record-img-box">
+            <img
+              src="../assets/images/trade-lesson.svg"
+              alt="Record your trade lessons"
+              class="record-img"
+            />
+          </div>
+          <p>
+            You trade on the go, so why not have your lessons on the go? <br />
+            <br />
+
+            With CoinProfit App, you can record your trade lessons and keep a
+            journal, so you can continue learning anytime, anywhere. <br />
+            <br />
+
+            Keeping records of your good and bad trades helps you make better
+            trading decisions. We make this incredibly easy for you, so you can
+            win in the crypto space. WAGMI! (We All Gonna Make It)
+            <br />
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="auto-sec">
+      <div class="custom-shape-divider-top-1644623960">
+        <svg
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+            class="shape-fill"
+          ></path>
+        </svg>
+      </div>
+      <div class="auto-track">
+        <h1>
+          Automatically Track Your Portfolio Across Multiple Exchange Platforms
+        </h1>
+        <div class="track-img-box">
+          <img
+            src="../assets/images/Portfolio-Upgraded.svg"
+            alt="App Feature 1"
+            class="auto-track-img"
+          />
+          <img
+            src="../assets/images/groupebsc1.svg"
+            alt=""
+            srcset=""
+            class="auto-track-icons bcs1"
+          />
+          <img
+            src="../assets/images/groupeth1.svg"
+            alt=""
+            srcset=""
+            class="auto-track-icons eth1"
+          />
+
+          <img
+            src="../assets/images/groupebsc2.svg"
+            alt=""
+            srcset=""
+            class="auto-track-icons bcs2"
+          />
+          <img
+            src="../assets/images/groupeth2.svg"
+            alt=""
+            srcset=""
+            class="auto-track-icons eth2"
+          />
+        </div>
+        <p>
+          Conveniently and securely monitor your entire portfolio on one
+          platform without worrying about compromising your data. CoinProfit
+          supports over 300 exchanges and more than 8,000 crypto assets.
+        </p>
+        <a href="#download-app"
+          ><button class="auto-button btn-1">TRY NOW</button></a
+        >
+
+        <!-- The icons are set to absolute positioning... -->
+        <img
+          src="../assets/images/listtle-Icons/6.svg"
+          alt=""
+          srcset=""
+          class="littleIcon6"
+        />
+        <img
+          src="../assets/images/listtle-Icons/7.svg"
+          alt=""
+          srcset=""
+          class="littleIcon7"
+        />
+        <img
+          src="../assets/images/listtle-Icons/5.svg"
+          alt=""
+          srcset=""
+          class="littleIcon8"
+        />
+        <img
+          src="../assets/images/listtle-Icons/roundicon.svg"
+          alt=""
+          srcset=""
+          class="roundicon1"
+        />
+        <!-- ENd little Icons -->
+      </div>
+      <div class="custom-shape-divider-bottom-1644660326">
+        <svg
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+            class="shape-fill"
+          ></path>
+        </svg>
+      </div>
+    </section>
+
+    <section class="profit-loss-sec">
+      <div class="profit-loss">
+        <h1>
+          See Your <span class="Hprofit">Profit</span
+          ><span class="Hslash">/</span><span class="Hloss">Loss</span> at a
+          Glance!
+        </h1>
+
+        <div class="proft-loss-img-box">
+          <img
+            src="../assets/images/listtle-Icons/4.svg"
+            alt=""
+            srcset=""
+            class="littleIconS1"
+          />
+          <img
+            src="../assets/images/listtle-Icons/3.svg"
+            alt=""
+            srcset=""
+            class="littleIconS2"
+          />
+          <img
+            src="../assets/images/profit-loss.png"
+            alt="See your profit and Loss."
+            class="proft-loss-img"
+          />
+          <!-- this images will only be displayed on desktop screens -->
+          <img
+            src="../assets/images/groupshareeth1.svg"
+            alt=""
+            srcset=""
+            class="groupshare geth1"
+          />
+          <img
+            src="../assets/images/groupsharebsc1.svg"
+            alt=""
+            srcset=""
+            class="groupshare gbsc1"
+          />
+
+          <img
+            src="../assets/images/groupsharebsc2.svg"
+            alt=""
+            srcset=""
+            class="groupshare gbsc2"
+          />
+          <img
+            src="../assets/images/groupshareeth2.svg"
+            alt=""
+            srcset=""
+            class="groupshare geth2"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="share-portfolio-sec">
+      <div class="custom-shape-divider-top-1644670257">
+        <svg
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+            class="shape-fill"
+          ></path>
+        </svg>
+      </div>
+
+      <div class="share-portfolio">
+        <h1>Share Your Portfolio Performance</h1>
+        <div class="share-portfolio-box">
+          <img
+            src="../assets/images/share-img.webp"
+            alt="Share Image"
+            class="share-portfolio-img"
+          />
+        </div>
+        <img src="../assets/images/share-blob.png" class="share-blob" />
+
+        <p>
+          Did you buy a coin that did 100%, 200% or even 1000% in profit? Then
+          you deserve a bottle of champagne and bragging rights! Take some of
+          your profit, go get champagne and use CoinProfit App to let the world
+          know how you roll. You deserve it. You can share the performance of an
+          asset or a particular transaction.
+        </p>
+      </div>
+
+      <div class="custom-shape-divider-bottom-1644669891">
+        <svg
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+            opacity=".25"
+            class="shape-fill"
+          ></path>
+          <path
+            d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+            opacity=".5"
+            class="shape-fill"
+          ></path>
+          <path
+            d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+            class="shape-fill"
+          ></path>
+        </svg>
+      </div>
+    </section>
+
+    <section class="exchange-sec">
+      <div class="exchange-wrapper">
+        <h1>Supported Exchanges and Wallets</h1>
+        <div class="exchange-box-wrapper">
+          <div class="exchange-box">
+            <img
+              src="../assets/images/binance-logo.svg"
+              alt="binance-logo"
+              class="exchange-logo"
+            />
+            <p>Binance</p>
+          </div>
+        </div>
+        <div class="exchange-box-wrapper">
+          <div class="exchange-box">
+            <img
+              src="../assets/images/kcs-3.svg"
+              alt="exchange-logo"
+              class="exchange-logo"
+            />
+            <p>kucoin</p>
+          </div>
+        </div>
+        <div class="exchange-box-wrapper">
+          <div class="exchange-box">
+            <img
+              src="../assets/images/ftx-2.svg"
+              alt="exchange-logo"
+              class="exchange-logo"
+            />
+            <p>FTX</p>
+          </div>
+        </div>
+        <!-- <div class="exchange-box-wrapper">
+          <div class="exchange-box">
+            <img
+              src="../assets/images/gateio.svg"
+              alt="exchange-logo"
+              class="exchange-logo"
+            />
+            <p>Gateio</p>
+          </div>
+        </div>
+        <div class="exchange-box-wrapper">
+          <div class="exchange-box">
+            <img
+              src="../assets/images/okex-2.svg"
+              alt="exchange-logo"
+              class="exchange-logo"
+            />
+            <p>Okex</p>
+          </div>
+        </div>
+        <div class="exchange-box-wrapper">
+          <div class="exchange-box">
+            <img
+              src="../assets/images/Binance-Smart-Chain.svg.svg"
+              alt="binance-logo"
+              class="exchange-logo bsc"
+            />
+            <p>BSC</p>
+          </div>
+        </div>
+        <div class="exchange-box-wrapper">
+          <div class="exchange-box coinbase">
+            <img
+              src="../assets/images/Coinbase.svg"
+              alt="binance-logo"
+              class="exchange-logo min"
+            />
+            <p>coinbase</p>
+          </div>
+        </div>
+        <div class="exchange-box-wrapper">
+          <div class="exchange-box uniswap">
+            <img
+              src="../assets/images/Uniswap-(UNI).svg"
+              alt="binance-logo"
+              class="exchange-logo min"
+            />
+            <p>Uniswap</p>
+          </div>
+        </div>
+        <div class="exchange-box-wrapper nine">
+          <div class="exchange-box">
+            <img
+              src="../assets/images/Pancakeswap.svg"
+              alt="binance-logo"
+              class="exchange-logo min"
+            />
+            <p>Pancake Swap</p>
+          </div>
+        </div>
+        <div class="exchange-box-wrapper ten">
+          <div class="exchange-box">
+            <img
+              src="../assets/images/ethereum-1.svg"
+              alt="binance-logo"
+              class="exchange-logo"
+            />
+            <p>ethereum</p>
+          </div>
+        </div> -->
+        <p class="get-details">
+          Get the app now on the Google Play Store or the App Store
+        </p>
+        <div class="exchange-download-wrapper">
+          <a href="#" target="_blank" rel="noopener noreferrer"
+            ><img
+              src="../assets/images/goplay.svg"
+              alt=""
+              srcset=""
+              class="exchange-download"
+          /></a>
+
+          <a href="#" target="_blank" rel="noopener noreferrer"
+            ><img
+              src="../assets/images/appstore.svg"
+              alt=""
+              srcset=""
+              class="exchange-download"
+          /></a>
+        </div>
+        <p class="comingSoon font-bold md:font-semibold text-2xl" >coming soon...</p>
+      </div>
+    </section>
+
+    <section class="users-review">
+      <h1>What Our Users Are Saying...</h1>
+
+      <div class="user-review-box">
+        <div class="splide">
+          <div class="splide__arrows">
+            <button class="splide__arrow splide__arrow--prev">
+              <i class="fa fa-angle-left"></i>
+            </button>
+            <button class="splide__arrow splide__arrow--next">
+              <i class="fa fa-angle-right"></i>
+            </button>
+          </div>
+          <div class="splide__progress"></div>
+          <div class="splide__track">
+            <div class="splide__list">
+              <div class="splide__slide">
+                <h3>Kingdom Augustine</h3>
+                <div class="users-img-wrapper">
+                  <img src="../assets/images/kingdom.jpeg" alt="" />
+                </div>
+                <div class="star-review">
+                  <i
+                    class="fa fa-star"
+                    aria-hidden="true"
+                    style="color: #fccf3b; font-size: 27px"
+                  ></i>
+                  <i
+                    class="fa fa-star"
+                    aria-hidden="true"
+                    style="color: #fccf3b; font-size: 27px"
+                  ></i>
+                  <i
+                    class="fa fa-star"
+                    aria-hidden="true"
+                    style="color: #fccf3b; font-size: 27px"
+                  ></i>
+                  <i
+                    class="fa fa-star"
+                    aria-hidden="true"
+                    style="color: #fccf3b; font-size: 27px"
+                  ></i>
+                  <i
+                    class="fa fa-star"
+                    aria-hidden="true"
+                    style="color: #fccf3b; font-size: 27px"
+                  ></i>
+                </div>
+                <p>
+                 Swift experience in all modules.
+This is at last the opportunity for the average person who's not interested in the technicalities of trading to make wealth. 
+ I personally call this app "trade made easy".
+                </p>
+              </div>
+
+              <div class="splide__slide">
+                <h3>Israel Odenu</h3>
+                <div class="users-img-wrapper">
+                  <img src="../assets/images/israel.png" alt="" />
+                </div>
+                <div class="star-review">
+                  <i
+                    class="fa fa-star"
+                    aria-hidden="true"
+                    style="color: #fccf3b; font-size: 27px"
+                  ></i>
+                  <i
+                    class="fa fa-star"
+                    aria-hidden="true"
+                    style="color: #fccf3b; font-size: 27px"
+                  ></i>
+                  <i
+                    class="fa fa-star"
+                    aria-hidden="true"
+                    style="color: #fccf3b; font-size: 27px"
+                  ></i>
+                  <i
+                    class="fa fa-star"
+                    aria-hidden="true"
+                    style="color: #fccf3b; font-size: 27px"
+                  ></i>
+                  <i
+                    class="fa fa-star"
+                    aria-hidden="true"
+                    style="color: #fccf3b; font-size: 27px"
+                  ></i>
+                </div>
+                <p>The best app I have ever seen, easy Navigation, and a great "if" Calculator.</p>
+              </div>
+
+            </div>
           </div>
         </div>
       </div>
-
-      <div class="tc-pagination"></div>
-    </div>
-    <div class="leaders-app-download">
-      <a href="#" target="_blank" rel="noopener noreferrer"
-        ><img src="../assets/images/appstore.svg" alt=""
-      /></a>
-      <a href="#" target="_blank" rel="noopener noreferrer"
-        ><img src="../assets/images/goplay.svg" alt=""
-      /></a>
-    </div>
-
-    <!-- End sliderjs framework -->
-
-    <div class="custom-shape-divider-bottom-1644463655">
-      <svg
-        data-name="Layer 1"
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 1200 120"
-        preserveAspectRatio="none"
-      >
-        <path
-          d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
-          opacity=".25"
-          class="shape-fill"
-        ></path>
-        <path
-          d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
-          opacity=".5"
-          class="shape-fill"
-        ></path>
-        <path
-          d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
-          class="shape-fill"
-        ></path>
-      </svg>
-    </div>
-  </section>
-
-  <section>
-    <div class="featuretwo-wrapper">
-      <div class="app-features-two" style="margin-bottom: 90px">
-        <h1>Create Your Own Trading Plans</h1>
-        <div class="trade-img-box">
-          <img
-            src="../assets/images/planner-trade-lesson.svg"
-            alt="Create your trading plan"
-            class="trade-img"
-          />
-        </div>
-        <p>
-          Trade responsibly and profitably by creating a trading plan that works
-          for you.<br />
-          <br />
-          Plan your entry, stop loss, and take profit targets. Use tags to
-          organize your plans. Receive notifications whenever your coin hits
-          your target or stop limit.
-        </p>
-      </div>
-      <div class="trade-lessons">
-        <h1>Record Your Trade Lessons</h1>
-        <div class="record-img-box">
-          <img
-            src="../assets/images/trade-lesson.svg"
-            alt="Record your trade lessons"
-            class="record-img"
-          />
-        </div>
-        <p>
-          You trade on the go, so why not have your lessons on the go? <br />
-          <br />
-          With CoinProfit, you can record your lessons, so you can continue
-          learning anytime, anywhere. We make learning incredibly easy for you,
-          so you can win in the crypto space.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <section class="auto-sec">
-    <div class="custom-shape-divider-top-1644623960">
-      <svg
-        data-name="Layer 1"
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 1200 120"
-        preserveAspectRatio="none"
-      >
-        <path
-          d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
-          class="shape-fill"
-        ></path>
-      </svg>
-    </div>
-    <div class="auto-track">
-      <h1>
-        Automatically Track Your Portfolio Across Multiple Exchange Platforms
-      </h1>
-      <div class="track-img-box">
-        <img
-          src="../assets/images/Portfolio-Upgraded.svg"
-          alt="App Feature 1"
-          class="auto-track-img"
-        />
-        <img
-          src="../assets/images/groupebsc1.svg"
-          alt=""
-          srcset=""
-          class="auto-track-icons bcs1"
-        />
-        <img
-          src="../assets/images/groupeth1.svg"
-          alt=""
-          srcset=""
-          class="auto-track-icons eth1"
-        />
-
-        <img
-          src="../assets/images/groupebsc2.svg"
-          alt=""
-          srcset=""
-          class="auto-track-icons bcs2"
-        />
-        <img
-          src="../assets/images/groupeth2.svg"
-          alt=""
-          srcset=""
-          class="auto-track-icons eth2"
-        />
-      </div>
-      <p>
-        Conveniently and securely monitor your entire portfolio on one platform
-        without worrying about compromising your data. CoinProfit supports over
-        300 exchanges and more than 8,000 crypto assets.
-      </p>
-      <a href="#download-app"
-        ><button class="auto-button btn-1">TRY NOW</button></a
-      >
-
-      <!-- The icons are set to absolute positioning... -->
-      <img
-        src="../assets/images/listtle-Icons/6.svg"
-        alt=""
-        srcset=""
-        class="littleIcon6"
-      />
-      <img
-        src="../assets/images/listtle-Icons/7.svg"
-        alt=""
-        srcset=""
-        class="littleIcon7"
-      />
-      <img
-        src="../assets/images/listtle-Icons/5.svg"
-        alt=""
-        srcset=""
-        class="littleIcon8"
-      />
-      <!-- ENd little Icons -->
-    </div>
-    <div class="custom-shape-divider-bottom-1644660326">
-      <svg
-        data-name="Layer 1"
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 1200 120"
-        preserveAspectRatio="none"
-      >
-        <path
-          d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
-          class="shape-fill"
-        ></path>
-      </svg>
-    </div>
-  </section>
-
-  <section class="profit-loss-sec">
-    <div class="profit-loss">
-      <h1>
-        See Your <span class="Hprofit">Profit</span><span class="Hslash">/</span
-        ><span class="Hloss">Loss</span> at a Glance!
-      </h1>
-
-      <div class="proft-loss-img-box">
-        <img
-          src="../assets/images/profit-loss.png"
-          alt="See your profit and Loss."
-          class="proft-loss-img"
-        />
-        <!-- this images will only be displayed on desktop screens -->
-        <img
-          src="../assets/images/groupshareeth1.svg"
-          alt=""
-          srcset=""
-          class="groupshare geth1"
-        />
-        <img
-          src="../assets/images/groupsharebsc1.svg"
-          alt=""
-          srcset=""
-          class="groupshare gbsc1"
-        />
-
-        <img
-          src="../assets/images/groupsharebsc2.svg"
-          alt=""
-          srcset=""
-          class="groupshare gbsc2"
-        />
-        <img
-          src="../assets/images/groupshareeth2.svg"
-          alt=""
-          srcset=""
-          class="groupshare geth2"
-        />
-      </div>
-    </div>
-  </section>
-
-  <section class="share-portfolio-sec">
-    <div class="custom-shape-divider-top-1644670257">
-      <svg
-        data-name="Layer 1"
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 1200 120"
-        preserveAspectRatio="none"
-      >
-        <path
-          d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
-          class="shape-fill"
-        ></path>
-      </svg>
-    </div>
-
-    <div class="share-portfolio">
-      <h1>Share Your Portfolio Performance</h1>
-      <img src="../assets/images/share-blob.png" class="share-blob" />
-
-      <div class="share-portfolio-box">
-        <img
-          src="../assets/images/share-img.png"
-          alt="Share Image"
-          class="share-portfolio-img"
-        />
-      </div>
-      <p>
-        Plan your entry, stop loss, and take profit targets. Use tags to
-        organize your plans. Receive notifications whenever your coin hits your
-        target or stop limit.
-      </p>
-    </div>
-
-    <div class="custom-shape-divider-bottom-1644669891">
-      <svg
-        data-name="Layer 1"
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 1200 120"
-        preserveAspectRatio="none"
-      >
-        <path
-          d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
-          opacity=".25"
-          class="shape-fill"
-        ></path>
-        <path
-          d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
-          opacity=".5"
-          class="shape-fill"
-        ></path>
-        <path
-          d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
-          class="shape-fill"
-        ></path>
-      </svg>
-    </div>
-  </section>
-
-  <section class="exchange-sec">
-    <div class="exchange-wrapper">
-      <h1>Supported Exchanges and Wallets</h1>
-      <div class="exchange-box-wrapper">
-        <div class="exchange-box">
-          <img
-            src="../assets/images/binance-logo.svg"
-            alt="binance-logo"
-            class="exchange-logo"
-          />
-          <p>Binance</p>
-        </div>
-      </div>
-      <div class="exchange-box-wrapper">
-        <div class="exchange-box">
-          <img
-            src="../assets/images/kcs-3.svg"
-            alt="exchange-logo"
-            class="exchange-logo"
-          />
-          <p>kucoin</p>
-        </div>
-      </div>
-      <div class="exchange-box-wrapper">
-        <div class="exchange-box">
-          <img
-            src="../assets/images/ftx-2.svg"
-            alt="exchange-logo"
-            class="exchange-logo"
-          />
-          <p>FTX</p>
-        </div>
-      </div>
-      <div class="exchange-box-wrapper">
-        <div class="exchange-box">
-          <img
-            src="../assets/images/gateio.svg"
-            alt="exchange-logo"
-            class="exchange-logo"
-          />
-          <p>Gateio</p>
-        </div>
-      </div>
-      <div class="exchange-box-wrapper">
-        <div class="exchange-box">
-          <img
-            src="../assets/images/okex-2.svg"
-            alt="exchange-logo"
-            class="exchange-logo"
-          />
-          <p>Okex</p>
-        </div>
-      </div>
-      <div class="exchange-box-wrapper">
-        <div class="exchange-box">
-          <img
-            src="../assets/images/Binance-Smart-Chain.svg.svg"
-            alt="binance-logo"
-            class="exchange-logo bsc"
-          />
-          <p>BSC</p>
-        </div>
-      </div>
-      <div class="exchange-box-wrapper">
-        <div class="exchange-box coinbase">
-          <img
-            src="../assets/images/Coinbase.svg"
-            alt="binance-logo"
-            class="exchange-logo min"
-          />
-          <p>coinbase</p>
-        </div>
-      </div>
-      <div class="exchange-box-wrapper">
-        <div class="exchange-box uniswap">
-          <img
-            src="../assets/images/Uniswap-(UNI).svg"
-            alt="binance-logo"
-            class="exchange-logo min"
-          />
-          <p>Uniswap</p>
-        </div>
-      </div>
-      <div class="exchange-box-wrapper nine">
-        <div class="exchange-box">
-          <img
-            src="../assets/images/Pancakeswap.svg"
-            alt="binance-logo"
-            class="exchange-logo min"
-          />
-          <p>Pancake Swap</p>
-        </div>
-      </div>
-      <div class="exchange-box-wrapper ten">
-        <div class="exchange-box">
-          <img
-            src="../assets/images/ethereum-1.svg"
-            alt="binance-logo"
-            class="exchange-logo"
-          />
-          <p>ethereum</p>
-        </div>
-      </div>
-      <p class="get-details">
+      <p class="users-CTA">
         Get the app now on the Google Play Store or the App Store
       </p>
       <div class="exchange-download-wrapper">
@@ -849,392 +1142,188 @@
             srcset=""
             class="exchange-download"
         /></a>
+       <p class="comingSoon font-bold md:font-semibold text-2xl" >coming soon...</p>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="users-review">
-    <h1>What Our Users Are Saying...</h1>
+    <section>
+      <div class="learn-more">
+        <h1>Want To Know More?</h1>
 
-    <div class="user-review-box">
-      <div class="splide">
-        <div class="splide__arrows">
-          <button class="splide__arrow splide__arrow--prev">
-            <i class="fa fa-angle-left"></i>
-          </button>
-          <button class="splide__arrow splide__arrow--next">
-            <i class="fa fa-angle-right"></i>
-          </button>
+        <span class="vid-play">
+          <i class="fa fa-play" aria-hidden="true"></i>
+        </span>
+        <div class="vid-play-wrapper">
+          <div class="video-img"></div>
         </div>
-        <div class="splide__progress"></div>
-        <div class="splide__track">
-          <div class="splide__list">
-            <div class="splide__slide">
-              <h3>John Doe</h3>
-              <div class="users-img-wrapper">
-                <img src="../assets/images/review3.jpeg" alt="" />
-              </div>
-              <div class="star-review">
-                <i
-                  class="fa fa-star"
-                  aria-hidden="true"
-                  style="color: #fccf3b; font-size: 27px"
-                ></i>
-                <i
-                  class="fa fa-star"
-                  aria-hidden="true"
-                  style="color: #fccf3b; font-size: 27px"
-                ></i>
-                <i
-                  class="fa fa-star"
-                  aria-hidden="true"
-                  style="color: #fccf3b; font-size: 27px"
-                ></i>
-                <i
-                  class="fa fa-star"
-                  aria-hidden="true"
-                  style="color: #fccf3b; font-size: 27px"
-                ></i>
-                <i
-                  class="fa fa-star"
-                  aria-hidden="true"
-                  style="color: #fccf3b; font-size: 27px"
-                ></i>
-              </div>
+        <p>
+          Get signals from different leaders in one place, see their signal
+          quality, rate the signals and let everyone know if you made money from
+          the signal or not.
+        </p>
+        <a href="#download-app"
+          ><button class="learn-moreBTN">Learn More</button></a
+        >
+      </div>
+      <div class="video-modal">
+        <div class="modal-container">
+          <span class="vid-close">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+              <path
+                d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"
+              />
+            </svg>
+          </span>
+
+          <div class="iframe-container">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/H9154xIoYTA"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="faq-wrapper">
+        <h1>FAQ</h1>
+
+        <div class="faqcontainer">
+          <div class="faqwrapper">
+            <button class="faqtoggle">
+              <h3>I&rsquo;m New To Crypto. Who Should I Subscribe To?</h3>
+              <i class="fa fa-chevron-down faqicon" style="color: #3374ea"></i>
+            </button>
+            <div class="faqcontent">
               <p>
-                This can be a long review. Lorem ipsum dolor sit, amet
-                consectetur adipisicing elit. Facere voluptas iure neque nemo
-                est illo nobis possimus, eveniet animi facilis impedit velit.
-                Incidunt maiores doloremque delectus blanditiis eius ad ipsam?
-                lorem
+                We are working on adding rating and analytics systems to the
+                CoinProfit app so it will be easier for you to see the track
+                records of all the leaders. In the meantime, we encourage you to
+                subscribe to only leaders you know and trust. If you are
+                completely new and don&rsquo;t know any leader, your best bet
+                will be to subscribe to our CEO and Founder - Emmanuel Ohworeko
+                or any of the leaders featured on the leader's page of our
+                website.
               </p>
             </div>
-            <div class="splide__slide">
-              <h3>John Doe</h3>
-              <div class="users-img-wrapper">
-                <img src="../assets/images/review3.jpeg" alt="" />
-              </div>
-              <div class="star-review">
-                <i
-                  class="fa fa-star"
-                  aria-hidden="true"
-                  style="color: #fccf3b; font-size: 27px"
-                ></i>
-                <i
-                  class="fa fa-star"
-                  aria-hidden="true"
-                  style="color: #fccf3b; font-size: 27px"
-                ></i>
-                <i
-                  class="fa fa-star"
-                  aria-hidden="true"
-                  style="color: #fccf3b; font-size: 27px"
-                ></i>
-                <i
-                  class="fa fa-star"
-                  aria-hidden="true"
-                  style="color: #fccf3b; font-size: 27px"
-                ></i>
-                <i
-                  class="fa fa-star"
-                  aria-hidden="true"
-                  style="color: #fccf3b; font-size: 27px"
-                ></i>
-              </div>
-              <p>Amazing app, I made over $20k following a leaders call.</p>
+          </div>
+          <div class="faqwrapper">
+            <button class="faqtoggle">
+              <h3>How Can I Download The Coinprofit App?</h3>
+              <i class="fa fa-chevron-down faqicon" style="color: #3374ea"></i>
+            </button>
+            <div class="faqcontent">
+              <p>
+                We are available on both the IOS and Android app store. Please
+                use the download button above to download the app to your
+                device.
+              </p>
             </div>
+          </div>
+          <div class="faqwrapper">
+            <button class="faqtoggle">
+              <h3>How Much Does It Cost To Subscribe To A Leader?</h3>
+              <i class="fa fa-chevron-down faqicon" style="color: #3374ea"></i>
+            </button>
+            <div class="faqcontent">
+              <p>
+                Every leader on the platform determines how much he wants to
+                charge for his subscription.
+              </p>
+            </div>
+          </div>
 
-            <div class="splide__slide">
-              <h3>Nyore Chadere</h3>
-              <div class="users-img-wrapper">
-                <img src="../assets/images/review1.jpg" alt="" />
-              </div>
-              <div class="star-review">
-                <i
-                  class="fa fa-star"
-                  aria-hidden="true"
-                  style="color: #fccf3b; font-size: 27px"
-                ></i>
-                <i
-                  class="fa fa-star"
-                  aria-hidden="true"
-                  style="color: #fccf3b; font-size: 27px"
-                ></i>
-                <i
-                  class="fa fa-star"
-                  aria-hidden="true"
-                  style="color: #fccf3b; font-size: 27px"
-                ></i>
-                <i
-                  class="fa fa-star"
-                  aria-hidden="true"
-                  style="color: #fccf3b; font-size: 27px"
-                ></i>
-                <i
-                  class="fa fa-star"
-                  aria-hidden="true"
-                  style="color: #fccf3b; font-size: 27px"
-                ></i>
-              </div>
-              <p>This is one of the best app I've used. I love it.</p>
+          <div class="faqwrapper">
+            <button class="faqtoggle">
+              <h3>What Payment Method Do You Accept?</h3>
+              <i class="fa fa-chevron-down faqicon" style="color: #3374ea"></i>
+            </button>
+            <div class="faqcontent">
+              <p>
+                All Payments on the CoinProfit App are facilitated through
+                cryptocurrency. We do not accept credit cards or paypal.
+              </p>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-    <p class="users-CTA">
-      Get the app now on the Google Play Store or the App Store
-    </p>
-    <div class="review-download-wrapper">
-      <a href="#" target="_blank" rel="noopener noreferrer"
-        ><img
-          src="../assets/images/goplay.svg"
-          alt=""
-          srcset=""
-          class="review-download"
-      /></a>
-
-      <a href="#" target="_blank" rel="noopener noreferrer"
-        ><img
-          src="../assets/images/appstore.svg"
-          alt=""
-          srcset=""
-          class="review-download"
-      /></a>
-    </div>
-  </section>
-
-  <section>
-    <div class="learn-more">
-      <h1>Want To Know More?</h1>
-
-      <span class="vid-play">
-        <i
-          class="fa fa-play"
-          aria-hidden="true"
-          style="color: #3374ea; font-size: 40px; cursor: pointer"
-        ></i>
-      </span>
-      <div class="vid-play-wrapper">
-        <div class="video-img"></div>
-      </div>
-      <p>
-        Get signals from different leaders in one place, see their signal
-        quality, rate the signals and let everyone know if you made money from
-        the signal or not.
-      </p>
-      <a href="#download-app"
-        ><button class="learn-moreBTN">Learn More</button></a
-      >
-    </div>
-    <div class="video-modal">
-      <div class="modal-container">
-        <span class="vid-close">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
-            <!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
-            <path
-              d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"
-            />
-          </svg>
-        </span>
-
-        <div class="iframe-container">
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/H9154xIoYTA"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <div class="faq-wrapper">
-      <h1>FAQ</h1>
-      <div class="faqcontainer">
-        <div class="faqwrapper">
-          <button class="faqtoggle">
-            <h3>
-              Question 1 look like this if the question is too long to display
-              on one line
-            </h3>
-            <i class="fa fa-chevron-down faqicon" style="color: #3374ea"></i>
-          </button>
-          <div class="faqcontent">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
-              aliquam facere adipisci quod mollitia, aut nemo deleniti fugiat
-              et, corrupti sequi. Omnis dolorem quos eligendi placeat soluta
-              sint corrupti quod.
-            </p>
+        <div class="faqcontainer">
+          <div class="faqwrapper">
+            <button class="faqtoggle">
+              <h3>How do I subscribe to a leader?</h3>
+              <i class="fa fa-chevron-down faqicon" style="color: #3374ea"></i>
+            </button>
+            <div class="faqcontent">
+              <p>
+                After downloading the CoinProfit App, go to the explore tab
+                under the ‘Leader’ section. Search for the leader you want to
+                subscribe to, click on his profile and click on subscribe. The
+                cost of subscribing to each leader is shown on his profile. When
+                you click on subscribe, a USDT wallet address via BSC network
+                will be generated for you. Send the equivalent USDT to the
+                address and click on confirm. Once payment is confirmed, your
+                subscription will be activated.
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="faqwrapper">
-          <button class="faqtoggle">
-            <h3>What is the return policy?</h3>
-            <i class="fa fa-chevron-down faqicon" style="color: #3374ea"></i>
-          </button>
-          <div class="faqcontent">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
-              aliquam facere adipisci quod mollitia, aut nemo deleniti fugiat
-              et, corrupti sequi. Omnis dolorem quos eligendi placeat soluta
-              sint corrupti quod.
-            </p>
+
+          <div class="faqwrapper">
+            <button class="faqtoggle">
+              <h3>I’m Subscribed To A Leader But Don’t Know How To Trade?</h3>
+              <i class="fa fa-chevron-down faqicon" style="color: #3374ea"></i>
+            </button>
+            <div class="faqcontent">
+              <p>
+                We have resources to help you get started in your crypto
+                journey. Please check out our help centre.
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="faqwrapper">
-          <button class="faqtoggle">
-            <h3>Question 3</h3>
-            <i class="fa fa-chevron-down faqicon" style="color: #3374ea"></i>
-          </button>
-          <div class="faqcontent">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
-              aliquam facere adipisci quod mollitia, aut nemo deleniti fugiat
-              et, corrupti sequi. Omnis dolorem quos eligendi placeat soluta
-              sint corrupti quod.
-            </p>
+          <div class="faqwrapper">
+            <button class="faqtoggle">
+              <h3>Do You Support Future Trading?</h3>
+              <i class="fa fa-chevron-down faqicon" style="color: #3374ea"></i>
+            </button>
+            <div class="faqcontent">
+              <p>
+                Not yet. We only support spot trading for now but we have plans
+                to support future trading in the future.
+              </p>
+            </div>
           </div>
         </div>
       </div>
-      <div class="faqcontainer faqtwo">
-        <div class="faqwrapper">
-          <button class="faqtoggle">
-            <h3>Queston 4</h3>
-            <i class="fa fa-chevron-down faqicon" style="color: #3374ea"></i>
-          </button>
-          <div class="faqcontent">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
-              aliquam facere adipisci quod mollitia, aut nemo deleniti fugiat
-              et, corrupti sequi. Omnis dolorem quos eligendi placeat soluta
-              sint corrupti quod.
-            </p>
-          </div>
-        </div>
-        <div class="faqwrapper">
-          <button class="faqtoggle">
-            <h3>Question 5</h3>
-            <i class="fa fa-chevron-down faqicon" style="color: #3374ea"></i>
-          </button>
-          <div class="faqcontent">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
-              aliquam facere adipisci quod mollitia, aut nemo deleniti fugiat
-              et, corrupti sequi. Omnis dolorem quos eligendi placeat soluta
-              sint corrupti quod.
-            </p>
-          </div>
-        </div>
-        <div class="faqwrapper">
-          <button class="faqtoggle">
-            <h3>Question 6</h3>
-            <i class="fa fa-chevron-down faqicon" style="color: #3374ea"></i>
-          </button>
-          <div class="faqcontent">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
-              aliquam facere adipisci quod mollitia, aut nemo deleniti fugiat
-              et, corrupti sequi. Omnis dolorem quos eligendi placeat soluta
-              sint corrupti quod.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
+  </div>
   <BaseCallToAction />
 </template>
 
 <script>
 import $ from "jquery";
 import Swiper from "swiper/bundle";
-import "swiper/css/bundle";
 import Splide from "@splidejs/splide";
 
-import BaseCallToAction from "../components/BaseCallToAction.vue";
-
 export default {
-  components: {
-    BaseCallToAction,
-  },
-
   methods: {
     useSplide() {
-      document.addEventListener("DOMContentLoaded", function () {
-        new Splide(".splide", {
-          type: "loop",
-          perPage: 1,
-          autoplay: true,
-          interval: 2000, // How long to display each slide
-          pauseOnHover: true, // m
-          pauseOnFocus: false, // must be false
-          resetProgress: false,
-        }).mount();
-      });
+      new Splide(".splide", {
+        type: "loop",
+        perPage: 1,
+        autoplay: true,
+        interval: 2000, // How long to display each slide
+        pauseOnHover: true, // m
+        pauseOnFocus: false, // must be
+        resetProgress: false,
+      }).mount();
     },
 
     initIndexFile() {
-      // PAGE SCROLL ANIMATIONS STARTS HERE
-
-      const faders = document.querySelectorAll(".fadeIn-scroll");
-
-      const appearOptions = {
-        threshold: 0,
-        rootMargin: "0px 0px -250px 0px",
-      };
-
-      const appearOnScroll = new IntersectionObserver(function (
-        entries,
-        appearOnScroll
-      ) {
-        entries.forEach((entry) => {
-          if (!entry.isIntersecting) {
-            return;
-          } else {
-            entry.target.classList.add("appear");
-            appearOnScroll.unobserve(entry.target);
-          }
-        });
-      },
-      appearOptions);
-
-      faders.forEach((fader) => {
-        appearOnScroll.observe(fader);
-      });
-
       // PAGE SCROLL ANIMATIONS ENDS HERE
-
-      // About slider starts here
-
-      var slideIndex = 0;
-      showSlides();
-
-      function showSlides() {
-        var i;
-        var slides = document.getElementsByClassName("mySlides");
-        var dots = document.getElementsByClassName("dot");
-        for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";
-        }
-        slideIndex++;
-        if (slideIndex > slides.length) {
-          slideIndex = 1;
-        }
-        for (i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace(" dot-active", "");
-        }
-          slides[slideIndex - 1].style.display = "block";
-        dots[slideIndex - 1].className += " dot-active";
-        setTimeout(showSlides, 2000); // Change image every 2 seconds
-      }
-      // About slider ends here
 
       // leaders silder starts here
 
@@ -1247,6 +1336,7 @@ export default {
             slidesPerView: 1,
             spaceBetween: 20,
             loop: true,
+            freeMode: true,
             grabCursor: true,
             mousewheel: false,
             centeredSlides: true,
@@ -1255,6 +1345,9 @@ export default {
               el: ".tc-pagination",
               clickable: true,
               dynamicBullets: true,
+            },
+            autoplay: {
+              delay: 2000, // auto play at 2s.
             },
             navigation: {
               nextEl: ".listing-carousel-button-next",
@@ -1268,6 +1361,7 @@ export default {
                 slidesPerView: 2,
               },
               1200: {
+                spaceBetween: 50,
                 slidesPerView: 3,
               },
             },
@@ -1344,53 +1438,82 @@ export default {
 </script>
 
 <style scoped>
+@import "swiper/css/bundle";
 @import "@splidejs/splide/dist/css/splide.min.css";
+.mainContainer {
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+@media (min-width: 1200px) {
+  .mainContainer { 
+    padding-top: 7rem;
+    }
+ 
+}
 
 .littleicon1 {
   position: absolute;
-  top: 260px;
-  left: 10px;
-  width: 110px;
+  top: 30%;
+  left: 8%;
+  width: 5rem;
 }
 
 .littleicon2 {
   position: absolute;
-  top: 460px;
-  left: 10px;
-  width: 100px;
+  top: 50%;
+  left: 7%;
+  width: 4rem;
 }
 
 .littleicon3 {
   position: absolute;
-  top: 350px;
-  left: 250px;
-  width: 100px;
+  top: 60%;
+  left: 75%;
+  width: 4rem;
 }
 .littleicon4 {
   position: absolute;
-  top: 1050px;
-  left: 10px;
-  width: 100px;
+  top: 105%;
+  left: 1%;
+  width: 4rem;
+  z-index: 1;
+}
+.littleicon5 {
+  position: absolute;
+  width: 1.5rem;
 }
 
 .first-page {
   width: 100%;
   position: relative;
+  margin-bottom: 2rem;
+}
+@media only screen and (min-width: 470px) {
+  .first-page {
+    margin-bottom: 20rem;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .first-page {
+    margin-bottom: 30rem;
+  }
 }
 .blob-wrapper {
-  position: relative; /* had a top postioning that was 40px */
+  position: relative;
   overflow-x: hidden;
   z-index: -1;
-  height: 710px;
+  height: 60rem;
 }
 .blob1 {
   object-fit: cover;
   position: relative;
   top: -28rem;
-  left: -170px;
-  margin-left: -100px;
-  height: 1460px;
-  width: 1459px;
+  left: -16rem;
+  height: auto;
+  max-width: 98rem;
+  z-index: -1;
 }
 
 /* blob1-d will not be displayed on mobile screen - cux it's another image with another style */
@@ -1404,7 +1527,8 @@ export default {
 
 .about {
   position: absolute;
-  top: 150px;
+  top: 10rem;
+  text-align: center;
 }
 .about h1 {
   font-family: "Montserrat", sans-serif;
@@ -1435,74 +1559,33 @@ export default {
   margin: 10px auto;
 }
 
-/* The dots/bullets/indicators */
-.dot-wrapper {
-  text-align: center;
-  margin: auto;
-}
-.dot {
-  height: 10px;
-  width: 10px;
-  margin: 0 2px;
-  background-color: #fff;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.dot-active {
-  background-color: greenyellow;
-}
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
 .app-downloads {
-  position: absolute;
-  margin-top: 2rem;
+  position: relative;
+  margin: 2rem auto 0;
+  width: 100%;
 }
 .app-download {
   display: block;
   width: 45%;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 10px;
-  margin-left: 90px;
 }
-
-.appui {
+  .comingSoon {
+    margin-top: 1rem;
+  }
+.main-appUI_wrapper {
   position: relative;
-  top: 160px;
-  width: 100%;
+}
+.appui {
+  width: 80%;
 }
 
 .review-section {
   position: relative;
-  top: 500px;
   width: 100%;
-  height: 70vh;
   font-family: "Montserrat", sans-serif;
+  padding-top: 2rem;
 }
 .review-section h1 {
   width: 80%;
@@ -1522,20 +1605,21 @@ export default {
   margin-top: 40px;
 }
 .box {
-  width: 340px;
-  padding: 0px 20px 50px;
+  width: 90%;
+  padding: 0px 20px 10px;
   background: var(--third-color) 0% 0% no-repeat padding-box;
   box-shadow: 0px 3px 6px #00000008;
   display: block;
-  margin: 60px auto 90px;
+  margin: 0 auto 6rem;
   font-family: "Montserrat", sans-serif;
   border-radius: 10px;
 }
+
 .box-img {
   position: relative;
   top: -60px;
-  height: 100px;
-  width: 100px;
+  height: 140px;
+  width: 140px;
   margin: auto;
   border: 8px solid var(--light-color);
   border-radius: 50%;
@@ -1559,7 +1643,6 @@ export default {
 
 .star {
   text-align: center;
-  margin-bottom: 3px;
 }
 .box h3 {
   text-align: center;
@@ -1568,7 +1651,7 @@ export default {
 }
 .box p {
   color: var(--fourth-color);
-  font-size: 14px;
+  font-size: 0.9rem;
 }
 
 .reviews p {
@@ -1576,23 +1659,11 @@ export default {
   margin-top: 20px;
   font-size: 17px;
 }
-/* Fade in codes starts from here */
 
-.fadeIn-scroll {
-  opacity: 0;
-  transition: opacity 190ms ease-in;
-}
-.fadeIn-scroll.appear {
-  opacity: 1;
-}
-
-/* fade in codes ends here */
 .app-features {
-  height: 1000px;
   position: relative;
-  padding-top: 25rem;
-  width: 80%;
-  margin: 1100px auto 0;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .app-features h1 {
@@ -1611,14 +1682,27 @@ export default {
   font-family: "Montserrat", sans-serif;
   margin-top: 20px;
 }
-.copy-traders,
-.see-leaders,
-.get-signal {
+
+.see-leaders {
   margin: 50px auto 20px;
 }
-/* .copy-img-box {
-  width: 100%;
-} */
+
+.get-signal {
+  margin-top: 5rem;
+  position: relative;
+}
+.iconuntop {
+  position: absolute;
+  width: 2rem;
+  left: 80%;
+  top: 15%;
+}
+.dollarsvg {
+  position: absolute;
+  top: 90%;
+  left: 10%;
+  width: 2rem;
+}
 .copy-img {
   width: 100%;
   margin-left: 10px;
@@ -1630,16 +1714,14 @@ export default {
 .seeLeaders-img {
   width: 100%;
 }
-.get-signal {
-  position: relative;
-  top: 60rem;
-}
 
 .get-signal h1 {
+  width: 90%;
   color: #3374ea;
   font-family: "Montserrat", sans-serif;
   font-weight: 800;
   text-align: center;
+  margin: 0 auto;
 }
 .signal-details {
   width: 80%;
@@ -1665,62 +1747,51 @@ export default {
 .signal-blob {
   position: relative;
   top: -6rem;
-  left: -150px;
-  height: 860px;
+  left: -30%;
   width: 1000px;
+  height: 53rem;
+}
+@media (min-width: 480px) {
+  .signal-blob {
+    top: -3rem;
+    left: -10%;
+    height: 60rem;
+  }
 }
 
 .signal-packs {
   position: absolute;
-  top: 200px;
-  left: 250px;
-  width: 100px;
-  height: 120px;
-  background: var(--third-color);
-  padding: 10px;
-  box-shadow: 0px 20px 17px #1c19230d;
-  border-radius: 10px;
-  transform: rotate(2.4deg);
+  top: 25%;
+  left: 55%;
 }
 .signal-packs.two {
-  position: absolute;
-  top: 340px;
-  left: 240px;
+  top: 43%;
 }
 
 .signal-packs.three {
-  position: absolute;
-  top: 475px;
-  left: 230px;
+  top: 61%;
 }
-.pack-img-wrapper {
-  position: relative;
-  top: -20px;
-  height: 60px;
-  width: 60px;
-  margin: auto;
-  border-radius: 50%;
-  background-color: #3374ea;
-}
-.signal-packs p {
-  text-align: center;
-  font-family: "Poppins", sans-serif;
-  font-size: 12px;
-  color: var(--fourth-color);
-  margin-top: -15px;
-}
-.signal-packs h5 {
-  text-align: center;
-  font-family: "Poppins", sans-serif;
-  color: #3374ea;
-  font-weight: 700;
-  margin-top: 2px;
+
+@media (min-width: 480px) {
+  .signal-packs {
+    top: 29%;
+    left: 70%;
+  }
+
+  .signal-packs.two {
+    top: 45%;
+  }
+
+  .signal-packs.three {
+    top: 63%;
+  }
 }
 .pack-img {
-  width: 30px;
-  height: 60px;
-  margin-left: 15px;
+  width: 80%;
+  margin-left: 10%;
+
 }
+
 
 .main-signal-wrapper {
   display: none;
@@ -1783,15 +1854,13 @@ export default {
 
 .meet-leaders {
   position: relative;
-  top: 69rem;
+  margin-top: 10rem;
   width: 100%;
-  float: left;
-  height: 1100px;
   background: transparent linear-gradient(180deg, #22a1f5 0%, #677bff 100%) 0%
     0% no-repeat padding-box;
   padding-top: 100px;
-  overflow: hidden;
-  margin-bottom: 800px;
+  padding-bottom: 10rem;
+  overflow-x: hidden;
 }
 
 .section-title {
@@ -1836,11 +1905,11 @@ export default {
 }
 .swiper-container {
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
 }
 .listing-carousel-button {
   position: absolute;
-  top: 45%;
+  top: 50%;
   width: 80px;
   height: 50px;
   line-height: 50px;
@@ -1878,22 +1947,18 @@ export default {
 .testimonials-text {
   padding: 75px 50px 75px;
   overflow: hidden;
-  border: 1px solid #f1f1f1;
   border-radius: 10px;
   transition: all 0.3s ease-in-out;
-  height: 350px;
   width: 90%;
   margin: 0 auto;
-  box-shadow: rgba(26, 38, 58, 0.1);
+  box-shadow: 0 9px 26px rgba(58, 87, 135, 0.1);
 }
-
 .testimonials-avatar h3 {
   font-weight: 600;
   color: #fff;
   font-size: 18px;
   font-family: "Montserrat", sans-serif;
 }
-
 .testimonials-carousel .swiper-slide {
   padding: 30px 0;
 }
@@ -1945,40 +2010,35 @@ export default {
   text-align: center;
 }
 
-.signal-img-wrapper {
-  position: absolute;
-  left: 10%;
-  top: 250px;
-  margin-left: -28px;
-}
-.signal-img-wrapper img {
-  width: 350px;
-}
 .swiper-slide-active .testi-item {
   opacity: 1;
   transform: scale(1);
 }
-.tc-pagination {
-  text-align: center;
-  margin-top: 10px;
-  width: 100% !important;
-}
-.tc-pagination_wrap {
-  position: absolute;
-  bottom: -40px;
-  left: 0;
+/* .swiper-pagination {
+	position: relative;
   width: 100%;
+  height: 100px;
+	margin: 0;
+  background: yellow;
 }
-.tc-pagination2 {
-  float: none;
-  display: inline-block;
-  padding: 14px 0;
-  background: #fff;
-  border-radius: 30px;
-  min-width: 250px;
-  border-bottom: 0;
+.swiper-pagination-bullet {
+	padding: 5px 10px;
+	border-radius: 0;
+	width: auto;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+	font-size: 12px;
+	color:#000;
+	opacity: 1;
+	background: rgba(0,0,0,0.2);
 }
-.tc-pagination .swiper-pagination-bullet,
+.swiper-pagination-bullet-active {
+	color:#fff;
+	background: #007aff;
+} */
+
+/* .tc-pagination.swiper-pagination-bullet,
 .tc-pagination2.swiper-pagination-bullet {
   opacity: 1;
   background: #f7ff00;
@@ -1986,7 +2046,7 @@ export default {
   width: 10px;
   height: 10px;
   transition: all 300ms ease-in-out;
-}
+} */
 
 .leaders-app-download {
   width: 100%;
@@ -2026,7 +2086,7 @@ export default {
 
 .app-features-two {
   position: relative;
-  margin-top: 2300px;
+  margin: 4rem auto 0;
 }
 .app-features-two h1 {
   color: #3374ea;
@@ -2064,11 +2124,13 @@ export default {
 }
 
 .trade-img {
-  width: 100%;
+  width: 80%;
+  margin-left: 5%;
 }
 
 .record-img {
-  width: 100%;
+  width: 80%;
+  margin-left: 8%;
 }
 /* cutom svg shape divider  starts*/
 .auto-sec {
@@ -2131,7 +2193,7 @@ export default {
 .auto-track-icons.bcs1 {
   width: 40%;
   top: 300px;
-  left: 210px;
+  left: 50%;
 }
 .auto-track-icons.eth1 {
   width: 40%;
@@ -2147,7 +2209,7 @@ export default {
 .auto-track-icons.eth2 {
   width: 40%;
   top: 550px;
-  left: 210px;
+  left: 50%;
 }
 
 .button,
@@ -2184,19 +2246,28 @@ export default {
   color: #3374ea;
 }
 .littleIcon6 {
-  width: 20%;
+  width: 4rem;
   position: absolute;
   left: 170px;
   top: 30px;
+  z-index: 1;
 }
 .littleIcon7 {
-  width: 20%;
+  width: 4rem;
   position: absolute;
-  left: 140px;
-  top: 1150px;
+  left: 4%;
+  top: 83%;
+  z-index: 1;
 }
 .littleIcon8 {
   display: none;
+}
+.roundicon1 {
+  width: 2rem;
+  position: absolute;
+  left: 80%;
+  top: 90%;
+  z-index: 1;
 }
 .custom-shape-divider-bottom-1644660326 {
   position: absolute;
@@ -2224,8 +2295,20 @@ export default {
   margin-bottom: 30px;
 }
 .profit-loss {
+  position: relative;
   width: 95%;
   margin: 0 auto;
+}
+.littleIconS1 {
+  position: absolute;
+  left: 80%;
+  top: 200px;
+  width: 4rem;
+}
+.littleIconS2 {
+  position: absolute;
+  top: 90%;
+  width: 4rem;
 }
 
 .profit-loss h1 {
@@ -2261,7 +2344,6 @@ export default {
 .share-portfolio-sec {
   background-color: var(--third-color);
   position: relative;
-  height: 160vh;
 }
 .custom-shape-divider-top-1644670257 {
   position: absolute;
@@ -2286,7 +2368,10 @@ export default {
 
 .share-portfolio {
   padding-top: 110px;
-  padding-bottom: 200px;
+  padding-bottom: 50%;
+  margin-bottom: 4rem;
+  position: relative;
+  box-shadow: 200px;
 }
 
 .share-portfolio h1 {
@@ -2300,9 +2385,9 @@ export default {
 .share-blob {
   position: absolute;
   top: 300px;
-  width: 350px;
-  /* height: 400px; */
+  width: 100%;
   opacity: 0.8;
+  overflow-x: hidden;
 }
 
 .share-portfolio-img-box {
@@ -2311,11 +2396,12 @@ export default {
 }
 .share-portfolio-img {
   width: 100%;
-  position: absolute;
+  position: relative;
+  z-index: 1;
 }
 
 .share-portfolio p {
-  margin: 650px auto 0;
+  margin: 0 auto;
   width: 80%;
   color: var(--fourth-color);
   text-align: center;
@@ -2350,7 +2436,9 @@ export default {
   margin-top: 100px;
   margin-bottom: 140px;
 }
-
+.exchange-wrapper {
+  text-align: center;
+}
 .exchange-wrapper h1 {
   width: 80%;
   margin: 0 auto 50px;
@@ -2365,37 +2453,37 @@ export default {
   margin: 50px auto 0;
   text-align: center;
   font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
 }
 .exchange-box-wrapper {
   margin: 5px auto;
   display: inline-block;
+  text-align: center;
 }
 .exchange-box {
   margin-left: 15px;
   width: 101px;
-  height: 110px;
+  height: 125px;
   background: var(--third-color) 0% 0% no-repeat padding-box;
   box-shadow: 0px 3px 6px #00000008;
   border-radius: 20px;
   opacity: 1;
+  vertical-align: middle;
 }
 
 .exchange-logo {
-  margin-top: -12px;
-  margin-left: 15px;
+  /* margin-top: 12px; */
+  /* margin-left: 6px; */
   width: 60px;
-  height: 120px;
+  height: 90px;
 }
 .exchange-logo.min {
   width: 110px;
   margin-left: -5px;
 }
-.exchange-box-wrapper.ten {
-  margin-left: 125px;
-}
+
 .exchange-box p {
-  display: none;
-  padding-top: 3px;
+  /* display: none; */
   color: var(--fourth-color);
   text-align: center;
   font-size: 14px;
@@ -2403,19 +2491,20 @@ export default {
 }
 
 .exchange-download-wrapper {
+  text-align: center;
   margin-top: 2.5rem;
 }
 .exchange-download {
   display: block;
   width: 45%;
-  margin-top: 10px;
-  margin-left: 90px;
+  margin: 0 auto;
+  margin-top: 50px;
 }
 
 .users-review {
   width: 100%;
-  height: 900px;
   margin: 0 auto;
+  position: relative;
 }
 .users-review h1 {
   width: 80%;
@@ -2429,15 +2518,15 @@ export default {
   text-transform: capitalize;
 }
 .user-review-box {
+  width: 80%;
   margin: 30px auto;
-  width: 350px;
-  padding: 0 20px 0;
-  height: 450px;
+  padding: 0 20px 20px;
   background: var(--third-color) 0% 0% no-repeat padding-box;
   box-shadow: 0px 20px 17px #1c192305;
   border-radius: 20px;
   opacity: 1;
   text-align: center;
+  position: relative;
 }
 .user-review-box h3 {
   margin: 30px 0;
@@ -2480,19 +2569,21 @@ export default {
 
 .splide__arrow {
   background-color: #3374ea;
+  /* position: relative; */
+  display: none;
 }
 .splide__arrows button {
   color: white;
 }
 .splide .splide__arrows {
   position: absolute;
-  top: 280px;
+  top: 60%;
 }
 .splide__arrows .splide__arrow--prev {
   left: -30px;
 }
 .splide__arrows .splide__arrow--next {
-  left: 310px;
+  left: 120%;
 }
 .splide .splide__pagination {
   position: relative;
@@ -2520,21 +2611,17 @@ export default {
   font-family: "Montserrat", sans-serif;
 }
 
-.review-download-wrapper {
-  margin: 2.5rem auto 0;
-}
-.review-download {
-  display: block;
-  width: 45%;
-  margin-top: 10px;
-  margin-left: 90px;
+.learn-more {
+  display: none;
+  position: relative;
+  width: 90%;
+  margin: 10rem auto 0;
 }
 
-.learn-more {
-  position: relative;
-  height: 650px;
-  width: 90%;
-  margin: 0 auto;
+@media (min-width: 1200px) {
+  .learn-more {
+    margin: 4rem auto 0;
+  }
 }
 
 .learn-more h1 {
@@ -2557,8 +2644,9 @@ export default {
   line-height: 25px;
 }
 .learn-moreBTN {
+  position: relative;
   margin-top: 10px;
-  margin-left: 85px;
+  margin-left: 20%;
   background-color: #fff;
   border: none;
   border-radius: 50px;
@@ -2574,8 +2662,9 @@ export default {
 
 .vid-play {
   position: absolute;
-  left: 125px;
-  top: 200px;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%);
   background: linear-gradient(to right, #fdfffefb, #a5d872e3);
   border-radius: 50%;
   width: 80px;
@@ -2598,14 +2687,19 @@ export default {
   }
 }
 .vid-play i {
-  margin-top: 20px;
-  margin-left: 25px;
+  position: absolute;
+  color: #3374ea;
+  font-size: 40px;
+  cursor: pointer;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 .vid-play-wrapper {
   margin: 20px auto;
-  width: 300px;
+  width: 100%;
   height: 300px;
-  background: url("../assets/images/video-background.jpg") no-repeat center
+  background: url("../assets/images/video-background.jpeg") no-repeat center
     center fixed;
   box-shadow: 0px 30px 20px #22a1f51a;
   border-radius: 23px;
@@ -2613,7 +2707,7 @@ export default {
 }
 
 .video-img {
-  width: 300px;
+  width: 100%;
   height: 300px;
   position: absolute;
   background: linear-gradient(180deg, #75e7ff 0%, #677bff 100%) 0% 0% no-repeat
@@ -2658,8 +2752,12 @@ export default {
   z-index: 120;
   cursor: pointer;
   position: absolute;
-  top: -40px;
-  left: 270px;
+  /* top: -40px;
+  left: 270px; */
+
+  left: 80%;
+  top: 4%;
+  transform: translate(-50%, -50%);
 }
 .vid-close svg {
   float: right;
@@ -2742,48 +2840,52 @@ export default {
 
 /* FAQ ENDS HERE */
 
-/* IPAD SCEREEN SIZE */
-
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 700px) {
   .littleicon1 {
     position: absolute;
     top: 200px;
     left: 10px;
-    width: 110px;
+    width: 3rem;
   }
 
   .littleicon2 {
     position: absolute;
     top: 550px;
     left: 10px;
-    width: 100px;
+    width: 3rem;
   }
 
   .littleicon3 {
     position: absolute;
     top: 350px;
     left: 650px;
-    width: 100px;
+    width: 3rem;
   }
   .littleicon4 {
     position: absolute;
     top: 650px;
     left: 650px;
-    width: 100px;
+    width: 3rem;
+  }
+  .first-page {
+    margin-bottom: 20rem;
   }
   .blob-wrapper {
-    position: relative; /* had a top postioning that was 40px */
-    overflow-x: hidden;
-    z-index: -1;
+    width: 100%;
     height: 900px;
+    background: #22a1f5;
+    border-radius: 10%;
+    -moz-border-radius: 10%;
+    -webkit-border-radius: 10%;
   }
   .blob1 {
     object-fit: cover;
     position: relative;
     top: -20rem;
-    margin-left: -100px;
-    height: 1460px;
-    width: 1600px;
+    margin-left: -4rem;
+    height: auto;
+    max-width: 98rem;
+    display: none;
   }
   .about {
     position: absolute;
@@ -2794,444 +2896,106 @@ export default {
   .slideshow-container p {
     width: 50%;
   }
+
   .app-downloads {
-    position: absolute;
-    margin-top: 2rem;
-    margin-left: 120px;
+    position: relative;
+    margin: 2rem auto 0;
+    width: 100%;
   }
   .app-download {
     display: inline-block;
-    width: 45%;
+    width: 30%;
     margin-top: 10px;
-    margin-left: 10px;
+    margin-right: 10px;
   }
 
   .appui {
-    position: relative;
-    top: 160px;
-    width: 70%;
-    margin-left: 50px;
+    width: 50%;
   }
+  @media only screen and (min-width: 950px) {
+    .app-download {
+      display: inline-block;
+      width: 20%;
+      margin-top: 10px;
+      margin-right: 10px;
+    }
+    .appui {
+      width: 40%;
+    }
+  }
+  .review-box {
+    text-align: center;
+  }
+  .box {
+    width: 40%;
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: middle;
+  }
+  .littleicon5 {
+    display: none;
+  }
+  .app-features {
+    margin-top: 1rem;
+  }
+
   .app-features h1 {
     margin-bottom: 50px;
   }
   .copy-traders {
     margin: -20px auto 10px;
   }
-  .get-signal {
-    margin: 500px auto 10px;
-  }
-
-  .blob-signal-wrapper {
-    position: absolute;
-    top: -40px;
-    z-index: -1;
-    width: 100%;
-    overflow-x: hidden;
-  }
 
   .signal-blob {
-    position: relative;
-    top: -3rem;
-    left: 50px;
-    width: 1200px;
-    height: 1300px;
-  }
-
-  .signal-packs {
-    position: absolute;
-    top: 150px;
-    left: 480px;
-    width: 180px;
-    height: 190px;
-    background: var(--third-color);
-    box-shadow: 0px 20px 17px #1c19230d;
-    border-radius: 10px;
-    transform: rotate(1deg);
-    z-index: 2;
-  }
-  .signal-packs.two {
-    position: absolute;
-    top: 390px;
-    left: 480px;
-  }
-
-  .signal-packs.three {
-    position: absolute;
-    top: 650px;
-    left: 480px;
-  }
-  .pack-img-wrapper {
-    position: relative;
-    top: -50px;
-    height: 80px;
-    width: 80px;
-    margin: auto;
-    border-radius: 50%;
-    background-color: #3374ea;
-  }
-  .pack-img {
-    width: 50px;
-    height: 50px;
-    margin-top: 16px;
-    margin-left: 15px;
-  }
-  .signal-packs p {
-    text-align: center;
-    font-size: 25px;
-  }
-  .signal-packs h5 {
-    text-align: center;
-    color: #3374ea;
-    font-weight: 600;
-    margin-top: 2px;
-    font-size: 28px;
-  }
-
-  .signal-planner-wrapper {
-    position: relative;
-    top: 4.1rem;
-    left: -30px;
-    width: 70%;
-  }
-
-  .signal-planner {
-    width: 100%;
-  }
-
-  .track-img-box {
-    width: 90%;
-    margin: 0 auto;
-  }
-  .auto-track-img {
-    width: 80%;
-    margin-left: 100px;
-  }
-
-  .auto-track-icons.bcs1 {
-    width: 30%;
-    top: 350px;
-    left: 500px;
-  }
-  .auto-track-icons.eth1 {
-    width: 30%;
-    top: 300px;
-    left: 50px;
-  }
-  .auto-track-icons.bcs2 {
-    width: 30%;
-    top: 650px;
-    left: 20px;
-  }
-  .auto-track-icons.eth2 {
-    width: 30%;
-    top: 800px;
-    left: 500px;
-  }
-  .littleIcon6 {
-    width: 10%;
-    position: absolute;
-    left: 170px;
-    top: 40px;
-  }
-
-  .littleIcon7 {
-    width: 10%;
-    position: absolute;
-    left: 650px;
-    top: 1250px;
-  }
-
-  .share-portfolio-sec {
-    height: 140vh;
-    /* padding: 30rem 0; */
-  }
-  .share-portfolio h1 {
-    text-align: center;
-    color: #3374ea;
-    font-family: "Montserrat", sans-serif;
-    font-weight: bold;
-    font-size: 30px;
-  }
-
-  .share-blob {
-    position: absolute;
-    top: 300px;
-    left: 120px;
-    width: 580px;
-    height: 500px;
-    opacity: 0.8;
-  }
-  .share-portfolio-img-box {
-    width: 90%;
-    margin: 0 auto;
-  }
-  .share-portfolio-img {
-    width: 70%;
-    position: absolute;
-    left: 120px;
-  }
-
-  .share-portfolio p {
-    margin: 900px auto 0;
-    width: 80%;
-    color: var(--fourth-color);
-    text-align: center;
-    font-size: 17px;
-    font-weight: 400;
-    font-family: "Montserrat", sans-serif;
-    line-height: 30px;
-  }
-  .exchange-sec {
-    width: 80%;
-    margin: 100px auto 140px;
-  }
-
-  .exchange-wrapper h1 {
-    width: 80%;
-    margin: 0 auto 50px;
-    text-align: center;
-    color: #3374ea;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 800;
-    font-size: 32px;
-  }
-  .get-details {
-    width: 80%;
-    margin: 50px auto 0;
-    text-align: center;
-    font-family: "Montserrat", sans-serif;
-  }
-  .exchange-box-wrapper {
-    margin: 5px auto;
-    display: inline-block;
-  }
-  .exchange-box {
-    margin-left: 15px;
-    width: 101px;
-    height: 110px;
-    background: var(--third-color) 0% 0% no-repeat padding-box;
-    box-shadow: 0px 3px 6px #00000008;
-    border-radius: 20px;
-    opacity: 1;
-  }
-  .exchange-logo {
-    margin-top: -12px;
-    margin-left: 15px;
-    width: 60px;
-    height: 120px;
-  }
-  .exchange-logo.min {
-    width: 110px;
-    margin-left: -5px;
-  }
-  .exchange-box-wrapper.ten {
-    margin-left: 0;
-  }
-  .exchange-download-wrapper {
-    margin-top: 2.5rem;
-  }
-  .exchange-download {
-    display: inline-block;
-    width: 30%;
-    margin-top: 10px;
-  }
-  .user-review-box {
-    margin: 30px auto;
-    width: 500px;
-    padding: 20px 20px 0;
-    /* height: 450px; */
-    background: var(--third-color) 0% 0% no-repeat padding-box;
-    box-shadow: 0px 20px 17px #1c192305;
-    border-radius: 20px;
-    opacity: 1;
-    text-align: center;
-  }
-
-  .splide .splide__arrows {
-    position: absolute;
-    top: 170px;
-  }
-  .splide__arrows .splide__arrow--prev {
-    left: -30px;
-  }
-  .splide__arrows .splide__arrow--next {
-    left: 465px;
-  }
-
-  .review-download-wrapper {
-    margin-left: 190px;
-  }
-
-  .review-download {
-    display: inline-block;
-    width: 30%;
-    display: inline-block;
-    margin: 10px 15px;
-  }
-
-  .learn-moreBTN {
-    margin-top: 10px;
-    margin-left: 270px;
-    background-color: #fff; /* Green */
-    border: none;
-    border-radius: 50px;
-    color: #3374ea;
-    font-family: "Montserrat", sans-serif;
-    padding: 15px 32px; /* padding on ipad needs adjustmetns*/
-    text-align: center;
-    text-decoration: none;
-    font-size: 19px;
-    font-weight: 700;
-    cursor: pointer;
-  }
-
-  .vid-play {
-    position: absolute;
-    left: 300px;
-    top: 170px;
-    background: linear-gradient(to right, #fdfffefb, #a5d872e3);
-    border-radius: 50%;
-    width: 80px;
-    height: 80px;
-    z-index: 1;
-    cursor: pointer;
-    animation: pulse 2s infinite;
-    box-shadow: 0 0 0px rgba(121, 113, 113, 0.061);
-  }
-
-  @keyframes pulse {
-    0% {
-      box-shadow: 0 0 0 0 rgba(153, 160, 141, 0.897);
-    }
-    50% {
-      box-shadow: 0 0 0 0 rgba(223, 236, 29, 0.815);
-    }
-    100% {
-      box-shadow: 0 0 0 30px rgba(168, 172, 118, 0.726);
-    }
-  }
-  .vid-play i {
-    margin-top: 20px;
-    margin-left: 25px;
-  }
-  .vid-play-wrapper {
-    margin: 20px auto;
-    width: 500px;
-    height: 300px;
-    box-shadow: 0px 30px 20px #22a1f51a;
-    border-radius: 23px;
-    opacity: 1;
-  }
-
-  .video-img {
-    width: 500px;
-    height: 300px;
-    position: absolute;
-    background: linear-gradient(180deg, #75e7ff 0%, #677bff 100%) 0% 0%
-      no-repeat padding-box;
-    border-radius: 23px;
-    opacity: 0.9;
-    transition: 1s ease-out;
-  }
-
-  .video-modal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background: #000;
-    z-index: 20;
-    display: grid;
-    place-items: center;
-    visibility: hidden;
-    opacity: 0;
-    pointer-events: none;
-    transition: all 0.3s ease-in;
-  }
-
-  .video-modal.showmodal {
-    visibility: visible;
-    opacity: 1;
-    pointer-events: all;
-  }
-
-  .modal-container {
-    width: 100%;
-    max-width: 800px;
-    padding: 20px;
-    position: relative;
-  }
-
-  .vid-close {
-    width: 80px;
-    height: 80px;
-    z-index: 120;
-    cursor: pointer;
-    position: absolute;
-    top: -40px;
-    left: 660px;
-  }
-  .vid-close svg {
-    float: right;
-    width: 20px;
-    height: 30px;
-    fill: #fff;
-  }
-
-  .iframe-container {
-    position: relative;
-    width: 95%;
-    padding-top: 50%;
-  }
-
-  .iframe-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
+    left: 20%;
+    height: 70rem;
   }
 }
 
 /* START IPAD PRO SCREEN SIZE DESIGN */
 
 @media only screen and (min-width: 1024px) {
+   .mainContainer { 
+    padding-top: 7rem;
+    }
   .littleicon1 {
     position: absolute;
     top: 110px;
     left: 910px;
-    width: 90px;
+    width: 3rem;
   }
 
   .littleicon2 {
     position: absolute;
     top: 620px;
     left: 900px;
-    width: 100px;
+    width: 3rem;
   }
 
   .littleicon3 {
     position: absolute;
     top: 350px;
     left: 610px;
-    width: 100px;
+    width: 3rem;
   }
   .littleicon4 {
     position: absolute;
     top: 650px;
     left: 10px;
-    width: 100px;
+    width: 4rem;
   }
-
+  .first-page {
+    margin-bottom: 3rem;
+  }
   .blob-wrapper {
     height: 750px;
     position: relative;
     top: -100px;
     overflow-x: hidden;
+    background: unset;
+    border-radius: unset;
+    -moz-border-radius: unset;
+    -webkit-border-radius: unset;
   }
   .blob1 {
     display: none;
@@ -3241,7 +3005,7 @@ export default {
     object-fit: cover;
     position: absolute;
     top: -12.5rem;
-    left: 29rem;
+    left: 38%;
     height: 1100.33px;
     width: 1000.04px;
     transform: translateY(27px);
@@ -3256,7 +3020,7 @@ export default {
   }
   .about {
     top: 140px;
-    left: 60px;
+    left: 4rem;
     width: 50%;
   }
   .about h1 {
@@ -3264,71 +3028,50 @@ export default {
     text-align: left;
     margin: 10px 0;
     color: #3374ea;
-    font-size: 45px;
+    font-size: 2rem;
     font-weight: 800;
     letter-spacing: 0;
-  }
-  /* Slideshow container */
-  .slideshow-container {
-    max-width: 1000px;
-    position: relative;
   }
   .slideshow-container p {
     font-weight: unset;
     width: 60%;
     color: var(--fourth-color);
-    font-size: 17px;
+    font-size: 1rem;
     font-family: "Montserrat", sans-serif;
     text-align: left;
-    margin: 10px;
+    margin: 10px 0;
   }
 
-  /* The dots/bullets/indicators */
-  .dot-wrapper {
-    text-align: left;
-    margin-left: 10px;
-    margin-top: -20px;
-  }
-  .dot {
-    height: 10px;
-    width: 10px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-  }
-  .dot-active {
-    background-color: #3374ea;
-  }
   .app-downloads {
-    position: absolute;
     margin-top: 2rem;
-    margin-left: 10px;
+    text-align: left;
+    width: 100%;
   }
   .app-download {
     display: inline-block;
-    width: 45%;
+    width: 30%;
     margin: 10px auto;
   }
-
+  .main-appUI_wrapper {
+    float: left;
+    width: 60%;
+  }
   .appui {
     position: absolute;
-    top: -60px;
-    left: 35rem;
-    width: 60%;
+    top: -25rem;
+    left: 40rem;
+    width: 90%;
   }
   .review-section {
     top: 0;
-    height: 90vh;
-    margin: 0 auto;
-    width: 80%;
   }
   .review-section h1 {
     font-size: 30px;
   }
   .review-box {
     width: 100%;
-    margin-left: 20px;
+    /* margin-left: 20px; */
+    text-align: center;
   }
   .box {
     width: 350px;
@@ -3339,9 +3082,7 @@ export default {
     font-family: "Montserrat", sans-serif;
     border-radius: 10px;
   }
-  .box.three {
-    margin-left: 190px;
-  }
+
   .box-img {
     position: relative;
     top: -60px;
@@ -3353,9 +3094,6 @@ export default {
     overflow: hidden;
   }
 
-  .box p {
-    font-size: 17px;
-  }
   .app-features {
     height: 1100px;
     position: relative;
@@ -3391,10 +3129,12 @@ export default {
     width: 70%;
     margin: 0 auto;
   }
-
+  .littleicon5 {
+    display: none;
+  }
   .get-signal {
     position: relative;
-    top: 75rem;
+    top: 85rem;
   }
 
   .get-signal h1 {
@@ -3430,53 +3170,27 @@ export default {
 
   .signal-packs {
     position: absolute;
-    top: 290px;
+    top: 30%;
     left: 700px;
-    width: 180px;
-    height: 210px;
-    background: var(--third-color);
-    box-shadow: 0px 20px 17px #1c19230d;
-    border-radius: 10px;
-    transform: rotate(5deg);
-    z-index: 2;
   }
   .signal-packs.two {
     position: absolute;
-    top: 590px;
-    left: 550px;
+    top: 50%;
+    left: 50%;
   }
 
   .signal-packs.three {
     position: absolute;
-    top: 620px;
-    left: 800px;
+    top: 50%;
+    left: 80%;
   }
-  .pack-img-wrapper {
-    position: relative;
-    top: -28px;
-    height: 100px;
-    width: 100px;
-    margin: auto;
-    border-radius: 50%;
-    background-color: #3374ea;
-  }
+
   .pack-img {
-    width: 60px;
-    height: 60px;
+    width: 80%;
     margin-top: 16px;
     margin-left: 20px;
   }
-  .signal-packs p {
-    text-align: center;
-    font-size: 25px;
-  }
-  .signal-packs h5 {
-    text-align: center;
-    color: #3374ea;
-    font-weight: 600;
-    margin-top: 2px;
-    font-size: 28px;
-  }
+
 
   .main-signal-img {
     position: relative;
@@ -3494,12 +3208,8 @@ export default {
   .signal-planner {
     width: 70%;
   }
-
   .meet-leaders {
-    top: 80rem;
-    width: 100%;
-    height: 1000px;
-    margin-bottom: 1500px;
+    margin-top: 100rem;
   }
   .meet-leaders h1 {
     width: 90%;
@@ -3512,8 +3222,9 @@ export default {
   }
   .leader-level {
     position: absolute;
-    right: -20px;
+    right: -30px;
     top: -20px;
+    z-index: 2;
   }
   .leaders-p {
     width: 60%;
@@ -3529,146 +3240,37 @@ export default {
   }
   .listing-carousel-button {
     position: absolute;
-    top: 41%;
-  }
-  .signal-img-wrapper {
-    position: absolute;
-    left: 12%;
-    top: 250px;
-    margin-left: -35px;
-  }
-  .signal-img-wrapper img {
-    width: 380px;
-  }
-
-  .app-features-two {
-    width: 90%;
-    position: relative;
-    padding-top: -500px;
-  }
-
-  .app-features-two h1 {
-    color: #3374ea;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 800;
-    font-size: 40px;
-    text-align: center;
-  }
-  .app-features-two p {
-    color: var(--fourth-color);
-    font-size: 30px;
-    font-weight: 400;
-    font-family: "Montserrat", sans-serif;
-    margin-top: 50px;
-    text-align: center;
-    line-height: 50px;
-  }
-  .trade-lessons {
-    width: 90%;
-    margin: 0 auto;
-  }
-  .trade-lessons h1 {
-    color: #3374ea;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 800;
-    font-size: 40px;
-    text-align: center;
-  }
-  .trade-lessons p {
-    color: var(--fourth-color);
-    font-size: 30px;
-    font-weight: 400;
-    font-family: "Montserrat", sans-serif;
-    margin-top: 50px;
-    text-align: center;
-    line-height: 50px;
-  }
-
-  .trade-img {
-    width: 70%;
-    margin-left: 170px;
-    transition: 0.3s ease;
-  }
-  .trade-img:hover {
-    filter: saturate(140%);
-    transform: scale(0.9);
-  }
-  .record-img-box {
-    width: 70%;
-  }
-  .record-img {
-    width: 90%;
-  }
-  .auto-track {
-    padding-top: 150px;
-    padding-bottom: 300px;
+    top: 50%;
   }
   .auto-track h1 {
-    width: 80%;
-    margin: 0 auto;
-    color: #ffffff;
-    font-size: 40px;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 800;
-    text-align: center;
-  }
-  .auto-track p {
-    margin: 30px auto;
-    width: 80%;
-    color: #ffffff;
-    text-align: center;
-    font-size: 26px;
-    font-family: "Montserrat", sans-serif;
-    line-height: 50px;
-  }
-  .track-img-box {
-    width: 90%;
+    width: 60%;
     margin: 0 auto;
   }
   .auto-track-img {
     width: 80%;
+    margin-left: 13%;
+  }
+  .auto-track-icons.bcs1 {
+    width: 30%;
+    top: 18%;
+    left: 70%;
   }
 
-  .auto-track-icons.bcs1 {
-    width: 40%;
-    top: 450px;
-    left: 500px;
-  }
   .auto-track-icons.eth1 {
-    width: 40%;
-    top: 350px;
-    left: 50px;
+    width: 30%;
+    top: 260px;
+    left: 20px;
   }
+
   .auto-track-icons.bcs2 {
-    width: 40%;
-    top: 760px;
+    width: 30%;
+    top: 500px;
     left: 20px;
   }
   .auto-track-icons.eth2 {
-    width: 40%;
-    top: 1000px;
-    left: 500px;
-  }
-  .littleIcon6 {
-    width: 10%;
-    position: absolute;
-    left: 590px;
-    top: 40px;
-  }
-
-  .littleIcon7 {
-    width: 10%;
-    position: absolute;
-    left: 650px;
-    top: 1900px;
-    display: none;
-  }
-  .littleIcon8 {
-    display: block;
-    /* width: 10%; */
-    position: absolute;
-    left: 900px;
-    top: 1900px;
+    width: 30%;
+    top: 55%;
+    left: 60%;
   }
 
   .profit-loss h1 {
@@ -3689,6 +3291,10 @@ export default {
     width: 80%;
     margin-left: 70px;
   }
+  .share-portfolio {
+    padding-bottom: 30%;
+  }
+
   .share-portfolio h1 {
     width: 60%;
     margin: 0 auto;
@@ -3716,7 +3322,7 @@ export default {
     margin-left: 160px;
   }
   .share-portfolio p {
-    margin: 1200px auto 0;
+    margin: 0 auto;
     width: 80%;
     color: var(--fourth-color);
     text-align: center;
@@ -3731,7 +3337,7 @@ export default {
   }
   .exchange-wrapper h1 {
     width: 80%;
-    margin: 0 auto;
+    margin: 0 auto 1rem;
     text-align: center;
     color: #3374ea;
     font-family: "Montserrat", sans-serif;
@@ -3739,10 +3345,9 @@ export default {
     font-size: 42px;
   }
   .exchange-box {
-    margin: 20px auto 0;
+    margin: 20px 1rem 0;
     width: 200px;
     height: 160px;
-
     background: var(--third-color) 0% 0% no-repeat padding-box;
     box-shadow: 0px 3px 6px #00000008;
     border-radius: 20px;
@@ -3762,6 +3367,7 @@ export default {
     display: inline-block;
     width: 30%;
     margin-top: 10px;
+    margin-left: 1.5rem;
   }
   .exchange-box p {
     display: block;
@@ -3775,8 +3381,6 @@ export default {
   .user-review-box {
     padding: 40px 3px 0;
     margin: 30px auto;
-    width: 800px;
-    height: 490px;
     background: var(--third-color) 0% 0% no-repeat padding-box;
     box-shadow: 0px 20px 17px #1c192305;
     border-radius: 20px;
@@ -3798,7 +3402,7 @@ export default {
   }
   .splide .splide__arrows {
     position: absolute;
-    top: 210px;
+    /* top: 210px; */
   }
   .splide__arrows .splide__arrow--prev {
     left: -10px;
@@ -3806,11 +3410,7 @@ export default {
   .splide__arrows .splide__arrow--next {
     left: 780px;
   }
-  .splide .splide__pagination {
-    position: relative;
-    top: 40px;
-    text-align: center;
-  }
+
   .users-CTA {
     font-size: 20px;
   }
@@ -3824,22 +3424,13 @@ export default {
     border-radius: 50%;
     overflow: hidden;
   }
-  .review-download-wrapper {
-    margin-left: 190px;
-  }
-
-  .review-download {
-    display: inline-block;
-    width: 30%;
-    display: inline-block;
-    margin: 10px 15px;
-  }
 
   .learn-more {
     height: 400px;
+    margin-bottom: 8rem;
   }
   .learn-more h1 {
-    margin: 50px auto 0;
+    margin: 10% auto 0;
     text-align: center;
     color: #3374ea;
     font-family: "Montserrat", sans-serif;
@@ -3851,20 +3442,11 @@ export default {
 
   .vid-play {
     position: absolute;
-    left: 610px;
-    top: 140px;
-    background-color: #fff;
-    border-radius: 50%;
-    width: 80px;
-    height: 80px;
-    z-index: 3;
-    cursor: pointer;
+    left: 75%;
+    top: 78%;
+    transform: translate(-50%, -50%);
   }
 
-  .vid-play i {
-    margin-top: 20px;
-    margin-left: 25px;
-  }
   .vid-play-wrapper {
     float: right;
     margin: 20px auto;
@@ -3882,11 +3464,17 @@ export default {
     background: linear-gradient(180deg, #75e7ff 0%, #677bff 100%) 0% 0%
       no-repeat padding-box;
     border-radius: 23px;
-    opacity: 0.9;
+    opacity: 1;
     transition: 1s ease-out;
   }
   .video-img:hover {
     opacity: 0;
+  }
+
+  .learn-more h1 {
+    width: 50%;
+    text-align: left;
+    margin-left: 19px;
   }
 
   .learn-more p {
@@ -3898,81 +3486,88 @@ export default {
     font-weight: 500;
     font-family: "Montserrat", sans-serif;
     margin-top: 20px;
-    margin-left: 19px;
   }
   .learn-moreBTN {
     position: relative;
     margin-top: 10px;
-    margin-left: 20px;
-    background-color: var(--fourth-color); /* Green */
-    border: none;
-    border-radius: 50px;
-    color: #3374ea;
-    font-family: "Montserrat", sans-serif;
-    padding: 15px 20px; /* padding on ipad needs adjustmetns*/
+    margin-right: 10%;
+    margin-left: unset;
+    background-color: var(--third-color);
+    padding: 15px 20px;
     text-align: center;
-    text-decoration: none;
     font-size: 19px;
     font-weight: 700;
-    cursor: pointer;
+    width: 30%;
+    float: left;
   }
-
-  .vid-close {
-    width: 80px;
-    height: 80px;
-    z-index: 120;
-    cursor: pointer;
-    position: absolute;
-    top: -40px;
-    left: 700px;
+  .learn-moreBTN:hover {
+    background-color: #3374ea;
+    color: var(--fourth-color);
+  }
+  .faq-wrapper {
+    margin-top: 120px;
   }
 }
 /* START COMPUTER SCREEN DESIGN */
 @media only screen and (min-width: 1200px) {
   .littleicon1 {
     position: absolute;
-    top: 200px;
-    left: 1200px;
-    width: 150px;
+    /* top: 200px; */
+    left: 90%;
+    width: 10%;
   }
 
   .littleicon2 {
     position: absolute;
-    top: 720px;
-    left: 1040px;
-    width: 100px;
+    top: 60%;
+    left: 70%;
+    width: 10%;
   }
 
   .littleicon3 {
     position: absolute;
-    top: 350px;
-    left: 780px;
-    width: 100px;
+    top: 20%;
+    left: 60%;
+    width: 10%;
   }
   .littleicon4 {
     position: absolute;
-    top: 650px;
-    left: 30px;
-    width: 100px;
+    top: 50%;
+    left: 10%;
+    width: 10%;
   }
-
+  .first-page {
+    margin-bottom: 1rem;
+  }
   .blob-wrapper {
     height: 1100px;
     position: relative;
-    top: -120px;
+    top: -7.6rem;
     overflow-x: hidden;
   }
 
   .blob1-d {
-    display: block;
     object-fit: cover;
-    top: -11.5rem;
-    left: 653px;
+    top: -13rem;
+    left: 52%;
     height: 1200.33px;
-    width: 1000.04px;
+    width: 62rem;
     transform: translateY(27px);
     z-index: -1;
   }
+
+  @media (min-width: 1430px) {
+    .blob1-d {
+      top: -13rem;
+      left: 53%;
+    }
+  }
+    @media (min-width: 1440px) {
+    .blob1-d  {
+      left: 54%;
+    }
+  }
+
   .background-svg {
     display: block;
     position: absolute;
@@ -3986,69 +3581,76 @@ export default {
     top: 180px;
   }
   .about h1 {
-    width: 70%;
+    width: 100%;
     font-family: "Montserrat", sans-serif;
     text-align: left;
     margin: 7px 0;
     color: #3374ea;
-    font-size: 45px;
+    font-size: 2.5rem;
     font-weight: 800;
     letter-spacing: 0;
+    line-height: 50px;
   }
   .slideshow-container p {
     width: 60%;
-    font-size: 14px;
+    font-size: 1rem;
     font-family: "Montserrat", sans-serif;
+    margin-top: 20px;
+    margin-bottom: 0;
+  }
+  .app-downloads {
+    margin-top: 2rem;
+    margin-left: 0;
   }
   .app-download {
     display: inline-block;
-    width: 35%;
-    margin: 10px auto;
+    width: 30%;
+    margin: 0 auto;
+    margin-right: 1rem;
   }
-
   .appui {
     position: absolute;
-    top: -120px;
-    width: 55%;
-    margin-left: 180px;
+    top: -28rem;
+    width: 90%;
+    margin-left: 30%;
   }
-
+  @media (min-width: 1440px) {
+    .appui {
+      width: 86%;
+      top: -31rem;
+      margin-left: 48%;
+    }
+  }
   .review-section {
     top: -200px;
     margin-bottom: 30px;
-    height: 40vh;
-    margin-bottom: 20rem;
   }
   .review-section h1 {
-    width: 80%;
+    width: 60%;
     margin: 0 auto;
   }
   .review-box {
-    margin-top: 60px;
-    margin-left: 0;
+    margin-top: 60px auto 0;
+    text-align: center;
     display: flex;
     flex: wrap;
     justify-content: center;
   }
   .box {
     width: 340px;
-    height: 300px;
     background: var(--third-color) 0% 0% no-repeat padding-box;
     box-shadow: 0px 3px 6px #00000008;
     display: block;
-    margin: 60px 9px 90px;
+    margin: 60px 9px 20px;
     font-family: "Montserrat", sans-serif;
     border-radius: 10px;
-  }
-  .box.three {
-    margin-left: 0;
   }
 
   .box-img {
     position: relative;
     top: -60px;
-    height: 100px;
-    width: 100px;
+    height: 150px;
+    width: 150px;
     margin: auto;
     border: 8px solid var(--light-color);
     border-radius: 50%;
@@ -4066,15 +3668,15 @@ export default {
   }
   .review-section .star {
     text-align: center;
-    margin-top: -50px;
-    margin-bottom: 3px;
+    margin-top: -2rem;
+    margin-bottom: 2px;
   }
+
   .box h3 {
     text-align: center;
   }
   .box p {
     color: var(--fourth-color);
-    font-size: 16px;
     font-weight: 400;
   }
   .app-features {
@@ -4123,7 +3725,7 @@ export default {
     text-align: left;
   }
   .copy-traders p {
-    width: 500px;
+    width: 31.2rem;
     text-align: left;
   }
   .copy-traders .copy-img {
@@ -4133,7 +3735,6 @@ export default {
   }
   .see-leaders {
     position: relative;
-    margin-bottom: 900px;
     padding-top: 300px;
   }
   .see-leaders h1 {
@@ -4143,11 +3744,21 @@ export default {
     text-align: left;
   }
   .see-leaders p {
+    width: 30rem;
     position: absolute;
-    top: 430px;
-    left: 680px;
+    top: 140%;
+    left: 60%;
+    float: right;
     text-align: left;
+    width: 40%;
   }
+  @media (min-width: 1400px) {
+    .see-leaders p {
+      top: 140%;
+      left: 65%;
+    }
+  }
+
   .see-leaders .copy-img {
     width: 50%;
     position: absolute;
@@ -4158,13 +3769,16 @@ export default {
     position: relative;
     top: 17rem;
   }
-
+  .dollarsvg {
+    top: 70%;
+    left: 25%;
+  }
   .get-signal h1 {
     color: #3374ea;
     font-family: "Montserrat", sans-serif;
     font-weight: 800;
     font-size: 38px;
-    width: 50%;
+    width: 40%;
     position: absolute;
     top: 290px;
     left: 140px;
@@ -4174,7 +3788,7 @@ export default {
   .signal-details {
     width: 30%;
     position: absolute;
-    top: 410px;
+    top: 450px;
     left: 140px;
     text-align: left;
     color: var(--fourth-color);
@@ -4195,7 +3809,7 @@ export default {
   .signal-blob {
     position: relative;
     top: -2rem;
-    left: 600px;
+    left: 700px;
     width: 1000px;
     height: 1000px;
   }
@@ -4203,63 +3817,62 @@ export default {
   .signal-packs {
     position: absolute;
     top: 190px;
-    left: 1130px;
-    width: 95px;
-    height: 110px;
-    background: var(--third-color);
-    box-shadow: 0px 20px 17px #1c19230d;
-    border-radius: 8px;
-    z-index: 2;
+    left: 78%;
+   
   }
   .signal-packs.two {
     position: absolute;
-    top: 290px;
-    left: 1020px;
+    top: 37%;
+    left: 73%;
+
   }
 
   .signal-packs.three {
     position: absolute;
-    top: 310px;
-    left: 1220px;
+    top: 38%;
+    left: 86%;
+
   }
-  .pack-img-wrapper {
-    position: relative;
-    top: -20px;
-    width: 53px;
-    height: 53px;
-    margin: auto;
-    border-radius: 50%;
-    background-color: #3374ea;
-  }
+
   .pack-img {
-    width: 25px;
-    height: 23px;
-    margin-top: 16px;
-    margin-left: 13px;
+    width: 80%;
   }
-  .signal-packs p {
-    text-align: center;
-    font-family: "Poppins", sans-serif;
-    margin-top: -15px;
-    font-size: 13px;
+
+  @media (min-width: 1440px) {
+      .signal-packs {
+    position: absolute;
+    top: 190px;
+    left: 80%;
+   
   }
-  .signal-packs h5 {
-    text-align: center;
-    font-family: "Montserrat", sans-serif;
-    color: #3374ea;
-    font-weight: 600;
-    margin-top: 2px;
-    font-size: 17px;
+  .signal-packs.two {
+    position: absolute;
+    top: 38%;
+    left: 75%;
+
   }
+
+  .signal-packs.three {
+    position: absolute;
+    top: 38%;
+    left: 86%;
+
+  }
+
+  .pack-img {
+    width: 70%;
+  }
+  }
+
   .main-signal-wrapper {
     display: block;
     position: relative;
-    top: 300px;
-    left: 390px;
+    top: 25rem;
+    left: 32%;
     width: 30%;
   }
   .main-signal-img {
-    width: 70%;
+    width: 60%;
   }
 
   .signal-planner-wrapper {
@@ -4273,60 +3886,78 @@ export default {
     width: 100%;
     transition: 00.3s ease-out;
   }
-
+  @media (min-width: 1440px) {
+    .main-signal-img {
+      width: 50%;
+      margin-left: 5rem;
+    }
+    .signal-planner {
+      margin-left: 5rem;
+    }
+  }
   .signal-planner:hover {
     filter: saturate(140%);
     transform: scale(0.9);
   }
 
   .meet-leaders {
-    top: 10rem;
-    width: 100%;
-    margin-bottom: 200px;
     z-index: 2;
+    margin-top: 20rem;
   }
+
   .swiper-container {
-    width: 90%;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  .swiper-wrapper {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
   }
   .listing-carousel-button {
     position: absolute;
-    top: 40%;
+    top: 50%;
   }
   .leader-level {
-    /* width: 0px; */
     position: absolute;
-    right: -20px;
-    top: -20px;
+    right: 10%;
+    top: -2%;
   }
-  .signal-img-wrapper {
-    position: absolute;
-    left: 13%;
-    top: 250px;
-    margin-left: -20px;
+  .leader-level img {
+    width: 4rem;
   }
-  .signal-img-wrapper img {
-    width: 320px;
+  .testimonials-text {
+    padding: 5rem 1rem 3rem;
+    overflow: hidden;
+    background: #22a1f5;
+    box-shadow: 0 9px 26px rgba(58, 87, 135, 0.1);
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+    width: 100%;
+    margin: 0 auto;
   }
 
   .app-features-two {
     width: 90%;
     position: relative;
     margin-top: 200px;
+    margin: 4rem auto 0;
   }
 
   .app-features-two h1 {
     color: #3374ea;
     font-family: "Montserrat", sans-serif;
     font-weight: 800;
-    font-size: 40px;
+    font-size: 2.5rem;
     width: 40%;
     float: right;
-    margin-top: 110px;
     text-align: left;
+    margin-top: 8%;
   }
   .app-features-two p {
     color: var(--fourth-color);
-    margin-top: -330px;
+    margin-top: -320px;
     text-align: left;
     font-size: 14px;
     font-weight: 500;
@@ -4397,16 +4028,18 @@ export default {
   }
   .auto-track {
     padding-top: 250px;
-    padding-bottom: 250px;
+    padding-bottom: 30%;
   }
+
   .auto-track h1 {
-    width: 40%;
+    width: 50%;
     margin: 0;
     margin-left: 90px;
     color: #ffffff;
     font-family: "Montserrat", sans-serif;
     font-weight: 800;
     text-align: left;
+    font-size: 2.5rem;
   }
   .auto-track p {
     margin: 30px 0;
@@ -4453,15 +4086,22 @@ export default {
   .littleIcon6 {
     width: 5%;
     position: absolute;
-    left: 700px;
-    top: 800px;
+    left: 50%;
+    top: 95%;
   }
   .littleIcon8 {
     display: block;
     width: 2%;
     position: absolute;
-    left: 200px;
-    top: 50px;
+    left: 15%;
+    top: 5%;
+  }
+  .roundicon1 {
+    width: 3rem;
+    position: absolute;
+    left: 80%;
+    top: 2%;
+    z-index: 1;
   }
   .auto-button {
     margin-left: 90px;
@@ -4479,6 +4119,17 @@ export default {
   .profit-loss-sec {
     position: relative;
   }
+  .littleIconS1 {
+    position: absolute;
+    width: 5rem;
+    left: 5%;
+  }
+  .littleIconS2 {
+    position: absolute;
+    left: 80%;
+    top: 70%;
+    width: 5rem;
+  }
   .proft-loss-img-box {
     width: 60%;
     margin: 0 auto;
@@ -4487,6 +4138,7 @@ export default {
     width: 50%;
     margin-left: 150px;
   }
+
   .groupshare {
     display: block;
     position: absolute;
@@ -4516,6 +4168,7 @@ export default {
   /* .. */
   .share-portfolio {
     padding-top: 300px;
+    padding-bottom: 35%;
   }
 
   .share-portfolio h1 {
@@ -4631,8 +4284,6 @@ export default {
   .user-review-box {
     margin: 30px auto;
     padding: 20px 0;
-    width: 800px;
-    height: 390px;
     background: var(--third-color) 0% 0% no-repeat padding-box;
     box-shadow: 0px 20px 17px #1c192305;
     border-radius: 20px;
@@ -4655,18 +4306,13 @@ export default {
   /* Start of splide js file */
   .splide .splide__arrows {
     position: absolute;
-    top: 140px;
+    /* top: 140px; */
   }
   .splide__arrows .splide__arrow--prev {
     left: -12px;
   }
   .splide__arrows .splide__arrow--next {
     left: 785px;
-  }
-  .splide .splide__pagination {
-    position: relative;
-    top: 10px;
-    text-align: center;
   }
 
   /* End of splide js file */
@@ -4681,20 +4327,6 @@ export default {
     width: 40%;
     display: inline-block;
     margin: 10px 15px;
-  }
-  .learn-more {
-    height: 500px;
-  }
-  .learn-more h1 {
-    margin: 80px auto 0;
-    margin-left: -40px;
-    text-align: center;
-    color: #3374ea;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 800;
-    font-size: 35px;
-    float: left;
-    width: 50%;
   }
 
   .vid-play-wrapper {
@@ -4718,18 +4350,6 @@ export default {
     transition: 1s ease-out;
   }
 
-  .vid-play {
-    position: absolute;
-    left: 930px;
-    top: 140px;
-    background-color: #fff;
-    border-radius: 50%;
-    width: 80px;
-    height: 80px;
-    z-index: 3;
-    cursor: pointer;
-  }
-
   .learn-more p {
     float: left;
     width: 40%;
@@ -4739,31 +4359,9 @@ export default {
     font-weight: 500;
     font-family: "Montserrat", sans-serif;
     margin-top: 20px;
-    margin-left: 50px;
     line-height: 25px;
   }
-  .learn-moreBTN {
-    position: relative;
-    top: 130px;
-    right: 480px;
-    margin-top: 10px;
-    margin-left: 20px;
-    background-color: var(--third-color);
-    border: none;
-    border-radius: 50px;
-    color: #3374ea;
-    font-family: "Montserrat", sans-serif;
-    padding: 15px 20px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 19px;
-    font-weight: 700;
-    cursor: pointer;
-  }
-  .learn-moreBTN:hover {
-    background-color: #3374ea;
-    color: var(--third-color);
-  }
+
   .faq-wrapper {
     position: relative;
     max-width: 100%;
@@ -4785,10 +4383,7 @@ export default {
     font-weight: 800;
     font-size: 42px;
   }
-  .faqtwo {
-    position: absolute;
-    left: 600px;
-  }
+
   .faqwrapper {
     background-color: var(--third-color);
     margin-bottom: 20px;
@@ -4827,161 +4422,6 @@ export default {
 
   .mobilefooter {
     display: none;
-  }
-}
-
-/* ----------- Retina Screens ----------- */
-@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
-  .littleicon1 {
-    position: absolute;
-    top: 90px;
-    left: 1250px;
-    width: 130px;
-  }
-
-  .littleicon2 {
-    position: absolute;
-    top: 720px;
-    left: 1250px;
-    width: 100px;
-  }
-
-  .littleicon3 {
-    position: absolute;
-    top: 350px;
-    left: 860px;
-    width: 100px;
-  }
-  .littleicon4 {
-    position: absolute;
-    top: 650px;
-    left: 30px;
-    width: 100px;
-  }
-  .blob-wrapper {
-    height: 1100px;
-    position: relative;
-    top: -100px;
-    overflow-x: hidden;
-  }
-
-  .blob1-d {
-    display: block;
-    object-fit: cover;
-    top: -13rem;
-    left: 600px;
-    height: 1300;
-    width: 1300.04px;
-    transform: translateY(27px);
-    z-index: -1;
-  }
-  .appui {
-    position: absolute;
-    top: -120px;
-    width: 55%;
-    margin-left: 240px;
-  }
-  .review-section {
-    height: 10vh;
-  }
-
-  .get-signal h1 {
-    color: #3374ea;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 800;
-    font-size: 38px;
-    width: 40%;
-    position: absolute;
-    top: 290px;
-    left: 140px;
-    text-align: left;
-  }
-  .blob-signal-wrapper {
-    position: absolute;
-    top: 40px;
-    z-index: -1;
-    width: 100%;
-    overflow-x: hidden;
-  }
-
-  .signal-blob {
-    position: relative;
-    top: -2rem;
-    left: 700px;
-    width: 1000px;
-    height: 1000px;
-  }
-  .see-leaders h1 {
-    margin-top: 0;
-    width: 403px;
-    float: right;
-    text-align: left;
-  }
-  .see-leaders p {
-    position: absolute;
-    top: 430px;
-    left: 720px;
-    text-align: left;
-  }
-  .vid-play-wrapper {
-    float: right;
-    margin: 20px auto;
-    width: 500px;
-    height: 380px;
-    box-shadow: 0px 30px 20px #22a1f51a;
-    border-radius: 23px;
-    opacity: 1;
-  }
-
-  .video-img {
-    width: 500px;
-    height: 380px;
-    position: absolute;
-    background: linear-gradient(180deg, #75e7ff 0%, #677bff 100%) 0% 0%
-      no-repeat padding-box;
-    border-radius: 23px;
-    opacity: 0.9;
-    transition: 1s ease-out;
-  }
-
-  .vid-play {
-    position: absolute;
-    left: 970px;
-    top: 180px;
-    border-radius: 50%;
-    width: 80px;
-    height: 80px;
-    z-index: 3;
-    cursor: pointer;
-  }
-  .learn-more h1 {
-    margin: 80px auto 0;
-    margin-left: -50px;
-    text-align: center;
-    color: #3374ea;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 800;
-    font-size: 35px;
-    float: left;
-    width: 50%;
-  }
-  .learn-more p {
-    float: left;
-    width: 40%;
-    color: var(--third-color);
-    text-align: left;
-    font-size: 14px;
-    font-weight: 500;
-    font-family: "Montserrat", sans-serif;
-    margin-top: 20px;
-    margin-left: 50px;
-    line-height: 25px;
-  }
-  .learn-moreBTN {
-    position: relative;
-    top: 260px;
-    right: 520px;
-    margin-top: 10px;
   }
 }
 </style>

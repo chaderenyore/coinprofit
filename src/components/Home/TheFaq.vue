@@ -5,11 +5,12 @@
         <div class="faqcontainer">
             <div class="faqwrapper">
                 <button class="faqtoggle">
-                    <h3>Question 1 look like this if the question is too long to display on one line</h3>
+                    <h3>I’m New To Crypto. Who Should I Subscribe To?</h3>
                     <i class="fa fa-chevron-down faqicon" style="color: #3374EA;"></i>
                 </button>
                 <div class="faqcontent">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta aliquam facere adipisci quod mollitia, aut nemo deleniti fugiat et, corrupti sequi. Omnis dolorem quos eligendi placeat soluta sint corrupti quod.</p>
+                    <p>We are working on adding rating and analytics systems to the CoinProfit app so it will be easier for you to see the track records of all the leaders. In the meantime, we encourage you to subscribe to only leaders you know and trust. If you are completely new and don’t know any leader, your best bet will be to subscribe to our CEO and Founder - Emmanuel Ohworeko. Or any of the leaders featured on our website on the leader's page
+</p>
                 </div>
             </div>
             <div class="faqwrapper">

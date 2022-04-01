@@ -1,77 +1,254 @@
 <template>
-  <section class="first-page">
-    <img src="@/assets/images/Asset-1.svg" alt="" class="background-svg" />
-    <div class="blob-wrapper">
-      <img
-        src="@/assets/images/leaders/mobile-blob.png"
-        alt="A blob SVG acts as a background here"
-        class="mobile-blob"
-      />
+  <div class="mainLeaders_Wrapper">
+    <section class="first-page">
+      <img src="@/assets/images/Asset-1.svg" alt="" class="background-svg" />
+      <div class="blob-wrapper">
+        <img
+          src="@/assets/images/leaders/mobile-blob.png"
+          alt="A blob SVG acts as a background here"
+          class="mobile-blob"
+        />
 
-      <img
-        src="@/assets/images/leaders/computer-blob.png"
-        alt="A blob SVG acts as a background here"
-        class="computer-blob"
-      />
-    </div>
-
-    <div class="leaders-about">
-      <h1>Make Money By Letting Others See Your Trades</h1>
-
-      <img src="@/assets/images/leaders/leaderUI.png" alt="" class="appui" />
-
-      <div class="signal-packs">
-        <div class="pack-img-wrapper">
-          <img src="@/assets/images/customer.svg" alt="" class="pack-img" />
-        </div>
-        <p>My <br />Followers</p>
-        <h5>4290</h5>
+        <img
+          src="@/assets/images/leaders/computer-blob.png"
+          alt="A blob SVG acts as a background here"
+          class="computer-blob"
+        />
       </div>
-      <div class="signal-packs two">
-        <div class="pack-img-wrapper">
+
+      <div class="leaders-about">
+        <h1>Make Money By Letting Others See Your Trades</h1>
+
+        <img src="@/assets/images/leaders/leaderUI.png" alt="" class="appui" />
+
+        <div class="signal-packs">
+          <div class="pack-img-wrapper">
+            <img src="@/assets/images/customer.svg" alt="" class="pack-img" />
+          </div>
+          <p>My <br />Followers</p>
+          <h5>4290</h5>
+        </div>
+        <div class="signal-packs two">
+          <div class="pack-img-wrapper">
+            <img
+              src="@/assets/images/verified-user.svg"
+              alt=""
+              class="pack-img"
+            />
+          </div>
+          <p>
+            My <br />
+            Subscribers
+          </p>
+          <h5>2 021</h5>
+        </div>
+        <div class="signal-packs three">
+          <div class="pack-img-wrapper">
+            <img src="@/assets/images/money.svg" alt="" class="pack-img" />
+          </div>
+          <p>Subscribers Earnings</p>
+          <h5>$ 10 902</h5>
+        </div>
+
+        <p class="leaders-aboutP">
+          If you are an influencer or leader in the crypto space with a track
+          record, you can make money by letting your community of subscribers
+          see the coins you buy, when you buy and when you sell. <br />
+          <br />
+
+          We have integration with DEX (BSC, ETH) and CEX (Binance, Kucoin and
+          FTX). This means your subscribers will be able to see anytime you
+          perform a trade on any of these platforms.
+          <br />
+          <br />
+
+          Your subscribers will only see the coins you buy/sell and the price of
+          the coin as at when you executed the trade but won&rsquo;t see the
+          amount of money yoursquore trading with. <br />
+          <br />
+
+          And of course, you can set your own subscription fee per month. $5,
+          $10, $20, $100, whatever you want - It&rsquo;s passive income for you.
+        </p>
+
+        <div class="app-downloads">
+          <a href="#" target="_blank" rel="noopener noreferrer"
+            ><img
+              src="@/assets/images/appstore.svg"
+              alt=""
+              srcset=""
+              class="app-download"
+          /></a>
+
+          <a href="#" target="_blank" rel="noopener noreferrer"
+            ><img
+              src="@/assets/images/goplay.svg"
+              alt=""
+              srcset=""
+              class="app-download"
+          /></a>
+           <p class="comingSoon font-bold md:font-semibold text-2xl" >coming soon...</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="win-win">
+      <h1>It’s a WIN-WIN!</h1>
+      <p>
+        Your subscribers see your trades so they can choose to buy when you buy
+        and sell when you sell. You make money, they make money too!
+      </p>
+    </section>
+
+    <section class="iconholder">
+      <img
+        src="@/assets/images/listtle-Icons/icon-btc.svg"
+        alt=""
+        class="iconBTC1"
+      />
+    </section>
+    <section>
+      <div class="leaders-features">
+        <h1>Share Signal</h1>
+        <img src="@/assets/images/listtle-Icons/4.svg" alt="" class="svg4" />
+        <img src="@/assets/images/listtle-Icons/2.svg" alt="" class="svg2F" />
+        <img src="@/assets/images/listtle-Icons/7.svg" alt="" class="svg7F" />
+
+        <img
+          src="@/assets/images/leaders/share-blob.png"
+          class="leadersF-blob"
+        />
+
+        <div class="leaders-portfolio-box">
           <img
-            src="@/assets/images/verified-user.svg"
-            alt=""
-            class="pack-img"
+            src="@/assets/images/leaders/leader1.webp"
+            alt="Share Image"
+            class="share-portfolio-img"
           />
         </div>
         <p>
-          My <br />
-          Subscribers
+          Easily share signals with your followers and subscribers. Select
+          exchange, pick a coin, set entry targets, take profit targets and stop
+          loss. We make signal sharing super easy.
         </p>
-        <h5>2 021</h5>
       </div>
-      <div class="signal-packs three">
-        <div class="pack-img-wrapper">
-          <img src="@/assets/images/money.svg" alt="" class="pack-img" />
+
+      <div class="leaders-features two">
+        <h1>
+          See Subscribers<br />
+          Earnings
+        </h1>
+        <img src="@/assets/images/listtle-Icons/1.svg" alt="" class="svgOne" />
+        <img
+          src="@/assets/images/listtle-Icons/dollarontop.svg"
+          alt=""
+          class="svgontop"
+        />
+        <img src="@/assets/images/listtle-Icons/6.svg" alt="" class="svg6F" />
+
+        <img
+          src="@/assets/images/leaders/share-blob.png"
+          class="leadersF-blob two"
+        />
+
+        <div class="leaders-portfolio-box">
+          <img
+            src="@/assets/images/leaders/leader2.svg"
+            alt="Share Image"
+            class="seeSubsimg"
+          />
         </div>
-        <p>Subscribers Earnings</p>
-        <h5>$ 10 902</h5>
+        <p>
+          Your subscribers will be able to rate and share feedback on your
+          signals. They will also be able to share how much profit/loss they
+          made based on your signals. This will help you keep track of how you
+          are changing your subscribers' lives through financial education.
+        </p>
       </div>
 
-      <p class="leaders-aboutP">
-        Lead and let others follow your footstep. Let people follow and/or
-        subscribe to you. <br />
-        <br />
+      <div class="leaders-features three">
+        <h1>Keep Your Subscribers Informed</h1>
+        <img
+          src="@/assets/images/listtle-Icons/litegold.svg"
+          alt=""
+          class="svgOneNP"
+        />
+        <img
+          src="@/assets/images/listtle-Icons/moneygold.svg"
+          class="svgontopNP"
+        />
 
-        You can choose to charge any amount of money
-        <i>monthly/year/lifetime.</i> So those subscribed to you will be able to
-        see the coins you buy, when you buy and when you sell without revealing
-        the transaction amount. <br />
-        <br />
+        <img src="@/assets/images/listtle-Icons/3.svg" alt="" class="svg6NP" />
+        <img src="@/assets/images/listtle-Icons/4.svg" alt="" class="svg4NP" />
 
-        E.G, If you buy $BNB, you don’t need to tell anyone you bought it. Your
-        subscribers (Those paying you) will see it and buy it too if they want.
-        They make profit as you make profit. It’s a Win-Win!
-      </p>
+        <img
+          src="@/assets/images/leaders/share-blob.png"
+          class="leadersF-blob"
+        />
 
-      <div class="app-downloads">
+        <div class="leaders-portfolio-box">
+          <img
+            src="@/assets/images/leaders/leader3.svg"
+            alt="Share Image"
+            class="share-portfolio-img"
+          />
+        </div>
+        <p>
+          Share your thoughts and the latest happenings on the market with your
+          followers and subscribers. Help them stay informed and stay profitable
+        </p>
+      </div>
+
+      <div class="leaders-features two">
+        <h1>Generate And Share Your Signal Report</h1>
+
+        <img src="@/assets/images/listtle-Icons/6.svg" class="svg6FNP" />
+        <img
+          src="@/assets/images/listtle-Icons/iconuntop.svg"
+          class="svgOneNP"
+        />
+        <img
+          src="@/assets/images/listtle-Icons/moneygold.svg"
+          class="svgontopNP"
+        />
+
+        <img
+          src="@/assets/images/listtle-Icons/iconsheidl.svg"
+          alt=""
+          class="svg6NP"
+        />
+        <img src="@/assets/images/listtle-Icons/4.svg" alt="" class="svg4NP" />
+        <img
+          src="@/assets/images/listtle-Icons/iconsheidl.svg"
+          alt=""
+          class="sheildicoNP"
+        />
+
+        <img
+          src="@/assets/images/leaders/share-blob.png"
+          class="leadersF-blob two last"
+        />
+
+        <div class="leaders-portfolio-box">
+          <img
+            src="@/assets/images/share-img.webp"
+            alt="Share Image"
+            class="seeSubsimg"
+          />
+        </div>
+        <p>
+          Easily share signals with your followers and subscribers. We
+          automatically track the signal progress and give you more bragging
+          rights when your signals hit profit target.
+        </p>
+      </div>
+      <div class="app-downloads wrapper">
         <a href="#" target="_blank" rel="noopener noreferrer"
           ><img
             src="@/assets/images/appstore.svg"
             alt=""
             srcset=""
-            class="app-download"
+            class="app-download features"
         /></a>
 
         <a href="#" target="_blank" rel="noopener noreferrer"
@@ -79,211 +256,471 @@
             src="@/assets/images/goplay.svg"
             alt=""
             srcset=""
-            class="app-download"
+            class="app-download features"
         /></a>
+        <p class="comingSoon font-bold md:font-semibold text-2xl" >coming soon...</p>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section>
-    <div class="leaders-features">
-      <h1>Share Signal</h1>
-      <img src="@/assets/images/leaders/share-blob.png" class="leadersF-blob" />
+    <section class="mobile-leaders-section">
+      <h1>Featured Leaders</h1>
+      <h6>Meet some of the leaders on the CoinProfit App.</h6>
 
-      <div class="leaders-portfolio-box">
-        <img
-          src="@/assets/images/share-img.png"
-          alt="Share Image"
-          class="share-portfolio-img"
-        />
-      </div>
-      <p>
-        Easily share signals with your followers and subscribers. We
-        automatically track the signal progress and give you more bragging
-        rights when your signals hit profit target.
-      </p>
-    </div>
-
-    <div class="leaders-features two">
-      <h1>
-        See Subscribers<br />
-        Earnings
-      </h1>
-      <img
-        src="@/assets/images/leaders/share-blob.png"
-        class="leadersF-blob two"
-      />
-
-      <div class="leaders-portfolio-box">
-        <img
-          src="@/assets/images/share-img.png"
-          alt="Share Image"
-          class="seeSubsimg"
-        />
-      </div>
-      <p>
-        Your subscribers will be able to rate and share feedback on your
-        signals. They will also be able to share how much profit/loss they made
-        based on your signals. This will help you keep a track of how you are
-        changing your subscribers' lives through financial education.
-      </p>
-    </div>
-
-    <div class="leaders-features three">
-      <h1>Share Thought</h1>
-      <img src="@/assets/images/leaders/share-blob.png" class="leadersF-blob" />
-
-      <div class="leaders-portfolio-box">
-        <img
-          src="@/assets/images/share-img.png"
-          alt="Share Image"
-          class="share-portfolio-img"
-        />
-      </div>
-      <p>
-        Share your thoughts and let others know what you think about the crypto
-        market, keep your followers updated.
-      </p>
-    </div>
-
-    <div class="leaders-features two last">
-      <h1>Generate And Share <br />Your Signal Report</h1>
-      <img
-        src="@/assets/images/leaders/share-blob.png"
-        class="leadersF-blob two last"
-      />
-
-      <div class="leaders-portfolio-box">
-        <img
-          src="@/assets/images/share-img.png"
-          alt="Share Image"
-          class="seeSubsimg"
-        />
-      </div>
-      <p>
-        Easily share signals with your followers and subscribers. We
-        automatically track the signal progress and give you more bragging
-        rights when your signals hit profit target.
-      </p>
-    </div>
-    <div class="app-downloads wrapper">
-      <a href="#" target="_blank" rel="noopener noreferrer"
-        ><img
-          src="@/assets/images/appstore.svg"
-          alt=""
-          srcset=""
-          class="app-download features"
-      /></a>
-
-      <a href="#" target="_blank" rel="noopener noreferrer"
-        ><img
-          src="@/assets/images/goplay.svg"
-          alt=""
-          srcset=""
-          class="app-download features"
-      /></a>
-    </div>
-  </section>
-
-  <section class="mobile-leaders-section">
-    <h1>Featured Leaders</h1>
-    <h6>Meet some of the leaders on the CoinProfit App.</h6>
-
-    <div class="mobile-leaders-box-wrapper">
-      <div class="splide">
-        <div class="splide__arrows">
-          <button class="splide__arrow splide__arrow--prev">
-            <i class="fa fa-angle-left"></i>
-          </button>
-          <button class="splide__arrow splide__arrow--next">
-            <i class="fa fa-angle-right"></i>
-          </button>
-        </div>
-
-        <div class="splide__progress"></div>
-        <div class="splide__track">
-          <div class="splide__list">
-            <div class="splide__slide">
-              <div class="mobile-leaders-box">
-                <div class="mobile-leaders-img-box">
-                  <img src="@/assets/images/review3.jpeg" alt="IMAGE" />
-                </div>
-
-                <div class="leader-lv">
-                  <img src="@/assets/images/leader-level1.svg" />
-                </div>
-
-                <p>@lordemma</p>
-                <h3>Emmanuel Ohworeko</h3>
-                <h4>CEO and Founder of CoinProfit</h4>
-
-                <div class="reviews">
-                  <p>
-                    Starting his crypto journey in 2020, Emmanuel has grown to
-                    become a leader through constant learning
-                  </p>
-                </div>
-              </div>
-            </div>
-            <!-- End Splide Splide-->
-
-            <div class="splide__slide">
-              <div class="mobile-leaders-box">
-                <div class="mobile-leaders-img-box">
-                  <img src="@/assets/images/review3.jpeg" alt="IMAGE" />
-                </div>
-
-                <div class="leader-lv">
-                  <img src="@/assets/images/leader-level1.svg" />
-                </div>
-
-                <p>@lordemma</p>
-                <h3>Emmanuel Ohworeko</h3>
-                <h4>CEO and Founder of CoinProfit</h4>
-
-                <div class="reviews">
-                  <p>
-                    Starting his crypto journey in 2020, Emmanuel has grown to
-                    become a leader through constant learning
-                  </p>
-                </div>
-              </div>
-            </div>
-            <!-- End Splide Splide-->
-
-            <div class="splide__slide">
-              <div class="mobile-leaders-box">
-                <div class="mobile-leaders-img-box">
-                  <img src="@/assets/images/review3.jpeg" alt="IMAGE" />
-                </div>
-
-                <div class="leader-lv">
-                  <img src="@/assets/images/leader-level1.svg" />
-                </div>
-
-                <p>@lordemma</p>
-                <h3>Emmanuel Ohworeko</h3>
-                <h4>CEO and Founder of CoinProfit</h4>
-
-                <div class="reviews">
-                  <p>
-                    Starting his crypto journey in 2020, Emmanuel has grown to
-                    become a leader through constant learning
-                  </p>
-                </div>
-              </div>
-            </div>
-            <!-- End Splide Splide-->
+      <div class="mobile-leaders-box-wrapper">
+        <div class="splide">
+          <div class="splide__arrows">
+            <button class="splide__arrow splide__arrow--prev">
+              <i class="fa fa-angle-left"></i>
+            </button>
+            <button class="splide__arrow splide__arrow--next">
+              <i class="fa fa-angle-right"></i>
+            </button>
           </div>
-          <!-- End splide list-->
-        </div>
-        <!-- end splide track-->
-      </div>
 
-      <div class="mobile-leaders-box-background">
-        <div class="svg-background"></div>
-        <div class="custom-shape-divider-top-1646475939">
-          <div class="custom-shape-divider-bottom-1646476356">
+          <div class="splide__progress"></div>
+          <div class="splide__track">
+            <div class="splide__list">
+              <div class="splide__slide">
+                <div class="mobile-leaders-box">
+                  <div class="mobile-leaders-img-box">
+                    <img
+                      src="@/assets/images/leaders/emmanuel.webp"
+                      alt="Leader Image"
+                    />
+                  </div>
+
+                  <!-- <div class="leader-lv">
+                    <img src="@/assets/images/leader-level1.svg" />
+                  </div> -->
+
+                  <p>@lordemma</p>
+                  <h3>Emmanuel Ohworeko</h3>
+
+                  <div class="reviews">
+                    <p>
+                      Starting his crypto journey in 2020, Emmanuel has grown to
+                      become a leader through constant learning
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- End Splide Splide-->
+
+              <div class="splide__slide">
+                <div class="mobile-leaders-box">
+                  <div class="mobile-leaders-img-box">
+                    <img
+                      src="@/assets/images/leaders/Uzoatu.jpeg"
+                      alt="leader Image"
+                    />
+                  </div>
+
+                  <!-- <div class="leader-lv">
+                    <img src="@/assets/images/leader-level1.svg" />
+                  </div> -->
+
+                  <p>@Bryan</p>
+                  <h3>Bryan Ifeanyi</h3>
+
+                  <div class="reviews">
+                    <p>
+                      My name is Bryan, I'm a Blockchain and cryptocurrency
+                      educator. I joined the space in 2017, and from then on,
+                      it's been a truly amazing journey. Learning, growing,
+                      building, and teaching.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- End Splide Splide-->
+
+              <div class="splide__slide">
+                <div class="mobile-leaders-box">
+                  <div class="mobile-leaders-img-box">
+                    <img
+                      src="@/assets/images/leaders/moses.jpeg"
+                      alt="Leader Image"
+                    />
+                  </div>
+
+                  <!-- <div class="leader-lv">
+                    <img src="@/assets/images/leader-level1.svg" />
+                  </div> -->
+
+                  <p>@BossVNN</p>
+                  <h3>Moses-Ugoh</h3>
+
+                  <div class="reviews">
+                    <p>
+                      It was since 2020 that I realized Bitcoin’s maximum
+                      potentials and my interest quickly expanded to everything
+                      blockchain-related. I became particularly excited about
+                      real-world applications of blockchain technology and
+                      blockchain centered projects.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- End Splide Splide-->
+              <div class="splide__slide">
+                <div class="mobile-leaders-box">
+                  <div class="mobile-leaders-img-box">
+                    <img
+                      src="@/assets/images/leaders/marvelous.jpeg"
+                      alt="leader Image"
+                    />
+                  </div>
+
+                  <p>@Iam_Marvelous</p>
+                  <h3>Marvelous Macaulay</h3>
+
+                  <div class="reviews">
+                    <p>
+                      Technical/Market Analyst. Not a Bull or Bear. I only trade
+                      what the market shows me. No sentiments, Just Objective
+                      Technical analysis.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- End Splide Splide-->
+
+              <div class="splide__slide">
+                <div class="mobile-leaders-box">
+                  <div class="mobile-leaders-img-box">
+                    <img
+                      src="@/assets/images/leaders/Ibrahim.jpeg"
+                      alt="leader Image"
+                    />
+                  </div>
+
+                  <p>@Aazama</p>
+                  <h3>Ibrahim Dauda</h3>
+
+                  <div class="reviews">
+                    <p>
+                      The journey wasn't easy at the beginning. But I thank God
+                      for the things I got from crypto investment.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- End Splide Splide-->
+
+              <div class="splide__slide">
+                <div class="mobile-leaders-box">
+                  <div class="mobile-leaders-img-box">
+                    <img
+                      src="@/assets/images/leaders/uche.jpeg"
+                      alt="leader Image"
+                    />
+                  </div>
+
+                  <p>@Investorsylver</p>
+                  <h3>Uche Sylvester</h3>
+
+                  <div class="reviews">
+                    <p>
+                      I'm Uche, a Crypto enthusiast. I use my skillset to create
+                      wealth and also diversify my income using crypto hedge
+                      fund, farming and staking.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- End Splide Splide-->
+
+              <div class="splide__slide">
+                <div class="mobile-leaders-box">
+                  <div class="mobile-leaders-img-box">
+                    <img
+                      src="@/assets/images/leaders/sibi.jpeg"
+                      alt="leader Image"
+                    />
+                  </div>
+
+                  <p>@Onokus</p>
+                  <h3>George Sibi onokuma</h3>
+
+                  <div class="reviews">
+                    <p>I'm a cryptocurrency trader and a coach.</p>
+                  </div>
+                </div>
+              </div>
+              <!-- End Splide Splide-->
+
+              <div class="splide__slide">
+                <div class="mobile-leaders-box">
+                  <div class="mobile-leaders-img-box">
+                    <img
+                      src="@/assets/images/leaders/mukhtar.jpeg"
+                      alt="leader Image"
+                    />
+                  </div>
+
+                  <p>@Ammukhtar2</p>
+                  <h3>Adam Muhammad Mukhtar</h3>
+
+                  <div class="reviews">
+                    <p>
+                      I'm a Cryptocurrency freak. Since the sunrise of 2021,
+                      with mutual Fundamental and technical analyses, I have
+                      been growing and educating my crypto community of over six
+                      thousand members, most of them are locals than global.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- End Splide Splide-->
+
+              <div class="splide__slide">
+                <div class="mobile-leaders-box">
+                  <div class="mobile-leaders-img-box">
+                    <img
+                      src="@/assets/images/leaders/BK.jpeg"
+                      alt="leader Image"
+                    />
+                  </div>
+
+                  <p>@khaleell</p>
+                  <h3>Ibrahim BK</h3>
+
+                  <div class="reviews">
+                    <p>
+                      I'm Ibrahim BK. A professional crypto trader with 3+ years
+                      of experience in Blockchain development.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- End Splide Splide-->
+
+              <div class="splide__slide">
+                <div class="mobile-leaders-box">
+                  <div class="mobile-leaders-img-box">
+                    <img
+                      src="@/assets/images/leaders/voski.webp"
+                      alt="leader Image"
+                    />
+                  </div>
+
+                  <p>@Voski</p>
+                  <h3>Stephen Voski</h3>
+
+                  <div class="reviews">
+                    <p>
+                      I'm Chukwu Stephen Ndubuisi, popularly known as Voski.
+                      I've been a blockchain and cryptocurrency advocate since
+                      2016. My aim has always been to change the lives of
+                      others, using the opportunities provided by blockchain
+                      technology.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- End Splide Splide-->
+
+              <div class="splide__slide">
+                <div class="mobile-leaders-box">
+                  <div class="mobile-leaders-img-box">
+                    <img
+                      src="@/assets/images/leaders/CHUKWU.jpeg"
+                      alt="leader Image"
+                    />
+                  </div>
+
+                  <p>@Vicsouls</p>
+                  <h3>Victor CHUKWU</h3>
+
+                  <div class="reviews">
+                    <p>
+                      I'm Victor CHUKWU. I have been able to coach and still
+                      coaching a lot of people in the crypto space. I have been
+                      in the crypto space for quite a long time now, and I have
+                      seen both failures and success, the ups and downs, but I
+                      keep the movement because of the B PICTURE.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- End Splide Splide-->
+
+              <div class="splide__slide">
+                <div class="mobile-leaders-box">
+                  <div class="mobile-leaders-img-box">
+                    <img
+                      src="@/assets/images/leaders/Greatness.jpeg"
+                      alt="leader Image"
+                    />
+                  </div>
+
+                  <p>@BitMayor</p>
+                  <h3>Mayor Chikwe Greatness</h3>
+
+                  <div class="reviews">
+                    <p>
+                      I started my crypto journey since 2016 and have since then
+                      acquired at least 4 years experience in crypto technical
+                      analysis, trading and teaching.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- End Splide Splide-->
+            </div>
+            <!-- End splide list-->
+          </div>
+          <!-- end splide track-->
+        </div>
+
+        <div class="mobile-leaders-box-background">
+          <div class="svg-background"></div>
+          <div class="custom-shape-divider-top-1646475939">
+            <div class="custom-shape-divider-bottom-1646476356">
+              <svg
+                data-name="Layer 1"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 1200 120"
+                preserveAspectRatio="none"
+              >
+                <path
+                  d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                  class="shape-fill"
+                ></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <!-- End mobile leaders box background-->
+      </div>
+    </section>
+
+    <section class="computer-leaders-section">
+      <h1>Featured Leaders</h1>
+      <h6>Meet some of the leaders on the CoinProfit App.</h6>
+
+      <div class="computer-leaders-box-wrapper">
+        <div class="computer-leaders-box">
+          <div class="computer-leaders-img-box">
+            <img src="@/assets/images/leaders/emmanuel.webp" alt="IMAGE" />
+          </div>
+
+          <!-- <div class="leader-lv">
+            <img src="@/assets/images/leader-level1.svg" />
+          </div> -->
+
+          <p>@lordemma</p>
+          <h3>Emmanuel Ohworeko</h3>
+          <!-- <h4>CEO and Founder of CoinProfit</h4> -->
+
+          <div class="reviews">
+            <p class="text">
+              Starting his crypto journey in 2020, Emmanuel has grown to become
+              a leader through constant learning
+            </p>
+          </div>
+        </div>
+        <!-- end leaders box -->
+
+        <div class="computer-leaders-box">
+          <div class="computer-leaders-img-box">
+            <img src="@/assets/images/leaders/Greatness.jpeg" alt="IMAGE" />
+          </div>
+
+          <p>@BitMayor</p>
+          <h3>Mayor Chikwe Greatness</h3>
+
+          <div class="reviews">
+            <p>
+              I started my crypto journey since 2016 and have since then
+              acquired at least 4 years experience in crypto technical analysis,
+              trading and teaching.
+            </p>
+          </div>
+        </div>
+        <!-- end leaders box -->
+
+        <div class="computer-leaders-box">
+          <div class="computer-leaders-img-box">
+            <img src="@/assets/images/leaders/voski.webp" alt="IMAGE" />
+          </div>
+          <p>@Voski</p>
+          <h3>Stephen Voski</h3>
+
+          <div class="reviews">
+            <p>
+              I'm Chukwu Stephen Ndubuisi, popularly known as Voski. I've been a
+              blockchain and cryptocurrency advocate since 2016. My aim has
+              always been to change the lives of others, using the opportunities
+              provided by blockchain technology.
+            </p>
+          </div>
+        </div>
+        <!-- end leaders box -->
+
+        <div class="computer-leaders-box">
+          <div class="computer-leaders-img-box">
+            <img src="@/assets/images/leaders/mukhtar.jpeg" alt="IMAGE" />
+          </div>
+
+          <p>@Ammukhtar2</p>
+          <h3>Adam Muhammad Mukhtar</h3>
+
+          <div class="reviews">
+            <p>
+              I'm a Cryptocurrency freak. Since the sunrise of 2021, with mutual
+              Fundamental and technical analyses, I have been growing and
+              educating my crypto community of over six thousand members, most
+              of them are locals than global.
+            </p>
+          </div>
+        </div>
+
+        <div class="computer-leaders-box">
+          <div class="computer-leaders-img-box">
+            <img src="@/assets/images/leaders/Uzoatu.jpeg" alt="IMAGE" />
+          </div>
+
+          <!-- <div class="leader-lv">
+            <img src="@/assets/images/leader-level.svg" />
+          </div> -->
+
+          <p>@Bryan</p>
+          <h3>Bryan Ifeanyi</h3>
+
+          <div class="reviews">
+            <p>
+              My name is Bryan, I'm a Blockchain and cryptocurrency educator. I
+              joined the space in 2017, and from then on, it's been a truly
+              amazing journey. Learning, growing, building, and teaching.
+            </p>
+          </div>
+        </div>
+
+        <div class="computer-leaders-box">
+          <div class="computer-leaders-img-box">
+            <img src="@/assets/images/leaders/moses.jpeg" alt="IMAGE" />
+          </div>
+
+          <p>@BossVNN</p>
+          <h3>Moses Ugoh</h3>
+
+          <div class="reviews">
+            <p>
+              It was since 2020 that I realized Bitcoin’s maximum potentials and
+              my interest quickly expanded to everything blockchain-related. I
+              became particularly excited about real-world applications of
+              blockchain technology and blockchain centered projects.
+            </p>
+          </div>
+        </div>
+        <!-- end -->
+
+        <div class="computer-leaders-box-background">
+          <div class="svg-background"></div>
+
+          <div class="custom-shape-divider-top-1646479334">
             <svg
               data-name="Layer 1"
               xmlns="http://www.w3.org/2000/svg"
@@ -291,162 +728,146 @@
               preserveAspectRatio="none"
             >
               <path
-                d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
                 class="shape-fill"
               ></path>
             </svg>
           </div>
+
+          <div class="custom-shape-divider-top-1646475939">
+            <div class="custom-shape-divider-bottom-1646476356">
+              <svg
+                data-name="Layer 1"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 1200 120"
+                preserveAspectRatio="none"
+              >
+                <path
+                  d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                  class="shape-fill"
+                ></path>
+              </svg>
+            </div>
+          </div>
         </div>
-      </div>
-      <!-- End mobile leaders box background-->
-    </div>
-  </section>
-
-  <section class="computer-leaders-section">
-    <h1>Featured Leaders</h1>
-    <h6>Meet some of the leaders on the CoinProfit App.</h6>
-
-    <div class="computer-leaders-box-wrapper">
-      <div class="computer-leaders-box">
-        <div class="computer-leaders-img-box">
-          <img src="@/assets/images/review3.jpeg" alt="IMAGE" />
-        </div>
-
-        <div class="leader-lv">
-          <img src="@/assets/images/leader-level1.svg" />
-        </div>
-
-        <p>@lordemma</p>
-        <h3>Emmanuel Ohworeko</h3>
-        <h4>CEO and Founder of CoinProfit</h4>
-
-        <div class="reviews">
-          <p class="text">
-            Starting his crypto journey in 2020, Emmanuel has grown to become a
-            leader through constant learning
-          </p>
-        </div>
-      </div>
-      <div class="computer-leaders-box">
-        <div class="computer-leaders-img-box">
-          <img src="@/assets/images/review3.jpeg" alt="IMAGE" />
-        </div>
-
-        <div class="leader-lv">
-          <img src="@/assets/images/leader-level.svg" />
-        </div>
-
-        <p>@lordemma</p>
-        <h3>Emmanuel Ohworeko</h3>
-        <h4>CEO and Founder of CoinProfit</h4>
-
-        <div class="reviews">
-          <p class="text">
-            Starting his crypto journey in 2020, Emmanuel has grown to become a
-            leader through constant learning
-          </p>
-        </div>
-      </div>
-      <div class="computer-leaders-box">
-        <div class="computer-leaders-img-box">
-          <img src="@/assets/images/review3.jpeg" alt="IMAGE" />
-        </div>
-
-        <div class="leader-lv">
-          <img src="@/assets/images/leader-level1.svg" />
-        </div>
-
-        <p>@lordemma</p>
-        <h3>Emmanuel Ohworeko</h3>
-        <h4>CEO and Founder of CoinProfit</h4>
-
-        <div class="reviews">
-          <p>
-            Starting his crypto journey in 2020, Emmanuel has grown to become a
-            leader through constant learning
-          </p>
-        </div>
-      </div>
-      <div class="computer-leaders-box">
-        <div class="computer-leaders-img-box">
-          <img src="@/assets/images/review3.jpeg" alt="IMAGE" />
-        </div>
-
-        <div class="leader-lv">
-          <img src="@/assets/images/leader-level1.svg" />
-        </div>
-
-        <p>@lordemma</p>
-        <h3>Emmanuel Ohworeko</h3>
-        <h4>CEO and Founder of CoinProfit</h4>
-
-        <div class="reviews">
-          <p>
-            Starting his crypto journey in 2020, Emmanuel has grown to become a
-            leader through constant learning
-          </p>
-        </div>
-      </div>
-      <div class="computer-leaders-box">
-        <div class="computer-leaders-img-box">
-          <img src="@/assets/images/review3.jpeg" alt="IMAGE" />
-        </div>
-
-        <div class="leader-lv">
-          <img src="@/assets/images/leader-level.svg" />
-        </div>
-
-        <p>@lordemma</p>
-        <h3>Emmanuel Ohworeko</h3>
-        <h4>CEO and Founder of CoinProfit</h4>
-
-        <div class="reviews">
-          <p>
-            Starting his crypto journey in 2020, Emmanuel has grown to become a
-            leader through constant learning
-          </p>
-        </div>
-      </div>
-      <div class="computer-leaders-box">
-        <div class="computer-leaders-img-box">
-          <img src="@/assets/images/review3.jpeg" alt="IMAGE" />
-        </div>
-
-        <div class="leader-lv">
-          <img src="@/assets/images/leader-level1.svg" />
-        </div>
-
-        <p>@lordemma</p>
-        <h3>Emmanuel Ohworeko</h3>
-        <h4>CEO and Founder of CoinProfit</h4>
-
-        <div class="reviews">
-          <p>
-            Starting his crypto journey in 2020, Emmanuel has grown to become a
-            leader through constant learning
-          </p>
-        </div>
+        <!-- End computer leaders box background-->
       </div>
 
-      <div class="computer-leaders-box-background">
-        <div class="svg-background"></div>
+      <div class="computer-leaders-box-wrapper two">
+        <div class="computer-leaders-box">
+          <div class="computer-leaders-img-box">
+            <img src="@/assets/images/leaders/BK.jpeg" alt="IMAGE" />
+          </div>
 
-        <div class="custom-shape-divider-top-1646479334">
-          <svg
-            data-name="Layer 1"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 1200 120"
-            preserveAspectRatio="none"
-          >
-            <path
-              d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
-              class="shape-fill"
-            ></path>
-          </svg>
+          <!-- <div class="leader-lv">
+            <img src="@/assets/images/leader-level1.svg" />
+          </div> -->
+
+          <p>@khaleell</p>
+          <h3>Ibrahim BK</h3>
+          <!-- <h4>CEO and Founder of CoinProfit</h4> -->
+
+          <div class="reviews">
+            <p>
+              I'm Ibrahim BK. A professional crypto trader with 3+ years of
+              experience in Blockchain development.
+            </p>
+          </div>
+        </div>
+        <!-- end leaders box -->
+
+        <div class="computer-leaders-box">
+          <div class="computer-leaders-img-box">
+            <img src="@/assets/images/leaders/CHUKWU.jpeg" alt="IMAGE" />
+          </div>
+
+          <p>@Vicsouls</p>
+          <h3>Victor CHUKWU</h3>
+
+          <div class="reviews">
+            <p>
+              I'm Victor CHUKWU. I have been able to coach and still coaching a
+              lot of people in the crypto space. I have been in the crypto space
+              for quite a long time now, and I have seen both failures and
+              success, the ups and downs, but I keep the movement because of the
+              B PICTURE.
+            </p>
+          </div>
+        </div>
+        <!-- end leaders box -->
+
+        <div class="computer-leaders-box">
+          <div class="computer-leaders-img-box">
+            <img src="@/assets/images/leaders/sibi.jpeg" alt="IMAGE" />
+          </div>
+          <p>@Onokus</p>
+          <h3>George Sibi onokuma</h3>
+
+          <div class="reviews">
+            <p>I'm a cryptocurrency trader and a coach.</p>
+          </div>
+        </div>
+        <!-- end leaders box -->
+
+        <div class="computer-leaders-box">
+          <div class="computer-leaders-img-box">
+            <img src="@/assets/images/leaders/marvelous.jpeg" alt="IMAGE" />
+          </div>
+
+          <p>@Iam_Marvelous</p>
+          <h3>Marvelous Macaulay</h3>
+
+          <div class="reviews">
+            <p>
+              Technical/Market Analyst. Not a Bull or Bear. I only trade what
+              the market shows me. No sentiments, Just Objective Technical
+              analysis.
+            </p>
+          </div>
         </div>
 
-        <div class="custom-shape-divider-top-1646475939">
-          <div class="custom-shape-divider-bottom-1646476356">
+        <div class="computer-leaders-box">
+          <div class="computer-leaders-img-box">
+            <img src="@/assets/images/leaders/Ibrahim.jpeg" alt="IMAGE" />
+          </div>
+
+          <!-- <div class="leader-lv">
+            <img src="@/assets/images/leader-level.svg" />
+          </div> -->
+
+          <p>@Aazama</p>
+          <h3>Ibrahim Dauda</h3>
+
+          <div class="reviews">
+            <p>
+              The journey wasn't easy at the beginning. But I thank God for the
+              things I got from crypto investment.
+            </p>
+          </div>
+        </div>
+
+        <div class="computer-leaders-box">
+          <div class="computer-leaders-img-box">
+            <img src="@/assets/images/leaders/uche.jpeg" alt="IMAGE" />
+          </div>
+
+          <p>@Investorsylver</p>
+          <h3>Uche Sylvester</h3>
+
+          <div class="reviews">
+            <p>
+              I'm Uche, a Crypto enthusiast. I use my skillset to create wealth
+              and also diversify my income using crypto hedge fund, farming and
+              staking.
+            </p>
+          </div>
+        </div>
+        <!-- end -->
+
+        <div class="computer-leaders-box-background">
+          <div class="svg-background"></div>
+
+          <div class="custom-shape-divider-top-1646479334">
             <svg
               data-name="Layer 1"
               xmlns="http://www.w3.org/2000/svg"
@@ -454,104 +875,146 @@
               preserveAspectRatio="none"
             >
               <path
-                d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
                 class="shape-fill"
               ></path>
             </svg>
           </div>
-        </div>
-      </div>
-      <!-- End mobile leaders box background-->
-    </div>
-  </section>
 
-  <section>
-    <div class="faq-wrapper">
-      <h1>Leaders FAQs</h1>
-      <div class="faqcontainer">
-        <div class="faqwrapper">
-          <button class="faqtoggle">
-            <h3>Who can be a leader?</h3>
-            <i class="fa fa-chevron-down faqicon"></i>
-          </button>
-          <div class="faqcontent">
-            <p>
-              Anyone can be a leader! If you're crypto guru or you have some followers, you can sign up as a leader.
-            </p>
+          <div class="custom-shape-divider-top-1646475939">
+            <div class="custom-shape-divider-bottom-1646476356">
+              <svg
+                data-name="Layer 1"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 1200 120"
+                preserveAspectRatio="none"
+              >
+                <path
+                  d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                  class="shape-fill"
+                ></path>
+              </svg>
+            </div>
           </div>
         </div>
-        <div class="faqwrapper">
-          <button class="faqtoggle">
-            <h3>How much can I earn?</h3>
-            <i class="fa fa-chevron-down faqicon"></i>
-          </button>
-          <div class="faqcontent">
-            <p>
-              That depends mostly on you. You can choose to charge any amount monthly/yearly/lifetime for people to subscribe to you. How much you make at the end of the day, depends on how much you charge plus the number of subscribers.
-            </p>
-          </div>
-        </div>
-        <div class="faqwrapper">
-          <button class="faqtoggle">
-            <h3>How Do I Get Paid As A Leader?</h3>
-            <i class="fa fa-chevron-down faqicon"></i>
-          </button>
-          <div class="faqcontent">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
-              aliquam facere adipisci quod mollitia, aut nemo deleniti fugiat
-              et, corrupti sequi. Omnis dolorem quos eligendi placeat soluta
-              sint corrupti quod.
-            </p>
-          </div>
-        </div>
+        <!-- End computer leaders box background-->
       </div>
-      <div class="faqcontainer faqtwo">
-        <div class="faqwrapper">
-          <button class="faqtoggle">
-            <h3>Is There A Subscribers Limit?</h3>
-            <i class="fa fa-chevron-down faqicon"></i>
-          </button>
-          <div class="faqcontent">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
-              aliquam facere adipisci quod mollitia, aut nemo deleniti fugiat
-              et, corrupti sequi. Omnis dolorem quos eligendi placeat soluta
-              sint corrupti quod.
-            </p>
-          </div>
-        </div>
-        <div class="faqwrapper">
-          <button class="faqtoggle">
-            <h3>What's the difference between followers and subscribers?</h3>
-            <i class="fa fa-chevron-down faqicon"></i>
-          </button>
-          <div class="faqcontent">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
-              aliquam facere adipisci quod mollitia, aut nemo deleniti fugiat
-              et, corrupti sequi. Omnis dolorem quos eligendi placeat soluta
-              sint corrupti quod.
-            </p>
-          </div>
-        </div>
-        <div class="faqwrapper">
-          <button class="faqtoggle">
-            <h3>How Do I Get Started As A Leader?</h3>
-            <i class="fa fa-chevron-down faqicon"></i>
-          </button>
-          <div class="faqcontent">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
-              aliquam facere adipisci quod mollitia, aut nemo deleniti fugiat
-              et, corrupti sequi. Omnis dolorem quos eligendi placeat soluta
-              sint corrupti quod.
-            </p>
-          </div>
-        </div>
+    </section>
+
+    <div class="becomeLeadersCTA">
+      <h1>Become a Leader Today</h1>
+      <h6>Download the coinprofit app NOW to become a leader!</h6>
+
+      <div class="leaderCTADownloadWrapper">
+        <a href="#" target="_blank" rel="noopener noreferrer"
+          ><img
+            src="@/assets/images/appstore.svg"
+            alt=""
+            srcset=""
+            class="leaderCTADownloadApp"
+        /></a>
+
+        <a href="#" target="_blank" rel="noopener noreferrer"
+          ><img
+            src="@/assets/images/goplay.svg"
+            alt=""
+            srcset=""
+            class="leaderCTADownloadApp"
+        /></a>
+        <p class="comingSoon font-bold md:font-semibold text-2xl" >coming soon...</p>
       </div>
     </div>
-  </section>
+
+    <section>
+      <div class="faq-wrapper">
+        <h1>Leaders FAQs</h1>
+        <div class="faqcontainer">
+          <div class="faqwrapper">
+            <button class="faqtoggle">
+              <h3>Who can be a leader?</h3>
+              <i class="fa fa-chevron-down faqicon"></i>
+            </button>
+            <div class="faqcontent">
+              <p>
+                Anyone with a crypto community or followers whom he/she shares
+                trades and signals with can become a leader.
+              </p>
+            </div>
+          </div>
+          <div class="faqwrapper">
+            <button class="faqtoggle">
+              <h3>How Can I Become A Leader?</h3>
+              <i class="fa fa-chevron-down faqicon"></i>
+            </button>
+            <div class="faqcontent">
+              <p>
+                Please download the app, click on upgrade and select the leader
+                plan.
+              </p>
+            </div>
+          </div>
+          <div class="faqwrapper">
+            <button class="faqtoggle">
+              <h3>How Much Does It Cost To Become A Leader?</h3>
+              <i class="fa fa-chevron-down faqicon"></i>
+            </button>
+            <div class="faqcontent">
+              <p>
+                Upgrading to a leader plan costs $19/month plus we charge a 10%
+                commission on every subscription fee you earn.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="faqcontainer faqtwo">
+          <div class="faqwrapper">
+            <button class="faqtoggle">
+              <h3>How Much Can I Make As A Leader?</h3>
+              <i class="fa fa-chevron-down faqicon"></i>
+            </button>
+            <div class="faqcontent">
+              <p>
+                There is no limit to how much you can make monthly from the app.
+                You can have an unlimited number of subscribers. Let&rsquo;s say
+                you have 100 subscribers and you charge $10/month as your
+                subscription fee. 100 X $10 = $1,000. If you have 300
+                subscribers, that&rsquo;s $3k/month. And if you have 500
+                subscribers, that&rsquo;s $5k/month! We charge a 10% commission
+                for every subscription. So for 300 subscribers paying $10 each,
+                our commission is just $300 and you will be netting $2,700/mo.
+                For 500 subscribers, your earnings will be $4,500/month.
+              </p>
+            </div>
+          </div>
+          <div class="faqwrapper">
+            <button class="faqtoggle">
+              <h3>How Do I Withdraw My Earnings?</h3>
+              <i class="fa fa-chevron-down faqicon"></i>
+            </button>
+            <div class="faqcontent">
+              <p>
+                All payments from your subscribers are available after a 14 days
+                hold period.
+              </p>
+            </div>
+          </div>
+          <div class="faqwrapper">
+            <button class="faqtoggle">
+              <h3>Do You Support Future Trading?</h3>
+              <i class="fa fa-chevron-down faqicon"></i>
+            </button>
+            <div class="faqcontent">
+              <p>
+                Not yet. We only support spot trading for now but we have plans
+                to support future trading in the future.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <BaseCallToAction />
 </template>
 
 
@@ -567,15 +1030,17 @@ export default {
         autoplay: true,
         interval: 3000, // How long to display each slide
         pauseOnHover: true, // m
-        pauseOnFocus: false, // must be false
+        pauseOnFocus: false, // 
         resetProgress: false,
       }).mount();
     },
 
     initLeadersPage() {
-        this.useSplide();
+      this.useSplide();
 
       // end of splider js
+
+      
 
       // FAQ SECTION
       let faqtoggles = document.getElementsByClassName("faqtoggle");
@@ -619,10 +1084,20 @@ export default {
 @import "@splidejs/splide/dist/css/splide.min.css";
 /* Mobile first design */
 
+.mainLeaders_Wrapper {
+  width: 100%;
+  max-width: 1450px;
+  margin: 0 auto;
+}
+
 .first-page {
   padding-top: 1rem;
 }
-
+@media (min-width:1200px) {
+  .first-page {
+  padding-top: 7rem;
+}
+}
 .background-svg {
   display: none;
 }
@@ -668,6 +1143,11 @@ export default {
   position: relative;
   width: 80%;
 }
+@media (min-width: 480px) {
+  .appui {
+    width: 60%;
+  }
+}
 .leaders-aboutP {
   width: 90%;
   margin: auto;
@@ -680,14 +1160,23 @@ export default {
 .app-download {
   display: block;
   width: 50%;
-  margin: 2rem auto 0;
+  margin: 1rem auto 0;
+}
+.comingSoon {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+@media (min-width: 480px) {
+  .app-download {
+    width: 30%;
+  }
 }
 
 .signal-packs {
-  display: block;
   position: absolute;
-  top: 140px;
-  left: 250px;
+  top: 12%;
+  left: 70%;
   width: 95px;
   padding-bottom: 0.6rem;
   background: var(--third-color);
@@ -698,12 +1187,29 @@ export default {
 }
 .signal-packs.two {
   position: absolute;
-  top: 260px;
+  top: 21%;
 }
 
 .signal-packs.three {
   position: absolute;
-  top: 380px;
+  top: 30%;
+}
+@media (min-width: 480px) {
+  .signal-packs {
+    top: 15%;
+    left: 60%;
+  }
+  .signal-packs.two {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+  }
+
+  .signal-packs.three {
+    position: absolute;
+    top: 25%;
+    left: 75%;
+  }
 }
 .pack-img-wrapper {
   position: relative;
@@ -735,10 +1241,41 @@ export default {
   margin-top: 2px;
   font-size: 17px;
 }
+.iconholder {
+  position: relative;
+}
+.iconBTC1 {
+  position: relative;
+  left: 10%;
+  width: 2rem;
+}
 
+.win-win {
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+}
+.win-win h1 {
+  text-align: center;
+  color: #3374ea;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.win-win p {
+  width: 90%;
+  margin: auto;
+  text-align: center;
+  margin-top: 4px;
+  color: var(--fourth-color);
+  line-height: 30px;
+}
 .leaders-features {
   position: relative;
   padding-bottom: 1rem;
+  margin-bottom: 3rem;
 }
 
 .leaders-features h1 {
@@ -747,7 +1284,97 @@ export default {
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
   font-size: 2rem;
+  width: 90%;
+  margin: 0 auto;
 }
+.svg4 {
+  position: absolute;
+  left: 75%;
+  top: 5%;
+  width: 3rem;
+}
+.svg7F {
+  position: absolute;
+  left: 4%;
+  top: 30%;
+  width: 3rem;
+}
+.svg2F {
+  position: absolute;
+  left: 85%;
+  top: 30%;
+  width: 3rem;
+}
+
+/*  */
+.svgOne {
+  position: absolute;
+  left: 70%;
+  top: 15%;
+  width: 3rem;
+}
+.svgontop {
+  position: absolute;
+  left: 4%;
+  top: 40%;
+  width: 3rem;
+}
+.svg4N {
+  display: none;
+}
+.svg6F {
+  position: absolute;
+  left: 80%;
+  top: 40%;
+  width: 3rem;
+  z-index: 1;
+}
+
+/*  */
+
+.svg6FNP {
+  position: absolute;
+  left: 8%;
+  top: 20%;
+  width: 4rem;
+}
+
+@media (min-width: 1000px) {
+  .svg6FNP {
+    position: absolute;
+    left: 60%;
+    top: 320%;
+    width: 4rem;
+    z-index: 1;
+  }
+}
+.svgOneNP {
+  position: absolute;
+  left: 85%;
+  top: 20%;
+  width: 3rem;
+}
+.svgontopNP {
+  position: absolute;
+  left: 4%;
+  top: 40%;
+  width: 5rem;
+}
+.svg4NP {
+  display: none;
+}
+.svg6NP {
+  position: absolute;
+  left: 83%;
+  top: 40%;
+  width: 3rem;
+  z-index: 1;
+}
+.sheildicoNP {
+  display: none;
+}
+
+/*  */
 
 .leadersF-blob {
   margin-top: 2rem;
@@ -756,13 +1383,19 @@ export default {
 }
 
 .share-portfolio-img {
-  margin: 0 auto;
-  width: 100%;
+  width: 70%;
   position: relative;
   top: -17rem;
+  margin-left: 17%;
   margin-bottom: -19rem;
 }
-
+@media (min-width: 405px) {
+  .share-portfolio-img {
+    width: 80%;
+    top: -23rem;
+    margin-bottom: -19rem;
+  }
+}
 .leaders-features p {
   margin: 0 auto;
   width: 90%;
@@ -775,11 +1408,18 @@ export default {
 }
 
 .seeSubsimg {
-  margin: 0 auto;
-  width: 100%;
+  width: 70%;
   position: relative;
   top: -17rem;
+  margin-left: 16%;
   margin-bottom: -19rem;
+}
+@media (min-width: 405px) {
+  .seeSubsimg {
+    width: 80%;
+    top: -23rem;
+    margin-bottom: -19rem;
+  }
 }
 
 .mobile-leaders-section {
@@ -828,11 +1468,13 @@ export default {
 }
 .svg-background {
   position: relative;
+  z-index: 1;
 }
 .splide__arrows {
   display: none;
 }
 .mobile-leaders-box {
+  vertical-align: middle;
   width: 85%;
   padding: 0 20px 50px;
   background: var(--third-color) no-repeat padding-box;
@@ -872,7 +1514,7 @@ export default {
 }
 .leader-lv img {
   width: 70px;
-  margin-left: 250px;
+  margin-left: 90%;
 }
 .mobile-leaders-box p {
   text-align: center;
@@ -940,6 +1582,53 @@ export default {
   display: none;
 }
 
+.becomeLeadersCTA {
+  width: 80%;
+  margin: 0 auto 10rem;
+  text-align: center;
+}
+.becomeLeadersCTA h1 {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  letter-spacing: 0px;
+  color: #3374ea;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 2rem;
+  text-transform: capitalize;
+}
+
+.becomeLeadersCTA h6 {
+  text-align: center;
+  margin: 0.4rem auto 0;
+  width: 100%;
+  color: var(--fourth-color);
+  font-size: 17px;
+  font-weight: 500;
+}
+.leaderCTADownloadWrapper {
+  width: 100%;
+  text-align: center;
+  margin-top: 2rem;
+}
+.leaderCTADownloadApp {
+  display: block;
+  width: 50%;
+  margin: 1rem auto 0;
+}
+
+@media (min-width: 765px) {
+  .leaderCTADownloadApp {
+    display: inline-block;
+    width: 20%;
+    margin: 2rem 1rem;
+  }
+  .becomeLeadersCTA h1 {
+    font-size: 2.5rem;
+  }
+}
+
 /* code for FAQ SECTION */
 .faq-wrapper {
   max-width: 90%;
@@ -1002,9 +1691,7 @@ export default {
 
 /* FAQ ENDS HERE */
 
-/* IPAD  */
-
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 720px) {
   .blob-wrapper {
     position: relative;
     overflow-x: hidden;
@@ -1026,55 +1713,79 @@ export default {
     top: -82rem;
     margin-bottom: -75rem;
   }
+  @media (min-width: 765px) {
+    .background-svg {
+      display: block;
+      position: absolute;
+      top: 10rem;
+      left: 5rem;
+      width: 80%;
+      opacity: 0.1;
+    }
+    .blob-wrapper {
+      height: 670px;
+      position: relative;
+      top: -107px;
+      overflow-x: hidden;
+    }
+    .mobile-blob {
+      display: none;
+    }
+    .computer-blob {
+      object-fit: cover;
+      position: absolute;
+      top: -15rem;
+      left: 29rem;
+      height: 68.770625rem;
+      width: 62.5025rem;
+      transform: translateY(27px);
+    }
 
-  .leaders-about h1 {
-    font-family: "Montserrat", sans-serif;
-    width: 70%;
-    font-weight: 700;
-    margin: 10px auto 0;
-    text-align: center;
-    color: #fff;
-    letter-spacing: 0;
-    margin-left: 6rem;
-  }
-  .appui {
-    position: relative;
-    top: px;
-    width: 60%;
-    margin-left: 5.5rem;
-  }
+    .leaders-about {
+      position: relative;
+      top: -37rem;
+      margin-bottom: -25rem;
+    }
+    .leaders-about h1 {
+      width: 100%;
+      font-family: "Montserrat", sans-serif;
+      text-align: center;
+      margin: 0.9rem 0;
+      color: #3374ea;
+      font-size: 2.9rem;
+      font-weight: 800;
+      letter-spacing: 0;
+      padding: 0 4rem;
+    }
 
-  .signal-packs {
-    display: block;
-    position: absolute;
-    top: 200px;
-    left: 500px;
-    width: 95px;
-    padding-bottom: 0.6rem;
-    background: var(--third-color);
-    box-shadow: 0px 20px 17px #1c19230d;
-    border-radius: 20px;
-    z-index: 2;
-    transform: rotate(2.4deg);
-  }
-  .signal-packs.two {
-    position: absolute;
-    top: 290px;
-    left: 600px;
-  }
+    .appui {
+      position: absolute;
+      top: -60px;
+      left: 35rem;
+      width: 40%;
+      display: none;
+    }
+    .signal-packs {
+      display: none;
+    }
 
-  .signal-packs.three {
-    position: absolute;
-    top: 380px;
-  }
-  .leaders-aboutP {
-    line-height: 30px;
-    font-size: 1.5rem;
-  }
-  .app-download {
-    display: block;
-    width: 30%;
-    margin: 4rem auto 0;
+    .leaders-aboutP {
+      width: 90%;
+      text-align: center;
+      margin-top: 1rem;
+      color: var(--fourth-color);
+      font-size: 1.1rem;
+      line-height: 30px;
+    }
+    .app-downloads {
+      width: 100%;
+      text-align: center;
+    }
+    .app-download {
+      display: inline-block;
+      width: 20%;
+      margin: 2rem 1rem;
+    }
   }
 
   .leaders-features h1 {
@@ -1151,120 +1862,141 @@ export default {
 /* IPAD PRO */
 
 @media only screen and (min-width: 1024px) {
-  .background-svg {
-    display: block;
-    position: absolute;
-    top: 10rem;
-    left: 5rem;
-    width: 80%;
-    opacity: 0.1;
-  }
-  .blob-wrapper {
-    height: 670px;
-    position: relative;
-    top: -107px;
-    overflow-x: hidden;
-  }
-  .mobile-blob {
-    display: none;
-  }
-  .computer-blob {
-    object-fit: cover;
-    position: absolute;
-    top: -15rem;
-    left: 29rem;
-    height: 68.770625rem;
-    width: 62.5025rem;
-    transform: translateY(27px);
-  }
-
-  .leaders-about {
-    position: relative;
-    top: -37rem;
-    margin-bottom: -25rem;
-  }
-  .leaders-about h1 {
-    width: 100%;
-    font-family: "Montserrat", sans-serif;
-    text-align: center;
-    margin: 0.9rem 0;
-    color: #3374ea;
-    font-size: 2.9rem;
-    font-weight: 800;
-    letter-spacing: 0;
-    padding: 0 4rem;
-  }
-
-  .appui {
-    position: absolute;
-    top: -60px;
-    left: 35rem;
-    width: 40%;
-    display: none;
-  }
-  .signal-packs {
-    display: none;
-  }
-
   .leaders-aboutP {
-    width: 90%;
-    text-align: center;
-    margin-top: 1rem;
-    color: var(--fourth-color);
-    font-size: 2rem;
+    font-size: 1rem;
     line-height: 50px;
   }
-  .app-downloads {
-    width: 100%;
+  .win-win p {
+    width: 90%;
+    color: var(--fourth-color);
     text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: "Montserrat", sans-serif;
+    line-height: 50px;
   }
-  .app-download {
-    display: inline-block;
-    width: 30%;
-    margin: 2rem 1rem;
+  .iconholder {
+    position: relative;
+  }
+  .iconBTC1 {
+    position: relative;
+    left: 10%;
+    width: 5rem;
+  }
+
+  .svg4 {
+    position: absolute;
+    left: 80%;
+    top: 8%;
+    width: 5rem;
   }
   .leaders-features {
-    margin-top: 10rem;
+    margin-bottom: 6rem !important;
+    width: 70%;
+    margin: 0 auto;
   }
   .leaders-features h1 {
     text-align: center;
     color: #3374ea;
     font-family: "Montserrat", sans-serif;
     font-weight: 800;
-    font-size: 5rem;
+    font-size: 3rem;
+  }
+  .svg4 {
+    position: absolute;
+    left: 80%;
+    top: 8%;
+    width: 5rem;
+  }
+  .svg7F {
+    position: absolute;
+    left: 85%;
+    top: 50%;
+    width: 5rem;
+  }
+  .svg2F {
+    position: absolute;
+    left: 5%;
+    top: 50%;
+    width: 5rem;
+  }
+
+  .svgOne {
+    position: absolute;
+    left: 70%;
+    top: 15%;
+    width: 5rem;
+  }
+  .svgontop {
+    position: absolute;
+    left: 5%;
+    top: 50%;
+    width: 5rem;
+  }
+  .svg6F {
+    position: absolute;
+    left: 85%;
+    top: 50%;
+    width: 5rem;
+  }
+
+  /*  */
+
+  /*  */
+  .svgOneNP {
+    position: absolute;
+    left: 70%;
+    top: 15%;
+    width: 5rem;
+  }
+  .svgontopNP {
+    position: absolute;
+    left: 3%;
+    top: 40%;
+    width: 5rem;
+  }
+  .svg4NP {
+    display: none;
+  }
+  .svg6NP {
+    position: absolute;
+    left: 85%;
+    top: 40%;
+    width: 3rem;
+    z-index: 1;
   }
 
   .leadersF-blob {
     margin-top: 3rem;
     margin-left: 3.5rem;
-    width: 90%;
+    width: 80%;
     z-index: -1;
   }
 
   .share-portfolio-img {
     margin-left: 10rem;
-    margin-bottom: -50rem;
-    width: 70%;
+    margin-bottom: -40rem;
+    width: 60%;
     position: relative;
-    top: -50rem;
+    top: -30rem;
   }
 
   .leaders-features p {
-    margin: 0 auto;
+    margin: 10rem auto 0;
     width: 90%;
     color: var(--fourth-color);
     text-align: center;
-    font-size: 2rem;
+    font-size: 1rem;
     font-weight: 400;
     font-family: "Montserrat", sans-serif;
     line-height: 50px;
   }
   .seeSubsimg {
     margin-left: 10rem;
-    margin-bottom: -50rem;
-    width: 70%;
+    margin-bottom: -40rem;
+    width: 60%;
     position: relative;
-    top: -50rem;
+    top: -30rem;
   }
   .mobile-leaders-section {
     display: none;
@@ -1332,9 +2064,7 @@ export default {
   .computer-leaders-box-background {
     background: transparent linear-gradient(180deg, #22a1f5 0%, #677bff 100%)
       no-repeat padding-box;
-    /* border-top-left-radius: 4rem;
-    border-top-right-radius: 4rem; */
-    height: 70vh;
+    height: 70%;
     width: 100%;
     position: absolute;
     top: 11rem;
@@ -1432,8 +2162,8 @@ export default {
   .background-svg {
     display: block;
     position: absolute;
-    top: 15rem;
-    left: 5.4375rem;
+    top: 40%;
+    left: 10%;
     width: 30%;
   }
 
@@ -1445,26 +2175,40 @@ export default {
   }
 
   .computer-blob {
-    display: block;
     object-fit: cover;
-    top: -1rem;
-    left: 40rem;
-    width: 66.5025rem;
+    left: 47%;
+    top: -1.5rem;
     height: 40rem;
+    width: 66rem;
     transform: translateY(27px);
     z-index: -1;
+    display: block;
+  }
+
+  @media (min-width: 1290px) {
+    .computer-blob {
+      left: 52%;
+    }
+  }
+  @media (min-width: 1400px) {
+    .computer-blob {
+      left: 55%;
+    }
   }
 
   .leaders-about {
+    width: 100%;
     position: relative;
     top: -37rem;
     margin-bottom: -33rem;
+    /* margin-left: 3%; */
   }
   .leaders-about h1 {
     width: 50%;
     font-family: "Montserrat", sans-serif;
     text-align: left;
     margin: 0.9rem 0;
+    margin-left: 4.5%;
     color: #3374ea;
     font-weight: 800;
     font-size: 40px;
@@ -1472,39 +2216,43 @@ export default {
     padding: 0 4rem;
   }
 
-  .appui {
-    display: block;
-    position: absolute;
-    top: -3rem;
-    left: 40rem;
-    width: 25%;
-  }
-
   .leaders-aboutP {
-    width: 35%;
+    width: 40%;
     text-align: left;
     margin-top: 4px;
-    margin-left: 3.7rem;
+    margin-left: 10%;
     color: var(--fourth-color);
     line-height: 25px;
     font-size: 0.9rem;
   }
+  .appui {
+    display: block;
+    position: absolute;
+    top: -3rem;
+    left: 54%;
+    width: 25%;
+  }
+
   .app-downloads {
-    margin-left: 3rem;
-    text-align: center;
-    width: 40%;
+    text-align: left;
+    margin-left: 9%;
+    width: 50%;
   }
   .app-download {
     display: inline-block;
     width: 10rem;
-    margin: 2rem 1rem;
+    margin: 2rem 1rem 0;
+  }
+  .comingSoon {
+    text-align: unset;
+    margin-left: 1rem;
   }
 
   .signal-packs {
     display: block;
     position: absolute;
     top: 90px;
-    left: 1090px;
+    left: 83%;
     width: 95px;
     padding-bottom: 0.6rem;
     /* height: 110px; */
@@ -1517,13 +2265,13 @@ export default {
   .signal-packs.two {
     position: absolute;
     top: 200px;
-    left: 1020px;
+    left: 75%;
   }
 
   .signal-packs.three {
     position: absolute;
     top: 205px;
-    left: 1160px;
+    left: 90%;
   }
   .pack-img-wrapper {
     position: relative;
@@ -1555,35 +2303,120 @@ export default {
     margin-top: 2px;
     font-size: 17px;
   }
+
+  .win-win p {
+    width: 50%;
+    color: var(--fourth-color);
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: "Montserrat", sans-serif;
+    line-height: 30px;
+  }
+
+  .iconholder {
+    position: relative;
+  }
+  .iconBTC1 {
+    position: relative;
+    left: 10%;
+    width: 3rem;
+  }
+
+  .svg4 {
+    position: absolute;
+    left: 90%;
+    top: 8%;
+    width: 5rem;
+  }
+  .svg7F {
+    position: absolute;
+    left: 90%;
+    top: 80%;
+    width: 5rem;
+  }
+  .svg2F {
+    position: absolute;
+    left: 0%;
+    top: 90%;
+    width: 5rem;
+  }
+
+  .svgOne {
+    position: absolute;
+    left: 95%;
+    top: 90%;
+    width: 5rem;
+  }
+  .svgontop {
+    position: absolute;
+    left: 45%;
+    top: 90%;
+    width: 4rem;
+  }
+  .svg4N {
+    display: block;
+    position: absolute;
+    width: 4rem;
+    left: 4%;
+    top: 20%;
+  }
+  .svg6F {
+    position: absolute;
+    left: 5%;
+    top: 50%;
+    width: 5rem;
+  }
+
+  /* ... */
+
+  .svgOneNP {
+    position: absolute;
+    left: 85%;
+    top: 85%;
+    width: 3rem;
+  }
+  .svgontopNP {
+    position: absolute;
+    left: 4%;
+    top: 40%;
+    width: 3rem;
+    display: none;
+  }
+  .svg6NP {
+    display: none;
+  }
+  .svg4NP {
+    display: block;
+    position: absolute;
+    width: 5rem;
+    left: 5%;
+    top: 40%;
+  }
+  .sheildicoNP {
+    display: block;
+    position: absolute;
+    width: 2rem;
+    left: 60%;
+    top: 70%;
+  }
+
   .leaders-features {
     width: 80%;
     margin: 0 auto;
-    padding-bottom: 5rem;
+    padding-bottom: 10rem;
   }
-  .leaders-features h1 {
-    float: right;
-    margin-right: 14.5rem;
-    margin-top: 16rem;
-    text-align: left;
-    color: #3374ea;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 800;
-    font-size: 2.3rem;
-  }
-
   .leadersF-blob {
     margin-top: 3rem;
     margin-left: 0;
     width: 40%;
     z-index: -1;
   }
-  .leadersF-blob:hover {
-    transform: rotate(20deg);
-  }
+
   .share-portfolio-img {
     position: relative;
-    top: -23rem;
-    margin-left: 2rem;
+    top: -19rem;
+    margin-left: 5rem;
     margin-bottom: -30rem;
     width: 30%;
   }
@@ -1591,6 +2424,28 @@ export default {
   .share-portfolio-img:hover {
     filter: saturate(100%);
     transform: scale(1.1);
+  }
+
+  .leaders-features h1 {
+    width: 40%;
+    float: right;
+    /* margin-right: 14.5rem; */
+    margin-top: 10rem;
+    text-align: left;
+    color: #3374ea;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    font-size: 2.3rem;
+  }
+  @media (min-width: 1300px) {
+    .leaders-features h1 {
+      margin-top: 15rem;
+    }
+  }
+  @media (min-width: 1400px) {
+    .leaders-features h1 {
+      margin-top: 17rem;
+    }
   }
 
   .leaders-features p {
@@ -1602,33 +2457,33 @@ export default {
     font-family: "Montserrat", sans-serif;
     line-height: 30px;
     float: right;
-    margin-right: 3rem;
+    /* margin-right: 3rem; */
     margin-top: -12rem;
   }
-  .leaders-features.two {
-    width: 80%;
-    margin: 0 auto;
-    padding-bottom: 40rem;
-  }
+
+  /*  */
+
   .leaders-features.two h1 {
     float: left;
+    width: 30%;
     margin-right: 14.5rem;
-    margin-top: 16rem;
+    margin-top: 8rem;
     text-align: left;
     color: #3374ea;
     font-family: "Montserrat", sans-serif;
     font-weight: 800;
     font-size: 2.3rem;
   }
-  .leaders-features.three h1 {
-    float: right;
-    margin-right: 12rem;
-    margin-top: 16rem;
-    text-align: left;
-    color: #3374ea;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 800;
-    font-size: 2.3rem;
+
+  @media (min-width: 1300px) {
+    .leaders-features.two h1 {
+      margin-top: 11rem;
+    }
+  }
+  @media (min-width: 1400px) {
+    .leaders-features.two h1 {
+      margin-top: 17rem;
+    }
   }
   .leadersF-blob.two {
     float: right;
@@ -1640,29 +2495,41 @@ export default {
 
   .seeSubsimg {
     position: relative;
-    top: -22rem;
-    margin-left: 23rem;
+    top: -19rem;
+    margin-left: 60%;
     margin-bottom: -30rem;
     width: 30%;
     float: right;
   }
-  .seeSubsimg:hover {
-    filter: saturate(100%);
-    transform: scale(1.1);
-  }
+
   .leaders-features.two p {
     float: left;
     margin-top: -10rem;
   }
+  .leaders-features.three {
+    padding-top: 10rem;
+  }
   .app-downloads.wrapper {
     position: relative;
-    top: -10rem;
-    margin-left: 7rem;
+    top: 10rem;
+    margin-left: 9rem;
   }
-
+  @media (min-width: 1340px) {
+    .app-downloads.wrapper {
+      position: relative;
+      top: 15rem;
+      margin-left: 7rem;
+      width: 50%;
+    }
+  }
+  @media (min-width: 1400px) {
+    .app-downloads.wrapper {
+      top: -2rem;
+    }
+  }
   .app-download.features {
     display: inline-block;
-    width: 10rem;
+    width: 20%;
     margin: 2rem 1rem;
   }
 
@@ -1672,6 +2539,7 @@ export default {
     top: 0rem;
     font-family: "Montserrat", sans-serif;
     margin-bottom: 2rem;
+    margin-top: 20rem;
   }
   .computer-leaders-section h1 {
     width: 100%;
@@ -1698,6 +2566,10 @@ export default {
     position: relative;
     margin-top: 12rem;
     text-align: center;
+  }
+
+  .computer-leaders-box-wrapper.two {
+    margin-top: 3rem;
   }
 
   /* computer leaders box background first svg */
@@ -1736,9 +2608,10 @@ export default {
   }
 
   .computer-leaders-box {
+    vertical-align: middle;
     width: 24%;
     transform: scale(0.9);
-    padding: 0px 20px 50px;
+    padding: 0px 15px 50px;
     background: var(--third-color) no-repeat padding-box;
     box-shadow: 0px 3px 6px #00000008;
     display: inline-block;
@@ -1815,7 +2688,7 @@ export default {
 
   .faq-wrapper {
     max-width: 50%;
-    margin: 30px auto;
+    margin: 5rem auto;
   }
   .faq-wrapper h1 {
     font-size: 2rem;
@@ -1825,106 +2698,6 @@ export default {
     font-size: 1rem;
     color: #3374ea;
     font-weight: 600;
-  }
-}
-
-/* ----------- Retina Screens ----------- */
-@media only screen and (min-device-width: 1200px) and (-webkit-min-device-pixel-ratio: 2),
-  only screen and (min--moz-device-pixel-ratio: 2),
-  only screen and (-o-min-device-pixel-ratio: 2/1),
-  only screen and (min-device-pixel-ratio: 2) {
-  .computer-blob {
-    display: block;
-    object-fit: cover;
-    top: -1.5rem;
-    left: 45rem;
-    width: 62rem;
-    height: 40rem;
-    transform: translateY(27px);
-    z-index: -1;
-  }
-  .appui {
-    position: absolute;
-    top: -3rem;
-    left: 40rem;
-    width: 30%;
-  }
-
-  .app-downloads {
-    text-align: center;
-    width: 30%;
-  }
-  .app-download {
-    display: inline-block;
-    width: 10rem;
-    margin: 2rem 1rem;
-  }
-
-  .signal-packs {
-    top: 3rem;
-    left: 75rem;
-  }
-  .signal-packs.two {
-    top: 8.5rem;
-    left: 80rem;
-    right: 0;
-  }
-
-  .signal-packs.three {
-    top: 8.5rem;
-    left: 70rem;
-  }
-
-  .leaders-features {
-    width: 80%;
-    margin: 0 auto;
-    padding-bottom: 5rem;
-    margin-bottom: 2rem;
-  }
-  .leaders-features h1 {
-    float: right;
-    margin-right: 16rem;
-    margin-top: 20rem;
-    text-align: left;
-    color: #3374ea;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 800;
-    font-size: 2.3rem;
-  }
-
-  .leaders-features.two {
-    width: 80%;
-    margin: 0 auto;
-    padding-bottom: 40rem;
-  }
-
-  .leaders-features.two h1 {
-    float: left;
-    margin-right: 14.5rem;
-    margin-top: 19rem;
-    text-align: left;
-    color: #3374ea;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 800;
-    font-size: 2.3rem;
-  }
-  .leaders-features.three h1 {
-    margin-right: 13.5rem;
-    margin-top: 20rem;
-  }
-
-  .app-downloads.wrapper {
-    position: relative;
-    top: -9rem;
-    width: 45%;
-    text-align: center;
-    margin-left: unset;
-  }
-
-  .app-download.features {
-    display: inline-block;
-    width: 10rem;
-    margin: 2rem 1rem;
   }
 }
 </style>
