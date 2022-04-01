@@ -69,7 +69,7 @@
         </div>
 
         <div class="main-appUI_wrapper">
-          <img src="../assets/images/appUI.svg" alt="" class="appui" />
+          <img src="../assets/images/appUI.svg" alt="" class="appui lazy-img" />
         </div>
       </div>
     </section>
@@ -84,7 +84,7 @@
             <img
               src="../assets/images/chris.jpeg"
               alt="IMAGE"
-              class="review-img"
+              class="review-img lazy-img"
             />
           </div>
           <div class="star">
@@ -129,7 +129,7 @@
             <img
               src="../assets/images/tola.jpeg"
               alt="IMAGE"
-              class="review-img"
+              class="review-img lazy-img"
             />
           </div>
           <div class="star">
@@ -171,7 +171,7 @@
             <img
               src="../assets/images/Frank.jpeg"
               alt="Third Image"
-              class="review-img"
+              class="review-img lazy-img"
             />
           </div>
           <div class="star">
@@ -225,7 +225,7 @@
         <h1>Copy The Best Traders</h1>
 
         <img
-          src="../assets/images/app-feature1.svg"
+          src="../assets/images/app-feature1.webp"
           alt="App Feature 1"
           class="copy-img"
         />
@@ -248,7 +248,7 @@
         <h1>See Your Leader's Transactions In Real-Time</h1>
 
         <img
-          src="../assets/images/see-leaders.svg"
+          src="../assets/images/see-leaders.webp"
           alt="App Planner"
           class="copy-img"
         />
@@ -277,29 +277,15 @@
       </div>
 
       <div class="signal-packs">
-        <div class="pack-img-wrapper">
-          <img src="../assets/images/customer.svg" alt="" class="pack-img" />
-        </div>
-        <p>My Followers</p>
-        <h5>4290</h5>
+          <img src="../assets/images/customer.webp" alt="" class="pack-img" />
       </div>
+
       <div class="signal-packs two">
-        <div class="pack-img-wrapper">
-          <img
-            src="../assets/images/verified-user.svg"
-            alt=""
-            class="pack-img"
-          />
-        </div>
-        <p>My Subscribers</p>
-        <h5>2 021</h5>
+        <img src="../assets/images/verified-user.webp" alt="" class="pack-img" />
       </div>
+
       <div class="signal-packs three">
-        <div class="pack-img-wrapper">
-          <img src="../assets/images/money.svg" alt="" class="pack-img" />
-        </div>
-        <p>Subscribers Earnings</p>
-        <h5>$ 10 902</h5>
+        <img src="../assets/images/money.webp" alt="" class="pack-img" />
       </div>
 
       <div class="signal-planner-wrapper">
@@ -312,7 +298,7 @@
 
       <div class="main-signal-wrapper">
         <img
-          src="../assets/images/main-si.svg"
+          src="../assets/images/main-si.webp"
           alt=""
           class="main-signal-img"
         />
@@ -875,7 +861,7 @@
         <h1>Share Your Portfolio Performance</h1>
         <div class="share-portfolio-box">
           <img
-            src="../assets/images/share-img.png"
+            src="../assets/images/share-img.webp"
             alt="Share Image"
             class="share-portfolio-img"
           />
@@ -1599,6 +1585,7 @@ export default {
   position: relative;
   width: 100%;
   font-family: "Montserrat", sans-serif;
+  padding-top: 2rem;
 }
 .review-section h1 {
   width: 80%;
@@ -1775,16 +1762,10 @@ export default {
 .signal-packs {
   position: absolute;
   top: 25%;
-  left: 65%;
-  width: 6.25rem;
-  background: var(--third-color);
-  padding: 10px;
-  box-shadow: 0px 20px 17px #1c19230d;
-  border-radius: 10px;
-  transform: rotate(2.4deg);
+  left: 55%;
 }
 .signal-packs.two {
-  top: 41%;
+  top: 43%;
 }
 
 .signal-packs.three {
@@ -1805,34 +1786,12 @@ export default {
     top: 63%;
   }
 }
-.pack-img-wrapper {
-  position: relative;
-  top: -20px;
-  height: 60px;
-  width: 60px;
-  margin: auto;
-  border-radius: 50%;
-  background-color: #3374ea;
-}
-.signal-packs p {
-  text-align: center;
-  font-family: "Poppins", sans-serif;
-  font-size: 12px;
-  color: var(--fourth-color);
-  margin-top: -15px;
-}
-.signal-packs h5 {
-  text-align: center;
-  font-family: "Poppins", sans-serif;
-  color: #3374ea;
-  font-weight: 700;
-  margin-top: 2px;
-}
 .pack-img {
-  width: 30px;
-  height: 60px;
-  margin-left: 15px;
+  width: 80%;
+  margin-left: 10%;
+
 }
+
 
 .main-signal-wrapper {
   display: none;
@@ -3211,53 +3170,27 @@ export default {
 
   .signal-packs {
     position: absolute;
-    top: 290px;
+    top: 30%;
     left: 700px;
-    width: 180px;
-    height: 210px;
-    background: var(--third-color);
-    box-shadow: 0px 20px 17px #1c19230d;
-    border-radius: 10px;
-    transform: rotate(5deg);
-    z-index: 2;
   }
   .signal-packs.two {
     position: absolute;
-    top: 590px;
-    left: 550px;
+    top: 50%;
+    left: 50%;
   }
 
   .signal-packs.three {
     position: absolute;
-    top: 620px;
-    left: 800px;
+    top: 50%;
+    left: 80%;
   }
-  .pack-img-wrapper {
-    position: relative;
-    top: -28px;
-    height: 100px;
-    width: 100px;
-    margin: auto;
-    border-radius: 50%;
-    background-color: #3374ea;
-  }
+
   .pack-img {
-    width: 60px;
-    height: 60px;
+    width: 80%;
     margin-top: 16px;
     margin-left: 20px;
   }
-  .signal-packs p {
-    text-align: center;
-    font-size: 25px;
-  }
-  .signal-packs h5 {
-    text-align: center;
-    color: #3374ea;
-    font-weight: 600;
-    margin-top: 2px;
-    font-size: 28px;
-  }
+
 
   .main-signal-img {
     position: relative;
@@ -3677,13 +3610,14 @@ export default {
   }
   .appui {
     position: absolute;
-    top: -23rem;
+    top: -28rem;
     width: 90%;
     margin-left: 30%;
   }
   @media (min-width: 1440px) {
     .appui {
       width: 86%;
+      top: -31rem;
       margin-left: 48%;
     }
   }
@@ -3883,54 +3817,53 @@ export default {
   .signal-packs {
     position: absolute;
     top: 190px;
-    left: 85%;
-    width: 95px;
-    height: 110px;
-    background: var(--third-color);
-    box-shadow: 0px 20px 17px #1c19230d;
-    border-radius: 8px;
-    z-index: 2;
+    left: 78%;
+   
   }
   .signal-packs.two {
     position: absolute;
-    top: 38%;
-    left: 80%;
+    top: 35%;
+    left: 70%;
+
   }
 
   .signal-packs.three {
     position: absolute;
     top: 38%;
-    left: 90%;
+    left: 86%;
+
   }
-  .pack-img-wrapper {
-    position: relative;
-    top: -20px;
-    width: 53px;
-    height: 53px;
-    margin: auto;
-    border-radius: 50%;
-    background-color: #3374ea;
-  }
+
   .pack-img {
-    width: 25px;
-    height: 23px;
-    margin-top: 16px;
-    margin-left: 13px;
+    width: 80%;
   }
-  .signal-packs p {
-    text-align: center;
-    font-family: "Poppins", sans-serif;
-    margin-top: -15px;
-    font-size: 13px;
+
+  @media (min-width: 1440px) {
+      .signal-packs {
+    position: absolute;
+    top: 190px;
+    left: 80%;
+   
   }
-  .signal-packs h5 {
-    text-align: center;
-    font-family: "Montserrat", sans-serif;
-    color: #3374ea;
-    font-weight: 600;
-    margin-top: 2px;
-    font-size: 17px;
+  .signal-packs.two {
+    position: absolute;
+    top: 38%;
+    left: 75%;
+
   }
+
+  .signal-packs.three {
+    position: absolute;
+    top: 38%;
+    left: 86%;
+
+  }
+
+  .pack-img {
+    width: 70%;
+  }
+  }
+
   .main-signal-wrapper {
     display: block;
     position: relative;

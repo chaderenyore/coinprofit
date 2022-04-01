@@ -121,7 +121,7 @@
 
         <div class="leaders-portfolio-box">
           <img
-            src="@/assets/images/leaders/leader1.svg"
+            src="@/assets/images/leaders/leader1.webp"
             alt="Share Image"
             class="share-portfolio-img"
           />
@@ -231,7 +231,7 @@
 
         <div class="leaders-portfolio-box">
           <img
-            src="@/assets/images/share-img.png"
+            src="@/assets/images/share-img.webp"
             alt="Share Image"
             class="seeSubsimg"
           />
@@ -1030,7 +1030,7 @@ export default {
         autoplay: true,
         interval: 3000, // How long to display each slide
         pauseOnHover: true, // m
-        pauseOnFocus: false, // must be false
+        pauseOnFocus: false, // 
         resetProgress: false,
       }).mount();
     },
@@ -1039,6 +1039,8 @@ export default {
       this.useSplide();
 
       // end of splider js
+
+      
 
       // FAQ SECTION
       let faqtoggles = document.getElementsByClassName("faqtoggle");

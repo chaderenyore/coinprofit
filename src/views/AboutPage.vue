@@ -1034,7 +1034,7 @@
       font-weight: 800;
     }
     .team_memebers_box {
-      /* width: 30%; */
+      width: 30%;
       margin: 8rem 1rem 0;
       display: inline-block;
     }
