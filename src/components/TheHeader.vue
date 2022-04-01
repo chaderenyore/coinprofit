@@ -598,6 +598,12 @@ nav ul li a:hover::after {
     color: var(--fourth-color);
     font-size: 16px;
   }
+  .navDropDown .navdropBTN {
+
+  background: transparent;
+  font-size: 16px;
+}
+
   nav ul li.actn {
     margin-left: 30px !important;
   }
