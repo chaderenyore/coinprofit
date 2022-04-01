@@ -153,14 +153,12 @@
     z-index: 1;
   }
 
-/* With this code, you can't click on a link that will open on a new tab. */
+  /* With this code, you can't click on a link that will open on a new tab. */
 
-[target=_blank]{
-  cursor: not-allowed;
-  pointer-events: none;
-  
-}
-
+  [target="_blank"] {
+    cursor: not-allowed;
+    pointer-events: none;
+  }
 
   *:focus {
     -webkit-tap-highlight-color: transparent;
@@ -168,5 +166,4 @@
     -ms-touch-action: none;
     touch-action: none;
   }
-
 </style>
