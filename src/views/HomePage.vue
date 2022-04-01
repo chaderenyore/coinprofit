@@ -321,7 +321,7 @@
       </p>
     </section>
 
-    <section class="meet-leaders">
+    <!-- <section class="meet-leaders"> 
       <div class="custom-shape-divider-top-1644369928">
         <svg
           data-name="Layer 1"
@@ -334,9 +334,9 @@
             class="shape-fill"
           ></path>
         </svg>
-      </div>
+      </div> -->
 
-      <div class="container">
+      <!-- <div class="container">
         <div class="section-title">
           <h2>Meet Some Leaders On Coinprofit App</h2>
           <span class="section-separator"></span>
@@ -345,10 +345,10 @@
             money sharing your crypto know-how.
           </p>
         </div>
-      </div>
+      </div> -->
       <!-- This is a sliderjs framework.  -->
 
-      <div class="testimonials-carousel-wrap">
+      <!-- <div class="testimonials-carousel-wrap">
         <div class="listing-carousel-button listing-carousel-button-next">
           <i class="fa fa-caret-right" style="color: #fff"></i>
         </div>
@@ -362,11 +362,11 @@
                 <div class="testi-item">
                   <div class="testi-avatar">
                     <img src="../assets/images/leaders/emmanuel.webp" />
-                  </div>
+                  </div> -->
                   <!-- <div class="leader-level">
                     <img src="../assets/images/leader-level.svg" />
                   </div> -->
-                  <div class="testimonials-text">
+                  <!-- <div class="testimonials-text">
                     <div class="testimonials-avatar">
                       <h3>Emmanuel Ohworeko</h3>
                     </div>
@@ -377,18 +377,18 @@
                     </p>
                   </div>
                 </div>
-              </div>
+              </div> -->
 
               <!--second--->
-              <div class="swiper-slide">
+              <!-- <div class="swiper-slide">
                 <div class="testi-item">
                   <div class="testi-avatar">
                     <img src="../assets/images/leaders/Uzoatu.jpeg" />
-                  </div>
+                  </div> -->
                   <!-- <div class="leader-level">
                     <img src="../assets/images/leader-level1.svg" />
                   </div> -->
-                  <div class="testimonials-text">
+                  <!-- <div class="testimonials-text">
                     <div class="testimonials-avatar">
                       <h3>Bryan Ifeanyi</h3>
                     </div>
@@ -401,10 +401,10 @@
                     </p>
                   </div>
                 </div>
-              </div>
+              </div> -->
               <!--third-->
 
-              <div class="swiper-slide">
+              <!-- <div class="swiper-slide">
                 <div class="testi-item">
                   <div class="testi-avatar">
                     <img src="../assets/images/leaders/moses.jpeg" />
@@ -424,10 +424,10 @@
                     </p>
                   </div>
                 </div>
-              </div>
+              </div> -->
 
               <!--fourth-->
-              <div class="swiper-slide">
+              <!-- <div class="swiper-slide">
                 <div class="testi-item">
                   <div class="testi-avatar">
                     <img src="../assets/images/leaders/marvelous.jpeg" />
@@ -445,10 +445,10 @@
                     </p>
                   </div>
                 </div>
-              </div>
+              </div> -->
 
               <!-- fifth -->
-              <div class="swiper-slide">
+              <!-- <div class="swiper-slide">
                 <div class="testi-item">
                   <div class="testi-avatar">
                     <img src="../assets/images/leaders/Ibrahim.jpeg" />
@@ -465,10 +465,10 @@
                     </p>
                   </div>
                 </div>
-              </div>
+              </div> -->
 
               <!-- sixth -->
-              <div class="swiper-slide">
+              <!-- <div class="swiper-slide">
                 <div class="testi-item">
                   <div class="testi-avatar">
                     <img src="../assets/images/leaders/uche.jpeg" />
@@ -486,10 +486,10 @@
                     </p>
                   </div>
                 </div>
-              </div>
+              </div> -->
 
               <!-- 7th -->
-              <div class="swiper-slide">
+              <!-- <div class="swiper-slide">
                 <div class="testi-item">
                   <div class="testi-avatar">
                     <img src="../assets/images/leaders/sibi.jpeg" />
@@ -503,10 +503,10 @@
                     <p>I'm a cryptocurrency trader and a coach.</p>
                   </div>
                 </div>
-              </div>
+              </div> -->
 
               <!-- 8th -->
-              <div class="swiper-slide">
+              <!-- <div class="swiper-slide">
                 <div class="testi-item">
                   <div class="testi-avatar">
                     <img src="../assets/images/leaders/mukhtar.jpeg" />
@@ -526,10 +526,10 @@
                     </p>
                   </div>
                 </div>
-              </div>
+              </div> -->
 
               <!-- 9th -->
-              <div class="swiper-slide">
+              <!-- <div class="swiper-slide">
                 <div class="testi-item">
                   <div class="testi-avatar">
                     <img src="../assets/images/leaders/BK.jpeg" />
@@ -547,10 +547,10 @@
                     </p>
                   </div>
                 </div>
-              </div>
+              </div> -->
 
               <!-- 10th -->
-              <div class="swiper-slide">
+              <!-- <div class="swiper-slide">
                 <div class="testi-item">
                   <div class="testi-avatar">
                     <img src="../assets/images/leaders/voski.webp" />
@@ -571,10 +571,10 @@
                     </p>
                   </div>
                 </div>
-              </div>
+              </div> -->
 
               <!-- 12th -->
-              <div class="swiper-slide">
+              <!-- <div class="swiper-slide">
                 <div class="testi-item">
                   <div class="testi-avatar">
                     <img src="../assets/images/leaders/CHUKWU.jpeg" />
@@ -595,19 +595,19 @@
                     </p>
                   </div>
                 </div>
-              </div>
+              </div> -->
 
               <!--testi end-->
-            </div>
+            <!-- </div>
           </div>
-        </div>
+        </div> -->
 
         <!-- <div class="swiper-pagination">
           <span></span>
            <span></span>
             <span></span>
         </div> -->
-      </div>
+      <!-- </div>
       <div class="leaders-app-download">
         <a href="#" target="_blank" rel="noopener noreferrer"
           ><img src="../assets/images/appstore.svg" alt=""
@@ -618,11 +618,11 @@
         <p class="comingSoon font-bold md:font-semibold text-2xl">
           coming soon...
         </p>
-      </div>
+      </div> -->
 
       <!-- End sliderjs framework -->
 
-      <div class="custom-shape-divider-bottom-1644463655">
+      <!-- <div class="custom-shape-divider-bottom-1644463655">
         <svg
           data-name="Layer 1"
           xmlns="http://www.w3.org/2000/svg"
@@ -645,11 +645,11 @@
           ></path>
         </svg>
       </div>
-    </section>
+    </section> -->
 
     <section>
       <div class="featuretwo-wrapper">
-        <div class="app-features-two" style="margin-bottom: 90px">
+        <div class="app-features-two" style="margin-bottom: 90px; margin-top: 12rem;">
           <h1>Create Your Own Trading Plans</h1>
           <div class="trade-img-box">
             <img
@@ -1587,6 +1587,7 @@
   }
   .comingSoon {
     margin-top: 1rem;
+    color: var(--fourth-color);
   }
   .main-appUI_wrapper {
     position: relative;
