@@ -169,10 +169,4 @@
     touch-action: none;
   }
 
-  /* With this code, you can't click on a link that will open on a new tab. */
-
-  [target="_blank"] {
-    cursor: not-allowed;
-    pointer-events: none;
-  }
 </style>
