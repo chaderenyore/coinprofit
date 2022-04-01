@@ -71,7 +71,7 @@
         </div>
 
         <div class="main-appUI_wrapper">
-          <img src="../assets/images/appUI.svg" alt="" class="appui lazy-img" />
+          <img src="../assets/images/appUI.webp" alt="" class="appui " />
         </div>
       </div>
     </section>
@@ -84,9 +84,9 @@
         <div class="box">
           <div class="box-img">
             <img
-              src="../assets/images/chris.jpeg"
+              src="../assets/images/chris.webp"
               alt="IMAGE"
-              class="review-img lazy-img"
+              class="review-img "
             />
           </div>
           <div class="star">
@@ -131,7 +131,7 @@
             <img
               src="../assets/images/tola.jpeg"
               alt="IMAGE"
-              class="review-img lazy-img"
+              class="review-img "
             />
           </div>
           <div class="star">
@@ -171,9 +171,9 @@
         <div class="box">
           <div class="box-img">
             <img
-              src="../assets/images/Frank.jpeg"
+              src="../assets/images/Frank.webp"
               alt="Third Image"
-              class="review-img lazy-img"
+              class="review-img "
             />
           </div>
           <div class="star">
@@ -430,7 +430,7 @@
               <div class="swiper-slide">
                 <div class="testi-item">
                   <div class="testi-avatar">
-                    <img src="../assets/images/leaders/marvelous.jpeg" />
+                    <img src="../assets/images/leaders/marvelous.webp" />
                   </div>
 
                   <div class="testimonials-text">
@@ -532,7 +532,7 @@
               <div class="swiper-slide">
                 <div class="testi-item">
                   <div class="testi-avatar">
-                    <img src="../assets/images/leaders/BK.jpeg" />
+                    <img src="../assets/images/leaders/BK.webp" />
                   </div>
 
                   <div class="testimonials-text">
@@ -653,7 +653,7 @@
           <h1>Create Your Own Trading Plans</h1>
           <div class="trade-img-box">
             <img
-              src="../assets/images/planner-trade-lesson.svg"
+              src="../assets/images/planner-trade-lesson.webp"
               alt="Create your trading plan"
               class="trade-img"
             />
@@ -713,35 +713,11 @@
         </h1>
         <div class="track-img-box">
           <img
-            src="../assets/images/Portfolio-Upgraded.svg"
+            src="../assets/images/Portfolio-Upgraded.webp"
             alt="App Feature 1"
             class="auto-track-img"
           />
-          <img
-            src="../assets/images/groupebsc1.svg"
-            alt=""
-            srcset=""
-            class="auto-track-icons bcs1"
-          />
-          <img
-            src="../assets/images/groupeth1.svg"
-            alt=""
-            srcset=""
-            class="auto-track-icons eth1"
-          />
-
-          <img
-            src="../assets/images/groupebsc2.svg"
-            alt=""
-            srcset=""
-            class="auto-track-icons bcs2"
-          />
-          <img
-            src="../assets/images/groupeth2.svg"
-            alt=""
-            srcset=""
-            class="auto-track-icons eth2"
-          />
+          
         </div>
         <p>
           Conveniently and securely monitor your entire portfolio on one
@@ -2207,30 +2183,6 @@
     width: 100%;
   }
 
-  .auto-track-icons {
-    position: absolute;
-  }
-  .auto-track-icons.bcs1 {
-    width: 40%;
-    top: 300px;
-    left: 50%;
-  }
-  .auto-track-icons.eth1 {
-    width: 40%;
-    top: 260px;
-    left: 20px;
-  }
-
-  .auto-track-icons.bcs2 {
-    width: 40%;
-    top: 500px;
-    left: 20px;
-  }
-  .auto-track-icons.eth2 {
-    width: 40%;
-    top: 550px;
-    left: 50%;
-  }
 
   .button,
   .button::after {
@@ -3281,16 +3233,7 @@
       left: 20px;
     }
 
-    .auto-track-icons.bcs2 {
-      width: 30%;
-      top: 500px;
-      left: 20px;
-    }
-    .auto-track-icons.eth2 {
-      width: 30%;
-      top: 55%;
-      left: 60%;
-    }
+   
 
     .profit-loss h1 {
       width: 60%;
@@ -4068,34 +4011,16 @@
     .track-img-box {
       width: 50%;
       position: absolute;
-      top: 100px;
+      top: 20%;
       left: 500px;
     }
     .auto-track-img {
-      width: 60%;
-      margin-left: 270px;
+      width: 700px;
+
+      /* margin-left: 270px; */
     }
 
-    .auto-track-icons.bcs1 {
-      width: 40%;
-      top: 110px;
-      left: 500px;
-    }
-    .auto-track-icons.eth1 {
-      width: 40%;
-      top: 210px;
-      left: 500px;
-    }
-    .auto-track-icons.bcs2 {
-      width: 40%;
-      top: 320px;
-      left: 500px;
-    }
-    .auto-track-icons.eth2 {
-      width: 40%;
-      top: 380px;
-      left: 100px;
-    }
+    
     .littleIcon6 {
       width: 5%;
       position: absolute;

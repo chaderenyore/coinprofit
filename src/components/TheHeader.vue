@@ -188,6 +188,7 @@
     font-size: 14px;
     position: relative;
     transition:  font-size 0.5s ease;
+
   }
   
 

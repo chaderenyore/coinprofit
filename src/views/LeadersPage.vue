@@ -367,7 +367,7 @@
                 <div class="mobile-leaders-box">
                   <div class="mobile-leaders-img-box">
                     <img
-                      src="@/assets/images/leaders/marvelous.jpeg"
+                      src="@/assets/images/leaders/marvelous.webp"
                       alt="leader Image"
                     />
                   </div>
@@ -478,7 +478,7 @@
                 <div class="mobile-leaders-box">
                   <div class="mobile-leaders-img-box">
                     <img
-                      src="@/assets/images/leaders/BK.jpeg"
+                      src="@/assets/images/leaders/BK.webp"
                       alt="leader Image"
                     />
                   </div>
@@ -756,7 +756,7 @@
       <div class="computer-leaders-box-wrapper two">
         <div class="computer-leaders-box">
           <div class="computer-leaders-img-box">
-            <img src="@/assets/images/leaders/BK.jpeg" alt="IMAGE" />
+            <img src="@/assets/images/leaders/BK.webp" alt="IMAGE" />
           </div>
 
           <!-- <div class="leader-lv">
@@ -811,7 +811,7 @@
 
         <div class="computer-leaders-box">
           <div class="computer-leaders-img-box">
-            <img src="@/assets/images/leaders/marvelous.jpeg" alt="IMAGE" />
+            <img src="@/assets/images/leaders/marvelous.webp" alt="IMAGE" />
           </div>
 
           <p>@Iam_Marvelous</p>
