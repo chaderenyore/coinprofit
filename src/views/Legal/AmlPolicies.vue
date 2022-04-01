@@ -107,7 +107,7 @@ export default {
 .aml-policy {
     max-width: 1800px;
     margin: 0 auto;
-    padding: 1rem 1rem;
+    padding: 3rem 1rem 1rem;
 }
 
 
@@ -138,8 +138,15 @@ export default {
 }
 
 @media only screen and (min-width: 1024px) {
-    .aml-policy h1 {
-        margin-top: 3rem;
+    .aml-policy {
+        padding-top: 7rem;
     }
+
 }
+/* @media only screen and (min-width: 1200px) {
+    .amlContainer {
+        padding-top: 4rem;
+    }
+    
+} */
 </style>

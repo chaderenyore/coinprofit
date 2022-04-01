@@ -161,7 +161,7 @@
 
           <div class="team_memebers_box">
             <div class="team_memebers_box_img_box">
-              <img src="@/assets/images/about/emmanuel.png" alt="IMAGE" />
+              <img src="@/assets/images/about/emmanuel.webp" alt="IMAGE" />
             </div>
 
             <h3>Emmanuel Ohworeko</h3>
@@ -180,7 +180,7 @@
 
           <div class="team_memebers_box">
             <div class="team_memebers_box_img_box">
-              <img src="@/assets/images/about/mudi.jpg" alt="IMAGE" />
+              <img src="@/assets/images/about/mudi.jpeg" alt="IMAGE" />
             </div>
 
             <h3>Uwojeya Moody Mudiaga</h3>
@@ -1034,7 +1034,7 @@
       font-weight: 800;
     }
     .team_memebers_box {
-      /* width: 30%; */
+      width: 30%;
       margin: 8rem 1rem 0;
       display: inline-block;
     }

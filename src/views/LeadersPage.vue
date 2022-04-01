@@ -87,6 +87,7 @@
               srcset=""
               class="app-download"
           /></a>
+           <p class="comingSoon font-bold md:font-semibold text-2xl" >coming soon...</p>
         </div>
       </div>
     </section>
@@ -120,7 +121,7 @@
 
         <div class="leaders-portfolio-box">
           <img
-            src="@/assets/images/leaders/leader1.svg"
+            src="@/assets/images/leaders/leader1.webp"
             alt="Share Image"
             class="share-portfolio-img"
           />
@@ -230,7 +231,7 @@
 
         <div class="leaders-portfolio-box">
           <img
-            src="@/assets/images/share-img.png"
+            src="@/assets/images/share-img.webp"
             alt="Share Image"
             class="seeSubsimg"
           />
@@ -257,6 +258,7 @@
             srcset=""
             class="app-download features"
         /></a>
+        <p class="comingSoon font-bold md:font-semibold text-2xl" >coming soon...</p>
       </div>
     </section>
 
@@ -282,7 +284,7 @@
                 <div class="mobile-leaders-box">
                   <div class="mobile-leaders-img-box">
                     <img
-                      src="@/assets/images/leaders/emmanuel.png"
+                      src="@/assets/images/leaders/emmanuel.webp"
                       alt="Leader Image"
                     />
                   </div>
@@ -498,7 +500,7 @@
                 <div class="mobile-leaders-box">
                   <div class="mobile-leaders-img-box">
                     <img
-                      src="@/assets/images/leaders/voski.jpeg"
+                      src="@/assets/images/leaders/voski.webp"
                       alt="leader Image"
                     />
                   </div>
@@ -601,7 +603,7 @@
       <div class="computer-leaders-box-wrapper">
         <div class="computer-leaders-box">
           <div class="computer-leaders-img-box">
-            <img src="@/assets/images/leaders/emmanuel.png" alt="IMAGE" />
+            <img src="@/assets/images/leaders/emmanuel.webp" alt="IMAGE" />
           </div>
 
           <!-- <div class="leader-lv">
@@ -641,7 +643,7 @@
 
         <div class="computer-leaders-box">
           <div class="computer-leaders-img-box">
-            <img src="@/assets/images/leaders/voski.jpeg" alt="IMAGE" />
+            <img src="@/assets/images/leaders/voski.webp" alt="IMAGE" />
           </div>
           <p>@Voski</p>
           <h3>Stephen Voski</h3>
@@ -919,6 +921,7 @@
             srcset=""
             class="leaderCTADownloadApp"
         /></a>
+        <p class="comingSoon font-bold md:font-semibold text-2xl" >coming soon...</p>
       </div>
     </div>
 
@@ -1027,7 +1030,7 @@ export default {
         autoplay: true,
         interval: 3000, // How long to display each slide
         pauseOnHover: true, // m
-        pauseOnFocus: false, // must be false
+        pauseOnFocus: false, // 
         resetProgress: false,
       }).mount();
     },
@@ -1036,6 +1039,8 @@ export default {
       this.useSplide();
 
       // end of splider js
+
+      
 
       // FAQ SECTION
       let faqtoggles = document.getElementsByClassName("faqtoggle");
@@ -1156,6 +1161,10 @@ export default {
   display: block;
   width: 50%;
   margin: 1rem auto 0;
+}
+.comingSoon {
+  margin-top: 1rem;
+  text-align: center;
 }
 
 @media (min-width: 480px) {
@@ -2232,7 +2241,11 @@ export default {
   .app-download {
     display: inline-block;
     width: 10rem;
-    margin: 2rem 1rem;
+    margin: 2rem 1rem 0;
+  }
+  .comingSoon {
+    text-align: unset;
+    margin-left: 1rem;
   }
 
   .signal-packs {

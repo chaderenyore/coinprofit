@@ -31,6 +31,7 @@
             srcset=""
             class="final-download-img"
         /></a>
+        <p class="comingSoon font-bold md:font-semibold text-2xl" >coming soon...</p>
       </div>
     </div>
   </section>
@@ -110,6 +111,10 @@
 .final-download-wrapper img {
   /* display: block; */
   width: 100%;
+}
+.comingSoon  {
+  margin-top: 1rem;
+  text-align: center;
 }
 /* IPAD DESIGN */
 @media only screen and (min-width: 768px) {
