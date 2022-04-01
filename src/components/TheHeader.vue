@@ -68,8 +68,6 @@ export default {
         header.classList.toggle("navscroll-active", windowPosition);
       });
     },
-
-
     scrollToDownload() {
       const element = document.querySelector(".final-download");
       element.scrollIntoView({ behavior: "smooth" });
@@ -78,22 +76,17 @@ export default {
       const hamburger = document.querySelector(".hamburger");
       const navMenu = document.querySelector(".nav-menu");
       const backdrop = document.querySelector(".backdrop");
-
       hamburger.classList.remove("active");
       navMenu.classList.remove("active");
       backdrop.classList.remove("active");
     },
     initHeader() {
       // Toggle light and dark mode codes here
-
       let togglebtn = document.querySelector("#toggleIcon");
-
       if (localStorage.getItem("theme") == null) {
         localStorage.setItem("theme", "light");
       }
-
       let localData = localStorage.getItem("theme");
-
       if (localData == "light") {
         togglebtn.src = require("@/assets/images/toggle.png");
         document.body.classList.remove("dark-theme");
@@ -101,10 +94,8 @@ export default {
         togglebtn.src = require("@/assets/images/toggle-dark.svg");
         document.body.classList.add("dark-theme");
       }
-
       togglebtn.addEventListener("click", function () {
         document.body.classList.toggle("dark-theme");
-
         if (document.body.classList.contains("dark-theme")) {
           togglebtn.src = require("@/assets/images/toggle-dark.svg");
           localStorage.setItem("theme", "dark");
@@ -113,42 +104,34 @@ export default {
           localStorage.setItem("theme", "light");
         }
       });
-
       // Start navbar
       const hamburger = document.querySelector(".hamburger");
       const navMenu = document.querySelector(".nav-menu");
       const navLink = document.querySelectorAll(".nav-link");
       const backdrop = document.querySelector(".backdrop");
-
       hamburger.addEventListener("click", mobileMenu);
       navLink.forEach((n) => n.addEventListener("click", this.closeMenu));
-
       function mobileMenu() {
         hamburger.classList.toggle("active");
         navMenu.classList.toggle("active");
         backdrop.classList.toggle("active");
       }
-
       backdrop.addEventListener("click", closebackdrop);
       function closebackdrop() {
         hamburger.classList.remove("active");
         navMenu.classList.remove("active");
         backdrop.classList.remove("active");
       }
-
       // End Navabr
     },
   },
-
   watch: {
     $route() {
       this.closeMenu();
     },
   },
-
   mounted() {
     this.initHeader();
-
     this.scrollNavbar();
   },
 };
@@ -163,14 +146,12 @@ header {
   position: fixed;
   transition: background-color 0.5s ease;
 }
-
 .container {
   width: 100%;
   max-width: 1450px;
   margin: 0 auto;
   padding: 0 1.5rem;
 }
-
 .navbar {
   width: 90%;
   margin: auto;
@@ -180,7 +161,6 @@ header {
   justify-content: space-between;
   transition: height 0.5s ease;
 }
-
 .toggle-moon {
   width: 70px;
   cursor: pointer;
@@ -188,7 +168,6 @@ header {
   top: 30px;
   left: 25%;
 }
-
 .nav-logo {
   width: 20%;
 }
@@ -204,15 +183,12 @@ nav ul li {
   display: inline-block;
   margin: 24px 20px;
 }
-
 nav ul li a {
   color: var(--fourth-color);
   font-size: 14px;
   position: relative;
 }
-
 /* The dropdown container */
-
 /* Dropdown button */
 .navDropDown .navdropBTN {
   border: none;
@@ -221,7 +197,6 @@ nav ul li a {
   background: transparent;
   color: var(--fourth-color);
 }
-
 /* Dropdown content (hidden by default) */
 .dropdown-content {
   display: none;
@@ -232,8 +207,6 @@ nav ul li a {
   z-index: 1;
   /* margin-top: 3px; */
 }
-
-
 /* Links inside the dropdown */
 .dropdown-content a {
   float: none;
@@ -243,13 +216,10 @@ nav ul li a {
   text-align: left;
   color: var(--fourth-color);
 }
-
-
 /* Show the dropdown menu on hover */
 .navDropDown:hover .dropdown-content {
   display: block;
 }
-
 nav ul li a::after {
   content: "";
   width: 100%;
@@ -265,7 +235,6 @@ nav ul li a::after {
 nav ul li a:hover::after {
   transform: scaleX(1);
 }
-
 .actn {
   margin-right: 50px;
 }
@@ -283,11 +252,9 @@ nav ul li a:hover::after {
   color: #fff !important;
   border-bottom: none;
 }
-
 .hamburger {
   display: none;
 }
-
 .bar {
   display: block;
   width: 25px;
@@ -300,30 +267,23 @@ nav ul li a:hover::after {
 .bar:nth-child(2) {
   margin-left: 20px;
 }
-
 /*Apply styles after scroll*/
-
 .navscroll-active {
   background-color: var(--navScroll-light);
   box-shadow: 0 3px 1rem var(--navShadow);
 }
-
 .navbar {
   padding: 10px 0;
 }
 .navscroll-active nav ul li a {
   color: var(--navScrollp);
 }
-
 .navscroll-active .actn button {
   background-color: #3374ea;
   color: #fff;
 }
-
 /*Apply styles after scroll end*/
-
 /* on ipad pro screen */
-
 @media only screen and (max-width: 1024px) {
   ::-webkit-scrollbar {
     display: none;
@@ -359,7 +319,6 @@ nav ul li a:hover::after {
     align-items: center;
     justify-content: space-between;
   }
-
   .toggle-moon {
     left: 25%;
   }
@@ -375,9 +334,7 @@ nav ul li a:hover::after {
     width: 20%;
   }
 }
-
 /* on ipad screen */
-
 @media only screen and (max-width: 768px) {
   .scrollTop {
     position: fixed;
@@ -430,7 +387,6 @@ nav ul li a:hover::after {
     top: 10px;
     left: 50px;
   }
-
   .toggle-moon {
     top: 30%;
     left: 40%;
@@ -450,16 +406,13 @@ nav ul li a:hover::after {
     transition: 0.5s;
     box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
   }
-
   nav ul.active {
     left: 0;
   }
-
   nav ul li a {
     color: var(--fourth-color);
     font-size: 26px;
   }
-
   nav ul li {
     display: block;
     margin: 2.5rem 300px;
@@ -470,7 +423,6 @@ nav ul li a:hover::after {
   nav ul li.actn {
     margin-left: 259px !important;
   }
-
   nav ul li.actn button {
     border: none;
     background-color: blue;
@@ -480,28 +432,23 @@ nav ul li a:hover::after {
     font-weight: bold;
     padding: 10px 30px;
   }
-
   .hamburger {
     display: block;
     cursor: pointer;
     background: none;
   }
-
   .hamburger.active .bar:nth-child(2) {
     opacity: 0;
   }
-
   .hamburger.active .bar:nth-child(1) {
     -webkit-transform: translateY(8px) rotate(45deg);
     transform: translateY(8px) rotate(45deg);
   }
-
   .hamburger.active .bar:nth-child(3) {
     -webkit-transform: translateY(-8px) rotate(-45deg);
     transform: translateY(-8px) rotate(-45deg);
   }
 }
-
 /* On Mobile Screens */
 @media only screen and (max-width: 440px) {
   ::-webkit-scrollbar {
@@ -532,7 +479,6 @@ nav ul li a:hover::after {
     transition: 0.3s;
     /* display: none; */
   }
-
   .backdrop.active {
     width: 100vw;
     height: 100vh;
@@ -560,7 +506,6 @@ nav ul li a:hover::after {
     left: 10px;
     width: 150px;
   }
-
   .toggle-moon {
     width: 70px;
     cursor: pointer;
@@ -568,7 +513,6 @@ nav ul li a:hover::after {
     top: 1rem;
     left: 50%;
   }
-
   nav ul {
     position: fixed;
     left: -110%;
@@ -584,26 +528,21 @@ nav ul li a:hover::after {
     transition: 0.5s;
     box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
   }
-
   nav ul.active {
     left: 0;
   }
-
   nav ul li {
     display: block;
     margin: 2.5rem 30px;
   }
-
   nav ul li a {
     color: var(--fourth-color);
     font-size: 16px;
   }
   .navDropDown .navdropBTN {
-
   background: transparent;
   font-size: 16px;
 }
-
   nav ul li.actn {
     margin-left: 30px !important;
   }
@@ -614,22 +553,18 @@ nav ul li a:hover::after {
     color: #fff;
     font-weight: bold;
   }
-
   .hamburger {
     display: block;
     cursor: pointer;
     background: none;
   }
-
   .hamburger.active .bar:nth-child(2) {
     opacity: 0;
   }
-
   .hamburger.active .bar:nth-child(1) {
     -webkit-transform: translateY(8px) rotate(45deg);
     transform: translateY(8px) rotate(45deg);
   }
-
   .hamburger.active .bar:nth-child(3) {
     -webkit-transform: translateY(-8px) rotate(-45deg);
     transform: translateY(-8px) rotate(-45deg);

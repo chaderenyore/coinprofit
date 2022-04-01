@@ -276,7 +276,7 @@
         />
       </div>
 
-      <div class="signal-packs">
+      <div class="signal-packs one">
           <img src="../assets/images/customer.webp" alt="" class="pack-img" />
       </div>
 
@@ -1087,7 +1087,7 @@ This is at last the opportunity for the average person who's not interested in t
               <div class="splide__slide">
                 <h3>Israel Odenu</h3>
                 <div class="users-img-wrapper">
-                  <img src="../assets/images/israel.png" alt="" />
+                  <img src="../assets/images/israel.webp" alt="" />
                 </div>
                 <div class="star-review">
                   <i
@@ -1759,10 +1759,15 @@ export default {
   }
 }
 
-.signal-packs {
+.signal-packs{
   position: absolute;
   top: 25%;
-  left: 55%;
+  left: 65%;
+}
+.signal-packs.one {
+  position: absolute;
+  top: 25%;
+  left: 66%;
 }
 .signal-packs.two {
   top: 43%;
@@ -1787,8 +1792,7 @@ export default {
   }
 }
 .pack-img {
-  width: 80%;
-  margin-left: 10%;
+  width: 100%;
 
 }
 
@@ -1799,12 +1803,13 @@ export default {
 .signal-planner-wrapper {
   position: relative;
   top: 4.1rem;
-  left: -30px;
+  left: -20px;
   width: 90%;
 }
 
 .signal-planner {
   width: 100%;
+  
 }
 /* starts custom divider */
 .custom-shape-divider-top-1644369928 {

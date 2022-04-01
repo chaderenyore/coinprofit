@@ -129,7 +129,7 @@
       async getPost() {
         try {
           this.post = await this.$prismic.client.getByUID(
-            "articles",
+            "blog",
             this.$route.params.uid,
             {
               fetchLinks: ["author.name", "author.avatar", "author.bio"],
@@ -145,6 +145,7 @@
             year: "numeric",
           });
         } catch (error) {
+          console.log(error.message);
           this.loading = false;
           this.error = true;
           this.errorMessage = error.message;
@@ -186,7 +187,7 @@
 
   @media (min-width: 820px) {
     .article-main {
-      padding-top: 10rem;
+      padding-top: 6.5rem;
     }
   }
 

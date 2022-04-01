@@ -72,16 +72,22 @@
     --author-bio: #707070;
     --article-text: #525b6d;
     --social-button-container: #f2f8ff;
+    --plyr-color-main: #3374ea;
+    --help-email-icon: #525b6d;
+    /* --fifth-color: #000000; for paragraphs with black background */
   }
 
   .dark-theme {
     --light-color: #13141c;
     --dark-color: #f2f8ff;
     --nav-light: #09090b;
+    --navScroll-light: #310909;
+    --navScrollp: #d8d4d4; /* for nav li a  */
+    --navShadow: #f1eaea1a;
     --navScroll-light: #160202;
     --dropdown-content: #13141c;
-     --navScrollp: #d8d4d4; /* for nav li a  */
-      --navShadow: #f1eaea1a;
+    --navScrollp: #d8d4d4; /* for nav li a  */
+    --navShadow: #f1eaea1a;
     --third-color: #09090b;
     --fourth-color: #f2f8ff;
     --fifth-color: #f2f8ff;
@@ -97,6 +103,7 @@
     --article-text: #b3bcce;
     --help-contact-box-text: #f2f8ff;
     --social-button-container: #202230;
+    --help-email-icon: transparent;
   }
   html {
     scroll-behavior: smooth;
@@ -155,5 +162,10 @@
 }
 
 
-
+  *:focus {
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+    -ms-touch-action: none;
+    touch-action: none;
+  }
 </style>

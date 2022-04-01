@@ -1,5 +1,4 @@
 import { createRouter, createWebHistory } from "vue-router";
-import NProgress from "nprogress";
 import HomePage from "../views/HomePage.vue";
 import BlogPost from "../views/Help/_uid.vue";
 
@@ -32,6 +31,24 @@ const routes = [
     },
   },
   {
+    path: "/blog",
+    name: "blog",
+    component: () => import("../views/BlogPage.vue"),
+    meta: {
+      auth: true,
+      title: "Coinprofit - Blog",
+    },
+  },
+  {
+    path: "/blog/:uid",
+    name: "SingleBlogPost",
+    component: () => import("../views/Blog/_uid.vue"),
+    meta: {
+      auth: true,
+      title: "CoinProfit - BlogPost",
+    },
+  },
+  {
     path: "/help",
     name: "help",
     component: () => import("../views/HelpPage.vue"),
@@ -41,12 +58,30 @@ const routes = [
     },
   },
   {
-    path: "/help/:uid",
+    path: "/help/articles/:uid",
     component: BlogPost,
     name: "SingleHelpPost",
     meta: {
       auth: true,
-      title: "Coinprofit - Blog Post",
+      title: "Coinprofit - HelpPost",
+    },
+  },
+  {
+    path: "/help/tutorials/:uid",
+    component: () => import("../views/Tutorial/_uid.vue"),
+    name: "TutorialVideo",
+    meta: {
+      auth: true,
+      title: "Coinprofit - Tutorial",
+    },
+  },
+  {
+    path: "/help/search",
+    name: "help-search",
+    component: () => import("../views/Help/_search.vue"),
+    meta: {
+      auth: true,
+      title: "Coinprofit - Help",
     },
   },
   {
@@ -96,20 +131,6 @@ const router = createRouter({
       top: 0,
     };
   },
-});
-
-router.beforeResolve((to, _, next) => {
-  // If this isn't an initial page load.
-  if (to.name) {
-    // Start the route progress bar.
-    NProgress.start();
-  }
-  next();
-});
-
-router.afterEach(() => {
-  // Complete the animation of the route progress bar.
-  NProgress.done();
 });
 
 export default router;

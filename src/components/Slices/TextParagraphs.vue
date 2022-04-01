@@ -1,12 +1,11 @@
 <template>
   <div>
-    <PrismicText
-      v-for="paragraph in slice.items"
-      :key="paragraph.length"
-      class="article-introtext text-base mb-6 font-medium"
-      wrapper="p"
-      :field="paragraph.paragraphs"
-    />
+    <div v-for="paragraph in slice.items" :key="paragraph.length">
+      <p
+        v-html="$prismic.asHTML(paragraph.paragraphs)"
+        class="article-introtext text-base mb-6 font-medium"
+      ></p>
+    </div>
   </div>
 </template>
 
@@ -20,7 +19,11 @@
 </script>
 
 <style scoped>
-  .article-introtext {
+  .article-introtext :deep(p) {
     color: var(--article-text);
+  }
+
+  .article-introtext :deep(a) {
+    color: #3374ea;
   }
 </style>

@@ -40,11 +40,16 @@
         bar to easily find what you are looking for.
       </p>
       <div>
-        <form action="#" @submit.prevent class="help__section--search__form">
+        <form
+          action="#"
+          @submit.prevent="searchArticles"
+          class="help__section--search__form"
+        >
           <input
             type="text"
             class="help__section--search__input"
             placeholder="Search"
+            v-model="searchQuery"
           />
           <button class="help__section--search__button">Find</button>
         </form>
@@ -52,7 +57,7 @@
     </div>
   </section>
 
-  <section class="w-[85%] md:w-[80%] m-auto">
+  <section class="help__guide-section w-[85%] md:w-[80%] m-auto">
     <KeepAlive>
       <component :is="selectedComponent" />
     </KeepAlive>
@@ -74,9 +79,28 @@
       <div class="help__contact--card p-4 rounded-xl">
         <h2 class="text-xl font-bold mb-3 text-[#3374EA]">Email Us</h2>
         <div class="flex items-center">
-          <img class="h-10" src="@/assets/images/okex-2.svg" alt="Email" />
+          <img
+            class="h-4 w-5 email-icon"
+            src="@/assets/images/email.svg"
+            alt="Email"
+          />
           <p class="help__contact--card-p ml-3 font-medium">
-            contact@coinprofit.app
+            support@coinprofit.app
+          </p>
+        </div>
+      </div>
+      <div class="help__contact--card p-4 rounded-xl">
+        <p class="text-lg mb-3 font-semibold text-[#3374EA]">
+          For Business Proposals, Please Email
+        </p>
+        <div class="flex items-center">
+          <img
+            class="h-4 w-5 email-icon"
+            src="@/assets/images/email.svg"
+            alt="Email"
+          />
+          <p class="help__contact--card-p ml-3 font-medium">
+            business@coinprofit.app
           </p>
         </div>
       </div>
@@ -88,7 +112,7 @@
 <script>
   import HelpPostCard from "../components/Help/HelpPostCard.vue";
   import VideoCard from "../components/Help/VideoCard.vue";
-  import { ref } from "@vue/reactivity";
+  // import { ref } from "@vue/reactivity";
 
   export default {
     components: {
@@ -96,11 +120,26 @@
       VideoCard,
     },
 
-    setup() {
-      const selectedComponent = ref("help-post-card");
+    data() {
       return {
-        selectedComponent,
+        selectedComponent: "help-post-card",
+        searchQuery: "",
       };
+    },
+    methods: {
+      searchArticles() {
+        // let regex = /^\s+$/;
+        // if (this.searchQuery.match(regex) || !this.searchQuery) {
+        //   return;
+        // }
+        // this.$router.push({
+        //   name: "help-search",
+        //   query: {
+        //     q: this.searchQuery.trim(),
+        //   },
+        // });
+        return;
+      },
     },
   };
 </script>
@@ -128,7 +167,7 @@
       padding-top: 9rem;
     }
   }
-   @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1200px) {
     .help__section {
       padding-top: 15rem;
     }
@@ -185,12 +224,12 @@
   }
 
   .help__cards__img-div {
-    height: 40%;
-    margin-bottom: 1.375rem;
+    margin-bottom: 0.5rem;
   }
 
   .help__cards__img-div img {
-    height: 100%;
+    height: 65px;
+    width: 65px;
   }
 
   .help__cards--card p {
@@ -256,6 +295,7 @@
 
   .help__section--search__button {
     border: none;
+    cursor: pointer;
     background-image: linear-gradient(180deg, #22a1f5, #677bff);
     font-family: inherit;
     font-size: inherit;
@@ -321,9 +361,7 @@
   }
 
   @media only screen and (min-width: 90rem) {
-
     .help__section {
-     
       grid-column-gap: 0.375rem;
     }
   }
@@ -358,5 +396,23 @@
   }
   .help__contact--card-p {
     color: var(--help-contact-box-text);
+  }
+
+  .email-icon {
+    background: var(--help-email-icon);
+  }
+
+  @media (min-width: 1400px) {
+    .help__section {
+      max-width: 1350px;
+    }
+
+    .help__section--contact {
+      max-width: 1350px;
+    }
+
+    .help__guide-section {
+      max-width: 1350px;
+    }
   }
 </style>
