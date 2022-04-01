@@ -80,7 +80,7 @@
         <h2 class="text-xl font-bold mb-3 text-[#3374EA]">Email Us</h2>
         <div class="flex items-center">
           <img
-            class="h-4 email-icon"
+            class="h-4 w-5 email-icon"
             src="@/assets/images/email.svg"
             alt="Email"
           />
@@ -95,7 +95,7 @@
         </p>
         <div class="flex items-center">
           <img
-            class="h-4 email-icon"
+            class="h-4 w-5 email-icon"
             src="@/assets/images/email.svg"
             alt="Email"
           />
@@ -224,12 +224,12 @@
   }
 
   .help__cards__img-div {
-    height: 40%;
-    margin-bottom: 1.375rem;
+    margin-bottom: 0.5rem;
   }
 
   .help__cards__img-div img {
-    height: 100%;
+    height: 65px;
+    width: 65px;
   }
 
   .help__cards--card p {
