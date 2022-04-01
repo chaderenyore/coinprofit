@@ -20,3 +20,7 @@
     },
   };
 </script>
+
+<style scoped>
+  @import "vue-plyr/dist/vue-plyr.css";
+</style>
