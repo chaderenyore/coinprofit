@@ -37,7 +37,7 @@
               </button>
               <div class="dropdown-content">
                 <router-link to="/about">About</router-link>
-                <router-link to="/help">Blog</router-link>
+                <router-link to="/blog">Blog</router-link>
               </div>
             </div>
           </li>
