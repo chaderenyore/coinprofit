@@ -601,7 +601,7 @@
 }
 
 .privacy-policy {
-  padding: 1rem 1rem;
+  padding: 3rem 1rem 1rem;
 }
 
 .privacy-policy h1 {
@@ -629,8 +629,8 @@
 }
 
 @media only screen and (min-width: 1024px) {
-  .privacy-policy h1 {
-    margin-top: 3rem;
+  .privacy-policy {
+    padding-top: 7rem;
   }
 }
 </style>
