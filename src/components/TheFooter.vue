@@ -64,7 +64,7 @@
             <i class="fa fa-chevron-down footerIcon" style="color: #3374ea"></i>
           </button>
           <div class="footerContent">
-            <a href="#"><p>Andrioid App</p></a>
+            <a href="#"><p>Android App</p></a>
             <a href="#"><p>ios App</p></a>
           </div>
         </div>
@@ -174,7 +174,7 @@
       <div class="main-app-container">
         <div class="company-head">
           <h3>Products</h3>
-          <a href="#"><p>Andrioid App</p></a>
+          <a href="#"><p>Android App</p></a>
           <a href="#"><p>ios App</p></a>
         </div>
       </div>
@@ -403,6 +403,7 @@ export default {
     background-color: var(--third-color);
     height: 240px;
     margin-top: 100px;
+    font-family: "Montserrat", sans-serif;
   }
   .computer-footer-wrapper {
     width: 90%;
@@ -427,17 +428,17 @@ export default {
     color: #3374ea;
     margin-top: 50px;
     margin-bottom: 40px;
-    font-family: "Montserrat", sans-serif;
+    
   }
   .computer-slogan {
     color: var(--fourth-color);
-    font-family: "Montserrat", sans-serif;
+   
     font-size: 14px;
     margin-bottom: 5px;
   }
   .company-head p {
     color: var(--fourth-color);
-    font-family: "Montserrat", sans-serif;
+    
     font-size: 14px;
     line-height: 30px;
   }

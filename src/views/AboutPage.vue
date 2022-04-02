@@ -659,8 +659,8 @@
     text-align: center;
   }
   .dot {
-    height: 10px;
-    width: 10px;
+    height: 30px;
+    width: 30px;
     margin: 0 2px;
     background-color: #ccc;
     box-shadow: 0px 10px 10px #00000008;

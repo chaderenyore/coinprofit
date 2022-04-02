@@ -1465,7 +1465,7 @@
   }
   .littleicon4 {
     position: absolute;
-    top: 105%;
+    top: 90%;
     left: 1%;
     width: 4rem;
     z-index: 1;
