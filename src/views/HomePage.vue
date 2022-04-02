@@ -71,8 +71,7 @@
         </div>
 
         <div class="main-appUI_wrapper">
-          <!-- <img src="../assets/images/appUI.webp" alt="" class="appui" /> -->
-          <app-image :lazy-src="appUI" class="appui" />
+          <img src="../assets/images/appUI.webp" alt="" class="appui" />
         </div>
       </div>
     </section>
@@ -1256,10 +1255,6 @@
     },
 
     computed: {
-      appUI() {
-        return require("../assets/images/appUI.webp");
-      },
-
       chrisImg() {
         return require("../assets/images/chris.webp");
       },
