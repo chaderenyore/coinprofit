@@ -110,7 +110,6 @@
             "tutorial",
             this.$route.params.uid
           );
-          console.log(this.video);
         } catch (error) {
           this.loading = false;
           this.error = true;
