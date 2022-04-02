@@ -362,7 +362,7 @@
                 <div class="testi-item">
                   <div class="testi-avatar">
                     <img src="../assets/images/leaders/emmanuel.webp" />
-                  </div> -->
+                  </div>
                   <!-- <div class="leader-level">
                     <img src="../assets/images/leader-level.svg" />
                   </div> -->

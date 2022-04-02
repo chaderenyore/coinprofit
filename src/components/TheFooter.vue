@@ -8,7 +8,7 @@
       </div>
       <div class="slogan"><p>Helping you become a profitable crypto trader and investor</p></div>
       <div class="social-link">
-        <a href="https://twitter.com/coinprofit_app" target="_blank" rel="noopener noreferrer">
+        <a href="https://twitter.com/coinprofit_app" >
           <svg
             style="fill: #3374ea"
             xmlns="http://www.w3.org/2000/svg"
@@ -20,7 +20,7 @@
             /></svg
         ></a>
 
-        <a href="https://www.facebook.com/coinprofitapp" target="_blank" rel="noopener noreferrer"
+        <a href="https://www.facebook.com/coinprofitapp" 
           ><svg
             style="fill: #3374ea"
             xmlns="http://www.w3.org/2000/svg"
@@ -32,7 +32,7 @@
             /></svg
         ></a>
 
-        <a href="https://t.me/+dHybmF8BHyY3ZDY0" target="_blank" rel="noopener noreferrer"
+        <a href="https://t.me/+dHybmF8BHyY3ZDY0" 
           ><svg
             style="fill: #1188c3"
             xmlns="http://www.w3.org/2000/svg"
@@ -107,8 +107,7 @@
         <div class="social-link">
           <a
             href="https://twitter.com/coinprofit_app"
-            target="_blank"
-            rel="noopener noreferrer"
+            
           >
             <svg
               style="fill: #3374ea"
@@ -123,9 +122,9 @@
 
           <a
             href="https://www.facebook.com/coinprofitapp"
-            target="_blank"
-            rel="noopener noreferrer"
-            ><svg
+            
+            >
+            <svg
               style="fill: #3374ea"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 512 512"
@@ -138,8 +137,7 @@
 
           <a
             href="https://t.me/+dHybmF8BHyY3ZDY0"
-            target="_blank"
-            rel="noopener noreferrer"
+           
             ><svg
               style="fill: #1188c3"
               xmlns="http://www.w3.org/2000/svg"
