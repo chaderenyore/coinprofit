@@ -119,9 +119,11 @@
     font-family: "Montserrat", sans-serif;
   }
   ::-webkit-scrollbar {
-    width: 15px;
+    width: 10px;
   }
-
+    ::-webkit-scrollbar-track {
+      background-color: var(--navScroll-light);
+    }
   ::-webkit-scrollbar-thumb {
     -webkit-border-radius: 30px;
     -webkit-background-color: #3374ea;
@@ -131,6 +133,9 @@
 
   @media only screen and (max-width: 1024px) {
     ::-webkit-scrollbar {
+      display: none;
+    }
+    ::-webkit-scrollbar-track {
       display: none;
     }
     ::-webkit-scrollbar-thumb {
