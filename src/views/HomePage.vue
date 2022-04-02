@@ -1322,8 +1322,13 @@
   import $ from "jquery";
   import Swiper from "swiper/bundle";
   import Splide from "@splidejs/splide";
+  import AppImage from '@/components/AppImage.vue'
 
   export default {
+    components: {
+      AppImage
+    },
+
     methods: {
       useSplide() {
         new Splide(".splide", {
