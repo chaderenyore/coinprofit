@@ -87,7 +87,7 @@
               srcset=""
               class="app-download"
           /></a>
-           <p class="comingSoon font-bold md:font-semibold text-2xl" >coming soon...</p>
+           <p class="comingSoon font-bold md:font-semibold text-2xl" >coming soon...!</p>
         </div>
       </div>
     </section>
@@ -258,7 +258,7 @@
             srcset=""
             class="app-download features"
         /></a>
-        <p class="comingSoon font-bold md:font-semibold text-2xl" >coming soon...</p>
+        <p class="comingSoon font-bold md:font-semibold text-2xl" >coming soon...!</p>
       </div>
     </section>
 
@@ -367,7 +367,7 @@
                 <div class="mobile-leaders-box">
                   <div class="mobile-leaders-img-box">
                     <img
-                      src="@/assets/images/leaders/marvelous.jpeg"
+                      src="@/assets/images/leaders/marvelous.webp"
                       alt="leader Image"
                     />
                   </div>
@@ -478,7 +478,7 @@
                 <div class="mobile-leaders-box">
                   <div class="mobile-leaders-img-box">
                     <img
-                      src="@/assets/images/leaders/BK.jpeg"
+                      src="@/assets/images/leaders/BK.webp"
                       alt="leader Image"
                     />
                   </div>
@@ -756,7 +756,7 @@
       <div class="computer-leaders-box-wrapper two">
         <div class="computer-leaders-box">
           <div class="computer-leaders-img-box">
-            <img src="@/assets/images/leaders/BK.jpeg" alt="IMAGE" />
+            <img src="@/assets/images/leaders/BK.webp" alt="IMAGE" />
           </div>
 
           <!-- <div class="leader-lv">
@@ -811,7 +811,7 @@
 
         <div class="computer-leaders-box">
           <div class="computer-leaders-img-box">
-            <img src="@/assets/images/leaders/marvelous.jpeg" alt="IMAGE" />
+            <img src="@/assets/images/leaders/marvelous.webp" alt="IMAGE" />
           </div>
 
           <p>@Iam_Marvelous</p>
@@ -906,7 +906,7 @@
       <h6>Download the coinprofit app NOW to become a leader!</h6>
 
       <div class="leaderCTADownloadWrapper">
-        <a href="#" target="_blank" rel="noopener noreferrer"
+        <a href="#" target="_blank" 
           ><img
             src="@/assets/images/appstore.svg"
             alt=""
@@ -914,14 +914,14 @@
             class="leaderCTADownloadApp"
         /></a>
 
-        <a href="#" target="_blank" rel="noopener noreferrer"
+        <a href="#" target="_blank" 
           ><img
             src="@/assets/images/goplay.svg"
             alt=""
             srcset=""
             class="leaderCTADownloadApp"
         /></a>
-        <p class="comingSoon font-bold md:font-semibold text-2xl" >coming soon...</p>
+        <p class="comingSoon font-bold md:font-semibold text-2xl" >coming soon...!</p>
       </div>
     </div>
 

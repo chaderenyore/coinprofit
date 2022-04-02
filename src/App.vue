@@ -35,12 +35,19 @@
   @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
   @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+  
   * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
+  }
+
+  [target="_blank"] {
+    pointer-events: none;
+    touch-action: none;
   }
 
   p {
@@ -74,7 +81,6 @@
     --social-button-container: #f2f8ff;
     --plyr-color-main: #3374ea;
     --help-email-icon: #525b6d;
-    /* --fifth-color: #000000; for paragraphs with black background */
   }
 
   .dark-theme {
@@ -115,9 +121,7 @@
   ::-webkit-scrollbar {
     width: 15px;
   }
-  ::-webkit-scrollbar-track {
-    border: 2px solid #95c8d1;
-  }
+
   ::-webkit-scrollbar-thumb {
     border-radius: 30px;
     background-color: #3374ea;
@@ -156,8 +160,9 @@
   /* With this code, you can't click on a link that will open on a new tab. */
 
   [target="_blank"] {
-    cursor: not-allowed;
+    
     pointer-events: none;
+    cursor: not-allowed;
   }
 
   *:focus {
