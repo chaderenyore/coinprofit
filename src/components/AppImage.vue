@@ -9,13 +9,15 @@
 
 <script>
   import lozad from "lozad";
+  import Emitter from "tiny-emitter";
+  const emitter = new Emitter();
 
   export default {
     name: "AppImage",
     props: {
       backgroundColor: {
         type: String,
-        default: "#efefef",
+        default: null,
       },
       height: {
         type: Number,
@@ -86,7 +88,7 @@
       // We remove the event listener as soon as
       // the component is destroyed to prevent
       // potential memory leaks.
-      this.$once("hook:destroyed", () => {
+      emitter.once("hook:destroyed", () => {
         this.$el.removeEventListener("load", setLoadingState);
       });
 
