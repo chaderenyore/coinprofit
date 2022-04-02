@@ -331,7 +331,6 @@
                   <div class="testi-avatar">
                     <app-image :lazy-src="emmanuelImg" class="pack-img" />
                   </div>
-
                   <!-- <div class="leader-level">
                     <img src="../assets/images/leader-level.svg" />
                   </div> -->
@@ -1563,7 +1562,7 @@
   }
   .littleicon4 {
     position: absolute;
-    top: 105%;
+    top: 90%;
     left: 1%;
     width: 4rem;
     z-index: 1;

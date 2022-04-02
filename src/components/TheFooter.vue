@@ -8,7 +8,7 @@
       </div>
       <div class="slogan"><p>Helping you become a profitable crypto trader and investor</p></div>
       <div class="social-link">
-        <a href="https://twitter.com/coinprofit_app" target="_blank" rel="noopener noreferrer">
+        <a href="https://twitter.com/coinprofit_app" >
           <svg
             style="fill: #3374ea"
             xmlns="http://www.w3.org/2000/svg"
@@ -20,7 +20,7 @@
             /></svg
         ></a>
 
-        <a href="https://www.facebook.com/coinprofitapp" target="_blank" rel="noopener noreferrer"
+        <a href="https://www.facebook.com/coinprofitapp" 
           ><svg
             style="fill: #3374ea"
             xmlns="http://www.w3.org/2000/svg"
@@ -32,7 +32,7 @@
             /></svg
         ></a>
 
-        <a href="https://t.me/+dHybmF8BHyY3ZDY0" target="_blank" rel="noopener noreferrer"
+        <a href="https://t.me/+dHybmF8BHyY3ZDY0" 
           ><svg
             style="fill: #1188c3"
             xmlns="http://www.w3.org/2000/svg"
@@ -64,7 +64,7 @@
             <i class="fa fa-chevron-down footerIcon" style="color: #3374ea"></i>
           </button>
           <div class="footerContent">
-            <a href="#"><p>Andrioid App</p></a>
+            <a href="#"><p>Android App</p></a>
             <a href="#"><p>ios App</p></a>
           </div>
         </div>
@@ -107,8 +107,7 @@
         <div class="social-link">
           <a
             href="https://twitter.com/coinprofit_app"
-            target="_blank"
-            rel="noopener noreferrer"
+            
           >
             <svg
               style="fill: #3374ea"
@@ -123,9 +122,9 @@
 
           <a
             href="https://www.facebook.com/coinprofitapp"
-            target="_blank"
-            rel="noopener noreferrer"
-            ><svg
+            
+            >
+            <svg
               style="fill: #3374ea"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 512 512"
@@ -138,8 +137,7 @@
 
           <a
             href="https://t.me/+dHybmF8BHyY3ZDY0"
-            target="_blank"
-            rel="noopener noreferrer"
+           
             ><svg
               style="fill: #1188c3"
               xmlns="http://www.w3.org/2000/svg"
@@ -174,7 +172,7 @@
       <div class="main-app-container">
         <div class="company-head">
           <h3>Products</h3>
-          <a href="#"><p>Andrioid App</p></a>
+          <a href="#"><p>Android App</p></a>
           <a href="#"><p>ios App</p></a>
         </div>
       </div>
@@ -403,6 +401,7 @@ export default {
     background-color: var(--third-color);
     height: 240px;
     margin-top: 100px;
+    font-family: "Montserrat", sans-serif;
   }
   .computer-footer-wrapper {
     width: 90%;
@@ -427,17 +426,17 @@ export default {
     color: #3374ea;
     margin-top: 50px;
     margin-bottom: 40px;
-    font-family: "Montserrat", sans-serif;
+    
   }
   .computer-slogan {
     color: var(--fourth-color);
-    font-family: "Montserrat", sans-serif;
+   
     font-size: 14px;
     margin-bottom: 5px;
   }
   .company-head p {
     color: var(--fourth-color);
-    font-family: "Montserrat", sans-serif;
+    
     font-size: 14px;
     line-height: 30px;
   }
