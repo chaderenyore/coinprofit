@@ -31,7 +31,7 @@
             srcset=""
             class="final-download-img"
         /></a>
-        <p class="comingSoon font-bold md:font-semibold text-2xl" >coming soon...</p>
+        <p class="comingSoon font-bold md:font-semibold text-2xl" >coming soon...!</p>
       </div>
     </div>
   </section>
