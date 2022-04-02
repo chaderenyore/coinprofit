@@ -57,7 +57,7 @@
               srcset=""
               class="app-download"
           /></a>
-          <!-- <img src="./assets/images/gplayblue.png" alt="" srcset="" class="app-download"> -->
+
           <a href="#" target="_blank" rel="noopener noreferrer"
             ><img
               src="../assets/images/goplay.svg"
@@ -66,7 +66,7 @@
               class="app-download"
           /></a>
           <p class="comingSoon font-bold md:font-semibold text-2xl">
-            coming soon...
+            coming soon...!
           </p>
         </div>
 
@@ -616,7 +616,7 @@
           ><img src="../assets/images/goplay.svg" alt=""
         /></a>
         <p class="comingSoon font-bold md:font-semibold text-2xl">
-          coming soon...
+          coming soon...!
         </p>
       </div>
 
@@ -1010,7 +1010,7 @@
           /></a>
         </div>
         <p class="comingSoon font-bold md:font-semibold text-2xl">
-          coming soon...
+          coming soon...!
         </p>
       </div>
     </section>
@@ -1116,7 +1116,7 @@
         Get the app now on the Google Play Store or the App Store
       </p>
       <div class="exchange-download-wrapper">
-        <a href="#" target="_blank" rel="noopener noreferrer"
+        <a href="#" target="_blank"
           ><img
             src="../assets/images/goplay.svg"
             alt=""
@@ -1124,7 +1124,7 @@
             class="exchange-download"
         /></a>
 
-        <a href="#" target="_blank" rel="noopener noreferrer"
+        <a href="#" target="_blank" 
           ><img
             src="../assets/images/appstore.svg"
             alt=""
@@ -1132,7 +1132,7 @@
             class="exchange-download"
         /></a>
         <p class="comingSoon font-bold md:font-semibold text-2xl">
-          coming soon...
+          coming soon...!
         </p>
       </div>
     </section>
@@ -1563,7 +1563,7 @@
   }
   .comingSoon {
     margin-top: 1rem;
-    color: var(--fourth-color);
+    color: var(--fifth-color);
   }
   .main-appUI_wrapper {
     position: relative;

@@ -87,7 +87,7 @@
               srcset=""
               class="app-download"
           /></a>
-           <p class="comingSoon font-bold md:font-semibold text-2xl" >coming soon...</p>
+           <p class="comingSoon font-bold md:font-semibold text-2xl" >coming soon...!</p>
         </div>
       </div>
     </section>
@@ -258,7 +258,7 @@
             srcset=""
             class="app-download features"
         /></a>
-        <p class="comingSoon font-bold md:font-semibold text-2xl" >coming soon...</p>
+        <p class="comingSoon font-bold md:font-semibold text-2xl" >coming soon...!</p>
       </div>
     </section>
 
@@ -906,7 +906,7 @@
       <h6>Download the coinprofit app NOW to become a leader!</h6>
 
       <div class="leaderCTADownloadWrapper">
-        <a href="#" target="_blank" rel="noopener noreferrer"
+        <a href="#" target="_blank" 
           ><img
             src="@/assets/images/appstore.svg"
             alt=""
@@ -914,14 +914,14 @@
             class="leaderCTADownloadApp"
         /></a>
 
-        <a href="#" target="_blank" rel="noopener noreferrer"
+        <a href="#" target="_blank" 
           ><img
             src="@/assets/images/goplay.svg"
             alt=""
             srcset=""
             class="leaderCTADownloadApp"
         /></a>
-        <p class="comingSoon font-bold md:font-semibold text-2xl" >coming soon...</p>
+        <p class="comingSoon font-bold md:font-semibold text-2xl" >coming soon...!</p>
       </div>
     </div>
 
