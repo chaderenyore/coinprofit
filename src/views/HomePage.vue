@@ -231,8 +231,8 @@
 
       <div class="see-leaders">
         <h1>See Your Leader's Transactions In Real-Time</h1>
-
-        <app-image :lazy-src="seeLeadersImg" class="copy-img" />
+        <img src="../assets/images/see-leaders.webp" class="copy-img" />
+        <!-- <app-image :lazy-src="seeLeadersImg" class="copy-img" /> -->
 
         <p>
           Don’t let anyone dump on you. Even if your leader has a limit order
