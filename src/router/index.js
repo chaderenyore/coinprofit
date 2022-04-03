@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router";
 import HomePage from "../views/HomePage.vue";
 import BlogPost from "../views/Help/_uid.vue";
+import NProgress from "nprogress";
 
 const routes = [
   {
@@ -133,4 +134,17 @@ const router = createRouter({
   },
 });
 
+router.beforeResolve((to, _, next) => {
+  // If this isn't an initial page load.
+  if (to.name) {
+    // Start the route progress bar.
+    NProgress.start();
+  }
+  next();
+});
+
+router.afterEach(() => {
+  // Complete the animation of the route progress bar.
+  NProgress.done();
+});
 export default router;
