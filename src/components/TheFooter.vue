@@ -12,7 +12,11 @@
           <p>Helping you become a profitable crypto trader and investor</p>
         </div>
         <div class="social-link">
-          <a href="https://twitter.com/coinprofit_app">
+          <a
+            href="https://twitter.com/coinprofit_app"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <svg
               style="fill: #3374ea"
               xmlns="http://www.w3.org/2000/svg"
@@ -24,8 +28,11 @@
               /></svg
           ></a>
 
-          <a href="https://www.facebook.com/coinprofitapp">
-            <svg
+          <a
+            href="https://www.facebook.com/coinprofitapp"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><svg
               style="fill: #3374ea"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 512 512"
@@ -36,7 +43,10 @@
               /></svg
           ></a>
 
-          <a href="https://t.me/+dHybmF8BHyY3ZDY0"
+          <a
+            href="https://t.me/+dHybmF8BHyY3ZDY0"
+            target="_blank"
+            rel="noopener noreferrer"
             ><svg
               style="fill: #1188c3"
               xmlns="http://www.w3.org/2000/svg"
@@ -296,9 +306,6 @@
   }
   .footerWrapper {
     background-color: var(--third-color);
-    height: 240px;
-    margin-top: 100px;
-    font-family: "Montserrat", sans-serif;
     margin-bottom: 20px;
     padding: 15px 40px;
     border-radius: 5px;
