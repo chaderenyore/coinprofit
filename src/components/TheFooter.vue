@@ -71,7 +71,7 @@
             <div class="footerContent">
               <router-link to="/about"><p>About Us</p></router-link>
               <a href="#"><p>Blog</p></a>
-              <router-lik to="/help"><p>Contact</p></router-lik>
+              <router-link to="/help"><p>Contact</p></router-link>
             </div>
           </div>
           <div class="footerWrapper">
