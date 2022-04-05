@@ -71,7 +71,7 @@
             <div class="footerContent">
               <router-link to="/about"><p>About Us</p></router-link>
               <a href="#"><p>Blog</p></a>
-              <a href="#"><p>Contact</p></a>
+              <router-lik to="/help"><p>Contact</p></router-lik>
             </div>
           </div>
           <div class="footerWrapper">
@@ -185,9 +185,7 @@
             <h3>Company</h3>
             <router-link to="/about"><p>About Us</p></router-link>
             <router-link to="/blog"><p>Blog</p></router-link>
-            <a @click.prevent="navigateToContact" class="cursor-pointer"
-              ><p>Contact</p></a
-            >
+            <router-link to="/help"><p>Contact</p></router-link>
           </div>
         </div>
 
@@ -257,15 +255,6 @@
             }
           });
         }
-      },
-
-      navigateToContact() {
-        this.$router.push({
-          name: "help",
-          query: {
-            purpose: "contact",
-          },
-        });
       },
     },
     mounted() {
