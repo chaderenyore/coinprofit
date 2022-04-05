@@ -1,11 +1,13 @@
 <template>
-  <main v-if="blogpost" class="w-[85%] md:w-[80%] m-auto">
+  <main class="w-[85%] md:w-[80%] m-auto">
     <h1
       class="text-xl md:text-2xl text-[#3374EA] font-bold text-center mb-[6rem]"
     >
-      Our Blog Section
+      Blog
     </h1>
-    <article-card :queryobj="blogpost.results"></article-card>
+    <div v-if="blogpost">
+      <article-card :queryobj="blogpost.results"></article-card>
+    </div>
   </main>
 </template>
 
@@ -19,7 +21,6 @@
     methods: {
       async getData() {
         this.blogpost = await this.$prismic.client.getByType("blog");
-        console.log(this.blogpost);
       },
     },
 

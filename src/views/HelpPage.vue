@@ -63,7 +63,7 @@
     </KeepAlive>
   </section>
 
-  <div class="help__section--contact">
+  <div class="help__section--contact" id="contact-section">
     <div class="help__section__texts">
       <h2 class="help__contact__h2 text-xl md:text-2xl">
         Still have questions?
@@ -140,6 +140,16 @@
         // });
         return;
       },
+    },
+    mounted() {
+      if (
+        "purpose" in this.$route.query &&
+        this.$route.query.purpose === "contact"
+      ) {
+        console.log(this.$route.query.purpose);
+        const contactSection = document.querySelector("#contact-section");
+        contactSection.scrollIntoView({ behavior: "smooth" });
+      }
     },
   };
 </script>
