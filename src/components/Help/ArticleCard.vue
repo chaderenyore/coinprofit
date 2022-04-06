@@ -10,7 +10,7 @@
         <prismic-link :field="post">
           <PrismicImage
             :field="post.data.cover_image"
-            class="w-[100%] rounded-3xl mb-3"
+            class="w-[100%] h-[100%] rounded-3xl mb-3"
           />
         </prismic-link>
         <section>
