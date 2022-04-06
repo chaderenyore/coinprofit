@@ -16,16 +16,15 @@
         <section>
           <section class="mb-3">
             <ul class="flex flex-row gap-2 justify-between">
-              <li
-                v-for="(e, i) in 3"
-                :key="i"
-                class="article-tag font-medium text-sm self-start text-[#3374EA] rounded-full p-1.5 md:p-2"
-                @click="$emit('searchTag', post.tags[i])"
-              >
-                <template v-if="post.tags[i]">
+              <div v-for="(e, i) in 3" :key="i">
+                <li
+                  v-if="post.tags[i]"
+                  class="article-tag font-medium text-sm self-start text-[#3374EA] rounded-full p-1.5 md:p-2"
+                  @click="$emit('searchTag', post.tags[i])"
+                >
                   {{ "#" + post.tags[i] }}
-                </template>
-              </li>
+                </li>
+              </div>
             </ul>
           </section>
           <prismic-link :field="post">
