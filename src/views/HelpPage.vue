@@ -146,9 +146,10 @@
         "purpose" in this.$route.query &&
         this.$route.query.purpose === "contact"
       ) {
-        console.log(this.$route.query.purpose);
-        const contactSection = document.querySelector("#contact-section");
-        contactSection.scrollIntoView({ behavior: "smooth" });
+        setTimeout(() => {
+          const contactSection = document.querySelector("#contact-section");
+          contactSection.scrollIntoView({ behavior: "smooth" });
+        }, 800);
       }
     },
   };

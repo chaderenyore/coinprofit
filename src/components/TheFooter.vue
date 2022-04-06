@@ -71,7 +71,11 @@
             <div class="footerContent">
               <router-link to="/about"><p>About Us</p></router-link>
               <a href="#"><p>Blog</p></a>
-              <router-link to="/help"><p>Contact</p></router-link>
+              <router-link
+                :to="{ path: '/help', query: { purpose: 'contact' } }"
+              >
+                <p>Contact</p></router-link
+              >
             </div>
           </div>
           <div class="footerWrapper">
@@ -185,7 +189,9 @@
             <h3>Company</h3>
             <router-link to="/about"><p>About Us</p></router-link>
             <router-link to="/blog"><p>Blog</p></router-link>
-            <router-link to="/help"><p>Contact</p></router-link>
+            <router-link :to="{ path: '/help', query: { purpose: 'contact' } }">
+              <p>Contact</p></router-link
+            >
           </div>
         </div>
 
