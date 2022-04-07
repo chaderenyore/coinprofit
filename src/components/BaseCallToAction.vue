@@ -31,6 +31,7 @@
             srcset=""
             class="final-download-img"
         /></a>
+        <p class="comingSoon font-bold md:font-semibold text-2xl" >coming soon...!</p>
       </div>
     </div>
   </section>
@@ -88,7 +89,7 @@
 .final-download {
   margin: 5rem auto 40px;
   width: 90%;
-  max-width: 1250px;
+  max-width: 1450px;
   height: 500px;
   border-radius: 25px;
   background: transparent linear-gradient(180deg, #22a1f5 0%, #677bff 100%) 0%
@@ -110,6 +111,10 @@
 .final-download-wrapper img {
   /* display: block; */
   width: 100%;
+}
+.comingSoon  {
+  margin-top: 1rem;
+  text-align: center;
 }
 /* IPAD DESIGN */
 @media only screen and (min-width: 768px) {

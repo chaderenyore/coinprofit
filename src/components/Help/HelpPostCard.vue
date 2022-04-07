@@ -31,22 +31,21 @@
           <prismic-link :field="post">
             <PrismicImage
               :field="post.data.cover_image"
-              class="w-[100%] rounded-3xl mb-3"
+              class="w-[100%] h-[100%] rounded-3xl mb-3"
             />
           </prismic-link>
           <section>
             <section class="mb-3">
               <ul class="flex flex-row gap-2 justify-between">
-                <li
-                  v-for="(e, i) in 3"
-                  :key="i"
-                  class="article-tag font-medium text-sm self-start text-[#3374EA] rounded-full p-1.5 md:p-2"
-                  @click="searchTag(post.tags[i])"
-                >
-                  <template v-if="post.tags[i]">
+                <div v-for="(e, i) in 3" :key="i">
+                  <li
+                    v-if="post.tags[i]"
+                    class="article-tag font-medium text-sm self-start text-[#3374EA] rounded-full p-1.5 md:p-2"
+                    @click="searchTag(post.tags[i])"
+                  >
                     {{ "#" + post.tags[i] }}
-                  </template>
-                </li>
+                  </li>
+                </div>
               </ul>
             </section>
             <prismic-link :field="post">
@@ -64,6 +63,7 @@
                   ><img
                     src="@/assets/images/arrow-pointing-to-right.svg"
                     alt="pointer"
+                    class="w-[20px] h-[14px]"
                 /></span>
               </p>
             </prismic-link>

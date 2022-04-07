@@ -51,17 +51,24 @@
         </div>
 
         <p class="leaders-aboutP">
-          If you are an influencer or leader in the crypto space with a track record, you can make money by letting your community of subscribers see the coins you buy, when you buy and when you sell. <br />
+          If you are an influencer or leader in the crypto space with a track
+          record, you can make money by letting your community of subscribers
+          see the coins you buy, when you buy and when you sell. <br />
           <br />
 
-          We have integration with DEX (BSC, ETH) and CEX (Binance, Kucoin and FTX). This means your subscribers will be able to see anytime you perform a trade on any of these platforms.
+          We have integration with DEX (BSC, ETH) and CEX (Binance, Kucoin and
+          FTX). This means your subscribers will be able to see anytime you
+          perform a trade on any of these platforms.
           <br />
           <br />
 
-          Your subscribers will only see the coins you buy/sell and the price of the coin as at when you executed the trade but won&rsquo;t see the amount of money yoursquore trading with. <br />
+          Your subscribers will only see the coins you buy/sell and the price of
+          the coin as at when you executed the trade but won&rsquo;t see the
+          amount of money yoursquore trading with. <br />
           <br />
 
-          And of course, you can set your own subscription fee per month. $5, $10, $20, $100, whatever you want - It&rsquo;s passive income for you.
+          And of course, you can set your own subscription fee per month. $5,
+          $10, $20, $100, whatever you want - It&rsquo;s passive income for you.
         </p>
 
         <div class="app-downloads">
@@ -80,6 +87,7 @@
               srcset=""
               class="app-download"
           /></a>
+           <p class="comingSoon font-bold md:font-semibold text-2xl" >coming soon...!</p>
         </div>
       </div>
     </section>
@@ -113,7 +121,7 @@
 
         <div class="leaders-portfolio-box">
           <img
-            src="@/assets/images/leaders/leader1.svg"
+            src="@/assets/images/leaders/leader1.webp"
             alt="Share Image"
             class="share-portfolio-img"
           />
@@ -151,7 +159,10 @@
           />
         </div>
         <p>
-          Your subscribers will be able to rate and share feedback on your signals. They will also be able to share how much profit/loss they made based on your signals. This will help you keep track of how you are changing your subscribers' lives through financial education.
+          Your subscribers will be able to rate and share feedback on your
+          signals. They will also be able to share how much profit/loss they
+          made based on your signals. This will help you keep track of how you
+          are changing your subscribers' lives through financial education.
         </p>
       </div>
 
@@ -220,7 +231,7 @@
 
         <div class="leaders-portfolio-box">
           <img
-            src="@/assets/images/share-img.png"
+            src="@/assets/images/share-img.webp"
             alt="Share Image"
             class="seeSubsimg"
           />
@@ -247,6 +258,7 @@
             srcset=""
             class="app-download features"
         /></a>
+        <p class="comingSoon font-bold md:font-semibold text-2xl" >coming soon...!</p>
       </div>
     </section>
 
@@ -272,7 +284,7 @@
                 <div class="mobile-leaders-box">
                   <div class="mobile-leaders-img-box">
                     <img
-                      src="@/assets/images/leaders/emmanuel.png"
+                      src="@/assets/images/leaders/emmanuel.webp"
                       alt="Leader Image"
                     />
                   </div>
@@ -355,7 +367,7 @@
                 <div class="mobile-leaders-box">
                   <div class="mobile-leaders-img-box">
                     <img
-                      src="@/assets/images/leaders/marvelous.jpeg"
+                      src="@/assets/images/leaders/marvelous.webp"
                       alt="leader Image"
                     />
                   </div>
@@ -364,7 +376,11 @@
                   <h3>Marvelous Macaulay</h3>
 
                   <div class="reviews">
-                    <p>I'm a Crypto trader and technical analyst.</p>
+                    <p>
+                      Technical/Market Analyst. Not a Bull or Bear. I only trade
+                      what the market shows me. No sentiments, Just Objective
+                      Technical analysis.
+                    </p>
                   </div>
                 </div>
               </div>
@@ -462,7 +478,7 @@
                 <div class="mobile-leaders-box">
                   <div class="mobile-leaders-img-box">
                     <img
-                      src="@/assets/images/leaders/BK.jpeg"
+                      src="@/assets/images/leaders/BK.webp"
                       alt="leader Image"
                     />
                   </div>
@@ -484,7 +500,7 @@
                 <div class="mobile-leaders-box">
                   <div class="mobile-leaders-img-box">
                     <img
-                      src="@/assets/images/leaders/voski.jpeg"
+                      src="@/assets/images/leaders/voski.webp"
                       alt="leader Image"
                     />
                   </div>
@@ -587,7 +603,7 @@
       <div class="computer-leaders-box-wrapper">
         <div class="computer-leaders-box">
           <div class="computer-leaders-img-box">
-            <img src="@/assets/images/leaders/emmanuel.png" alt="IMAGE" />
+            <img src="@/assets/images/leaders/emmanuel.webp" alt="IMAGE" />
           </div>
 
           <!-- <div class="leader-lv">
@@ -627,7 +643,7 @@
 
         <div class="computer-leaders-box">
           <div class="computer-leaders-img-box">
-            <img src="@/assets/images/leaders/voski.jpeg" alt="IMAGE" />
+            <img src="@/assets/images/leaders/voski.webp" alt="IMAGE" />
           </div>
           <p>@Voski</p>
           <h3>Stephen Voski</h3>
@@ -740,7 +756,7 @@
       <div class="computer-leaders-box-wrapper two">
         <div class="computer-leaders-box">
           <div class="computer-leaders-img-box">
-            <img src="@/assets/images/leaders/BK.jpeg" alt="IMAGE" />
+            <img src="@/assets/images/leaders/BK.webp" alt="IMAGE" />
           </div>
 
           <!-- <div class="leader-lv">
@@ -748,15 +764,15 @@
           </div> -->
 
           <p>@khaleell</p>
-                  <h3>Ibrahim BK</h3>
+          <h3>Ibrahim BK</h3>
           <!-- <h4>CEO and Founder of CoinProfit</h4> -->
 
-           <div class="reviews">
-                    <p>
-                      I'm Ibrahim BK. A professional crypto trader with 3+ years
-                      of experience in Blockchain development.
-                    </p>
-                  </div>
+          <div class="reviews">
+            <p>
+              I'm Ibrahim BK. A professional crypto trader with 3+ years of
+              experience in Blockchain development.
+            </p>
+          </div>
         </div>
         <!-- end leaders box -->
 
@@ -766,17 +782,17 @@
           </div>
 
           <p>@Vicsouls</p>
-                  <h3>Victor CHUKWU</h3>
+          <h3>Victor CHUKWU</h3>
 
           <div class="reviews">
-                    <p>
-                      I'm Victor CHUKWU. I have been able to coach and still
-                      coaching a lot of people in the crypto space. I have been
-                      in the crypto space for quite a long time now, and I have
-                      seen both failures and success, the ups and downs, but I
-                      keep the movement because of the B PICTURE.
-                    </p>
-                  </div>
+            <p>
+              I'm Victor CHUKWU. I have been able to coach and still coaching a
+              lot of people in the crypto space. I have been in the crypto space
+              for quite a long time now, and I have seen both failures and
+              success, the ups and downs, but I keep the movement because of the
+              B PICTURE.
+            </p>
+          </div>
         </div>
         <!-- end leaders box -->
 
@@ -785,25 +801,29 @@
             <img src="@/assets/images/leaders/sibi.jpeg" alt="IMAGE" />
           </div>
           <p>@Onokus</p>
-                  <h3>George Sibi onokuma</h3>
+          <h3>George Sibi onokuma</h3>
 
           <div class="reviews">
-                    <p>I'm a cryptocurrency trader and a coach.</p>
-                  </div>
+            <p>I'm a cryptocurrency trader and a coach.</p>
+          </div>
         </div>
         <!-- end leaders box -->
 
         <div class="computer-leaders-box">
           <div class="computer-leaders-img-box">
-            <img src="@/assets/images/leaders/marvelous.jpeg" alt="IMAGE" />
+            <img src="@/assets/images/leaders/marvelous.webp" alt="IMAGE" />
           </div>
 
-           <p>@Iam_Marvelous</p>
-                  <h3>Marvelous Macaulay</h3>
+          <p>@Iam_Marvelous</p>
+          <h3>Marvelous Macaulay</h3>
 
-         <div class="reviews">
-                    <p>I'm a Crypto trader and technical analyst.</p>
-                  </div>
+          <div class="reviews">
+            <p>
+              Technical/Market Analyst. Not a Bull or Bear. I only trade what
+              the market shows me. No sentiments, Just Objective Technical
+              analysis.
+            </p>
+          </div>
         </div>
 
         <div class="computer-leaders-box">
@@ -815,15 +835,15 @@
             <img src="@/assets/images/leader-level.svg" />
           </div> -->
 
-           <p>@Aazama</p>
-            <h3>Ibrahim Dauda</h3>
+          <p>@Aazama</p>
+          <h3>Ibrahim Dauda</h3>
 
-           <div class="reviews">
-                    <p>
-                      The journey wasn't easy at the beginning. But I thank God
-                      for the things I got from crypto investment.
-                    </p>
-                  </div>
+          <div class="reviews">
+            <p>
+              The journey wasn't easy at the beginning. But I thank God for the
+              things I got from crypto investment.
+            </p>
+          </div>
         </div>
 
         <div class="computer-leaders-box">
@@ -831,16 +851,16 @@
             <img src="@/assets/images/leaders/uche.jpeg" alt="IMAGE" />
           </div>
 
-         <p>@Investorsylver</p>
-                  <h3>Uche Sylvester</h3>
+          <p>@Investorsylver</p>
+          <h3>Uche Sylvester</h3>
 
           <div class="reviews">
-                    <p>
-                      I'm Uche, a Crypto enthusiast. I use my skillset to create
-                      wealth and also diversify my income using crypto hedge
-                      fund, farming and staking.
-                    </p>
-                  </div>
+            <p>
+              I'm Uche, a Crypto enthusiast. I use my skillset to create wealth
+              and also diversify my income using crypto hedge fund, farming and
+              staking.
+            </p>
+          </div>
         </div>
         <!-- end -->
 
@@ -886,7 +906,7 @@
       <h6>Download the coinprofit app NOW to become a leader!</h6>
 
       <div class="leaderCTADownloadWrapper">
-        <a href="#" target="_blank" rel="noopener noreferrer"
+        <a href="#" target="_blank" 
           ><img
             src="@/assets/images/appstore.svg"
             alt=""
@@ -894,13 +914,14 @@
             class="leaderCTADownloadApp"
         /></a>
 
-        <a href="#" target="_blank" rel="noopener noreferrer"
+        <a href="#" target="_blank" 
           ><img
             src="@/assets/images/goplay.svg"
             alt=""
             srcset=""
             class="leaderCTADownloadApp"
         /></a>
+        <p class="comingSoon font-bold md:font-semibold text-2xl" >coming soon...!</p>
       </div>
     </div>
 
@@ -915,7 +936,8 @@
             </button>
             <div class="faqcontent">
               <p>
-               Anyone with a crypto community or followers whom he/she shares trades and signals with can become a leader.
+                Anyone with a crypto community or followers whom he/she shares
+                trades and signals with can become a leader.
               </p>
             </div>
           </div>
@@ -926,7 +948,8 @@
             </button>
             <div class="faqcontent">
               <p>
-                Please download the app, click on upgrade and select the leader plan.
+                Please download the app, click on upgrade and select the leader
+                plan.
               </p>
             </div>
           </div>
@@ -937,7 +960,8 @@
             </button>
             <div class="faqcontent">
               <p>
-                Upgrading to a leader plan costs $19/month plus we charge a 10% commission on every subscription fee you earn.
+                Upgrading to a leader plan costs $19/month plus we charge a 10%
+                commission on every subscription fee you earn.
               </p>
             </div>
           </div>
@@ -950,7 +974,15 @@
             </button>
             <div class="faqcontent">
               <p>
-                There is no limit to how much you can make monthly from the app. You can have an unlimited number of subscribers. Let&rsquo;s say you have 100 subscribers and you charge $10/month as your subscription fee. 100 X $10 = $1,000. If you have 300 subscribers, that&rsquo;s $3k/month. And if you have 500 subscribers, that&rsquo;s $5k/month! We charge a 10% commission for every subscription. So for 300 subscribers paying $10 each, our commission is just $300 and you will be netting $2,700/mo. For 500 subscribers, your earnings will be $4,500/month.
+                There is no limit to how much you can make monthly from the app.
+                You can have an unlimited number of subscribers. Let&rsquo;s say
+                you have 100 subscribers and you charge $10/month as your
+                subscription fee. 100 X $10 = $1,000. If you have 300
+                subscribers, that&rsquo;s $3k/month. And if you have 500
+                subscribers, that&rsquo;s $5k/month! We charge a 10% commission
+                for every subscription. So for 300 subscribers paying $10 each,
+                our commission is just $300 and you will be netting $2,700/mo.
+                For 500 subscribers, your earnings will be $4,500/month.
               </p>
             </div>
           </div>
@@ -973,7 +1005,8 @@
             </button>
             <div class="faqcontent">
               <p>
-               Not yet. We only support spot trading for now but we have plans to support future trading in the future.
+                Not yet. We only support spot trading for now but we have plans
+                to support future trading in the future.
               </p>
             </div>
           </div>
@@ -989,7 +1022,6 @@
 <script>
 import Splide from "@splidejs/splide";
 export default {
-
   methods: {
     useSplide() {
       new Splide(".splide", {
@@ -998,7 +1030,7 @@ export default {
         autoplay: true,
         interval: 3000, // How long to display each slide
         pauseOnHover: true, // m
-        pauseOnFocus: false, // must be false
+        pauseOnFocus: false, // 
         resetProgress: false,
       }).mount();
     },
@@ -1007,6 +1039,8 @@ export default {
       this.useSplide();
 
       // end of splider js
+
+      
 
       // FAQ SECTION
       let faqtoggles = document.getElementsByClassName("faqtoggle");
@@ -1059,7 +1093,11 @@ export default {
 .first-page {
   padding-top: 1rem;
 }
-
+@media (min-width:1200px) {
+  .first-page {
+  padding-top: 7rem;
+}
+}
 .background-svg {
   display: none;
 }
@@ -1123,6 +1161,10 @@ export default {
   display: block;
   width: 50%;
   margin: 1rem auto 0;
+}
+.comingSoon {
+  margin-top: 1rem;
+  text-align: center;
 }
 
 @media (min-width: 480px) {
@@ -1299,12 +1341,12 @@ export default {
 
 @media (min-width: 1000px) {
   .svg6FNP {
-  position: absolute;
-  left: 60%;
-  top: 320%;
-  width: 4rem;
-  z-index: 1;
-}
+    position: absolute;
+    left: 60%;
+    top: 320%;
+    width: 4rem;
+    z-index: 1;
+  }
 }
 .svgOneNP {
   position: absolute;
@@ -1557,14 +1599,13 @@ export default {
   text-transform: capitalize;
 }
 
-
 .becomeLeadersCTA h6 {
-     text-align: center;
-    margin: 0.4rem auto 0;
-    width: 100%;
-    color: var(--fourth-color);
-    font-size: 17px;
-    font-weight: 500;
+  text-align: center;
+  margin: 0.4rem auto 0;
+  width: 100%;
+  color: var(--fourth-color);
+  font-size: 17px;
+  font-weight: 500;
 }
 .leaderCTADownloadWrapper {
   width: 100%;
@@ -1572,20 +1613,20 @@ export default {
   margin-top: 2rem;
 }
 .leaderCTADownloadApp {
-     display: block;
-    width: 50%;
-    margin: 1rem auto 0;
+  display: block;
+  width: 50%;
+  margin: 1rem auto 0;
 }
 
 @media (min-width: 765px) {
   .leaderCTADownloadApp {
-     display: inline-block;
+    display: inline-block;
     width: 20%;
     margin: 2rem 1rem;
-}
-.becomeLeadersCTA h1 { 
-  font-size: 2.5rem;
-}
+  }
+  .becomeLeadersCTA h1 {
+    font-size: 2.5rem;
+  }
 }
 
 /* code for FAQ SECTION */
@@ -1649,8 +1690,6 @@ export default {
 }
 
 /* FAQ ENDS HERE */
-
-
 
 @media only screen and (min-width: 720px) {
   .blob-wrapper {
@@ -2202,7 +2241,11 @@ export default {
   .app-download {
     display: inline-block;
     width: 10rem;
-    margin: 2rem 1rem;
+    margin: 2rem 1rem 0;
+  }
+  .comingSoon {
+    text-align: unset;
+    margin-left: 1rem;
   }
 
   .signal-packs {

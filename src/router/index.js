@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router";
-import NProgress from "nprogress";
 import HomePage from "../views/HomePage.vue";
 import BlogPost from "../views/Help/_uid.vue";
+import NProgress from "nprogress";
 
 const routes = [
   {
@@ -32,6 +32,24 @@ const routes = [
     },
   },
   {
+    path: "/blog",
+    name: "blog",
+    component: () => import("../views/BlogPage.vue"),
+    meta: {
+      auth: true,
+      title: "Coinprofit - Blog",
+    },
+  },
+  {
+    path: "/blog/:uid",
+    name: "SingleBlogPost",
+    component: () => import("../views/Blog/_uid.vue"),
+    meta: {
+      auth: true,
+      title: "CoinProfit - BlogPost",
+    },
+  },
+  {
     path: "/help",
     name: "help",
     component: () => import("../views/HelpPage.vue"),
@@ -46,7 +64,16 @@ const routes = [
     name: "SingleHelpPost",
     meta: {
       auth: true,
-      title: "Coinprofit - Blog Post",
+      title: "Coinprofit - HelpPost",
+    },
+  },
+  {
+    path: "/help/tutorials/:uid",
+    component: () => import("../views/Tutorial/_uid.vue"),
+    name: "TutorialVideo",
+    meta: {
+      auth: true,
+      title: "Coinprofit - Tutorial",
     },
   },
   {
@@ -73,12 +100,22 @@ const routes = [
   },
 
   {
-    path: "/AML_POLICIES",
+    path: "/aml_policy",
     name: "amlpolicies",
     component: () => import("../views//Legal/AmlPolicies.vue"),
     meta: {
       auth: true,
       title: "Coinprofit - Aml-Policy",
+    },
+  },
+
+  {
+    path: "/privacy_policy",
+    name: "privacypolicy",
+    component: () => import("../views//Legal/PrivacyPolicyPage.vue"),
+    meta: {
+      auth: true,
+      title: "Coinprofit - Privacy policy",
     },
   },
 ];
@@ -110,5 +147,4 @@ router.afterEach(() => {
   // Complete the animation of the route progress bar.
   NProgress.done();
 });
-
 export default router;

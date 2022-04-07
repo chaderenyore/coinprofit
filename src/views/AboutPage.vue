@@ -161,7 +161,7 @@
 
           <div class="team_memebers_box">
             <div class="team_memebers_box_img_box">
-              <img src="@/assets/images/about/emmanuel.png" alt="IMAGE" />
+              <img src="@/assets/images/about/emmanuel.webp" alt="IMAGE" />
             </div>
 
             <h3>Emmanuel Ohworeko</h3>
@@ -180,7 +180,7 @@
 
           <div class="team_memebers_box">
             <div class="team_memebers_box_img_box">
-              <img src="@/assets/images/about/mudi.jpg" alt="IMAGE" />
+              <img src="@/assets/images/about/mudi.jpeg" alt="IMAGE" />
             </div>
 
             <h3>Uwojeya Moody Mudiaga</h3>
@@ -194,14 +194,7 @@
           </div>
           <!-- end team_memebers_box-->
 
-          <div class="team_memebers_box">
-            <div class="team_memebers_box_img_box">
-              <img src="@/assets/images/about/Uzoatu.jpeg" alt="IMAGE" />
-            </div>
 
-            <h3>Uzoatu Bryan</h3>
-          </div>
-          <!-- end team_memebers_box-->
         </div>
         <!-- end team_content-->
 
@@ -315,7 +308,7 @@
     margin: 0 auto;
   }
   .about-sec {
-    padding-top: 5rem;
+    padding-top: 10rem;
     position: relative;
   }
 
@@ -666,8 +659,8 @@
     text-align: center;
   }
   .dot {
-    height: 10px;
-    width: 10px;
+    height: 30px;
+    width: 30px;
     margin: 0 2px;
     background-color: #ccc;
     box-shadow: 0px 10px 10px #00000008;
@@ -970,6 +963,9 @@
       top: 110%;
       z-index: 1;
     }
+    .about-sec {
+      padding-top: 12rem;
+    }
     .about_container p {
       line-height: 30px;
       font-size: 1rem;
@@ -1038,7 +1034,7 @@
       font-weight: 800;
     }
     .team_memebers_box {
-      /* width: 30%; */
+      width: 30%;
       margin: 8rem 1rem 0;
       display: inline-block;
     }

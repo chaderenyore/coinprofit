@@ -93,7 +93,7 @@
 
   @media only screen and (min-width: 1024px) {
     .calcwrapper {
-      padding-top: 10rem;
+      padding-top: 12rem;
     }
     .calcwrapper {
       display: flex;

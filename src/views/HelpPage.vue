@@ -63,7 +63,7 @@
     </KeepAlive>
   </section>
 
-  <div class="help__section--contact">
+  <div class="help__section--contact" id="contact-section">
     <div class="help__section__texts">
       <h2 class="help__contact__h2 text-xl md:text-2xl">
         Still have questions?
@@ -79,7 +79,11 @@
       <div class="help__contact--card p-4 rounded-xl">
         <h2 class="text-xl font-bold mb-3 text-[#3374EA]">Email Us</h2>
         <div class="flex items-center">
-          <img class="h-10" src="@/assets/images/okex-2.svg" alt="Email" />
+          <img
+            class="h-4 w-5 email-icon"
+            src="@/assets/images/email.svg"
+            alt="Email"
+          />
           <p class="help__contact--card-p ml-3 font-medium">
             support@coinprofit.app
           </p>
@@ -90,7 +94,11 @@
           For Business Proposals, Please Email
         </p>
         <div class="flex items-center">
-          <img class="h-10" src="@/assets/images/okex-2.svg" alt="Email" />
+          <img
+            class="h-4 w-5 email-icon"
+            src="@/assets/images/email.svg"
+            alt="Email"
+          />
           <p class="help__contact--card-p ml-3 font-medium">
             business@coinprofit.app
           </p>
@@ -132,6 +140,17 @@
         });
       },
     },
+    mounted() {
+      if (
+        "purpose" in this.$route.query &&
+        this.$route.query.purpose === "contact"
+      ) {
+        setTimeout(() => {
+          const contactSection = document.querySelector("#contact-section");
+          contactSection.scrollIntoView({ behavior: "smooth" });
+        }, 800);
+      }
+    },
   };
 </script>
 
@@ -156,6 +175,11 @@
   @media screen and (min-width: 768px) {
     .help__section {
       padding-top: 9rem;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    .help__section {
+      padding-top: 15rem;
     }
   }
 
@@ -210,12 +234,12 @@
   }
 
   .help__cards__img-div {
-    height: 40%;
-    margin-bottom: 1.375rem;
+    margin-bottom: 0.5rem;
   }
 
   .help__cards__img-div img {
-    height: 100%;
+    height: 65px;
+    width: 65px;
   }
 
   .help__cards--card p {
@@ -382,6 +406,10 @@
   }
   .help__contact--card-p {
     color: var(--help-contact-box-text);
+  }
+
+  .email-icon {
+    background: var(--help-email-icon);
   }
 
   @media (min-width: 1400px) {

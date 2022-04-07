@@ -29,13 +29,13 @@
       <img src="../assets/images/Asset-1.svg" alt="" class="background-svg" />
       <div class="blob-wrapper">
         <img
-          src="../assets/images/blob-mobil1.png"
+          src="../assets/images/blob-mobil1.webp"
           alt="A blob SVG acts as a background here"
           class="blob1"
         />
 
         <img
-          src="../assets/images/blob1.png"
+          src="../assets/images/blob1.webp"
           alt="A blob SVG acts as a background here"
           class="blob1-d"
         />
@@ -57,7 +57,7 @@
               srcset=""
               class="app-download"
           /></a>
-          <!-- <img src="./assets/images/gplayblue.png" alt="" srcset="" class="app-download"> -->
+
           <a href="#" target="_blank" rel="noopener noreferrer"
             ><img
               src="../assets/images/goplay.svg"
@@ -65,10 +65,13 @@
               srcset=""
               class="app-download"
           /></a>
+          <p class="comingSoon font-bold md:font-semibold text-2xl">
+            coming soon...!
+          </p>
         </div>
 
         <div class="main-appUI_wrapper">
-          <img src="../assets/images/appUI.svg" alt="" class="appui" />
+          <img src="../assets/images/appUI.webp" alt="" class="appui" />
         </div>
       </div>
     </section>
@@ -80,11 +83,7 @@
       <div class="review-box">
         <div class="box">
           <div class="box-img">
-            <img
-              src="../assets/images/chris.jpeg"
-              alt="IMAGE"
-              class="review-img"
-            />
+            <app-image :lazy-src="chrisImg" class="review-img" />
           </div>
           <div class="star">
             <i
@@ -125,11 +124,7 @@
         </div>
         <div class="box">
           <div class="box-img">
-            <img
-              src="../assets/images/tola.jpeg"
-              alt="IMAGE"
-              class="review-img"
-            />
+            <app-image :lazy-src="tolaImg" class="review-img" />
           </div>
           <div class="star">
             <i
@@ -167,11 +162,7 @@
         </div>
         <div class="box">
           <div class="box-img">
-            <img
-              src="../assets/images/Frank.jpeg"
-              alt="Third Image"
-              class="review-img"
-            />
+            <app-image :lazy-src="frankImg" class="review-img" />
           </div>
           <div class="star">
             <i
@@ -222,12 +213,7 @@
     <section class="app-features">
       <div class="copy-traders">
         <h1>Copy The Best Traders</h1>
-
-        <img
-          src="../assets/images/app-feature1.svg"
-          alt="App Feature 1"
-          class="copy-img"
-        />
+        <app-image :lazy-src="feature1Img" class="copy-img" />
 
         <p class="slideIn">
           Don’t waste your money buying courses you won’t watch or joining
@@ -245,12 +231,8 @@
 
       <div class="see-leaders">
         <h1>See Your Leader's Transactions In Real-Time</h1>
-
-        <img
-          src="../assets/images/see-leaders.svg"
-          alt="App Planner"
-          class="copy-img"
-        />
+        <img src="../assets/images/see-leaders.webp" class="copy-img" />
+        <!-- <app-image :lazy-src="seeLeadersImg" class="copy-img" /> -->
 
         <p>
           Don’t let anyone dump on you. Even if your leader has a limit order
@@ -269,52 +251,30 @@
       />
       <div class="blob-signal-wrapper slideIn">
         <img
-          src="../assets/images/blob-signal.png"
+          src="../assets/images/blob-signal.webp"
           alt="Blob Background for the Get Signal section"
           class="signal-blob"
         />
       </div>
 
       <div class="signal-packs">
-        <div class="pack-img-wrapper">
-          <img src="../assets/images/customer.svg" alt="" class="pack-img" />
-        </div>
-        <p>My Followers</p>
-        <h5>4290</h5>
+        <app-image :lazy-src="customerImg" class="pack-img" />
       </div>
+
       <div class="signal-packs two">
-        <div class="pack-img-wrapper">
-          <img
-            src="../assets/images/verified-user.svg"
-            alt=""
-            class="pack-img"
-          />
-        </div>
-        <p>My Subscribers</p>
-        <h5>2 021</h5>
+        <app-image :lazy-src="verifiedUserImg" class="pack-img" />
       </div>
+
       <div class="signal-packs three">
-        <div class="pack-img-wrapper">
-          <img src="../assets/images/money.svg" alt="" class="pack-img" />
-        </div>
-        <p>Subscribers Earnings</p>
-        <h5>$ 10 902</h5>
+        <app-image :lazy-src="moneyImg" class="pack-img" />
       </div>
 
       <div class="signal-planner-wrapper">
-        <img
-          src="../assets/images/planner-signal.png"
-          alt=""
-          class="signal-planner"
-        />
+        <app-image :lazy-src="plannerSignalImg" class="signal-planner" />
       </div>
 
       <div class="main-signal-wrapper">
-        <img
-          src="../assets/images/main-si.svg"
-          alt=""
-          class="main-signal-img"
-        />
+        <app-image :lazy-src="mainSiImg" class="main-signal-img" />
       </div>
       <img
         src="../assets/images/listtle-Icons/dollar.svg"
@@ -368,7 +328,7 @@
               <div class="swiper-slide">
                 <div class="testi-item">
                   <div class="testi-avatar">
-                    <img src="../assets/images/leaders/emmanuel.png" />
+                    <app-image :lazy-src="emmanuelImg" class="pack-img" />
                   </div>
                   <!-- <div class="leader-level">
                     <img src="../assets/images/leader-level.svg" />
@@ -386,11 +346,11 @@
                 </div>
               </div>
 
-              <!--second--->
+              <!-- second -->
               <div class="swiper-slide">
                 <div class="testi-item">
                   <div class="testi-avatar">
-                    <img src="../assets/images/leaders/Uzoatu.jpeg" />
+                    <app-image :lazy-src="UzoatuImg" />
                   </div>
                   <!-- <div class="leader-level">
                     <img src="../assets/images/leader-level1.svg" />
@@ -414,7 +374,7 @@
               <div class="swiper-slide">
                 <div class="testi-item">
                   <div class="testi-avatar">
-                    <img src="../assets/images/leaders/moses.jpeg" />
+                    <app-image :lazy-src="mosesImg" />
                   </div>
 
                   <div class="testimonials-text">
@@ -437,7 +397,7 @@
               <div class="swiper-slide">
                 <div class="testi-item">
                   <div class="testi-avatar">
-                    <img src="../assets/images/leaders/marvelous.jpeg" />
+                    <app-image :lazy-src="marvelousImg" />
                   </div>
 
                   <div class="testimonials-text">
@@ -445,7 +405,11 @@
                       <h3>Marvelous Macaulay</h3>
                     </div>
                     <p class="username">@Iam_Marvelous</p>
-                    <p>I'm a Crypto trader and technical analyst.</p>
+                    <p>
+                      Technical/Market Analyst. Not a Bull or Bear. I only trade
+                      what the market shows me. No sentiments, Just Objective
+                      Technical analysis.
+                    </p>
                   </div>
                 </div>
               </div>
@@ -454,7 +418,7 @@
               <div class="swiper-slide">
                 <div class="testi-item">
                   <div class="testi-avatar">
-                    <img src="../assets/images/leaders/Ibrahim.jpeg" />
+                    <app-image :lazy-src="ibrahimImg" />
                   </div>
 
                   <div class="testimonials-text">
@@ -474,7 +438,7 @@
               <div class="swiper-slide">
                 <div class="testi-item">
                   <div class="testi-avatar">
-                    <img src="../assets/images/leaders/uche.jpeg" />
+                    <app-image :lazy-src="ucheImage" />
                   </div>
 
                   <div class="testimonials-text">
@@ -495,7 +459,7 @@
               <div class="swiper-slide">
                 <div class="testi-item">
                   <div class="testi-avatar">
-                    <img src="../assets/images/leaders/sibi.jpeg" />
+                    <app-image :lazy-src="sibiImage" />
                   </div>
 
                   <div class="testimonials-text">
@@ -512,7 +476,7 @@
               <div class="swiper-slide">
                 <div class="testi-item">
                   <div class="testi-avatar">
-                    <img src="../assets/images/leaders/mukhtar.jpeg" />
+                    <app-image :lazy-src="mukhtarImage" />
                   </div>
 
                   <div class="testimonials-text">
@@ -535,7 +499,7 @@
               <div class="swiper-slide">
                 <div class="testi-item">
                   <div class="testi-avatar">
-                    <img src="../assets/images/leaders/BK.jpeg" />
+                    <app-image :lazy-src="BKImage" />
                   </div>
 
                   <div class="testimonials-text">
@@ -556,7 +520,7 @@
               <div class="swiper-slide">
                 <div class="testi-item">
                   <div class="testi-avatar">
-                    <img src="../assets/images/leaders/voski.jpeg" />
+                    <app-image :lazy-src="voskiImage" />
                   </div>
 
                   <div class="testimonials-text">
@@ -580,7 +544,7 @@
               <div class="swiper-slide">
                 <div class="testi-item">
                   <div class="testi-avatar">
-                    <img src="../assets/images/leaders/CHUKWU.jpeg" />
+                    <app-image :lazy-src="chuwkwuImage" />
                   </div>
 
                   <div class="testimonials-text">
@@ -618,6 +582,9 @@
         <a href="#" target="_blank" rel="noopener noreferrer"
           ><img src="../assets/images/goplay.svg" alt=""
         /></a>
+        <p class="comingSoon font-bold md:font-semibold text-2xl">
+          coming soon...!
+        </p>
       </div>
 
       <!-- End sliderjs framework -->
@@ -652,10 +619,10 @@
         <div class="app-features-two" style="margin-bottom: 90px">
           <h1>Create Your Own Trading Plans</h1>
           <div class="trade-img-box">
-            <img
-              src="../assets/images/planner-trade-lesson.svg"
-              alt="Create your trading plan"
+            <app-image
+              :lazy-src="plannerTradeLesson"
               class="trade-img"
+              alt="Create your trading plan"
             />
           </div>
           <p>
@@ -670,10 +637,10 @@
         <div class="trade-lessons">
           <h1>Record Your Trade Lessons</h1>
           <div class="record-img-box">
-            <img
-              src="../assets/images/trade-lesson.svg"
-              alt="Record your trade lessons"
+            <app-image
+              :lazy-src="tradeLesson"
               class="record-img"
+              alt="Record your trade lessons"
             />
           </div>
           <p>
@@ -712,35 +679,10 @@
           Automatically Track Your Portfolio Across Multiple Exchange Platforms
         </h1>
         <div class="track-img-box">
-          <img
-            src="../assets/images/Portfolio-Upgraded.svg"
-            alt="App Feature 1"
+          <app-image
+            :lazy-src="portfolioUpgradedImage"
             class="auto-track-img"
-          />
-          <img
-            src="../assets/images/groupebsc1.svg"
-            alt=""
-            srcset=""
-            class="auto-track-icons bcs1"
-          />
-          <img
-            src="../assets/images/groupeth1.svg"
-            alt=""
-            srcset=""
-            class="auto-track-icons eth1"
-          />
-
-          <img
-            src="../assets/images/groupebsc2.svg"
-            alt=""
-            srcset=""
-            class="auto-track-icons bcs2"
-          />
-          <img
-            src="../assets/images/groupeth2.svg"
-            alt=""
-            srcset=""
-            class="auto-track-icons eth2"
+            alt="App Feature 1"
           />
         </div>
         <p>
@@ -815,10 +757,10 @@
             srcset=""
             class="littleIconS2"
           />
-          <img
-            src="../assets/images/profit-loss.png"
-            alt="See your profit and Loss."
+          <app-image
+            :lazy-src="profitLossImage"
             class="proft-loss-img"
+            alt="See your profit and Loss."
           />
           <!-- this images will only be displayed on desktop screens -->
           <img
@@ -868,14 +810,13 @@
       <div class="share-portfolio">
         <h1>Share Your Portfolio Performance</h1>
         <div class="share-portfolio-box">
-          <img
-            src="../assets/images/share-img.png"
-            alt="Share Image"
+          <app-image
+            :lazy-src="shareImg"
             class="share-portfolio-img"
+            alt="Share Image"
           />
         </div>
-        <img src="../assets/images/share-blob.png" class="share-blob" />
-
+        <app-image :lazy-src="shareBlob" class="share-blob" />
         <p>
           Did you buy a coin that did 100%, 200% or even 1000% in profit? Then
           you deserve a bottle of champagne and bragging rights! Take some of
@@ -915,8 +856,8 @@
         <h1>Supported Exchanges and Wallets</h1>
         <div class="exchange-box-wrapper">
           <div class="exchange-box">
-            <img
-              src="../assets/images/binance-logo.svg"
+            <app-image
+              :lazy-src="binanceLogo"
               alt="binance-logo"
               class="exchange-logo"
             />
@@ -925,8 +866,8 @@
         </div>
         <div class="exchange-box-wrapper">
           <div class="exchange-box">
-            <img
-              src="../assets/images/kcs-3.svg"
+            <app-image
+              :lazy-src="kcsLogo"
               alt="exchange-logo"
               class="exchange-logo"
             />
@@ -935,15 +876,15 @@
         </div>
         <div class="exchange-box-wrapper">
           <div class="exchange-box">
-            <img
-              src="../assets/images/ftx-2.svg"
+            <app-image
+              :lazy-src="ftxLogo"
               alt="exchange-logo"
               class="exchange-logo"
             />
             <p>FTX</p>
           </div>
         </div>
-        <div class="exchange-box-wrapper">
+        <!-- <div class="exchange-box-wrapper">
           <div class="exchange-box">
             <img
               src="../assets/images/gateio.svg"
@@ -1012,27 +953,22 @@
             />
             <p>ethereum</p>
           </div>
-        </div>
+        </div> -->
         <p class="get-details">
           Get the app now on the Google Play Store or the App Store
         </p>
         <div class="exchange-download-wrapper">
-          <a href="#" target="_blank" rel="noopener noreferrer"
-            ><img
-              src="../assets/images/goplay.svg"
-              alt=""
-              srcset=""
-              class="exchange-download"
-          /></a>
+          <a href="#" target="_blank" rel="noopener noreferrer">
+            <app-image :lazy-src="goplayImg" class="exchange-download" />
+          </a>
 
-          <a href="#" target="_blank" rel="noopener noreferrer"
-            ><img
-              src="../assets/images/appstore.svg"
-              alt=""
-              srcset=""
-              class="exchange-download"
-          /></a>
+          <a href="#" target="_blank" rel="noopener noreferrer">
+            <app-image :lazy-src="appstoreImg" class="exchange-download" />
+          </a>
         </div>
+        <p class="comingSoon font-bold md:font-semibold text-2xl">
+          coming soon...!
+        </p>
       </div>
     </section>
 
@@ -1053,9 +989,9 @@
           <div class="splide__track">
             <div class="splide__list">
               <div class="splide__slide">
-                <h3>John Doe</h3>
+                <h3>Kingdom Augustine</h3>
                 <div class="users-img-wrapper">
-                  <img src="../assets/images/review3.jpeg" alt="" />
+                  <app-image :lazy-src="kingdomImg" />
                 </div>
                 <div class="star-review">
                   <i
@@ -1085,52 +1021,17 @@
                   ></i>
                 </div>
                 <p>
-                  This can be a long review. Lorem ipsum dolor sit, amet
-                  consectetur adipisicing elit. Facere voluptas iure neque nemo
-                  est illo nobis possimus, eveniet animi facilis impedit velit.
-                  Incidunt maiores doloremque delectus blanditiis eius ad ipsam?
-                  lorem
+                  Swift experience in all modules. This is at last the
+                  opportunity for the average person who's not interested in the
+                  technicalities of trading to make wealth. I personally call
+                  this app "trade made easy".
                 </p>
-              </div>
-              <div class="splide__slide">
-                <h3>John Doe</h3>
-                <div class="users-img-wrapper">
-                  <img src="../assets/images/review3.jpeg" alt="" />
-                </div>
-                <div class="star-review">
-                  <i
-                    class="fa fa-star"
-                    aria-hidden="true"
-                    style="color: #fccf3b; font-size: 27px"
-                  ></i>
-                  <i
-                    class="fa fa-star"
-                    aria-hidden="true"
-                    style="color: #fccf3b; font-size: 27px"
-                  ></i>
-                  <i
-                    class="fa fa-star"
-                    aria-hidden="true"
-                    style="color: #fccf3b; font-size: 27px"
-                  ></i>
-                  <i
-                    class="fa fa-star"
-                    aria-hidden="true"
-                    style="color: #fccf3b; font-size: 27px"
-                  ></i>
-                  <i
-                    class="fa fa-star"
-                    aria-hidden="true"
-                    style="color: #fccf3b; font-size: 27px"
-                  ></i>
-                </div>
-                <p>Amazing app, I made over $20k following a leaders call.</p>
               </div>
 
               <div class="splide__slide">
-                <h3>Nyore Chadere</h3>
+                <h3>Israel Odenu</h3>
                 <div class="users-img-wrapper">
-                  <img src="../assets/images/review1.jpg" alt="" />
+                  <app-image :lazy-src="israelImage" />
                 </div>
                 <div class="star-review">
                   <i
@@ -1159,7 +1060,10 @@
                     style="color: #fccf3b; font-size: 27px"
                   ></i>
                 </div>
-                <p>This is one of the best app I've used. I love it.</p>
+                <p>
+                  The best app I have ever seen, easy Navigation, and a great
+                  "if" Calculator.
+                </p>
               </div>
             </div>
           </div>
@@ -1169,21 +1073,16 @@
         Get the app now on the Google Play Store or the App Store
       </p>
       <div class="exchange-download-wrapper">
-        <a href="#" target="_blank" rel="noopener noreferrer"
-          ><img
-            src="../assets/images/goplay.svg"
-            alt=""
-            srcset=""
-            class="exchange-download"
-        /></a>
+        <a href="#" target="_blank">
+          <app-image :lazy-src="goplayImg" class="exchange-download" />
+        </a>
 
-        <a href="#" target="_blank" rel="noopener noreferrer"
-          ><img
-            src="../assets/images/appstore.svg"
-            alt=""
-            srcset=""
-            class="exchange-download"
-        /></a>
+        <a href="#" target="_blank">
+          <app-image :lazy-src="appstoreImg" class="exchange-download" />
+        </a>
+        <p class="comingSoon font-bold md:font-semibold text-2xl">
+          coming soon...!
+        </p>
       </div>
     </section>
 
@@ -1210,7 +1109,6 @@
         <div class="modal-container">
           <span class="vid-close">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
-              <!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
               <path
                 d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"
               />
@@ -1235,6 +1133,7 @@
     <section>
       <div class="faq-wrapper">
         <h1>FAQ</h1>
+
         <div class="faqcontainer">
           <div class="faqwrapper">
             <button class="faqtoggle">
@@ -1293,7 +1192,7 @@
             </div>
           </div>
         </div>
-        <div class="faqcontainer faqtwo">
+        <div class="faqcontainer">
           <div class="faqwrapper">
             <button class="faqtoggle">
               <h3>How do I subscribe to a leader?</h3>
@@ -1312,6 +1211,7 @@
               </p>
             </div>
           </div>
+
           <div class="faqwrapper">
             <button class="faqtoggle">
               <h3>I’m Subscribed To A Leader But Don’t Know How To Trade?</h3>
@@ -1346,10 +1246,152 @@
 <script>
   import $ from "jquery";
   import Swiper from "swiper/bundle";
-  import "swiper/css/bundle";
   import Splide from "@splidejs/splide";
+  import AppImage from "@/components/AppImage.vue";
 
   export default {
+    components: {
+      AppImage,
+    },
+
+    computed: {
+      chrisImg() {
+        return require("../assets/images/chris.webp");
+      },
+
+      tolaImg() {
+        return require("../assets/images/tola.jpeg");
+      },
+
+      frankImg() {
+        return require("../assets/images/Frank.webp");
+      },
+
+      seeLeadersImg() {
+        return require("../assets/images/see-leaders.webp");
+      },
+
+      feature1Img() {
+        return require("../assets/images/app-feature1.webp");
+      },
+
+      customerImg() {
+        return require("../assets/images/customer.webp");
+      },
+
+      verifiedUserImg() {
+        return require("../assets/images/verified-user.webp");
+      },
+
+      moneyImg() {
+        return require("../assets/images/money.webp");
+      },
+
+      plannerSignalImg() {
+        return require("../assets/images/planner-signal.webp");
+      },
+
+      mainSiImg() {
+        return require("../assets/images/main-si.webp");
+      },
+
+      emmanuelImg() {
+        return require("../assets/images/leaders/emmanuel.webp");
+      },
+
+      UzoatuImg() {
+        return require("../assets/images/leaders/Uzoatu.jpeg");
+      },
+
+      mosesImg() {
+        return require("../assets/images/leaders/moses.jpeg");
+      },
+
+      marvelousImg() {
+        return require("../assets/images/leaders/marvelous.webp");
+      },
+
+      ibrahimImg() {
+        return require("../assets/images/leaders/Ibrahim.jpeg");
+      },
+
+      ucheImage() {
+        return require("../assets/images/leaders/uche.jpeg");
+      },
+
+      sibiImage() {
+        return require("../assets/images/leaders/sibi.jpeg");
+      },
+
+      mukhtarImage() {
+        return require("../assets/images/leaders/mukhtar.jpeg");
+      },
+
+      BKImage() {
+        return require("../assets/images/leaders/BK.webp");
+      },
+
+      voskiImage() {
+        return require("../assets/images/leaders/voski.webp");
+      },
+
+      chuwkwuImage() {
+        return require("../assets/images/leaders/CHUKWU.jpeg");
+      },
+
+      plannerTradeLesson() {
+        return require("../assets/images/planner-trade-lesson.webp");
+      },
+
+      tradeLesson() {
+        return require("../assets/images/trade-lesson.svg");
+      },
+
+      portfolioUpgradedImage() {
+        return require("../assets/images/Portfolio-Upgraded.webp");
+      },
+
+      profitLossImage() {
+        return require("../assets/images/profit-loss.png");
+      },
+
+      shareImg() {
+        return require("../assets/images/share-img.webp");
+      },
+
+      shareBlob() {
+        return require("../assets/images/share-blob.png");
+      },
+
+      binanceLogo() {
+        return require("../assets/images/binance-logo.svg");
+      },
+
+      kcsLogo() {
+        return require("../assets/images/kcs-3.svg");
+      },
+
+      ftxLogo() {
+        return require("../assets/images/ftx-2.svg");
+      },
+
+      goplayImg() {
+        return require("../assets/images/goplay.svg");
+      },
+
+      appstoreImg() {
+        return require("../assets/images/appstore.svg");
+      },
+
+      kingdomImg() {
+        return require("../assets/images/kingdom.jpeg");
+      },
+
+      israelImage() {
+        return require("../assets/images/israel.webp");
+      },
+    },
+
     methods: {
       useSplide() {
         new Splide(".splide", {
@@ -1479,14 +1521,17 @@
 </script>
 
 <style scoped>
+  @import "swiper/css/bundle";
   @import "@splidejs/splide/dist/css/splide.min.css";
   .mainContainer {
     width: 100%;
+    max-width: 1500px;
     margin: 0 auto;
   }
-  @media (min-width: 1500px) {
+
+  @media (min-width: 1200px) {
     .mainContainer {
-      max-width: 1250px;
+      padding-top: 7rem;
     }
   }
 
@@ -1512,7 +1557,7 @@
   }
   .littleicon4 {
     position: absolute;
-    top: 105%;
+    top: 90%;
     left: 1%;
     width: 4rem;
     z-index: 1;
@@ -1525,7 +1570,6 @@
   .first-page {
     width: 100%;
     position: relative;
-    padding-top: 1rem;
     margin-bottom: 2rem;
   }
   @media only screen and (min-width: 470px) {
@@ -1609,7 +1653,10 @@
     margin-right: auto;
     margin-top: 10px;
   }
-
+  .comingSoon {
+    margin-top: 1rem;
+    color: var(--fifth-color);
+  }
   .main-appUI_wrapper {
     position: relative;
   }
@@ -1621,6 +1668,7 @@
     position: relative;
     width: 100%;
     font-family: "Montserrat", sans-serif;
+    padding-top: 2rem;
   }
   .review-section h1 {
     width: 80%;
@@ -1798,15 +1846,15 @@
     position: absolute;
     top: 25%;
     left: 65%;
-    width: 6.25rem;
-    background: var(--third-color);
-    padding: 10px;
-    box-shadow: 0px 20px 17px #1c19230d;
-    border-radius: 10px;
-    transform: rotate(2.4deg);
+  }
+  .signal-packs.one {
+    position: absolute;
+    top: 25%;
+    left: 66%;
+    left: 55%;
   }
   .signal-packs.two {
-    top: 41%;
+    top: 43%;
   }
 
   .signal-packs.three {
@@ -1827,33 +1875,10 @@
       top: 63%;
     }
   }
-  .pack-img-wrapper {
-    position: relative;
-    top: -20px;
-    height: 60px;
-    width: 60px;
-    margin: auto;
-    border-radius: 50%;
-    background-color: #3374ea;
-  }
-  .signal-packs p {
-    text-align: center;
-    font-family: "Poppins", sans-serif;
-    font-size: 12px;
-    color: var(--fourth-color);
-    margin-top: -15px;
-  }
-  .signal-packs h5 {
-    text-align: center;
-    font-family: "Poppins", sans-serif;
-    color: #3374ea;
-    font-weight: 700;
-    margin-top: 2px;
-  }
   .pack-img {
-    width: 30px;
-    height: 60px;
-    margin-left: 15px;
+    width: 100%;
+    width: 80%;
+    margin-left: 10%;
   }
 
   .main-signal-wrapper {
@@ -1862,7 +1887,7 @@
   .signal-planner-wrapper {
     position: relative;
     top: 4.1rem;
-    left: -30px;
+    left: -20px;
     width: 90%;
   }
 
@@ -2250,31 +2275,6 @@
     width: 100%;
   }
 
-  .auto-track-icons {
-    position: absolute;
-  }
-  .auto-track-icons.bcs1 {
-    width: 40%;
-    top: 300px;
-    left: 50%;
-  }
-  .auto-track-icons.eth1 {
-    width: 40%;
-    top: 260px;
-    left: 20px;
-  }
-
-  .auto-track-icons.bcs2 {
-    width: 40%;
-    top: 500px;
-    left: 20px;
-  }
-  .auto-track-icons.eth2 {
-    width: 40%;
-    top: 550px;
-    left: 50%;
-  }
-
   .button,
   .button::after {
     -webkit-transition: all 1s;
@@ -2526,17 +2526,19 @@
   .exchange-box {
     margin-left: 15px;
     width: 101px;
+    height: 125px;
     background: var(--third-color) 0% 0% no-repeat padding-box;
     box-shadow: 0px 3px 6px #00000008;
     border-radius: 20px;
     opacity: 1;
+    vertical-align: middle;
   }
 
   .exchange-logo {
-    margin-top: -12px;
-    margin-left: 6px;
+    /* margin-top: 12px; */
+    /* margin-left: 6px; */
     width: 60px;
-    height: 120px;
+    height: 90px;
   }
   .exchange-logo.min {
     width: 110px;
@@ -2544,8 +2546,7 @@
   }
 
   .exchange-box p {
-    display: none;
-    padding-top: 3px;
+    /* display: none; */
     color: var(--fourth-color);
     text-align: center;
     font-size: 14px;
@@ -2647,18 +2648,17 @@
   .splide__arrows .splide__arrow--next {
     left: 120%;
   }
-  .splide__pagination {
+  .splide .splide__pagination {
+    position: relative;
+    top: 10px;
     text-align: center;
   }
   .splide__pagination__page {
-    background-color: #00be13 !important;
+    background-color: #00be13;
   }
   .splide__pagination__page.is-active {
-    background: blue !important;
+    background-color: blue;
   }
-  /* .splide__pagination__page {
-
-} */
 
   .users-CTA {
     text-align: center;
@@ -2675,6 +2675,7 @@
   }
 
   .learn-more {
+    display: none;
     position: relative;
     width: 90%;
     margin: 10rem auto 0;
@@ -2759,9 +2760,9 @@
   }
   .vid-play-wrapper {
     margin: 20px auto;
-    width: 80%;
+    width: 100%;
     height: 300px;
-    background: url("../assets/images/video-background.jpg") no-repeat center
+    background: url("../assets/images/video-background.jpeg") no-repeat center
       center fixed;
     box-shadow: 0px 30px 20px #22a1f51a;
     border-radius: 23px;
@@ -2769,7 +2770,7 @@
   }
 
   .video-img {
-    width: 80%;
+    width: 100%;
     height: 300px;
     position: absolute;
     background: linear-gradient(180deg, #75e7ff 0%, #677bff 100%) 0% 0%
@@ -3017,6 +3018,9 @@
   /* START IPAD PRO SCREEN SIZE DESIGN */
 
   @media only screen and (min-width: 1024px) {
+    .mainContainer {
+      padding-top: 7rem;
+    }
     .littleicon1 {
       position: absolute;
       top: 110px;
@@ -3229,52 +3233,25 @@
 
     .signal-packs {
       position: absolute;
-      top: 290px;
+      top: 30%;
       left: 700px;
-      width: 180px;
-      height: 210px;
-      background: var(--third-color);
-      box-shadow: 0px 20px 17px #1c19230d;
-      border-radius: 10px;
-      transform: rotate(5deg);
-      z-index: 2;
     }
     .signal-packs.two {
       position: absolute;
-      top: 590px;
-      left: 550px;
+      top: 50%;
+      left: 50%;
     }
 
     .signal-packs.three {
       position: absolute;
-      top: 620px;
-      left: 800px;
+      top: 50%;
+      left: 80%;
     }
-    .pack-img-wrapper {
-      position: relative;
-      top: -28px;
-      height: 100px;
-      width: 100px;
-      margin: auto;
-      border-radius: 50%;
-      background-color: #3374ea;
-    }
+
     .pack-img {
-      width: 60px;
-      height: 60px;
+      width: 80%;
       margin-top: 16px;
       margin-left: 20px;
-    }
-    .signal-packs p {
-      text-align: center;
-      font-size: 25px;
-    }
-    .signal-packs h5 {
-      text-align: center;
-      color: #3374ea;
-      font-weight: 600;
-      margin-top: 2px;
-      font-size: 28px;
     }
 
     .main-signal-img {
@@ -3345,17 +3322,6 @@
       width: 30%;
       top: 260px;
       left: 20px;
-    }
-
-    .auto-track-icons.bcs2 {
-      width: 30%;
-      top: 500px;
-      left: 20px;
-    }
-    .auto-track-icons.eth2 {
-      width: 30%;
-      top: 55%;
-      left: 60%;
     }
 
     .profit-loss h1 {
@@ -3527,8 +3493,8 @@
 
     .vid-play {
       position: absolute;
-      left: 80%;
-      top: 50%;
+      left: 75%;
+      top: 78%;
       transform: translate(-50%, -50%);
     }
 
@@ -3549,7 +3515,7 @@
       background: linear-gradient(180deg, #75e7ff 0%, #677bff 100%) 0% 0%
         no-repeat padding-box;
       border-radius: 23px;
-      opacity: 0.9;
+      opacity: 1;
       transition: 1s ease-out;
     }
     .video-img:hover {
@@ -3582,11 +3548,15 @@
       text-align: center;
       font-size: 19px;
       font-weight: 700;
-      width: 40%;
+      width: 30%;
+      float: left;
     }
     .learn-moreBTN:hover {
       background-color: #3374ea;
       color: var(--fourth-color);
+    }
+    .faq-wrapper {
+      margin-top: 120px;
     }
   }
   /* START COMPUTER SCREEN DESIGN */
@@ -3637,10 +3607,15 @@
       z-index: -1;
     }
 
-    @media (min-width: 1440px) {
+    @media (min-width: 1430px) {
       .blob1-d {
         top: -13rem;
-        left: 55%;
+        left: 53%;
+      }
+    }
+    @media (min-width: 1440px) {
+      .blob1-d {
+        left: 54%;
       }
     }
 
@@ -3671,10 +3646,11 @@
       width: 60%;
       font-size: 1rem;
       font-family: "Montserrat", sans-serif;
+      margin-top: 20px;
       margin-bottom: 0;
     }
     .app-downloads {
-      margin-top: 0;
+      margin-top: 2rem;
       margin-left: 0;
     }
     .app-download {
@@ -3683,17 +3659,17 @@
       margin: 0 auto;
       margin-right: 1rem;
     }
-
     .appui {
       position: absolute;
-      top: -23rem;
+      top: -28rem;
       width: 90%;
       margin-left: 30%;
     }
     @media (min-width: 1440px) {
       .appui {
         width: 86%;
-        margin-left: 43%;
+        top: -31rem;
+        margin-left: 48%;
       }
     }
     .review-section {
@@ -3892,54 +3868,47 @@
     .signal-packs {
       position: absolute;
       top: 190px;
-      left: 85%;
-      width: 95px;
-      height: 110px;
-      background: var(--third-color);
-      box-shadow: 0px 20px 17px #1c19230d;
-      border-radius: 8px;
-      z-index: 2;
+      left: 78%;
     }
     .signal-packs.two {
       position: absolute;
-      top: 38%;
-      left: 80%;
+      top: 37%;
+      left: 73%;
     }
 
     .signal-packs.three {
       position: absolute;
       top: 38%;
-      left: 90%;
+      left: 86%;
     }
-    .pack-img-wrapper {
-      position: relative;
-      top: -20px;
-      width: 53px;
-      height: 53px;
-      margin: auto;
-      border-radius: 50%;
-      background-color: #3374ea;
-    }
+
     .pack-img {
-      width: 25px;
-      height: 23px;
-      margin-top: 16px;
-      margin-left: 13px;
+      width: 80%;
     }
-    .signal-packs p {
-      text-align: center;
-      font-family: "Poppins", sans-serif;
-      margin-top: -15px;
-      font-size: 13px;
+
+    @media (min-width: 1440px) {
+      .signal-packs {
+        position: absolute;
+        top: 190px;
+        left: 80%;
+      }
+      .signal-packs.two {
+        position: absolute;
+        top: 38%;
+        left: 75%;
+      }
+
+      .signal-packs.three {
+        position: absolute;
+        top: 38%;
+        left: 86%;
+      }
+
+      .pack-img {
+        width: 70%;
+      }
     }
-    .signal-packs h5 {
-      text-align: center;
-      font-family: "Montserrat", sans-serif;
-      color: #3374ea;
-      font-weight: 600;
-      margin-top: 2px;
-      font-size: 17px;
-    }
+
     .main-signal-wrapper {
       display: block;
       position: relative;
@@ -4131,34 +4100,15 @@
     .track-img-box {
       width: 50%;
       position: absolute;
-      top: 100px;
+      top: 20%;
       left: 500px;
     }
     .auto-track-img {
-      width: 60%;
-      margin-left: 270px;
+      width: 700px;
+
+      /* margin-left: 270px; */
     }
 
-    .auto-track-icons.bcs1 {
-      width: 40%;
-      top: 110px;
-      left: 500px;
-    }
-    .auto-track-icons.eth1 {
-      width: 40%;
-      top: 210px;
-      left: 500px;
-    }
-    .auto-track-icons.bcs2 {
-      width: 40%;
-      top: 320px;
-      left: 500px;
-    }
-    .auto-track-icons.eth2 {
-      width: 40%;
-      top: 380px;
-      left: 100px;
-    }
     .littleIcon6 {
       width: 5%;
       position: absolute;
