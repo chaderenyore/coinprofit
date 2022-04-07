@@ -4,6 +4,7 @@
     class="search__tag--section w-[85%] md:w-[80%] m-auto"
     v-if="tagSearch"
   >
+    <TutorialCard :tutsObj="tagTutorialResult" v-if="tagTutorialResult" />
     <ArticleCard
       :queryobj="tagArticleResult"
       v-if="tagArticleResult"
@@ -14,6 +15,7 @@
     class="search__query--section w-[85%] md:w-[80%] m-auto"
     v-if="querySearch"
   >
+    <TutorialCard :tutsObj="tutorialSearchResult" v-if="tutorialSearchResult" />
     <ArticleCard
       v-if="articleSearchResult"
       :queryobj="articleSearchResult"
@@ -23,7 +25,9 @@
 </template>
 
 <script>
+  import TutorialCard from "@/components/Help/TutorialCard.vue";
   export default {
+    components: { TutorialCard },
     data() {
       return {
         tagSearch: null,
@@ -60,7 +64,7 @@
         const searchArticleValue = await this.searchArticles(query);
         const searchVideoValue = await this.searchTutorials(query);
         this.articleSearchResult = searchArticleValue.results;
-        this.tagTutorialResult = searchVideoValue.results;
+        this.tutorialSearchResult = searchVideoValue.results;
       },
 
       async searchByTag(tag) {
@@ -115,20 +119,20 @@
   }
   .search__tag--section,
   .search__query--section {
-    padding-top: 7rem;
+    padding-top: 3.5rem;
   }
 
   @media screen and (min-width: 520px) {
     .search__tag--section,
     .search__query--section {
-      padding-top: 8rem;
+      padding-top: 5rem;
     }
   }
 
   @media screen and (min-width: 768px) {
     .search__tag--section,
     .search__query--section {
-      padding-top: 9rem;
+      padding-top: 5rem;
     }
   }
 </style>

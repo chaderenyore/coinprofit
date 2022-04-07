@@ -8,9 +8,9 @@
       <div
         class="help__cards--card"
         :class="{
-          'card-on': selectedComponent === 'video-card',
+          'card-on': selectedComponent === 'help-tutorial-card',
         }"
-        @click="selectedComponent = 'video-card'"
+        @click="selectedComponent = 'help-tutorial-card'"
       >
         <div class="help__cards__img-div">
           <img src="@/assets/images/play.png" alt="" />
@@ -111,13 +111,13 @@
 
 <script>
   import HelpPostCard from "../components/Help/HelpPostCard.vue";
-  import VideoCard from "../components/Help/VideoCard.vue";
+  import HelpTutorialCard from "../components/Help/HelpTutorialCard.vue";
   // import { ref } from "@vue/reactivity";
 
   export default {
     components: {
       HelpPostCard,
-      VideoCard,
+      HelpTutorialCard,
     },
 
     data() {
