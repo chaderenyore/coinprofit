@@ -70,7 +70,7 @@
             </button>
             <div class="footerContent">
               <router-link to="/about"><p>About Us</p></router-link>
-              <a href="#"><p>Blog</p></a>
+              <router-link to="/blog"><p>Blog</p></router-link>
               <router-link
                 :to="{ path: '/help', query: { purpose: 'contact' } }"
               >
@@ -100,7 +100,7 @@
               ></i>
             </button>
             <div class="footerContent">
-              <a href="#"><p>How to Guide</p></a>
+              <router-link to="/help"><p>How to Guide</p></router-link>
               <a href="#"><p>Learn</p></a>
             </div>
           </div>
