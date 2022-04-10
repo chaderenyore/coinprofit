@@ -12,13 +12,15 @@
       in one of our tutorials.
     </p>
   </section>
-  <ul v-if="helpvid" class="flex flex-col gap-6 md:flex-row">
+  <ul v-if="helpvid" class="flex flex-col gap-6 md:flex-row justify-between">
     <li v-for="video in helpvid.results" :key="video.uid">
       <prismic-link :field="video">
         <figure
-          class="video-list flex flex-row gap-3 items-center md:flex-col md:max-w-[230px] md:min-h-[230px] rounded-xl"
+          class="video-list flex flex-row gap-3 items-center md:flex-col md:max-w-[230px] md:min-h-[280px] md:max-h-[350px] rounded-xl"
         >
-          <div class="video-thumbnail h-20 md:h-28 w-24 md:w-[100%] rounded-xl">
+          <div
+            class="video-thumbnail h-20 md:h-28 w-24 md:w-[100%] rounded-xl md:rounded-none md:rounded-t-xl"
+          >
             <PrismicImage
               :field="video.data.thumbnail"
               class="thumbnial-image w-[100%] rounded-xl"
@@ -89,7 +91,7 @@
   }
 
   .video-list {
-    background: var(--nav-light);
+    background: var(--tutorial-card);
     box-shadow: 0 1.25rem 17px #1c192305;
     cursor: pointer;
   }
@@ -133,6 +135,10 @@
   @media screen and (min-width: 768px) {
     .thumbnial-image {
       height: 100%;
+    }
+
+    .play-video img {
+      height: unset;
     }
   }
 
