@@ -84,6 +84,14 @@ const routes = [
       auth: true,
       title: "Coinprofit - Help",
     },
+    beforeEnter: (to) => {
+      if (
+        Object.keys(to.query).length === 0 &&
+        to.query.constructor === Object
+      ) {
+        router.push("/help");
+      }
+    },
   },
   {
     path: "/:notfound(.*)",
