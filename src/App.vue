@@ -86,10 +86,9 @@
     --light-color: #13141c;
     --dark-color: #f2f8ff;
     --nav-light: #09090b;
-    --navScroll-light: #310909;
+    --navScroll-light: #09090b;
     --navScrollp: #d8d4d4; /* for nav li a  */
     --navShadow: #f1eaea1a;
-    --navScroll-light: #160202;
     --dropdown-content: #13141c;
     --navScrollp: #d8d4d4; /* for nav li a  */
     --navShadow: #f1eaea1a;
