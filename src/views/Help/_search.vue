@@ -4,7 +4,11 @@
     class="search__tag--section w-[85%] md:w-[80%] m-auto"
     v-if="tagSearch"
   >
-    <TutorialCard :tutsObj="tagTutorialResult" v-if="tagTutorialResult" />
+    <TutorialCard
+      :tutsObj="tagTutorialResult"
+      class="mb-24"
+      v-if="tagTutorialResult"
+    />
     <ArticleCard
       :queryobj="tagArticleResult"
       v-if="tagArticleResult"
