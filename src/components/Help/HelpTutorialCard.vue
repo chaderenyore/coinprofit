@@ -142,7 +142,7 @@
     padding: 0.8rem 2rem;
     margin: 0;
     text-decoration: none;
-    background: #ffffff 0% 0% no-repeat padding-box;
+    background: var(--load-more-button) 0% 0% no-repeat padding-box;
     box-shadow: 0px 1.25rem 1.0625rem #1c192305;
     border-radius: 1.875rem;
     transition: all 0.2s;
