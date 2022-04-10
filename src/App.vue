@@ -36,7 +36,6 @@
 
   @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-  
   * {
     margin: 0;
     padding: 0;
@@ -87,10 +86,9 @@
     --light-color: #13141c;
     --dark-color: #f2f8ff;
     --nav-light: #09090b;
-    --navScroll-light: #310909;
+    --navScroll-light: #09090b;
     --navScrollp: #d8d4d4; /* for nav li a  */
     --navShadow: #f1eaea1a;
-    --navScroll-light: #160202;
     --dropdown-content: #13141c;
     --navScrollp: #d8d4d4; /* for nav li a  */
     --navShadow: #f1eaea1a;
@@ -121,9 +119,9 @@
   ::-webkit-scrollbar {
     width: 10px;
   }
-    ::-webkit-scrollbar-track {
-      background-color: var(--navScroll-light);
-    }
+  ::-webkit-scrollbar-track {
+    background-color: var(--navScroll-light);
+  }
   ::-webkit-scrollbar-thumb {
     -webkit-border-radius: 30px;
     -webkit-background-color: #3374ea;
@@ -164,7 +162,6 @@
   /* With this code, you can't click on a link that will open on a new tab. */
 
   [target="_blank"] {
-    
     pointer-events: none;
     cursor: not-allowed;
   }
