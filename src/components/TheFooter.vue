@@ -14,7 +14,6 @@
         <div class="social-link">
           <a
             href="https://twitter.com/coinprofit_app"
-            target="_blank"
             rel="noopener noreferrer"
           >
             <svg
@@ -30,7 +29,6 @@
 
           <a
             href="https://www.facebook.com/coinprofitapp"
-            target="_blank"
             rel="noopener noreferrer"
             ><svg
               style="fill: #3374ea"
@@ -43,10 +41,7 @@
               /></svg
           ></a>
 
-          <a
-            href="https://t.me/+dHybmF8BHyY3ZDY0"
-            target="_blank"
-            rel="noopener noreferrer"
+          <a href="https://t.me/+dHybmF8BHyY3ZDY0" rel="noopener noreferrer"
             ><svg
               style="fill: #1188c3"
               xmlns="http://www.w3.org/2000/svg"
@@ -139,7 +134,6 @@
           <div class="social-link">
             <a
               href="https://twitter.com/coinprofit_app"
-              target="_blank"
               rel="noopener noreferrer"
             >
               <svg
@@ -155,7 +149,6 @@
 
             <a
               href="https://www.facebook.com/coinprofitapp"
-              target="_blank"
               rel="noopener noreferrer"
               ><svg
                 style="fill: #3374ea"
@@ -168,10 +161,7 @@
                 /></svg
             ></a>
 
-            <a
-              href="https://t.me/+dHybmF8BHyY3ZDY0"
-              target="_blank"
-              rel="noopener noreferrer"
+            <a href="https://t.me/+dHybmF8BHyY3ZDY0" rel="noopener noreferrer"
               ><svg
                 style="fill: #1188c3"
                 xmlns="http://www.w3.org/2000/svg"
