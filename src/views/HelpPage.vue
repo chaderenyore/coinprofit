@@ -141,6 +141,7 @@
           },
         });
         this.selectedComponent = "help-search";
+        this.searchQuery = "";
       },
       searchTag(tag) {
         this.$router.push({
@@ -153,6 +154,16 @@
       },
     },
     created() {
+      if ("q" in this.$route.query) {
+        const query = this.$route.query.q;
+        this.searchQuery = query;
+        this.searchArticles();
+      } else if ("tag" in this.$route.query) {
+        const tag = this.$route.query.tag;
+        this.searchTag(tag);
+      } else {
+        this.selectedComponent = "help-post-card";
+      }
       if (
         "purpose" in this.$route.query &&
         this.$route.query.purpose === "contact"

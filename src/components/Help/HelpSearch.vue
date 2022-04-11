@@ -1,5 +1,6 @@
 <template>
   <section class="search__tag--section" v-if="tagSearch">
+    <h1 class="text-blue-600">Search Result for tag {{ tag }}</h1>
     <TutorialCard
       :tutsObj="tagTutorialResult"
       class="mb-24"
@@ -12,6 +13,8 @@
     />
   </section>
   <section class="search__query--section" v-if="querySearch">
+    <h1 class="text-blue-600">Search Result for search term {{ query }}</h1>
+
     <TutorialCard :tutsObj="tutorialSearchResult" v-if="tutorialSearchResult" />
     <ArticleCard
       v-if="articleSearchResult"
@@ -34,6 +37,8 @@
         tagTutorialResult: "",
         articleSearchResult: "",
         tutorialSearchResult: "",
+        tag: "",
+        query: "",
       };
     },
 
@@ -45,6 +50,7 @@
             query
           ),
         });
+        this.query = query;
         return fullTextResult;
       },
 
@@ -76,7 +82,7 @@
         this.tagTutorialResult = result.filter(function (article) {
           return article.type == "tutorial";
         });
-
+        this.tag = tag;
         this.tagSearch = true;
         this.querySearch = false;
       },
