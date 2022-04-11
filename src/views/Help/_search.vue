@@ -76,7 +76,7 @@
         const result = tagResult.results;
 
         this.tagArticleResult = result.filter(function (article) {
-          return article.type == "articles";
+          return article.type != "tutorial";
         });
 
         this.tagTutorialResult = result.filter(function (article) {
