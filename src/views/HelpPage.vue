@@ -49,7 +49,7 @@
             type="text"
             class="help__section--search__input"
             placeholder="Search"
-            v-model="searchQuery"
+            v-model.trim="searchQuery"
           />
           <button class="help__section--search__button">Find</button>
         </form>
@@ -59,7 +59,7 @@
 
   <section class="help__guide-section w-[85%] md:w-[80%] m-auto">
     <KeepAlive>
-      <component :is="selectedComponent" />
+      <component :is="selectedComponent" @search-tag="searchTag" />
     </KeepAlive>
   </section>
 
@@ -111,6 +111,7 @@
 
 <script>
   import HelpPostCard from "../components/Help/HelpPostCard.vue";
+  import HelpSearch from "../components/Help/HelpSearch.vue";
   import HelpTutorialCard from "../components/Help/HelpTutorialCard.vue";
   // import { ref } from "@vue/reactivity";
 
@@ -118,6 +119,7 @@
     components: {
       HelpPostCard,
       HelpTutorialCard,
+      HelpSearch,
     },
 
     data() {
@@ -133,14 +135,24 @@
           return;
         }
         this.$router.push({
-          name: "help-search",
+          name: "help",
           query: {
-            q: this.searchQuery.trim(),
+            q: this.searchQuery,
           },
         });
+        this.selectedComponent = "help-search";
+      },
+      searchTag(tag) {
+        this.$router.push({
+          name: "help",
+          query: {
+            tag: tag,
+          },
+        });
+        this.selectedComponent = "help-search";
       },
     },
-    mounted() {
+    created() {
       if (
         "purpose" in this.$route.query &&
         this.$route.query.purpose === "contact"

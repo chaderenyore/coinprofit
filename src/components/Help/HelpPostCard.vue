@@ -81,6 +81,7 @@
 
 <script>
   export default {
+    emits: ["search-tag"],
     data() {
       return {
         data: null,
@@ -101,12 +102,7 @@
       },
 
       searchTag(tag) {
-        this.$router.push({
-          name: "help-search",
-          query: {
-            tag: tag,
-          },
-        });
+        this.$emit("search-tag", tag);
       },
 
       loadMore() {

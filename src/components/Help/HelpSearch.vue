@@ -1,9 +1,5 @@
 <template>
-  <div class="pt-20"></div>
-  <section
-    class="search__tag--section w-[85%] md:w-[80%] m-auto"
-    v-if="tagSearch"
-  >
+  <section class="search__tag--section" v-if="tagSearch">
     <TutorialCard
       :tutsObj="tagTutorialResult"
       class="mb-24"
@@ -15,10 +11,7 @@
       @search-tag="searchFromComponent"
     />
   </section>
-  <section
-    class="search__query--section w-[85%] md:w-[80%] m-auto"
-    v-if="querySearch"
-  >
+  <section class="search__query--section" v-if="querySearch">
     <TutorialCard :tutsObj="tutorialSearchResult" v-if="tutorialSearchResult" />
     <ArticleCard
       v-if="articleSearchResult"
@@ -32,6 +25,7 @@
   import TutorialCard from "@/components/Help/TutorialCard.vue";
   export default {
     components: { TutorialCard },
+    inheritAttrs: false,
     data() {
       return {
         tagSearch: null,
@@ -89,8 +83,8 @@
 
       searchFromComponent(tag) {
         this.searchByTag(tag);
-        this.$router.replace({
-          name: "help-search",
+        this.$router.push({
+          name: "help",
           query: {
             tag: tag,
           },
@@ -98,7 +92,7 @@
       },
     },
 
-    created() {
+    mounted() {
       if ("q" in this.$route.query) {
         const query = this.$route.query.q;
         this.callMultipleSearch(query);
@@ -123,20 +117,6 @@
   }
   .search__tag--section,
   .search__query--section {
-    padding-top: 3.5rem;
-  }
-
-  @media screen and (min-width: 520px) {
-    .search__tag--section,
-    .search__query--section {
-      padding-top: 5rem;
-    }
-  }
-
-  @media screen and (min-width: 768px) {
-    .search__tag--section,
-    .search__query--section {
-      padding-top: 5rem;
-    }
+    padding-top: 2rem;
   }
 </style>
