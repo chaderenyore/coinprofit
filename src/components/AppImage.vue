@@ -9,8 +9,6 @@
 
 <script>
   import lozad from "lozad";
-  import Emitter from "tiny-emitter";
-  const emitter = new Emitter();
 
   export default {
     name: "AppImage",
@@ -88,7 +86,7 @@
       // We remove the event listener as soon as
       // the component is destroyed to prevent
       // potential memory leaks.
-      emitter.once("hook:destroyed", () => {
+      this.emitter.on("hook:destroyed", () => {
         this.$el.removeEventListener("load", setLoadingState);
       });
 
