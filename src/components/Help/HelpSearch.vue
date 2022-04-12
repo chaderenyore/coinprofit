@@ -98,7 +98,8 @@
       },
     },
 
-    mounted() {
+    activated() {
+      console.log("hello world");
       if ("q" in this.$route.query) {
         const query = this.$route.query.q;
         this.callMultipleSearch(query);
@@ -110,6 +111,9 @@
         this.tagSearch = true;
         this.querySearch = false;
       }
+    },
+    deactivated() {
+      console.log("deactivated");
     },
   };
 </script>
