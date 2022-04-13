@@ -156,6 +156,10 @@
       },
     },
     created() {
+      // if ("tag" in this.$route.query || "q" in this.$route.query) {
+      //   console.log("Hello World Am Searching");
+      //   this.selectedComponent = "help-search";
+      // }
       this.selectedComponent = "help-search";
       setTimeout(() => {
         this.selectedComponent = "help-post-card";
