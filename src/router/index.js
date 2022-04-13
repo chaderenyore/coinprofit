@@ -56,6 +56,7 @@ const routes = [
     meta: {
       auth: true,
       title: "Coinprofit - Help",
+      disableScroll: true,
     },
   },
   {
@@ -68,6 +69,14 @@ const routes = [
     },
   },
   {
+    path: "/help/tutorials",
+    redirect: "/help",
+  },
+  {
+    path: "/help/articles",
+    redirect: "/help",
+  },
+  {
     path: "/help/tutorials/:uid",
     component: () => import("../views/Tutorial/_uid.vue"),
     name: "TutorialVideo",
@@ -76,15 +85,23 @@ const routes = [
       title: "Coinprofit - Tutorial",
     },
   },
-  {
-    path: "/help/search",
-    name: "help-search",
-    component: () => import("../views/Help/_search.vue"),
-    meta: {
-      auth: true,
-      title: "Coinprofit - Help",
-    },
-  },
+  // {
+  //   path: "/help/search",
+  //   name: "help-search",
+  //   component: () => import("../views/Help/_search.vue"),
+  //   meta: {
+  //     auth: true,
+  //     title: "Coinprofit - Help",
+  //   },
+  //   beforeEnter: (to) => {
+  //     if (
+  //       Object.keys(to.query).length === 0 &&
+  //       to.query.constructor === Object
+  //     ) {
+  //       router.push("/help");
+  //     }
+  //   },
+  // },
   {
     path: "/:notfound(.*)",
     redirect: "/",
@@ -123,7 +140,9 @@ const routes = [
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
   routes,
-  scrollBehavior(_, _2, savedPosition) {
+  scrollBehavior(to, _, savedPosition) {
+    if (to.matched.some((m) => m.meta.disableScroll)) return;
+
     if (savedPosition) {
       return savedPosition;
     }

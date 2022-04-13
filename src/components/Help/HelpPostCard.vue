@@ -36,7 +36,7 @@
           </prismic-link>
           <section>
             <section class="mb-3">
-              <ul class="flex flex-row gap-2 justify-between">
+              <ul class="flex flex-row gap-2 justify-evenly">
                 <div v-for="(e, i) in 3" :key="i">
                   <li
                     v-if="post.tags[i]"
@@ -81,6 +81,7 @@
 
 <script>
   export default {
+    emits: ["search-tag"],
     data() {
       return {
         data: null,
@@ -101,12 +102,7 @@
       },
 
       searchTag(tag) {
-        this.$router.push({
-          name: "help-search",
-          query: {
-            tag: tag,
-          },
-        });
+        this.$emit("search-tag", tag);
       },
 
       loadMore() {

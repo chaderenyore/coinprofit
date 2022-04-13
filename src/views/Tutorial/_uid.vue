@@ -74,19 +74,20 @@
   </main>
 
   <div v-if="error" class="pt-32 md:pt-24 mb-16">
-    <NotFound :errorMessage="errorMessage" />
+    <not-found :errorMessage="errorMessage">
+      This Means that the Tutorial you were looking for does not exist or may
+      have been moved.
+    </not-found>
   </div>
 </template>
 
 <script>
   import BaseCallToAction from "@/components/BaseCallToAction.vue";
-  import NotFound from "@/components/Help/NotFound.vue";
   import TwitterButton from "vue-share-buttons/src/components/TwitterButton";
   import FacebookButton from "vue-share-buttons/src/components/FacebookButton";
   export default {
     components: {
       BaseCallToAction,
-      NotFound,
       TwitterButton,
       FacebookButton,
     },

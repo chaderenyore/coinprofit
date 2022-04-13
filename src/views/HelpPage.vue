@@ -8,9 +8,9 @@
       <div
         class="help__cards--card"
         :class="{
-          'card-on': selectedComponent === 'video-card',
+          'card-on': selectedComponent === 'help-tutorial-card',
         }"
-        @click="selectedComponent = 'video-card'"
+        @click="selectedComponent = 'help-tutorial-card'"
       >
         <div class="help__cards__img-div">
           <img src="@/assets/images/play.png" alt="" />
@@ -49,7 +49,7 @@
             type="text"
             class="help__section--search__input"
             placeholder="Search"
-            v-model="searchQuery"
+            v-model.trim="searchQuery"
           />
           <button class="help__section--search__button">Find</button>
         </form>
@@ -59,7 +59,7 @@
 
   <section class="help__guide-section w-[85%] md:w-[80%] m-auto">
     <KeepAlive>
-      <component :is="selectedComponent" />
+      <component :is="selectedComponent" @search-tag="searchTag" />
     </KeepAlive>
   </section>
 
@@ -111,13 +111,15 @@
 
 <script>
   import HelpPostCard from "../components/Help/HelpPostCard.vue";
-  import VideoCard from "../components/Help/VideoCard.vue";
+  import HelpSearch from "../components/Help/HelpSearch.vue";
+  import HelpTutorialCard from "../components/Help/HelpTutorialCard.vue";
   // import { ref } from "@vue/reactivity";
 
   export default {
     components: {
       HelpPostCard,
-      VideoCard,
+      HelpTutorialCard,
+      HelpSearch,
     },
 
     data() {
@@ -128,20 +130,51 @@
     },
     methods: {
       searchArticles() {
-        // let regex = /^\s+$/;
-        // if (this.searchQuery.match(regex) || !this.searchQuery) {
-        //   return;
-        // }
-        // this.$router.push({
-        //   name: "help-search",
-        //   query: {
-        //     q: this.searchQuery.trim(),
-        //   },
-        // });
-        return;
+        let regex = /^\s+$/;
+        if (this.searchQuery.match(regex) || !this.searchQuery) {
+          return;
+        }
+        this.$router.push({
+          name: "help",
+          query: {
+            q: this.searchQuery,
+          },
+        });
+        this.selectedComponent = "help-search";
+        this.emitter.emit("search-fulltext", this.searchQuery);
+        this.searchQuery = "";
+      },
+      searchTag(tag) {
+        this.$router.push({
+          name: "help",
+          query: {
+            tag: tag,
+          },
+        });
+        this.selectedComponent = "help-search";
+        this.emitter.emit("search-tags", tag);
       },
     },
-    mounted() {
+    created() {
+      if ("tag" in this.$route.query) {
+        this.selectedComponent = "help-search";
+        setTimeout(() => {
+          this.emitter.emit("search-tags", this.$route.query.tag);
+          document.documentElement.scrollTo(0, 660);
+        }, 400);
+      } else if ("q" in this.$route.query) {
+        this.selectedComponent = "help-search";
+        setTimeout(() => {
+          this.emitter.emit("search-fulltext", this.$route.query.q);
+          document.documentElement.scrollTo(0, 660);
+        }, 400);
+      } else {
+        this.selectedComponent = "help-search";
+        setTimeout(() => {
+          this.selectedComponent = "help-post-card";
+        }, 200);
+      }
+
       if (
         "purpose" in this.$route.query &&
         this.$route.query.purpose === "contact"

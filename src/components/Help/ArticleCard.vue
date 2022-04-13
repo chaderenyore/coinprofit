@@ -15,7 +15,7 @@
         </prismic-link>
         <section>
           <section class="mb-3">
-            <ul class="flex flex-row gap-2 justify-between">
+            <ul class="flex flex-row gap-2 justify-evenly">
               <div v-for="(e, i) in 3" :key="i">
                 <li
                   v-if="post.tags[i]"

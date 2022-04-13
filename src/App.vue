@@ -80,6 +80,8 @@
     --social-button-container: #f2f8ff;
     --plyr-color-main: #3374ea;
     --help-email-icon: #525b6d;
+    --load-more-button: #ffff;
+    --tutorial-card: #ffff;
   }
 
   .dark-theme {
@@ -108,6 +110,8 @@
     --help-contact-box-text: #f2f8ff;
     --social-button-container: #202230;
     --help-email-icon: transparent;
+    --load-more-button: #1c2029;
+    --tutorial-card: #1c2029;
   }
   html {
     scroll-behavior: smooth;

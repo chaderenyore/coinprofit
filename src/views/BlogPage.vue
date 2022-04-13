@@ -13,7 +13,10 @@
       </div>
     </section>
     <div v-if="blogpost">
-      <article-card :queryobj="blogpost.results"></article-card>
+      <article-card
+        :queryobj="blogpost.results"
+        @search-tag="this.searchTag"
+      ></article-card>
     </div>
   </main>
 </template>
@@ -29,6 +32,14 @@
     methods: {
       async getData() {
         this.blogpost = await this.$prismic.client.getByType("blog");
+      },
+      searchTag(tag) {
+        this.$router.push({
+          name: "help",
+          query: {
+            tag: tag,
+          },
+        });
       },
     },
 
