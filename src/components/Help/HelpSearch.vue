@@ -98,22 +98,35 @@
       },
     },
 
-    activated() {
-      console.log("hello world");
-      if ("q" in this.$route.query) {
-        const query = this.$route.query.q;
-        this.callMultipleSearch(query);
+    // activated() {
+    //   console.log("hello world");
+    //   if ("q" in this.$route.query) {
+    //     const query = this.$route.query.q;
+    //     this.callMultipleSearch(query);
+    //     this.querySearch = true;
+    //     this.tagSearch = false;
+    //   } else if ("tag" in this.$route.query) {
+    //     const tag = this.$route.query.tag;
+    //     this.searchByTag(tag);
+    //     this.tagSearch = true;
+    //     this.querySearch = false;
+    //   }
+    // },
+    // deactivated() {
+    //   console.log("deactivated");
+    // },
+    created() {
+      console.log("hello-world");
+      this.emitter.on("search-fulltext", (value) => {
+        this.callMultipleSearch(value);
         this.querySearch = true;
         this.tagSearch = false;
-      } else if ("tag" in this.$route.query) {
-        const tag = this.$route.query.tag;
+      });
+      this.emitter.on("search-tags", (tag) => {
         this.searchByTag(tag);
         this.tagSearch = true;
         this.querySearch = false;
-      }
-    },
-    deactivated() {
-      console.log("deactivated");
+      });
     },
   };
 </script>
