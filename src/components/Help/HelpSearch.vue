@@ -1,11 +1,16 @@
 <template>
   <section class="search__tag--section" v-if="tagSearch">
-    <h1 class="text-blue-600">Search Result for tag {{ tag }}</h1>
-    <TutorialCard
-      :tutsObj="tagTutorialResult"
-      class="mb-24"
-      v-if="tagTutorialResult"
-    />
+    <h1 class="text-[#3374ea] mb-7 text-center">
+      Search Result for tag {{ this.$route.query.tag }}
+    </h1>
+    <section v-if="loading" class="text-3xl font-extrabold">
+      <div class="spinner">
+        <svg>
+          <use href="@/assets/images/icons.svg#icon-loader"></use>
+        </svg>
+      </div>
+    </section>
+    <TutorialCard :tutsObj="tagTutorialResult" v-if="tagTutorialResult" />
     <ArticleCard
       :queryobj="tagArticleResult"
       v-if="tagArticleResult"
@@ -13,14 +18,31 @@
     />
   </section>
   <section class="search__query--section" v-if="querySearch">
-    <h1 class="text-blue-600">Search Result for search term {{ query }}</h1>
-
-    <TutorialCard :tutsObj="tutorialSearchResult" v-if="tutorialSearchResult" />
+    <h1 class="text-[#3374ea] text-center">
+      Search Result for search term {{ this.$route.query.q }}
+    </h1>
+    <section v-if="loading" class="text-3xl pt-20 font-extrabold">
+      <div class="spinner">
+        <svg>
+          <use href="@/assets/images/icons.svg#icon-loader"></use>
+        </svg>
+      </div>
+    </section>
+    <TutorialCard
+      class="mt-16"
+      :tutsObj="tutorialSearchResult"
+      v-if="tutorialSearchResult"
+    />
     <ArticleCard
       v-if="articleSearchResult"
       :queryobj="articleSearchResult"
       @search-tag="searchFromComponent"
     />
+  </section>
+  <section v-if="error">
+    <not-found>
+      Your Search did not return anything adjust your queries and try again
+    </not-found>
   </section>
 </template>
 
@@ -39,6 +61,8 @@
         tutorialSearchResult: "",
         tag: "",
         query: "",
+        loading: true,
+        error: false,
       };
     },
 
@@ -69,6 +93,14 @@
         const searchVideoValue = await this.searchTutorials(query);
         this.articleSearchResult = searchArticleValue.results;
         this.tutorialSearchResult = searchVideoValue.results;
+        console.log(this.articleSearchResult, this.tutorialSearchResult);
+        if (this.articleSearchResult == "" && this.tutorialSearchResult == "") {
+          this.error = true;
+          this.loading = false;
+        } else {
+          this.loading = false;
+          this.error = false;
+        }
       },
 
       async searchByTag(tag) {
@@ -85,6 +117,13 @@
         this.tag = tag;
         this.tagSearch = true;
         this.querySearch = false;
+        if (this.tagArticleResult == "" && this.tagTutorialResult == "") {
+          this.error = true;
+          this.loading = false;
+        } else {
+          this.loading = false;
+          this.error = false;
+        }
       },
 
       searchFromComponent(tag) {
@@ -124,5 +163,27 @@
   .search__tag--section,
   .search__query--section {
     padding-top: 2rem;
+  }
+
+  .spinner {
+    margin: 5rem auto;
+    text-align: center;
+  }
+
+  .spinner svg {
+    height: 6rem;
+    width: 6rem;
+    fill: #3374ea;
+    animation: rotate 2s infinite linear;
+  }
+
+  @keyframes rotate {
+    0% {
+      transform: rotate(0);
+    }
+
+    100% {
+      transform: rotate(360deg);
+    }
   }
 </style>
