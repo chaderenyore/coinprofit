@@ -1,7 +1,7 @@
 <template>
   <section class="search__tag--section" v-if="tagSearch">
     <h1 class="text-[#3374ea] mb-7 text-center">
-      Search Result for tag {{ this.$route.query.tag }}
+      Search Result for tag "{{ this.$route.query.tag }}"
     </h1>
     <section v-if="loading" class="text-3xl font-extrabold">
       <div class="spinner">
@@ -23,7 +23,7 @@
   </section>
   <section class="search__query--section" v-if="querySearch">
     <h1 class="text-[#3374ea] text-center">
-      Search Result for search term {{ this.$route.query.q }}
+      Search Result for search term "{{ this.$route.query.q }}"
     </h1>
     <section v-if="loading" class="text-3xl pt-20 font-extrabold">
       <div class="spinner">
