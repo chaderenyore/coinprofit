@@ -160,11 +160,13 @@
         this.selectedComponent = "help-search";
         setTimeout(() => {
           this.emitter.emit("search-tags", this.$route.query.tag);
+          document.documentElement.scrollTo(0, 660);
         }, 400);
       } else if ("q" in this.$route.query) {
         this.selectedComponent = "help-search";
         setTimeout(() => {
           this.emitter.emit("search-fulltext", this.$route.query.q);
+          document.documentElement.scrollTo(0, 660);
         }, 400);
       } else {
         this.selectedComponent = "help-search";
