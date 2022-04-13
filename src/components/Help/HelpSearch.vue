@@ -10,7 +10,11 @@
         </svg>
       </div>
     </section>
-    <TutorialCard :tutsObj="tagTutorialResult" v-if="tagTutorialResult" />
+    <TutorialCard
+      :tutsObj="tagTutorialResult"
+      class="mb-16"
+      v-if="tagTutorialResult"
+    />
     <ArticleCard
       :queryobj="tagArticleResult"
       v-if="tagArticleResult"
@@ -93,7 +97,6 @@
         const searchVideoValue = await this.searchTutorials(query);
         this.articleSearchResult = searchArticleValue.results;
         this.tutorialSearchResult = searchVideoValue.results;
-        console.log(this.articleSearchResult, this.tutorialSearchResult);
         if (this.articleSearchResult == "" && this.tutorialSearchResult == "") {
           this.error = true;
           this.loading = false;
