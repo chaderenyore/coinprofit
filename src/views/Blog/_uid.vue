@@ -146,7 +146,6 @@
             year: "numeric",
           });
         } catch (error) {
-          console.log(error.message);
           this.loading = false;
           this.error = true;
           this.errorMessage = error.message;

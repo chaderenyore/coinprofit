@@ -141,7 +141,6 @@
     },
 
     created() {
-      console.log("hello-search-component");
       this.emitter.on("search-fulltext", (value) => {
         this.callMultipleSearch(value);
         this.querySearch = true;
