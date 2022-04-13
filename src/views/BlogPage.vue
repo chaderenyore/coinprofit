@@ -40,7 +40,6 @@
             tag: tag,
           },
         });
-        this.emitter.emit("search-tags", tag);
       },
     },
 
