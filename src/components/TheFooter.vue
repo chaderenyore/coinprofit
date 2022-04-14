@@ -8,7 +8,7 @@
       </div>
       <div class="slogan"><p>Helping you become a profitable crypto trader and investor</p></div>
       <div class="social-link">
-        <a href="https://twitter.com/coinprofit_app" >
+        <a href="https://twitter.com/coinprofit_app" target="_blank">
           <svg
             style="fill: #3374ea"
             xmlns="http://www.w3.org/2000/svg"
@@ -20,7 +20,7 @@
             /></svg
         ></a>
 
-        <a href="https://www.facebook.com/coinprofitapp" 
+        <a href="https://www.facebook.com/coinprofitapp" target="_blank" 
           ><svg
             style="fill: #3374ea"
             xmlns="http://www.w3.org/2000/svg"
@@ -32,7 +32,7 @@
             /></svg
         ></a>
 
-        <a href="https://t.me/+dHybmF8BHyY3ZDY0" 
+        <a href="https://t.me/+dHybmF8BHyY3ZDY0" target="_blank"
           ><svg
             style="fill: #1188c3"
             xmlns="http://www.w3.org/2000/svg"
@@ -64,8 +64,8 @@
             <i class="fa fa-chevron-down footerIcon" style="color: #3374ea"></i>
           </button>
           <div class="footerContent">
-            <a href="#"><p>Android App</p></a>
-            <a href="#"><p>ios App</p></a>
+            <a href="https://play.google.com/store/apps/details?id=com.procity.coinprofit"><p>Android App</p></a>
+            <a href="#"><p>ios coming soon</p></a>
           </div>
         </div>
         <div class="footerWrapper">
@@ -106,7 +106,7 @@
         </div>
         <div class="social-link">
           <a
-            href="https://twitter.com/coinprofit_app"
+            href="https://twitter.com/coinprofit_app" target="_blank"
             
           >
             <svg
@@ -122,7 +122,7 @@
 
           <a
             href="https://www.facebook.com/coinprofitapp"
-            
+            target="_blank"
             >
             <svg
               style="fill: #3374ea"
@@ -137,8 +137,9 @@
 
           <a
             href="https://t.me/+dHybmF8BHyY3ZDY0"
-           
-            ><svg
+            target="_blank">
+            
+            <svg
               style="fill: #1188c3"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 496 512"
@@ -172,8 +173,8 @@
       <div class="main-app-container">
         <div class="company-head">
           <h3>Products</h3>
-          <a href="#"><p>Android App</p></a>
-          <a href="#"><p>ios App</p></a>
+          <a href="https://play.google.com/store/apps/details?id=com.procity.coinprofit"><p>Android App</p></a>
+          <a href="#"><p>ios coming soon</p></a>
         </div>
       </div>
 

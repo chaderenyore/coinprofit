@@ -50,23 +50,24 @@
         </div>
         <br />
         <div class="app-downloads">
+        
           <a href="#" target="_blank" rel="noopener noreferrer"
+            ><img
+              src="../assets/images/goplay.svg"
+              alt=""  
+              srcset=""
+              class="app-download"
+          /></a>
+
+           <!-- <a href="#" target="_blank" rel="noopener noreferrer"
             ><img
               src="../assets/images/appstore.svg"
               alt=""
               srcset=""
               class="app-download"
-          /></a>
-
-          <a href="#" target="_blank" rel="noopener noreferrer"
-            ><img
-              src="../assets/images/goplay.svg"
-              alt=""
-              srcset=""
-              class="app-download"
-          /></a>
-          <p class="comingSoon font-bold md:font-semibold text-2xl">
-            coming soon...!
+          /></a> -->
+          <p class="comingSoon ">
+            IOS coming soon...!
           </p>
         </div>
 
@@ -609,14 +610,16 @@
         </div> -->
       </div>
       <div class="leaders-app-download">
-        <a href="#" target="_blank" rel="noopener noreferrer"
-          ><img src="../assets/images/appstore.svg" alt=""
-        /></a>
+       
         <a href="#" target="_blank" rel="noopener noreferrer"
           ><img src="../assets/images/goplay.svg" alt=""
         /></a>
+
+         <!-- <a href="#" target="_blank" rel="noopener noreferrer"
+          ><img src="../assets/images/appstore.svg" alt=""
+        /></a> -->
         <p class="comingSoon font-bold md:font-semibold text-2xl">
-          coming soon...!
+          IOS coming soon...!
         </p>
       </div>
 
@@ -990,7 +993,7 @@
           </div>
         </div> -->
         <p class="get-details">
-          Get the app now on the Google Play Store or the App Store
+          Get the app now on the Google Play Store.
         </p>
         <div class="exchange-download-wrapper">
           <a href="#" target="_blank" rel="noopener noreferrer"
@@ -1001,16 +1004,16 @@
               class="exchange-download"
           /></a>
 
-          <a href="#" target="_blank" rel="noopener noreferrer"
+          <!-- <a href="#" target="_blank" rel="noopener noreferrer"
             ><img
               src="../assets/images/appstore.svg"
               alt=""
               srcset=""
               class="exchange-download"
-          /></a>
+          /></a> -->
         </div>
-        <p class="comingSoon font-bold md:font-semibold text-2xl">
-          coming soon...!
+        <p class="comingSoon ">
+          IOS coming soon...!
         </p>
       </div>
     </section>
@@ -1113,7 +1116,7 @@
         </div>
       </div>
       <p class="users-CTA">
-        Get the app now on the Google Play Store or the App Store
+        Get the app now on the Google Play Store.
       </p>
       <div class="exchange-download-wrapper">
         <a href="#" target="_blank"
@@ -1124,15 +1127,15 @@
             class="exchange-download"
         /></a>
 
-        <a href="#" target="_blank" 
+        <!-- <a href="#" target="_blank" 
           ><img
             src="../assets/images/appstore.svg"
             alt=""
             srcset=""
             class="exchange-download"
-        /></a>
-        <p class="comingSoon font-bold md:font-semibold text-2xl">
-          coming soon...!
+        /></a> -->
+        <p class="comingSoon ">
+          IOS coming soon...!
         </p>
       </div>
     </section>

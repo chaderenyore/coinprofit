@@ -74,20 +74,21 @@
         <div class="app-downloads">
           <a href="#" target="_blank" rel="noopener noreferrer"
             ><img
-              src="@/assets/images/appstore.svg"
-              alt=""
-              srcset=""
-              class="app-download"
-          /></a>
-
-          <a href="#" target="_blank" rel="noopener noreferrer"
-            ><img
               src="@/assets/images/goplay.svg"
               alt=""
               srcset=""
               class="app-download"
           /></a>
-           <p class="comingSoon font-bold md:font-semibold text-2xl" >coming soon...!</p>
+
+           <!-- <a href="#" target="_blank" rel="noopener noreferrer"
+            ><img
+              src="@/assets/images/appstore.svg"
+              alt=""
+              srcset=""
+              class="app-download"
+          /></a> -->
+
+           <p class="comingSoon" >IOS coming soon...!</p>
         </div>
       </div>
     </section>
@@ -242,14 +243,7 @@
           rights when your signals hit profit target.
         </p>
       </div>
-      <div class="app-downloads wrapper">
-        <a href="#" target="_blank" rel="noopener noreferrer"
-          ><img
-            src="@/assets/images/appstore.svg"
-            alt=""
-            srcset=""
-            class="app-download features"
-        /></a>
+      <div class="app-downloads wrapper"> 
 
         <a href="#" target="_blank" rel="noopener noreferrer"
           ><img
@@ -258,7 +252,16 @@
             srcset=""
             class="app-download features"
         /></a>
-        <p class="comingSoon font-bold md:font-semibold text-2xl" >coming soon...!</p>
+
+        <!-- <a href="#" target="_blank" rel="noopener noreferrer"
+          ><img
+            src="@/assets/images/appstore.svg"
+            alt=""
+            srcset=""
+            class="app-download features"
+        /></a> -->
+
+        <p class="comingSoon" >IOS coming soon...!</p>
       </div>
     </section>
 
@@ -908,20 +911,21 @@
       <div class="leaderCTADownloadWrapper">
         <a href="#" target="_blank" 
           ><img
-            src="@/assets/images/appstore.svg"
-            alt=""
-            srcset=""
-            class="leaderCTADownloadApp"
-        /></a>
-
-        <a href="#" target="_blank" 
-          ><img
             src="@/assets/images/goplay.svg"
             alt=""
             srcset=""
             class="leaderCTADownloadApp"
         /></a>
-        <p class="comingSoon font-bold md:font-semibold text-2xl" >coming soon...!</p>
+
+        <!-- <a href="#" target="_blank" 
+          ><img
+            src="@/assets/images/appstore.svg"
+            alt=""
+            srcset=""
+            class="leaderCTADownloadApp"
+        /></a> -->
+
+        <p class="comingSoon" >coming soon...!</p>
       </div>
     </div>
 

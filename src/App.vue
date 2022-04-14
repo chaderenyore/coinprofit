@@ -45,10 +45,6 @@
     -moz-box-sizing: border-box;
   }
 
-  [target="_blank"] {
-    pointer-events: none;
-    touch-action: none;
-  }
 
   p {
     color: var(
@@ -161,13 +157,6 @@
     z-index: 1;
   }
 
-  /* With this code, you can't click on a link that will open on a new tab. */
-
-  [target="_blank"] {
-    
-    pointer-events: none;
-    cursor: not-allowed;
-  }
 
   *:focus {
     -webkit-tap-highlight-color: transparent;

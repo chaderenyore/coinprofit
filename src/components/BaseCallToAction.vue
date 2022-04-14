@@ -17,21 +17,19 @@
       </div> -->
       <h1>Download The Coinprofit App Now To Get Started!</h1>
       <div class="final-download-wrapper">
-        <a href="#" target="_blank" rel="noopener noreferrer"
+        <a href="https://play.google.com/store/apps/details?id=com.procity.coinprofit" target="_blank" rel="noopener noreferrer"
           ><img
             src="../assets/images/goplay.svg"
-            alt=""
-            srcset=""
             class="final-download-img"
         /></a>
-        <a href="#" target="_blank" rel="noopener noreferrer"
+        <!-- <a href="#" target="_blank" rel="noopener noreferrer"
           ><img
             src="../assets/images/appstore.svg"
             alt=""
             srcset=""
-            class="final-download-img"
-        /></a>
-        <p class="comingSoon font-bold md:font-semibold text-2xl" >coming soon...!</p>
+            class="final-download-img iosVersion"
+        /></a> -->
+        <p class="comingSoon">IOS coming soon...!</p>
       </div>
     </div>
   </section>
@@ -112,8 +110,8 @@
   /* display: block; */
   width: 100%;
 }
-.comingSoon  {
-  margin-top: 1rem;
+
+.comingSoon {
   text-align: center;
 }
 /* IPAD DESIGN */
