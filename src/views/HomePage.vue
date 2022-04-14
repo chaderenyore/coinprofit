@@ -51,7 +51,7 @@
         <br />
         <div class="app-downloads">
         
-          <a href="#" target="_blank" rel="noopener noreferrer"
+          <a href="https://play.google.com/store/apps/details?id=com.procity.coinprofit" target="_blank" rel="noopener noreferrer"
             ><img
               src="../assets/images/goplay.svg"
               alt=""  
@@ -611,7 +611,7 @@
       </div>
       <div class="leaders-app-download">
        
-        <a href="#" target="_blank" rel="noopener noreferrer"
+        <a href="https://play.google.com/store/apps/details?id=com.procity.coinprofit" target="_blank" rel="noopener noreferrer"
           ><img src="../assets/images/goplay.svg" alt=""
         /></a>
 
@@ -996,7 +996,7 @@
           Get the app now on the Google Play Store.
         </p>
         <div class="exchange-download-wrapper">
-          <a href="#" target="_blank" rel="noopener noreferrer"
+          <a href="https://play.google.com/store/apps/details?id=com.procity.coinprofit" target="_blank" rel="noopener noreferrer"
             ><img
               src="../assets/images/goplay.svg"
               alt=""
@@ -1119,7 +1119,7 @@
         Get the app now on the Google Play Store.
       </p>
       <div class="exchange-download-wrapper">
-        <a href="#" target="_blank"
+        <a href="https://play.google.com/store/apps/details?id=com.procity.coinprofit" target="_blank"
           ><img
             src="../assets/images/goplay.svg"
             alt=""

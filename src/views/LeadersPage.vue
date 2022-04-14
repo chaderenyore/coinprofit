@@ -72,7 +72,7 @@
         </p>
 
         <div class="app-downloads">
-          <a href="#" target="_blank" rel="noopener noreferrer"
+          <a href="https://play.google.com/store/apps/details?id=com.procity.coinprofit" target="_blank" rel="noopener noreferrer"
             ><img
               src="@/assets/images/goplay.svg"
               alt=""
@@ -245,7 +245,7 @@
       </div>
       <div class="app-downloads wrapper"> 
 
-        <a href="#" target="_blank" rel="noopener noreferrer"
+        <a href="https://play.google.com/store/apps/details?id=com.procity.coinprofit" target="_blank" rel="noopener noreferrer"
           ><img
             src="@/assets/images/goplay.svg"
             alt=""
@@ -909,7 +909,7 @@
       <h6>Download the coinprofit app NOW to become a leader!</h6>
 
       <div class="leaderCTADownloadWrapper">
-        <a href="#" target="_blank" 
+        <a href="https://play.google.com/store/apps/details?id=com.procity.coinprofit" target="_blank" 
           ><img
             src="@/assets/images/goplay.svg"
             alt=""
