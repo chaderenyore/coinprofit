@@ -36,7 +36,6 @@
 
   @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-  
   * {
     margin: 0;
     padding: 0;
@@ -77,16 +76,17 @@
     --social-button-container: #f2f8ff;
     --plyr-color-main: #3374ea;
     --help-email-icon: #525b6d;
+    --load-more-button: #ffff;
+    --tutorial-card: #ffff;
   }
 
   .dark-theme {
     --light-color: #13141c;
     --dark-color: #f2f8ff;
     --nav-light: #09090b;
-    --navScroll-light: #310909;
+    --navScroll-light: #09090b;
     --navScrollp: #d8d4d4; /* for nav li a  */
     --navShadow: #f1eaea1a;
-    --navScroll-light: #160202;
     --dropdown-content: #13141c;
     --navScrollp: #d8d4d4; /* for nav li a  */
     --navShadow: #f1eaea1a;
@@ -106,6 +106,8 @@
     --help-contact-box-text: #f2f8ff;
     --social-button-container: #202230;
     --help-email-icon: transparent;
+    --load-more-button: #1c2029;
+    --tutorial-card: #1c2029;
   }
   html {
     scroll-behavior: smooth;
@@ -117,9 +119,9 @@
   ::-webkit-scrollbar {
     width: 10px;
   }
-    ::-webkit-scrollbar-track {
-      background-color: var(--navScroll-light);
-    }
+  ::-webkit-scrollbar-track {
+    background-color: var(--navScroll-light);
+  }
   ::-webkit-scrollbar-thumb {
     -webkit-border-radius: 30px;
     -webkit-background-color: #3374ea;

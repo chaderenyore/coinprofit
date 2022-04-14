@@ -12,11 +12,15 @@
       in one of our tutorials.
     </p>
   </section>
-  <ul v-if="helpvid" class="flex flex-col gap-6">
+  <ul v-if="helpvid" class="flex flex-col gap-6 md:flex-row justify-between">
     <li v-for="video in helpvid.results" :key="video.uid">
       <prismic-link :field="video">
-        <figure class="video-list flex flex-row gap-3 items-center rounded-xl">
-          <div class="video-thumbnail h-20 md:h-28 w-24 rounded-xl">
+        <figure
+          class="video-list flex flex-row gap-3 items-center md:flex-col md:max-w-[230px] md:min-h-[280px] md:max-h-[350px] rounded-xl"
+        >
+          <div
+            class="video-thumbnail h-20 md:h-28 w-24 md:w-[100%] rounded-xl md:rounded-none md:rounded-t-xl"
+          >
             <PrismicImage
               :field="video.data.thumbnail"
               class="thumbnial-image w-[100%] rounded-xl"
@@ -25,11 +29,11 @@
               <img src="@/assets/images/play-video.svg" alt="" />
             </div>
           </div>
-          <figcaption class="ml-3 flex flex-col">
-            <h1 class="text-sm md:text-xl font-bold text-[#3374EA] mb-3">
+          <figcaption class="ml-3 flex flex-col md:w-4/5 md:m-auto md:pb-2">
+            <h1 class="text-sm font-bold text-[#3374EA] mb-3">
               {{ $prismic.asText(video.data.name) }}
             </h1>
-            <p class="text-base md:text-lg text-[#8993a7]">
+            <p class="text-base text-[#8993a7]">
               {{ $prismic.asText(video.data.duration) }}
             </p>
           </figcaption>
@@ -46,6 +50,7 @@
 
 <script>
   export default {
+    inheritAttrs: false,
     data() {
       return {
         helpvid: "",
@@ -87,7 +92,7 @@
   }
 
   .video-list {
-    background: var(--nav-light);
+    background: var(--tutorial-card);
     box-shadow: 0 1.25rem 17px #1c192305;
     cursor: pointer;
   }
@@ -128,13 +133,23 @@
     height: 4.6875rem;
   }
 
+  @media screen and (min-width: 768px) {
+    .thumbnial-image {
+      height: 100%;
+    }
+
+    .play-video img {
+      height: unset;
+    }
+  }
+
   .pagination-button {
     cursor: pointer;
     border: none;
     padding: 0.8rem 2rem;
     margin: 0;
     text-decoration: none;
-    background: #ffffff 0% 0% no-repeat padding-box;
+    background: var(--load-more-button) 0% 0% no-repeat padding-box;
     box-shadow: 0px 1.25rem 1.0625rem #1c192305;
     border-radius: 1.875rem;
     transition: all 0.2s;

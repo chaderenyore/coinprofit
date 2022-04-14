@@ -79,7 +79,10 @@
   </main>
 
   <div v-if="error" class="pt-32 md:pt-24 mb-16">
-    <NotFound :errorMessage="errorMessage" />
+    <not-found :errorMessage="errorMessage">
+      This Means that the Document you're looking for does not exist or may have
+      been moved.
+    </not-found>
   </div>
 </template>
 
@@ -91,14 +94,12 @@
   import ImageCard from "@/components/Slices/ImageCard.vue";
   import ImageGallery from "@/components/Slices/ImageGallery.vue";
   import VideoPlayer from "@/components/Slices/VideoPlayer.vue";
-  import NotFound from "@/components/Help/NotFound.vue";
   import MobileImageScreenshotImage from "@/components/Slices/MobileImageScreenshotImage.vue";
   import TwitterButton from "vue-share-buttons/src/components/TwitterButton";
   import FacebookButton from "vue-share-buttons/src/components/FacebookButton";
   export default {
     components: {
       BaseCallToAction,
-      NotFound,
       TwitterButton,
       FacebookButton,
     },
@@ -145,7 +146,6 @@
             year: "numeric",
           });
         } catch (error) {
-          console.log(error.message);
           this.loading = false;
           this.error = true;
           this.errorMessage = error.message;
@@ -154,7 +154,7 @@
 
       searchTag(tag) {
         this.$router.push({
-          name: "help-search",
+          name: "help",
           query: {
             tag: tag,
           },

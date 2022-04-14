@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router";
 import HomePage from "../views/HomePage.vue";
 import BlogPost from "../views/Help/_uid.vue";
+import NProgress from "nprogress";
 
 const routes = [
   {
@@ -55,6 +56,7 @@ const routes = [
     meta: {
       auth: true,
       title: "Coinprofit - Help",
+      disableScroll: true,
     },
   },
   {
@@ -67,6 +69,14 @@ const routes = [
     },
   },
   {
+    path: "/help/tutorials",
+    redirect: "/help",
+  },
+  {
+    path: "/help/articles",
+    redirect: "/help",
+  },
+  {
     path: "/help/tutorials/:uid",
     component: () => import("../views/Tutorial/_uid.vue"),
     name: "TutorialVideo",
@@ -75,15 +85,23 @@ const routes = [
       title: "Coinprofit - Tutorial",
     },
   },
-  {
-    path: "/help/search",
-    name: "help-search",
-    component: () => import("../views/Help/_search.vue"),
-    meta: {
-      auth: true,
-      title: "Coinprofit - Help",
-    },
-  },
+  // {
+  //   path: "/help/search",
+  //   name: "help-search",
+  //   component: () => import("../views/Help/_search.vue"),
+  //   meta: {
+  //     auth: true,
+  //     title: "Coinprofit - Help",
+  //   },
+  //   beforeEnter: (to) => {
+  //     if (
+  //       Object.keys(to.query).length === 0 &&
+  //       to.query.constructor === Object
+  //     ) {
+  //       router.push("/help");
+  //     }
+  //   },
+  // },
   {
     path: "/:notfound(.*)",
     redirect: "/",
@@ -122,7 +140,9 @@ const routes = [
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
   routes,
-  scrollBehavior(_, _2, savedPosition) {
+  scrollBehavior(to, _, savedPosition) {
+    if (to.matched.some((m) => m.meta.disableScroll)) return;
+
     if (savedPosition) {
       return savedPosition;
     }
@@ -133,4 +153,17 @@ const router = createRouter({
   },
 });
 
+router.beforeResolve((to, _, next) => {
+  // If this isn't an initial page load.
+  if (to.name) {
+    // Start the route progress bar.
+    NProgress.start();
+  }
+  next();
+});
+
+router.afterEach(() => {
+  // Complete the animation of the route progress bar.
+  NProgress.done();
+});
 export default router;
