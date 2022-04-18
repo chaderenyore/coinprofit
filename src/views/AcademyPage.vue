@@ -149,7 +149,7 @@
       } else {
         this.selectedComponent = "academy-search";
         setTimeout(() => {
-          this.selectedComponent = "help-post-card";
+          this.selectedComponent = "academy-post-card";
         }, 200);
       }
     },
