@@ -80,7 +80,7 @@
       async callMultipleSearch(query) {
         const searchArticleValue = await this.searchArticles(query);
         this.articleSearchResult = searchArticleValue.results;
-        if (this.articleSearchResult == "" && this.tutorialSearchResult == "") {
+        if (this.articleSearchResult == "") {
           this.error = true;
           this.loading = false;
         } else {
