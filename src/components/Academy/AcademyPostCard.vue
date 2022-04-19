@@ -1,17 +1,4 @@
 <template>
-  <section class="mb-24">
-    <h1
-      class="text-center font-extrabold text-2xl md:text-3xl mb-3 text-[#3374ea]"
-    >
-      Our Helpful Academy Collection
-    </h1>
-    <p
-      class="help__article text-center text-[1.2rem] font-medium max-w-[636px] m-auto"
-    >
-      Welcome to our academy collection, remember to change it later if not we
-      will collect your cookies and eat them hahahahaha
-    </p>
-  </section>
   <div v-if="helpost">
     <ul
       class="flex justify-center flex-wrap gap-y-20 md:gap-y-16 gap-x-6 md:grid md:justify-center md:items-start md:content-center md:grid-cols-2 lg:flex lg:flex-wrap lg:justify-start xl:grid xl:grid-cols-3 xl:gap-x-5"

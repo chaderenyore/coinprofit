@@ -2,9 +2,12 @@
   <section class="help__section">
     <div class="help__section--div-1">
       <p class="help__section--welcome">Welcome to our Academy</p>
-      <h2 class="help__section--welcome__bold">What can we help you with?</h2>
+      <h2 class="help__section--welcome__bold">
+        Bringing you all you need to know about cryptocurrency to help you
+        become a profitable crypto trader and investors
+      </h2>
     </div>
-    <div class="help__cards">
+    <!-- <div class="help__cards">
       <div
         class="help__cards--card"
         :class="{
@@ -18,9 +21,8 @@
 
         <p>Articles</p>
       </div>
-    </div>
+    </div> -->
     <div class="help__section--search">
-      <p class="help__section--search-p">From Zero To Expert</p>
       <div>
         <form
           action="#"
@@ -33,9 +35,17 @@
             placeholder="Search"
             v-model.trim="searchQuery"
           />
-          <button class="help__section--search__button">Find</button>
+          <button class="help__button">Find</button>
         </form>
       </div>
+    </div>
+    <div class="help-all-articles text-center mt-8">
+      <button
+        class="help__button"
+        @click="selectedComponent = 'academy-post-card'"
+      >
+        All Articles
+      </button>
     </div>
   </section>
 
@@ -161,11 +171,7 @@
     padding-top: 7rem;
     width: 80%;
     margin: 0 auto;
-    margin-bottom: 3.2rem;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    margin-bottom: 5.2rem;
   }
 
   @media screen and (min-width: 520px) {
@@ -199,73 +205,14 @@
 
   .help__section--welcome__bold {
     color: #3374ea;
-    font-size: 1.5625rem;
+    font-size: 1.2rem;
     font-weight: 700;
     text-align: center;
-  }
-
-  .help__cards {
-    margin-top: 1.5625rem;
-    display: flex;
-  }
-
-  .help__cards--card {
-    cursor: pointer;
-    background: var(--help-hero-card);
-    border-radius: 0.875rem;
-    height: 10.25rem;
-    width: 9.375rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 1.25rem 1.0625rem #1c192305;
-    transition: all;
-  }
-
-  .help__cards--card:hover {
-    background-image: linear-gradient(180deg, #22a1f5, #677bff);
-  }
-
-  .help__cards--card:hover p {
-    color: #fff;
-  }
-
-  .help__cards--card:not(:first-child) {
-    margin-left: 1.25rem;
-  }
-
-  .help__cards__img-div {
-    margin-bottom: 0.5rem;
-  }
-
-  .help__cards__img-div img {
-    height: 65px;
-    width: 65px;
-  }
-
-  .help__cards--card p {
-    font-size: 1rem;
-    color: #3374ea;
-    font-weight: bold;
-  }
-
-  .card-on {
-    border: 2px solid #677bff;
   }
 
   .help__section--search {
     order: -2;
     margin-top: 1.5rem;
-  }
-
-  .help__section--search-p {
-    font-size: 1.0625rem;
-    line-height: 1.75rem;
-    color: var(--help-hero-text);
-    font-weight: 500;
-    margin: 0 auto;
-    text-align: center;
   }
 
   .help__section--search__form {
@@ -305,7 +252,7 @@
     color: #b3bcce;
   }
 
-  .help__section--search__button {
+  .help__button {
     border: none;
     cursor: pointer;
     background-image: linear-gradient(180deg, #22a1f5, #677bff);
@@ -321,8 +268,6 @@
 
   @media only screen and (min-width: 48.75rem) {
     .help__section {
-      display: grid;
-      grid-template-columns: 2fr 1fr;
       margin-bottom: 9rem;
     }
 
@@ -333,36 +278,23 @@
 
     .help__section--welcome {
       margin-bottom: 2rem;
-      text-align: left;
-    }
-
-    .help__cards {
-      grid-row: 1 / span 2;
-      margin-top: 0;
-      grid-column-start: 2;
-      justify-self: center;
     }
 
     .help__section--welcome__bold {
-      text-align: left;
-      font-size: 2rem;
       margin-bottom: 3rem;
+      max-width: 70%;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     .help__section--search__form {
       width: 80%;
+      margin: auto;
     }
 
     .help__section--search {
       margin-top: 0;
       order: unset;
-    }
-
-    .help__section--search-p {
-      margin: 0;
-      text-align: left;
-      line-height: 1.75rem;
-      width: 92%;
     }
   }
 
