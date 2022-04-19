@@ -38,6 +38,7 @@
               <div class="dropdown-content">
                 <router-link to="/about">About</router-link>
                 <router-link to="/blog">Blog</router-link>
+                <router-link to="/academy">Academy</router-link>
               </div>
             </div>
           </li>
@@ -187,10 +188,8 @@
     color: var(--fourth-color);
     font-size: 14px;
     position: relative;
-    transition:  font-size 0.5s ease;
-
+    transition: font-size 0.5s ease;
   }
-  
 
   /* Dropdown content (hidden by default) */
   .dropdown-content {
@@ -273,8 +272,6 @@
     padding: 4px 0;
   }
 
-
-
   .navscroll-active nav ul li a {
     color: var(--navScrollp);
     font-size: 15px;
@@ -286,10 +283,8 @@
 
   /*Apply styles after scroll end*/
 
-  
   /* on ipad pro screen */
   @media only screen and (max-width: 1024px) {
-
     .scrollTop {
       position: fixed;
       bottom: 400px;
@@ -329,14 +324,12 @@
       top: 0;
       width: 20%;
     }
-    .navscroll-active .navbar{
+    .navscroll-active .navbar {
       padding: 10px 0;
     }
   }
   /* on ipad screen */
   @media only screen and (max-width: 768px) {
-
-
     .backdrop.active {
       width: 100vw;
       height: 94vh;
@@ -362,7 +355,6 @@
         rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
     }
     .logo {
-
       width: 25%;
       object-fit: cover;
       position: absolute;
@@ -400,7 +392,7 @@
     .dropdown-content {
       position: relative;
     }
-     .navscroll-active .navbar{
+    .navscroll-active .navbar {
       padding: 30px 0;
     }
     nav ul li.actn {
@@ -434,7 +426,6 @@
   }
   /* On Mobile Screens */
   @media only screen and (max-width: 440px) {
-
     .backdrop.active {
       width: 100vw;
       height: 100vh;
@@ -495,8 +486,8 @@
       font-size: 16px;
     }
 
-     .navscroll-active .navbar{
-       padding: 20px 30px;
+    .navscroll-active .navbar {
+      padding: 20px 30px;
     }
     nav ul li.actn {
       margin-left: 30px !important;
@@ -508,6 +499,5 @@
       color: #fff;
       font-weight: bold;
     }
-    
   }
 </style>

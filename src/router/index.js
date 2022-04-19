@@ -103,8 +103,23 @@ const routes = [
   //   },
   // },
   {
-    path: "/:notfound(.*)",
-    redirect: "/",
+    path: "/academy",
+    name: "academy",
+    component: () => import("../views/AcademyPage.vue"),
+    meta: {
+      auth: true,
+      title: "Coinprofit - Academy",
+      disableScroll: true,
+    },
+  },
+  {
+    path: "/academy/articles/:uid",
+    component: () => import("../views/Academy/_uid.vue"),
+    name: "SingleAcademyPost",
+    meta: {
+      auth: true,
+      title: "Coinprofit - Academy Post",
+    },
   },
   {
     path: "/calculator",
@@ -134,6 +149,10 @@ const routes = [
       auth: true,
       title: "Coinprofit - Privacy policy",
     },
+  },
+  {
+    path: "/:notfound(.*)",
+    redirect: "/",
   },
 ];
 

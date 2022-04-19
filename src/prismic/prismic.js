@@ -20,6 +20,10 @@ const prismic = createPrismic({
         type: "tutorial",
         path: "/help/tutorials/:uid",
       },
+      {
+        type: "academy",
+        path: "/academy/articles/:uid",
+      },
     ],
   },
 });
