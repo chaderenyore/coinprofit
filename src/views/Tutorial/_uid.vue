@@ -120,7 +120,7 @@
 
       searchTag(tag) {
         this.$router.push({
-          name: "help-search",
+          name: "help",
           query: {
             tag: tag,
           },
