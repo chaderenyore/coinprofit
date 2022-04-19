@@ -12,10 +12,7 @@
           <p>Helping you become a profitable crypto trader and investor</p>
         </div>
         <div class="social-link">
-          <a
-            href="https://twitter.com/coinprofit_app" target="_blank"
-            
-          >
+          <a href="https://twitter.com/coinprofit_app" target="_blank">
             <svg
               style="fill: #3374ea"
               xmlns="http://www.w3.org/2000/svg"
@@ -27,10 +24,7 @@
               /></svg
           ></a>
 
-          <a
-            href="https://www.facebook.com/coinprofitapp"
-            target="_blank"
-            >
+          <a href="https://www.facebook.com/coinprofitapp" target="_blank">
             <svg
               style="fill: #3374ea"
               xmlns="http://www.w3.org/2000/svg"
@@ -42,10 +36,7 @@
               /></svg
           ></a>
 
-          <a
-            href="https://t.me/+dHybmF8BHyY3ZDY0"
-            target="_blank">
-            
+          <a href="https://t.me/+dHybmF8BHyY3ZDY0" target="_blank">
             <svg
               style="fill: #1188c3"
               xmlns="http://www.w3.org/2000/svg"
@@ -100,7 +91,7 @@
             </button>
             <div class="footerContent">
               <router-link to="/help"><p>How to Guide</p></router-link>
-              <a href="#"><p>Learn</p></a>
+              <router-link to="/academy"><p>Academy</p></router-link>
             </div>
           </div>
 
@@ -124,7 +115,6 @@
       </div>
     </footer>
 
-    
     <footer class="computer-footer">
       <div class="computer-footer-wrapper">
         <div class="main-app-container">
@@ -197,15 +187,19 @@
             <a href="#" @click.prevent><p>Learn</p></a>
           </div>
         </div>
-      
-      <div class="main-app-container">
-        <div class="company-head">
-          <h3>Products</h3>
-          <a href="https://play.google.com/store/apps/details?id=com.procity.coinprofit" target="_blank"><p>Android App</p></a>
-          <a href="#"><p>ios coming soon</p></a>
+
+        <div class="main-app-container">
+          <div class="company-head">
+            <h3>Products</h3>
+            <a
+              href="https://play.google.com/store/apps/details?id=com.procity.coinprofit"
+              target="_blank"
+              ><p>Android App</p></a
+            >
+            <a href="#"><p>ios coming soon</p></a>
+          </div>
         </div>
-      </div>
-  
+
         <div class="main-app-container">
           <div class="company-head">
             <h3>Legal</h3>
@@ -216,7 +210,6 @@
             <router-link to="/aml_policy"><p>AML Policies</p></router-link>
           </div>
         </div>
-
       </div>
     </footer>
     <div class="copyright">
