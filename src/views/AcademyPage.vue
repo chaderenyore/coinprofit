@@ -49,7 +49,7 @@
     </div>
   </section>
 
-  <section class="help__guide-section w-[85%] md:w-[80%] m-auto">
+  <section class="help__guide-section w-[85%] mt-32 md:w-[80%] m-auto">
     <KeepAlive>
       <component :is="selectedComponent" @search-tag="searchTag" />
     </KeepAlive>
@@ -205,9 +205,10 @@
 
   .help__section--welcome__bold {
     color: #3374ea;
-    font-size: 1.2rem;
-    font-weight: 700;
+    font-size: 0.8rem;
+    font-weight: 600;
     text-align: center;
+    line-height: 1.3;
   }
 
   .help__section--search {
@@ -283,6 +284,7 @@
     .help__section--welcome__bold {
       margin-bottom: 3rem;
       max-width: 70%;
+      font-size: 1rem;
       margin-left: auto;
       margin-right: auto;
     }
