@@ -297,15 +297,49 @@
     mounted() {
       this.showSlides(this.slideIndex);
     },
-    // Usage with context the component
+
     head: {
       // To use "this" in the component, it is necessary to return the object through a function
       title: function () {
         return {
           inner: this.title,
+          separator: " ",
         };
       },
-      meta: [{ name: "description", content: "My description", id: "desc" }],
+      meta: [
+        {
+          name: "description",
+          content:
+            "We are a small team of crypto traders and investors on a mission to make crypto trading and investment profitable for everyone",
+          id: "desc",
+        },
+        {
+          name: "keywords",
+          content:
+            "bitcoin,crypto tracking, track crypto assets, coinprofit leaders, eth, tracking, portfolio tracking",
+          id: "keywords",
+        },
+        {
+          name: "apple-mobile-web-app-capable",
+          content: "yes",
+        },
+        {
+          name: "apple-mobile-web-app-status-bar-style",
+          content: "black",
+        },
+        {
+          name: "apple-mobile-web-app-title",
+          content: "About CoinProfit",
+        },
+        {
+          property: "og:description",
+          content: "About CoinProfit",
+        },
+        {
+          property: "og:title",
+          content: "About Coinprofit",
+        },
+      ],
     },
   };
 </script>

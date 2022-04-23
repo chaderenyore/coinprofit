@@ -4,7 +4,7 @@
       <div class="calcContnet">
         <h2>THE IF CALCULATOR</h2>
         <p>
-          THE IF CALCULATOR Crypto boss, we love “I told you so. If you bought
+          THE IF CALCULATOR. Crypto boss, we love “I told you so. If you bought
           $1,000 worth of Solana at $2, you would have been a billionaire by
           now. If you bought this, If you bought that… Anyway, we added this as
           a fun feature to the CoinProfit App! We call it the “If Calculator.”
@@ -34,6 +34,61 @@
   </div>
   <BaseCallToAction />
 </template>
+
+<script>
+  export default {
+    data() {
+      return {
+        title: "Coinprofit",
+      };
+    },
+
+    head: {
+      // To use "this" in the component, it is necessary to return the object through a function
+      title: function () {
+        return {
+          inner: this.title,
+          separator: "-",
+          complement: "Calculator",
+        };
+      },
+      meta: [
+        {
+          name: "description",
+          content:
+            "The If calculator lets you calculate how much you would have made if you bought a coin with a certain amount of money on a particular day or price and HODL till the time of doing the calculation.",
+          id: "desc",
+        },
+        {
+          name: "keywords",
+          content:
+            "bitcoin,crypto tracking, track crypto assets, coinprofit leaders, eth, tracking, portfolio tracking",
+          id: "keywords",
+        },
+        {
+          name: "apple-mobile-web-app-capable",
+          content: "yes",
+        },
+        {
+          name: "apple-mobile-web-app-status-bar-style",
+          content: "black",
+        },
+        {
+          name: "apple-mobile-web-app-title",
+          content: "CoinProfit - Calculator",
+        },
+        {
+          property: "og:description",
+          content: "CoinProfit - THE IF CALCULATOR",
+        },
+        {
+          property: "og:title",
+          content: "THE IF CALCULATOR",
+        },
+      ],
+    },
+  };
+</script>
 
 <style scoped>
   .mainContainer {

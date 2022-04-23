@@ -112,7 +112,7 @@
 
     data() {
       return {
-        title: "Coinprofit Academy",
+        title: "Coinprofit",
         selectedComponent: "academy-post-card",
         searchQuery: "",
       };
@@ -165,15 +165,49 @@
       }
     },
 
-    // Usage with context the component
     head: {
       // To use "this" in the component, it is necessary to return the object through a function
       title: function () {
         return {
           inner: this.title,
+          separator: "-",
+          complement: "Academy",
         };
       },
-      meta: [{ name: "description", content: "My description", id: "desc" }],
+      meta: [
+        {
+          name: "description",
+          content:
+            "The CoinProfit Academy, Bringing you all you need to know about cryptocurrency to help you become a profitable crypto trader and investors",
+          id: "desc",
+        },
+        {
+          name: "keywords",
+          content:
+            "bitcoin,crypto tracking, track crypto assets, coinprofit leaders, eth, tracking, portfolio tracking",
+          id: "keywords",
+        },
+        {
+          name: "apple-mobile-web-app-capable",
+          content: "yes",
+        },
+        {
+          name: "apple-mobile-web-app-status-bar-style",
+          content: "black",
+        },
+        {
+          name: "apple-mobile-web-app-title",
+          content: "The CoinProfit Academy",
+        },
+        {
+          property: "og:description",
+          content: "Coin Profit Academy",
+        },
+        {
+          property: "og:title",
+          content: "Coin Profit Academy",
+        },
+      ],
     },
   };
 </script>
