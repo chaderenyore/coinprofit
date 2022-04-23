@@ -19,15 +19,6 @@
       TheHeader: TheHeader,
       TheFooter: TheFooter,
     },
-
-    watch: {
-      $route: {
-        handler(to) {
-          document.title = to.meta.title || "Coinprofit";
-        },
-        immediate: true,
-      },
-    },
   };
 </script>
 
@@ -43,7 +34,6 @@
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
   }
-
 
   p {
     color: var(
@@ -158,7 +148,6 @@
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 1;
   }
-
 
   *:focus {
     -webkit-tap-highlight-color: transparent;

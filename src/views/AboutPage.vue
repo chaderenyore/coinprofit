@@ -193,8 +193,6 @@
           </div> -->
           </div>
           <!-- end team_memebers_box-->
-
-
         </div>
         <!-- end team_content-->
 
@@ -267,6 +265,7 @@
   export default {
     data() {
       return {
+        title: "About Coinprofit",
         slideIndex: 1,
       };
     },
@@ -297,6 +296,16 @@
     },
     mounted() {
       this.showSlides(this.slideIndex);
+    },
+    // Usage with context the component
+    head: {
+      // To use "this" in the component, it is necessary to return the object through a function
+      title: function () {
+        return {
+          inner: this.title,
+        };
+      },
+      meta: [{ name: "description", content: "My description", id: "desc" }],
     },
   };
 </script>

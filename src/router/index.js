@@ -55,7 +55,6 @@ const routes = [
     component: () => import("../views/HelpPage.vue"),
     meta: {
       auth: true,
-      title: "Coinprofit - Help",
       disableScroll: true,
     },
   },

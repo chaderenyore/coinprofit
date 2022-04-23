@@ -1,4 +1,7 @@
 <template>
+  <!-- <teleport to="head">
+    <title>CoinProfit Helpage</title>
+  </teleport> -->
   <section class="help__section">
     <div class="help__section--div-1">
       <p class="help__section--welcome">Welcome to our help center</p>
@@ -124,6 +127,7 @@
 
     data() {
       return {
+        title: "CoinProfit Help",
         selectedComponent: "help-post-card",
         searchQuery: "",
       };
@@ -184,6 +188,17 @@
           contactSection.scrollIntoView({ behavior: "smooth" });
         }, 800);
       }
+    },
+
+    // Usage with context the component
+    head: {
+      // To use "this" in the component, it is necessary to return the object through a function
+      title: function () {
+        return {
+          inner: this.title,
+        };
+      },
+      meta: [{ name: "description", content: "My description", id: "desc" }],
     },
   };
 </script>
