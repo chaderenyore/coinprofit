@@ -190,7 +190,7 @@
 
     watch: {
       articleTitle(newValue, oldvalue_trash) {
-        document.title = newValue[0].text + " - CoinProfit Help Center";
+        document.title = newValue[0].text + " - CoinProfit Help Articles";
         console.log(oldvalue_trash);
       },
     },

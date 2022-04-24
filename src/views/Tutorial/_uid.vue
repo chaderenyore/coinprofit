@@ -7,6 +7,21 @@
     </div>
   </section>
   <main v-if="video" class="pt-24 article-main">
+    <teleport to="head">
+      <template>
+        <meta property="og:image" :content="video.data.thumbnail.url" />
+        <meta name="description" :content="video.data.name" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <meta name="apple-mobile-web-app-title" :content="video.data.name" />
+        <meta name="og:description" :content="video.data.name" />
+        <meta property="og:title" :content="video.data.name" />
+        <meta
+          name="keywords"
+          content="bitcoin, btc education, bitcoin trading, crypto tracking, track crypto assets, tracking, Coinprofit Help Tutorials"
+        />
+      </template>
+    </teleport>
     <article
       class="article-container p-0 rounded-3xl w-[90%] md:w-[60%] lg:w-2/4 m-auto"
     >
@@ -97,6 +112,7 @@
         video: null,
         error: false,
         errorMessage: null,
+        tutorialTitle: null,
       };
     },
     computed: {
@@ -111,6 +127,8 @@
             "tutorial",
             this.$route.params.uid
           );
+          this.tutorialTitle = this.video.data.name;
+          console.log(this.video);
         } catch (error) {
           this.loading = false;
           this.error = true;
@@ -125,6 +143,12 @@
             tag: tag,
           },
         });
+      },
+    },
+    watch: {
+      tutorialTitle(newValue, oldvalue_trash) {
+        document.title = newValue[0].text + " - CoinProfit Help Tutorials";
+        console.log(oldvalue_trash);
       },
     },
 
