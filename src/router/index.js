@@ -121,6 +121,17 @@ const routes = [
       title: "Coinprofit - Academy Post",
     },
   },
+
+  {
+    path: "/affiliate",
+    name: "affiliate",
+    component: () => import("../views/AffiliatePage.vue"),
+    meta: {
+      auth: true,
+      title: "Coinprofit - Affiliates | Earn commissions",
+    },
+  },
+
   {
     path: "/calculator",
     name: "calculator",

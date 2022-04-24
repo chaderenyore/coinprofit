@@ -92,6 +92,7 @@
             <div class="footerContent">
               <router-link to="/help"><p>How to Guide</p></router-link>
               <router-link to="/academy"><p>Academy</p></router-link>
+              <router-link to="/affiliate"><p>Affiliate</p></router-link>
             </div>
           </div>
 
@@ -185,6 +186,7 @@
             <h3>Help</h3>
             <router-link to="/help"><p>How to Guide</p></router-link>
             <a href="#" @click.prevent><p>Learn</p></a>
+            <router-link to="/affiliate"><p>Affiliate</p></router-link>
           </div>
         </div>
 
