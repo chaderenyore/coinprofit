@@ -184,7 +184,7 @@
           <div class="company-head">
             <h3>Help</h3>
             <router-link to="/help"><p>How to Guide</p></router-link>
-            <a href="#" @click.prevent><p>Learn</p></a>
+            <router-link to="/academy"><p>Academy</p></router-link>
           </div>
         </div>
 
