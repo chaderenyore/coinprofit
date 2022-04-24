@@ -7,6 +7,24 @@
     </div>
   </section>
   <main v-if="post" class="pt-24 article-main">
+    <teleport to="head">
+      <template>
+        <meta property="og:image" :content="post.data.cover_image.url" />
+        <meta name="description" :content="post.data.preview_text" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <meta
+          name="apple-mobile-web-app-title"
+          :content="post.data.article_title"
+        />
+        <meta name="og:description" :content="post.data.article_title" />
+        <meta property="og:title" :content="post.data.article_title" />
+        <meta
+          name="keywords"
+          content="bitcoin, btc education, bitcoin trading, crypto tracking, track crypto assets, tracking, coinprofit help"
+        />
+      </template>
+    </teleport>
     <article
       class="article-container p-0 rounded-3xl w-[90%] md:w-[60%] lg:w-2/4 m-auto"
     >
@@ -119,6 +137,7 @@
         }),
         articleDate: null,
         author: null,
+        articleTitle: null,
       };
     },
     computed: {
@@ -145,6 +164,7 @@
             month: "short",
             year: "numeric",
           });
+          this.articleTitle = this.post.data.article_title;
         } catch (error) {
           this.loading = false;
           this.error = true;
@@ -166,6 +186,13 @@
       next((vm) => {
         vm.getPost();
       });
+    },
+
+    watch: {
+      articleTitle(newValue, oldvalue_trash) {
+        document.title = newValue[0].text + " - CoinProfit Help Center";
+        console.log(oldvalue_trash);
+      },
     },
 
     created() {
