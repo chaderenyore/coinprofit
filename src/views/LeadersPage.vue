@@ -56,15 +56,15 @@
           see the coins you buy, when you buy and when you sell. <br />
           <br />
 
-          We have integration with DEX (BSC, ETH) and CEX (Binance, Kucoin and
-          FTX). This means your subscribers will be able to see anytime you
-          perform a trade on any of these platforms.
+          We have integration with Binance, Kucoin and FTX. This means your
+          subscribers will be able to see anytime you perform a trade on any of
+          these platforms.
           <br />
           <br />
 
           Your subscribers will only see the coins you buy/sell and the price of
           the coin as at when you executed the trade but won&rsquo;t see the
-          amount of money yoursquore trading with. <br />
+          amount of money you are trading with. <br />
           <br />
 
           And of course, you can set your own subscription fee per month. $5,
