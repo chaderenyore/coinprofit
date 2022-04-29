@@ -12,7 +12,7 @@
 
         <div class="share-portfolio-img-box">
           <img
-            src="@/assets/images/appUI.webp"
+            src="@/assets/images/affiliate/referral-dashboard.png"
             alt="Share Image"
             class="share-portfolio-img"
           />
@@ -60,7 +60,7 @@
         <div class="benfitsImagesoneWrapper">
           <img src="@/assets/images/about/mainblob.svg" class="benfitBlobOne" />
           <img
-            src="@/assets/images/appUI.webp"
+            src="@/assets/images/affiliate/pricing.png"
             alt="Share Image"
             class="benefitOneIMG"
           />
@@ -124,7 +124,10 @@
                 src="@/assets/images/affiliate/cloud-download.png"
                 alt="IMAGE"
               />
-              <h3>STEP 1</h3>
+              <div>
+                <span>1</span>
+                <h3>STEP 1</h3>
+              </div>
             </div>
 
             <h4>Download the App</h4>
@@ -151,7 +154,10 @@
                 src="@/assets/images/affiliate/social-media.png"
                 alt="IMAGE"
               />
-              <h3>STEP 2</h3>
+              <div>
+                <span>2</span>
+                <h3>STEP 2</h3>
+              </div>
             </div>
 
             <h4>Share Your Referral Code</h4>
@@ -175,7 +181,11 @@
           <div class="core_features_box">
             <div class="core-features_img_wrapper">
               <img src="@/assets/images/affiliate/earn.png" alt="IMAGE" />
-              <h3>STEP 3</h3>
+
+              <div>
+                <span>3</span>
+                <h3>STEP 3</h3>
+              </div>
             </div>
 
             <h4>Earn</h4>
@@ -212,11 +222,109 @@
         <!-- <p class="comingSoon" >IOS coming soon...!</p> -->
       </div>
     </div>
+
+    <!-- FAQ SECTION -->
+
+    <section>
+      <div class="faq-wrapper">
+        <h1>Affiliate FAQs</h1>
+        <div class="faqcontainer">
+          <div class="faqwrapper">
+            <button class="faqtoggle">
+              <h3>Do I need to upgrade to a premium plan to become an affiliate?</h3>
+              <i class="fa fa-chevron-down faqicon"></i>
+            </button>
+            <div class="faqcontent">
+              <p>
+               No. When you create an account, you can start promoting right away!
+              </p>
+            </div>
+          </div>
+          <div class="faqwrapper">
+            <button class="faqtoggle">
+              <h3>How much can I make as an affiliate?</h3>
+              <i class="fa fa-chevron-down faqicon"></i>
+            </button>
+            <div class="faqcontent">
+              <p>
+                How much you can make depends entirely on you. We pay you 10% commission anytime your referral upgrade or renew their subscription. Our premium plan starts at $4.95. So the more you refer, the more you make. There is no limit to the number of people you can refer to.
+              </p>
+            </div>
+          </div>
+          <div class="faqwrapper">
+            <button class="faqtoggle">
+              <h3>What is the minimum withdrawal Threshold?</h3>
+              <i class="fa fa-chevron-down faqicon"></i>
+            </button>
+            <div class="faqcontent">
+              <p>
+                The minimum withdrawal threshold is just $10. 
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="faqcontainer faqtwo">
+          <div class="faqwrapper">
+            <button class="faqtoggle">
+              <h3>How Do I Get Paid?</h3>
+              <i class="fa fa-chevron-down faqicon"></i>
+            </button>
+            <div class="faqcontent">
+              <p>
+                We use a third party company to process your payment.
+              </p>
+            </div>
+          </div>
+          
+          
+        </div>
+      </div>
+    </section>
   </div>
   <BaseCallToAction />
 </template>
 
+<script>
+export default {
+  methods: {
+    affiliateFaq() {
+  // FAQ SECTION
+      let faqtoggles = document.getElementsByClassName("faqtoggle");
+      let faqcontentDiv = document.getElementsByClassName("faqcontent");
+      let faqicons = document.getElementsByClassName("faqicon");
 
+      for (let i = 0; i < faqtoggles.length; i++) {
+        faqtoggles[i].addEventListener("click", () => {
+          if (
+            parseInt(faqcontentDiv[i].style.height) !=
+            faqcontentDiv[i].scrollHeight
+          ) {
+            faqcontentDiv[i].style.height =
+              faqcontentDiv[i].scrollHeight + "px";
+            faqicons[i].classList.remove("fa-chevron-down");
+            faqicons[i].classList.add("fa-chevron-up");
+          } else {
+            faqcontentDiv[i].style.height = "0px";
+            faqicons[i].classList.remove("fa-chevron-up");
+            faqicons[i].classList.add("fa-chevron-down");
+          }
+
+          for (let j = 0; j < faqcontentDiv.length; j++) {
+            if (j !== i) {
+              faqcontentDiv[j].style.height = "0px";
+              faqicons[j].classList.remove("fa-chevron-up");
+              faqicons[j].classList.add("fa-chevron-down");
+            }
+          }
+        });
+      }
+    }
+  },
+  mounted() {
+    this.affiliateFaq();
+  }
+}
+</script>
 
 <style scoped>
 .mainContainer {
@@ -621,7 +729,7 @@
 .core_features_box {
   display: block;
   width: 100%;
-  padding: 1rem;
+  padding: 2rem 1rem 1rem;
   background: var(--third-color) no-repeat padding-box;
   box-shadow: 0px 3px 6px #00000008;
   margin: 0 auto 5rem;
@@ -639,6 +747,15 @@
 .core-features_img_wrapper img {
   width: 40%;
 }
+.core-features_img_wrapper span {
+  font-size: 5rem;
+  color: #B3BCCE;
+  font-weight: 800;
+  position: absolute;
+  margin-top: -15px;
+  margin-left: -20px;
+  opacity: 0.1;
+}
 .core_features_box h3 {
   text-align: left;
   margin: 1rem 0;
@@ -648,6 +765,7 @@
   text-align: left;
   margin: 1rem 0;
   color: #3374ea;
+  margin-top: 3rem;
 }
 
 .app-downloadsAffiliates {
@@ -764,4 +882,101 @@
     margin-right: 1rem;
   }
 }
+
+
+/* code for FAQ SECTION */
+.faq-wrapper {
+  max-width: 90%;
+  margin: 30px auto;
+}
+.faqcontainer {
+  width: 100%;
+  margin: auto;
+}
+.faq-wrapper h1 {
+  text-align: center;
+  color: #3374ea;
+  margin-bottom: 50px;
+  font-family: "Montserrat", sans-serif;
+}
+.faqwrapper {
+  background-color: var(--third-color);
+  margin-bottom: 20px;
+  padding: 15px 30px;
+  border-radius: 5px;
+  box-shadow: 0px 20px 17px #1c192305;
+}
+.faqtoggle,
+.faqcontent {
+  font-family: "Montserrat", sans-serif;
+}
+.faqwrapper h3 {
+  color: #3374ea;
+  font-weight: 600;
+}
+.faqwrapper i {
+  color: #3374ea;
+}
+.faqtoggle {
+  width: 100%;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 16px;
+  color: #111130;
+  font-weight: 500;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 15px 0;
+  text-align: left;
+}
+
+.faqcontent {
+  color: var(--dark-color);
+  position: relative;
+  font-size: 16px;
+  text-align: left;
+  line-height: 30px;
+  height: 0;
+  overflow: hidden;
+  transition: all 1s;
+}
+
+@media only screen and (min-width: 1024px) {
+  .faq-wrapper h1 {
+    width: 100%;
+    margin: 0 auto 2rem;
+    text-align: center;
+    letter-spacing: 0px;
+    color: #3374ea;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    font-size: 3rem;
+    text-transform: capitalize;
+  }
+  .faqwrapper h3 {
+    color: #3374ea;
+    font-weight: 800;
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+    .faq-wrapper {
+    max-width: 50%;
+    margin: 5rem auto;
+  }
+  .faq-wrapper h1 {
+    font-size: 2rem;
+  }
+
+  .faqwrapper h3 {
+    font-size: 1rem;
+    color: #3374ea;
+    font-weight: 600;
+  }
+}
+
 </style>
