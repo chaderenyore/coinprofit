@@ -120,37 +120,18 @@
 
           <div class="core_features_box">
             <div class="core-features_img_wrapper">
-              <img src="@/assets/images/about/security.png" alt="IMAGE" />
+              <img
+                src="@/assets/images/affiliate/cloud-download.png"
+                alt="IMAGE"
+              />
               <h3>STEP 1</h3>
             </div>
 
             <h4>Download the App</h4>
 
             <p>
-             Download the CoinProfit App from either Playstore or Apple Store and copy your affiliate ID from your referral dashboard.
-            </p>
-          </div>
-        </div>
-
-        <div class="core_feature_main_wrapper">
-          <div class="core_blobimg_wrapper">
-            <img
-              src="@/assets/images/about/core_blob.png"
-              alt=""
-              class="core_blobimg"
-            />
-          </div>
-
-          <div class="core_features_box">
-            <div class="core-features_img_wrapper">
-              <img src="@/assets/images/about/money.png" alt="IMAGE" />
-              <h3>STEP 2</h3>
-            </div>
-
-            <h4>Share Your Referral Code</h4>
-
-            <p>
-              Share with your family and friends, invite them to download the CoinProfit App and use your referral Code on sign up.
+              Download the CoinProfit App from either Playstore or Apple Store
+              and copy your affiliate ID from your referral dashboard.
             </p>
           </div>
         </div>
@@ -167,19 +148,68 @@
           <div class="core_features_box">
             <div class="core-features_img_wrapper">
               <img
-                src="@/assets/images/about/customer_service.png"
+                src="@/assets/images/affiliate/social-media.png"
                 alt="IMAGE"
               />
+              <h3>STEP 2</h3>
+            </div>
+
+            <h4>Share Your Referral Code</h4>
+
+            <p>
+              Share with your family and friends, invite them to download the
+              CoinProfit App and use your referral Code on sign up.
+            </p>
+          </div>
+        </div>
+
+        <div class="core_feature_main_wrapper">
+          <div class="core_blobimg_wrapper">
+            <img
+              src="@/assets/images/about/core_blob.png"
+              alt=""
+              class="core_blobimg"
+            />
+          </div>
+
+          <div class="core_features_box">
+            <div class="core-features_img_wrapper">
+              <img src="@/assets/images/affiliate/earn.png" alt="IMAGE" />
               <h3>STEP 3</h3>
             </div>
 
             <h4>Earn</h4>
 
             <p>
-             Earn commission anytime your friends upgrade or renew their premium subscription. As long as they keep their subscription active, you get paid!
+              Earn commission anytime your friends upgrade or renew their
+              premium subscription. As long as they keep their subscription
+              active, you get paid!
             </p>
           </div>
         </div>
+      </div>
+      <p>Become an Affiliate &ndash; Download the CoinProfit App</p>
+      <div class="app-downloadsAffiliates">
+        <a
+          href="https://play.google.com/store/apps/details?id=com.procity.coinprofit"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><img
+            src="@/assets/images/goplay.svg"
+            alt=""
+            srcset=""
+            class="app-download"
+        /></a>
+
+        <a href="#" target="_blank" rel="noopener noreferrer"
+          ><img
+            src="@/assets/images/appstore.svg"
+            alt=""
+            srcset=""
+            class="app-download"
+        /></a>
+
+        <!-- <p class="comingSoon" >IOS coming soon...!</p> -->
       </div>
     </div>
   </div>
@@ -556,18 +586,26 @@
   color: var(--fourth-color);
   font-size: 1rem;
   text-align: center;
-  margin: 10px 0;
+  margin: 10px auto 0;
   line-height: 30px;
+  max-width: 600px;
 }
+
+@media (min-width: 1200px) {
+  .affiliate-steps-wrapper {
+    margin-top: 25rem;
+  }
+}
+
 .core-features_wrapper {
   width: 100%;
   margin-top: 2rem;
   text-align: center;
 }
+.core_feature_main_wrapper p {
+  text-align: left;
+}
 
- .core_feature_main_wrapper p {
-    text-align: left !important;
-  }
 .core_blobimg_wrapper {
   z-index: -1;
   width: 100%;
@@ -596,6 +634,7 @@
   margin: 0 auto;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 .core-features_img_wrapper img {
   width: 40%;
@@ -611,7 +650,23 @@
   color: #3374ea;
 }
 
+.app-downloadsAffiliates {
+  width: 100%;
+  text-align: center;
+}
+.app-downloadsAffiliates img {
+   width: 12rem;
+  margin: 0.5rem 1rem;
+}
+
 @media only screen and (min-width: 768px) {
+  .core_feature_main_wrapper {
+    vertical-align: middle;
+    display: inline-block;
+    width: 40%;
+    margin: 2rem 1rem 0;
+  }
+
   .core_blobimg_wrapper {
     z-index: -1;
     width: 100%;
@@ -626,13 +681,24 @@
   }
 
   .core_features_box {
+    padding: 2rem 2rem 3rem;
+    background: var(--third-color) no-repeat padding-box;
     box-shadow: 0px 3px 6px #00000008;
     font-family: "Montserrat", sans-serif;
     border-radius: 10px;
   }
-}
 
-@media (min-width: 1024px) {
+  .app-downloadsAffiliates {
+    width: 100%;
+    text-align: center;
+    margin: 30px auto 0;
+  }
+  .app-downloadsAffiliates img {
+    width: 14rem;
+    display: inline-block;
+  }
+}
+@media only screen and (min-width: 1024px) {
   .core_blobimg_wrapper {
     z-index: -1;
     width: 100%;
@@ -645,41 +711,31 @@
   .core_blobimg {
     width: 40%;
   }
-}
-@media (min-width: 1200px) {
-  .affiliate-steps-wrapper {
-    margin-top: 25rem;
-  }
-  .affiliate-steps-wrapper h1 {
-    width: 100%;
-    font-size: 2.5rem;
-    font-weight: 800;
-    letter-spacing: 0;
-    line-height: 50px;
-  }
-  .affiliate-steps-wrapper p {
-    width: 50%;
-    font-size: 1rem;
+
+  .app-downloadsAffiliates {
+    width: 80%;
+    margin: 30px auto;
     text-align: center;
-    margin: 10px auto 0;
-    line-height: 30px;
   }
+  .app-downloadsAffiliates img {
+    width: 16rem;
+    display: inline-block;
+    margin-right: 1rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
   .core_feature_main_wrapper {
     vertical-align: middle;
     display: inline-block;
     width: 30%;
-    margin: 3rem 1rem 5rem;
-  }
-  .core_feature_main_wrapper p {
-    text-align: left !important;
-    width: 100%;
+    margin: 3rem 1rem 0;
   }
   .core_feature_main_wrapper:hover {
     transition: 1s;
     filter: saturate(100%);
     transform: scale(1.1);
   }
- 
 
   .core_blobimg_wrapper {
     z-index: -1;
@@ -693,12 +749,19 @@
   .core_blobimg {
     width: 40%;
   }
-
   .core_features_box {
-
     box-shadow: 0px 3px 6px #00000008;
-    font-family: "Montserrat", sans-serif;
     border-radius: 10px;
+  }
+  .app-downloadsAffiliates {
+    width: 80%;
+    text-align: center;
+    margin-top: 5px;
+  }
+  .app-downloadsAffiliates img {
+    width: 15rem;
+    display: inline-block;
+    margin-right: 1rem;
   }
 }
 </style>
