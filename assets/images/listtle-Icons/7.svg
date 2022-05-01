@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="119.209" height="76.988" viewBox="0 0 119.209 76.988">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_1302" data-name="Rectangle 1302" width="119.209" height="76.988" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <rect id="Rectangle_1301" data-name="Rectangle 1301" width="119.209" height="76.988" transform="translate(0 0)" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-3">
+      <rect id="Rectangle_1300" data-name="Rectangle 1300" width="85.867" height="38.5" transform="translate(33.342 38.488)" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-4">
+      <path id="Path_5005" data-name="Path 5005" d="M85.869,38.488H33.342L66.684,57.742,33.342,76.988H85.869l33.34-19.246Z" fill="none"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" x1="-0.388" y1="1" x2="-0.377" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#c4c9e4"/>
+      <stop offset="0.189" stop-color="#d6daec"/>
+      <stop offset="0.477" stop-color="#edeef6"/>
+      <stop offset="0.753" stop-color="#fafafc"/>
+      <stop offset="1" stop-color="#fff"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_5470" data-name="Group 5470" clip-path="url(#clip-path)">
+    <g id="Group_5469" data-name="Group 5469">
+      <g id="Group_5468" data-name="Group 5468" clip-path="url(#clip-path-2)">
+        <g id="Group_5467" data-name="Group 5467" style="mix-blend-mode: multiply;isolation: isolate">
+          <g id="Group_5466" data-name="Group 5466">
+            <g id="Group_5465" data-name="Group 5465" clip-path="url(#clip-path-3)">
+              <g id="Group_5464" data-name="Group 5464">
+                <g id="Group_5463" data-name="Group 5463" clip-path="url(#clip-path-4)">
+                  <rect id="Rectangle_1299" data-name="Rectangle 1299" width="85.867" height="38.5" transform="translate(33.342 38.488)" fill="url(#linear-gradient)"/>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+    <path id="Path_5006" data-name="Path 5006" d="M33.341,38.488v38.5L66.683,57.743v-38.5Z" fill="#bbc0e6"/>
+    <path id="Path_5007" data-name="Path 5007" d="M0,57.743,33.341,76.989v-38.5L0,19.243Z" fill="#ced3f8"/>
+    <path id="Path_5008" data-name="Path 5008" d="M33.341,0,0,19.242,33.341,38.488,66.683,19.242Z" fill="#f1f1f6"/>
+  </g>
+</svg>
