@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+p {
+  color: var(
+    --dark-color
+  ); /* paragraph tags without any styles will have this color code by default. */
+}
+:root {
+  --light-color: #f2f8ff;
+  --dark-color: #13141c;
+  --nav-light: #ffffff;
+  --navScroll-light: #ffffff; /*apply this color to the background when you scroll on desktop screen */
+  --dropdown-content: #ffffff;
+  --navScrollp: #313131;
+  --navShadow: #a594941a;
+  --third-color: #ffffff; /* for white background like the boxes, FAQ and the footer section */
+  --fourth-color: #525b6d; /* for paragraphs..*/
+  --fifth-color: #1d1c1c; /* for paragraphs with black background*/
+  --help-hero-text: #525b6d;
+  --help-hero-card: #ffffff;
+  --help-search: #ffffff;
+  --help-article-text: #525b6d;
+  --help-contact-box: #ffffff;
+  --help-contact-box-text: #525b6d;
+  --article-container: #ffffff;
+  --article-date: #8993a7;
+  --article-tag: #ecf5ff;
+  --author-bio: #707070;
+  --article-text: #525b6d;
+  --social-button-container: #f2f8ff;
+  --plyr-color-main: #3374ea;
+  --help-email-icon: #525b6d;
+  --load-more-button: #ffff;
+  --tutorial-card: #ffff;
+}
+.dark-theme {
+  --light-color: #13141c;
+  --dark-color: #f2f8ff;
+  --nav-light: #09090b;
+  --navScroll-light: #09090b;
+  --navScrollp: #d8d4d4; /* for nav li a  */
+  --navShadow: #f1eaea1a;
+  --dropdown-content: #13141c;
+  --navScrollp: #d8d4d4; /* for nav li a  */
+  --navShadow: #f1eaea1a;
+  --third-color: #09090b;
+  --fourth-color: #f2f8ff;
+  --fifth-color: #f2f8ff;
+  --help-hero-text: #b3bcce;
+  --help-hero-card: #1c2029;
+  --help-article-text: #b3bcce;
+  --help-search: #202230;
+  --help-contact-box: #202230;
+  --article-container: #09090b;
+  --article-date: #fccf3b;
+  --article-tag: #202230;
+  --author-bio: #b3bcce;
+  --article-text: #b3bcce;
+  --help-contact-box-text: #f2f8ff;
+  --social-button-container: #202230;
+  --help-email-icon: transparent;
+  --load-more-button: #1c2029;
+  --tutorial-card: #1c2029;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: var(--light-color);
+  font-family: "Montserrat", sans-serif;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background-color: var(--navScroll-light);
+}
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 30px;
+  -webkit-background-color: #3374ea;
+  border-radius: 30px;
+  background-color: #3374ea;
+}
+@media only screen and (max-width: 1024px) {
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  ::-webkit-scrollbar-track {
+    display: none;
+  }
+  ::-webkit-scrollbar-thumb {
+    display: none;
+  }
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.backdrop.active {
+  width: 100vw;
+  height: 94vh;
+  position: fixed;
+  top: 70px;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+*:focus {
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+  -ms-touch-action: none;
+  touch-action: none;
+}

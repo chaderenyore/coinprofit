@@ -1,3 +1,18 @@
 <template>
   <h1>This is the about page</h1>
 </template>
+
+<script>
+export default {
+  head: {
+    title: "About CoinProfit",
+    meta: [
+      {
+        hid: "description",
+        name: "description",
+        content: "Home page description",
+      },
+    ],
+  },
+};
+</script>
