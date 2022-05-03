@@ -331,8 +331,35 @@ export default {
     meta: [
       {
         hid: "description",
-        name: "description",
-        content: "Home page description",
+        name: "desc",
+        content:
+          "We are a small team of crypto traders and investors on a mission to make crypto trading and investment profitable for everyone",
+      },
+      {
+        hid: "keywords",
+        name: "keywords",
+        content:
+          "bitcoin,crypto tracking, track crypto assets, coinprofit leaders, eth, tracking, portfolio tracking",
+      },
+      {
+        name: "apple-mobile-web-app-capable",
+        content: "yes",
+      },
+      {
+        name: "apple-mobile-web-app-status-bar-style",
+        content: "black",
+      },
+      {
+        name: "apple-mobile-web-app-title",
+        content: "About CoinProfit",
+      },
+      {
+        property: "og:description",
+        content: "About CoinProfit",
+      },
+      {
+        property: "og:title",
+        content: "About Coinprofit",
       },
     ],
   },
