@@ -34,6 +34,48 @@
   </div>
 </template>
 
+<script>
+export default {
+  head: {
+    title: "CoinProfit - Caluclator",
+    meta: [
+      {
+        name: "description",
+        content:
+          "The If calculator lets you calculate how much you would have made if you bought a coin with a certain amount of money on a particular day or price and HODL till the time of doing the calculation.",
+        hid: "desc",
+      },
+      {
+        name: "keywords",
+        content:
+          "bitcoin,crypto tracking, track crypto assets, coinprofit leaders, eth, tracking, portfolio tracking",
+        hid: "keywords",
+      },
+      {
+        name: "apple-mobile-web-app-capable",
+        content: "yes",
+      },
+      {
+        name: "apple-mobile-web-app-status-bar-style",
+        content: "black",
+      },
+      {
+        name: "apple-mobile-web-app-title",
+        content: "CoinProfit - Calculator",
+      },
+      {
+        property: "og:description",
+        content: "CoinProfit - THE IF CALCULATOR",
+      },
+      {
+        property: "og:title",
+        content: "THE IF CALCULATOR",
+      },
+    ],
+  },
+};
+</script>
+
 <style scoped>
 .mainContainer {
   width: 100%;
