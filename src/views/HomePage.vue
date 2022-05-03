@@ -1263,7 +1263,7 @@
 </template>
 
 <script>
-  import $ from "jquery";
+  // import $ from "jquery";
   import Swiper from "swiper/bundle";
   import Splide from "@splidejs/splide";
   import AppImage from "@/components/AppImage.vue";
@@ -1432,7 +1432,8 @@
         function initParadoxWay() {
           "use strict";
 
-          if ($(".testimonials-carousel").length > 0) {
+          
+          // if ($(".testimonials-carousel").length > 0) {
             new Swiper(".testimonials-carousel .swiper-container", {
               preloadImages: false,
               slidesPerView: 1,
@@ -1468,12 +1469,12 @@
                 },
               },
             });
-          }
+          // }
         }
 
-        $(document).ready(function () {
+        // $(document).ready(function () {
           initParadoxWay();
-        });
+        // });
 
         this.useSplide();
 
