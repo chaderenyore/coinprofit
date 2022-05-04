@@ -12,7 +12,12 @@ export default {
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { hid: "description", name: "description", content: "" },
+      {
+        hid: "description",
+        name: "description",
+        content:
+          "Subscribe to your favourite crypto influencers/leaders. See the coins they buy, when they buy and when they sell",
+      },
       { name: "format-detection", content: "telephone=no" },
     ],
     script: [

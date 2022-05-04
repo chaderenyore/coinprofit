@@ -1479,8 +1479,39 @@ export default {
       }
     },
   },
+
   mounted() {
     this.initIndexFile();
+  },
+   head: {
+    meta: [
+      {
+        name: "keywords",
+        content:
+          "bitcoin,crypto tracking, track crypto assets, eth, tracking, portfolio tracking",
+        hid: "keywords",
+      },
+      {
+        name: "apple-mobile-web-app-capable",
+        content: "yes",
+      },
+      {
+        name: "apple-mobile-web-app-status-bar-style",
+        content: "black",
+      },
+      {
+        name: "apple-mobile-web-app-title",
+        content: "CoinProfit - Home",
+      },
+      {
+        property: "og:description",
+        content: "CoinProfit - Subscribe to your favourite crypto influencers/leaders",
+      },
+      {
+        property: "og:title",
+        content: "CoinProfit - Home",
+      },
+    ],
   },
 };
 </script>

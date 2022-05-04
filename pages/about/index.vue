@@ -355,7 +355,8 @@ export default {
       },
       {
         property: "og:description",
-        content: "About CoinProfit",
+        content:
+          "We are a small team of crypto traders and investors on a mission to make crypto trading and investment profitable for everyone",
       },
       {
         property: "og:title",

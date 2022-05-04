@@ -1213,7 +1213,7 @@ export default {
       },
       {
         property: "og:title",
-        content: "Make Money By Letting Others See Your Trades",
+        content: "Coinprofit - Leaders",
       },
     ],
   },
