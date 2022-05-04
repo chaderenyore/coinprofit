@@ -1483,7 +1483,7 @@ export default {
   mounted() {
     this.initIndexFile();
   },
-   head: {
+  head: {
     meta: [
       {
         name: "keywords",
@@ -1505,11 +1505,16 @@ export default {
       },
       {
         property: "og:description",
-        content: "CoinProfit - Subscribe to your favourite crypto influencers/leaders",
+        content:
+          "CoinProfit - Subscribe to your favourite crypto influencers/leaders",
       },
       {
         property: "og:title",
         content: "CoinProfit - Home",
+      },
+      {
+        property: "og:url",
+        content: "coinprofit.app",
       },
     ],
   },

@@ -362,6 +362,10 @@ export default {
         property: "og:title",
         content: "About Coinprofit",
       },
+      {
+        property: "og:url",
+        content: "coinprofit.app/about",
+      },
     ],
   },
 };

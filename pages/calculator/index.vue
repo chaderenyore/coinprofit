@@ -71,6 +71,10 @@ export default {
         property: "og:title",
         content: "THE IF CALCULATOR",
       },
+      {
+        property: "og:url",
+        content: "coinprofit.app/calculator",
+      },
     ],
   },
 };

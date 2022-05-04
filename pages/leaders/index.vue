@@ -1215,6 +1215,10 @@ export default {
         property: "og:title",
         content: "Coinprofit - Leaders",
       },
+      {
+        property: "og:url",
+        content: "coinprofit.app/leaders",
+      },
     ],
   },
 };

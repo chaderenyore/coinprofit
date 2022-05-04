@@ -19,6 +19,26 @@ export default {
           "Subscribe to your favourite crypto influencers/leaders. See the coins they buy, when they buy and when they sell",
       },
       { name: "format-detection", content: "telephone=no" },
+      {
+        property: "og:type",
+        content: "website",
+      },
+      {
+        property: "og:image",
+        content: "https://i.ibb.co/HqwC6df/Coin-Profit-Logo-white.png",
+      },
+      {
+        property: "og:image:type",
+        content: "image/jpeg",
+      },
+      {
+        property: "og:image:width",
+        content: "600",
+      },
+      {
+        property: "og:image:height",
+        content: "315",
+      },
     ],
     script: [
       {
