@@ -68,7 +68,7 @@
               srcset=""
               class="app-download"
           /></a> -->
-          <p class="comingSoon">IOS coming soon@.!</p>
+          <p class="comingSoon">IOS coming soon..!</p>
         </div>
 
         <div class="main-appUI_wrapper">
@@ -588,7 +588,7 @@
           ><img src="@/assets/images/appstore.svg" alt=""
         /></a> -->
         <p class="comingSoon font-bold md:font-semibold text-2xl">
-          IOS coming soon@.!
+          IOS coming soon..!
         </p>
       </div>
 
@@ -980,12 +980,12 @@
               class="exchange-download"
           /></a> -->
         </div>
-        <p class="comingSoon">IOS coming soon@.!</p>
+        <p class="comingSoon">IOS coming soon.!</p>
       </div>
     </section>
 
     <section class="users-review">
-      <h1>What Our Users Are Saying@.</h1>
+      <h1>What Our Users Are Saying..</h1>
 
       <div class="user-review-box">
         <div class="splide">
@@ -1100,7 +1100,7 @@
             srcset=""
             class="exchange-download"
         /></a> -->
-        <p class="comingSoon">IOS coming soon@.!</p>
+        <p class="comingSoon">IOS coming soon..!</p>
       </div>
     </section>
 
