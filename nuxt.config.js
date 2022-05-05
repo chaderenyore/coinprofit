@@ -89,13 +89,17 @@ export default {
   components: true,
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
-  buildModules: ["nuxt-windicss", "@nuxt/image"],
+  buildModules: ["nuxt-windicss", "@nuxt/image", "@nuxtjs/prismic"],
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
+
+  prismic: {
+    endpoint: "https://coinprofitapp.prismic.io/api/v2",
+  },
 
   transition: {
     name: "fade",
