@@ -20,6 +20,14 @@ export default {
       },
       { name: "format-detection", content: "telephone=no" },
       {
+        name: "apple-mobile-web-app-capable",
+        content: "yes",
+      },
+      {
+        name: "apple-mobile-web-app-status-bar-style",
+        content: "black",
+      },
+      {
         property: "og:type",
         content: "website",
       },
@@ -33,11 +41,11 @@ export default {
       },
       {
         property: "og:image:width",
-        content: "600",
+        content: "1200",
       },
       {
         property: "og:image:height",
-        content: "315",
+        content: "630",
       },
     ],
     script: [
@@ -75,7 +83,7 @@ export default {
   },
 
   loading: {
-    height: "4px",
+    color: "blue",
     continuous: true,
   },
 
@@ -83,7 +91,10 @@ export default {
   css: ["~assets/styles/main.css"],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: ["~/plugins/emitter.js"],
+  plugins: [
+    "~/plugins/emitter.js",
+    { src: "~/plugins/vue-plyr", mode: "client" },
+  ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
@@ -99,6 +110,30 @@ export default {
 
   prismic: {
     endpoint: "https://coinprofitapp.prismic.io/api/v2",
+    apiOptions: {
+      routes: [
+        {
+          type: "help_welcome",
+          path: "/help",
+        },
+        {
+          type: "articles",
+          path: "/help/articles/:uid",
+        },
+        {
+          type: "blog",
+          path: "/blog/:uid",
+        },
+        {
+          type: "tutorial",
+          path: "/help/tutorials/:uid",
+        },
+        {
+          type: "academy",
+          path: "/academy/articles/:uid",
+        },
+      ],
+    },
   },
 
   transition: {
