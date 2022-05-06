@@ -167,7 +167,6 @@ export default {
     });
 
     if (post) {
-      console.log(post);
       const author = post.data.author.data;
       const date = new Date(post.first_publication_date);
       const articleDate = date.toLocaleString([], {

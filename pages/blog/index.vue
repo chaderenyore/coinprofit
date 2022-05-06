@@ -19,7 +19,6 @@ export default {
     const blogpost = await $prismic.api.query(
       $prismic.predicate.at("document.type", "blog")
     );
-    console.log(blogpost);
 
     return { blogpost };
   },
