@@ -103,7 +103,7 @@ export default {
   buildModules: ["nuxt-windicss", "@nuxt/image", "@nuxtjs/prismic"],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: [],
+  modules: ["vue-social-sharing/nuxt"],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
