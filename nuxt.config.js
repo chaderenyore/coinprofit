@@ -136,7 +136,7 @@ export default {
     },
   },
 
-  transition: {
+  pageTransition: {
     name: "fade",
     mode: "out-in",
   },
