@@ -157,12 +157,12 @@ export default {
             "bitcoin,crypto tracking, track crypto assets, coinprofit blog, eth, tracking, portfolio tracking",
         },
         {
-          property: "og:description",
-          content: this.post.data.preview_text[0].text,
-        },
-        {
           property: "og:title",
           content: this.post.data.article_title[0].text + " - Coinprofit Blog",
+        },
+        {
+          property: "og:description",
+          content: this.post.data.preview_text[0].text,
         },
         {
           property: "og:type",
@@ -174,6 +174,26 @@ export default {
         },
         {
           property: "og:image",
+          content: this.post.data.cover_image.url,
+        },
+        {
+          name: "twitter:card",
+          content: "summary",
+        },
+        {
+          name: "twitter:title",
+          content: this.post.data.article_title[0].text + " - Coinprofit Blog",
+        },
+        {
+          name: "twitter:site",
+          content: "@coinprofit_app",
+        },
+        {
+          name: "twitter:description",
+          content: this.post.data.preview_text[0].text,
+        },
+        {
+          name: "twitter:image",
           content: this.post.data.cover_image.url,
         },
       ],
@@ -207,30 +227,11 @@ export default {
 .author-bio {
   color: var(--author-bio);
 }
+
 .article__review {
   background: var(--social-button-container);
 }
-.spinner {
-  margin: 5rem auto;
-  text-align: center;
-}
-.spinner svg {
-  height: 6rem;
-  width: 6rem;
-  fill: #3374ea;
-  animation: rotate 2s infinite linear;
-}
-@keyframes rotate {
-  0% {
-    transform: rotate(0);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-.share-button {
-  border-radius: 1200px !important;
-}
+
 social-button-container {
   display: flex;
   justify-content: space-around;
