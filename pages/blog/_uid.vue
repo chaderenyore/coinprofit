@@ -228,7 +228,7 @@ export default {
         },
         {
           name: "twitter:card",
-          content: "summary",
+          content: "summary_large_image",
         },
         {
           name: "twitter:title",
