@@ -36,10 +36,6 @@ export default {
         content: "https://i.ibb.co/HqwC6df/Coin-Profit-Logo-white.png",
       },
       {
-        property: "og:image:type",
-        content: "image/jpeg",
-      },
-      {
         property: "og:image:width",
         content: "1200",
       },
