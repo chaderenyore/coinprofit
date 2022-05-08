@@ -71,6 +71,14 @@ export default {
         property: "og:title",
         content: "THE IF CALCULATOR",
       },
+       {
+        property: "og:image",
+        content: "https://i.ibb.co/HqwC6df/Coin-Profit-Logo-white.png",
+      },
+      {
+        property: "og:type",
+        content: "website",
+      },
       {
         property: "og:url",
         content: "coinprofit.app/calculator",
