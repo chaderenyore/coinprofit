@@ -6,10 +6,10 @@
       {{ $prismic.asText(slice.primary.intro_header) }}
     </h1>
 
-    <p
+    <div
       class="article-introtext font-medium text-base"
       v-html="$prismic.asHTML(slice.primary.intro_text)"
-    ></p>
+    ></div>
   </div>
 </template>
 
