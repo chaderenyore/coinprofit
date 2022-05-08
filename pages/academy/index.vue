@@ -135,13 +135,18 @@ export default {
       this.selectedComponent = "academy-search";
       setTimeout(() => {
         this.$emitter.emit("search-tags", this.$route.query.tag);
-        document.documentElement.scrollTo(0, 660);
+        if(process.browser) {
+          document.documentElement.scrollTo(0, 660); 
+        }
       }, 400);
     } else if ("q" in this.$route.query) {
       this.selectedComponent = "academy-search";
       setTimeout(() => {
         this.$emitter.emit("search-fulltext", this.$route.query.q);
-        document.documentElement.scrollTo(0, 660);
+        if(process.browser) {
+
+          document.documentElement.scrollTo(0, 660);
+        }
       }, 400);
     } else {
       this.selectedComponent = "academy-search";
@@ -149,6 +154,43 @@ export default {
         this.selectedComponent = "academy-post-card";
       }, 200);
     }
+  },
+
+  head: {
+    title: "CoinProfit Academy",
+    meta: [
+      {
+        name: "description",
+        content: "Coinprofit Academy, bringing you all you need to know about cryptocurrency to help you become a profitable crypto trader and investors",
+        hid: "desc",
+      },
+      {
+        name: "keywords",
+        content:
+          "bitcoin,crypto tracking, track crypto assets, coinprofit blog, eth, tracking, portfolio tracking",
+        hid: "keywords",
+      },
+      {
+        name: "apple-mobile-web-app-title",
+        content: "CoinProfit Academy",
+      },
+       {
+        property: "og:image",
+        content: "https://i.ibb.co/HqwC6df/Coin-Profit-Logo-white.png",
+      },
+      {
+        property: "og:type",
+        content: "website",
+      },
+      {
+        property: "og:description",
+        content: "CoinProfit Academy",
+      },
+      {
+        property: "og:title",
+        content: "CoinProfit Academy",
+      },
+    ],
   },
 };
 </script>
