@@ -233,6 +233,14 @@ export default {
         property: "og:description",
         content: "Coinprfit AML policies",
       },
+       {
+        property: "og:image",
+        content: "https://i.ibb.co/HqwC6df/Coin-Profit-Logo-white.png",
+      },
+      {
+        property: "og:type",
+        content: "website",
+      },
       {
         property: "og:title",
         content: "Coinprfit AML policies",

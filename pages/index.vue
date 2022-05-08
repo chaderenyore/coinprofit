@@ -1509,6 +1509,14 @@ export default {
           "CoinProfit - Subscribe to your favourite crypto influencers/leaders",
       },
       {
+        property: "og:image",
+        content: "https://i.ibb.co/HqwC6df/Coin-Profit-Logo-white.png",
+      },
+      {
+        property: "og:type",
+        content: "website",
+      },
+      {
         property: "og:title",
         content: "CoinProfit - Home",
       },

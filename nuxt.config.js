@@ -27,14 +27,7 @@ export default {
         name: "apple-mobile-web-app-status-bar-style",
         content: "black",
       },
-      {
-        property: "og:type",
-        content: "website",
-      },
-      {
-        property: "og:image",
-        content: "https://i.ibb.co/HqwC6df/Coin-Profit-Logo-white.png",
-      },
+      
       {
         property: "og:image:width",
         content: "1200",

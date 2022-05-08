@@ -34,6 +34,14 @@ export default {
         property: "og:description",
         content: "Coinprfit Privacy Policy",
       },
+       {
+        property: "og:image",
+        content: "https://i.ibb.co/HqwC6df/Coin-Profit-Logo-white.png",
+      },
+      {
+        property: "og:type",
+        content: "website",
+      },
       {
         property: "og:title",
         content: "Coinprfit Privacy Policy",
