@@ -358,6 +358,14 @@ export default {
         content:
           "We are a small team of crypto traders and investors on a mission to make crypto trading and investment profitable for everyone",
       },
+       {
+        property: "og:image",
+        content: "https://i.ibb.co/HqwC6df/Coin-Profit-Logo-white.png",
+      },
+      {
+        property: "og:type",
+        content: "website",
+      },
       {
         property: "og:title",
         content: "About Coinprofit",

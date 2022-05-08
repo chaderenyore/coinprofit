@@ -52,6 +52,14 @@ export default {
         name: "apple-mobile-web-app-title",
         content: "Coin Profit official Blog",
       },
+       {
+        property: "og:image",
+        content: "https://i.ibb.co/HqwC6df/Coin-Profit-Logo-white.png",
+      },
+      {
+        property: "og:type",
+        content: "website",
+      },
       {
         property: "og:description",
         content: "Coin Profit official Blog",
