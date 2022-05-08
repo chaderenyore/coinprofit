@@ -184,7 +184,7 @@ export default {
       },
       {
         property: "og:description",
-        content: "CoinProfit Academy",
+        content: "Coinprofit Academy, bringing you all you need to know about cryptocurrency to help you become a profitable crypto trader and investors",
       },
       {
         property: "og:title",
