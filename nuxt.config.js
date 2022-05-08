@@ -43,6 +43,14 @@ export default {
         property: "og:image:height",
         content: "630",
       },
+      {
+        name: "twitter:site",
+        content: "@coinprofit_app",
+      },
+      {
+        name: "twitter:card",
+        content: "summary_large_image",
+      },
     ],
     script: [
       {

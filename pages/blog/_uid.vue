@@ -167,6 +167,7 @@ export default {
     });
 
     if (post) {
+      console.log(post);
       const author = post.data.author.data;
       const date = new Date(post.first_publication_date);
       const articleDate = date.toLocaleString([], {
@@ -226,18 +227,12 @@ export default {
           property: "og:image",
           content: this.post.data.cover_image.url,
         },
-        {
-          name: "twitter:card",
-          content: "summary_large_image",
-        },
+        
         {
           name: "twitter:title",
           content: this.post.data.article_title[0].text + " - Coinprofit Blog",
         },
-        {
-          name: "twitter:site",
-          content: "@coinprofit_app",
-        },
+        
         {
           name: "twitter:description",
           content: this.post.data.preview_text[0].text,
