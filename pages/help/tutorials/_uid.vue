@@ -161,7 +161,6 @@
     const video = await $prismic.api.getByUID("tutorial", params.uid);
 
     if (video) {
-      console.log(video)
       return { video };
     } else {
       error({ statusCode: 404, message: "Page not found" });

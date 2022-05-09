@@ -19,7 +19,7 @@
       <ArticleCard
         :queryobj="tagArticleResult"
         v-if="tagArticleResult"
-        @search-tag="searchFromComponent"
+        @searchTag="searchFromComponent"
       />
     </section>
     <section class="search__query--section" v-if="querySearch">
@@ -41,7 +41,7 @@
       <ArticleCard
         v-if="articleSearchResult"
         :queryobj="articleSearchResult"
-        @search-tag="searchFromComponent"
+        @searchTag="searchFromComponent"
       />
     </section>
     <section v-if="error">
@@ -72,20 +72,19 @@ export default {
 
   methods: {
     async searchArticles(query) {
-      const fullTextResult = await this.$prismic.api.get({
-        predicates: this.$prismic.predicate.fulltext(
+      const fullTextResult = await this.$prismic.api.query(
+        this.$prismic.predicate.fulltext(
           "my.articles.article_title",
           query
-        ),
-      });
+        ));
       this.query = query;
       return fullTextResult;
     },
 
     async searchTutorials(query) {
-      const videoFullTextResult = await this.$prismic.api.get({
-        predicates: this.$prismic.predicate.fulltext("my.tutorial.name", query),
-      });
+      const videoFullTextResult = await this.$prismic.api.query(
+        this.$prismic.predicate.fulltext("my.tutorial.name", query),
+      );
       return videoFullTextResult;
     },
 
@@ -104,7 +103,9 @@ export default {
     },
 
     async searchByTag(tag) {
-      const tagResult = await this.$prismic.api.getByTag(tag);
+      const tagResult = await this.$prismic.api.query(
+          this.$prismic.predicate.at("document.tags", [tag])
+      );
       const result = tagResult.results;
 
       this.tagArticleResult = result.filter(function (article) {
