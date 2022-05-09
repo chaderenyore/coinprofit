@@ -78,15 +78,14 @@ export default {
     };
   },
 
-  // async fetch() {
-  //   this.helpost = await this.$prismic.api.query(
-  //     $prismic.predicate.at("document.type", "academy")
-  //   );
-  // },
 
   async fetch() {
     this.helpost = await this.$prismic.api.query(
-      this.$prismic.predicate.at("document.type", "academy"));
+      this.$prismic.predicate.at("document.type", "academy", {
+        pageSize: this.pageSize
+      })
+
+      );
   },
 
   methods: {

@@ -55,7 +55,7 @@
             <div class="social-button-container w-4/5 m-auto md:w-2/5">
               <ShareNetwork
                 network="twitter"
-                :url="'coinprofit.app/blog/' + this.post.slugs[0]"
+                :url="'coinprofit.app' + this.post.url"
                 :title="post.data.article_title[0].text"
                 :description="this.post.data.preview_text[0].text"
               >
@@ -94,7 +94,7 @@
 
               <ShareNetwork
                 network="facebook"
-                :url="'coinprofit.app/blog/' + this.post.slugs[0]"
+                :url="'coinprofit.app' + this.post.url"
                 :title="post.data.article_title[0].text"
                 :description="this.post.data.preview_text[0].text"
                 :quote="this.post.data.preview_text[0].text"
@@ -220,7 +220,7 @@ export default {
         },
         {
           property: "og:url",
-          content: "coinprofit.app/academy/" + this.post.slugs[0],
+          content: "coinprofit.app" + this.post.url,
         },
         {
           property: "og:image",

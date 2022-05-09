@@ -83,7 +83,6 @@
 
 <script>
 export default {
-  emits: ["search-tag"],
   data() {
     return {
       data: null,
@@ -92,24 +91,24 @@ export default {
       showLoadMore: true,
     };
   },
+   async fetch() {
+    this.helpost = await this.$prismic.api.query(
+      this.$prismic.predicate.at("document.type", "articles", {
+        pageSize: this.pageSize
+      })
+    );
+
+    this.data = await this.$prismic.api.getSingle("help_welcome");
+  },
+
   methods: {
-    async getPageDatafromPrismic() {
-      this.data = await this.$prismic.client.getSingle("help_welcome");
-    },
-
-    async getData() {
-      this.helpost = await this.$prismic.client.getByType("articles", {
-        pageSize: this.pageSize,
-      });
-    },
-
     searchTag(tag) {
       this.$emit("search-tag", tag);
     },
 
     loadMore() {
       this.pageSize *= 2;
-      this.getData();
+      $fetch;
     },
   },
 
@@ -121,10 +120,6 @@ export default {
     },
   },
 
-  mounted() {
-    this.getPageDatafromPrismic();
-    this.getData();
-  },
 };
 </script>
 

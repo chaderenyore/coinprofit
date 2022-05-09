@@ -155,9 +155,6 @@ export default {
         video: VideoPlayer,
         mobile_image___screenshot_image: MobileImageScreenshotImage,
       },
-      articleDate: null,
-      author: null,
-      articleTitle: null,
     };
   },
 
@@ -220,7 +217,7 @@ export default {
         },
         {
           property: "og:url",
-          content: "coinprofit.app/blog/" + this.post.slugs[0],
+          content: "coinprofit.app" + this.post.url,
         },
         {
           property: "og:image",

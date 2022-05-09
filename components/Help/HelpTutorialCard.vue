@@ -61,16 +61,18 @@ export default {
     };
   },
 
-  methods: {
-    async getData() {
-      this.helpvid = await this.$prismic.client.getByType("tutorial", {
-        pageSize: this.pageSize,
-      });
-    },
+  async fetch() {
+    this.helpvid = await this.$prismic.api.query(
+      this.$prismic.predicate.at("document.type", "tutorial", {
+        pageSize: this.pageSize
+      })
+    )
+  },
 
+  methods: {
     loadMore() {
       this.pageSize *= 2;
-      this.getData();
+      $fetch;
     },
   },
 
@@ -82,9 +84,6 @@ export default {
     },
   },
 
-  mounted() {
-    this.getData();
-  },
 };
 </script>
 
