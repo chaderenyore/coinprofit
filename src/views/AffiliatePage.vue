@@ -1,7 +1,7 @@
 <template>
   <div class="mainContainer">
     <div class="affiliate_hero">
-      <!-- <img src="../assets/images/Asset-1.svg" alt="" class="background-svg" /> -->
+      <img src="../assets/images/Asset-1.svg" alt="" class="background-svg" />
 
       <h1>Earn Free Crypto For Life!</h1>
 
@@ -52,9 +52,50 @@
         </p>
       </div>
     </div>
+    <div class="iconsWrapper">
+      <img
+        src="../assets/images/listtle-Icons/icon-btc.svg"
+        alt=""
+        class="firstICon"
+      />
+      <img
+        src="../assets/images/listtle-Icons/4.svg"
+        alt=""
+        class="secondICON"
+      />
+    </div>
 
     <div class="affiliate-benefits-wrapper">
+       <img
+          src="../assets/images/listtle-Icons/2.svg"
+          alt=""
+          class="thirdIcon"
+        />
+        <img
+          src="../assets/images/listtle-Icons/7.svg"
+          alt=""
+          class="fourthICon"
+        />
+
+         <img
+          src="../assets/images/listtle-Icons/moneygold.svg"
+          alt=""
+          class="fifthIcon" 
+        />
+
+        <img
+          src="../assets/images/listtle-Icons/6.svg"
+          alt=""
+          class="sixthICon"
+        />
+        <img
+          src="../assets/images/listtle-Icons/dollarontop.svg"
+          alt=""
+          class="seventhIcon"
+        />
       <div class="benefitOne">
+       
+
         <h1 class="benefitOneH1">Instant Commission on Every Upgrade</h1>
 
         <div class="benfitsImagesoneWrapper">
@@ -231,12 +272,15 @@
         <div class="faqcontainer">
           <div class="faqwrapper">
             <button class="faqtoggle">
-              <h3>Do I need to upgrade to a premium plan to become an affiliate?</h3>
+              <h3>
+                Do I need to upgrade to a premium plan to become an affiliate?
+              </h3>
               <i class="fa fa-chevron-down faqicon"></i>
             </button>
             <div class="faqcontent">
               <p>
-               No. When you create an account, you can start promoting right away!
+                No. When you create an account, you can start promoting right
+                away!
               </p>
             </div>
           </div>
@@ -247,7 +291,11 @@
             </button>
             <div class="faqcontent">
               <p>
-                How much you can make depends entirely on you. We pay you 10% commission anytime your referral upgrade or renew their subscription. Our premium plan starts at $4.95. So the more you refer, the more you make. There is no limit to the number of people you can refer to.
+                How much you can make depends entirely on you. We pay you 10%
+                commission anytime your referral upgrade or renew their
+                subscription. Our premium plan starts at $4.95. So the more you
+                refer, the more you make. There is no limit to the number of
+                people you can refer to.
               </p>
             </div>
           </div>
@@ -257,9 +305,7 @@
               <i class="fa fa-chevron-down faqicon"></i>
             </button>
             <div class="faqcontent">
-              <p>
-                The minimum withdrawal threshold is just $10. 
-              </p>
+              <p>The minimum withdrawal threshold is just $10.</p>
             </div>
           </div>
         </div>
@@ -270,13 +316,9 @@
               <i class="fa fa-chevron-down faqicon"></i>
             </button>
             <div class="faqcontent">
-              <p>
-                We use a third party company to process your payment.
-              </p>
+              <p>We use a third party company to process your payment.</p>
             </div>
           </div>
-          
-          
         </div>
       </div>
     </section>
@@ -288,7 +330,7 @@
 export default {
   methods: {
     affiliateFaq() {
-  // FAQ SECTION
+      // FAQ SECTION
       let faqtoggles = document.getElementsByClassName("faqtoggle");
       let faqcontentDiv = document.getElementsByClassName("faqcontent");
       let faqicons = document.getElementsByClassName("faqicon");
@@ -318,12 +360,12 @@ export default {
           }
         });
       }
-    }
+    },
   },
   mounted() {
     this.affiliateFaq();
-  }
-}
+  },
+};
 </script>
 
 <style scoped>
@@ -433,6 +475,10 @@ export default {
 }
 
 @media (min-width: 1200px) {
+  .hero-CTA {
+    display: flex;
+    flex-direction: column;
+  }
   .affiliate_hero {
     padding-top: 20rem;
     width: 80%;
@@ -440,9 +486,9 @@ export default {
   .background-svg {
     display: block;
     position: absolute;
-    top: 29%;
-    left: 5%;
-    width: 40%;
+    top: 20em;
+    left: 10em;
+    width: 30rem;
     opacity: 0.06;
   }
   .affiliate_hero h1 {
@@ -462,10 +508,11 @@ export default {
     margin-bottom: 0;
     font-weight: 500;
     line-height: 50px;
+    order: 2;
   }
 
   .affiliate_hero p {
-    width: 60%;
+    width: 100%;
     color: var(--fourth-color);
     font-size: 1rem;
     text-align: left;
@@ -474,8 +521,9 @@ export default {
   }
 
   .app-downloads {
-    width: 40%;
+    /* width: 40%; */
     text-align: left;
+    order: 2;
   }
   .app-download {
     width: 12rem;
@@ -502,6 +550,113 @@ export default {
     right: 0;
   }
 }
+/* listtle-Icons */
+.iconsWrapper {
+  position: relative;
+}
+.firstICon {
+  width: 3rem;
+  position: absolute;
+  top: 6%;
+  left: 5%;
+}
+.secondICON {
+  width: 4rem;
+  position: absolute;
+  left: 70%;
+  top: 4%;
+}
+.thirdIcon {
+  width: 4.5rem;
+  position: absolute;
+  top: 30%;
+  left: 0;
+}
+
+.fourthICon {
+  width: 4rem;
+  position: absolute;
+  left: 73%;
+  top: 14%;
+  z-index: 1;
+}
+
+.fifthIcon {
+  width: 4rem;
+  position: absolute;
+  left: 82%;
+  top: 60%;
+  z-index: 1;
+}
+
+.sixthICon {
+  width: 4rem;
+  position: absolute;
+  /* left: 70%; */
+  top: 75%;
+  z-index: 1;
+}
+
+.seventhIcon {
+  width: 4rem;
+  position: absolute;
+  /* left: 70%; */
+  top: 86%;
+  z-index: 1;
+}
+
+@media (min-width: 1200px) {
+  .iconsWrapper {
+    position: unset;
+  }
+  .firstICon {
+    width: 5rem;
+    position: absolute;
+    top: 120%;
+    left: 10%;
+  }
+  .secondICON {
+    width: 5rem;
+    position: absolute;
+    left: 80%;
+    top: 130%;
+  }
+  .thirdIcon {
+  width: 7rem;
+  top: 50%;
+  left: 0;
+}
+
+.fourthICon {
+  width: 7rem;
+  left: 73%;
+  top: 55%;
+  z-index: 1;
+}
+
+
+.fifthIcon {
+  width: 6rem;
+  left: 90%;
+  top: 115%;
+  z-index: 1;
+}
+
+.sixthICon {
+  /* left: 50%; */
+  top: 110%;
+  z-index: 1;
+  
+}
+
+.seventhIcon {
+  left: 50%;
+  top: 120%;
+  z-index: 1;
+}
+}
+
+/* End listtle-icons */
 
 .affiliate-benefits-wrapper {
   position: relative;
@@ -749,7 +904,7 @@ export default {
 }
 .core-features_img_wrapper span {
   font-size: 5rem;
-  color: #B3BCCE;
+  color: #b3bcce;
   font-weight: 800;
   position: absolute;
   margin-top: -15px;
@@ -773,7 +928,7 @@ export default {
   text-align: center;
 }
 .app-downloadsAffiliates img {
-   width: 12rem;
+  width: 12rem;
   margin: 0.5rem 1rem;
 }
 
@@ -883,7 +1038,6 @@ export default {
   }
 }
 
-
 /* code for FAQ SECTION */
 .faq-wrapper {
   max-width: 90%;
@@ -964,7 +1118,7 @@ export default {
 }
 
 @media (min-width: 1200px) {
-    .faq-wrapper {
+  .faq-wrapper {
     max-width: 50%;
     margin: 5rem auto;
   }
@@ -978,5 +1132,4 @@ export default {
     font-weight: 600;
   }
 }
-
 </style>
