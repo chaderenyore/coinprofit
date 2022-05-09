@@ -188,6 +188,7 @@ export default {
       });
     },
   },
+  
   head() {
     return {
       title: this.post.data.article_title[0].text,
