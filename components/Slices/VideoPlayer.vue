@@ -38,8 +38,6 @@
 </script>
 
 <style scoped>
-  @import "vue-plyr/dist/vue-plyr.css";
-
   .video-container-div {
     width: 100%;
     height: 70vh;
