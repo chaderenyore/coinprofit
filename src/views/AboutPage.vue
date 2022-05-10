@@ -265,7 +265,7 @@
   export default {
     data() {
       return {
-        title: "About Coinprofit",
+        title: "About Us Coinprofit",
         slideIndex: 1,
       };
     },
