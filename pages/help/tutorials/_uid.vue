@@ -44,16 +44,7 @@
       </header>
       <main class="w-[90%] m-auto mt-3">
         <div class="video-container-div">
-          <vue-plyr>
-            <video
-              controls
-              crossorigin
-              playsinline
-              :data-poster="this.video.data.thumbnail"
-            >
-              <source size="720" :src="this.video.data.video.url" type="video/mp4" />
-            </video>
-          </vue-plyr>
+         <AppVideo :playerdata='playerdata' :source="this.video.data.video.url" />
         </div>
       </main>
       <footer class="w-[90%] m-auto mt-3 pb-3">
@@ -149,11 +140,9 @@
   export default {
     data() {
       return {
-        loading: true,
-        video: null,
-        error: false,
-        errorMessage: null,
-        tutorialTitle: null,
+        playerdata: {
+          autoplay: true
+        }
       };
     },
 
@@ -263,8 +252,8 @@
   }
 
    .video-container-div {
-    width: 100%;
-    height: 70vh;
+    width: 100% !important;
+    height: 70vh !important;
   }
 
   social-button-container {

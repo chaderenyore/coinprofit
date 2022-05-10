@@ -85,12 +85,12 @@ export default {
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: ["~assets/styles/main.css"],
+  css: ["~assets/styles/main.css", 'video.js/dist/video-js.css'],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
+  { src: '~plugins/nuxt-video-player-plugin.js', mode: 'client' },
     "~/plugins/emitter.js",
-    { src: "~/plugins/vue-plyr", mode: "client" },
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
