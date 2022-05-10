@@ -9,6 +9,7 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
+    "@nuxtjs/gtm": "^2.4.0",
     "@splidejs/splide": "^4.0.1",
     "core-js": "^3.19.3",
     "lozad": "^1.16.0",

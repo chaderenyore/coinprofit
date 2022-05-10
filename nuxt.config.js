@@ -100,11 +100,17 @@ export default {
   buildModules: ["nuxt-windicss", "@nuxt/image", "@nuxtjs/prismic"],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: ["vue-social-sharing/nuxt"],
+  modules: ["vue-social-sharing/nuxt", '@nuxtjs/gtm'],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
 
+  //Google Tag Manager
+  gtm: {
+    id: 'GTM-NHBSXN8'
+  },
+
+  // Prismic and Configurations
   prismic: {
     endpoint: "https://coinprofitapp.prismic.io/api/v2",
     apiOptions: {
