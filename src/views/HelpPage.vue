@@ -1,4 +1,7 @@
 <template>
+  <!-- <teleport to="head">
+    <title>CoinProfit Helpage</title>
+  </teleport> -->
   <section class="help__section">
     <div class="help__section--div-1">
       <p class="help__section--welcome">Welcome to our help center</p>
@@ -124,6 +127,7 @@
 
     data() {
       return {
+        title: "CoinProfit",
         selectedComponent: "help-post-card",
         searchQuery: "",
       };
@@ -184,6 +188,51 @@
           contactSection.scrollIntoView({ behavior: "smooth" });
         }, 800);
       }
+    },
+
+    head: {
+      // To use "this" in the component, it is necessary to return the object through a function
+      title: function () {
+        return {
+          inner: this.title,
+          separator: "-",
+          complement: "Help Center",
+        };
+      },
+      meta: [
+        {
+          name: "description",
+          content:
+            "The CoinProfit Help Center where show you step by step video guides on how to use the different features of the CoinProfit App. Also, we have various articles to help you get started.",
+          id: "desc",
+        },
+        {
+          name: "keywords",
+          content:
+            "bitcoin,crypto tracking, track crypto assets, coinprofit leaders, eth, tracking, portfolio tracking",
+          id: "keywords",
+        },
+        {
+          name: "apple-mobile-web-app-capable",
+          content: "yes",
+        },
+        {
+          name: "apple-mobile-web-app-status-bar-style",
+          content: "black",
+        },
+        {
+          name: "apple-mobile-web-app-title",
+          content: "The CoinProfit Help Center",
+        },
+        {
+          property: "og:description",
+          content: "Coin Profit Help Center",
+        },
+        {
+          property: "og:title",
+          content: "Coin Profit Help Center",
+        },
+      ],
     },
   };
 </script>

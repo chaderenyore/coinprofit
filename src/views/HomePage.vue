@@ -50,25 +50,25 @@
         </div>
         <br />
         <div class="app-downloads">
-        
-          <a href="https://play.google.com/store/apps/details?id=com.procity.coinprofit" target="_blank" rel="noopener noreferrer"
+          <a
+            href="https://play.google.com/store/apps/details?id=com.procity.coinprofit"
+            target="_blank"
+            rel="noopener noreferrer"
             ><img
               src="../assets/images/goplay.svg"
-              alt=""  
+              alt=""
               srcset=""
               class="app-download"
           /></a>
 
-           <!-- <a href="#" target="_blank" rel="noopener noreferrer"
+          <!-- <a href="#" target="_blank" rel="noopener noreferrer"
             ><img
               src="../assets/images/appstore.svg"
               alt=""
               srcset=""
               class="app-download"
           /></a> -->
-          <p class="comingSoon ">
-            IOS coming soon...!
-          </p>
+          <p class="comingSoon">IOS coming soon...!</p>
         </div>
 
         <div class="main-appUI_wrapper">
@@ -577,12 +577,14 @@
         </div> -->
       </div>
       <div class="leaders-app-download">
-       
-        <a href="https://play.google.com/store/apps/details?id=com.procity.coinprofit" target="_blank" rel="noopener noreferrer"
+        <a
+          href="https://play.google.com/store/apps/details?id=com.procity.coinprofit"
+          target="_blank"
+          rel="noopener noreferrer"
           ><img src="../assets/images/goplay.svg" alt=""
         /></a>
 
-         <!-- <a href="#" target="_blank" rel="noopener noreferrer"
+        <!-- <a href="#" target="_blank" rel="noopener noreferrer"
           ><img src="../assets/images/appstore.svg" alt=""
         /></a> -->
         <p class="comingSoon font-bold md:font-semibold text-2xl">
@@ -957,11 +959,12 @@
             <p>ethereum</p>
           </div>
         </div> -->
-        <p class="get-details">
-          Get the app now on the Google Play Store.
-        </p>
+        <p class="get-details">Get the app now on the Google Play Store.</p>
         <div class="exchange-download-wrapper">
-          <a href="https://play.google.com/store/apps/details?id=com.procity.coinprofit" target="_blank" rel="noopener noreferrer"
+          <a
+            href="https://play.google.com/store/apps/details?id=com.procity.coinprofit"
+            target="_blank"
+            rel="noopener noreferrer"
             ><img
               src="../assets/images/goplay.svg"
               alt=""
@@ -977,9 +980,7 @@
               class="exchange-download"
           /></a> -->
         </div>
-        <p class="comingSoon ">
-          IOS coming soon...!
-        </p>
+        <p class="comingSoon">IOS coming soon...!</p>
       </div>
     </section>
 
@@ -1080,11 +1081,11 @@
           </div>
         </div>
       </div>
-      <p class="users-CTA">
-        Get the app now on the Google Play Store.
-      </p>
+      <p class="users-CTA">Get the app now on the Google Play Store.</p>
       <div class="exchange-download-wrapper">
-        <a href="https://play.google.com/store/apps/details?id=com.procity.coinprofit" target="_blank"
+        <a
+          href="https://play.google.com/store/apps/details?id=com.procity.coinprofit"
+          target="_blank"
           ><img
             src="../assets/images/goplay.svg"
             alt=""
@@ -1099,9 +1100,7 @@
             srcset=""
             class="exchange-download"
         /></a> -->
-        <p class="comingSoon ">
-          IOS coming soon...!
-        </p>
+        <p class="comingSoon">IOS coming soon...!</p>
       </div>
     </section>
 
@@ -1271,6 +1270,12 @@
   export default {
     components: {
       AppImage,
+    },
+
+    data() {
+      return {
+        title: "CoinProfit",
+      };
     },
 
     computed: {
@@ -1536,6 +1541,52 @@
 
     mounted() {
       this.initIndexFile();
+    },
+
+    head: {
+      // To use "this" in the component, it is necessary to return the object through a function
+      title: function () {
+        return {
+          inner: this.title,
+          separator: "-",
+          complement: "Home",
+        };
+      },
+      meta: [
+        {
+          name: "description",
+          content: "coinprofit - easily track your crypto assets",
+          id: "desc",
+        },
+        {
+          name: "keywords",
+          content:
+            "bitcoin,crypto tracking, track crypto assets, eth, tracking, portfolio tracking",
+          id: "keywords",
+        },
+        {
+          name: "apple-mobile-web-app-capable",
+          content: "yes",
+        },
+        {
+          name: "apple-mobile-web-app-status-bar-style",
+          content: "black",
+        },
+        {
+          name: "apple-mobile-web-app-title",
+          content: "CoinProfit - Home",
+        },
+        {
+          property: "og:description",
+          content:
+            "coinProfit - Subscribe to your favourite crypto influencers/leaders",
+        },
+        {
+          property: "og:title",
+          content:
+            "Subscribe to your favourite crypto influencers/leaders and see the coins they buy",
+        },
+      ],
     },
   };
 </script>

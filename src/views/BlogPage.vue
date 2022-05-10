@@ -25,6 +25,7 @@
   export default {
     data() {
       return {
+        title: "CoinProfit",
         blogpost: "",
         loading: true,
       };
@@ -49,6 +50,50 @@
 
     beforeUpdate() {
       this.loading = false;
+    },
+    // Usage with context the component
+    head: {
+      // To use "this" in the component, it is necessary to return the object through a function
+      title: function () {
+        return {
+          inner: this.title,
+          separator: "-",
+          complement: "Blog",
+        };
+      },
+      meta: [
+        {
+          name: "description",
+          content: "The CoinProfit official Blog",
+          id: "desc",
+        },
+        {
+          name: "keywords",
+          content:
+            "bitcoin,crypto tracking, track crypto assets, coinprofit leaders, eth, tracking, portfolio tracking",
+          id: "keywords",
+        },
+        {
+          name: "apple-mobile-web-app-capable",
+          content: "yes",
+        },
+        {
+          name: "apple-mobile-web-app-status-bar-style",
+          content: "black",
+        },
+        {
+          name: "apple-mobile-web-app-title",
+          content: "Coin Profit official Blog",
+        },
+        {
+          property: "og:description",
+          content: "Coin Profit official Blog",
+        },
+        {
+          property: "og:title",
+          content: "Coin Profit official Blog",
+        },
+      ],
     },
   };
 </script>

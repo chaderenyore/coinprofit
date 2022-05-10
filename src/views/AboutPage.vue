@@ -262,15 +262,18 @@
 </template>
 
 <script>
-export default {
-  data() {
-    return {
-      slideIndex: 1,
-    };
-  },
-  methods: {
-    currentSlide(n) {
-      this.showSlides((this.slideIndex = n));
+  export default {
+    data() {
+      return {
+        title: "About Coinprofit",
+        slideIndex: 1,
+      };
+    },
+    methods: {
+      currentSlide(n) {
+        this.showSlides((this.slideIndex = n));
+      },
+   
     },
     showSlides(n) {
       var i;
@@ -292,11 +295,51 @@ export default {
       dots[this.slideIndex - 1].classList += " active";
       setTimeout(this.showSlides, 1000);
     },
-  },
-  mounted() {
-    this.showSlides(this.slideIndex);
-  },
-};
+
+    head: {
+      // To use "this" in the component, it is necessary to return the object through a function
+      title: function () {
+        return {
+          inner: this.title,
+          separator: " ",
+        };
+      },
+      meta: [
+        {
+          name: "description",
+          content:
+            "We are a small team of crypto traders and investors on a mission to make crypto trading and investment profitable for everyone",
+          id: "desc",
+        },
+        {
+          name: "keywords",
+          content:
+            "bitcoin,crypto tracking, track crypto assets, coinprofit leaders, eth, tracking, portfolio tracking",
+          id: "keywords",
+        },
+        {
+          name: "apple-mobile-web-app-capable",
+          content: "yes",
+        },
+        {
+          name: "apple-mobile-web-app-status-bar-style",
+          content: "black",
+        },
+        {
+          name: "apple-mobile-web-app-title",
+          content: "About CoinProfit",
+        },
+        {
+          property: "og:description",
+          content: "About CoinProfit",
+        },
+        {
+          property: "og:title",
+          content: "About Coinprofit",
+        },
+      ],
+    },
+  };
 </script>
 
 <style scoped>

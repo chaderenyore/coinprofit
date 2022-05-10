@@ -56,15 +56,15 @@
           see the coins you buy, when you buy and when you sell. <br />
           <br />
 
-          We have integration with DEX (BSC, ETH) and CEX (Binance, Kucoin and
-          FTX). This means your subscribers will be able to see anytime you
-          perform a trade on any of these platforms.
+          We have integration with Binance, Kucoin and FTX. This means your
+          subscribers will be able to see anytime you perform a trade on any of
+          these platforms.
           <br />
           <br />
 
           Your subscribers will only see the coins you buy/sell and the price of
           the coin as at when you executed the trade but won&rsquo;t see the
-          amount of money yoursquore trading with. <br />
+          amount of money you are trading with. <br />
           <br />
 
           And of course, you can set your own subscription fee per month. $5,
@@ -72,7 +72,10 @@
         </p>
 
         <div class="app-downloads">
-          <a href="https://play.google.com/store/apps/details?id=com.procity.coinprofit" target="_blank" rel="noopener noreferrer"
+          <a
+            href="https://play.google.com/store/apps/details?id=com.procity.coinprofit"
+            target="_blank"
+            rel="noopener noreferrer"
             ><img
               src="@/assets/images/goplay.svg"
               alt=""
@@ -80,7 +83,7 @@
               class="app-download"
           /></a>
 
-           <!-- <a href="#" target="_blank" rel="noopener noreferrer"
+          <!-- <a href="#" target="_blank" rel="noopener noreferrer"
             ><img
               src="@/assets/images/appstore.svg"
               alt=""
@@ -88,7 +91,7 @@
               class="app-download"
           /></a> -->
 
-           <p class="comingSoon" >IOS coming soon...!</p>
+          <p class="comingSoon">IOS coming soon...!</p>
         </div>
       </div>
     </section>
@@ -243,9 +246,11 @@
           rights when your signals hit profit target.
         </p>
       </div>
-      <div class="app-downloads wrapper"> 
-
-        <a href="https://play.google.com/store/apps/details?id=com.procity.coinprofit" target="_blank" rel="noopener noreferrer"
+      <div class="app-downloads wrapper">
+        <a
+          href="https://play.google.com/store/apps/details?id=com.procity.coinprofit"
+          target="_blank"
+          rel="noopener noreferrer"
           ><img
             src="@/assets/images/goplay.svg"
             alt=""
@@ -261,7 +266,7 @@
             class="app-download features"
         /></a> -->
 
-        <p class="comingSoon" >IOS coming soon...!</p>
+        <p class="comingSoon">IOS coming soon...!</p>
       </div>
     </section>
 
@@ -909,7 +914,9 @@
       <h6>Download the coinprofit app NOW to become a leader!</h6>
 
       <div class="leaderCTADownloadWrapper">
-        <a href="https://play.google.com/store/apps/details?id=com.procity.coinprofit" target="_blank" 
+        <a
+          href="https://play.google.com/store/apps/details?id=com.procity.coinprofit"
+          target="_blank"
           ><img
             src="@/assets/images/goplay.svg"
             alt=""
@@ -925,7 +932,7 @@
             class="leaderCTADownloadApp"
         /></a> -->
 
-        <p class="comingSoon" >coming soon...!</p>
+        <p class="comingSoon">coming soon...!</p>
       </div>
     </div>
 
@@ -1021,1245 +1028,214 @@
   <BaseCallToAction />
 </template>
 
-
-
 <script>
-import Splide from "@splidejs/splide";
-export default {
-  methods: {
-    useSplide() {
-      new Splide(".splide", {
-        type: "loop",
-        perPage: 1,
-        autoplay: true,
-        interval: 3000, // How long to display each slide
-        pauseOnHover: true, // m
-        pauseOnFocus: false, // 
-        resetProgress: false,
-      }).mount();
+  import Splide from "@splidejs/splide";
+  export default {
+    data() {
+      return {
+        title: "Coinprofit",
+      };
     },
+    methods: {
+      useSplide() {
+        new Splide(".splide", {
+          type: "loop",
+          perPage: 1,
+          autoplay: true,
+          interval: 3000, // How long to display each slide
+          pauseOnHover: true, // m
+          pauseOnFocus: false, //
+          resetProgress: false,
+        }).mount();
+      },
 
-    initLeadersPage() {
-      this.useSplide();
+      initLeadersPage() {
+        this.useSplide();
 
-      // end of splider js
+        // end of splider js
 
-      
+        // FAQ SECTION
+        let faqtoggles = document.getElementsByClassName("faqtoggle");
+        let faqcontentDiv = document.getElementsByClassName("faqcontent");
+        let faqicons = document.getElementsByClassName("faqicon");
 
-      // FAQ SECTION
-      let faqtoggles = document.getElementsByClassName("faqtoggle");
-      let faqcontentDiv = document.getElementsByClassName("faqcontent");
-      let faqicons = document.getElementsByClassName("faqicon");
-
-      for (let i = 0; i < faqtoggles.length; i++) {
-        faqtoggles[i].addEventListener("click", () => {
-          if (
-            parseInt(faqcontentDiv[i].style.height) !=
-            faqcontentDiv[i].scrollHeight
-          ) {
-            faqcontentDiv[i].style.height =
-              faqcontentDiv[i].scrollHeight + "px";
-            faqicons[i].classList.remove("fa-chevron-down");
-            faqicons[i].classList.add("fa-chevron-up");
-          } else {
-            faqcontentDiv[i].style.height = "0px";
-            faqicons[i].classList.remove("fa-chevron-up");
-            faqicons[i].classList.add("fa-chevron-down");
-          }
-
-          for (let j = 0; j < faqcontentDiv.length; j++) {
-            if (j !== i) {
-              faqcontentDiv[j].style.height = "0px";
-              faqicons[j].classList.remove("fa-chevron-up");
-              faqicons[j].classList.add("fa-chevron-down");
+        for (let i = 0; i < faqtoggles.length; i++) {
+          faqtoggles[i].addEventListener("click", () => {
+            if (
+              parseInt(faqcontentDiv[i].style.height) !=
+              faqcontentDiv[i].scrollHeight
+            ) {
+              faqcontentDiv[i].style.height =
+                faqcontentDiv[i].scrollHeight + "px";
+              faqicons[i].classList.remove("fa-chevron-down");
+              faqicons[i].classList.add("fa-chevron-up");
+            } else {
+              faqcontentDiv[i].style.height = "0px";
+              faqicons[i].classList.remove("fa-chevron-up");
+              faqicons[i].classList.add("fa-chevron-down");
             }
-          }
-        });
-      }
+
+            for (let j = 0; j < faqcontentDiv.length; j++) {
+              if (j !== i) {
+                faqcontentDiv[j].style.height = "0px";
+                faqicons[j].classList.remove("fa-chevron-up");
+                faqicons[j].classList.add("fa-chevron-down");
+              }
+            }
+          });
+        }
+      },
     },
-  },
-  mounted() {
-    this.initLeadersPage();
-  },
-};
+    mounted() {
+      this.initLeadersPage();
+    },
+
+    head: {
+      // To use "this" in the component, it is necessary to return the object through a function
+      title: function () {
+        return {
+          inner: this.title,
+          separator: "-",
+          complement: "Leaders",
+        };
+      },
+      meta: [
+        {
+          name: "description",
+          content:
+            "Make Money From The Coinprofit App By Letting Others See Your Trades",
+          id: "desc",
+        },
+        {
+          name: "keywords",
+          content:
+            "bitcoin,crypto tracking, track crypto assets, coinprofit leaders, eth, tracking, portfolio tracking",
+          id: "keywords",
+        },
+        {
+          name: "apple-mobile-web-app-capable",
+          content: "yes",
+        },
+        {
+          name: "apple-mobile-web-app-status-bar-style",
+          content: "black",
+        },
+        {
+          name: "apple-mobile-web-app-title",
+          content: "CoinProfit - Leaders",
+        },
+        {
+          property: "og:description",
+          content: "CoinProfit - Make Money By Letting Others See Your Trades",
+        },
+        {
+          property: "og:title",
+          content: "Make Money By Letting Others See Your Trades",
+        },
+      ],
+    },
+  };
 </script>
 
 <style scoped>
-@import "@splidejs/splide/dist/css/splide.min.css";
-/* Mobile first design */
+  @import "@splidejs/splide/dist/css/splide.min.css";
+  /* Mobile first design */
 
-.mainLeaders_Wrapper {
-  width: 100%;
-  max-width: 1450px;
-  margin: 0 auto;
-}
+  .mainLeaders_Wrapper {
+    width: 100%;
+    max-width: 1450px;
+    margin: 0 auto;
+  }
 
-.first-page {
-  padding-top: 1rem;
-}
-@media (min-width:1200px) {
   .first-page {
-  padding-top: 7rem;
-}
-}
-.background-svg {
-  display: none;
-}
-
-.blob-wrapper {
-  position: relative;
-  overflow-x: hidden;
-  z-index: -1;
-}
-
-.mobile-blob {
-  object-fit: cover;
-  position: relative;
-  top: -15rem;
-  left: -170px;
-  margin-left: -100px;
-  height: 60rem;
-  width: 91.1875rem;
-}
-
-/* blob1-d will not be displayed on mobile screen - cux it's another image with another style */
-.computer-blob {
-  display: none;
-}
-
-.leaders-about {
-  position: relative;
-  top: -52rem;
-  margin-bottom: -45rem;
-}
-
-.leaders-about h1 {
-  font-family: "Montserrat", sans-serif;
-  width: 80%;
-  font-weight: 700;
-  margin: 10px auto 0;
-  text-align: center;
-  color: #fff;
-  letter-spacing: 0;
-}
-
-.appui {
-  position: relative;
-  width: 80%;
-}
-@media (min-width: 480px) {
-  .appui {
-    width: 60%;
+    padding-top: 1rem;
   }
-}
-.leaders-aboutP {
-  width: 90%;
-  margin: auto;
-  text-align: center;
-  margin-top: 4px;
-  color: var(--fourth-color);
-  line-height: 30px;
-}
-
-.app-download {
-  display: block;
-  width: 50%;
-  margin: 1rem auto 0;
-}
-.comingSoon {
-  margin-top: 1rem;
-  text-align: center;
-}
-
-@media (min-width: 480px) {
-  .app-download {
-    width: 30%;
+  @media (min-width: 1200px) {
+    .first-page {
+      padding-top: 7rem;
+    }
   }
-}
-
-.signal-packs {
-  position: absolute;
-  top: 12%;
-  left: 70%;
-  width: 95px;
-  padding-bottom: 0.6rem;
-  background: var(--third-color);
-  box-shadow: 0px 20px 17px #1c19230d;
-  border-radius: 20px;
-  z-index: 2;
-  transform: rotate(2.4deg);
-}
-.signal-packs.two {
-  position: absolute;
-  top: 21%;
-}
-
-.signal-packs.three {
-  position: absolute;
-  top: 30%;
-}
-@media (min-width: 480px) {
-  .signal-packs {
-    top: 15%;
-    left: 60%;
-  }
-  .signal-packs.two {
-    position: absolute;
-    top: 25%;
-    left: 50%;
+  .background-svg {
+    display: none;
   }
 
-  .signal-packs.three {
-    position: absolute;
-    top: 25%;
-    left: 75%;
-  }
-}
-.pack-img-wrapper {
-  position: relative;
-  top: -20px;
-  width: 40px;
-  height: 40px;
-  margin: auto;
-  border-radius: 50%;
-  background: transparent linear-gradient(180deg, #14cbff 0%, #366be8 100%)
-    no-repeat padding-box;
-}
-.pack-img {
-  width: 22px;
-  height: 23px;
-  margin-top: 6px;
-  margin-left: 9px;
-}
-.signal-packs p {
-  text-align: center;
-  font-family: "Poppins", sans-serif;
-  margin-top: -15px;
-  font-size: 0.7rem;
-}
-.signal-packs h5 {
-  text-align: center;
-  font-family: "Montserrat", sans-serif;
-  color: #3374ea;
-  font-weight: 600;
-  margin-top: 2px;
-  font-size: 17px;
-}
-.iconholder {
-  position: relative;
-}
-.iconBTC1 {
-  position: relative;
-  left: 10%;
-  width: 2rem;
-}
-
-.win-win {
-  position: relative;
-  width: 90%;
-  margin: 0 auto;
-  margin-bottom: 3rem;
-}
-.win-win h1 {
-  text-align: center;
-  color: #3374ea;
-  font-family: "Montserrat", sans-serif;
-  font-weight: bold;
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-.win-win p {
-  width: 90%;
-  margin: auto;
-  text-align: center;
-  margin-top: 4px;
-  color: var(--fourth-color);
-  line-height: 30px;
-}
-.leaders-features {
-  position: relative;
-  padding-bottom: 1rem;
-  margin-bottom: 3rem;
-}
-
-.leaders-features h1 {
-  text-align: center;
-  color: #3374ea;
-  font-family: "Montserrat", sans-serif;
-  font-weight: bold;
-  font-size: 2rem;
-  width: 90%;
-  margin: 0 auto;
-}
-.svg4 {
-  position: absolute;
-  left: 75%;
-  top: 5%;
-  width: 3rem;
-}
-.svg7F {
-  position: absolute;
-  left: 4%;
-  top: 30%;
-  width: 3rem;
-}
-.svg2F {
-  position: absolute;
-  left: 85%;
-  top: 30%;
-  width: 3rem;
-}
-
-/*  */
-.svgOne {
-  position: absolute;
-  left: 70%;
-  top: 15%;
-  width: 3rem;
-}
-.svgontop {
-  position: absolute;
-  left: 4%;
-  top: 40%;
-  width: 3rem;
-}
-.svg4N {
-  display: none;
-}
-.svg6F {
-  position: absolute;
-  left: 80%;
-  top: 40%;
-  width: 3rem;
-  z-index: 1;
-}
-
-/*  */
-
-.svg6FNP {
-  position: absolute;
-  left: 8%;
-  top: 20%;
-  width: 4rem;
-}
-
-@media (min-width: 1000px) {
-  .svg6FNP {
-    position: absolute;
-    left: 60%;
-    top: 320%;
-    width: 4rem;
-    z-index: 1;
-  }
-}
-.svgOneNP {
-  position: absolute;
-  left: 85%;
-  top: 20%;
-  width: 3rem;
-}
-.svgontopNP {
-  position: absolute;
-  left: 4%;
-  top: 40%;
-  width: 5rem;
-}
-.svg4NP {
-  display: none;
-}
-.svg6NP {
-  position: absolute;
-  left: 83%;
-  top: 40%;
-  width: 3rem;
-  z-index: 1;
-}
-.sheildicoNP {
-  display: none;
-}
-
-/*  */
-
-.leadersF-blob {
-  margin-top: 2rem;
-  width: 100%;
-  z-index: -1;
-}
-
-.share-portfolio-img {
-  width: 70%;
-  position: relative;
-  top: -17rem;
-  margin-left: 17%;
-  margin-bottom: -19rem;
-}
-@media (min-width: 405px) {
-  .share-portfolio-img {
-    width: 80%;
-    top: -23rem;
-    margin-bottom: -19rem;
-  }
-}
-.leaders-features p {
-  margin: 0 auto;
-  width: 90%;
-  color: var(--fourth-color);
-  text-align: center;
-  font-size: 1rem;
-  font-weight: 400;
-  font-family: "Montserrat", sans-serif;
-  line-height: 30px;
-}
-
-.seeSubsimg {
-  width: 70%;
-  position: relative;
-  top: -17rem;
-  margin-left: 16%;
-  margin-bottom: -19rem;
-}
-@media (min-width: 405px) {
-  .seeSubsimg {
-    width: 80%;
-    top: -23rem;
-    margin-bottom: -19rem;
-  }
-}
-
-.mobile-leaders-section {
-  position: relative;
-  top: 7rem;
-  font-family: "Montserrat", sans-serif;
-  margin-bottom: 10rem;
-}
-.mobile-leaders-section h1 {
-  width: 100%;
-  margin: 0 auto;
-  text-align: center;
-  letter-spacing: 0px;
-  color: #3374ea;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 800;
-  font-size: 2rem;
-  text-transform: capitalize;
-}
-.mobile-leaders-section h6 {
-  text-align: center;
-  margin: 0.4rem auto 0;
-  width: 70%;
-  color: var(--fourth-color);
-  font-size: 17px;
-  line-height: 30px;
-  font-weight: 500;
-}
-
-.mobile-leaders-box-wrapper {
-  margin-top: 2rem;
-  margin-bottom: 20rem;
-  position: relative;
-}
-
-.mobile-leaders-box-background {
-  background: transparent linear-gradient(180deg, #22a1f5 0%, #677bff 100%)
-    no-repeat padding-box;
-  border-top-left-radius: 4rem;
-  border-top-right-radius: 4rem;
-  height: 30rem;
-  width: 100%;
-  position: absolute;
-  top: 15rem;
-  z-index: -1;
-}
-.svg-background {
-  position: relative;
-  z-index: 1;
-}
-.splide__arrows {
-  display: none;
-}
-.mobile-leaders-box {
-  vertical-align: middle;
-  width: 85%;
-  padding: 0 20px 50px;
-  background: var(--third-color) no-repeat padding-box;
-  box-shadow: 0px 3px 6px #00000008;
-  margin: 9rem auto 5rem;
-  font-family: "Montserrat", sans-serif;
-  border-radius: 10px;
-}
-
-.mobile-leaders-img-box {
-  margin: auto;
-  position: relative;
-  top: -6rem;
-  margin-bottom: -5rem;
-  height: 10rem;
-  width: 10rem;
-  border: 8px solid var(--light-color);
-  border-radius: 50%;
-  overflow: hidden;
-}
-
-.mobile-leaders-img-box img {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
-  border-radius: 50%;
-  object-fit: cover;
-  transition: 0.3s ease;
-}
-.leader-lv {
-  position: relative;
-  top: -100px;
-  margin-bottom: -75px;
-  /* background color will be here once the real SVG is gotten */
-}
-.leader-lv img {
-  width: 70px;
-  margin-left: 90%;
-}
-.mobile-leaders-box p {
-  text-align: center;
-  color: var(--fourth-color);
-  font-size: 1rem;
-  line-height: 30px;
-  font-weight: 400;
-}
-
-.mobile-leaders-box h3 {
-  text-align: center;
-  color: #3374ea;
-  margin-bottom: 7px;
-}
-.mobile-leaders-box h4 {
-  color: #00be13;
-  text-align: center;
-  margin: 0.4rem auto 0;
-  font-size: 1rem;
-  line-height: 30px;
-}
-
-.reviews p {
-  color: var(--fourth-color);
-  margin-top: 20px;
-  font-size: 17px;
-}
-
-.splide .splide__pagination {
-  position: relative;
-  top: -1rem;
-  text-align: center;
-}
-.splide__pagination__page {
-  background-color: yellow;
-  width: 16px;
-  height: 16px;
-}
-.splide__pagination__page.is-active {
-  background-color: #fff;
-}
-
-.custom-shape-divider-bottom-1646476356 {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-  transform: rotate(180deg);
-}
-
-.custom-shape-divider-bottom-1646476356 svg {
-  position: relative;
-  display: block;
-  width: calc(139% + 1.3px);
-  height: 95px;
-}
-
-.custom-shape-divider-bottom-1646476356 .shape-fill {
-  fill: var(--light-color);
-}
-
-.computer-leaders-section {
-  display: none;
-}
-
-.becomeLeadersCTA {
-  width: 80%;
-  margin: 0 auto 10rem;
-  text-align: center;
-}
-.becomeLeadersCTA h1 {
-  width: 100%;
-  margin: 0 auto;
-  text-align: center;
-  letter-spacing: 0px;
-  color: #3374ea;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 800;
-  font-size: 2rem;
-  text-transform: capitalize;
-}
-
-.becomeLeadersCTA h6 {
-  text-align: center;
-  margin: 0.4rem auto 0;
-  width: 100%;
-  color: var(--fourth-color);
-  font-size: 17px;
-  font-weight: 500;
-}
-.leaderCTADownloadWrapper {
-  width: 100%;
-  text-align: center;
-  margin-top: 2rem;
-}
-.leaderCTADownloadApp {
-  display: block;
-  width: 50%;
-  margin: 1rem auto 0;
-}
-
-@media (min-width: 765px) {
-  .leaderCTADownloadApp {
-    display: inline-block;
-    width: 20%;
-    margin: 2rem 1rem;
-  }
-  .becomeLeadersCTA h1 {
-    font-size: 2.5rem;
-  }
-}
-
-/* code for FAQ SECTION */
-.faq-wrapper {
-  max-width: 90%;
-  margin: 30px auto;
-}
-.faqcontainer {
-  width: 100%;
-  margin: auto;
-}
-.faq-wrapper h1 {
-  text-align: center;
-  color: #3374ea;
-  margin-bottom: 50px;
-  font-family: "Montserrat", sans-serif;
-}
-.faqwrapper {
-  background-color: var(--third-color);
-  margin-bottom: 20px;
-  padding: 15px 30px;
-  border-radius: 5px;
-  box-shadow: 0px 20px 17px #1c192305;
-}
-.faqtoggle,
-.faqcontent {
-  font-family: "Montserrat", sans-serif;
-}
-.faqwrapper h3 {
-  color: #3374ea;
-  font-weight: 600;
-}
-.faqwrapper i {
-  color: #3374ea;
-}
-.faqtoggle {
-  width: 100%;
-  background-color: transparent;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  font-size: 16px;
-  color: #111130;
-  font-weight: 500;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 15px 0;
-  text-align: left;
-}
-
-.faqcontent {
-  color: var(--dark-color);
-  position: relative;
-  font-size: 16px;
-  text-align: left;
-  line-height: 30px;
-  height: 0;
-  overflow: hidden;
-  transition: all 1s;
-}
-
-/* FAQ ENDS HERE */
-
-@media only screen and (min-width: 720px) {
   .blob-wrapper {
     position: relative;
     overflow-x: hidden;
     z-index: -1;
-    height: 1500px;
-    top: -100px;
   }
 
   .mobile-blob {
     object-fit: cover;
     position: relative;
-    top: -20rem;
+    top: -15rem;
+    left: -170px;
     margin-left: -100px;
-    height: 90rem;
-    width: 100rem;
-  }
-  .leaders-about {
-    position: relative;
-    top: -82rem;
-    margin-bottom: -75rem;
-  }
-  @media (min-width: 765px) {
-    .background-svg {
-      display: block;
-      position: absolute;
-      top: 10rem;
-      left: 5rem;
-      width: 80%;
-      opacity: 0.1;
-    }
-    .blob-wrapper {
-      height: 670px;
-      position: relative;
-      top: -107px;
-      overflow-x: hidden;
-    }
-    .mobile-blob {
-      display: none;
-    }
-    .computer-blob {
-      object-fit: cover;
-      position: absolute;
-      top: -15rem;
-      left: 29rem;
-      height: 68.770625rem;
-      width: 62.5025rem;
-      transform: translateY(27px);
-    }
-
-    .leaders-about {
-      position: relative;
-      top: -37rem;
-      margin-bottom: -25rem;
-    }
-    .leaders-about h1 {
-      width: 100%;
-      font-family: "Montserrat", sans-serif;
-      text-align: center;
-      margin: 0.9rem 0;
-      color: #3374ea;
-      font-size: 2.9rem;
-      font-weight: 800;
-      letter-spacing: 0;
-      padding: 0 4rem;
-    }
-
-    .appui {
-      position: absolute;
-      top: -60px;
-      left: 35rem;
-      width: 40%;
-      display: none;
-    }
-    .signal-packs {
-      display: none;
-    }
-
-    .leaders-aboutP {
-      width: 90%;
-      text-align: center;
-      margin-top: 1rem;
-      color: var(--fourth-color);
-      font-size: 1.1rem;
-      line-height: 30px;
-    }
-    .app-downloads {
-      width: 100%;
-      text-align: center;
-    }
-    .app-download {
-      display: inline-block;
-      width: 20%;
-      margin: 2rem 1rem;
-    }
+    height: 60rem;
+    width: 91.1875rem;
   }
 
-  .leaders-features h1 {
-    text-align: center;
-    color: #3374ea;
-    font-family: "Montserrat", sans-serif;
-    font-weight: bold;
-    font-size: 3.5rem;
-  }
-
-  .leadersF-blob {
-    margin: 2.5rem auto 0;
-    width: 90%;
-    z-index: -1;
-  }
-
-  .share-portfolio-img {
-    margin-left: 5rem;
-    width: 80%;
-    position: relative;
-    top: -35rem;
-    margin-bottom: -39rem;
-  }
-
-  .leaders-features p {
-    margin: 0 auto;
-    width: 90%;
-    color: var(--fourth-color);
-    text-align: center;
-    font-size: 1.5rem;
-    font-weight: 400;
-    font-family: "Montserrat", sans-serif;
-    line-height: 30px;
-  }
-  .seeSubsimg {
-    margin-left: 5rem;
-    width: 80%;
-    position: relative;
-    top: -35rem;
-    margin-bottom: -39rem;
-  }
-  .mobile-leaders-section {
-    position: relative;
-    top: 7rem;
-    font-family: "Montserrat", sans-serif;
-    margin-bottom: 10rem;
-  }
-  .mobile-leaders-section h1 {
-    font-size: 2.5rem;
-  }
-  .mobile-leaders-section h6 {
-    font-size: 1.3rem;
-  }
-
-  .mobile-leaders-box-background {
-    height: 25rem;
-  }
-  .mobile-leaders-box {
-    width: 50%;
-  }
-
-  .leader-lv {
-    position: relative;
-    top: -100px;
-    margin-bottom: -75px;
-    /* background color will be here once the real SVG is gotten */
-  }
-  .leader-lv img {
-    width: 70px;
-    margin-left: 325px;
-  }
-}
-
-/* IPAD PRO */
-
-@media only screen and (min-width: 1024px) {
-  .leaders-aboutP {
-    font-size: 1rem;
-    line-height: 50px;
-  }
-  .win-win p {
-    width: 90%;
-    color: var(--fourth-color);
-    text-align: center;
-    font-size: 1rem;
-    font-weight: 400;
-    font-family: "Montserrat", sans-serif;
-    line-height: 50px;
-  }
-  .iconholder {
-    position: relative;
-  }
-  .iconBTC1 {
-    position: relative;
-    left: 10%;
-    width: 5rem;
-  }
-
-  .svg4 {
-    position: absolute;
-    left: 80%;
-    top: 8%;
-    width: 5rem;
-  }
-  .leaders-features {
-    margin-bottom: 6rem !important;
-    width: 70%;
-    margin: 0 auto;
-  }
-  .leaders-features h1 {
-    text-align: center;
-    color: #3374ea;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 800;
-    font-size: 3rem;
-  }
-  .svg4 {
-    position: absolute;
-    left: 80%;
-    top: 8%;
-    width: 5rem;
-  }
-  .svg7F {
-    position: absolute;
-    left: 85%;
-    top: 50%;
-    width: 5rem;
-  }
-  .svg2F {
-    position: absolute;
-    left: 5%;
-    top: 50%;
-    width: 5rem;
-  }
-
-  .svgOne {
-    position: absolute;
-    left: 70%;
-    top: 15%;
-    width: 5rem;
-  }
-  .svgontop {
-    position: absolute;
-    left: 5%;
-    top: 50%;
-    width: 5rem;
-  }
-  .svg6F {
-    position: absolute;
-    left: 85%;
-    top: 50%;
-    width: 5rem;
-  }
-
-  /*  */
-
-  /*  */
-  .svgOneNP {
-    position: absolute;
-    left: 70%;
-    top: 15%;
-    width: 5rem;
-  }
-  .svgontopNP {
-    position: absolute;
-    left: 3%;
-    top: 40%;
-    width: 5rem;
-  }
-  .svg4NP {
-    display: none;
-  }
-  .svg6NP {
-    position: absolute;
-    left: 85%;
-    top: 40%;
-    width: 3rem;
-    z-index: 1;
-  }
-
-  .leadersF-blob {
-    margin-top: 3rem;
-    margin-left: 3.5rem;
-    width: 80%;
-    z-index: -1;
-  }
-
-  .share-portfolio-img {
-    margin-left: 10rem;
-    margin-bottom: -40rem;
-    width: 60%;
-    position: relative;
-    top: -30rem;
-  }
-
-  .leaders-features p {
-    margin: 10rem auto 0;
-    width: 90%;
-    color: var(--fourth-color);
-    text-align: center;
-    font-size: 1rem;
-    font-weight: 400;
-    font-family: "Montserrat", sans-serif;
-    line-height: 50px;
-  }
-  .seeSubsimg {
-    margin-left: 10rem;
-    margin-bottom: -40rem;
-    width: 60%;
-    position: relative;
-    top: -30rem;
-  }
-  .mobile-leaders-section {
-    display: none;
-  }
-
-  .computer-leaders-section {
-    display: block;
-    position: relative;
-    top: 10rem;
-    font-family: "Montserrat", sans-serif;
-    margin-bottom: 10rem;
-  }
-  .computer-leaders-section h1 {
-    width: 100%;
-    margin: 0 auto;
-    text-align: center;
-    letter-spacing: 0px;
-    color: #3374ea;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 800;
-    font-size: 4rem;
-    text-transform: capitalize;
-  }
-  .computer-leaders-section h6 {
-    text-align: center;
-    margin: 0.4rem auto 0;
-    width: 70%;
-    color: var(--fourth-color);
-    font-size: 1.4rem;
-    line-height: 30px;
-    font-weight: 500;
-  }
-
-  .computer-leaders-box-wrapper {
-    position: relative;
-    margin-top: 12rem;
-    text-align: center;
-  }
-
-  /* computer leaders box background first svg */
-  .custom-shape-divider-top-1646479334 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
-  }
-
-  .custom-shape-divider-top-1646479334 svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 86px;
-    transform: rotateY(180deg);
-  }
-
-  .custom-shape-divider-top-1646479334 .shape-fill {
-    fill: var(--light-color);
-  }
-
-  /*  computer leaders box background first svg  ends */
-
-  .computer-leaders-box-background {
-    background: transparent linear-gradient(180deg, #22a1f5 0%, #677bff 100%)
-      no-repeat padding-box;
-    height: 70%;
-    width: 100%;
-    position: absolute;
-    top: 11rem;
-    z-index: -1;
-  }
-
-  .computer-leaders-box {
-    width: 40%;
-    padding: 0px 20px 50px;
-    background: var(--third-color) no-repeat padding-box;
-    box-shadow: 0px 3px 6px #00000008;
-    display: inline-block;
-    margin: -2rem 1rem 10rem;
-    font-family: "Montserrat", sans-serif;
-    border-radius: 10px;
-  }
-  .computer-leaders-img-box {
-    margin: auto;
-    position: relative;
-    top: -6rem;
-    margin-bottom: -5rem;
-    height: 11rem;
-    width: 11rem;
-    border: 8px solid var(--light-color);
-    border-radius: 50%;
-    overflow: hidden;
-  }
-
-  .computer-leaders-img-box img {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    border-radius: 50%;
-    object-fit: cover;
-    transition: 0.3s ease;
-  }
-  .leader-lv {
-    position: relative;
-    top: -120px;
-    margin-bottom: -75px;
-    /* background color will be here once the real SVG is gotten */
-  }
-  .leader-lv img {
-    width: 80px;
-    margin-left: 335px;
-  }
-  .computer-leaders-box p {
-    text-align: center;
-    color: var(--fourth-color);
-    font-size: 1rem;
-    line-height: 30px;
-    font-weight: 400;
-  }
-
-  .computer-leaders-box h3 {
-    text-align: center;
-    color: #3374ea;
-    margin-bottom: 7px;
-  }
-  .computer-leaders-box h4 {
-    color: #00be13;
-    text-align: center;
-    margin: 0.4rem auto 0;
-    font-size: 1rem;
-    line-height: 30px;
-  }
-  .reviews p {
-    color: var(--fourth-color);
-    margin-top: 20px;
-    font-size: 17px;
-  }
-
-  .faq-wrapper h1 {
-    width: 100%;
-    margin: 0 auto 2rem;
-    text-align: center;
-    letter-spacing: 0px;
-    color: #3374ea;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 800;
-    font-size: 3rem;
-    text-transform: capitalize;
-  }
-  .faqwrapper h3 {
-    color: #3374ea;
-    font-weight: 800;
-    font-size: 1.5rem;
-  }
-}
-
-/* START COMPUTER SCREEN DESIGN */
-@media only screen and (min-width: 1200px) {
-  .background-svg {
-    display: block;
-    position: absolute;
-    top: 40%;
-    left: 10%;
-    width: 30%;
-  }
-
-  .blob-wrapper {
-    height: 42rem;
-    position: relative;
-    top: -7.5rem;
-    overflow-x: hidden;
-  }
-
+  /* blob1-d will not be displayed on mobile screen - cux it's another image with another style */
   .computer-blob {
-    object-fit: cover;
-    left: 47%;
-    top: -1.5rem;
-    height: 40rem;
-    width: 66rem;
-    transform: translateY(27px);
-    z-index: -1;
-    display: block;
-  }
-
-  @media (min-width: 1290px) {
-    .computer-blob {
-      left: 52%;
-    }
-  }
-  @media (min-width: 1400px) {
-    .computer-blob {
-      left: 55%;
-    }
+    display: none;
   }
 
   .leaders-about {
-    width: 100%;
     position: relative;
-    top: -37rem;
-    margin-bottom: -33rem;
-    /* margin-left: 3%; */
+    top: -52rem;
+    margin-bottom: -45rem;
   }
+
   .leaders-about h1 {
-    width: 50%;
     font-family: "Montserrat", sans-serif;
-    text-align: left;
-    margin: 0.9rem 0;
-    margin-left: 4.5%;
-    color: #3374ea;
-    font-weight: 800;
-    font-size: 40px;
+    width: 80%;
+    font-weight: 700;
+    margin: 10px auto 0;
+    text-align: center;
+    color: #fff;
     letter-spacing: 0;
-    padding: 0 4rem;
   }
 
-  .leaders-aboutP {
-    width: 40%;
-    text-align: left;
-    margin-top: 4px;
-    margin-left: 10%;
-    color: var(--fourth-color);
-    line-height: 25px;
-    font-size: 0.9rem;
-  }
   .appui {
-    display: block;
-    position: absolute;
-    top: -3rem;
-    left: 54%;
-    width: 25%;
+    position: relative;
+    width: 80%;
+  }
+  @media (min-width: 480px) {
+    .appui {
+      width: 60%;
+    }
+  }
+  .leaders-aboutP {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    margin-top: 4px;
+    color: var(--fourth-color);
+    line-height: 30px;
   }
 
-  .app-downloads {
-    text-align: left;
-    margin-left: 9%;
-    width: 50%;
-  }
   .app-download {
-    display: inline-block;
-    width: 10rem;
-    margin: 2rem 1rem 0;
+    display: block;
+    width: 50%;
+    margin: 1rem auto 0;
   }
   .comingSoon {
-    text-align: unset;
-    margin-left: 1rem;
+    margin-top: 1rem;
+    text-align: center;
+  }
+
+  @media (min-width: 480px) {
+    .app-download {
+      width: 30%;
+    }
   }
 
   .signal-packs {
-    display: block;
     position: absolute;
-    top: 90px;
-    left: 83%;
+    top: 12%;
+    left: 70%;
     width: 95px;
     padding-bottom: 0.6rem;
-    /* height: 110px; */
     background: var(--third-color);
     box-shadow: 0px 20px 17px #1c19230d;
     border-radius: 20px;
@@ -2268,14 +1244,29 @@ export default {
   }
   .signal-packs.two {
     position: absolute;
-    top: 200px;
-    left: 75%;
+    top: 21%;
   }
 
   .signal-packs.three {
     position: absolute;
-    top: 205px;
-    left: 90%;
+    top: 30%;
+  }
+  @media (min-width: 480px) {
+    .signal-packs {
+      top: 15%;
+      left: 60%;
+    }
+    .signal-packs.two {
+      position: absolute;
+      top: 25%;
+      left: 50%;
+    }
+
+    .signal-packs.three {
+      position: absolute;
+      top: 25%;
+      left: 75%;
+    }
   }
   .pack-img-wrapper {
     position: relative;
@@ -2307,9 +1298,164 @@ export default {
     margin-top: 2px;
     font-size: 17px;
   }
+  .iconholder {
+    position: relative;
+  }
+  .iconBTC1 {
+    position: relative;
+    left: 10%;
+    width: 2rem;
+  }
 
+  .win-win {
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+  }
+  .win-win h1 {
+    text-align: center;
+    color: #3374ea;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
   .win-win p {
-    width: 50%;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    margin-top: 4px;
+    color: var(--fourth-color);
+    line-height: 30px;
+  }
+  .leaders-features {
+    position: relative;
+    padding-bottom: 1rem;
+    margin-bottom: 3rem;
+  }
+
+  .leaders-features h1 {
+    text-align: center;
+    color: #3374ea;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .svg4 {
+    position: absolute;
+    left: 75%;
+    top: 5%;
+    width: 3rem;
+  }
+  .svg7F {
+    position: absolute;
+    left: 4%;
+    top: 30%;
+    width: 3rem;
+  }
+  .svg2F {
+    position: absolute;
+    left: 85%;
+    top: 30%;
+    width: 3rem;
+  }
+
+  /*  */
+  .svgOne {
+    position: absolute;
+    left: 70%;
+    top: 15%;
+    width: 3rem;
+  }
+  .svgontop {
+    position: absolute;
+    left: 4%;
+    top: 40%;
+    width: 3rem;
+  }
+  .svg4N {
+    display: none;
+  }
+  .svg6F {
+    position: absolute;
+    left: 80%;
+    top: 40%;
+    width: 3rem;
+    z-index: 1;
+  }
+
+  /*  */
+
+  .svg6FNP {
+    position: absolute;
+    left: 8%;
+    top: 20%;
+    width: 4rem;
+  }
+
+  @media (min-width: 1000px) {
+    .svg6FNP {
+      position: absolute;
+      left: 60%;
+      top: 320%;
+      width: 4rem;
+      z-index: 1;
+    }
+  }
+  .svgOneNP {
+    position: absolute;
+    left: 85%;
+    top: 20%;
+    width: 3rem;
+  }
+  .svgontopNP {
+    position: absolute;
+    left: 4%;
+    top: 40%;
+    width: 5rem;
+  }
+  .svg4NP {
+    display: none;
+  }
+  .svg6NP {
+    position: absolute;
+    left: 83%;
+    top: 40%;
+    width: 3rem;
+    z-index: 1;
+  }
+  .sheildicoNP {
+    display: none;
+  }
+
+  /*  */
+
+  .leadersF-blob {
+    margin-top: 2rem;
+    width: 100%;
+    z-index: -1;
+  }
+
+  .share-portfolio-img {
+    width: 70%;
+    position: relative;
+    top: -17rem;
+    margin-left: 17%;
+    margin-bottom: -19rem;
+  }
+  @media (min-width: 405px) {
+    .share-portfolio-img {
+      width: 80%;
+      top: -23rem;
+      margin-bottom: -19rem;
+    }
+  }
+  .leaders-features p {
+    margin: 0 auto;
+    width: 90%;
     color: var(--fourth-color);
     text-align: center;
     font-size: 1rem;
@@ -2318,234 +1464,28 @@ export default {
     line-height: 30px;
   }
 
-  .iconholder {
-    position: relative;
-  }
-  .iconBTC1 {
-    position: relative;
-    left: 10%;
-    width: 3rem;
-  }
-
-  .svg4 {
-    position: absolute;
-    left: 90%;
-    top: 8%;
-    width: 5rem;
-  }
-  .svg7F {
-    position: absolute;
-    left: 90%;
-    top: 80%;
-    width: 5rem;
-  }
-  .svg2F {
-    position: absolute;
-    left: 0%;
-    top: 90%;
-    width: 5rem;
-  }
-
-  .svgOne {
-    position: absolute;
-    left: 95%;
-    top: 90%;
-    width: 5rem;
-  }
-  .svgontop {
-    position: absolute;
-    left: 45%;
-    top: 90%;
-    width: 4rem;
-  }
-  .svg4N {
-    display: block;
-    position: absolute;
-    width: 4rem;
-    left: 4%;
-    top: 20%;
-  }
-  .svg6F {
-    position: absolute;
-    left: 5%;
-    top: 50%;
-    width: 5rem;
-  }
-
-  /* ... */
-
-  .svgOneNP {
-    position: absolute;
-    left: 85%;
-    top: 85%;
-    width: 3rem;
-  }
-  .svgontopNP {
-    position: absolute;
-    left: 4%;
-    top: 40%;
-    width: 3rem;
-    display: none;
-  }
-  .svg6NP {
-    display: none;
-  }
-  .svg4NP {
-    display: block;
-    position: absolute;
-    width: 5rem;
-    left: 5%;
-    top: 40%;
-  }
-  .sheildicoNP {
-    display: block;
-    position: absolute;
-    width: 2rem;
-    left: 60%;
-    top: 70%;
-  }
-
-  .leaders-features {
-    width: 80%;
-    margin: 0 auto;
-    padding-bottom: 10rem;
-  }
-  .leadersF-blob {
-    margin-top: 3rem;
-    margin-left: 0;
-    width: 40%;
-    z-index: -1;
-  }
-
-  .share-portfolio-img {
-    position: relative;
-    top: -19rem;
-    margin-left: 5rem;
-    margin-bottom: -30rem;
-    width: 30%;
-  }
-
-  .share-portfolio-img:hover {
-    filter: saturate(100%);
-    transform: scale(1.1);
-  }
-
-  .leaders-features h1 {
-    width: 40%;
-    float: right;
-    /* margin-right: 14.5rem; */
-    margin-top: 10rem;
-    text-align: left;
-    color: #3374ea;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 800;
-    font-size: 2.3rem;
-  }
-  @media (min-width: 1300px) {
-    .leaders-features h1 {
-      margin-top: 15rem;
-    }
-  }
-  @media (min-width: 1400px) {
-    .leaders-features h1 {
-      margin-top: 17rem;
-    }
-  }
-
-  .leaders-features p {
-    width: 40%;
-    color: var(--fourth-color);
-    text-align: left;
-    font-size: 1rem;
-    font-weight: 400;
-    font-family: "Montserrat", sans-serif;
-    line-height: 30px;
-    float: right;
-    /* margin-right: 3rem; */
-    margin-top: -12rem;
-  }
-
-  /*  */
-
-  .leaders-features.two h1 {
-    float: left;
-    width: 30%;
-    margin-right: 14.5rem;
-    margin-top: 8rem;
-    text-align: left;
-    color: #3374ea;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 800;
-    font-size: 2.3rem;
-  }
-
-  @media (min-width: 1300px) {
-    .leaders-features.two h1 {
-      margin-top: 11rem;
-    }
-  }
-  @media (min-width: 1400px) {
-    .leaders-features.two h1 {
-      margin-top: 17rem;
-    }
-  }
-  .leadersF-blob.two {
-    float: right;
-    margin-top: 3rem;
-    margin-left: 0;
-    width: 40%;
-    z-index: -1;
-  }
-
   .seeSubsimg {
+    width: 70%;
     position: relative;
-    top: -19rem;
-    margin-left: 60%;
-    margin-bottom: -30rem;
-    width: 30%;
-    float: right;
+    top: -17rem;
+    margin-left: 16%;
+    margin-bottom: -19rem;
   }
-
-  .leaders-features.two p {
-    float: left;
-    margin-top: -10rem;
-  }
-  .leaders-features.three {
-    padding-top: 10rem;
-  }
-  .app-downloads.wrapper {
-    position: relative;
-    top: 10rem;
-    margin-left: 9rem;
-  }
-  @media (min-width: 1340px) {
-    .app-downloads.wrapper {
-      position: relative;
-      top: 15rem;
-      margin-left: 7rem;
-      width: 50%;
+  @media (min-width: 405px) {
+    .seeSubsimg {
+      width: 80%;
+      top: -23rem;
+      margin-bottom: -19rem;
     }
   }
-  @media (min-width: 1400px) {
-    .app-downloads.wrapper {
-      top: -2rem;
-    }
-  }
-  .app-download.features {
-    display: inline-block;
-    width: 20%;
-    margin: 2rem 1rem;
-  }
 
-  .computer-leaders-section {
-    display: block;
+  .mobile-leaders-section {
     position: relative;
-    top: 0rem;
+    top: 7rem;
     font-family: "Montserrat", sans-serif;
-    margin-bottom: 2rem;
-    margin-top: 20rem;
+    margin-bottom: 10rem;
   }
-  .computer-leaders-section h1 {
+  .mobile-leaders-section h1 {
     width: 100%;
     margin: 0 auto;
     text-align: center;
@@ -2553,96 +1493,67 @@ export default {
     color: #3374ea;
     font-family: "Montserrat", sans-serif;
     font-weight: 800;
-    font-size: 3rem;
+    font-size: 2rem;
     text-transform: capitalize;
   }
-  .computer-leaders-section h6 {
+  .mobile-leaders-section h6 {
     text-align: center;
     margin: 0.4rem auto 0;
     width: 70%;
     color: var(--fourth-color);
-    font-size: 1rem;
+    font-size: 17px;
     line-height: 30px;
     font-weight: 500;
   }
 
-  .computer-leaders-box-wrapper {
+  .mobile-leaders-box-wrapper {
+    margin-top: 2rem;
+    margin-bottom: 20rem;
     position: relative;
-    margin-top: 12rem;
-    text-align: center;
   }
 
-  .computer-leaders-box-wrapper.two {
-    margin-top: 3rem;
-  }
-
-  /* computer leaders box background first svg */
-  .custom-shape-divider-top-1646479334 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
-  }
-
-  .custom-shape-divider-top-1646479334 svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 86px;
-    transform: rotateY(180deg);
-  }
-
-  .custom-shape-divider-top-1646479334 .shape-fill {
-    fill: var(--light-color);
-  }
-
-  /*  computer leaders box background first svg  ends */
-
-  .computer-leaders-box-background {
+  .mobile-leaders-box-background {
     background: transparent linear-gradient(180deg, #22a1f5 0%, #677bff 100%)
       no-repeat padding-box;
-    padding: 40rem 0 0rem;
+    border-top-left-radius: 4rem;
+    border-top-right-radius: 4rem;
+    height: 30rem;
     width: 100%;
     position: absolute;
-    top: 3rem;
+    top: 15rem;
     z-index: -1;
   }
-
-  .computer-leaders-box {
+  .svg-background {
+    position: relative;
+    z-index: 1;
+  }
+  .splide__arrows {
+    display: none;
+  }
+  .mobile-leaders-box {
     vertical-align: middle;
-    width: 24%;
-    transform: scale(0.9);
-    padding: 0px 15px 50px;
+    width: 85%;
+    padding: 0 20px 50px;
     background: var(--third-color) no-repeat padding-box;
     box-shadow: 0px 3px 6px #00000008;
-    display: inline-block;
-    margin: -2rem 2rem 10rem;
+    margin: 9rem auto 5rem;
     font-family: "Montserrat", sans-serif;
     border-radius: 10px;
   }
-  .computer-leaders-box:hover {
-    transition: 1s;
-    filter: saturate(100%);
-    transform: scale(1);
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-      rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-  }
-  .computer-leaders-img-box {
+
+  .mobile-leaders-img-box {
     margin: auto;
     position: relative;
     top: -6rem;
     margin-bottom: -5rem;
-    height: 9rem;
-    width: 9rem;
+    height: 10rem;
+    width: 10rem;
     border: 8px solid var(--light-color);
     border-radius: 50%;
     overflow: hidden;
   }
 
-  .computer-leaders-img-box img {
+  .mobile-leaders-img-box img {
     position: absolute;
     height: 100%;
     width: 100%;
@@ -2654,15 +1565,15 @@ export default {
   }
   .leader-lv {
     position: relative;
-    top: -80px;
+    top: -100px;
     margin-bottom: -75px;
     /* background color will be here once the real SVG is gotten */
   }
   .leader-lv img {
     width: 70px;
-    margin-left: 260px;
+    margin-left: 90%;
   }
-  .computer-leaders-box p {
+  .mobile-leaders-box p {
     text-align: center;
     color: var(--fourth-color);
     font-size: 1rem;
@@ -2670,38 +1581,1180 @@ export default {
     font-weight: 400;
   }
 
-  .computer-leaders-box h3 {
+  .mobile-leaders-box h3 {
     text-align: center;
     color: #3374ea;
     margin-bottom: 7px;
   }
-  .computer-leaders-box h4 {
+  .mobile-leaders-box h4 {
     color: #00be13;
     text-align: center;
     margin: 0.4rem auto 0;
     font-size: 1rem;
     line-height: 30px;
   }
+
   .reviews p {
     color: var(--fourth-color);
     margin-top: 20px;
     font-size: 17px;
   }
 
-  /* code for FAQ SECTION */
+  .splide .splide__pagination {
+    position: relative;
+    top: -1rem;
+    text-align: center;
+  }
+  .splide__pagination__page {
+    background-color: yellow;
+    width: 16px;
+    height: 16px;
+  }
+  .splide__pagination__page.is-active {
+    background-color: #fff;
+  }
 
+  .custom-shape-divider-bottom-1646476356 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+  }
+
+  .custom-shape-divider-bottom-1646476356 svg {
+    position: relative;
+    display: block;
+    width: calc(139% + 1.3px);
+    height: 95px;
+  }
+
+  .custom-shape-divider-bottom-1646476356 .shape-fill {
+    fill: var(--light-color);
+  }
+
+  .computer-leaders-section {
+    display: none;
+  }
+
+  .becomeLeadersCTA {
+    width: 80%;
+    margin: 0 auto 10rem;
+    text-align: center;
+  }
+  .becomeLeadersCTA h1 {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    letter-spacing: 0px;
+    color: #3374ea;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    font-size: 2rem;
+    text-transform: capitalize;
+  }
+
+  .becomeLeadersCTA h6 {
+    text-align: center;
+    margin: 0.4rem auto 0;
+    width: 100%;
+    color: var(--fourth-color);
+    font-size: 17px;
+    font-weight: 500;
+  }
+  .leaderCTADownloadWrapper {
+    width: 100%;
+    text-align: center;
+    margin-top: 2rem;
+  }
+  .leaderCTADownloadApp {
+    display: block;
+    width: 50%;
+    margin: 1rem auto 0;
+  }
+
+  @media (min-width: 765px) {
+    .leaderCTADownloadApp {
+      display: inline-block;
+      width: 20%;
+      margin: 2rem 1rem;
+    }
+    .becomeLeadersCTA h1 {
+      font-size: 2.5rem;
+    }
+  }
+
+  /* code for FAQ SECTION */
   .faq-wrapper {
-    max-width: 50%;
-    margin: 5rem auto;
+    max-width: 90%;
+    margin: 30px auto;
+  }
+  .faqcontainer {
+    width: 100%;
+    margin: auto;
   }
   .faq-wrapper h1 {
-    font-size: 2rem;
+    text-align: center;
+    color: #3374ea;
+    margin-bottom: 50px;
+    font-family: "Montserrat", sans-serif;
   }
-
+  .faqwrapper {
+    background-color: var(--third-color);
+    margin-bottom: 20px;
+    padding: 15px 30px;
+    border-radius: 5px;
+    box-shadow: 0px 20px 17px #1c192305;
+  }
+  .faqtoggle,
+  .faqcontent {
+    font-family: "Montserrat", sans-serif;
+  }
   .faqwrapper h3 {
-    font-size: 1rem;
     color: #3374ea;
     font-weight: 600;
   }
-}
+  .faqwrapper i {
+    color: #3374ea;
+  }
+  .faqtoggle {
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px;
+    color: #111130;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 15px 0;
+    text-align: left;
+  }
+
+  .faqcontent {
+    color: var(--dark-color);
+    position: relative;
+    font-size: 16px;
+    text-align: left;
+    line-height: 30px;
+    height: 0;
+    overflow: hidden;
+    transition: all 1s;
+  }
+
+  /* FAQ ENDS HERE */
+
+  @media only screen and (min-width: 720px) {
+    .blob-wrapper {
+      position: relative;
+      overflow-x: hidden;
+      z-index: -1;
+      height: 1500px;
+      top: -100px;
+    }
+
+    .mobile-blob {
+      object-fit: cover;
+      position: relative;
+      top: -20rem;
+      margin-left: -100px;
+      height: 90rem;
+      width: 100rem;
+    }
+    .leaders-about {
+      position: relative;
+      top: -82rem;
+      margin-bottom: -75rem;
+    }
+    @media (min-width: 765px) {
+      .background-svg {
+        display: block;
+        position: absolute;
+        top: 10rem;
+        left: 5rem;
+        width: 80%;
+        opacity: 0.1;
+      }
+      .blob-wrapper {
+        height: 670px;
+        position: relative;
+        top: -107px;
+        overflow-x: hidden;
+      }
+      .mobile-blob {
+        display: none;
+      }
+      .computer-blob {
+        object-fit: cover;
+        position: absolute;
+        top: -15rem;
+        left: 29rem;
+        height: 68.770625rem;
+        width: 62.5025rem;
+        transform: translateY(27px);
+      }
+
+      .leaders-about {
+        position: relative;
+        top: -37rem;
+        margin-bottom: -25rem;
+      }
+      .leaders-about h1 {
+        width: 100%;
+        font-family: "Montserrat", sans-serif;
+        text-align: center;
+        margin: 0.9rem 0;
+        color: #3374ea;
+        font-size: 2.9rem;
+        font-weight: 800;
+        letter-spacing: 0;
+        padding: 0 4rem;
+      }
+
+      .appui {
+        position: absolute;
+        top: -60px;
+        left: 35rem;
+        width: 40%;
+        display: none;
+      }
+      .signal-packs {
+        display: none;
+      }
+
+      .leaders-aboutP {
+        width: 90%;
+        text-align: center;
+        margin-top: 1rem;
+        color: var(--fourth-color);
+        font-size: 1.1rem;
+        line-height: 30px;
+      }
+      .app-downloads {
+        width: 100%;
+        text-align: center;
+      }
+      .app-download {
+        display: inline-block;
+        width: 20%;
+        margin: 2rem 1rem;
+      }
+    }
+
+    .leaders-features h1 {
+      text-align: center;
+      color: #3374ea;
+      font-family: "Montserrat", sans-serif;
+      font-weight: bold;
+      font-size: 3.5rem;
+    }
+
+    .leadersF-blob {
+      margin: 2.5rem auto 0;
+      width: 90%;
+      z-index: -1;
+    }
+
+    .share-portfolio-img {
+      margin-left: 5rem;
+      width: 80%;
+      position: relative;
+      top: -35rem;
+      margin-bottom: -39rem;
+    }
+
+    .leaders-features p {
+      margin: 0 auto;
+      width: 90%;
+      color: var(--fourth-color);
+      text-align: center;
+      font-size: 1.5rem;
+      font-weight: 400;
+      font-family: "Montserrat", sans-serif;
+      line-height: 30px;
+    }
+    .seeSubsimg {
+      margin-left: 5rem;
+      width: 80%;
+      position: relative;
+      top: -35rem;
+      margin-bottom: -39rem;
+    }
+    .mobile-leaders-section {
+      position: relative;
+      top: 7rem;
+      font-family: "Montserrat", sans-serif;
+      margin-bottom: 10rem;
+    }
+    .mobile-leaders-section h1 {
+      font-size: 2.5rem;
+    }
+    .mobile-leaders-section h6 {
+      font-size: 1.3rem;
+    }
+
+    .mobile-leaders-box-background {
+      height: 25rem;
+    }
+    .mobile-leaders-box {
+      width: 50%;
+    }
+
+    .leader-lv {
+      position: relative;
+      top: -100px;
+      margin-bottom: -75px;
+      /* background color will be here once the real SVG is gotten */
+    }
+    .leader-lv img {
+      width: 70px;
+      margin-left: 325px;
+    }
+  }
+
+  /* IPAD PRO */
+
+  @media only screen and (min-width: 1024px) {
+    .leaders-aboutP {
+      font-size: 1rem;
+      line-height: 50px;
+    }
+    .win-win p {
+      width: 90%;
+      color: var(--fourth-color);
+      text-align: center;
+      font-size: 1rem;
+      font-weight: 400;
+      font-family: "Montserrat", sans-serif;
+      line-height: 50px;
+    }
+    .iconholder {
+      position: relative;
+    }
+    .iconBTC1 {
+      position: relative;
+      left: 10%;
+      width: 5rem;
+    }
+
+    .svg4 {
+      position: absolute;
+      left: 80%;
+      top: 8%;
+      width: 5rem;
+    }
+    .leaders-features {
+      margin-bottom: 6rem !important;
+      width: 70%;
+      margin: 0 auto;
+    }
+    .leaders-features h1 {
+      text-align: center;
+      color: #3374ea;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 800;
+      font-size: 3rem;
+    }
+    .svg4 {
+      position: absolute;
+      left: 80%;
+      top: 8%;
+      width: 5rem;
+    }
+    .svg7F {
+      position: absolute;
+      left: 85%;
+      top: 50%;
+      width: 5rem;
+    }
+    .svg2F {
+      position: absolute;
+      left: 5%;
+      top: 50%;
+      width: 5rem;
+    }
+
+    .svgOne {
+      position: absolute;
+      left: 70%;
+      top: 15%;
+      width: 5rem;
+    }
+    .svgontop {
+      position: absolute;
+      left: 5%;
+      top: 50%;
+      width: 5rem;
+    }
+    .svg6F {
+      position: absolute;
+      left: 85%;
+      top: 50%;
+      width: 5rem;
+    }
+
+    /*  */
+
+    /*  */
+    .svgOneNP {
+      position: absolute;
+      left: 70%;
+      top: 15%;
+      width: 5rem;
+    }
+    .svgontopNP {
+      position: absolute;
+      left: 3%;
+      top: 40%;
+      width: 5rem;
+    }
+    .svg4NP {
+      display: none;
+    }
+    .svg6NP {
+      position: absolute;
+      left: 85%;
+      top: 40%;
+      width: 3rem;
+      z-index: 1;
+    }
+
+    .leadersF-blob {
+      margin-top: 3rem;
+      margin-left: 3.5rem;
+      width: 80%;
+      z-index: -1;
+    }
+
+    .share-portfolio-img {
+      margin-left: 10rem;
+      margin-bottom: -40rem;
+      width: 60%;
+      position: relative;
+      top: -30rem;
+    }
+
+    .leaders-features p {
+      margin: 10rem auto 0;
+      width: 90%;
+      color: var(--fourth-color);
+      text-align: center;
+      font-size: 1rem;
+      font-weight: 400;
+      font-family: "Montserrat", sans-serif;
+      line-height: 50px;
+    }
+    .seeSubsimg {
+      margin-left: 10rem;
+      margin-bottom: -40rem;
+      width: 60%;
+      position: relative;
+      top: -30rem;
+    }
+    .mobile-leaders-section {
+      display: none;
+    }
+
+    .computer-leaders-section {
+      display: block;
+      position: relative;
+      top: 10rem;
+      font-family: "Montserrat", sans-serif;
+      margin-bottom: 10rem;
+    }
+    .computer-leaders-section h1 {
+      width: 100%;
+      margin: 0 auto;
+      text-align: center;
+      letter-spacing: 0px;
+      color: #3374ea;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 800;
+      font-size: 4rem;
+      text-transform: capitalize;
+    }
+    .computer-leaders-section h6 {
+      text-align: center;
+      margin: 0.4rem auto 0;
+      width: 70%;
+      color: var(--fourth-color);
+      font-size: 1.4rem;
+      line-height: 30px;
+      font-weight: 500;
+    }
+
+    .computer-leaders-box-wrapper {
+      position: relative;
+      margin-top: 12rem;
+      text-align: center;
+    }
+
+    /* computer leaders box background first svg */
+    .custom-shape-divider-top-1646479334 {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      overflow: hidden;
+      line-height: 0;
+      transform: rotate(180deg);
+    }
+
+    .custom-shape-divider-top-1646479334 svg {
+      position: relative;
+      display: block;
+      width: calc(100% + 1.3px);
+      height: 86px;
+      transform: rotateY(180deg);
+    }
+
+    .custom-shape-divider-top-1646479334 .shape-fill {
+      fill: var(--light-color);
+    }
+
+    /*  computer leaders box background first svg  ends */
+
+    .computer-leaders-box-background {
+      background: transparent linear-gradient(180deg, #22a1f5 0%, #677bff 100%)
+        no-repeat padding-box;
+      height: 70%;
+      width: 100%;
+      position: absolute;
+      top: 11rem;
+      z-index: -1;
+    }
+
+    .computer-leaders-box {
+      width: 40%;
+      padding: 0px 20px 50px;
+      background: var(--third-color) no-repeat padding-box;
+      box-shadow: 0px 3px 6px #00000008;
+      display: inline-block;
+      margin: -2rem 1rem 10rem;
+      font-family: "Montserrat", sans-serif;
+      border-radius: 10px;
+    }
+    .computer-leaders-img-box {
+      margin: auto;
+      position: relative;
+      top: -6rem;
+      margin-bottom: -5rem;
+      height: 11rem;
+      width: 11rem;
+      border: 8px solid var(--light-color);
+      border-radius: 50%;
+      overflow: hidden;
+    }
+
+    .computer-leaders-img-box img {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+      border-radius: 50%;
+      object-fit: cover;
+      transition: 0.3s ease;
+    }
+    .leader-lv {
+      position: relative;
+      top: -120px;
+      margin-bottom: -75px;
+      /* background color will be here once the real SVG is gotten */
+    }
+    .leader-lv img {
+      width: 80px;
+      margin-left: 335px;
+    }
+    .computer-leaders-box p {
+      text-align: center;
+      color: var(--fourth-color);
+      font-size: 1rem;
+      line-height: 30px;
+      font-weight: 400;
+    }
+
+    .computer-leaders-box h3 {
+      text-align: center;
+      color: #3374ea;
+      margin-bottom: 7px;
+    }
+    .computer-leaders-box h4 {
+      color: #00be13;
+      text-align: center;
+      margin: 0.4rem auto 0;
+      font-size: 1rem;
+      line-height: 30px;
+    }
+    .reviews p {
+      color: var(--fourth-color);
+      margin-top: 20px;
+      font-size: 17px;
+    }
+
+    .faq-wrapper h1 {
+      width: 100%;
+      margin: 0 auto 2rem;
+      text-align: center;
+      letter-spacing: 0px;
+      color: #3374ea;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 800;
+      font-size: 3rem;
+      text-transform: capitalize;
+    }
+    .faqwrapper h3 {
+      color: #3374ea;
+      font-weight: 800;
+      font-size: 1.5rem;
+    }
+  }
+
+  /* START COMPUTER SCREEN DESIGN */
+  @media only screen and (min-width: 1200px) {
+    .background-svg {
+      display: block;
+      position: absolute;
+      top: 40%;
+      left: 10%;
+      width: 30%;
+    }
+
+    .blob-wrapper {
+      height: 42rem;
+      position: relative;
+      top: -7.5rem;
+      overflow-x: hidden;
+    }
+
+    .computer-blob {
+      object-fit: cover;
+      left: 47%;
+      top: -1.5rem;
+      height: 40rem;
+      width: 66rem;
+      transform: translateY(27px);
+      z-index: -1;
+      display: block;
+    }
+
+    @media (min-width: 1290px) {
+      .computer-blob {
+        left: 52%;
+      }
+    }
+    @media (min-width: 1400px) {
+      .computer-blob {
+        left: 55%;
+      }
+    }
+
+    .leaders-about {
+      width: 100%;
+      position: relative;
+      top: -37rem;
+      margin-bottom: -33rem;
+      /* margin-left: 3%; */
+    }
+    .leaders-about h1 {
+      width: 50%;
+      font-family: "Montserrat", sans-serif;
+      text-align: left;
+      margin: 0.9rem 0;
+      margin-left: 4.5%;
+      color: #3374ea;
+      font-weight: 800;
+      font-size: 40px;
+      letter-spacing: 0;
+      padding: 0 4rem;
+    }
+
+    .leaders-aboutP {
+      width: 40%;
+      text-align: left;
+      margin-top: 4px;
+      margin-left: 10%;
+      color: var(--fourth-color);
+      line-height: 25px;
+      font-size: 0.9rem;
+    }
+    .appui {
+      display: block;
+      position: absolute;
+      top: -3rem;
+      left: 54%;
+      width: 25%;
+    }
+
+    .app-downloads {
+      text-align: left;
+      margin-left: 9%;
+      width: 50%;
+    }
+    .app-download {
+      display: inline-block;
+      width: 10rem;
+      margin: 2rem 1rem 0;
+    }
+    .comingSoon {
+      text-align: unset;
+      margin-left: 1rem;
+    }
+
+    .signal-packs {
+      display: block;
+      position: absolute;
+      top: 90px;
+      left: 83%;
+      width: 95px;
+      padding-bottom: 0.6rem;
+      /* height: 110px; */
+      background: var(--third-color);
+      box-shadow: 0px 20px 17px #1c19230d;
+      border-radius: 20px;
+      z-index: 2;
+      transform: rotate(2.4deg);
+    }
+    .signal-packs.two {
+      position: absolute;
+      top: 200px;
+      left: 75%;
+    }
+
+    .signal-packs.three {
+      position: absolute;
+      top: 205px;
+      left: 90%;
+    }
+    .pack-img-wrapper {
+      position: relative;
+      top: -20px;
+      width: 40px;
+      height: 40px;
+      margin: auto;
+      border-radius: 50%;
+      background: transparent linear-gradient(180deg, #14cbff 0%, #366be8 100%)
+        no-repeat padding-box;
+    }
+    .pack-img {
+      width: 22px;
+      height: 23px;
+      margin-top: 6px;
+      margin-left: 9px;
+    }
+    .signal-packs p {
+      text-align: center;
+      font-family: "Poppins", sans-serif;
+      margin-top: -15px;
+      font-size: 0.7rem;
+    }
+    .signal-packs h5 {
+      text-align: center;
+      font-family: "Montserrat", sans-serif;
+      color: #3374ea;
+      font-weight: 600;
+      margin-top: 2px;
+      font-size: 17px;
+    }
+
+    .win-win p {
+      width: 50%;
+      color: var(--fourth-color);
+      text-align: center;
+      font-size: 1rem;
+      font-weight: 400;
+      font-family: "Montserrat", sans-serif;
+      line-height: 30px;
+    }
+
+    .iconholder {
+      position: relative;
+    }
+    .iconBTC1 {
+      position: relative;
+      left: 10%;
+      width: 3rem;
+    }
+
+    .svg4 {
+      position: absolute;
+      left: 90%;
+      top: 8%;
+      width: 5rem;
+    }
+    .svg7F {
+      position: absolute;
+      left: 90%;
+      top: 80%;
+      width: 5rem;
+    }
+    .svg2F {
+      position: absolute;
+      left: 0%;
+      top: 90%;
+      width: 5rem;
+    }
+
+    .svgOne {
+      position: absolute;
+      left: 95%;
+      top: 90%;
+      width: 5rem;
+    }
+    .svgontop {
+      position: absolute;
+      left: 45%;
+      top: 90%;
+      width: 4rem;
+    }
+    .svg4N {
+      display: block;
+      position: absolute;
+      width: 4rem;
+      left: 4%;
+      top: 20%;
+    }
+    .svg6F {
+      position: absolute;
+      left: 5%;
+      top: 50%;
+      width: 5rem;
+    }
+
+    /* ... */
+
+    .svgOneNP {
+      position: absolute;
+      left: 85%;
+      top: 85%;
+      width: 3rem;
+    }
+    .svgontopNP {
+      position: absolute;
+      left: 4%;
+      top: 40%;
+      width: 3rem;
+      display: none;
+    }
+    .svg6NP {
+      display: none;
+    }
+    .svg4NP {
+      display: block;
+      position: absolute;
+      width: 5rem;
+      left: 5%;
+      top: 40%;
+    }
+    .sheildicoNP {
+      display: block;
+      position: absolute;
+      width: 2rem;
+      left: 60%;
+      top: 70%;
+    }
+
+    .leaders-features {
+      width: 80%;
+      margin: 0 auto;
+      padding-bottom: 10rem;
+    }
+    .leadersF-blob {
+      margin-top: 3rem;
+      margin-left: 0;
+      width: 40%;
+      z-index: -1;
+    }
+
+    .share-portfolio-img {
+      position: relative;
+      top: -19rem;
+      margin-left: 5rem;
+      margin-bottom: -30rem;
+      width: 30%;
+    }
+
+    .share-portfolio-img:hover {
+      filter: saturate(100%);
+      transform: scale(1.1);
+    }
+
+    .leaders-features h1 {
+      width: 40%;
+      float: right;
+      /* margin-right: 14.5rem; */
+      margin-top: 10rem;
+      text-align: left;
+      color: #3374ea;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 800;
+      font-size: 2.3rem;
+    }
+    @media (min-width: 1300px) {
+      .leaders-features h1 {
+        margin-top: 15rem;
+      }
+    }
+    @media (min-width: 1400px) {
+      .leaders-features h1 {
+        margin-top: 17rem;
+      }
+    }
+
+    .leaders-features p {
+      width: 40%;
+      color: var(--fourth-color);
+      text-align: left;
+      font-size: 1rem;
+      font-weight: 400;
+      font-family: "Montserrat", sans-serif;
+      line-height: 30px;
+      float: right;
+      /* margin-right: 3rem; */
+      margin-top: -12rem;
+    }
+
+    /*  */
+
+    .leaders-features.two h1 {
+      float: left;
+      width: 30%;
+      margin-right: 14.5rem;
+      margin-top: 8rem;
+      text-align: left;
+      color: #3374ea;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 800;
+      font-size: 2.3rem;
+    }
+
+    @media (min-width: 1300px) {
+      .leaders-features.two h1 {
+        margin-top: 11rem;
+      }
+    }
+    @media (min-width: 1400px) {
+      .leaders-features.two h1 {
+        margin-top: 17rem;
+      }
+    }
+    .leadersF-blob.two {
+      float: right;
+      margin-top: 3rem;
+      margin-left: 0;
+      width: 40%;
+      z-index: -1;
+    }
+
+    .seeSubsimg {
+      position: relative;
+      top: -19rem;
+      margin-left: 60%;
+      margin-bottom: -30rem;
+      width: 30%;
+      float: right;
+    }
+
+    .leaders-features.two p {
+      float: left;
+      margin-top: -10rem;
+    }
+    .leaders-features.three {
+      padding-top: 10rem;
+    }
+    .app-downloads.wrapper {
+      position: relative;
+      top: 10rem;
+      margin-left: 9rem;
+    }
+    @media (min-width: 1340px) {
+      .app-downloads.wrapper {
+        position: relative;
+        top: 15rem;
+        margin-left: 7rem;
+        width: 50%;
+      }
+    }
+    @media (min-width: 1400px) {
+      .app-downloads.wrapper {
+        top: -2rem;
+      }
+    }
+    .app-download.features {
+      display: inline-block;
+      width: 20%;
+      margin: 2rem 1rem;
+    }
+
+    .computer-leaders-section {
+      display: block;
+      position: relative;
+      top: 0rem;
+      font-family: "Montserrat", sans-serif;
+      margin-bottom: 2rem;
+      margin-top: 20rem;
+    }
+    .computer-leaders-section h1 {
+      width: 100%;
+      margin: 0 auto;
+      text-align: center;
+      letter-spacing: 0px;
+      color: #3374ea;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 800;
+      font-size: 3rem;
+      text-transform: capitalize;
+    }
+    .computer-leaders-section h6 {
+      text-align: center;
+      margin: 0.4rem auto 0;
+      width: 70%;
+      color: var(--fourth-color);
+      font-size: 1rem;
+      line-height: 30px;
+      font-weight: 500;
+    }
+
+    .computer-leaders-box-wrapper {
+      position: relative;
+      margin-top: 12rem;
+      text-align: center;
+    }
+
+    .computer-leaders-box-wrapper.two {
+      margin-top: 3rem;
+    }
+
+    /* computer leaders box background first svg */
+    .custom-shape-divider-top-1646479334 {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      overflow: hidden;
+      line-height: 0;
+      transform: rotate(180deg);
+    }
+
+    .custom-shape-divider-top-1646479334 svg {
+      position: relative;
+      display: block;
+      width: calc(100% + 1.3px);
+      height: 86px;
+      transform: rotateY(180deg);
+    }
+
+    .custom-shape-divider-top-1646479334 .shape-fill {
+      fill: var(--light-color);
+    }
+
+    /*  computer leaders box background first svg  ends */
+
+    .computer-leaders-box-background {
+      background: transparent linear-gradient(180deg, #22a1f5 0%, #677bff 100%)
+        no-repeat padding-box;
+      padding: 40rem 0 0rem;
+      width: 100%;
+      position: absolute;
+      top: 3rem;
+      z-index: -1;
+    }
+
+    .computer-leaders-box {
+      vertical-align: middle;
+      width: 24%;
+      transform: scale(0.9);
+      padding: 0px 15px 50px;
+      background: var(--third-color) no-repeat padding-box;
+      box-shadow: 0px 3px 6px #00000008;
+      display: inline-block;
+      margin: -2rem 2rem 10rem;
+      font-family: "Montserrat", sans-serif;
+      border-radius: 10px;
+    }
+    .computer-leaders-box:hover {
+      transition: 1s;
+      filter: saturate(100%);
+      transform: scale(1);
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+        rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    }
+    .computer-leaders-img-box {
+      margin: auto;
+      position: relative;
+      top: -6rem;
+      margin-bottom: -5rem;
+      height: 9rem;
+      width: 9rem;
+      border: 8px solid var(--light-color);
+      border-radius: 50%;
+      overflow: hidden;
+    }
+
+    .computer-leaders-img-box img {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+      border-radius: 50%;
+      object-fit: cover;
+      transition: 0.3s ease;
+    }
+    .leader-lv {
+      position: relative;
+      top: -80px;
+      margin-bottom: -75px;
+      /* background color will be here once the real SVG is gotten */
+    }
+    .leader-lv img {
+      width: 70px;
+      margin-left: 260px;
+    }
+    .computer-leaders-box p {
+      text-align: center;
+      color: var(--fourth-color);
+      font-size: 1rem;
+      line-height: 30px;
+      font-weight: 400;
+    }
+
+    .computer-leaders-box h3 {
+      text-align: center;
+      color: #3374ea;
+      margin-bottom: 7px;
+    }
+    .computer-leaders-box h4 {
+      color: #00be13;
+      text-align: center;
+      margin: 0.4rem auto 0;
+      font-size: 1rem;
+      line-height: 30px;
+    }
+    .reviews p {
+      color: var(--fourth-color);
+      margin-top: 20px;
+      font-size: 17px;
+    }
+
+    /* code for FAQ SECTION */
+
+    .faq-wrapper {
+      max-width: 50%;
+      margin: 5rem auto;
+    }
+    .faq-wrapper h1 {
+      font-size: 2rem;
+    }
+
+    .faqwrapper h3 {
+      font-size: 1rem;
+      color: #3374ea;
+      font-weight: 600;
+    }
+  }
 </style>

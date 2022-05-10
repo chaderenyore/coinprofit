@@ -591,46 +591,98 @@
   <BaseCallToAction />
 </template>
 
-
+<script>
+  export default {
+    data() {
+      return {
+        title: "Coinprfit",
+      };
+    },
+    head: {
+      // To use "this" in the component, it is necessary to return the object through a function
+      title: function () {
+        return {
+          inner: this.title,
+          separator: "-",
+          complement: "Privacy Policies",
+        };
+      },
+      meta: [
+        {
+          name: "description",
+          content:
+            "Coinprfit Privacy policies, Your privacy is important to us.",
+          id: "desc",
+        },
+        {
+          name: "keywords",
+          content:
+            "bitcoin,crypto tracking, track crypto assets, coinprofit leaders, eth, tracking, portfolio tracking, coinprfit policy",
+          id: "keywords",
+        },
+        {
+          name: "apple-mobile-web-app-capable",
+          content: "yes",
+        },
+        {
+          name: "apple-mobile-web-app-status-bar-style",
+          content: "black",
+        },
+        {
+          name: "apple-mobile-web-app-title",
+          content: "Coinprfit Privacy policies",
+        },
+        {
+          property: "og:description",
+          content: "Coinprfit Privacy policies",
+        },
+        {
+          property: "og:title",
+          content: "Coinprfit Privacy policies",
+        },
+      ],
+    },
+  };
+</script>
 
 <style scoped>
-.privacy_policyContainer {
-  width: 90%;
-  max-width: 1500px;
-  margin: 0 auto;
-}
-
-.privacy-policy {
-  padding: 3rem 1rem 1rem;
-}
-
-.privacy-policy h1 {
-  text-align: center;
-  margin-top: 8rem;
-  margin-bottom: 2rem;
-  color: var(--dark-color);
-}
-
-.privacy-policy h3 {
-  text-align: center;
-  margin: 2rem 0;
-  color: var(--dark-color);
-}
-.dot {
-  height: 10px;
-  width: 10px;
-  background-color: var(--dark-color);
-  border-radius: 50%;
-  display: inline-block;
-  margin-right: 10px;
-}
-.privacy-policy p {
-  line-height: 2rem;
-}
-
-@media only screen and (min-width: 1024px) {
-  .privacy-policy {
-    padding-top: 7rem;
+  .privacy_policyContainer {
+    width: 90%;
+    max-width: 1500px;
+    margin: 0 auto;
   }
-}
+
+  .privacy-policy {
+    padding: 3rem 1rem 1rem;
+  }
+
+  .privacy-policy h1 {
+    text-align: center;
+    margin-top: 8rem;
+    margin-bottom: 2rem;
+    color: var(--dark-color);
+  }
+
+  .privacy-policy h3 {
+    text-align: center;
+    margin: 2rem 0;
+    color: var(--dark-color);
+  }
+  .dot {
+    height: 10px;
+    width: 10px;
+    background-color: var(--dark-color);
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 10px;
+  }
+  .privacy-policy p {
+    line-height: 2rem;
+  }
+
+  @media only screen and (min-width: 1024px) {
+    .privacy-policy {
+      padding-top: 7rem;
+    }
+  }
 </style>

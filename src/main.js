@@ -10,10 +10,11 @@ const app = createApp(App);
 import BaseCallToAction from "@/components/BaseCallToAction.vue";
 import ArticleCard from "@/components/Help/ArticleCard.vue";
 import NotFound from "@/components/Help/NotFound.vue";
+import VueHead from "vue-head";
 
 app.config.globalProperties.emitter = emitter;
 app.component("BaseCallToAction", BaseCallToAction);
 app.component("ArticleCard", ArticleCard);
 app.component("NotFound", NotFound);
 
-app.use(router).use(prismic).use(VuePlyr).mount("#app");
+app.use(router).use(VueHead).use(prismic).use(VuePlyr).mount("#app");
