@@ -339,7 +339,7 @@ export default {
         hid: "keywords",
         name: "keywords",
         content:
-          "bitcoin,crypto tracking, track crypto assets, coinprofit leaders, eth, tracking, portfolio tracking",
+          "bitcoin,crypto tracking, track crypto assets, coinprofit about, eth, tracking, portfolio tracking",
       },
       {
         name: "apple-mobile-web-app-capable",
